@@ -2,79 +2,131 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
+  /* font-family will be inherited from globals.css */
 }
 
 .header {
-  background-color: #f0f0f0;
+  background-color: var(--primary-color); /* Updated */
+  color: var(--light-text-color); /* Updated */
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid var(--secondary-color); /* Accent border */
 }
 
 .header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.2em; /* Adjusted */
+  color: var(--light-text-color); /* Ensure h1 uses light text */
+  font-weight: 700;
 }
 
 .header nav a {
-  color: #0070f3;
+  color: var(--secondary-color); /* Gold for contrast */
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .header nav a:hover {
+  color: #FFC300; /* Lighter Gold on hover */
   text-decoration: underline;
 }
 
 .main {
   flex: 1;
-  padding: 20px;
+  padding: 30px 20px; /* Increased padding */
   display: flex;
-  flex-direction: column; /* Changed to column for better layout of controls and preview */
-  align-items: center; /* Center items in the main area */
-  gap: 30px; /* Space between controls and preview */
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--background-color); /* Ensure main bg is set */
 }
 
 .controls {
   display: flex;
-  flex-direction: column; /* Stack controls vertically */
-  align-items: stretch; /* Make controls take full width available to them */
-  gap: 15px; /* Space between control elements */
-  padding: 20px;
-  background-color: #f9f9f9;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  padding: 25px; /* Increased padding */
+  background-color: #ffffff; /* White background for controls box */
+  border: 1px solid var(--border-color);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Enhanced shadow */
   width: 100%;
-  max-width: 500px; /* Max width for the controls box */
+  max-width: 550px; /* Slightly wider */
 }
 
-.fileInput,
-.textInput {
+.controls h2, .previewArea h2 { /* Style for section titles if any */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.fileInput {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1em;
+  font-family: var(--font-body);
+  background-color: var(--background-color); /* Light gray background for input */
+  color: var(--text-color);
 }
+
+.textInput {
+  padding: 12px; /* Increased padding */
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: var(--font-body);
+}
+
+.textInput:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(106, 13, 173, 0.2); /* Purple focus ring */
+  outline: none;
+}
+
 
 .button {
-  background-color: #0070f3;
-  color: white;
+  background-color: var(--primary-color); /* Purple */
+  color: var(--light-text-color); /* Light text */
   border: none;
   padding: 12px 20px;
-  font-size: 1em;
+  font-size: 1.1em; /* Slightly larger */
+  font-family: var(--font-heading);
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.button:hover {
-  background-color: #005bb5;
+.button:hover:not(:disabled) {
+  background-color: #520A83; /* Darker Purple */
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+
+/* Secondary button style for download */
+.button.secondary {
+    background-color: var(--secondary-color); /* Gold */
+    color: var(--primary-color); /* Purple text */
+}
+
+.button.secondary:hover:not(:disabled) {
+    background-color: #FFC300; /* Lighter Gold */
+}
+
 
 .button:disabled {
-  background-color: #ccc;
+  background-color: #BDBDBD; /* Neutral gray for disabled */
+  color: #757575;
   cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .previewArea {
@@ -82,33 +134,36 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  padding: 20px;
-  border: 1px dashed #ccc;
+  padding: 25px; /* Increased padding */
+  border: 2px dashed var(--primary-color); /* Purple dashed border */
   border-radius: 8px;
   width: 100%;
-  max-width: 600px; /* Max width for the preview area */
-  min-height: 200px; /* Minimum height for the preview area */
-  justify-content: center; /* Center content if image is small */
+  max-width: 600px;
+  min-height: 250px; /* Increased min-height */
+  justify-content: center;
+  background-color: #ffffff; /* White background */
 }
 
 .imagePreview {
   max-width: 100%;
-  max-height: 500px; /* Max height for the preview image */
+  max-height: 500px;
   border-radius: 4px;
-  object-fit: contain; /* Ensure image aspect ratio is maintained */
+  object-fit: contain;
+  border: 1px solid var(--border-color);
 }
 
 .previewArea p {
-  color: #777;
+  color: var(--text-color); /* Standard text color */
+  font-style: italic;
 }
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--text-color); /* Dark Gray for footer */
+  color: var(--background-color); /* Light Gray text for footer */
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid #111;
-  margin-top: auto; /* Push footer to the bottom */
+  padding: 30px 20px; /* Increased padding */
+  border-top: 3px solid var(--primary-color); /* Purple top border */
+  margin-top: auto;
 }
 
 /* Responsive adjustments */

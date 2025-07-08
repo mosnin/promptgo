@@ -2,14 +2,20 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
+  /* font-family will be inherited from globals.css */
 }
 
 .header {
-  background-color: #f0f0f0;
+  background-color: var(--primary-color); /* Updated */
+  color: var(--light-text-color); /* Updated */
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid var(--secondary-color); /* Accent border */
+}
+
+.header h1 { /* Ensure header h1 uses light text color */
+  color: var(--light-text-color);
+  font-weight: 700; /* Poppins bold */
 }
 
 .navList {
@@ -26,51 +32,68 @@
 
 .navItem a {
   text-decoration: none;
-  color: #333;
+  color: var(--light-text-color); /* Updated for dark header */
+  font-weight: 600; /* Open Sans semi-bold */
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navItem a:hover {
-  color: #0070f3;
+  color: var(--primary-color); /* Text color on hover */
+  background-color: var(--secondary-color); /* Gold background on hover */
+  text-decoration: none;
 }
 
 .main {
   flex: 1;
   padding: 20px;
+  background-color: var(--background-color); /* Ensure main bg is set */
 }
 
 .hero {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #e9f5ff;
+  padding: 60px 20px; /* Increased padding */
+  background-color: var(--primary-color); /* Purple background */
+  color: var(--light-text-color); /* Light text for contrast */
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 40px; /* Increased margin */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #333;
+  font-size: 2.8em; /* Slightly larger */
+  margin-bottom: 15px;
+  color: var(--light-text-color); /* Ensure h2 uses light text */
+  font-weight: 700; /* Poppins Bold */
 }
 
 .hero p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 1.3em; /* Slightly larger */
+  color: var(--light-text-color); /* Ensure p uses light text */
+  margin-bottom: 25px;
+  font-weight: 400; /* Open Sans Regular */
 }
 
 .ctaButton {
-  background-color: #0070f3;
-  color: white;
+  background-color: var(--secondary-color); /* Gold */
+  color: var(--primary-color); /* Purple text */
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 12px 25px; /* Increased padding */
+  font-size: 1.1em; /* Slightly larger */
+  font-family: var(--font-heading); /* Poppins */
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .ctaButton:hover {
-  background-color: #005bb5;
+  background-color: #FFC300; /* Lighter Gold on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .features {
@@ -81,27 +104,41 @@
 }
 
 .feature {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid var(--border-color); /* Use new border color */
   border-radius: 8px;
-  padding: 20px;
-  width: calc(33.333% - 40px); /* Adjust width for 3 columns, considering gap */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 25px; /* Increased padding */
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }
 
 .feature h3 {
   margin-top: 0;
-  color: #0070f3;
+  margin-bottom: 10px; /* Add margin below h3 */
+  color: var(--primary-color); /* Use primary color for feature headings */
+  font-weight: 600; /* Poppins SemiBold */
+}
+
+.feature p {
+  color: var(--text-color); /* Use standard text color */
+  font-size: 0.95em;
+  line-height: 1.6;
 }
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--text-color); /* Dark Gray for footer */
+  color: var(--background-color); /* Light Gray text for footer */
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid #111;
+  padding: 30px 20px; /* Increased padding */
+  border-top: 3px solid var(--primary-color); /* Purple top border */
 }
 
 /* Responsive adjustments */

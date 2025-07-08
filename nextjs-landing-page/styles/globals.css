@@ -1,12 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* New Color Palette */
+  --primary-color: #6A0DAD; /* Deep Purple */
+  --secondary-color: #FFD700; /* Gold */
+  --background-color: #F8F9FA; /* Light Gray */
+  --text-color: #343A40; /* Dark Gray */
+  --light-text-color: #F8F9FA; /* For dark backgrounds */
+  --border-color: #DEE2E6; /* Light border for elements */
+
+  /* Font Families */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Original variables for dark mode compatibility if needed later, though we are overriding base styles */
+  --background: var(--background-color); /* Overriding original */
+  --foreground: var(--text-color); /* Overriding original */
 }
 
+/*
+  Dark mode can be further customized if desired,
+  for now, it will inherit the new base palette or could be inverted.
+  The current setup primarily defines a light theme.
+  To implement a distinct dark theme, these variables would be redefined within the media query.
+*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Example: Invert or define a specific dark theme palette */
+    /* For now, let's make it a bit darker than the default Next.js dark theme */
+    --primary-color: #7F39FB; /* Lighter Purple for dark mode */
+    --secondary-color: #FFDE33; /* Lighter Gold */
+    --background-color: #212529; /* Very Dark Gray/Black */
+    --text-color: #E9ECEF; /* Light Gray for text */
+    --light-text-color: #212529; /* For light backgrounds in dark mode components */
+    --border-color: #495057; /* Darker border */
+
+    --background: var(--background-color);
+    --foreground: var(--text-color);
   }
 }
 
@@ -14,12 +44,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-body); /* Apply body font */
+  color: var(--text-color); /* Apply base text color */
+  background-color: var(--background-color); /* Apply base background color */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,11 +60,22 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); /* Apply heading font */
+  color: var(--primary-color); /* Default heading color */
+}
+
 a {
-  color: inherit;
+  color: var(--primary-color); /* Link color */
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--secondary-color); /* Link hover color - Gold */
+  text-decoration: underline;
+}
+
+/* Ensure Next.js color-scheme attribute for dark mode is still effective if needed */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

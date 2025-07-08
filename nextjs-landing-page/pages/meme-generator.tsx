@@ -81,15 +81,15 @@ export default function MemeGeneratorPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Meme Generator</title>
-        <meta name="description" content="Create your own memes" />
+        <title>Meme Generator - Meme Tools</title>
+        <meta name="description" content="Create your own custom memes with the Meme Tools generator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header className={styles.header}>
-        <h1>Meme Generator</h1>
+        <h1>Meme Tools - Generator</h1>
         <nav>
-          <Link href="/" legacyBehavior><a>&larr; Back to Home</a></Link>
+          <Link href="/" legacyBehavior><a>&larr; Back to Meme Tools Home</a></Link>
         </nav>
       </header>
 
@@ -123,11 +123,15 @@ export default function MemeGeneratorPage() {
             <button onClick={downloadMeme} className={styles.button}>
               Download Meme
             </button>
+          {generatedMeme && (
+            <button onClick={downloadMeme} className={`${styles.button} ${styles.secondary}`}>
+              Download Meme
+            </button>
           )}
         </div>
 
         <div className={styles.previewArea}>
-          <h2>Preview</h2>
+          <h2>Meme Preview</h2>
           {image && !generatedMeme && (
             <img src={image} alt="Uploaded preview" className={styles.imagePreview} />
           )}
@@ -142,7 +146,7 @@ export default function MemeGeneratorPage() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Meme Generator &copy; {new Date().getFullYear()}</p>
+        <p>&copy; {new Date().getFullYear()} Meme Tools. All rights reserved.</p>
       </footer>
     </div>
   )
