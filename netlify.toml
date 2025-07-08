@@ -1,0 +1,25 @@
+# Netlify configuration for a Next.js project in a subdirectory
+
+[build]
+  # Base directory: where the site source code is located.
+  base = "nextjs-landing-page"
+
+  # Build command: executed from the base directory.
+  # Assumes "next build" is the script in nextjs-landing-page/package.json
+  command = "npm run build"
+
+  # Publish directory: relative to the base directory,
+  # or relative to the repository root if base is not set.
+  # For standard Next.js (SSR/ISR with outputStandalone=false or not set), this is .next
+  # If you were using `next export` (static export), this would be "out".
+  # If you have `outputStandalone: true` in next.config.js, the publish dir might be different,
+  # often `.next/standalone` for the server and `.next/static` for static assets.
+  # For typical Netlify deploys with Next.js, Netlify's Next.js plugin handles much of this,
+  # but specifying .next is a safe default if the plugin is active.
+  # If the plugin isn't automatically detected or if you want to be explicit:
+  publish = ".next"
+
+# Optional: Specify the Next.js runtime plugin.
+# Netlify usually auto-detects Next.js projects, but explicitly adding it can be helpful.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
