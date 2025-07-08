@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css' // We'll create this file in the next step
+import Link from 'next/link' // Import Link
+import styles from '@/styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -18,6 +19,11 @@ export default function Home() {
             <li className={styles.navItem}><a href="#">About</a></li>
             <li className={styles.navItem}><a href="#">Services</a></li>
             <li className={styles.navItem}><a href="#">Contact</a></li>
+            <li className={styles.navItem}>
+              <Link href="/meme-generator" legacyBehavior>
+                <a>Meme Generator</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
