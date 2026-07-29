@@ -24,6 +24,7 @@ import p_data_cleaning_prompt from "@/prompts/data-cleaning-prompt/meta";
 import p_data_storytelling_prompt from "@/prompts/data-storytelling-prompt/meta";
 import p_debugging_prompt from "@/prompts/debugging-prompt/meta";
 import p_decision_memo_prompt from "@/prompts/decision-memo-prompt/meta";
+import p_delegation_brief_prompt from "@/prompts/delegation-brief-prompt/meta";
 import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
 import p_email_newsletter_prompt from "@/prompts/email-newsletter-prompt/meta";
 import p_email_subject_line_prompt from "@/prompts/email-subject-line-prompt/meta";
@@ -55,6 +56,7 @@ import p_reading_comprehension_prompt from "@/prompts/reading-comprehension-prom
 import p_refactoring_prompt from "@/prompts/refactoring-prompt/meta";
 import p_reference_request_prompt from "@/prompts/reference-request-prompt/meta";
 import p_regex_generator_prompt from "@/prompts/regex-generator-prompt/meta";
+import p_resignation_letter_prompt from "@/prompts/resignation-letter-prompt/meta";
 import p_resume_bullet_prompt from "@/prompts/resume-bullet-prompt/meta";
 import p_revision_plan_prompt from "@/prompts/revision-plan-prompt/meta";
 import p_rewrite_for_clarity_prompt from "@/prompts/rewrite-for-clarity-prompt/meta";
@@ -99,6 +101,7 @@ export const promptMetas: PromptMeta[] = [
   p_data_storytelling_prompt,
   p_debugging_prompt,
   p_decision_memo_prompt,
+  p_delegation_brief_prompt,
   p_discovery_call_prompt,
   p_email_newsletter_prompt,
   p_email_subject_line_prompt,
@@ -130,6 +133,7 @@ export const promptMetas: PromptMeta[] = [
   p_refactoring_prompt,
   p_reference_request_prompt,
   p_regex_generator_prompt,
+  p_resignation_letter_prompt,
   p_resume_bullet_prompt,
   p_revision_plan_prompt,
   p_rewrite_for_clarity_prompt,
@@ -152,4 +156,4 @@ export const promptMetas: PromptMeta[] = [
   p_win_loss_analysis_prompt,
 ];
 
-export const promptCount = 73;
+export const promptCount = 75;

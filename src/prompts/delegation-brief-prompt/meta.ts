@@ -65,7 +65,7 @@ Do not write encouragement and do not restate the task as the outcome.`,
       },
       {
         token: "INTENT",
-        label: "What you actually care about about the result",
+        label: "What you actually care about in the result",
         example:
           "That support stop getting the same four questions in week one. The document itself matters less than the four questions disappearing.",
       },
