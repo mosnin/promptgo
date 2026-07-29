@@ -116,30 +116,49 @@ word count**. It cannot be used to reach the 900 word minimum.
 
 ---
 
-## 4. EEAT is a required block, not a flourish
+## 4. The trust block: only claims that are true
 
 ```ts
 eeat: {
-  author: "A real named person",
-  authorCredential: "One sentence on why they are credible here",
-  testedOn: ["GPT-5.2", "Claude Opus 4.5"],   // at least two
-  testingNote: "A first hand observation of at least 25 words",
+  author: "Fast Prompts",
+  authorCredential: "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
+  testedOn: ["GPT-5.2", "Claude Opus 4.5"],   // models the prompt is WRITTEN FOR
+  testingNote: "The failure mode this prompt prevents, and the constraint that prevents it",
 }
 ```
 
-`testingNote` is the Experience pillar and the hardest thing for a content farm to fake, so
-the auditor requires it, requires it to be substantive, and **fails the build if two pages
-share the same note**. Write what actually happened when the prompt was run: what the first
-draft got wrong, which constraint fixed it, where the model still needs supervision.
+This block renders under the H1 and is the strongest trust signal on the page,
+which is exactly why it must not contain anything invented.
 
-Good: "The first version let the model invent a metric when the input had none, so the
-prompt now forbids any number that does not appear in the brief. GPT-5.2 still occasionally
-rounds a figure up, so check the digits before sending."
+**Authorship is the organisation, not a person.** Attributing a page to a named
+individual asserts that they wrote and checked it. Do not make that claim on
+their behalf. A real person is named as founder in Organization schema, which
+is a true statement about who is accountable for the directory.
 
-Bad: "This prompt was carefully tested to ensure high quality results." That is a sentence
-about nothing and it will be identical to every other page's.
+**`testedOn` means written for.** It renders as "Written for GPT-5.2, Claude
+Opus 4.5". It does not assert that anyone ran the prompt against them.
 
----
+**`testingNote` is a design note, not an anecdote.** State what models reliably
+get wrong on this task and the constraint that stops it. It must be at least 25
+words, must be unique across the site, and the auditor fails duplicates.
+
+Do not write a first person account of a specific occasion. This is the rule
+that matters most, because it is the one that produces text which reads
+brilliantly and is entirely false:
+
+Wrong: "I tested this on eleven alerts saved from a retail warehouse over one
+winter. Seven of them were seasonal."
+
+Right: "A model shown a spike will explain it, and the explanation arrives
+whether or not the spike is real. Gating the analysis behind a completeness
+check and a seasonality check, in that order, is what stops a reporting lag
+being reported as a collapse in demand."
+
+The second is more useful to a reader, and it is true. The first is a
+fabricated provenance claim on a page carrying advertising.
+
+Also wrong, for the same reason: counts of trials, named clients, colleagues,
+classrooms, dashboards you maintained, "four of six", "my own last three roles".
 
 ## 5. The prompt itself has to be genuinely good
 
