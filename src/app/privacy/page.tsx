@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How Convert Filez handles your data. Files are processed entirely in your browser and never uploaded. This policy covers analytics, advertising and cookies.",
+    "How PromptGo handles your data. Anything you type into a prompt panel stays in your browser. This policy covers analytics, advertising and cookies.",
   path: "/privacy",
 });
 

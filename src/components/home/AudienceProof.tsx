@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { Icon } from "@/components/ui/Icon";
+import type { CategoryIcon } from "@/lib/types";
 import { cn } from "@/lib/cn";
 
 /**
@@ -31,49 +32,49 @@ interface Audience {
   href: string;
   hrefLabel: string;
   accent: string;
-  icon: "image" | "code" | "document" | "waveform" | "globe" | "palette";
+  icon: CategoryIcon;
 }
 
 const AUDIENCES: Audience[] = [
   {
-    role: "Photographers and retouchers",
-    context: "Batch format work",
-    claim: "A folder of HEIC files becomes JPEGs without a single upload.",
-    body: "Convert, resize and compress an entire shoot locally, at full quality, with no watermark and no per file cap.",
-    href: "/image-conversion",
-    hrefLabel: "Image conversion",
-    accent: "var(--color-signal)",
-    icon: "image",
+    role: "Sales teams",
+    context: "Outbound that gets answered",
+    claim: "A cold email prompt that refuses to write from a company name alone.",
+    body: "Research first, then a short message built on one checkable observation. Several of these stop and ask for better input rather than producing the email everyone has already deleted.",
+    href: "/sales-prompts",
+    hrefLabel: "Sales prompts",
+    accent: "var(--color-accent-rose)",
+    icon: "handshake",
   },
   {
-    role: "Developers",
-    context: "The small jobs between commits",
-    claim: "The detour that interrupts a build, handled in the tab already open.",
-    body: "Format a payload, decode a token, minify a stylesheet or turn an SVG into a typed component without installing a package for a one off.",
-    href: "/developer-prompts",
-    hrefLabel: "Developer prompts",
+    role: "Marketers",
+    context: "Copy that has to earn a click",
+    claim: "Five ad variants that argue different cases, not five rewordings.",
+    body: "Angle tests you can learn from, personas tagged by what you evidenced rather than guessed, and a positioning statement that fails itself when a competitor could make the same claim.",
+    href: "/marketing-prompts",
+    hrefLabel: "Marketing prompts",
+    accent: "var(--color-accent-violet)",
+    icon: "megaphone",
+  },
+  {
+    role: "Engineers",
+    context: "The review nobody has time for",
+    claim: "Assume a bug exists and produce the input that triggers it.",
+    body: "Adversarial framing beats asking a model whether your code looks fine, because asking invites agreement. These state what they cannot verify from the code you pasted.",
+    href: "/coding-prompts",
+    hrefLabel: "Coding prompts",
     accent: "var(--color-accent-lime)",
     icon: "code",
   },
   {
-    role: "Legal, finance and admin teams",
-    context: "Documents that cannot leave the building",
-    claim: "A contract never touches hardware you do not control.",
-    body: "Merge, split, compress and convert PDFs on your own machine, which is the only version of this that survives a confidentiality review.",
-    href: "/pdf-and-documents",
-    hrefLabel: "PDF and documents",
-    accent: "var(--color-accent-rose)",
-    icon: "document",
-  },
-  {
-    role: "Marketers and SEO teams",
-    context: "Shipping pages that rank",
-    claim: "Meta tags, canonicals and Open Graph built in the browser.",
-    body: "Generate the technical markup a page needs and check it before it ships, without a subscription to a suite you use twice a month.",
-    href: "/web-and-seo",
-    hrefLabel: "Web and SEO",
-    accent: "var(--color-accent-violet)",
-    icon: "globe",
+    role: "Managers and operators",
+    context: "The documents nobody enjoys writing",
+    claim: "Meeting notes that keep unowned actions visibly unowned.",
+    body: "Decision memos that name what you give up, reviews tied to dated evidence, and post mortems that reject any cause which reduces to a person being careless.",
+    href: "/business-prompts",
+    hrefLabel: "Business prompts",
+    accent: "var(--color-signal)",
+    icon: "briefcase",
   },
 ];
 

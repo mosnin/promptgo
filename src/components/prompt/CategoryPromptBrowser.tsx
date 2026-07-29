@@ -6,16 +6,23 @@ import { useMemo, useRef, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { PromptCard } from "./PromptCard";
 import type { PromptCardData } from "@/lib/prompt-card";
+import { taskTypes } from "@/lib/task-types";
+import { cn } from "@/lib/cn";
 import { useThemeAttribute } from "@/lib/use-theme";
 
 /**
- * Search and grid for a single category.
+ * Search, task type facet and grid for a single category.
  *
- * The filter runs over name, summary and declared formats, which matters more
- * than it sounds: on a conversion catalogue people search by extension far more
- * often than by prompt name, and a name only match would fail the person typing
- * "heic" into a page that lists "HEIC to JPG Converter" under a summary
- * mentioning iPhone photos.
+ * This is where the second half of the hybrid taxonomy actually lands. Job
+ * function is the URL segment and the only indexable path, so task type has to
+ * earn its keep as a browse filter instead. Someone on the marketing page who
+ * wants a rewriting prompt rather than a generating one can narrow to it here,
+ * and no second URL is minted for the narrowed view, which is the whole reason
+ * the facet is a filter rather than a route.
+ *
+ * The text filter runs over name, summary, task type and the prompt's opening
+ * instruction. Including the opening line matters: people search for the thing
+ * the prompt makes the model do, which is often absent from a short name.
  *
  * Filtering is local and synchronous over a list of at most a few dozen, so
  * there is nothing to debounce and no loading state to design. Results animate
@@ -32,16 +39,24 @@ export function CategoryPromptBrowser({
   categoryName: string;
 }) {
   const [query, setQuery] = useState("");
+  const [task, setTask] = useState<string | null>(null);
   const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const reduced = useReducedMotion();
   const theme = useThemeAttribute();
 
+  /** Only offer facets that this category actually contains. */
+  const availableTasks = useMemo(() => {
+    const present = new Set(prompts.map((prompt) => prompt.taskType));
+    return taskTypes.filter((entry) => present.has(entry.slug));
+  }, [prompts]);
+
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    if (!needle) return prompts;
+    const byTask = task ? prompts.filter((prompt) => prompt.taskType === task) : prompts;
+    if (!needle) return byTask;
 
-    return prompts.filter((prompt) => {
+    return byTask.filter((prompt) => {
       const haystack = [
         prompt.name,
         prompt.summary,
@@ -52,7 +67,7 @@ export function CategoryPromptBrowser({
         .toLowerCase();
       return haystack.includes(needle);
     });
-  }, [query, prompts]);
+  }, [query, task, prompts]);
 
   return (
     <div>
@@ -107,6 +122,45 @@ export function CategoryPromptBrowser({
         </p>
       </div>
 
+      {availableTasks.length > 1 && (
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <span className="mr-1 font-mono text-[0.625rem] uppercase tracking-[0.14em] text-ink-faint">
+            Task
+          </span>
+          <button
+            type="button"
+            onClick={() => setTask(null)}
+            aria-pressed={task === null}
+            className={cn(
+              "rounded-full border px-3 py-1 text-[0.75rem] transition-colors duration-200",
+              task === null
+                ? "border-transparent bg-surface-3 text-ink"
+                : "border-hairline text-ink-faint hover:text-ink-muted",
+            )}
+          >
+            All
+          </button>
+          {availableTasks.map((entry) => (
+            <button
+              key={entry.slug}
+              type="button"
+              onClick={() => setTask(task === entry.slug ? null : entry.slug)}
+              aria-pressed={task === entry.slug}
+              title={entry.description}
+              style={task === entry.slug ? { borderColor: accent, color: accent } : undefined}
+              className={cn(
+                "rounded-full border px-3 py-1 text-[0.75rem] transition-colors duration-200",
+                task === entry.slug
+                  ? "bg-transparent"
+                  : "border-hairline text-ink-faint hover:text-ink-muted",
+              )}
+            >
+              {entry.name}
+            </button>
+          ))}
+        </div>
+      )}
+
       {results.length > 0 ? (
         <motion.div layout className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout" initial={false}>
@@ -127,10 +181,12 @@ export function CategoryPromptBrowser({
         </motion.div>
       ) : (
         <div className="mt-6 rounded-lg border border-dashed border-hairline p-10 text-center">
-          <p className="text-[0.9375rem] text-ink">No prompt here matches “{query}”.</p>
+          <p className="text-[0.9375rem] text-ink">
+            Nothing in {categoryName.toLowerCase()} matches that.
+          </p>
           <p className="mt-2 text-[0.8125rem] text-ink-subtle">
-            Try an extension such as png or mp4, or search the whole catalogue with the
-            command palette.
+            Clear the task filter, try the word you would use for the job itself, or search
+            every category with the command palette.
           </p>
         </div>
       )}

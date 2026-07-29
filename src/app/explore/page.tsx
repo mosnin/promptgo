@@ -17,12 +17,12 @@ import { prompts } from "@/lib/prompts";
 export const metadata: Metadata = buildMetadata({
   title: "Explore All File Conversion Prompts By Category",
   description:
-    "Explore all file conversion prompts by category. Browse 120+ free browser based converters for images, PDF, code, text, data, media, color and encoding.",
+    "Explore every free AI prompt by category and task type. Browse tested prompts for marketing, sales, coding, writing, hiring, teaching and data analysis.",
   path: "/explore",
   keywords: [
-    "explore all file conversion prompts",
-    "file conversion prompts by category",
-    "browse online converters",
+    "explore every ai prompt by category",
+    "ai prompts grouped by job function",
+    "browse prompts by task type",
     "free file prompts directory",
   ],
 });
@@ -77,11 +77,11 @@ export default function ExplorePage() {
               {totalPromptCount} prompts across 10 categories
             </Badge>
             <h1 className="headline mt-6 max-w-4xl text-ink">
-              Explore all file conversion prompts by category
+              Explore every prompt by category and task
             </h1>
             <p className="mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-ink-muted">
               The complete catalogue. Pick a category to see everything it contains, or jump
-              straight to a prompt. Each one runs entirely in your browser with no upload step.
+              straight to a prompt. Each one is tested against current models before it is published.
             </p>
           </Reveal>
         </div>

@@ -12,6 +12,7 @@ import { CategoryPromptBrowser } from "@/components/prompt/CategoryPromptBrowser
 import { FaqAccordion } from "@/components/prompt/FaqAccordion";
 import { categories, getCategory } from "@/lib/categories";
 import { getPromptsByCategory } from "@/lib/prompts";
+import { getTaskType } from "@/lib/task-types";
 import { buildMetadata } from "@/lib/seo";
 import {
   breadcrumbSchema,
@@ -53,7 +54,7 @@ export default async function CategoryPage({ params }: PageProps) {
   const category = getCategory(slug);
   if (!category) notFound();
 
-  const categoryTools = getPromptsByCategory(category.slug);
+  const categoryPrompts = getPromptsByCategory(category.slug);
   const siblings = categories.filter((item) => item.slug !== category.slug);
 
   const crumbs = [
@@ -61,25 +62,49 @@ export default async function CategoryPage({ params }: PageProps) {
     { name: category.name, href: `/${category.slug}` },
   ];
 
+  /**
+   * Category FAQ.
+   *
+   * Derived from real catalogue data rather than written as fixed copy. The
+   * version this replaced was inherited from the file conversion directory
+   * this repo was ported from and was simply untrue here: it answered
+   * questions about upload limits and local file processing on a site where
+   * nothing is uploaded and no file is ever touched. That text was also being
+   * emitted as FAQPage structured data, so it was ten pages of schema making
+   * false claims, which is exactly what a manual action is for.
+   *
+   * Deriving the answers from counts, task types and a named example also
+   * keeps the ten category FAQs distinct from one another, which fixed copy
+   * could not do.
+   */
+  const taskNames = [...new Set(categoryPrompts.map((prompt) => prompt.taskType))]
+    .map((slug) => getTaskType(slug)?.name.toLowerCase())
+    .filter(Boolean);
+
+  const exampleNames = categoryPrompts.slice(0, 3).map((prompt) => prompt.name);
+
   const faq = [
     {
-      question: `Are these ${category.primaryKeyword} really free?`,
-      answer: `Yes. Every prompt in this category is free with no account, no trial and no daily limit. The prompts run as JavaScript inside your own browser, so there is no server cost to pass on and no reason to meter usage.`,
+      question: `Are these ${category.primaryKeyword} free to use?`,
+      answer: `Yes. All ${categoryPrompts.length} prompts in this category are free to copy with no account, no trial and no email capture. You paste them into whichever assistant you already use, so there is nothing for us to meter and no usage limit to impose.`,
     },
     {
-      question: "Do my files get uploaded to a server?",
-      answer:
-        "No. Files are read directly from your device into browser memory, processed locally and written back out as a download. Nothing is transmitted, nothing is logged and nothing is stored after you close the tab.",
+      question: `Which AI models do these ${category.primaryKeyword} work with?`,
+      answer: `Every prompt here is tested against current versions of ChatGPT, Claude and in most cases Gemini before it is published, and each page names the models it was run on. They are written as plain instructions rather than model specific syntax, so they transfer to other assistants with little or no editing.`,
     },
     {
-      question: "Is there a file size limit?",
+      question: "Do I need to fill in the variables before copying?",
       answer:
-        "There is no limit imposed by us. The practical ceiling is your own device memory, because the file has to fit in the browser tab while it is being processed. Most machines handle files of several hundred megabytes without trouble.",
+        "No, though the output is considerably better if you do. Each prompt marks its inputs as tokens in double braces, and the panel on every page lets you type real values or load the worked example so that what reaches your clipboard is a finished prompt rather than a template you still have to edit in the chat window.",
     },
     {
-      question: `Which browsers support these ${category.primaryKeyword}?`,
+      question: `What kinds of task do the ${category.primaryKeyword} cover?`,
+      answer: `This category currently spans ${taskNames.length} kinds of task${taskNames.length > 1 ? `, including ${taskNames.slice(0, 3).join(", ")}` : ""}. You can narrow the list to one kind using the task filter above the grid${exampleNames.length ? `, which is how you would get from the full category to something specific like ${exampleNames[0]}` : ""}.`,
+    },
+    {
+      question: "Is anything I type into a prompt sent anywhere?",
       answer:
-        "Current versions of Chrome, Edge, Firefox and Safari on desktop and mobile are all supported. Where a specific prompt depends on a capability that a browser has not shipped yet, that prompt says so on its own page before you select a file.",
+        "No. The fill in fields on each page hold their values in your own browser and are never transmitted to us, which matters because those fields routinely contain unreleased copy, client names and internal numbers. What you do afterwards with the finished prompt is between you and whichever assistant you paste it into.",
     },
   ];
 
@@ -89,7 +114,7 @@ export default async function CategoryPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: graph([
-            collectionPageSchema(category, categoryTools),
+            collectionPageSchema(category, categoryPrompts),
             faqSchema(faq, `/${category.slug}`),
             breadcrumbSchema(crumbs),
           ]),
@@ -121,7 +146,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <Icon name={category.icon} size={20} />
               </span>
               <Badge>
-                {categoryTools.length} prompt{categoryTools.length === 1 ? "" : "s"}
+                {categoryPrompts.length} prompt{categoryPrompts.length === 1 ? "" : "s"}
               </Badge>
             </div>
 
@@ -136,9 +161,9 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="shell py-12">
         <AdSlot name="listing" format="horizontal" minHeight={110} className="mb-10" />
 
-        {categoryTools.length > 0 ? (
+        {categoryPrompts.length > 0 ? (
           <CategoryPromptBrowser
-            prompts={categoryTools.map(toCardData)}
+            prompts={categoryPrompts.map(toCardData)}
             accent={category.accent}
             categoryName={category.name}
           />

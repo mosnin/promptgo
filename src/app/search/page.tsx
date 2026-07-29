@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Search File Conversion Prompts",
   description:
-    "Search every free file conversion prompt by name, format or keyword. Find the right browser based converter for images, PDF, code, data and media in one step.",
+    "Search every free AI prompt by name, task or keyword. Find the right tested prompt for marketing, sales, coding, writing, hiring or analysis in one step.",
   path: "/search",
   // Query permutations create unbounded low value URLs, so results stay out of
   // the index while the prompt and category pages do the ranking work.
@@ -45,7 +45,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
         <div className="shell relative py-12">
           <Breadcrumbs crumbs={crumbs} />
           <Reveal>
-            <h1 className="headline mt-6 text-ink">Search file conversion prompts</h1>
+            <h1 className="headline mt-6 text-ink">Search every prompt</h1>
             <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-muted">
               Search by prompt name, file format or what you are trying to do.
             </p>

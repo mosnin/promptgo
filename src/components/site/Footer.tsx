@@ -39,7 +39,7 @@ export function Footer() {
                 <Wordmark />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-ink-subtle">
-                {totalPromptCount} free file conversion and asset prompts that run entirely in your
+                {totalPromptCount} free AI prompts, tested against current models before they reach your
                 browser. Nothing is uploaded, nothing is stored and nothing costs anything.
               </p>
             </div>

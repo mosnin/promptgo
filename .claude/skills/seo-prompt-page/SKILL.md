@@ -60,6 +60,24 @@ That last rule is the anti cannibalisation gate and it is strict on purpose. Two
 splitting the same term is the most common way a large directory underperforms: neither
 page accumulates enough signal to rank, and Google picks one arbitrarily.
 
+### Draft the keywords into sentences before writing any prose
+
+This is a process rule, not a style preference, and skipping it is the single most common
+cause of a failed audit in this repo.
+
+Before writing a word of the article, write out all six keywords, then draft each long tail
+into a **specific planned sentence** and note which section it will live in. Only then write
+the article around those sentences.
+
+The failure mode it prevents is retrofitting. Write the article first and you will produce
+good prose that happens to omit two or three long tails, and the auditor will reject it.
+Fixing it afterwards means bolting a phrase into a paragraph that did not need it, which
+reads exactly as awkwardly as it sounds.
+
+The phrasings that get forgotten most reliably are the `ai prompt for <task>` and
+`how to <do task> with ai` forms, because they are the least natural to write unprompted.
+Assign those two a sentence first.
+
 Pick long tails that describe **genuinely different searches**, not restatements:
 
 - a task phrasing: `how to write a cold email with ai`

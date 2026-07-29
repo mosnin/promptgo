@@ -6,10 +6,10 @@ import { Icon } from "@/components/ui/Icon";
 /**
  * The three steps, and the one that is missing.
  *
- * The whole argument for this site is an absence: there is no upload and no
+ * The whole argument for this site is an absence: there is no signup and no
  * queue between choosing a file and getting it back. An absence is difficult to
  * illustrate, so the section shows the omitted step explicitly, struck through
- * and greyed, sitting where every other converter would put it. Naming the
+ * and greyed, sitting where every other prompt library would put it. Naming the
  * thing that is not happening lands harder than three cheerful steps that could
  * describe any prompt on the internet.
  *
@@ -108,13 +108,12 @@ export function HowItWorks() {
         </span>
         <div>
           <p className="text-[1.0625rem] font-medium tracking-[-0.02em] text-ink-faint line-through decoration-1">
-            Upload your file to our servers and wait in the queue
+            Sign up, verify your email, then hit the paywall
           </p>
           <p className="mt-2 max-w-2xl text-[0.875rem] leading-relaxed text-ink-subtle">
-            This is the step every other converter puts between step one and step three, and it
-            is the one that costs you upload time, imposes the file size cap and puts a copy of
-            your document on hardware you do not control. It is not slow here. It does not exist
-            here.
+            This is the step most prompt libraries put between finding a prompt and using one,
+            and it is the reason you close the tab. There is no account here, no gated download
+            and no email capture. The prompt is on the page. It does not exist here.
           </p>
         </div>
       </motion.div>

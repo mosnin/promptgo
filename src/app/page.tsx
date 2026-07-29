@@ -23,52 +23,52 @@ import { buildMetadata } from "@/lib/seo";
 import { faqSchema, graph } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
-const PRIMARY_KEYWORD = "free online file conversion prompts";
+const PRIMARY_KEYWORD = "free ai prompts";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Free Online File Conversion Prompts: 120+ Browser Based Prompts",
+  title: "Free AI Prompts: A Tested Directory By Job Function",
   description:
-    "Free online file conversion prompts that run in your browser. Convert images, PDFs, code, data and media with no uploads, no signup and no file size limits.",
+    "A directory of free AI prompts for ChatGPT, Claude and Gemini, organised by the job you are doing. Every prompt is tested on real output before it is published.",
   path: "/",
   keywords: [
     PRIMARY_KEYWORD,
-    "online file converter",
-    "convert files online free",
-    "browser based file prompts",
-    "client side file conversion",
+    "ai prompt directory by job function",
+    "tested chatgpt prompts for work",
+    "copy ready prompts with no signup",
+    "prompt library organised by role",
   ],
 });
 
 const homeFaq = [
   {
-    question: "Are these free online file conversion prompts genuinely free?",
+    question: "Are these free ai prompts genuinely free?",
     answer:
-      "Yes. There is no account, no trial period, no credit card and no daily conversion cap. The prompts run as JavaScript in your own browser, so we do not pay for the compute and have no reason to meter it. The site is supported by display advertising alone.",
+      "Yes. No account, no trial, no credit card and no daily cap. You copy the text and paste it into whichever assistant you already pay for or use free, so there is nothing here for us to meter. The site is supported by display advertising alone.",
   },
   {
-    question: "Do my files get uploaded anywhere?",
+    question: "Which AI models do these prompts work with?",
     answer:
-      "No. Every prompt reads your file directly from disk into browser memory, does the work locally and hands back a download. Nothing is sent over the network, nothing is written to a server and nothing survives closing the tab. You can confirm this by opening the network panel in developer prompts while you convert a file.",
+      "Every prompt is run against current versions of ChatGPT and Claude before publishing, most against Gemini too, and each page names the models it was tested on. They are written as plain instructions rather than model specific syntax, so they transfer between assistants with little or no editing.",
   },
   {
-    question: "Is there a maximum file size?",
+    question: "What makes these different from a list of prompts on a blog?",
     answer:
-      "We do not impose one. The real ceiling is your own device memory, since the file has to fit in the browser tab while it is processed. In practice most laptops handle files of several hundred megabytes comfortably, and mobile devices handle less.",
+      "Each one encodes a mechanism rather than a wish. Several refuse to proceed on thin input, mark the facts they had no evidence for, or tell you the honest answer is to stop. Every page also states what the prompt got wrong during testing and how it was fixed.",
   },
   {
-    question: "Do I need to install anything?",
+    question: "Do I have to fill in the variables?",
     answer:
-      "No. There is no extension, no desktop app and no plugin. Open the prompt page, choose a file and download the result. Everything needed is already part of a modern browser.",
+      "Not strictly, but the output is much better if you do. Inputs appear as tokens in double braces, and the panel on each page lets you type real values or load a worked example, so what lands on your clipboard is a finished prompt rather than a template you edit in the chat window.",
   },
   {
-    question: "Which file formats can I convert between?",
+    question: "Is anything I type into a prompt page sent to you?",
     answer:
-      `The catalogue covers ${totalPromptCount} prompts across images, PDF and documents, code, text, structured data, audio and video, colour, encoding and technical SEO. Each prompt page states exactly which input formats it accepts and what it produces.`,
+      `No. The fill in fields hold their values in your own browser and are never transmitted, which matters because people routinely put unreleased copy, client names and internal figures into them. Across all ${totalPromptCount} prompts there is no upload path of any kind.`,
   },
   {
     question: "Can I use the output commercially?",
     answer:
-      "Yes. The files you produce are yours. No watermark is applied, no rights are claimed and no attribution is required.",
+      "Yes. The prompts are free to use and adapt, and whatever you produce with them is yours. No attribution is required, though you remain responsible for checking any factual claim a model produces before you publish or send it.",
   },
 ];
 
@@ -114,23 +114,23 @@ export default function HomePage() {
           <Reveal blur={false}>
             <Badge tone="signal">
               <Icon name="spark" size={11} />
-              {totalPromptCount} prompts. Zero uploads.
+              {totalPromptCount} prompts. Every one tested.
             </Badge>
           </Reveal>
 
           <TextReveal
             as="h1"
             className="display mx-auto mt-7 max-w-5xl text-ink"
-            text="Free online file conversion prompts that run in your browser"
-            highlight={["browser"]}
+            text="Free AI prompts, tested before they are published"
+            highlight={["tested"]}
             delay={0.1}
           />
 
           <Reveal delay={0.35} className="mx-auto mt-7 max-w-2xl">
             <p className="text-[1.125rem] leading-relaxed text-ink-muted">
-              Convert images, compress PDFs, minify code, reshape data and transform media
-              without uploading a single byte. Every one of these {PRIMARY_KEYWORD} does its
-              work locally, so your files stay on your machine and results appear instantly.
+              Marketing, sales, coding, writing, hiring and analysis, organised by the job
+              you are doing rather than the model you use. Every one of these {PRIMARY_KEYWORD}
+              is run against current models first, and the page tells you what it got wrong.
             </p>
           </Reveal>
 
@@ -140,7 +140,7 @@ export default function HomePage() {
                 Explore all {totalPromptCount} prompts
                 <Icon name="arrow-right" size={16} />
               </ButtonLink>
-              <ButtonLink href="/image-conversion" size="lg" variant="outline">
+              <ButtonLink href="/marketing-prompts" size="lg" variant="outline">
                 Start with images
               </ButtonLink>
             </div>
@@ -151,7 +151,7 @@ export default function HomePage() {
               {[
                 { value: `${totalPromptCount}`, label: "Working prompts" },
                 { value: "10", label: "Categories" },
-                { value: "0", label: "Bytes uploaded" },
+                { value: "0", label: "Signups required" },
                 { value: "$0", label: "Cost to use" },
               ].map((stat) => (
                 <div key={stat.label} className="bg-canvas px-5 py-5">
@@ -229,10 +229,10 @@ export default function HomePage() {
             <Reveal>
               <p className="eyebrow">Why it works this way</p>
               <h2 className="mt-2 text-[1.75rem] font-semibold tracking-[-0.03em] text-ink sm:text-[2rem]">
-                The conversion happens on your device, not ours
+                Written from testing, not from a list of good intentions
               </h2>
               <p className="mt-5 text-[0.9375rem] leading-relaxed text-ink-subtle">
-                Most converters work by uploading your file, processing it on a server and
+                Most prompt lists are assembled by asking a model to write prompts and
                 sending the result back. That model is slow, it costs the operator money, and it
                 puts a copy of your file on hardware you do not control. These {PRIMARY_KEYWORD}{" "}
                 do the opposite.
@@ -243,23 +243,23 @@ export default function HomePage() {
               {[
                 {
                   icon: "lock" as const,
-                  title: "Private by construction",
-                  body: "Your file is read into browser memory and never touches a network socket. Privacy is not a policy promise here, it is a property of how the prompts are built.",
+                  title: "Tested before published",
+                  body: "Every prompt is run against current models before it is published, and the page tells you what the first version got wrong. Testing is not a claim here, it is the reason several of these refuse to answer thin input.",
                 },
                 {
                   icon: "bolt" as const,
-                  title: "No upload, no queue",
-                  body: "There is no round trip, so a conversion that would take a minute of upload and download finishes in the time your processor needs and nothing more.",
+                  title: "A mechanism, not a wish",
+                  body: "Each prompt encodes a constraint that changes the output: a guard clause, a refusal, an evidence tag or a required calculation. That is what separates one that works from a paragraph of good intentions.",
                 },
                 {
                   icon: "layers" as const,
-                  title: "No arbitrary limits",
-                  body: "Server based prompts cap file sizes and daily runs because compute costs them money. Local processing costs nothing, so nothing is capped.",
+                  title: "Organised by the job",
+                  body: "Prompts are grouped by the job you are doing rather than by the model you use, because that is how people search and how the work is actually organised.",
                 },
                 {
                   icon: "check" as const,
-                  title: "Works offline once loaded",
-                  body: "After the page has loaded, the prompt keeps working even if your connection drops, because all the code it needs is already in the tab.",
+                  title: "Honest about the limits",
+                  body: "Each page names where its prompt still needs a human, what it got wrong in testing, and when the honest answer is that it should refuse to help you at all.",
                 },
               ].map((item) => (
                 <StaggerItem key={item.title} className="h-full">
@@ -343,10 +343,10 @@ export default function HomePage() {
             stats={[
               {
                 value: "0",
-                label: "bytes uploaded",
+                label: "signups required",
                 tone: "signal",
                 span: true,
-                body: `Not a rounded figure or a target. There is no upload path in any of the ${catalogueStats.prompts} prompts, so the number of bytes that reach a server is exactly zero. Open the network panel while you convert a file and you can confirm it yourself.`,
+                body: `Not a target we are working toward. There is no account system in any of the ${catalogueStats.prompts} prompts, no email wall and no metered usage, so the number of signups standing between you and a copy button is exactly zero.`,
               },
               {
                 value: String(catalogueStats.prompts),

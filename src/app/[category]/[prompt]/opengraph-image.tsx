@@ -13,8 +13,8 @@ export const contentType = "image/png";
  * Every page having its own image matters more here than on most sites: the
  * catalogue is 253 near identical layouts, so a shared card would make every
  * share of every prompt look like a share of the same page. The card leads with
- * the conversion itself, drawn the way the prompt cards on the site draw it, so a
- * link pasted into Slack answers "which converter" before anyone clicks.
+ * the task type and variable count, drawn the way the prompt cards do, so a
+ * link pasted into Slack answers "which prompt" before anyone clicks.
  *
  * Generated at build time, one static PNG per route, so there is no runtime
  * cost and nothing to cache invalidate.
@@ -129,7 +129,7 @@ export default async function ToolOpengraphImage({
         </div>
 
         <div style={{ display: "flex", fontSize: 24, color: "#9aa1b1" }}>
-          Runs in your browser. No upload, no signup, no file size limit.
+          Tested on current models. Free to copy, no signup required.
         </div>
       </div>
     ),

@@ -14,36 +14,36 @@ import { catalogueStats, categoryVolumes } from "@/lib/stats";
 import { breadcrumbSchema, graph } from "@/lib/jsonld";
 
 export const metadata: Metadata = buildMetadata({
-  // Not "About Convert Filez": buildMetadata appends the site name as a
-  // template, so naming the brand here renders "About Convert Filez | Convert
-  // Filez" in the tab and in every search result.
+  // Not "About PromptGo": buildMetadata appends the site name as a
+  // template, so naming the brand here renders "About PromptGo | Prompt
+  // Go" in the tab and in every search result.
   title: "About",
   description:
-    "About Convert Filez, a collection of 120+ free file conversion prompts that run entirely in your browser with no uploads, no signup and no file size limits.",
+    "About PromptGo, a directory of free AI prompts organised by job function, where every prompt is tested against current models before it is published.",
   path: "/about",
-  keywords: ["about convert filez", "browser based file prompts", "client side file conversion"],
+  keywords: ["about promptgo", "how prompts are tested", "ai prompt directory"],
 });
 
 const STORY = [
   {
-    heading: "The problem is the upload",
+    heading: "The problem is that most prompt lists are untested",
     body: [
-      `Almost every online converter works the same way. You hand it your file, it travels to a machine you know nothing about, something happens there, and a result travels back. That round trip is where all of the friction lives: the wait before the work starts, the queue behind other people's jobs, the file size cap that exists because compute costs the operator money, and the copy of your document now sitting on somebody else's disk.`,
-      `None of it is necessary. Browsers have been able to decode images, parse documents, hash data and encode media natively for years. The server pipeline persists because it is the easier thing to build, not because it is the better thing to use.`,
+      `A prompt directory is easy to produce badly. Ask a model to write fifty prompts about marketing and it will, fluently, and every one will read plausibly because plausibility is what a language model is best at. Nobody runs them. Nobody finds out that the cold email prompt cheerfully writes from a company name alone, or that the analysis prompt invents a statistic when the word count needs filling.`,
+      `The result is a genre of content that looks like help and functions as filler. You paste one in, get something generic back, and conclude the model is not very good at your job, when the actual fault was a prompt that gave it nothing to work with.`,
     ],
   },
   {
-    heading: "So the file never moves",
+    heading: "So every prompt is run before it is published",
     body: [
-      `Every prompt here reads your file directly into browser memory, does the work on your own processor, and hands back a download. There is no upload step to wait through, no queue to sit in, and no ceiling imposed by us, because the only resource being spent is the one already in front of you.`,
-      `The consequence worth stating plainly is the privacy one. Your file is not protected here by a policy document or a retention schedule or a promise about what we do not look at. It is protected because it never reaches us. That is a property of how the prompts are built rather than a commitment we are asking you to trust, and you can verify it in about ten seconds by opening your browser's network panel while you convert something.`,
+      `Each page names the models it was tested against and states what the first version got wrong. That section is not decoration. It is where you learn that Gemini needed the word STOP in capitals before it would decline rather than apologise and comply, or that requiring a visible arithmetic step was the only thing that stopped a walk away number being invented.`,
+      `A consequence worth stating plainly is that several of these prompts refuse to help you. Given a company name and no research, one of them stops and asks for something real. Given no evidence for a claim, another marks the gap rather than filling it. Those refusals are the most valuable behaviour in the catalogue and the hardest thing to get a model to do reliably.`,
     ],
   },
   {
-    heading: "What that pays for and what it costs",
+    heading: "How the directory is organised, and why",
     body: [
-      `Serving ${totalPromptCount} static pages costs close to nothing, and the conversions themselves cost nothing at all, because we are not the ones running them. Display advertising covers the difference. There is no premium tier, no data sale, no newsletter quietly harvesting addresses and no account to create, because none of those are needed to keep the lights on.`,
-      `The honest trade is that a prompt has to fit in a browser tab. A conversion that needs a heavy native codec, or a file larger than your device memory, is a job for desktop software, and the pages here say so rather than failing halfway through.`,
+      `Categories are job functions rather than task types, because that is how people search and because it produces categories that do not compete with each other. Task type still matters for browsing, so it exists as a filter on each category page rather than as a second address for the same prompt, which would split the signal for no gain.`,
+      `Serving ${totalPromptCount} static pages costs close to nothing and display advertising covers it. There is no premium tier, no data sale, no newsletter harvesting addresses and no account to create, because none of those are needed and each would put something between you and a copy button.`,
     ],
   },
 ];
@@ -86,9 +86,9 @@ export default function AboutPage() {
 
           <Reveal delay={0.3} className="mt-6 max-w-2xl">
             <p className="text-[1.0625rem] leading-relaxed text-ink-muted">
-              {totalPromptCount} file conversion and asset prompts that do their work inside your
-              browser rather than on somebody else&apos;s server. No account, no upload, no
-              queue and no file size cap.
+              {totalPromptCount} AI prompts organised by the job you are doing, each run against
+              current models before it was published. Every page tells you what the prompt got
+              wrong in testing and where it still needs a human.
             </p>
           </Reveal>
 
@@ -115,7 +115,7 @@ export default function AboutPage() {
               label: "bytes uploaded",
               tone: "signal",
               span: true,
-              body: `Not a rounded figure. There is no upload path in any of the ${catalogueStats.prompts} prompts, so the number of bytes that reach a server is exactly zero. The network panel in your browser will confirm it.`,
+              body: `Not a target. There is no account system behind any of the ${catalogueStats.prompts} prompts, no email wall and no metered usage, so the number of signups between you and a finished prompt is exactly zero.`,
             },
             {
               value: String(catalogueStats.prompts),

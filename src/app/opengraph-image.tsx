@@ -74,10 +74,10 @@ export default function OpengraphImage() {
               display: "flex",
             }}
           >
-            {totalPromptCount}+ free file conversion prompts that run in your browser
+            {totalPromptCount} free AI prompts, tested before they are published
           </div>
           <div style={{ fontSize: 30, color: "#9aa1b1", display: "flex" }}>
-            No uploads. No signup. No file size limits.
+            Tested prompts. No signup. Copy and paste.
           </div>
         </div>
 

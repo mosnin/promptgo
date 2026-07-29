@@ -15,19 +15,21 @@ import type { NavCategory } from "@/lib/nav";
  * splitting the catalogue across two triggers rather than one enormous panel.
  */
 const GROUPS: Record<string, string[]> = {
-  convert: [
-    "image-conversion",
-    "pdf-and-documents",
-    "audio-and-video",
-    "data-and-formats",
-    "text-and-writing",
+  // Split so each dropdown stays one readable row of columns. The division is
+  // roughly commercial work against craft work, which is how people arrive.
+  work: [
+    "marketing-prompts",
+    "sales-prompts",
+    "business-prompts",
+    "career-prompts",
+    "productivity-prompts",
   ],
-  prompts: [
-    "image-editing",
-    "developer-prompts",
-    "color-and-design",
-    "security-and-encoding",
-    "web-and-seo",
+  craft: [
+    "writing-prompts",
+    "coding-prompts",
+    "data-analysis-prompts",
+    "design-prompts",
+    "education-prompts",
   ],
 };
 
@@ -92,8 +94,8 @@ export function PrimaryNav({ categories, totalTools }: PrimaryNavProps) {
   }
 
   const items: NavItem[] = [
-    { key: "convert", label: "Convert", categories: group("convert") },
-    { key: "prompts", label: "Prompts", categories: group("prompts") },
+    { key: "work", label: "For work", categories: group("work") },
+    { key: "craft", label: "For craft", categories: group("craft") },
     { key: "explore", label: "Explore", href: "/explore" },
     { key: "about", label: "About", href: "/about" },
   ];
