@@ -120,10 +120,6 @@ export default function MemeGeneratorPage() {
             Generate Meme
           </button>
           {generatedMeme && (
-            <button onClick={downloadMeme} className={styles.button}>
-              Download Meme
-            </button>
-          {generatedMeme && (
             <button onClick={downloadMeme} className={`${styles.button} ${styles.secondary}`}>
               Download Meme
             </button>
