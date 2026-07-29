@@ -101,7 +101,7 @@ Banned: rockstar, ninja, wear many hats, fast paced environment, work hard play 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The requirements audit produced the most argument and the most value. On my own last three roles it moved between four and seven items out of the must have list, and in two cases the person eventually hired would have been filtered out by a requirement I had written without thinking. Putting the ninety day section first was the other change that mattered, because candidates told us it was the only part they read closely.",
+      "Requirement lists are assembled by describing the last person who held the role, so most items have never been tested against whether anyone would truly reject a strong candidate for lacking them. Sorting each into true bar, learnable or preference is what surfaces the proxies, and years of experience is reclassified most often. The ninety day section leads for the same reason, since it is the part candidates read closely.",
   },
 
   article: {

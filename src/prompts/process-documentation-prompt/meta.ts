@@ -100,7 +100,7 @@ Write for the reader named above. Assume no context beyond what section two list
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Single pass versions of this produced documents that read well and failed the moment someone new used them, because the expert had described six steps for a process that turned out to have nineteen. Splitting it into an interrogation phase and a writing phase was the fix. The questions models ask are genuinely good, and the one about what you would notice was wrong that a new person would not has surfaced a missing check almost every time I have run it.",
+      "Experts describe their own processes with most of the steps missing, so a single pass produces a document that reads well and breaks the first time a new person follows it. An interrogation phase before any writing is the fix, and the question about what a practitioner would notice was wrong that a newcomer would not is the one that reliably surfaces an unstated check.",
   },
 
   article: {

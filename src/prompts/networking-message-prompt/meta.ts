@@ -100,7 +100,7 @@ Then tell me which of the three to send, and why that one.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I ran this against messages I had actually received. The three ask sizes exposed something I had not articulated before: nearly every message I ignored had a medium or large ask attached to a small amount of context. GPT-5.2 needs the banned phrase list spelled out or reaching out survives in the first line. Claude Opus 4.5 writes the better exit lines and is more willing to return the refusal when the artefact field is thin.",
+      "Cold messages fail on a ratio rather than on tone, since a medium or large ask attached to a thin reason for contact gets ignored, and sizing the ask explicitly forces that trade into view. GPT-5.2 keeps reaching out alive in the first line unless the phrase is banned by name. Claude Opus 4.5 writes better exit lines and is likelier to refuse when nothing specific can be referenced.",
   },
 
   article: {

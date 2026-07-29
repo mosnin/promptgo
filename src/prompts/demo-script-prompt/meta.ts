@@ -92,7 +92,7 @@ SECTION 5, THE CUT LINE. If the running order exceeds the minutes available, sta
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Section 3 exists because the first build simply omitted unsupported features, and reps then showed them anyway since nothing had told them not to. Naming the exclusions out loud, with reasons, changed behaviour in a way that silence never did. GPT-5.2 needs the phrase about anything you are proud of, or it only lists the obviously irrelevant items.",
+      "Silently omitting unsupported features does not stop anyone demoing them, because nothing in the script says why they are missing. Naming the exclusions out loud with reasons attached changes what reps show. GPT-5.2 lists only the obviously irrelevant items unless the prompt asks specifically about anything the team is proud of, which is where the tempting overreach actually lives.",
   },
 
   article: {

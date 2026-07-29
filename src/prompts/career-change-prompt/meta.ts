@@ -99,7 +99,7 @@ If I described the target work only as a feeling, refuse step two and ask for th
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I ran this against six real transitions I had recruited for, four successful and two that reversed within a year. In both reversals the model put every stated reason under push, which matched what those candidates told me afterwards. It is much weaker on pay bands outside the United States and needs advertised salary data pasted in, otherwise Claude Opus 4.5 produces a range that looks researched and is not.",
+      "Sorting stated reasons into push and pull is the diagnostic that matters, because transitions driven entirely by escape tend to reverse, and no model volunteers that framing unaided. Pay data is the weak point. Outside the United States, Claude Opus 4.5 produces a salary range that looks researched and is guesswork, so advertised figures have to be pasted in rather than requested.",
   },
 
   article: {

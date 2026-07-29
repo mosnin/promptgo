@@ -86,7 +86,7 @@ PART 5, FORECAST LINE. One sentence, no adjectives, no verbs like feels or seems
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Part four came from a forecast review where three deals had moved stage on nothing but a friendly tone. Both models happily advanced a stage from enthusiasm until the delta was forced to quote a sentence per change. Claude still occasionally promotes a strong hint into the commitments list, so read the quote rather than trusting the label.",
+      "Enthusiasm on a call reads to a model as progress, so deals get advanced a stage on friendly tone alone and forecast reviews inherit the error. Forcing the stage delta to quote a sentence for every change makes the evidence checkable. Claude still promotes a strong hint into the commitments list occasionally, so the quote is what to read rather than the label above it.",
   },
 
   article: {

@@ -87,7 +87,7 @@ Never speculate about their revenue, headcount, budget or internal politics. If 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Asking for a company summary produced pages of accurate, useless material. Restricting the output to findings that would change the approach cut it to a few lines and made it worth reading before a call. The section quoting their own vocabulary was unplanned and turned out to be what reps actually used, because outreach written in the prospect's words outperforms outreach written in ours by a margin I did not expect.",
+      "A request for a company summary returns pages of accurate and entirely useless material, all of it true and none of it changing what a rep says on the call. Restricting output to findings that would alter the approach cuts it to a few usable lines. Quoting the prospect's own vocabulary matters because outreach in their words outperforms outreach in the seller's.",
   },
 
   article: {

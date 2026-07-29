@@ -91,7 +91,7 @@ Return exactly three things: a subject line under 6 words that is not a question
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The first version had no guard clause and cheerfully wrote an email from nothing but a company name, which is exactly the output that gets a domain marked as spam. Adding the explicit refusal instruction fixed it on all three models, though Gemini needed the word STOP in capitals before it would reliably decline rather than apologise and write the email anyway.",
+      "Handed nothing but a company name, a model will still write a confident personalised email, and that output is precisely what gets a sending domain flagged. An explicit refusal instruction closes the hole across models, though Gemini tends to apologise and then write the email regardless unless the word STOP appears in capitals, which is why the guard clause is phrased that way.",
   },
 
   article: {

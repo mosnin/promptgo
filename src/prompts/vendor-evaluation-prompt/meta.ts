@@ -105,7 +105,7 @@ Do not recommend a winner unless one vendor leads on the weighted total and pass
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The evidence source column is what made this trustworthy. Scoring a real helpdesk selection, more than half the cells came back as told by sales, which was an accurate picture of how little we had actually tested and explained why two of us disagreed so strongly. The exit cost estimate on the eventual winner was larger than the first year licence, and that changed the contract length we asked for rather than the vendor we chose.",
+      "Scoring without an evidence source column produces numbers that feel researched when most cells rest on what a salesperson said, which is also why two evaluators can disagree so hard about the same product. Naming the source per cell turns a scoring argument into a testing plan. Exit cost is the other routine omission, and it tends to change the contract length rather than the choice.",
   },
 
   article: {

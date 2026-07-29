@@ -96,7 +96,7 @@ Never recommend a degree. Never recommend general upskilling. Never suggest a po
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The two posting threshold removed most of the noise. Run against a single advertisement, both models generated a study plan for one company's wish list, including a tool that appeared nowhere else in the market. The claim downgrade was the uncomfortable part: on my own test input, three of eight claims had no artefact behind them, and one of those was something I had put on a CV for years. GPT-5.2 still drifts toward recommending courses unless the preference for work based evidence is stated.",
+      "One advertisement is one company's wish list, and planning against it spends study time on a tool that appears nowhere else in the market, which is why the prompt refuses to run below two postings. Claims are handled the same way, so anything with no artefact behind it is downgraded rather than restated, including lines that have sat on a CV for years. GPT-5.2 reaches for courses unless work based evidence is named as the preference.",
   },
 
   article: {

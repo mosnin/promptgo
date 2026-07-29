@@ -99,7 +99,7 @@ Never write: perfect for any occasion, high quality, premium, must have, or any 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The specification rule had to be written as outranking every other instruction, because with a soft version all three models I tried would invent a plausible weight or material when the word count needed filling. Making the marker inline rather than a footnote was the second fix: footnoted gaps got ignored, whereas a marker sitting in the middle of a sentence is impossible to publish by accident.",
+      "When word count needs filling, models invent a plausible weight, fabric or material rather than leave a gap, so the specification rule has to be written as outranking every other instruction in the prompt. The missing data marker also sits inline rather than in a footnote, because footnoted gaps get skimmed past while a marker mid sentence cannot be published by accident.",
   },
 
   article: {

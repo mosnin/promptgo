@@ -85,7 +85,7 @@ Never soften an UNOWNED action into a team assignment. Never convert a suggestio
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Every model I tried was generous about what counted as a decision, promoting anything phrased confidently into the decisions list even when the transcript showed the group moving on without agreeing. Adding the authority and no objection test cut false decisions sharply. The UNOWNED convention came later, after a set of notes assigned four actions to the team and none of them happened.",
+      "Confidently phrased discussion gets promoted into the decisions list by every model, even where the transcript shows the group moving on without agreeing. The authority and no objection test is what separates a decision from a strong opinion. Actions fail in a different shape, because a task assigned to the team belongs to nobody, which is what the UNOWNED marker is there to catch.",
   },
 
   article: {

@@ -99,7 +99,7 @@ Then output a test plan: which single variant to run against which, what result 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I built this after auditing a client account with 40 live variants and no learning from any of them, because every variant was the same promise with different adjectives. Naming the five angles as fixed slots fixed it, but only after I added the instruction to cut copy rather than argument. Before that, tight character limits made all three models quietly collapse the contrarian and objection angles into the outcome one.",
+      "Ad accounts accumulate variants that are the same promise with different adjectives, so a test between them measures phrasing and teaches nothing. Naming the five angles as fixed slots is what forces each variant to argue a different case. Tight character limits push models to collapse the contrarian and objection angles into the outcome one, so the prompt says to cut copy rather than argument.",
   },
 
   article: {

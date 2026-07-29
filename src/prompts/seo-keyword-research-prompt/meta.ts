@@ -94,7 +94,7 @@ CRITICAL: never state or estimate a monthly search volume, a keyword difficulty 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The prohibition on numbers came from watching a client plan a quarter around volumes a model had produced with complete confidence and no source. Every model I tested would generate a plausible looking figure for any phrase asked. Forbidding it outright, and requiring named confidence levels instead, produced output that was less impressive to read and considerably more useful, because the uncertain parts were finally visible.",
+      "Any phrase put to a model comes back with a search volume attached, stated confidently and sourced from nothing, and quarterly plans get built on those figures. Forbidding numbers outright and requiring named confidence levels instead produces output that looks less impressive and is far more usable, because the parts nobody actually knows are finally labelled as such.",
   },
 
   article: {

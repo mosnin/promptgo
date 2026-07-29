@@ -85,7 +85,7 @@ After three questions, stop the roleplay and give me three lists: claims I suppo
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The instruction to delay the challenge on a vague word turned out to matter more than anything else. Probing immediately lets a candidate patch the sentence and move on. Coming back to it two exchanges later, which is what real panels do by accident, is what exposes whether the detail existed. GPT-5.2 kept slipping back into supportive coaching around turn six and needed the no compliments rule repeated.",
+      "Challenging a vague word the moment it appears lets a candidate patch the sentence and move on, so the prompt holds the question back and returns to it a couple of exchanges later, which is closer to how a real panel stumbles onto an inconsistency. Left alone, GPT-5.2 slides into supportive coaching after a few turns, so the ban on compliments has to be restated.",
   },
 
   article: {

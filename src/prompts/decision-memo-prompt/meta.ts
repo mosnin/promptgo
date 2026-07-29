@@ -99,7 +99,7 @@ Rules: no adjectives in the recommendation. Every number must come from the evid
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The section that changed how these memos landed was what would have to be true. Without it, every draft read as advocacy and executives responded by hunting for the weakness. With the assumptions stated and confidence levels attached, the conversation moved to whether the assumptions held, which is the conversation worth having. Gemini needed the explicit instruction not to hedge, or it produced assumptions so qualified they committed to nothing.",
+      "Ask a model for a recommendation and it argues for one, which invites the reader to hunt for the weak point instead of testing the reasoning. Naming what would have to be true, with a confidence level attached to each assumption, moves the argument onto ground a reader can check. Gemini hedges those assumptions into meaninglessness unless told plainly not to.",
   },
 
   article: {

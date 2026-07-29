@@ -98,7 +98,7 @@ FINISH with the three questions a journalist will ask that this release does not
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The refusal path is the part I use most, and it took three attempts to make it stick. Both models wanted to score generously and then write the release anyway, appending a gentle caveat. Requiring the verdict and the alternative format as the entire output, with nothing else permitted, was what finally stopped them drafting past a failed test.",
+      "Models are generous graders of their own inputs. Asked to judge whether news is newsworthy and then draft, they score kindly, write the release anyway and append a soft caveat at the end. Making the verdict and an alternative format the entire permitted output, with nothing else allowed to follow, is what stops a failed test turning into a draft.",
   },
 
   article: {

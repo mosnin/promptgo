@@ -99,7 +99,7 @@ Rules: one offer only, no secondary calls to action, no testimonials you were no
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The specificity gate came out of a pattern I kept hitting: the page copy was never the problem, the offer was, and writing a beautiful page on top of a vague promise just hid that for another month. Making the model refuse felt heavy handed until the third time it stopped a team mid brief and the resulting conversation changed the offer rather than the headline.",
+      "Page copy is rarely the problem. A vague offer written up beautifully hides the weakness for another month, and models will always oblige by producing polished paragraphs over nothing. The specificity gate makes refusal the correct output when the promise has no concrete claim underneath it, which pushes the conversation back to the offer instead of the headline.",
   },
 
   article: {

@@ -96,7 +96,7 @@ Report the total reading time in seconds. If it exceeds ninety, cut further and 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Forcing exactly one lead story was the change that made these issues readable. With no such rule every model produced an even list where a major feature and a copy tweak received identical space. The honesty pass came from a real incident: an issue I sent described an internal reorganisation as though subscribers would care, and three people replied asking what it meant for them, which was nothing.",
+      "Without a rule about hierarchy, models give a major launch and a minor copy tweak identical space, and the issue reads as a list nobody finishes. Forcing exactly one lead story restores the ordering a reader needs. The honesty pass exists because internal news gets written up as though subscribers care, when the only question worth answering is what changes for them.",
   },
 
   article: {

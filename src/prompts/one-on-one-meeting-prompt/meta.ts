@@ -97,7 +97,7 @@ Do not produce coaching platitudes, do not suggest icebreakers, and do not write
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The ledger changed these meetings more than the questions did. Once I started listing how many sessions an item had been open, I discovered a conference budget request I had acknowledged three times across four months and never answered. Both models produce warm generic questions unless the ban on how are things is written explicitly, and GPT-5.2 will reintroduce an icebreaker if the context field is short.",
+      "Carrying a ledger of open items, each tagged with how many sessions it has been raised, is what stops a request being acknowledged repeatedly and never answered. Question quality is the easier half. Both models produce warm generic openers unless how are things is banned in those exact words, and GPT-5.2 reinstates an icebreaker whenever the context field is short.",
   },
 
   article: {

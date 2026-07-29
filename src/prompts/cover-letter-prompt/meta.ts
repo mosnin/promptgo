@@ -87,7 +87,7 @@ If I gave you something awkward, put one plain sentence about it in its own shor
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Both models wanted to open by admiring the company. With an empty employer field Claude Opus 4.5 produced warm praise for a mission it had never seen, which is precisely the sentence that gets a letter binned. The refusal marker stopped that. GPT-5.2 held the 250 word ceiling reliably but kept smuggling a second argument into the closing paragraph until I capped the letter at three paragraphs as well.",
+      "Every model opens a cover letter by admiring the employer, and with an empty employer field Claude Opus 4.5 still writes warm praise for a mission it has never seen, which is the exact sentence that gets a letter discarded. The refusal marker forces that gap to be filled with something real instead. GPT-5.2 holds the word ceiling but smuggles a second argument into the closing paragraph unless the paragraph count is capped too.",
   },
 
   article: {

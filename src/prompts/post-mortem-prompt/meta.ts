@@ -90,7 +90,7 @@ PHASE FIVE: WHAT WE STILL DO NOT KNOW, and what it would take to find out.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Separating the timeline phase from the analysis phase was the change that made these usable. Run as one task, every model produced a narrative that quietly resolved the gaps in the accounts, and the resulting document read as authoritative while containing invented sequencing. The blame check was added after a draft concluded that an engineer should have checked more carefully, which is where a review stops rather than where it ends.",
+      "Run as a single task, models resolve the gaps between accounts by inventing plausible sequencing, and the finished document reads authoritative while being partly fabricated. Splitting timeline construction from analysis keeps unknowns visible as unknowns. The blame check catches the other failure, where the conclusion lands on someone who should have checked more carefully, which ends a review rather than finishing it.",
   },
 
   article: {

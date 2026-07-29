@@ -107,7 +107,7 @@ Do not write a script for me. Do not suggest a compliment sandwich. Do not tell 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Section three is the one that has changed actual conversations for me. Preparing to move an account, the model pointed out that the six weeks I sat on the client's request was the same delay I was about to criticise, which was true and which I had not connected. Both models drift towards writing my side if the request is at all ambiguous, so the instruction against scripting sits at the top and again at the bottom of the prompt.",
+      "Section three asks what the person raising the issue contributed to it, and models are unusually good at spotting a symmetry the writer cannot see, such as a delay on one side matching the delay about to be criticised. Drift is the harder problem. Given any ambiguity, a model starts writing one side's lines, so the ban on scripting sits at the top of the prompt and again at the end.",
   },
 
   article: {

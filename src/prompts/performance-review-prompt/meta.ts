@@ -93,7 +93,7 @@ Never use: rockstar, superstar, needs to be more proactive, could take more owne
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The no evidence marker changed how I prepare rather than how I write. The first time I ran it with a year of vague impressions, two thirds of the draft came back marked, which was an accurate verdict on my note keeping. I now log specific incidents through the year because of it. The section comparing self assessment to observation was the one direct reports responded to most, usually because it named something they had been quietly worrying about.",
+      "A year of vague impressions produces a review of vague impressions, and the no evidence marker makes that visible rather than letting fluent prose paper over it. Marking instead of deleting is deliberate, because the gap says as much about the manager's records as about the employee's year. Comparing the self assessment against observation is the section people react to, since it names what they were already worrying about.",
   },
 
   article: {

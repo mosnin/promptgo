@@ -88,7 +88,7 @@ Then give me three things: the script with a slash at each pause, the exact spok
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I timed thirty of these being read aloud before settling on 45 words. Both models write comfortably to a word limit but neither has any sense of how long speech takes, so asking for eighteen seconds directly produced scripts of eighty words. Giving the ceiling in words and asking for the seconds as an estimate fixed it in one revision.",
+      "Duration instructions do not work. A model writes comfortably to a word limit but has no sense of how long speech takes, so asking for eighteen seconds of voicemail produces a script nobody can read in under thirty. Setting the ceiling in words and requesting the duration only as an estimate puts the constraint where the model can honour it.",
   },
 
   article: {

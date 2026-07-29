@@ -93,7 +93,7 @@ Finally, name the single piece most likely to slip and what to do when it does.`
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Putting the capacity check before the scheduling step was the change that made these calendars survive contact with a real month. When scheduling came first, every model produced a plan at roughly double the stated capacity and then justified it. Asking for the sustainable number as a standalone output, before any dates existed, made the overcommitment impossible to hide inside the schedule.",
+      "Order the steps wrong and the plan is unsalvageable. When scheduling comes first, models produce a calendar at roughly double the stated capacity and then write a justification for it. Asking for the sustainable output rate as a standalone answer, before any dates exist, makes overcommitment impossible to bury inside a grid of weeks.",
   },
 
   article: {

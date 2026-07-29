@@ -83,7 +83,7 @@ Never suggest that I overcome, push past, or reframe the objection before the di
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Early drafts asked for likely meanings and got three variations of the customer not understanding the value, which is the flattering answer and rarely the true one. Requiring that one reading be external to the product surfaced the reason that turned out to be correct in most of the deals I tested it against, which was that the person on the call could not approve the spend and was reluctant to say so.",
+      "Asked what an objection might mean, models return three versions of the customer not understanding the value, which is the flattering reading and rarely the accurate one. Requiring at least one interpretation external to the product surfaces the reasons that actually stall deals, most often that the person on the call cannot approve the spend and will not say so directly.",
   },
 
   article: {

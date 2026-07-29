@@ -88,7 +88,7 @@ Return the subject line, the message, and one line naming what new thing you add
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Banning the stock openings was not enough on its own. All three models simply invented new ways to say the same empty thing, including one that opened by observing that inboxes get busy at this time of year. The rule that forced improvement was requiring the model to name which category of new information it had added, because a fabricated reminder cannot be labelled as an example or a resource without the gap becoming obvious.",
+      "Banning stock openings on its own achieves nothing, since models invent fresh ways to say the same empty thing, down to remarking that inboxes get busy at this time of year. What forces real content is requiring the model to name which category of new information the message adds, because a fabricated reminder cannot be labelled an example or a resource without the gap showing.",
   },
 
   article: {

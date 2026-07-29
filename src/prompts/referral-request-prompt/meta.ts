@@ -87,7 +87,7 @@ BLOCK C, THE EXCHANGE. One sentence stating what the customer gets from making t
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I added the sixty day rule after watching the first version write a warm, confident ask off a nine month old testimonial for an account whose usage had halved since. Claude enforces the date check reliably. GPT-5.2 twice accepted a proof moment with no date attached until the instruction spelled out that an undated observation fails the gate.",
+      "Proof of a customer's success goes stale quickly, and a warm referral ask built on an old testimonial lands badly once usage has dropped. The sixty day rule makes recency a gate rather than a preference. Claude enforces the date check consistently, while GPT-5.2 accepts an undated proof moment unless the instruction states plainly that anything without a date fails.",
   },
 
   article: {

@@ -98,7 +98,7 @@ CUT CHECK. For each hook, list the words you removed to fit the limit, so I can 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The cut check was an accident that turned out to be the most useful line in the output. I added it to debug why hooks felt thin, and found the models were consistently dropping the number to make room for a transition word. Seeing the cuts listed made me rewrite the instruction so the proof detail is protected and the connective tissue goes instead.",
+      "Hooks come back thin for a reason worth surfacing: to fit a character limit, models drop the concrete number and keep the transition word, because connective language feels like grammar while a statistic feels like an optional detail. The cut check lists what was removed, and the instruction inverts the priority so the proof survives and the smoothing goes.",
   },
 
   article: {

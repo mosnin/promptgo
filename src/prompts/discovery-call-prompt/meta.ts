@@ -86,7 +86,7 @@ Do not write a script. Do not include rapport building small talk. Do not sugges
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Every early version produced a polite questionnaire where each question was a softer restatement of the last, so a rep could ask all five and learn nothing. Forcing each question onto a named dimension fixed the redundancy. The instruction to flag the question most likely to draw a dishonest answer was added after two calls where the prospect gave a confident budget figure that turned out to be aspirational.",
+      "Left unconstrained, a discovery question set becomes a polite questionnaire in which each item is a softer restatement of the one before, so a rep can ask all five and learn nothing. Pinning every question to a named dimension removes the redundancy. The flag on the question most likely to draw a dishonest answer exists because budget figures are routinely aspirational.",
   },
 
   article: {

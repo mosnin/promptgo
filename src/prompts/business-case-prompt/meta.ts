@@ -107,7 +107,7 @@ Use no figure I did not give you. Write [FIGURE NEEDED] instead, and never annua
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Forcing the priced counterfactual to lead was the change that got cases approved. When it sat at the end, reviewers compared my number to nothing and the answer was always to wait a quarter. Every model tested will also annualise a single month of data if you let it, so the explicit ban on that is doing real work. Claude was the only one that reliably kept internal time in days rather than converting it to a salary figure I never supplied.",
+      "Placed at the end, a priced do nothing option reads as a formality, and reviewers compare the proposal against nothing at all, so the safe answer is always to wait a quarter. Leading with it forces the comparison an approval actually turns on. Models also annualise a single month of data unless banned, and convert internal hours into a salary figure that was never supplied.",
   },
 
   article: {

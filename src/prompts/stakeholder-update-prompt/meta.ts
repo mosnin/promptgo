@@ -98,7 +98,7 @@ If any stakeholder's rendering would consist only of good news, say so explicitl
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The coverage table caught something I did not expect. Running it on a real migration, one ledger statement about a contract renewal date reached no stakeholder at all, because it did not obviously belong to anyone, and it was the thing that later forced a rushed decision in December. Every model tested wants to open renderings with a polite recap of the project, and the instruction against preamble has to be repeated in the rules block or it comes back.",
+      "Coverage tables sound like bureaucracy until one shows a fact that reached no stakeholder at all, which happens most often with items that do not obviously belong to anyone and later force a rushed decision. Mapping every ledger entry to a named recipient is cheap insurance. Models open each rendering with a polite recap, so the ban on preamble belongs in the rules block.",
   },
 
   article: {

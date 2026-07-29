@@ -99,7 +99,7 @@ Do not accept price as a final answer without testing it. Do not conclude that t
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Instructing it to test the stated reason rather than record it changed almost every conclusion. Across eleven lost deals I reviewed, price was given as the reason seven times and survived scrutiny twice. The most common real turning point was a stakeholder we met too late or never met at all, which only became visible once I started including periods of silence in the timeline rather than just the meetings.",
+      "Price is the reason buyers give and usually not the reason they left, so an analysis that records the stated cause simply launders it. Instructing the model to test that reason against the timeline changes most conclusions. Including periods of silence alongside the meetings is what exposes the common real turning point, a stakeholder met too late or never met at all.",
   },
 
   article: {

@@ -92,7 +92,7 @@ Finally, write the eight line version I can paste into another prompt to keep ge
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The contrast test section was an afterthought that turned out to carry the whole document. Teams read a list of rules and nod; they read a competitor sentence rewritten in their own voice with the changes named and immediately understand what to do. I also learned to demand counts rather than descriptions, because both models will characterise sentence length as varied unless you require an actual average.",
+      "Rules alone do not change writing. Teams nod at a list of adjectives and keep producing the same sentences, which is why the contrast test carries this document: a competitor line rewritten in the house voice, with each change named, is immediately actionable. Models also characterise sentence length as varied unless the prompt demands an actual average, so counts are required rather than descriptions.",
   },
 
   article: {

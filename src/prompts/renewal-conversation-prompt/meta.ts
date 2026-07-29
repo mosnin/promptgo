@@ -100,7 +100,7 @@ STAGE FOUR, always. List every claim in the above that my inputs do not actually
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The UNKNOWN grade came out of testing rather than design. Given a blank people field, all three models simply graded champion continuity green and moved on, which is the exact error that loses accounts after a reorganisation. Forcing UNKNOWN and making two of them trigger an escalation turned a silent assumption into a visible gap.",
+      "Blank fields do not stop a model grading champion continuity green and moving on, which is the exact failure that loses accounts quietly after a reorganisation. An explicit UNKNOWN grade forces the absence to be recorded rather than assumed away, and requiring two of them to trigger an escalation turns a silent assumption into something the renewal owner has to answer.",
   },
 
   article: {

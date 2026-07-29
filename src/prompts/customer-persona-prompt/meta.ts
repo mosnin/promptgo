@@ -84,7 +84,7 @@ CRITICAL: after every field, tag it [EVIDENCED] if it follows from the evidence 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The evidence tagging was added after I watched a team present a fully invented persona to their board as research. Every model I tested produced confident, plausible detail from a two line input without any signal that it was fabricated. Forcing the tag per field made the emptiness visible immediately, and the first team I gave it to went and ran four interviews rather than shipping the document.",
+      "Two lines of input are enough for a model to generate a confident, richly detailed persona with no signal anywhere that the detail is invented, and documents like that get presented to boards as research. Tagging every field with its evidence source makes the emptiness visible at a glance, which turns the output into a list of interviews still owed rather than a finished artefact.",
   },
 
   article: {

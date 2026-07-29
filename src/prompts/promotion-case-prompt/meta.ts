@@ -97,7 +97,7 @@ Then give me three things. A case of 400 words or fewer, written the way my mana
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The witness requirement changed almost every case I tested. Without it, both models accepted anything my imaginary manager could vouch for, and the resulting packet was indistinguishable from a good performance review. Requiring a named person outside the reporting line downgraded roughly a third of the sustained claims in my first run. GPT-5.2 still tries to argue from readiness where evidence is thin, so the ban on potential has to stay stated in those words.",
+      "Without a named witness outside the reporting line, models accept any claim a manager could vouch for, and the packet becomes a well written performance review instead of evidence of work already done at the next level. Attaching a witness downgrades a large share of sustained claims, which is the honest result. GPT-5.2 argues from readiness where evidence is thin, so potential is banned in that word.",
   },
 
   article: {

@@ -95,7 +95,7 @@ Rules: no section called Introduction, Conclusion or Final Thoughts. Every headi
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The author required tag started as a note to myself and turned out to be the most useful thing in the output. Running it across a backlog of twelve planned articles, four came back with every section tagged, which told me those pieces had no reason to exist under our name. The thesis ranking step was added later because all three models default to proposing a survey of the topic when you ask for an angle.",
+      "Ask a model for an angle and it proposes a survey of the topic, because a survey is defensible and an argument can be wrong. The thesis ranking step forces a position before any headings exist. The author required tag then does the harder work: a section any competitor could have written signals a piece with no reason to carry your name.",
   },
 
   article: {

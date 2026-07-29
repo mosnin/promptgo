@@ -87,7 +87,7 @@ STEP 6. If fewer than eight won accounts were supplied, label the entire output 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Step five was the addition that made this usable. Without it every model produced a rule that looked authoritative, and when I checked it by hand against our own closed won list it would have disqualified two of our largest customers. Making the model name those accounts itself turned an argument about the rule into a decision about which two exceptions we were willing to lose.",
+      "Qualification rules produced in one pass look authoritative and are untested, and applied backwards they often disqualify some of the best customers already closed. Step five makes the model run the rule against the existing won list and name the accounts it excludes. That converts an argument about wording into a decision about which exceptions are acceptable to lose.",
   },
 
   article: {

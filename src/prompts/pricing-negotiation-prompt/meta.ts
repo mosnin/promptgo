@@ -92,7 +92,7 @@ Never suggest a discount with nothing asked in return. If the honest answer is t
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Requiring the walk away number to be calculated with visible arithmetic, rather than described, is what made this useful. Given a soft instruction the models produced reasonable sounding floors that did not survive being checked against the margin figures. The ten second script was added after watching two reps concede in principle within one sentence of a discount request, which no later position could undo.",
+      "Soft instructions about a walk away price yield reasonable sounding floors that fall apart the moment they are checked against margin. Requiring the number to be derived with visible arithmetic makes the floor auditable before the call rather than after it. The ten second script exists because a discount request draws a concession in principle within one sentence, and no later position undoes that.",
   },
 
   article: {

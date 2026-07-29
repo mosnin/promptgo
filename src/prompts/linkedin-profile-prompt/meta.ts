@@ -95,7 +95,7 @@ Respect my visibility constraint in everything you suggest.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Running this on my own profile, the term audit found that the single job title I most wanted to be found for appeared nowhere on the page, while three tool names I had not touched in four years were in the skills list. Claude Opus 4.5 handled the synonym rule well. GPT-5.2 kept counting near matches as present until I spelled out that a boolean search does not resolve synonyms.",
+      "Profiles accumulate the vocabulary of the job someone used to do, so the title they now want to be found for is often absent while long dead tool names still sit in the skills list. A term audit against target postings makes that visible. GPT-5.2 counts a near match as present, which is wrong, because recruiter search does not resolve synonyms and matches the string that was typed.",
   },
 
   article: {

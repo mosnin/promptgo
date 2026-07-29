@@ -89,7 +89,7 @@ Output the classified list first, then the rewritten resume section, then the nu
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The first build let the model estimate. Given a line about reducing support backlog with no figures attached, GPT-5.2 wrote a confident 30 percent and it read perfectly, which is exactly the danger. Banning any number absent from the raw facts fixed it. Claude Opus 4.5 needed the separate rule about verbs, because it kept quietly turning coordinated into led while leaving the underlying claim untouched.",
+      "Left free to estimate, GPT-5.2 attaches a confident percentage to a backlog reduction that arrived with no figures at all, and the line reads perfectly, which is what makes it dangerous. Numbers absent from the supplied facts are therefore banned outright rather than hedged. Claude Opus 4.5 inflates verbs instead, turning coordinated into led while the underlying claim stays untouched, so verbs get a separate rule.",
   },
 
   article: {

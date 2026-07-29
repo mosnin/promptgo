@@ -95,7 +95,7 @@ Never include a grievance in the letter, however restrained. If my reason descri
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I fed it a genuinely bitter reason to see what would happen. Gemini 3 Pro wrote a paragraph of measured criticism that read beautifully and would have been circulated within a day. The separate what I left out list solved this better than any tone instruction did, because seeing the sentence quarantined and labelled is more persuasive than being told not to write it. Every model guessed a notice period until guessing was forbidden.",
+      "Fed a genuinely bitter reason for leaving, Gemini 3 Pro writes a paragraph of measured criticism that reads beautifully and would circulate around a former employer within a day. Quarantining those sentences into a separate list of what was deliberately left out works better than any tone instruction, because seeing the line labelled is more persuasive than being told to omit it. Notice periods get guessed unless guessing is forbidden.",
   },
 
   article: {

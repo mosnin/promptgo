@@ -104,7 +104,7 @@ Never use: leading, innovative, seamless, end to end, best in class, next genera
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The substitution test is the only part I would keep if I had to cut the rest. Running it against six of my own past positioning statements, four failed immediately, including one that had been on a homepage for two years. Models are reluctant to fail their own drafts, so the instruction had to be explicit about naming competitors and showing reasoning before judging, otherwise all three candidates passed every time.",
+      "The substitution test is the load bearing step, because a positioning statement a competitor could sign without objection is not positioning. Models are reluctant to fail a draft they just produced, so the instruction has to name real competitors and require the reasoning before the verdict. Left softer than that, every candidate passes and the exercise confirms whatever was already written.",
   },
 
   article: {

@@ -99,7 +99,7 @@ Finish with one line on whether this door is open, closed, or open for a differe
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I have sent a lot of these messages from the other side, and the question rewrite is the part that matters. Asked why was I rejected, I would give a careful non answer, because that phrasing sounds like the opening of a complaint. Asked which part of the brief I was furthest from, I would answer honestly in two lines. Claude Opus 4.5 applies the no reply verdict more readily; GPT-5.2 will find a reason to write unless the automated rejection rule is stated explicitly.",
+      "The question a candidate wants to ask is why the rejection happened, and that phrasing reads to a hiring manager as the opening of a complaint, which draws a careful non answer. Rewriting it as which part of the brief the application sat furthest from requests the same information without inviting defensiveness. GPT-5.2 finds a reason to write even after an automated rejection unless that case is ruled out explicitly.",
   },
 
   article: {

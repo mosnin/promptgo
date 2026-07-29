@@ -93,7 +93,7 @@ STAGE E. If naming is restricted, also produce an unnamed version describing the
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Stage B came from losing six weeks on a finished piece because the customer's finance team would not stand behind a single percentage figure. Writing both versions up front means the refusal costs an email rather than a rewrite. GPT-5.2 produces fallbacks that are too close to the original unless the instruction spells out that a range must be genuinely wider.",
+      "Finance and legal teams routinely refuse to stand behind a specific percentage, and a finished case study built on one has to be rewritten from the claim outward. Stage B asks for both the precise figure and a defensible fallback before any narrative exists. GPT-5.2 writes fallbacks that barely differ from the original unless the instruction states that a range must be genuinely wider.",
   },
 
   article: {

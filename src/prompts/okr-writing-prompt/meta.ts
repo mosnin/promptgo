@@ -94,7 +94,7 @@ Cap the set at three key results. If my draft has more, tell me which ones you c
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Every model I tried was happy to accept launch the new wizard as a key result until the completion question was stated as a single yes or no test. Once it was, Claude demoted four of five items in my first real draft and told me the remaining one had no baseline, which was correct and mildly humiliating. Gemini needed the cap on three spelled out twice or it quietly kept a fourth.",
+      "Launch the new wizard passes as a key result for any model until completion is defined as a single yes or no test, at which point activity dressed as outcome collapses. Claude applies that test strictly and will also flag a surviving result that has no baseline behind it. Gemini treats the limit of three as advisory and quietly keeps a fourth unless the cap is repeated.",
   },
 
   article: {

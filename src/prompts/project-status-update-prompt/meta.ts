@@ -97,7 +97,7 @@ Banned words: ongoing, almost done, progressing well, on track when the only evi
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The first drafts kept converting a nine day engineering loss into a sentence about the team showing great flexibility. Requiring the variance in days before any narrative killed that, because a number cannot be phrased warmly. GPT-5.2 still tries to soften DATE UNKNOWN into a range if you give it any hint of one, so I now leave the events field completely silent about dates I do not have.",
+      "Given a slipping project, models convert lost engineering days into a sentence praising the team for flexibility, because narrative absorbs bad news and a number cannot. Stating the variance in days before any prose removes the option. GPT-5.2 also treats DATE UNKNOWN as an invitation and turns it into a range at the faintest hint, so the input should stay silent about dates nobody has.",
   },
 
   article: {
