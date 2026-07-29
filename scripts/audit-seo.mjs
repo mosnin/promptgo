@@ -39,10 +39,19 @@ const RULES = {
   intro: { min: 2, max: 4 },
   /** The focus keyword must land inside this fraction of the article. */
   keywordLeadFraction: 0.1,
-  /** Jaccard similarity over 5 word shingles above which two pages are duplicates. */
-  duplicateSimilarity: { warn: 0.14, error: 0.22 },
+  /** Jaccard similarity over 5 word shingles above which two articles are duplicates. */
+  duplicateSimilarity: { warn: 0.10, error: 0.18 },
+  /**
+   * The same test applied to prompt.text. Prompts share structural scaffolding
+   * (role line, input block, numbered instructions) so a higher floor is
+   * correct here, but two prompts that are substantially the same instruction
+   * are two pages that did not need to both exist.
+   */
+  promptSimilarity: { warn: 0.22, error: 0.32 },
   /** A sentence repeated across more than this many pages reads as templated. */
   sentenceReuse: 2,
+  /** An h2 heading reused on more than this many pages reads as a template. */
+  headingReuse: 2,
 };
 
 /**
@@ -423,6 +432,12 @@ function auditPrompt(meta, seen) {
   }
 
   seen.shingles.push({ slug, set: shingles(text) });
+  seen.promptShingles.push({ slug, set: shingles(prompt?.text ?? "") });
+  for (const heading of headings) {
+    const key = normalise(heading);
+    if (!seen.headings.has(key)) seen.headings.set(key, []);
+    seen.headings.get(key).push(slug);
+  }
   for (const sentence of sentences(text)) {
     if (!seen.sentences.has(sentence)) seen.sentences.set(sentence, []);
     seen.sentences.get(sentence).push(slug);
@@ -455,6 +470,8 @@ async function main() {
     keywords: new Map(),
     internalRefs: [],
     shingles: [],
+    promptShingles: [],
+    headings: new Map(),
     sentences: new Map(),
     testingNotes: [],
   };
@@ -504,6 +521,38 @@ async function main() {
             `article is ${(score * 100).toFixed(1)} percent similar to ${b.slug}.`,
           );
         }
+      }
+    }
+
+    /* The same check over the prompts themselves. The article can be entirely
+     * distinct while two pages ship near identical instructions, which is the
+     * version of duplication a reader notices first. */
+    for (let i = 0; i < seen.promptShingles.length; i += 1) {
+      for (let j = i + 1; j < seen.promptShingles.length; j += 1) {
+        const a = seen.promptShingles[i];
+        const b = seen.promptShingles[j];
+        const score = jaccard(a.set, b.set);
+        if (score >= RULES.promptSimilarity.error) {
+          byslug(a.slug)?.errors.push(
+            `prompt is ${(score * 100).toFixed(1)} percent similar to ${b.slug}. One of them is redundant.`,
+          );
+        } else if (score >= RULES.promptSimilarity.warn) {
+          byslug(a.slug)?.warnings.push(
+            `prompt is ${(score * 100).toFixed(1)} percent similar to ${b.slug}.`,
+          );
+        }
+      }
+    }
+
+    /* Heading reuse. Two pages sharing an h2 is coincidence, several sharing
+     * one is a template, and a templated heading set is the clearest signal a
+     * thin content classifier has to work with. */
+    for (const [heading, owners] of seen.headings) {
+      if (owners.length <= RULES.headingReuse) continue;
+      for (const owner of owners) {
+        byslug(owner)?.errors.push(
+          `h2 "${heading.slice(0, 50)}" is reused on ${owners.length} pages.`,
+        );
       }
     }
 

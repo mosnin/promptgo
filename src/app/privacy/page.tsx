@@ -16,18 +16,25 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       path="/privacy"
       updated="28 July 2026"
-      intro={`How ${site.name} handles data. The short version is that the files you convert never leave your device, and the only data we collect is anonymous usage measurement.`}
+      intro={`How ${site.name} handles data. The short version is that anything you type into a prompt panel stays in your browser, and the only data we collect is anonymous usage measurement.`}
     >
-      <h2>Files you process</h2>
+      <h2>What you type into a prompt</h2>
       <p>
-        Every prompt on this site runs as JavaScript inside your own browser. When you select a
-        file it is read from your disk into the memory of the browser tab, transformed there and
-        written back out as a download. The file is never transmitted to us, never written to a
-        server and never stored. Closing the tab discards it entirely.
+        Every prompt page has fill in fields for its variables. Those values are held in the
+        memory of your own browser tab and are used only to assemble the finished prompt shown
+        beside them. They are never transmitted to us, never written to a server and never
+        stored. Closing the tab discards them entirely.
       </p>
       <p>
-        You can verify this yourself. Open the network panel in your browser developer prompts,
-        run any conversion, and observe that no request carrying your file is made.
+        This matters more than it might sound, because people routinely put unreleased copy,
+        client names, salary figures and internal numbers into those fields. You can verify the
+        claim yourself: open the network panel in your browser developer tools, fill in a prompt,
+        and observe that no request carrying your input is made.
+      </p>
+      <p>
+        What you do afterwards with the copied prompt is between you and whichever AI assistant
+        you paste it into. That service has its own privacy policy and its own retention rules,
+        and this policy does not cover it.
       </p>
 
       <h2>Analytics</h2>
@@ -40,8 +47,8 @@ export default function PrivacyPage() {
       </p>
       <p>
         Prompt interaction events are recorded in aggregate form, for example that a conversion
-        completed on a given prompt page. These events never include file names, file contents or
-        any data derived from your files.
+        completed on a given prompt page. These events never include the values you type into a prompt panel or
+        any data derived from what you type into a prompt.
       </p>
 
       <h2>Advertising and cookies</h2>
@@ -67,7 +74,7 @@ export default function PrivacyPage() {
       <h2>Data we do not have</h2>
       <p>
         Because there is no account system, we hold no user records. We do not have your name,
-        email address, password, payment details or file history, because none of those things
+        email address, password, payment details or prompt history, because none of those things
         are ever collected.
       </p>
 

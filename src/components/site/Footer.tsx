@@ -9,6 +9,7 @@ const LEGAL_LINKS = [
   { href: "/explore", label: "Explore" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
   { href: "/sitemap.xml", label: "Sitemap" },

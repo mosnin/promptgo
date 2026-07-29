@@ -16,35 +16,36 @@ export default function TermsPage() {
       title="Terms Of Use"
       path="/terms"
       updated="28 July 2026"
-      intro={`The terms that govern your use of ${site.name}. They are short because the service is simple: free prompts, no account, and the files you produce are yours.`}
+      intro={`The terms that govern your use of ${site.name}. They are short because the service is simple: free prompts, no account, and whatever you produce with them is yours.`}
     >
       <h2>Using the service</h2>
       <p>
         The prompts on this site are provided free of charge for personal and commercial use. No
-        account is required and no licence fee applies. You may use the output files however you
-        wish, including in commercial work. We claim no rights over anything you process.
+        account is required and no licence fee applies. You may adapt the prompts and use whatever
+        you produce with them however you wish, including commercially. We claim no rights over
+        your output.
       </p>
 
       <h2>Acceptable use</h2>
       <p>
-        You agree not to use the site to process material you have no legal right to process,
-        and not to attempt to disrupt the site or the experience of other visitors. Because
-        processing happens on your own device, you remain solely responsible for the content of
-        the files you handle.
+        You agree not to use these prompts to produce material that is unlawful, and not
+        to attempt to disrupt the site or the experience of other visitors. You remain solely
+        responsible for what you generate with a prompt and for checking it before you publish,
+        send or act on it.
       </p>
 
       <h2>No warranty</h2>
       <p>
         The prompts are provided as is, without warranty of any kind, express or implied. While
-        each prompt is tested against real files, no software is defect free. Always keep an
-        original copy of any file that matters before transforming it.
+        every prompt is tested against current models before publishing, model behaviour changes
+        and output varies between runs. Always check a generated claim before relying on it.
       </p>
 
       <h2>Limitation of liability</h2>
       <p>
         To the maximum extent permitted by law, we are not liable for any loss of data, loss of
-        profit or other damages arising from use of this site. Since files are processed locally
-        and never transmitted, the practical risk is limited to the file you chose to process on
+        profit or other damages arising from use of this site. Since nothing you type is transmitted
+        and never transmitted, the practical risk is limited to the text you chose to paste on
         your own machine.
       </p>
 
