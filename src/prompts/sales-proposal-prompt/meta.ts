@@ -90,9 +90,9 @@ Write for the person who was not on the call. Assume no shared context beyond se
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The not discussed marker started as a way to catch invented metrics and ended up catching invented scope, which was the bigger problem. On four proposals I tested it against, the markers landed almost entirely in the section describing work the client had never mentioned wanting. Removing that scope shortened the proposals and, on two of them, moved the price under an approval threshold.",

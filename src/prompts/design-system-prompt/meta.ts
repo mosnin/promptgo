@@ -84,9 +84,9 @@ Finally, add a list titled NOT WORTH IT for any merge that would require redesig
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Running this against a real inventory of fourteen button variants, every model initially proposed collapsing to three and moving the rest behind props, including two variants that existed for a certification requirement. Adding the cannot change field fixed it. GPT-5.2 remains the most willing to say a merge is not worth doing, which is the answer that saves the most work.",

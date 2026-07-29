@@ -86,9 +86,9 @@ End with a beat table: one row per beat, naming who gained ground and the exact 
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The one in three answering ratio was the change that mattered. Without it both models wrote a courteous interview: question, full answer, next question. With it, GPT-5.2 started producing evasions that had to be read twice, which is what the scene needed. Claude Opus 4.5 keeps the two speech signatures apart for longer, though by beat eight both models drift toward a shared register and you have to cut back.",

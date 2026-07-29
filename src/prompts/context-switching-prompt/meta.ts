@@ -90,9 +90,9 @@ Return the context assignment, both switch counts, the rebuilt day as a timeline
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "My own day scored fourteen switches before batching and six after, and the number was what convinced me, because I would have guessed five before. The re entry note turned out to matter more than the batching: leaving the next physical action written down cut my restart time on interrupted work from several minutes to almost nothing. Gemini 3 Pro insists on grouping by project unless the setup definition is spelled out.",

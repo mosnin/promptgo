@@ -17,8 +17,8 @@ function countTaskTypes() {
   return new Set(prompts.map((prompt) => prompt.taskType)).size;
 }
 
-/** Distinct models any prompt has actually been tested against. */
-function countTestedModels() {
+/** Distinct models named across the catalogue as targets. */
+function countTargetModels() {
   const models = new Set<string>();
   for (const prompt of prompts) {
     for (const model of prompt.eeat.testedOn) models.add(model.toLowerCase());
@@ -35,7 +35,7 @@ export const catalogueStats = {
   prompts: totalPromptCount,
   categories: categories.length,
   taskTypes: countTaskTypes(),
-  testedModels: countTestedModels(),
+  testedModels: countTargetModels(),
   variables: countVariables(),
   /** Not a rounded figure. Nothing typed into a prompt panel is transmitted. */
   bytesUploaded: 0,

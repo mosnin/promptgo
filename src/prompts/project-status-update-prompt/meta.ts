@@ -92,9 +92,9 @@ Banned words: ongoing, almost done, progressing well, on track when the only evi
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The first drafts kept converting a nine day engineering loss into a sentence about the team showing great flexibility. Requiring the variance in days before any narrative killed that, because a number cannot be phrased warmly. GPT-5.2 still tries to soften DATE UNKNOWN into a range if you give it any hint of one, so I now leave the events field completely silent about dates I do not have.",

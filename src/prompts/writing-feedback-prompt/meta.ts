@@ -89,9 +89,9 @@ Never suggest wording, never rewrite, never offer a fix. Where you feel the pull
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Banning suggestions was harder than expected. Both models kept slipping into helpfulness, and GPT-5.2 in particular would name a problem and then quietly append a better opening line. Adding the instruction to describe the problem and stop cut most of it. On a piece I had rewritten four times, Claude Opus 4.5 put the drop off at paragraph two and named the reason in six words, which no line level review had ever surfaced.",

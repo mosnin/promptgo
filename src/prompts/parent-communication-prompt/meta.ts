@@ -102,9 +102,9 @@ Return.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The first drafts I generated were polite and unusable, because they buried a request for a parent to check a planner under two paragraphs of appreciation. Capping the message at one ask with a date fixed that. GPT-5.2 still likes the phrase I wanted to make you aware, which reads as the opening of a formal process, so I strike it before sending.",

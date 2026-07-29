@@ -95,9 +95,9 @@ Never invent a field that is not in the sources list. Where the sources cannot s
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "I ran this against three genuinely conflicting figures for clinic attendance and the reconciliation section found the cause in one attempt: finance was counting by invoice date and operations by appointment date, which differ whenever a booking crosses a month end. What no model got right unprompted was the eight edge cases. Every one of them produced four and stopped, so the count is now written into the instruction.",

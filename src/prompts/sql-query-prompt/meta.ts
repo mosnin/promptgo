@@ -86,9 +86,9 @@ STEP 6: WHAT WOULD MAKE THIS WRONG. List the schema facts you assumed but were n
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Requiring a predicted row count before any SQL was the change that mattered. On a revenue question with a line item table in the middle, both models produced a query that quietly multiplied every order by its item count, and the totals looked plausible. Made to predict one row per region first, GPT-5.2 spotted the fan out itself and aggregated before joining.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

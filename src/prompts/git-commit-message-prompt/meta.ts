@@ -89,9 +89,9 @@ Output only the message or messages, plus the disagreement report where there is
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Given a description and a diff together, both models paraphrased the description and ignored a redis version bump sitting in the same staged change. Forcing a file by file reading before the description is even considered fixed that on both. GPT-5.2 still needs the explicit ban list, or roughly one commit in six comes back as update dependencies and fix tests.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

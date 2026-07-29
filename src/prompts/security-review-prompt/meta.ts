@@ -87,9 +87,9 @@ Do not assign a severity score without an exploit path you can narrate end to en
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Asked to review a handler for security issues, both models produced a checklist of missing headers and a note about input validation, and neither noticed that a user supplied URL was fetched server side. Enumerating sources and sinks separately, then pairing them, surfaced it immediately on both. Claude Opus 4.5 still under reports log fields as sinks unless they are named.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],

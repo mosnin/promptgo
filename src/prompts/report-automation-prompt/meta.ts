@@ -96,9 +96,9 @@ You may not use a figure absent from the current input, and you may not compute 
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The stable section rule exists because every model I tried rewrote the definitions appendix, improving the prose slightly each cycle. After four simulated months the wording had drifted enough that one definition no longer matched the query behind it. Instructing the model to copy rather than reproduce fixed it, and I now diff the stable sections against last cycle before sending anything.",

@@ -83,9 +83,9 @@ Never speculate about their revenue, headcount, funding or internal decisions. I
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Working from a company name rather than pasted copy produced fluent analysis of a competitor that did not match the actual site, including two product lines that had been discontinued. Requiring pasted material and per claim tagging fixed both problems at once. The section on what the copy defends has been the most consistently useful, because over explanation is genuinely visible in word counts and points at real weaknesses.",

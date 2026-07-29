@@ -101,9 +101,9 @@ F. One sentence on whether this plan is actually deliverable, and if not, what h
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "I built this after a sixth former showed me a colour coded timetable giving every subject equal hours in a term containing an EPQ deadline and two coursework drafts. The models did the same thing until reserving deadline hours was made step three instead of an afterthought. GPT-5.2 still tries to solve a clash week by adding an evening to it, so I check that section by hand.",

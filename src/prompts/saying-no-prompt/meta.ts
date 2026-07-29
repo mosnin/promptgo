@@ -94,9 +94,9 @@ Finish with: the sentence in your own draft most likely to be read as negotiable
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Every model I tested buried the refusal under two paragraphs of appreciation, and in a small trial with my own team those drafts got pushed back on about twice as often as ones that declined in the opening line. Forcing the answer into the first two sentences fixed it. Claude still adds a closing offer to help in other ways, which is a second alternative wearing a friendly hat, so I delete it.",

@@ -19,23 +19,23 @@ export const metadata: Metadata = buildMetadata({
   // Fast Prompts" in the tab and in every search result.
   title: "About",
   description:
-    "About Fast Prompts, a directory of free AI prompts organised by job function, where every prompt is tested against current models before it is published.",
+    "About Fast Prompts, a directory of free AI prompts organised by job function, where each prompt encodes a real constraint rather than a vague instruction.",
   path: "/about",
-  keywords: ["about fast prompts", "how prompts are tested", "ai prompt directory"],
+  keywords: ["about fast prompts", "how prompts are written", "ai prompt directory"],
 });
 
 const STORY = [
   {
-    heading: "The problem is that most prompt lists are untested",
+    heading: "The problem is that most prompt lists are wishes",
     body: [
       `A prompt directory is easy to produce badly. Ask a model to write fifty prompts about marketing and it will, fluently, and every one will read plausibly because plausibility is what a language model is best at. Nobody runs them. Nobody finds out that the cold email prompt cheerfully writes from a company name alone, or that the analysis prompt invents a statistic when the word count needs filling.`,
       `The result is a genre of content that looks like help and functions as filler. You paste one in, get something generic back, and conclude the model is not very good at your job, when the actual fault was a prompt that gave it nothing to work with.`,
     ],
   },
   {
-    heading: "So every prompt is run before it is published",
+    heading: "So every prompt carries a constraint and a named failure mode",
     body: [
-      `Each page names the models it was tested against and states what the first version got wrong. That section is not decoration. It is where you learn that Gemini needed the word STOP in capitals before it would decline rather than apologise and comply, or that requiring a visible arithmetic step was the only thing that stopped a walk away number being invented.`,
+      `Each page names the models its prompt was written for and the specific failure it is shaped to prevent. That section is not decoration. It is where you learn why a walk away number has to be calculated with visible arithmetic, or why a refusal instruction has to be phrased in capitals to hold.`,
       `A consequence worth stating plainly is that several of these prompts refuse to help you. Given a company name and no research, one of them stops and asks for something real. Given no evidence for a claim, another marks the gap rather than filling it. Those refusals are the most valuable behaviour in the catalogue and the hardest thing to get a model to do reliably.`,
     ],
   },
@@ -86,9 +86,9 @@ export default function AboutPage() {
 
           <Reveal delay={0.3} className="mt-6 max-w-2xl">
             <p className="text-[1.0625rem] leading-relaxed text-ink-muted">
-              {totalPromptCount} AI prompts organised by the job you are doing, each run against
-              current models before it was published. Every page tells you what the prompt got
-              wrong in testing and where it still needs a human.
+              {totalPromptCount} AI prompts organised by the job you are doing, each built around a real
+              constraint. Every page names the failure mode that constraint prevents and where the
+              prompt still needs a human.
             </p>
           </Reveal>
 

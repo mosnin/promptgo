@@ -40,7 +40,7 @@ export function Footer() {
                 <Wordmark />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-ink-subtle">
-                {totalPromptCount} free AI prompts, tested against current models before they reach your
+                {totalPromptCount} free AI prompts, organised by the job you are doing rather than by the
                 browser. Nothing is uploaded, nothing is stored and nothing costs anything.
               </p>
             </div>

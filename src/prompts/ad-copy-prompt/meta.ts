@@ -94,9 +94,9 @@ Then output a test plan: which single variant to run against which, what result 
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "I built this after auditing a client account with 40 live variants and no learning from any of them, because every variant was the same promise with different adjectives. Naming the five angles as fixed slots fixed it, but only after I added the instruction to cut copy rather than argument. Before that, tight character limits made all three models quietly collapse the contrarian and objection angles into the outcome one.",

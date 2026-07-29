@@ -99,9 +99,9 @@ Never use: leading, innovative, seamless, end to end, best in class, next genera
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The substitution test is the only part I would keep if I had to cut the rest. Running it against six of my own past positioning statements, four failed immediately, including one that had been on a homepage for two years. Models are reluctant to fail their own drafts, so the instruction had to be explicit about naming competitors and showing reasoning before judging, otherwise all three candidates passed every time.",

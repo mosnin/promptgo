@@ -85,9 +85,9 @@ PHASE FIVE: WHAT WE STILL DO NOT KNOW, and what it would take to find out.`,
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Separating the timeline phase from the analysis phase was the change that made these usable. Run as one task, every model produced a narrative that quietly resolved the gaps in the accounts, and the resulting document read as authoritative while containing invented sequencing. The blame check was added after a draft concluded that an engineer should have checked more carefully, which is where a review stops rather than where it ends.",

@@ -100,9 +100,9 @@ Output.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Ran this with a tutor group of twenty eight in the spring term. The version without the slippage rule was abandoned by about half of them within a fortnight, because one missed week made the whole grid feel void. Adding an explicit instruction for what to drop kept most of them going, and the students who used it said the twenty percent cut was the part they resented and then relied on.",

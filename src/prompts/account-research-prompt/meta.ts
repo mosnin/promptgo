@@ -82,9 +82,9 @@ Never speculate about their revenue, headcount, budget or internal politics. If 
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Asking for a company summary produced pages of accurate, useless material. Restricting the output to findings that would change the approach cut it to a few lines and made it worth reading before a call. The section quoting their own vocabulary was unplanned and turned out to be what reps actually used, because outreach written in the prospect's words outperforms outreach written in ours by a margin I did not expect.",

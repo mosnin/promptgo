@@ -87,9 +87,9 @@ Finally, if my description of the ending suggests they might say something an em
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The decline line was the surprise. Early versions produced a warm ask with no exit, and when I tested both wordings on former colleagues, the version offering an easy no came back faster and twice produced a helpful redirection to somebody better placed. GPT-5.2 needed an explicit ban on suggested adjectives, because it kept ending the brief with a sentence proposing how the referee might describe me.",

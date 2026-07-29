@@ -89,9 +89,9 @@ Never advise me to imply a competing offer I do not have. Never tell me I deserv
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The unsourced marker exists because of one run. Given a single recruiter comment as the only data point, GPT-5.2 produced a tidy range with a midpoint, and I could not tell by looking which parts were mine. Forcing two independent sources before any range is stated fixed that. Gemini 3 Pro was the most willing to suggest hinting at other interest, so the ban on implied competing offers is written twice in the prompt.",

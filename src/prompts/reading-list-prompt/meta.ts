@@ -90,9 +90,9 @@ Return: the queue by question with minutes and the look for line, the delete lis
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Run against my own 200 item backlog, the age rule alone removed 130 items and I could not name a single one I missed a month later. The step that changed how I read was the look for line, because writing what I expected to find in advance made it obvious when an article was fifteen hundred words of preamble. GPT-5.2 tends to keep anything with a well known author, so I check the delete list for names rather than reasons.",

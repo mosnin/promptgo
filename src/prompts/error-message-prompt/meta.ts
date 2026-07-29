@@ -87,9 +87,9 @@ If the failure condition given to you actually covers several causes, split it a
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Both models wrote a polite apology and a retry suggestion for a declined card that our own data said retries at 4 percent, so the remedy field became mandatory input rather than something to infer. GPT-5.2 still leaks the upstream processor name into the visible string about one time in five, which is why the ban lists that explicitly.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

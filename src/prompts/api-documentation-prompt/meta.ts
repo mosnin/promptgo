@@ -87,9 +87,9 @@ Write nothing aspirational. Do not describe how the endpoint should behave. Do n
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "First runs against a real handler produced a rate limit section, a 429 response and a bearer token scheme, none of which existed anywhere in the code I supplied. Adding the citation requirement plus a quarantine section removed all three. Claude Opus 4.5 then correctly moved authentication into unverified because the dependency body was never pasted.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

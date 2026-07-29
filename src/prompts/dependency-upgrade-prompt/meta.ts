@@ -93,9 +93,9 @@ F. VERIFICATION AND RETREAT. Name the test, metric or log line that would reveal
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Both models summarised a migration guide competently and neither connected it to our call sites until the usage list became a required field. The CANNOT TELL verdict came after Claude Opus 4.5 confidently ruled out a validator rename we did use in three files. GPT-5.2 is noticeably better at the unlabelled breakage pass and worse at reachability.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],

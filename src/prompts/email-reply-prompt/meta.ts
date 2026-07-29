@@ -89,9 +89,9 @@ Return, in this order: the reply or reply not owed verdict, the ask list, the om
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The commitment audit exists because a draft I nearly sent contained the phrase happy to take a look at that this week, which both models had inserted as ordinary politeness. It was a two day commitment nobody had asked for in writing. Claude Opus 4.5 still tends to answer all three asks unless the one ask default is stated as a rule rather than a preference.",

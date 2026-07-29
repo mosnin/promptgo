@@ -74,7 +74,7 @@ export default function OpengraphImage() {
               display: "flex",
             }}
           >
-            {totalPromptCount} free AI prompts, tested before they are published
+            {totalPromptCount} free AI prompts, organised by the job you are doing
           </div>
           <div style={{ fontSize: 30, color: "#9aa1b1", display: "flex" }}>
             Tested prompts. No signup. Copy and paste.

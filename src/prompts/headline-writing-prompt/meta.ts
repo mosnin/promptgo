@@ -84,9 +84,9 @@ Never use a word or figure that has no basis in the article. Never promise a num
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Deleting rather than softening was the change that made the output worth reading. When I let models revise a failed headline they produced a vaguer version that passed the check by promising almost nothing. On a feature about waiting lists, GPT-5.2 lost seven of twelve to the payload check, and that count told me more about the draft than the surviving five did: the piece had one finding and four paragraphs of throat clearing.",

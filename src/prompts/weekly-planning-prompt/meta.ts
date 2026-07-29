@@ -86,9 +86,9 @@ End with one sentence naming the assumption most likely to break.`,
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Handed a full calendar, both models planned real work into gaps of twenty and thirty minutes and produced a week that looked achievable and was not. Requiring one ninety minute block with no meeting beside it exposed that in a single run. Gemini 3 Pro still tries to spend the reserve hours, so count the assigned total before accepting anything.",

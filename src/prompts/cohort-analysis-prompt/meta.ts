@@ -95,9 +95,9 @@ Never convert a count into a rate I did not request, never fill an unobserved ce
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "I fed all three models a grid where the newest cohort held 610 people and had been observed for two months. Every one of them opened by congratulating me on improving retention. Adding the observation length field and the comparability map fixed it immediately, and Gemini 3 Pro then flagged that my March and July cohorts had come from completely different acquisition channels, which I had not mentioned.",

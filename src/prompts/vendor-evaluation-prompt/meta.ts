@@ -100,9 +100,9 @@ Do not recommend a winner unless one vendor leads on the weighted total and pass
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The evidence source column is what made this trustworthy. Scoring a real helpdesk selection, more than half the cells came back as told by sales, which was an accurate picture of how little we had actually tested and explained why two of us disagreed so strongly. The exit cost estimate on the eventual winner was larger than the first year licence, and that changed the contract length we asked for rather than the vendor we chose.",

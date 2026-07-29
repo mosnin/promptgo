@@ -84,9 +84,9 @@ Rank the FAIL items by how many people are blocked outright rather than inconven
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "With only two verdicts available, every model I tried passed criteria it had no evidence for, including focus order from a static image. Adding the third verdict flipped roughly a quarter of the report to CANNOT DETERMINE, and those lines turned out to be the useful ones because each named the artefact that would settle it. Gemini still needs reminding that a portal changes the tab order.",

@@ -93,9 +93,9 @@ FINISH with the three questions a journalist will ask that this release does not
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The refusal path is the part I use most, and it took three attempts to make it stick. Both models wanted to score generously and then write the release anyway, appending a gentle caveat. Requiring the verdict and the alternative format as the entire output, with nothing else permitted, was what finally stopped them drafting past a failed test.",

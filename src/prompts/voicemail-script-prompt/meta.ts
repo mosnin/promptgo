@@ -83,9 +83,9 @@ Then give me three things: the script with a slash at each pause, the exact spok
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I timed thirty of these being read aloud before settling on 45 words. Both models write comfortably to a word limit but neither has any sense of how long speech takes, so asking for eighteen seconds directly produced scripts of eighty words. Giving the ceiling in words and asking for the seconds as an estimate fixed it in one revision.",

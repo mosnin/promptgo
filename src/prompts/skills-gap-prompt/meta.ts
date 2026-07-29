@@ -91,9 +91,9 @@ Never recommend a degree. Never recommend general upskilling. Never suggest a po
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The two posting threshold removed most of the noise. Run against a single advertisement, both models generated a study plan for one company's wish list, including a tool that appeared nowhere else in the market. The claim downgrade was the uncomfortable part: on my own test input, three of eight claims had no artefact behind them, and one of those was something I had put on a CV for years. GPT-5.2 still drifts toward recommending courses unless the preference for work based evidence is stated.",

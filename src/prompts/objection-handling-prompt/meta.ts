@@ -78,9 +78,9 @@ Never suggest that I overcome, push past, or reframe the objection before the di
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Early drafts asked for likely meanings and got three variations of the customer not understanding the value, which is the flattering answer and rarely the true one. Requiring that one reading be external to the product surfaced the reason that turned out to be correct in most of the deals I tested it against, which was that the person on the call could not approve the spend and was reluctant to say so.",

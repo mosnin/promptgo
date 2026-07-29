@@ -87,9 +87,9 @@ SECTION 5, THE CUT LINE. If the running order exceeds the minutes available, sta
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Section 3 exists because the first build simply omitted unsupported features, and reps then showed them anyway since nothing had told them not to. Naming the exclusions out loud, with reasons, changed behaviour in a way that silence never did. GPT-5.2 needs the phrase about anything you are proud of, or it only lists the obviously irrelevant items.",

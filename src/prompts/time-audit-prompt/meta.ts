@@ -90,9 +90,9 @@ Do not moralise about productivity and do not invent activity to fill the unacco
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Handed two weeks of my own calendar, all three models produced a tidy percentage breakdown that summed to a hundred and quietly swallowed eleven unaccounted hours into the meeting totals. Making the subtraction an explicit first step changed the whole reading. Claude Opus 4.5 kept recommending fewer meetings in general until the three named entries rule forced it to choose.",

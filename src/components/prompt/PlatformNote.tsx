@@ -37,8 +37,9 @@ export function PlatformNote({
       <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-ink-muted">
         {site.name} is a free directory of {site.tagline.match(/\d+/)?.[0] ?? "148"} AI prompts
         organised by the job you are doing rather than by the model you are using. Every prompt is
-        run against current models before it is published, and the page tells you what it produced.
-        No account, no paywall and no email capture stands between you and the copy button.
+        written as a working instruction rather than a wish, and each page names the failure mode its
+        constraints exist to prevent. No account, no paywall and no email capture stands between you
+        and the copy button.
       </p>
 
       <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-muted">
@@ -65,7 +66,7 @@ export function PlatformNote({
           className="inline-flex items-center gap-1.5 text-[0.8125rem] font-medium text-signal-bright"
         >
           <Icon name="info" size={13} />
-          How prompts are tested
+          How prompts are written
         </Link>
       </div>
 
@@ -83,13 +84,20 @@ export function PlatformNote({
 }
 
 /**
- * The EEAT byline. Renders the author, their credential and the models the
- * prompt was actually tested against, directly under the H1.
+ * The byline. Renders who is responsible for the page, which models the prompt
+ * was written for, and the design note explaining why it is built the way it
+ * is. Sits directly under the H1.
  *
- * This is visible on the page rather than buried in JSON-LD on purpose. A
- * trust signal that only a crawler can see is not a trust signal, and Google's
- * quality rater guidelines are explicit that the assessment is made from what
- * a person sees when they land on the page.
+ * Visible on the page rather than buried in JSON-LD on purpose. A trust signal
+ * only a crawler can see is not a trust signal, and the quality rater
+ * guidelines are explicit that the judgement is made from what a person sees.
+ *
+ * The wording here is deliberately "written for" rather than "tested on". The
+ * earlier version claimed each prompt had been run against the named models by
+ * the named author, which was not true of pages generated at this scale. A
+ * fabricated provenance claim is worse than no claim, so the label now states
+ * only what is actually the case: these prompts target those models, and the
+ * note explains the failure mode the constraints exist to prevent.
  */
 export function PromptByline({ prompt }: { prompt: RegisteredPrompt }) {
   return (
@@ -100,7 +108,9 @@ export function PromptByline({ prompt }: { prompt: RegisteredPrompt }) {
       </div>
 
       <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink-muted">
-        <span className="font-medium text-ink">Tested on {prompt.eeat.testedOn.join(", ")}. </span>
+        <span className="font-medium text-ink">
+          Written for {prompt.eeat.testedOn.join(", ")}.{" "}
+        </span>
         {prompt.eeat.testingNote}
       </p>
     </div>

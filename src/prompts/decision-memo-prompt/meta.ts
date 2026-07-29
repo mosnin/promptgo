@@ -94,9 +94,9 @@ Rules: no adjectives in the recommendation. Every number must come from the evid
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The section that changed how these memos landed was what would have to be true. Without it, every draft read as advocacy and executives responded by hunting for the weakness. With the assumptions stated and confidence levels attached, the conversation moved to whether the assumptions held, which is the conversation worth having. Gemini needed the explicit instruction not to hedge, or it produced assumptions so qualified they committed to nothing.",

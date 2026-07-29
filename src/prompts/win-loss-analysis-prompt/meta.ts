@@ -94,9 +94,9 @@ Do not accept price as a final answer without testing it. Do not conclude that t
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Instructing it to test the stated reason rather than record it changed almost every conclusion. Across eleven lost deals I reviewed, price was given as the reason seven times and survived scrutiny twice. The most common real turning point was a stakeholder we met too late or never met at all, which only became visible once I started including periods of silence in the timeline rather than just the meetings.",

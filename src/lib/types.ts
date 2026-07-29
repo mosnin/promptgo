@@ -137,16 +137,28 @@ export interface HowTo {
  * signal that only exists in a meta tag is not a trust signal.
  */
 export interface Eeat {
-  /** Named author credited in the byline and in Article schema. */
+  /**
+   * Who is responsible for the page. Normally the organisation rather than an
+   * individual: attributing a page to a named person implies that person wrote
+   * and checked it, which must be true if it is claimed.
+   */
   author: string;
-  /** One sentence establishing why that author is credible on this topic. */
+  /** One sentence on the standard the page was produced against. */
   authorCredential: string;
-  /** Models the prompt was actually run against before publishing. */
+  /** Models the prompt is written for. Rendered as "Written for ...". */
   testedOn: string[];
   /**
-   * First hand observation from testing. This is the "Experience" pillar and
-   * the single hardest thing for a content farm to fake, so it is required
-   * rather than optional, and the auditor rejects boilerplate here.
+   * Design note: the failure mode this prompt exists to prevent, and the
+   * constraint that prevents it.
+   *
+   * Must NOT be written as a first person account of testing. An invented
+   * anecdote about a specific occasion is a fabricated provenance claim, and
+   * on a directory this size it is also the thing most likely to be noticed.
+   * State what models reliably do wrong on this task and why the prompt is
+   * shaped the way it is. That is substantively true and just as useful.
+   *
+   * Still required and still checked for uniqueness, because a shared note
+   * across pages means the pages were not thought about separately.
    */
   testingNote: string;
 }

@@ -86,9 +86,9 @@ End with the count in each bucket and the one message you were least sure about.
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Both models filed about two thirds of a forty message inbox under reply now until the time budget was expressed as a hard count rather than a suggestion. GPT-5.2 still occasionally writes a draft for a message it filed under schedule, so check that the draft list and the reply bucket are the same length before you start sending.",

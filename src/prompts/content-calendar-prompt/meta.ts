@@ -88,9 +88,9 @@ Finally, name the single piece most likely to slip and what to do when it does.`
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Putting the capacity check before the scheduling step was the change that made these calendars survive contact with a real month. When scheduling came first, every model produced a plan at roughly double the stated capacity and then justified it. Asking for the sustainable number as a standalone output, before any dates existed, made the overcommitment impossible to hide inside the schedule.",

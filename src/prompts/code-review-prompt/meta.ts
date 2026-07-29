@@ -84,9 +84,9 @@ RULES. Do not rewrite the code. Do not suggest changes to lines the diff did not
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Asking for a verdict produced approval on a diff that dropped a transaction boundary, on both models, twice. Reframing it as produce the input that breaks this found the interleaving on the first attempt. The unverifiable list came later, after Claude Opus 4.5 confidently asserted a helper handled nulls when the helper had never been supplied to it.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

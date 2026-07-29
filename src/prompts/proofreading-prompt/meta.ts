@@ -82,9 +82,9 @@ STEP THREE. List what you could not check: claims of fact, the spelling of real 
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "Counting the conventions before judging them was the change that made this usable. Earlier versions imposed American spelling on a British document and reported forty seven errors, all of them wrong. The step three admission is the other thing I would not drop: on a report I ran last month it correctly refused to confirm two supplier names and one revenue figure, and the revenue figure turned out to be a transposition nobody had spotted in three reviews.",

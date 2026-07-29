@@ -93,9 +93,9 @@ CRITICAL: never recommend a second axis. Never recommend a chart form purely bec
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "The base size rule exists because of a readmission rate chart I built where one specialty had nine patients and the bar reached the top of the axis. Nobody in the room asked about the denominator. When I later fed the same shape of request to three models, all three cheerfully recommended a bar chart of rates and none mentioned the base until the prompt made the denominator a required field.",

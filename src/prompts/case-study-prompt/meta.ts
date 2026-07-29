@@ -88,9 +88,9 @@ STAGE E. If naming is restricted, also produce an unnamed version describing the
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Stage B came from losing six weeks on a finished piece because the customer's finance team would not stand behind a single percentage figure. Writing both versions up front means the refusal costs an email rather than a rewrite. GPT-5.2 produces fallbacks that are too close to the original unless the instruction spells out that a range must be genuinely wider.",

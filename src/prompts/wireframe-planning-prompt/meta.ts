@@ -89,9 +89,9 @@ Finish with one alternative ordering that would be correct if the reader arrived
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "I added the displacement cost column after watching a team argue for forty minutes about whether testimonials sat third or fifth. Made to write what it costs to demote each region, the model produced an argument both sides could attack, and the meeting ended in nine minutes. The cut line estimates are rough and should be checked against a real build before anyone quotes them.",

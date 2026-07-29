@@ -85,9 +85,9 @@ STEP 5: UNVERIFIABLE. List every place where behaviour preservation depends on s
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "The quirk clause came out of a real failure: a helper truncated instead of rounding, and both models silently corrected it while extracting a function, which would have shifted every historic total by a cent. Asking for a contract first made the truncation visible as a line item, and after that neither model touched it.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

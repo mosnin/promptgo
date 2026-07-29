@@ -91,9 +91,9 @@ Finish by naming which two of the five to test against each other and why those 
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Adding preview text to the output changed the results more than anything I did to the subject lines themselves. Once the two were generated together the models stopped producing previews that repeated the subject word for word, which is what most email tools default to. The plain control variant earns its slot: in the campaigns I ran it beat the curiosity hook slightly more often than it lost.",

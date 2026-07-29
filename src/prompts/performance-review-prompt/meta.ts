@@ -88,9 +88,9 @@ Never use: rockstar, superstar, needs to be more proactive, could take more owne
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The no evidence marker changed how I prepare rather than how I write. The first time I ran it with a year of vague impressions, two thirds of the draft came back marked, which was an accurate verdict on my note keeping. I now log specific incidents through the year because of it. The section comparing self assessment to observation was the one direct reports responded to most, usually because it named something they had been quietly worrying about.",

@@ -95,9 +95,9 @@ Never name a specific cause. You cannot see the deploy, the outage or the campai
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Gemini 3 Pro", "Claude Opus 4.5"],
     testingNote:
       "I tested this on eleven alerts saved from a retail warehouse over one winter. Seven of them stopped at gate one or gate two, which matched what had actually happened at the time. The gate that needed the most rewriting was the third: without the explicit demand for the five largest historical moves with dates, every model described the current change as unusual while the series plainly contained bigger ones.",

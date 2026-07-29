@@ -85,9 +85,9 @@ Do not modify the code under test. Where the contract and the code disagree, wri
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Given the function body, both models wrote tests that asserted the current output for each branch, which passed against a version I had deliberately broken with an off by one. Removing the body and supplying only the contract fixed it: GPT-5.2 caught the boundary on the first run, and Claude Opus 4.5 also flagged that the empty case was ambiguous in my wording.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

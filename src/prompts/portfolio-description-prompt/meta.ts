@@ -99,9 +99,9 @@ Finish with the single question a reviewer is most likely to ask about this entr
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "Requiring the rejected alternative is what separates this from marketing copy. On my first test entry, every decision came back with a bracketed marker, which was an accurate report on how little I could remember about my own reasoning two years later. GPT-5.2 tries hardest to smooth the bad outcome into a learning, and needs the instruction that the failure and the lesson share one sentence. Claude Opus 4.5 writes the more plausible reviewer question.",

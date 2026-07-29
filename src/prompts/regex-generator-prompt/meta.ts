@@ -85,9 +85,9 @@ STEP 5: TEST TABLE. Every positive and negative in a table with the expected res
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Asking for negatives before the pattern changed the results more than any wording elsewhere. On a ticket reference pattern both models initially accepted a lowercase variant and a seven digit number; made to enumerate near misses first, both produced correct anchored patterns. GPT-5.2 still needed reminding that the target engine had no lookahead.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

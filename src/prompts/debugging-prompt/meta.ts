@@ -87,9 +87,9 @@ Only after step five, and only when the top hypothesis is clearly ahead of the s
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Both models opened with a plausible fix for a cache bug that turned out to be a serialisation mismatch, so the fix ban went in and the quality jumped immediately. The discriminator field was the second addition: without it GPT-5.2 listed hypotheses that were all consistent with the same evidence, which is a list rather than a diagnosis.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

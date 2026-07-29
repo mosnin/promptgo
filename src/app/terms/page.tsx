@@ -37,7 +37,7 @@ export default function TermsPage() {
       <h2>No warranty</h2>
       <p>
         The prompts are provided as is, without warranty of any kind, express or implied. While
-        every prompt is tested against current models before publishing, model behaviour changes
+        every prompt is written against a documented contract, model behaviour changes
         and output varies between runs. Always check a generated claim before relying on it.
       </p>
 

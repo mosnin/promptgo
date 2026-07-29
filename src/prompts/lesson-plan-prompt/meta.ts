@@ -101,9 +101,9 @@ Produce exactly these sections.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Early runs kept producing a starter, a card sort and a plenary regardless of what the objective said, which is the shape of a plan rather than a plan. Forcing every step to name its objective link removed roughly a third of the activities. Both models still overestimate how much gets done in fifty minutes, so I cut one step before teaching and have never regretted it.",

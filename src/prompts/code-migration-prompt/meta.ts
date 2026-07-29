@@ -92,9 +92,9 @@ Do not rename anything. Do not restructure. Do not adopt an idiom of the target 
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "The verdict column started as a free text note and both models used it to hedge, so it was narrowed to three words and the instruction not to write EXACT defensively was added. Claude Opus 4.5 then correctly flagged pytz localize against zoneinfo as lossy at the ambiguous hour, which is the exact row a hand written plan had missed twice.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],

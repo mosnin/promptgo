@@ -102,9 +102,9 @@ Use no figure I did not give you. Write [FIGURE NEEDED] instead, and never annua
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Forcing the priced counterfactual to lead was the change that got cases approved. When it sat at the end, reviewers compared my number to nothing and the answer was always to wait a quarter. Every model tested will also annualise a single month of data if you let it, so the explicit ban on that is doing real work. Claude was the only one that reliably kept internal time in days rather than converting it to a salary figure I never supplied.",

@@ -88,9 +88,9 @@ Finish by naming the most vivid candidate you rejected and the false thing it wo
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Asking for metaphors gets you a list. Asking where each one fails gets you an argument, and the difference in usefulness is large. On the technical debt example GPT-5.2 offered a fleet maintenance image whose break point sat outside the explanation, and a beautiful one about silt in a river that started asserting nobody was responsible, which was precisely the wrong lesson. Claude Opus 4.5 writes the more careful mapping tables and needs pushing to be vivid at all.",

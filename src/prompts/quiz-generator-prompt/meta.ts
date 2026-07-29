@@ -99,9 +99,9 @@ Return three blocks.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The first quiz I generated had four items where the correct answer was the only option written with a unit, and my top set found that pattern in under a minute without doing any chemistry. Banning surface cues fixed it. I still mark the key against my own working, because across roughly forty generated numerical items I have found two keys that were simply wrong.",

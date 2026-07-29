@@ -85,9 +85,9 @@ Do not touch the protected sentences, the moves listed as wanted, dialogue, or q
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The change cap did more for output quality than any wording I tried. Uncapped, GPT-5.2 returned 180 entries on 900 words of fiction and roughly 140 were commas. Capped at one change per twenty words, both models started ranking, and the CLI code surfaced four phrases in my own copy I had used so often I no longer heard them. Claude Opus 4.5 is the more reliable at refusing to touch dialogue.",

@@ -87,9 +87,9 @@ Return.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "My first decks were full of cards asking students to state three factors affecting rate, which is three cards wearing one coat, and pupils reliably recalled two of the three and scored themselves correct. Making the split list visible was what changed behaviour, because seeing the bundled version next to the two clean cards teaches the rule faster than the rule does. Claude Opus 4.5 still writes the occasional cloze with two deletions.",

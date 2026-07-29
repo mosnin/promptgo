@@ -86,9 +86,9 @@ Finally, state honestly whether this person is worth contacting at all based on 
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Splitting the output into three separately gated messages was the change that mattered. Asked for LinkedIn outreach as one task, every model produced a connection note containing a pitch, which is the fastest way to be ignored or reported. The honest verdict line at the end was added after it correctly told me four times in one session that a prospect was not worth contacting, which was true and which I would not have concluded on my own.",

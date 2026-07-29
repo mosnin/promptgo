@@ -96,9 +96,9 @@ Banned: rockstar, ninja, wear many hats, fast paced environment, work hard play 
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The requirements audit produced the most argument and the most value. On my own last three roles it moved between four and seven items out of the must have list, and in two cases the person eventually hired would have been filtered out by a requirement I had written without thinking. Putting the ninety day section first was the other change that mattered, because candidates told us it was the only part they read closely.",

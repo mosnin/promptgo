@@ -87,9 +87,9 @@ Never suggest a discount with nothing asked in return. If the honest answer is t
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Requiring the walk away number to be calculated with visible arithmetic, rather than described, is what made this useful. Given a soft instruction the models produced reasonable sounding floors that did not survive being checked against the margin figures. The ten second script was added after watching two reps concede in principle within one sentence of a discount request, which no later position could undo.",

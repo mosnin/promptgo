@@ -81,9 +81,9 @@ PART 5, FORECAST LINE. One sentence, no adjectives, no verbs like feels or seems
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Part four came from a forecast review where three deals had moved stage on nothing but a friendly tone. Both models happily advanced a stage from enthusiasm until the delta was forced to quote a sentence per change. Claude still occasionally promotes a strong hint into the commitments list, so read the quote rather than trusting the label.",

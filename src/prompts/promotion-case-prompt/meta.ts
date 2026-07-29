@@ -92,9 +92,9 @@ Then give me three things. A case of 400 words or fewer, written the way my mana
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The witness requirement changed almost every case I tested. Without it, both models accepted anything my imaginary manager could vouch for, and the resulting packet was indistinguishable from a good performance review. Requiring a named person outside the reporting line downgraded roughly a third of the sustained claims in my first run. GPT-5.2 still tries to argue from readiness where evidence is thin, so the ban on potential has to stay stated in those words.",

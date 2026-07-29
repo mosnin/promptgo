@@ -89,9 +89,9 @@ After the note, give one line naming the reason this message could not have been
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The do not send verdict is the part hiring people would care about most and the part candidates ignore. Given a moment as thin as we talked about the team culture, Claude Opus 4.5 correctly refused and told me to go and recall something specific. GPT-5.2 wrote a graceful note around it instead until I made the refusal an explicit first step, and its default output still reaches for excited about the opportunity within two lines unless that phrase is banned by name.",

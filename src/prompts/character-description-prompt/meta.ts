@@ -89,9 +89,9 @@ Deliver three things. First, the description as prose at the stated budget, with
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The two jobs rule is what stopped the output reading like a casting note. Before it, both models produced atmospheric paragraphs that told me a great deal about a stranger and nothing about the person watching. GPT-5.2 needs the banned list stated explicitly or eye colour returns within two sentences. Claude Opus 4.5 handles the blind spot section better and will name something genuinely uncomfortable about the observer's motives.",

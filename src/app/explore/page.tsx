@@ -17,7 +17,7 @@ import { prompts } from "@/lib/prompts";
 export const metadata: Metadata = buildMetadata({
   title: "Explore All File Conversion Prompts By Category",
   description:
-    "Explore every free AI prompt by category and task type. Browse tested prompts for marketing, sales, coding, writing, hiring, teaching and data analysis.",
+    "Explore every free AI prompt by category and task type. Browse prompts for marketing, sales, coding, writing, hiring, teaching and data analysis.",
   path: "/explore",
   keywords: [
     "explore every ai prompt by category",
@@ -81,7 +81,7 @@ export default function ExplorePage() {
             </h1>
             <p className="mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-ink-muted">
               The complete catalogue. Pick a category to see everything it contains, or jump
-              straight to a prompt. Each one is tested against current models before it is published.
+              straight to a prompt. Each one names the failure mode its constraints exist to prevent.
             </p>
           </Reveal>
         </div>

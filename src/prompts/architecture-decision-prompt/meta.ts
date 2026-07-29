@@ -89,9 +89,9 @@ Do not rate anything as high, medium or low. Do not write that it depends. Where
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "Early runs produced a balanced survey of four options and no elimination, on both models, because nothing in the input could fail. Numbering the constraints and demanding each option name the one it breaks changed the output completely. GPT-5.2 still tends to rate a one way door as reversible when the irreversible part is stored data rather than code.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],

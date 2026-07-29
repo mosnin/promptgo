@@ -98,9 +98,9 @@ Output.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I tried this first by pasting whole scripts and it praised structure that was not there in two of the six I checked, which is worse than useless on a returned book. Switching the input to marking notes plus two short quotes stopped it. The comments now take me about the same time to produce as writing them, but they are better, and the check question is the part students actually respond to.",

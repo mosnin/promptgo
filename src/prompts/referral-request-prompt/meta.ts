@@ -82,9 +82,9 @@ BLOCK C, THE EXCHANGE. One sentence stating what the customer gets from making t
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "I added the sixty day rule after watching the first version write a warm, confident ask off a nine month old testimonial for an account whose usage had halved since. Claude enforces the date check reliably. GPT-5.2 twice accepted a proof moment with no date attached until the instruction spelled out that an undated observation fails the gate.",

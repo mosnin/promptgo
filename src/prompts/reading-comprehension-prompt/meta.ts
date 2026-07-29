@@ -93,9 +93,9 @@ Return.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I use this on science articles rather than fiction, which is where it surprised me. Given a New Scientist extract it wrote three questions my Year 9s could answer from general knowledge alone, and only stopped when I added the explicit removal rule. The skimmer trap is now the question I look at first, because it predicts almost exactly who has read the piece.",

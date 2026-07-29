@@ -93,9 +93,9 @@ C. Name the one risk that would be embarrassing to write down because of who wou
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Running the four gates against a real register I inherited emptied about half of it, and most of what came out was already an issue rather than a risk, which explained why the meeting always overran. The early indicator gate was the surprise. Ten of fourteen surviving entries came back BLIND, meaning we had documented things we could only discover on the day they happened. Both models will accept monitor as a response unless the ban is written in the instruction itself.",

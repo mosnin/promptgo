@@ -98,9 +98,9 @@ Rules. Never give a number without the calculation behind it. Never round the fl
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "Asked for a rate, both models produce a market range and a short paragraph about confidence, which is worthless. Forcing the billable day subtraction first changed the answer completely: on my test inputs the honest count came to 172 days against the 220 the freelancer had assumed, which moved the floor by nearly a third. GPT-5.2 rounds the floor to a tidy figure unless told not to. Claude Opus 4.5 writes the clearer change trigger and is more willing to recommend declining the work.",

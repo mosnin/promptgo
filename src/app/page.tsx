@@ -28,12 +28,12 @@ const PRIMARY_KEYWORD = "free ai prompts";
 export const metadata: Metadata = buildMetadata({
   title: "Free AI Prompts: A Tested Directory By Job Function",
   description:
-    "A directory of free AI prompts for ChatGPT, Claude and Gemini, organised by the job you are doing. Every prompt is tested on real output before it is published.",
+    "A directory of free AI prompts for ChatGPT, Claude and Gemini, organised by the job you are doing. Each one encodes a real constraint rather than a vague instruction.",
   path: "/",
   keywords: [
     PRIMARY_KEYWORD,
     "ai prompt directory by job function",
-    "tested chatgpt prompts for work",
+    "chatgpt prompts organised by job",
     "copy ready prompts with no signup",
     "prompt library organised by role",
   ],
@@ -48,7 +48,7 @@ const homeFaq = [
   {
     question: "Which AI models do these prompts work with?",
     answer:
-      "Every prompt is run against current versions of ChatGPT and Claude before publishing, most against Gemini too, and each page names the models it was tested on. They are written as plain instructions rather than model specific syntax, so they transfer between assistants with little or no editing.",
+      "Each page names the models its prompt was written for, normally current versions of ChatGPT, Claude and Gemini. They are written as plain instructions rather than model specific syntax, so they transfer between assistants with little or no editing.",
   },
   {
     question: "What makes these different from a list of prompts on a blog?",
@@ -114,15 +114,15 @@ export default function HomePage() {
           <Reveal blur={false}>
             <Badge tone="signal">
               <Icon name="spark" size={11} />
-              {totalPromptCount} prompts. Every one tested.
+              {totalPromptCount} prompts. Organised by the job.
             </Badge>
           </Reveal>
 
           <TextReveal
             as="h1"
             className="display mx-auto mt-7 max-w-5xl text-ink"
-            text="Free AI prompts, tested before they are published"
-            highlight={["tested"]}
+            text="Free AI prompts, organised by the job you are doing"
+            highlight={["job"]}
             delay={0.1}
           />
 
@@ -130,7 +130,7 @@ export default function HomePage() {
             <p className="text-[1.125rem] leading-relaxed text-ink-muted">
               Marketing, sales, coding, writing, hiring and analysis, organised by the job
               you are doing rather than the model you use. Every one of these {PRIMARY_KEYWORD}
-              is run against current models first, and the page tells you what it got wrong.
+              names the models it targets and the failure mode its constraints prevent.
             </p>
           </Reveal>
 
@@ -244,7 +244,7 @@ export default function HomePage() {
                 {
                   icon: "lock" as const,
                   title: "Tested before published",
-                  body: "Every prompt is run against current models before it is published, and the page tells you what the first version got wrong. Testing is not a claim here, it is the reason several of these refuse to answer thin input.",
+                  body: "Each prompt encodes a constraint that changes the output rather than a polite request, and the page names the failure mode that constraint exists to prevent. That is the reason several of these refuse to answer thin input.",
                 },
                 {
                   icon: "bolt" as const,
@@ -355,8 +355,8 @@ export default function HomePage() {
               },
               {
                 value: String(catalogueStats.testedModels),
-                label: "models tested against",
-                body: `Every prompt is run before publishing, across ${catalogueStats.taskTypes} task types and ${catalogueStats.variables} fill in variables in total.`,
+                label: "models targeted",
+                body: `Spanning ${catalogueStats.taskTypes} task types and ${catalogueStats.variables} fill in variables in total.`,
               },
               {
                 value: "$0",

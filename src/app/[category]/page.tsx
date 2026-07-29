@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: PageProps) {
     },
     {
       question: `Which AI models do these ${category.primaryKeyword} work with?`,
-      answer: `Every prompt here is tested against current versions of ChatGPT, Claude and in most cases Gemini before it is published, and each page names the models it was run on. They are written as plain instructions rather than model specific syntax, so they transfer to other assistants with little or no editing.`,
+      answer: `Each page names the models its prompt was written for, normally current versions of ChatGPT, Claude and in most cases Gemini. They are written as plain instructions rather than model specific syntax, so they transfer to other assistants with little or no editing.`,
     },
     {
       question: "Do I need to fill in the variables before copying?",

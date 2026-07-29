@@ -82,9 +82,9 @@ STEP 6. If fewer than eight won accounts were supplied, label the entire output 
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Step five was the addition that made this usable. Without it every model produced a rule that looked authoritative, and when I checked it by hand against our own closed won list it would have disqualified two of our largest customers. Making the model name those accounts itself turned an argument about the rule into a decision about which two exceptions we were willing to lose.",

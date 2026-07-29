@@ -80,9 +80,9 @@ After three questions, stop the roleplay and give me three lists: claims I suppo
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The instruction to delay the challenge on a vague word turned out to matter more than anything else. Probing immediately lets a candidate patch the sentence and move on. Coming back to it two exchanges later, which is what real panels do by accident, is what exposes whether the detail existed. GPT-5.2 kept slipping back into supportive coaching around turn six and needed the no compliments rule repeated.",

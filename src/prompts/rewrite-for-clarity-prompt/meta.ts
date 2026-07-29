@@ -84,9 +84,9 @@ Close with the number of sentences you left untouched and the number of content 
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The untouched count changed how I use this. On a 700 word service update, Claude Opus 4.5 left nine sentences alone and raised two content gaps, one of which was a rollout date nobody had actually agreed. GPT-5.2 edits far more eagerly and will quietly replace a defined term with a friendlier synonym unless the protected list is filled in, so I now treat that field as mandatory rather than optional.",

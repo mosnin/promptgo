@@ -90,9 +90,9 @@ Never use the words modern, clean, dynamic, innovative or timeless anywhere in t
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The ban on five specific adjectives came from counting them. Across eleven briefs generated before that rule existed, modern appeared in nine and timeless in seven, usually in the intent sentence where they did all the damage. Removing the vocabulary forced the models to describe an actual position. Claude complies better than GPT, which slips innovative back in around part C.",

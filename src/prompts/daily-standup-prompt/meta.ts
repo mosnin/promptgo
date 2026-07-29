@@ -87,9 +87,9 @@ Refuse to pad. Two empty lines can be an accurate update. Do not convert a thin 
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Run on my own week, both models filed a two day wait on a security review as friction rather than a blocker, because I had written it apologetically. The promotion rule corrected that on the next attempt. GPT-5.2 still overruns the twenty five word cap on the finished line roughly a third of the time, so trim it before posting.",

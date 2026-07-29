@@ -94,9 +94,9 @@ Rules: one offer only, no secondary calls to action, no testimonials you were no
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The specificity gate came out of a pattern I kept hitting: the page copy was never the problem, the offer was, and writing a beautiful page on top of a vague promise just hid that for another month. Making the model refuse felt heavy handed until the third time it stopped a team mid brief and the resulting conversation changed the offer rather than the headline.",

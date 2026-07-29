@@ -95,9 +95,9 @@ Then tell me which of the three to send, and why that one.`,
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I ran this against messages I had actually received. The three ask sizes exposed something I had not articulated before: nearly every message I ignored had a medium or large ask attached to a small amount of context. GPT-5.2 needs the banned phrase list spelled out or reaching out survives in the first line. Claude Opus 4.5 writes the better exit lines and is more willing to return the refusal when the artefact field is thin.",

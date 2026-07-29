@@ -92,9 +92,9 @@ Use only column names present in the schema above. If the question cannot be ans
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The instruction against narrating results came from a run where Claude produced clean code and then a paragraph beginning with the observation that turnaround had clearly worsened at the larger sites. It had seen no data at all. Both models did this until told not to, and GPT-5.2 still likes to leave a final print statement announcing a conclusion, which I delete before running anything.",

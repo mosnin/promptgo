@@ -100,9 +100,9 @@ Return.
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "The banned word list came out of a moderation meeting, not a theory. Our first generated rubric separated bands with limited, some and thorough, and four markers placed the same script in three different bands. Listing the forbidden adverbs in the prompt fixed it in one pass. Gemini still slips appropriate into the top band occasionally, so I search the output for it before printing.",

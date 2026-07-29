@@ -82,9 +82,9 @@ If I gave you something awkward, put one plain sentence about it in its own shor
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Both models wanted to open by admiring the company. With an empty employer field Claude Opus 4.5 produced warm praise for a mission it had never seen, which is precisely the sentence that gets a letter binned. The refusal marker stopped that. GPT-5.2 held the 250 word ceiling reliably but kept smuggling a second argument into the closing paragraph until I capped the letter at three paragraphs as well.",

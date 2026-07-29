@@ -80,9 +80,9 @@ Never soften an UNOWNED action into a team assignment. Never convert a suggestio
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Every model I tried was generous about what counted as a decision, promoting anything phrased confidently into the decisions list even when the transcript showed the group moving on without agreeing. Adding the authority and no objection test cut false decisions sharply. The UNOWNED convention came later, after a set of notes assigned four actions to the team and none of them happened.",

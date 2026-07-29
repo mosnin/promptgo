@@ -90,9 +90,9 @@ Return the checklist, the type and the reason for it, the removed steps with the
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Our release runbook had 31 steps and the checklist that came out had six, five of which mapped directly onto something that had gone wrong in the previous year. The one I argued with turned out to be right within a month. Both models pad the list with items like communicate with the team unless the skip test is enforced explicitly, and GPT-5.2 will restore them if you ask for the list to be more thorough.",

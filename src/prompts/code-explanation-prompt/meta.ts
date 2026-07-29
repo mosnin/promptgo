@@ -86,9 +86,9 @@ Do not suggest improvements and do not rewrite anything. If you notice a probabl
   },
 
   eeat: {
-    author: "Tom Vasquez",
+    author: "Fast Prompts",
     authorCredential:
-      "Sixteen years as a backend engineer, the last five reviewing pull requests full time on a platform team.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
       "The ban on purpose language in section A came from a run where a method called validate_and_send was described as validating and sending, when the validation branch had been commented out at some point and never restored. Both models repeated the name back at me until the ban went in, after which Claude Opus 4.5 caught the dead branch immediately.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],

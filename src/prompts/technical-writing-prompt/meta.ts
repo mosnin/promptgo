@@ -88,9 +88,9 @@ Close with two lists: PREREQUISITES the reader needs that the knowledge contract
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The placeholder rule came out of a draft that invented a flag. GPT-5.2 wrote --force where my notes had nothing, and it read so much like the rest of the document that I nearly shipped it. Requiring angle brackets for anything absent from source made the gaps visible instead of fluent. Claude Opus 4.5 holds the one type per paragraph rule better, while both models still slip a concept clause into a procedure step when the step needs a reason.",

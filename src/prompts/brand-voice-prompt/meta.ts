@@ -87,9 +87,9 @@ Finally, write the eight line version I can paste into another prompt to keep ge
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The contrast test section was an afterthought that turned out to carry the whole document. Teams read a list of rules and nod; they read a competitor sentence rewritten in their own voice with the changes named and immediately understand what to do. I also learned to demand counts rather than descriptions, because both models will characterise sentence length as varied unless you require an actual average.",

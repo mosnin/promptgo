@@ -84,9 +84,9 @@ If the target cannot be reached without cutting protected material or a load bea
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "Stage ordering changed the results more than any instruction about quality. Left to itself, GPT-5.2 shaved every sentence by fifteen percent and returned a draft that hit the number and had lost its rhythm everywhere at once. Forcing whole unit deletion before any compression gave back prose that still sounded written. Claude Opus 4.5 writes the more honest loss report, and both models under count words by a few percent, so verify the final figure yourself.",

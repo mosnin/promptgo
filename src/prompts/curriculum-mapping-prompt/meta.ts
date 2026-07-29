@@ -90,9 +90,9 @@ Return the dependency list, the week by week map as a table, the overrun stateme
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Running this on a scheme I had written myself, the dependency list caught something two of us had missed for three years: we taught moles in November and the calculations that need them in the October before, because the specification lists them in that order. Both models found it in the first pass once the dependency step was forced to come before the sequencing step.",

@@ -91,9 +91,9 @@ Do not write encouragement and do not restate the task as the outcome.`,
   },
 
   eeat: {
-    author: "Jonas Lindqvist",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran delivery operations for a distributed team of forty, where most of the job was protecting other people's attention.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Early briefs came back with an empty not yours list every single time, because models read delegation as generosity rather than as a split. Requiring at least one item in all three lists produced claims I could actually argue with. GPT-5.2 twice invented a budget ceiling nobody had mentioned, which is why each inferred line must be rejectable in one word.",

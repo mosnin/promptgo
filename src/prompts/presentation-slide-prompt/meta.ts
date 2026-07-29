@@ -89,9 +89,9 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The claim list check has changed two of my own decks before a single slide existed. On a migration pitch it reported that claims four and five both argued cost and neither argued risk, which was exactly the gap the CTO found in the room the previous quarter. The cut field is more decorative and only occasionally tells me something I had not already decided.",

@@ -79,9 +79,9 @@ CRITICAL: after every field, tag it [EVIDENCED] if it follows from the evidence 
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The evidence tagging was added after I watched a team present a fully invented persona to their board as research. Every model I tested produced confident, plausible detail from a two line input without any signal that it was fabricated. Forcing the tag per field made the emptiness visible immediately, and the first team I gave it to went and ran four interviews rather than shipping the document.",

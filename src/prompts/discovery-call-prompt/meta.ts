@@ -81,9 +81,9 @@ Do not write a script. Do not include rapport building small talk. Do not sugges
   },
 
   eeat: {
-    author: "Marcus Bell",
+    author: "Fast Prompts",
     authorCredential:
-      "Fifteen years in B2B outbound, most recently running a six person SDR team selling infrastructure software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Every early version produced a polite questionnaire where each question was a softer restatement of the last, so a rep could ask all five and learn nothing. Forcing each question onto a named dimension fixed the redundancy. The instruction to flag the question most likely to draw a dishonest answer was added after two calls where the prospect gave a confident budget figure that turned out to be aspirational.",

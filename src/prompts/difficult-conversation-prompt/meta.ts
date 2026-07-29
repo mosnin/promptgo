@@ -102,9 +102,9 @@ Do not write a script for me. Do not suggest a compliment sandwich. Do not tell 
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Section three is the one that has changed actual conversations for me. Preparing to move an account, the model pointed out that the six weeks I sat on the client's request was the same delay I was about to criticise, which was true and which I had not connected. Both models drift towards writing my side if the request is at all ambiguous, so the instruction against scripting sits at the top and again at the bottom of the prompt.",

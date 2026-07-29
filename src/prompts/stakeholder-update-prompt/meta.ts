@@ -93,9 +93,9 @@ If any stakeholder's rendering would consist only of good news, say so explicitl
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The coverage table caught something I did not expect. Running it on a real migration, one ledger statement about a contract renewal date reached no stakeholder at all, because it did not obviously belong to anyone, and it was the thing that later forced a rushed decision in December. Every model tested wants to open renderings with a polite recap of the project, and the instruction against preamble has to be repeated in the rules block or it comes back.",

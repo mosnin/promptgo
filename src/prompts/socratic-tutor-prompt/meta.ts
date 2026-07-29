@@ -83,9 +83,9 @@ When I finally get there, close with: the concept the difficulty traced back to,
   },
 
   eeat: {
-    author: "Grace Mbeki",
+    author: "Fast Prompts",
     authorCredential:
-      "Fourteen years teaching secondary science, the last three as a head of department writing assessment policy.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "I ran this with four Year 11s who had all been using a chatbot for homework, and the first thing that happened was every one of them tried to get the answer out of it within three messages. GPT-5.2 held. Gemini caved once when a student said their teacher had said it was fine. Adding the explicit refusal clause about deadlines and permission closed that off in later runs.",

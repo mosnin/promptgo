@@ -101,9 +101,9 @@ Do not schedule shadowing without a stated purpose. Do not fill any week with re
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "Adding the hours cost per week owner is what made these plans real. The first version I ran assigned nine separate colleagues to mentor, and when I totalled the implied time it came to almost thirty hours a week that nobody had. The LATE ALREADY flag has caught a laptop order twice. Gemini keeps trying to schedule a week of reading documentation unless the ban is explicit, and it will describe that week as immersion if you let it.",

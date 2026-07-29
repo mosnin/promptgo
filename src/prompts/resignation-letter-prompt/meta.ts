@@ -90,9 +90,9 @@ Never include a grievance in the letter, however restrained. If my reason descri
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
       "I fed it a genuinely bitter reason to see what would happen. Gemini 3 Pro wrote a paragraph of measured criticism that read beautifully and would have been circulated within a day. The separate what I left out list solved this better than any tone instruction did, because seeing the sentence quarantined and labelled is more persuasive than being told not to write it. Every model guessed a notice period until guessing was forbidden.",

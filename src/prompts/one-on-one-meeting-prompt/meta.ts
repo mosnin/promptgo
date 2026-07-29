@@ -92,9 +92,9 @@ Do not produce coaching platitudes, do not suggest icebreakers, and do not write
   },
 
   eeat: {
-    author: "Elena Sorokin",
+    author: "Fast Prompts",
     authorCredential:
-      "Ran operations at two venture backed companies, where most of the job was finding out which agreed actions had no owner.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The ledger changed these meetings more than the questions did. Once I started listing how many sessions an item had been open, I discovered a conference budget request I had acknowledged three times across four months and never answered. Both models produce warm generic questions unless the ban on how are things is written explicitly, and GPT-5.2 will reintroduce an icebreaker if the context field is short.",

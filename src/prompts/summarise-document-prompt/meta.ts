@@ -88,9 +88,9 @@ Do not add causal links the document does not make. Two findings in adjacent sec
   },
 
   eeat: {
-    author: "Ruth Adeyemi",
+    author: "Fast Prompts",
     authorCredential:
-      "Eighteen years editing long form journalism and technical documentation, most recently as a standards editor.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
       "The summary only marker came out of a real embarrassment. A vendor assessment I summarised confidently reported an uptime figure that existed nowhere except the vendor's own abstract, and I repeated it in a board paper. Now the prompt checks whether a claim survives in the body. Locators hold up well for the first thirty pages or so on all three models and get less reliable after that, so I split anything longer into parts.",

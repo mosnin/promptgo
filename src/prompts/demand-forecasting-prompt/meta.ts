@@ -93,9 +93,9 @@ Never quote an accuracy percentage, a MAPE or an interval width derived from a b
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The baseline section was added after GPT-5.2 gave me an elaborate outlook for a drinks SKU that was, week for week, within two percent of simply repeating last year. It was not wrong, it was just expensive. Forcing the seasonal naive figure onto the page first makes that visible in a line, and on two of five test series the honest answer turned out to be that last year was the forecast.",

@@ -90,9 +90,9 @@ Respect my visibility constraint in everything you suggest.`,
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Running this on my own profile, the term audit found that the single job title I most wanted to be found for appeared nowhere on the page, while three tool names I had not touched in four years were in the skills list. Claude Opus 4.5 handled the synonym rule well. GPT-5.2 kept counting near matches as present until I spelled out that a boolean search does not resolve synonyms.",

@@ -89,9 +89,9 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The rule that moves inventions into section five was added after a spec confidently stated a debounce interval that appeared nowhere in the design. It read as authority and would have shipped. With the rule in place, the same input produced a section five with eleven items, four of which nobody on the team had noticed were unresolved.",

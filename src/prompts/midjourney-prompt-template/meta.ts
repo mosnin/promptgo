@@ -95,9 +95,9 @@ Produce five numbered variants. Every slot is identical to variant one except th
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Midjourney v7", "GPT-5.2"],
     testingNote:
       "Running the compiler through GPT-5.2 before pasting into Midjourney caught something I had missed for months: my hand written prompts were carrying three adjectives that duplicated the medium slot. Stripping them changed the output more than any parameter I had been fiddling with. The stylize justification note is there because I kept setting it out of habit rather than for a reason.",

@@ -82,9 +82,9 @@ STEP 5. For each removal, predict specifically what the model will substitute in
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Stable Diffusion 3.5", "Claude Opus 4.5"],
     testingNote:
       "Step five surprised me. Asked to predict what a model substitutes when you remove the light position, GPT-5.2 said soft overcast daylight from the upper left, which is close to what actually came back across nine of twelve runs. The predictions for frame removal were much weaker, so I treat those as hypotheses rather than results.",

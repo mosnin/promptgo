@@ -96,9 +96,9 @@ CRITICAL: use no number that does not appear in the findings I gave you. Do not 
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I used to end write ups with a limitations paragraph and watched it get cut every time the document was shortened for a board pack. Moving each caveat into the sentence it qualifies survived four rounds of editing on a real report last spring, because removing the caveat would have broken the sentence carrying the number somebody wanted to quote.",

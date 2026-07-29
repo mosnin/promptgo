@@ -94,9 +94,9 @@ If I described the target work only as a feeling, refuse step two and ask for th
   },
 
   eeat: {
-    author: "Deborah Achebe",
+    author: "Fast Prompts",
     authorCredential:
-      "Eleven years in technical recruiting, four of them screening applications for engineering and operations roles.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "I ran this against six real transitions I had recruited for, four successful and two that reversed within a year. In both reversals the model put every stated reason under push, which matched what those candidates told me afterwards. It is much weaker on pay bands outside the United States and needs advertised salary data pasted in, otherwise Claude Opus 4.5 produces a range that looks researched and is not.",

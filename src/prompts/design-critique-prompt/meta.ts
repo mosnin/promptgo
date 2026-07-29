@@ -84,9 +84,9 @@ Mention anything in KNOWN_ISSUES only to say whether it is more or less damaging
   },
 
   eeat: {
-    author: "Ingrid Sollberg",
+    author: "Fast Prompts",
     authorCredential:
-      "Seventeen years in product design, the last six running design systems for regulated healthcare software.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "Early drafts asked for the top three problems and every model returned three items of identical severity, phrased so evenly that no reviewer in the room could pick one. Restricting it to a single element with a mandatory competing element forced an actual comparison. Claude names the competitor more reliably than GPT, which sometimes needs a nudge to say which of the two should win.",

@@ -94,9 +94,9 @@ Never write: perfect for any occasion, high quality, premium, must have, or any 
   },
 
   eeat: {
-    author: "Priya Raman",
+    author: "Fast Prompts",
     authorCredential:
-      "Twelve years in product marketing, most of it positioning technical products for teams that had never done audience research.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
       "The specification rule had to be written as outranking every other instruction, because with a soft version all three models I tried would invent a plausible weight or material when the word count needed filling. Making the marker inline rather than a footnote was the second fix: footnoted gaps got ignored, whereas a marker sitting in the middle of a sentence is impossible to publish by accident.",

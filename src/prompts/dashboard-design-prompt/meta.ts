@@ -93,9 +93,9 @@ CRITICAL: do not propose a metric that is not in the available list. Do not incl
   },
 
   eeat: {
-    author: "Nadia Haddad",
+    author: "Fast Prompts",
     authorCredential:
-      "Nine years as a data analyst in retail and healthcare, mostly spent explaining why a promising result was noise.",
+      "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
       "The threshold requirement came from a retail dashboard I maintained for two years where a manager phoned me every Monday about a conversion tile that had simply reverted to its average. We could not answer what number would have been fine, which meant the tile had no purpose. Adding the threshold column to this prompt cut a proposed sixteen tile layout to seven on the first run.",
