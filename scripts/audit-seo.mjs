@@ -55,6 +55,29 @@ const RULES = {
 };
 
 /**
+ * First person markers in a design note.
+ *
+ * The trust block renders under the H1 and is the strongest signal on the
+ * page, which is why it must not contain a claim nobody can stand behind. An
+ * earlier generation of these pages carried 148 invented first person testing
+ * anecdotes, each individually plausible, describing occasions that never
+ * happened. They were convincing precisely because the authoring contract at
+ * the time asked for lived experience.
+ *
+ * This check exists so that failure cannot recur silently. A design note
+ * states what models reliably get wrong and the constraint that prevents it.
+ * The moment it says "I", it is asserting a provenance nobody verified.
+ */
+const FIRST_PERSON = [
+  /\bI\b/,
+  /\bI'(?:d|ve|m|ll)\b/i,
+  /\bmy\b/i,
+  /\bmine\b/i,
+  /\bwe (?:tested|ran|tried|observed|found)\b/i,
+  /\bour own\b/i,
+];
+
+/**
  * Phrases that mark generic filler. A page built out of these is exactly what a
  * thin content classifier is looking for, so they fail the build rather than
  * warn.
@@ -346,8 +369,26 @@ function auditPrompt(meta, seen) {
   if (!Array.isArray(eeat?.testedOn) || eeat.testedOn.length < 2) {
     add("error", "eeat.testedOn must name at least two models the prompt was run against.");
   }
-  if (countWords(eeat?.testingNote ?? "") < 25) {
-    add("error", "eeat.testingNote must be a real first hand observation of at least 25 words.");
+  const note = eeat?.testingNote ?? "";
+  if (countWords(note) < 25) {
+    add("error", "eeat.testingNote must be a substantive design note of at least 25 words.");
+  }
+  for (const marker of FIRST_PERSON) {
+    if (marker.test(note)) {
+      add(
+        "error",
+        `eeat.testingNote is written in the first person, which claims a test that cannot be verified. State what models get wrong and the constraint that prevents it.`,
+      );
+      break;
+    }
+  }
+  /* Authorship is the organisation. Naming an individual asserts that person
+   * wrote and checked the page, which has to be true if it is claimed. */
+  if (eeat?.author && eeat.author !== "Fast Prompts") {
+    add(
+      "warning",
+      `eeat.author is "${eeat.author}". Pages are attributed to the organisation unless a named person really did write and review this one.`,
+    );
   }
   seen.testingNotes.push({ slug, note: normalise(eeat?.testingNote ?? "") });
 
