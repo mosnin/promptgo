@@ -4,21 +4,25 @@
  */
 
 export const site = {
-  name: "PromptGo",
-  legalName: "PromptGo",
+  name: "Fast Prompts",
+  legalName: "Fast Prompts",
+  /** Named individual responsible for the directory. Rendered in Organization schema and on the about page. */
+  founder: "Jerico Herrera",
+  /** Contact address. Assembled at render on the contact page so it is not sitting in the markup as a mailto. */
+  email: "hello@fastprompts.org",
   /**
    * Used for canonical URLs, sitemap, OpenGraph and JSON-LD. Must match the
    * domain the site actually serves from: a canonical pointing at a domain you
    * do not serve tells Google the real pages are duplicates of somewhere else,
    * which is the one SEO mistake that can keep a whole site out of the index.
    */
-  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.promptgo.io"),
+  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? "https://fastprompts.org"),
   tagline: "148 Free AI Prompts, Tested And Ready To Use",
   description:
     "A directory of 148 free AI prompts for ChatGPT, Claude and Gemini, organised by job function. Every prompt is tested on real output before it is published, with no signup required to copy one.",
   locale: "en_US",
   language: "en",
-  twitter: "@promptgo",
+  twitter: "@fastprompts",
   themeColor: "#08090c",
   founded: "2026",
 } as const;

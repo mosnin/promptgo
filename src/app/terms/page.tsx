@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Terms Of Use",
   description:
-    "The terms that govern use of PromptGo. Free to use, no account required, the prompts are yours to adapt, and the service is provided without warranty.",
+    "The terms that govern use of Fast Prompts. Free to use, no account required, the prompts are yours to adapt, and the service is provided without warranty.",
   path: "/terms",
 });
 

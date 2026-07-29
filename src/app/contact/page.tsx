@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Contact",
   description:
-    "How to reach PromptGo about a prompt that stopped working, a correction, a takedown request, an advertising question or a suggestion for the directory.",
+    "How to reach Fast Prompts about a prompt that stopped working, a correction, a takedown request, an advertising question or a suggestion for the directory.",
   path: "/contact",
 });
 
@@ -23,14 +23,15 @@ export const metadata: Metadata = buildMetadata({
  * one. Anyone reading the page can still see and copy it.
  */
 export default function ContactPage() {
-  const inbox = ["hello", site.url.replace(/^https?:\/\//, "").replace(/^www\./, "")].join("@");
+  const [localPart, domain] = site.email.split("@");
+  const inbox = [localPart, domain].join("@");
 
   return (
     <ProsePage
       title="Contact"
       path="/contact"
       updated="29 July 2026"
-      intro={`Every prompt on ${site.name} is written and tested by a person, so there is a person to write back to. Reach us at ${inbox} and expect a reply within a few working days.`}
+      intro={`${site.name} is run by ${site.founder}, so there is a person to write back to. Reach us at ${inbox} and expect a reply within a few working days.`}
     >
       <h2>A prompt stopped working</h2>
       <p>

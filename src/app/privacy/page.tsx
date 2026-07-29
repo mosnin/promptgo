@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How PromptGo handles your data. Anything you type into a prompt panel stays in your browser. This policy covers analytics, advertising and cookies.",
+    "How Fast Prompts handles your data. Anything you type into a prompt panel stays in your browser. This policy covers analytics, advertising and cookies.",
   path: "/privacy",
 });
 

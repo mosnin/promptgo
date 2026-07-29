@@ -14,14 +14,14 @@ import { catalogueStats, categoryVolumes } from "@/lib/stats";
 import { breadcrumbSchema, graph } from "@/lib/jsonld";
 
 export const metadata: Metadata = buildMetadata({
-  // Not "About PromptGo": buildMetadata appends the site name as a
-  // template, so naming the brand here renders "About PromptGo | Prompt
-  // Go" in the tab and in every search result.
+  // Not "About Fast Prompts": buildMetadata appends the site name as a
+  // template, so naming the brand here would render "About Fast Prompts |
+  // Fast Prompts" in the tab and in every search result.
   title: "About",
   description:
-    "About PromptGo, a directory of free AI prompts organised by job function, where every prompt is tested against current models before it is published.",
+    "About Fast Prompts, a directory of free AI prompts organised by job function, where every prompt is tested against current models before it is published.",
   path: "/about",
-  keywords: ["about promptgo", "how prompts are tested", "ai prompt directory"],
+  keywords: ["about fast prompts", "how prompts are tested", "ai prompt directory"],
 });
 
 const STORY = [

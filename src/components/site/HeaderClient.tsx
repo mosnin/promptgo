@@ -65,7 +65,7 @@ export function HeaderClient({ categories, totalTools, categoryNames }: HeaderCl
         <div className="shell relative flex h-16 items-center gap-3">
           <Link
             href="/"
-            aria-label="PromptGo home"
+            aria-label="Fast Prompts home"
             className="mr-1 flex shrink-0 items-center gap-2.5"
           >
             <Wordmark />

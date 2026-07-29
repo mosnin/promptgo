@@ -12,6 +12,14 @@ export function organizationSchema(): Json {
     url: site.url,
     description: site.description,
     foundingDate: site.founded,
+    email: site.email,
+    // A named accountable person. This is the honest place for a real
+    // individual to appear: the organisation is the author of the pages, and
+    // one person is answerable for the directory.
+    founder: {
+      "@type": "Person",
+      name: site.founder,
+    },
     logo: {
       "@type": "ImageObject",
       url: absoluteUrl("/icon.svg"),

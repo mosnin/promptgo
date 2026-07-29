@@ -73,10 +73,12 @@ import p_line_edit_prompt from "@/prompts/line-edit-prompt/meta";
 import p_linkedin_outreach_prompt from "@/prompts/linkedin-outreach-prompt/meta";
 import p_linkedin_profile_prompt from "@/prompts/linkedin-profile-prompt/meta";
 import p_logo_brief_prompt from "@/prompts/logo-brief-prompt/meta";
+import p_meeting_agenda_prompt from "@/prompts/meeting-agenda-prompt/meta";
 import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
 import p_metaphor_generator_prompt from "@/prompts/metaphor-generator-prompt/meta";
 import p_metric_definition_prompt from "@/prompts/metric-definition-prompt/meta";
 import p_midjourney_prompt_template from "@/prompts/midjourney-prompt-template/meta";
+import p_networking_message_prompt from "@/prompts/networking-message-prompt/meta";
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
 import p_okr_writing_prompt from "@/prompts/okr-writing-prompt/meta";
@@ -88,6 +90,7 @@ import p_performance_profiling_prompt from "@/prompts/performance-profiling-prom
 import p_performance_review_prompt from "@/prompts/performance-review-prompt/meta";
 import p_plain_english_prompt from "@/prompts/plain-english-prompt/meta";
 import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
+import p_presentation_slide_prompt from "@/prompts/presentation-slide-prompt/meta";
 import p_press_release_prompt from "@/prompts/press-release-prompt/meta";
 import p_pricing_negotiation_prompt from "@/prompts/pricing-negotiation-prompt/meta";
 import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
@@ -112,6 +115,7 @@ import p_risk_register_prompt from "@/prompts/risk-register-prompt/meta";
 import p_salary_negotiation_prompt from "@/prompts/salary-negotiation-prompt/meta";
 import p_sales_call_summary_prompt from "@/prompts/sales-call-summary-prompt/meta";
 import p_sales_proposal_prompt from "@/prompts/sales-proposal-prompt/meta";
+import p_saying_no_prompt from "@/prompts/saying-no-prompt/meta";
 import p_security_review_prompt from "@/prompts/security-review-prompt/meta";
 import p_seo_keyword_research_prompt from "@/prompts/seo-keyword-research-prompt/meta";
 import p_social_media_caption_prompt from "@/prompts/social-media-caption-prompt/meta";
@@ -212,10 +216,12 @@ export const promptMetas: PromptMeta[] = [
   p_linkedin_outreach_prompt,
   p_linkedin_profile_prompt,
   p_logo_brief_prompt,
+  p_meeting_agenda_prompt,
   p_meeting_notes_prompt,
   p_metaphor_generator_prompt,
   p_metric_definition_prompt,
   p_midjourney_prompt_template,
+  p_networking_message_prompt,
   p_note_summary_prompt,
   p_objection_handling_prompt,
   p_okr_writing_prompt,
@@ -227,6 +233,7 @@ export const promptMetas: PromptMeta[] = [
   p_performance_review_prompt,
   p_plain_english_prompt,
   p_post_mortem_prompt,
+  p_presentation_slide_prompt,
   p_press_release_prompt,
   p_pricing_negotiation_prompt,
   p_process_documentation_prompt,
@@ -251,6 +258,7 @@ export const promptMetas: PromptMeta[] = [
   p_salary_negotiation_prompt,
   p_sales_call_summary_prompt,
   p_sales_proposal_prompt,
+  p_saying_no_prompt,
   p_security_review_prompt,
   p_seo_keyword_research_prompt,
   p_social_media_caption_prompt,
@@ -280,4 +288,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 137;
+export const promptCount = 141;
