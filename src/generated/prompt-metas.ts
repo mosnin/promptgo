@@ -2,18 +2,23 @@
 // Add a prompt by creating src/prompts/<slug>/meta.ts then running `npm run gen`.
 import type { PromptMeta } from "@/lib/types";
 
+import p_ab_test_analysis_prompt from "@/prompts/ab-test-analysis-prompt/meta";
 import p_account_research_prompt from "@/prompts/account-research-prompt/meta";
 import p_ad_copy_prompt from "@/prompts/ad-copy-prompt/meta";
+import p_api_documentation_prompt from "@/prompts/api-documentation-prompt/meta";
 import p_blog_post_outline_prompt from "@/prompts/blog-post-outline-prompt/meta";
 import p_brand_voice_prompt from "@/prompts/brand-voice-prompt/meta";
+import p_career_change_prompt from "@/prompts/career-change-prompt/meta";
 import p_chart_selection_prompt from "@/prompts/chart-selection-prompt/meta";
 import p_code_explanation_prompt from "@/prompts/code-explanation-prompt/meta";
 import p_code_review_prompt from "@/prompts/code-review-prompt/meta";
 import p_cold_email_prompt from "@/prompts/cold-email-prompt/meta";
 import p_competitor_analysis_prompt from "@/prompts/competitor-analysis-prompt/meta";
+import p_concept_explanation_prompt from "@/prompts/concept-explanation-prompt/meta";
 import p_content_calendar_prompt from "@/prompts/content-calendar-prompt/meta";
 import p_cover_letter_prompt from "@/prompts/cover-letter-prompt/meta";
 import p_customer_persona_prompt from "@/prompts/customer-persona-prompt/meta";
+import p_daily_standup_prompt from "@/prompts/daily-standup-prompt/meta";
 import p_dashboard_design_prompt from "@/prompts/dashboard-design-prompt/meta";
 import p_data_cleaning_prompt from "@/prompts/data-cleaning-prompt/meta";
 import p_debugging_prompt from "@/prompts/debugging-prompt/meta";
@@ -22,8 +27,10 @@ import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
 import p_email_newsletter_prompt from "@/prompts/email-newsletter-prompt/meta";
 import p_email_subject_line_prompt from "@/prompts/email-subject-line-prompt/meta";
 import p_excel_formula_prompt from "@/prompts/excel-formula-prompt/meta";
+import p_focus_session_prompt from "@/prompts/focus-session-prompt/meta";
 import p_follow_up_email_prompt from "@/prompts/follow-up-email-prompt/meta";
 import p_grading_rubric_prompt from "@/prompts/grading-rubric-prompt/meta";
+import p_headline_writing_prompt from "@/prompts/headline-writing-prompt/meta";
 import p_inbox_triage_prompt from "@/prompts/inbox-triage-prompt/meta";
 import p_interview_answer_prompt from "@/prompts/interview-answer-prompt/meta";
 import p_job_description_prompt from "@/prompts/job-description-prompt/meta";
@@ -31,6 +38,7 @@ import p_landing_page_copy_prompt from "@/prompts/landing-page-copy-prompt/meta"
 import p_lesson_plan_prompt from "@/prompts/lesson-plan-prompt/meta";
 import p_line_edit_prompt from "@/prompts/line-edit-prompt/meta";
 import p_linkedin_outreach_prompt from "@/prompts/linkedin-outreach-prompt/meta";
+import p_linkedin_profile_prompt from "@/prompts/linkedin-profile-prompt/meta";
 import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
@@ -41,16 +49,25 @@ import p_process_documentation_prompt from "@/prompts/process-documentation-prom
 import p_product_description_prompt from "@/prompts/product-description-prompt/meta";
 import p_proofreading_prompt from "@/prompts/proofreading-prompt/meta";
 import p_quiz_generator_prompt from "@/prompts/quiz-generator-prompt/meta";
+import p_reading_comprehension_prompt from "@/prompts/reading-comprehension-prompt/meta";
 import p_refactoring_prompt from "@/prompts/refactoring-prompt/meta";
+import p_reference_request_prompt from "@/prompts/reference-request-prompt/meta";
+import p_regex_generator_prompt from "@/prompts/regex-generator-prompt/meta";
 import p_resume_bullet_prompt from "@/prompts/resume-bullet-prompt/meta";
+import p_revision_plan_prompt from "@/prompts/revision-plan-prompt/meta";
 import p_rewrite_for_clarity_prompt from "@/prompts/rewrite-for-clarity-prompt/meta";
 import p_salary_negotiation_prompt from "@/prompts/salary-negotiation-prompt/meta";
 import p_sales_proposal_prompt from "@/prompts/sales-proposal-prompt/meta";
 import p_seo_keyword_research_prompt from "@/prompts/seo-keyword-research-prompt/meta";
 import p_socratic_tutor_prompt from "@/prompts/socratic-tutor-prompt/meta";
+import p_sql_query_prompt from "@/prompts/sql-query-prompt/meta";
 import p_statistical_check_prompt from "@/prompts/statistical-check-prompt/meta";
+import p_story_structure_prompt from "@/prompts/story-structure-prompt/meta";
 import p_student_feedback_prompt from "@/prompts/student-feedback-prompt/meta";
+import p_summarise_document_prompt from "@/prompts/summarise-document-prompt/meta";
+import p_survey_analysis_prompt from "@/prompts/survey-analysis-prompt/meta";
 import p_task_prioritisation_prompt from "@/prompts/task-prioritisation-prompt/meta";
+import p_time_audit_prompt from "@/prompts/time-audit-prompt/meta";
 import p_tone_adjustment_prompt from "@/prompts/tone-adjustment-prompt/meta";
 import p_unit_test_prompt from "@/prompts/unit-test-prompt/meta";
 import p_value_proposition_prompt from "@/prompts/value-proposition-prompt/meta";
@@ -58,18 +75,23 @@ import p_weekly_planning_prompt from "@/prompts/weekly-planning-prompt/meta";
 import p_win_loss_analysis_prompt from "@/prompts/win-loss-analysis-prompt/meta";
 
 export const promptMetas: PromptMeta[] = [
+  p_ab_test_analysis_prompt,
   p_account_research_prompt,
   p_ad_copy_prompt,
+  p_api_documentation_prompt,
   p_blog_post_outline_prompt,
   p_brand_voice_prompt,
+  p_career_change_prompt,
   p_chart_selection_prompt,
   p_code_explanation_prompt,
   p_code_review_prompt,
   p_cold_email_prompt,
   p_competitor_analysis_prompt,
+  p_concept_explanation_prompt,
   p_content_calendar_prompt,
   p_cover_letter_prompt,
   p_customer_persona_prompt,
+  p_daily_standup_prompt,
   p_dashboard_design_prompt,
   p_data_cleaning_prompt,
   p_debugging_prompt,
@@ -78,8 +100,10 @@ export const promptMetas: PromptMeta[] = [
   p_email_newsletter_prompt,
   p_email_subject_line_prompt,
   p_excel_formula_prompt,
+  p_focus_session_prompt,
   p_follow_up_email_prompt,
   p_grading_rubric_prompt,
+  p_headline_writing_prompt,
   p_inbox_triage_prompt,
   p_interview_answer_prompt,
   p_job_description_prompt,
@@ -87,6 +111,7 @@ export const promptMetas: PromptMeta[] = [
   p_lesson_plan_prompt,
   p_line_edit_prompt,
   p_linkedin_outreach_prompt,
+  p_linkedin_profile_prompt,
   p_meeting_notes_prompt,
   p_note_summary_prompt,
   p_objection_handling_prompt,
@@ -97,16 +122,25 @@ export const promptMetas: PromptMeta[] = [
   p_product_description_prompt,
   p_proofreading_prompt,
   p_quiz_generator_prompt,
+  p_reading_comprehension_prompt,
   p_refactoring_prompt,
+  p_reference_request_prompt,
+  p_regex_generator_prompt,
   p_resume_bullet_prompt,
+  p_revision_plan_prompt,
   p_rewrite_for_clarity_prompt,
   p_salary_negotiation_prompt,
   p_sales_proposal_prompt,
   p_seo_keyword_research_prompt,
   p_socratic_tutor_prompt,
+  p_sql_query_prompt,
   p_statistical_check_prompt,
+  p_story_structure_prompt,
   p_student_feedback_prompt,
+  p_summarise_document_prompt,
+  p_survey_analysis_prompt,
   p_task_prioritisation_prompt,
+  p_time_audit_prompt,
   p_tone_adjustment_prompt,
   p_unit_test_prompt,
   p_value_proposition_prompt,
@@ -114,4 +148,4 @@ export const promptMetas: PromptMeta[] = [
   p_win_loss_analysis_prompt,
 ];
 
-export const promptCount = 54;
+export const promptCount = 71;
