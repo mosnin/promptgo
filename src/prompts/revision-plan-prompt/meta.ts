@@ -105,7 +105,7 @@ Output.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Ran this with a tutor group of twenty eight in the spring term. The version without the slippage rule was abandoned by about half of them within a fortnight, because one missed week made the whole grid feel void. Adding an explicit instruction for what to drop kept most of them going, and the students who used it said the twenty percent cut was the part they resented and then relied on.",
+      "Revision grids are abandoned in the first bad week, because one missed session makes the whole plan read as void and nothing in it says what to do next. Cutting the stated hours by twenty percent and writing explicit instructions for what gets dropped when a week is lost makes the plan survivable. Every session carries a checkable task rather than reading.",
   },
 
   article: {

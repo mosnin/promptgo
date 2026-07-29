@@ -98,7 +98,7 @@ CRITICAL: never recommend a second axis. Never recommend a chart form purely bec
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "The base size rule exists because of a readmission rate chart I built where one specialty had nine patients and the bar reached the top of the axis. Nobody in the room asked about the denominator. When I later fed the same shape of request to three models, all three cheerfully recommended a bar chart of rates and none mentioned the base until the prompt made the denominator a required field.",
+      "Rates get charted without their denominators unless the denominator is a required field. Asked to compare rates across groups, models recommend a clean ranked bar chart, and the category built on a handful of observations sits at the top of the axis looking like the strongest performer. Requiring base sizes next to every rate forces either suppression or a visible count on the chart.",
   },
 
   article: {

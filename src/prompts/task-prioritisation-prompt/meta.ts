@@ -89,7 +89,7 @@ Output one table with columns: task, tier, hours, what breaks if it slips. Then 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The first version asked for a priority order and got back twenty tasks in a new sequence with nothing removed, on all three models, twice. The mandatory drop quota changed the output entirely. Claude Opus 4.5 still underestimates hours on any task whose first step is waiting for somebody else, so pad those before trusting the running total.",
+      "Ask for a priority order and a model returns the same twenty tasks in a new sequence with nothing removed, because reordering feels like an answer while cutting feels like a loss. A mandatory drop quota changes the output entirely, and an hours estimate per item exposes work whose first step is waiting on somebody else.",
   },
 
   article: {

@@ -97,7 +97,7 @@ F. VERIFICATION AND RETREAT. Name the test, metric or log line that would reveal
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Both models summarised a migration guide competently and neither connected it to our call sites until the usage list became a required field. The CANNOT TELL verdict came after Claude Opus 4.5 confidently ruled out a validator rename we did use in three files. GPT-5.2 is noticeably better at the unlabelled breakage pass and worse at reachability.",
+      "Summarising a migration guide is easy for any model. Connecting it to the call sites in one specific codebase does not happen unless the usage list is a required input. A CANNOT TELL verdict has to be available too, because Claude Opus 4.5 will otherwise rule out a rename that the code does use. GPT-5.2 is stronger on unlabelled breakage and weaker on reachability.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
   },
 

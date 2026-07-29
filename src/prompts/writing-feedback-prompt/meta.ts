@@ -94,7 +94,7 @@ Never suggest wording, never rewrite, never offer a fix. Where you feel the pull
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Banning suggestions was harder than expected. Both models kept slipping into helpfulness, and GPT-5.2 in particular would name a problem and then quietly append a better opening line. Adding the instruction to describe the problem and stop cut most of it. On a piece I had rewritten four times, Claude Opus 4.5 put the drop off at paragraph two and named the reason in six words, which no line level review had ever surfaced.",
+      "Reader response collapses into editing almost immediately. A model names where attention drops and then appends a better opening line, and the suggestion buries the finding, which was the valuable part. Forbidding replacement sentences outright keeps the output as a trace of one reader's state: where they doubted, where they stopped, and what they would say the piece was about.",
   },
 
   article: {

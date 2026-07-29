@@ -89,7 +89,7 @@ Do not modify the code under test. Where the contract and the code disagree, wri
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Given the function body, both models wrote tests that asserted the current output for each branch, which passed against a version I had deliberately broken with an off by one. Removing the body and supplying only the contract fixed it: GPT-5.2 caught the boundary on the first run, and Claude Opus 4.5 also flagged that the empty case was ambiguous in my wording.",
+      "Show a model the function body and it writes tests that assert whatever that body currently returns, so the suite passes against an off by one already sitting in the code. Supplying the contract and withholding the implementation is what produces tests capable of failing. Claude Opus 4.5 tends to push back on the specification itself, flagging an empty input case the wording left ambiguous.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

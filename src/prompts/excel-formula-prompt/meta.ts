@@ -98,7 +98,7 @@ CRITICAL: do not invent column letters, do not assume a sorted range, and never 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I added the expected result count section after a SUMIFS that looked perfect returned totals about eleven percent too high for a fortnight. The site code column had trailing spaces on some rows and a lookup was matching more broadly than I assumed. Neither model flagged it unprompted, but both caught it immediately once required to predict a count and hand me a formula that tests the prediction.",
+      "Spreadsheet totals that look plausible get trusted, and trailing spaces or inconsistent codes in a criteria column will inflate a SUMIFS with no visible symptom at all. Models do not raise this unprompted. Requiring a predicted match count, plus a second formula that tests the prediction, converts a silent overcount into a number that either agrees with the prediction or does not.",
   },
 
   article: {

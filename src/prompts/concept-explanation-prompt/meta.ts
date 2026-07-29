@@ -98,7 +98,7 @@ Structure your answer as.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The analogy limit clause came from an actual mess. A generated explanation compared electron shells to planetary orbits with no caveat, my Year 10s took it literally, and I spent a lesson the following term undoing it. Requiring the failure point in the very next sentence has held up across every subject I have tried since, including two I do not teach.",
+      "An analogy offered without limits gets taken literally, and electron shells stay planetary orbits in a learner's head until something much later contradicts it. Requiring the failure point in the sentence immediately after the comparison costs one line and heads off a misconception that takes a whole lesson to undo. Capping new terms at three keeps the explanation inside stated prior knowledge.",
   },
 
   article: {

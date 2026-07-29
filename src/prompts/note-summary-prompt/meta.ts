@@ -84,7 +84,7 @@ Quote the notes when a claim comes from them. Label anything you worked out your
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Given a page of my own shorthand, both models fused three separate half thoughts into one confident decision about a vendor nobody had chosen. The quote requirement and the INFERRED label stopped it. GPT-5.2 still writes actions that are really categories, so reject anything you could not physically begin within a minute of reading it.",
+      "Fragmentary notes invite invention. Three unfinished lines about a vendor get fused into one confident decision that was never taken, because a model resolves ambiguity toward the tidiest available reading. Requiring a supporting quote for every claim and an INFERRED label on everything else keeps the summary traceable back to what was written.",
   },
 
   article: {

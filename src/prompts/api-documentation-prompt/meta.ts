@@ -91,7 +91,7 @@ Write nothing aspirational. Do not describe how the endpoint should behave. Do n
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "First runs against a real handler produced a rate limit section, a 429 response and a bearer token scheme, none of which existed anywhere in the code I supplied. Adding the citation requirement plus a quarantine section removed all three. Claude Opus 4.5 then correctly moved authentication into unverified because the dependency body was never pasted.",
+      "Handed a single handler, models document the API they expect rather than the one in front of them: rate limit sections, 429 responses and bearer token schemes appear with nothing in the pasted code to support them. Requiring a line citation for every claim, and a quarantine section for the rest, pushes unverifiable behaviour out of the reference and into a list the reader can check.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

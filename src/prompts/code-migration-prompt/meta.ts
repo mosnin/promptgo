@@ -96,7 +96,7 @@ Do not rename anything. Do not restructure. Do not adopt an idiom of the target 
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "The verdict column started as a free text note and both models used it to hedge, so it was narrowed to three words and the instruction not to write EXACT defensively was added. Claude Opus 4.5 then correctly flagged pytz localize against zoneinfo as lossy at the ambiguous hour, which is the exact row a hand written plan had missed twice.",
+      "Left as free text, a per item verdict column fills with hedging that carries no information and hides the rows that matter. Constraining it to three fixed words, and banning defensive use of EXACT, forces a real call on cases like pytz localize against zoneinfo, which is lossy at the ambiguous hour when clocks go back and is exactly the row hand written plans miss.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
   },
 

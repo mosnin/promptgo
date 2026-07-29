@@ -90,7 +90,7 @@ Do not touch the protected sentences, the moves listed as wanted, dialogue, or q
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The change cap did more for output quality than any wording I tried. Uncapped, GPT-5.2 returned 180 entries on 900 words of fiction and roughly 140 were commas. Capped at one change per twenty words, both models started ranking, and the CLI code surfaced four phrases in my own copy I had used so often I no longer heard them. Claude Opus 4.5 is the more reliable at refusing to touch dialogue.",
+      "Uncapped, a line edit returns every comma the model would have placed differently, and hundreds of entries on a short draft bury the four that matter. One change per twenty words forces ranking, so the worst offences surface first. Reason codes then separate the edits safe to accept blind from the ones that alter what a sentence asserts.",
   },
 
   article: {

@@ -105,7 +105,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The banned word list came out of a moderation meeting, not a theory. Our first generated rubric separated bands with limited, some and thorough, and four markers placed the same script in three different bands. Listing the forbidden adverbs in the prompt fixed it in one pass. Gemini still slips appropriate into the top band occasionally, so I search the output for it before printing.",
+      "Band descriptors written by a model separate limited from some from thorough, which reads as a scale and functions as a coin toss, because two markers cannot agree on what thorough looks like. Banning comparative and intensifying adverbs forces each band onto an observable difference in the work itself: what is present, what is absent, how many, in what order.",
   },
 
   article: {

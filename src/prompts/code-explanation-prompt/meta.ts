@@ -90,7 +90,7 @@ Do not suggest improvements and do not rewrite anything. If you notice a probabl
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "The ban on purpose language in section A came from a run where a method called validate_and_send was described as validating and sending, when the validation branch had been commented out at some point and never restored. Both models repeated the name back at me until the ban went in, after which Claude Opus 4.5 caught the dead branch immediately.",
+      "A function named validate_and_send gets explained as validating and sending whatever the body actually does, because the identifier is the cheapest available evidence and models take it. Banning purpose language in the first pass and forcing a statement by statement reading is what surfaces a validation branch that was commented out and never restored.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

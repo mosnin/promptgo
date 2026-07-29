@@ -102,7 +102,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Without the mark scheme pasted in, all three models graded on fluency, and a well written descriptive essay came back a band above where our department placed it. With the descriptors supplied the bands matched two markers out of three. GPT-5.2 will still drift into rewriting the second and third paragraphs if you thank it and ask for a bit more, so the single paragraph rule has to be restated rather than assumed.",
+      "Without descriptors in front of it, a model grades fluency, so a well written but thin essay lands a band above where a department would place it. The scheme has to be pasted in and the judgement justified against its wording rather than the model's own standards. The single paragraph modelling limit needs restating, because expanding into a rewrite is the default drift.",
   },
 
   article: {

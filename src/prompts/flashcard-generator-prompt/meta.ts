@@ -92,7 +92,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "My first decks were full of cards asking students to state three factors affecting rate, which is three cards wearing one coat, and pupils reliably recalled two of the three and scored themselves correct. Making the split list visible was what changed behaviour, because seeing the bundled version next to the two clean cards teaches the rule faster than the rule does. Claude Opus 4.5 still writes the occasional cloze with two deletions.",
+      "Notes converted straight into cards produce fronts asking for three factors at once, which is three cards wearing one coat. A learner recalls two, scores it correct, and the third is never tested again. Splitting any answer joined by and, then showing the bundled version beside the clean pair, teaches the rule faster than stating the rule does.",
   },
 
   article: {

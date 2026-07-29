@@ -88,7 +88,7 @@ When I finally get there, close with: the concept the difficulty traced back to,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I ran this with four Year 11s who had all been using a chatbot for homework, and the first thing that happened was every one of them tried to get the answer out of it within three messages. GPT-5.2 held. Gemini caved once when a student said their teacher had said it was fine. Adding the explicit refusal clause about deadlines and permission closed that off in later runs.",
+      "Tutoring collapses the moment the answer appears. Pressed with a deadline, a claim that permission was given, or a third failed attempt, models relent and supply the working, which ends the thinking the dialogue exists to produce. Naming those pressures in an explicit refusal clause closes them off, and a simpler parallel problem is what replaces the answer when a learner stalls.",
   },
 
   article: {

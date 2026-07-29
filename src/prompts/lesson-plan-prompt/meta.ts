@@ -106,7 +106,7 @@ Produce exactly these sections.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Early runs kept producing a starter, a card sort and a plenary regardless of what the objective said, which is the shape of a plan rather than a plan. Forcing every step to name its objective link removed roughly a third of the activities. Both models still overestimate how much gets done in fifty minutes, so I cut one step before teaching and have never regretted it.",
+      "Requested without constraint, a lesson plan comes back as the shape of a lesson: starter, card sort, plenary, in the expected order and joined to the objective by nothing at all. Making every step name the part of the objective it serves deletes the decorative third. Timings still run optimistic, so a plan that fits exactly is a plan that overruns.",
   },
 
   article: {

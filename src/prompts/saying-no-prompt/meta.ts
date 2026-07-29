@@ -99,7 +99,7 @@ Finish with: the sentence in your own draft most likely to be read as negotiable
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Every model I tested buried the refusal under two paragraphs of appreciation, and in a small trial with my own team those drafts got pushed back on about twice as often as ones that declined in the opening line. Forcing the answer into the first two sentences fixed it. Claude still adds a closing offer to help in other ways, which is a second alternative wearing a friendly hat, so I delete it.",
+      "A refusal written by a model arrives after two paragraphs of appreciation, which leaves the reader unsure whether the answer was no and invites a second attempt at the same request. Putting the decline inside the first two sentences, and capping alternatives at one, stops a closing offer to help in other ways reopening it.",
   },
 
   article: {

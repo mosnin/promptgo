@@ -97,7 +97,7 @@ Use only column names present in the schema above. If the question cannot be ans
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The instruction against narrating results came from a run where Claude produced clean code and then a paragraph beginning with the observation that turnaround had clearly worsened at the larger sites. It had seen no data at all. Both models did this until told not to, and GPT-5.2 still likes to leave a final print statement announcing a conclusion, which I delete before running anything.",
+      "Point a model at a schema with no rows attached and it still produces the conclusion: clean pandas code, then a paragraph asserting that turnaround has worsened at the larger sites, written as fluently as if output had been read. Banning narration of results is necessary for both models, and GPT-5.2 still tries to end the script with a print statement announcing a finding.",
   },
 
   article: {

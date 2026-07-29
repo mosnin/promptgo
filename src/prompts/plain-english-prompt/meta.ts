@@ -88,7 +88,7 @@ Finish with the glossary as a list, and the count of ambiguities found.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "The ambiguity rule came out of a benefits letter I rewrote for a housing association. Turning may be effected by deduction into we will take it from your next payment read beautifully and answered a question the original had left open, which nobody in the organisation could actually answer when I asked. Every model I tried resolved it the same confident way. Now they have to print both readings and stop.",
+      "Bureaucratic phrasing often hides a question the organisation never settled, and simplifying it forces a choice. Models resolve that choice confidently and silently, so may be effected by deduction becomes a definite statement about someone's next payment. Requiring both readings to be printed, with the rewrite halted until a person picks one, keeps an invented decision out of a binding document.",
   },
 
   article: {

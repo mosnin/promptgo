@@ -99,7 +99,7 @@ CRITICAL: never invent a value for a missing cell and never introduce a category
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "An early draft asked for a cleaned table back and I nearly shipped it. Claude had parsed a column of British dates as month first for the twelve rows where that was possible and day first for the rest, producing a column that was internally inconsistent and looked perfect. Forcing rules instead of output made the ambiguity visible in one line, and every model I tried then asked me which format the source system wrote.",
+      "Requesting a cleaned table back is the mistake. A mixed date column comes back parsed day first for the unambiguous rows and month first for the rest, internally inconsistent, immaculate looking, and carrying no record of the decision. Asking for cleaning rules instead of cleaned output makes the ambiguity a visible line, and models then ask which format the source system writes.",
   },
 
   article: {

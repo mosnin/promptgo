@@ -98,7 +98,7 @@ Do not recommend a transformation, a backfill or a validation rule. Do not call 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "Gemini 3 Pro", "GPT-5.2"],
     testingNote:
-      "I profiled a customer table where a column was 72 percent empty and every model I tested opened with a remediation plan for it. When I added the query log and it turned out nothing had read that column in eighteen months, the ranking inverted completely and the top item became a quietly stale date field two reports depended on. The usage input changed the answer more than any scoring rule did.",
+      "Emptiness attracts attention. A column that is mostly null draws a remediation plan from every model, whether or not anything downstream reads it. Feeding query logs in alongside the profile inverts the ranking, and the top item becomes a quietly stale field that live reports depend on. Usage data changes the answer more than any scoring rule in the prompt does.",
   },
 
   article: {

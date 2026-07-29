@@ -94,7 +94,7 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The rule that moves inventions into section five was added after a spec confidently stated a debounce interval that appeared nowhere in the design. It read as authority and would have shipped. With the rule in place, the same input produced a section five with eleven items, four of which nobody on the team had noticed were unresolved.",
+      "Specs written from a design read as authoritative even where the design is silent, and a model will state a debounce interval or an error timeout that no artefact ever specified. Routing every value not visible in the source into a separate open questions section keeps invention out of the part engineers implement.",
   },
 
   article: {

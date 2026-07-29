@@ -94,7 +94,7 @@ Finish with one alternative ordering that would be correct if the reader arrived
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "I added the displacement cost column after watching a team argue for forty minutes about whether testimonials sat third or fifth. Made to write what it costs to demote each region, the model produced an argument both sides could attack, and the meeting ended in nine minutes. The cut line estimates are rough and should be checked against a real build before anyone quotes them.",
+      "Ordering debates stall because every region sounds important in isolation, and a model asked to rank them justifies each one on its own merits. Making it write what is lost by demoting each region gives both sides something concrete to attack. Estimates in that column are rough and should be checked against a real build.",
   },
 
   article: {

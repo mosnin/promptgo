@@ -88,7 +88,7 @@ STEP FOUR. Rewrite. Then rescore on the same five dials, so I can see what actua
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I added the conflict check after watching three models turn a contract termination notice into something that read almost congratulatory. Scoring before and after is what exposed the real problem: every model moved certainty downward whenever I asked for more warmth, so may be delayed became might possibly be delayed. Gemini 3 Pro is the most prone to it. Naming certainty as a dial to leave alone fixes it in one line.",
+      "Warmth and certainty travel together in a model's idea of tone, so a request for a friendlier register also turns may be delayed into might possibly be delayed and drains a commitment of its force. Scoring five dials before and after exposes that drift, and the tone conflict stop prevents a termination notice being rewritten to sound almost congratulatory.",
   },
 
   article: {

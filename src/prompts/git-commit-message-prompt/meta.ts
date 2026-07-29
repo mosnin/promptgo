@@ -93,7 +93,7 @@ Output only the message or messages, plus the disagreement report where there is
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Given a description and a diff together, both models paraphrased the description and ignored a redis version bump sitting in the same staged change. Forcing a file by file reading before the description is even considered fixed that on both. GPT-5.2 still needs the explicit ban list, or roughly one commit in six comes back as update dependencies and fix tests.",
+      "Given a description alongside a diff, a model paraphrases the description and never notices the dependency bump riding along in the same staged change. Forcing a file by file reading before the description is even looked at fixes that on both models. The banned phrase list stays because GPT-5.2 otherwise falls back to update dependencies and fix tests whenever a change touches more than one concern.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

@@ -88,7 +88,7 @@ Finish by naming any card you would cut and what the reader still knows without 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Both models wanted to fix wording while they were in there, and the dependency table is what stopped them. Before I added it, GPT-5.2 handed back a smooth new paragraph and I could not tell whether the improvement came from the order or from the quiet rewriting. Claude Opus 4.5 produces the more honest forward reference list, but it under reports dependencies when the reader field is left thin, so fill that in properly.",
+      "Any model handed a badly ordered paragraph will fix the wording while it is in there, and the smoother version makes it impossible to tell whether the new order or the quiet rewriting did the work. Quoting each sentence into a numbered card with its dependencies, and reporting forward references before proposing anything, keeps the change to sequence alone.",
   },
 
   article: {

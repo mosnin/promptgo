@@ -100,7 +100,7 @@ Never name a specific cause. You cannot see the deploy, the outage or the campai
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Gemini 3 Pro", "Claude Opus 4.5"],
     testingNote:
-      "I tested this on eleven alerts saved from a retail warehouse over one winter. Seven of them stopped at gate one or gate two, which matched what had actually happened at the time. The gate that needed the most rewriting was the third: without the explicit demand for the five largest historical moves with dates, every model described the current change as unusual while the series plainly contained bigger ones.",
+      "Any movement presented to a model as an anomaly gets explained as one, mechanism included, because nothing in the framing invites the answer that the series does this every quarter. The gate demanding the five largest historical moves with their dates is what forces a comparison against the past before a cause is proposed, and it is where most alerts stop.",
   },
 
   article: {

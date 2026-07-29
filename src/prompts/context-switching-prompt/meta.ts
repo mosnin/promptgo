@@ -95,7 +95,7 @@ Return the context assignment, both switch counts, the rebuilt day as a timeline
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "My own day scored fourteen switches before batching and six after, and the number was what convinced me, because I would have guessed five before. The re entry note turned out to matter more than the batching: leaving the next physical action written down cut my restart time on interrupted work from several minutes to almost nothing. Gemini 3 Pro insists on grouping by project unless the setup definition is spelled out.",
+      "Grouping is where this task goes wrong. Left to their own definition, models batch by project rather than by setup cost, so two tasks that need different tools and different files end up inside one block. Defining a switch as a change of tools and context, and demanding a written re entry note, keeps the batches real.",
   },
 
   article: {

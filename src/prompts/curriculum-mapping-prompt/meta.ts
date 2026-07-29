@@ -95,7 +95,7 @@ Return the dependency list, the week by week map as a table, the overrun stateme
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Running this on a scheme I had written myself, the dependency list caught something two of us had missed for three years: we taught moles in November and the calculations that need them in the October before, because the specification lists them in that order. Both models found it in the first pass once the dependency step was forced to come before the sequencing step.",
+      "Specification order is publication order, not teaching order, and a model asked to sequence a scheme follows the document because the document looks authoritative. Building the prerequisite list as a separate first step, before any week is filled, surfaces topics currently taught after the calculations that depend on them. Coverage gaps then get checked against that same list.",
   },
 
   article: {

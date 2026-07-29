@@ -91,7 +91,7 @@ End with one sentence naming the assumption most likely to break.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Handed a full calendar, both models planned real work into gaps of twenty and thirty minutes and produced a week that looked achievable and was not. Requiring one ninety minute block with no meeting beside it exposed that in a single run. Gemini 3 Pro still tries to spend the reserve hours, so count the assigned total before accepting anything.",
+      "Every free gap in a calendar looks like capacity to a model, so real work gets scheduled into twenty minute slivers between meetings and the week reads as achievable on paper. Demanding one long block with no meeting beside it, and holding reserve hours back from assignment, keeps the plan honest about how much fits.",
   },
 
   article: {

@@ -93,7 +93,7 @@ Do not add causal links the document does not make. Two findings in adjacent sec
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "The summary only marker came out of a real embarrassment. A vendor assessment I summarised confidently reported an uptime figure that existed nowhere except the vendor's own abstract, and I repeated it in a board paper. Now the prompt checks whether a claim survives in the body. Locators hold up well for the first thirty pages or so on all three models and get less reliable after that, so I split anything longer into parts.",
+      "A claim that appears only in a document's own abstract will be repeated by a summariser as though the body supported it, which is how an unevidenced figure travels into a board paper. Anchoring every sentence to a locator and marking claims DEMONSTRATED, ASSERTED or SUMMARY ONLY forces the check. Locator accuracy degrades across very long documents, so split them.",
   },
 
   article: {

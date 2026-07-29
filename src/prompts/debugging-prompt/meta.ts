@@ -91,7 +91,7 @@ Only after step five, and only when the top hypothesis is clearly ahead of the s
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Both models opened with a plausible fix for a cache bug that turned out to be a serialisation mismatch, so the fix ban went in and the quality jumped immediately. The discriminator field was the second addition: without it GPT-5.2 listed hypotheses that were all consistent with the same evidence, which is a list rather than a diagnosis.",
+      "The first plausible fix arrives before any diagnosis and is usually aimed at the symptom, proposing cache invalidation for what is really a serialisation mismatch. Banning fixes until a cause is named raises the quality of everything after it. The discriminator field matters just as much, since GPT-5.2 will otherwise list hypotheses that are all consistent with the same evidence, which is a list and not a diagnosis.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

@@ -89,7 +89,7 @@ STEP 5: UNVERIFIABLE. List every place where behaviour preservation depends on s
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "The quirk clause came out of a real failure: a helper truncated instead of rounding, and both models silently corrected it while extracting a function, which would have shifted every historic total by a cent. Asking for a contract first made the truncation visible as a line item, and after that neither model touched it.",
+      "Behaviour that looks like a bug gets silently corrected during a refactor. A helper that truncates where rounding was clearly intended comes back rounding, every historic total shifts by a cent, and the model treats the change as obviously helpful and does not mention it. Writing the current contract down before any code moves turns that quirk into a visible line item, after which it survives the edit.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

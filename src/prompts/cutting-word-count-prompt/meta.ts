@@ -89,7 +89,7 @@ If the target cannot be reached without cutting protected material or a load bea
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Stage ordering changed the results more than any instruction about quality. Left to itself, GPT-5.2 shaved every sentence by fifteen percent and returned a draft that hit the number and had lost its rhythm everywhere at once. Forcing whole unit deletion before any compression gave back prose that still sounded written. Claude Opus 4.5 writes the more honest loss report, and both models under count words by a few percent, so verify the final figure yourself.",
+      "Given a target length, a model shaves a uniform percentage off every sentence and hits the number with prose that has lost its rhythm in all places at once. Ordering the work so whole units go first and compression is the last resort protects the sentences that survive, and the loss report makes the cost of hitting the number legible.",
   },
 
   article: {

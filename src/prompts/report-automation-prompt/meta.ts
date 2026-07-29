@@ -101,7 +101,7 @@ You may not use a figure absent from the current input, and you may not compute 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The stable section rule exists because every model I tried rewrote the definitions appendix, improving the prose slightly each cycle. After four simulated months the wording had drifted enough that one definition no longer matched the query behind it. Instructing the model to copy rather than reproduce fixed it, and I now diff the stable sections against last cycle before sending anything.",
+      "Regenerated reports drift. Told to reproduce a definitions appendix, a model improves the prose slightly on every cycle, and after enough cycles the wording no longer matches the query that produces the number. Instructing it to copy stable sections verbatim rather than reproduce them stops the drift, and any diff against the previous cycle then becomes a defect worth inspecting before sending.",
   },
 
   article: {

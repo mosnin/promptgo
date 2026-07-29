@@ -91,7 +91,7 @@ STEP FIVE. Mark any structural slot that is empty as EMPTY SLOT, describe the pr
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "I ran this over four abandoned drafts from a writing group. Three had the same reading: fewer than a third of scenes were decisions, and the first irreversible choice sat past the halfway mark. The empty slot rule took several attempts to enforce, because both models want to be helpful and will write the missing scene unless told twice not to. Claude Opus 4.5 holds the line better once the instruction is explicit.",
+      "Structural analysis turns into ghostwriting the moment a gap appears, because a missing scene reads to a model as an invitation. Stating twice that empty slots stay empty is what holds the line, and the analysis only survives if it does: the ratio of decisions to events, and how far into the draft the first irreversible choice sits.",
   },
 
   article: {

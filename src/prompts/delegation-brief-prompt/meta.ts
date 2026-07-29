@@ -96,7 +96,7 @@ Do not write encouragement and do not restate the task as the outcome.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Early briefs came back with an empty not yours list every single time, because models read delegation as generosity rather than as a split. Requiring at least one item in all three lists produced claims I could actually argue with. GPT-5.2 twice invented a budget ceiling nobody had mentioned, which is why each inferred line must be rejectable in one word.",
+      "Delegation reads to a model as generosity rather than as a split, so the list of what the other person does not own comes back empty and every boundary stays theoretical. Requiring at least one entry in all three lists, and making each inferred constraint rejectable in a single word, turns the brief into something arguable.",
   },
 
   article: {

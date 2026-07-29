@@ -104,7 +104,7 @@ Return three blocks.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The first quiz I generated had four items where the correct answer was the only option written with a unit, and my top set found that pattern in under a minute without doing any chemistry. Banning surface cues fixed it. I still mark the key against my own working, because across roughly forty generated numerical items I have found two keys that were simply wrong.",
+      "Surface cues give quizzes away. Distractors generated without constraint leave the correct option as the longest, or the only one with a unit, or the only one that fits the stem grammatically, and a strong class finds that pattern faster than the chemistry. Banning those cues and sourcing distractors from named misconceptions is what makes the results diagnostic.",
   },
 
   article: {

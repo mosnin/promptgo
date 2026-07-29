@@ -103,7 +103,7 @@ Output.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I tried this first by pasting whole scripts and it praised structure that was not there in two of the six I checked, which is worse than useless on a returned book. Switching the input to marking notes plus two short quotes stopped it. The comments now take me about the same time to produce as writing them, but they are better, and the check question is the part students actually respond to.",
+      "Handed a whole script, a model praises structure that is not there, because generating plausible commentary is easier than reading closely, and invented praise in a returned book is worse than no comment. Restricting the input to marking notes and short quotes removes the room to invent, so every comment points at a place the student can actually find.",
   },
 
   article: {

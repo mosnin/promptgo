@@ -89,7 +89,7 @@ Finally, add a list titled NOT WORTH IT for any merge that would require redesig
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Running this against a real inventory of fourteen button variants, every model initially proposed collapsing to three and moving the rest behind props, including two variants that existed for a certification requirement. Adding the cannot change field fixed it. GPT-5.2 remains the most willing to say a merge is not worth doing, which is the answer that saves the most work.",
+      "Consolidation advice arrives unconditionally. Shown a long list of button variants, models recommend collapsing them to three and hiding the difference behind props, including variants that exist for a certification requirement rather than for taste. A cannot change field on every component, plus permission to say a merge is not worth doing, keeps the audit honest.",
   },
 
   article: {

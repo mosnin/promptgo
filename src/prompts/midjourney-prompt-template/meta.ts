@@ -100,7 +100,7 @@ Produce five numbered variants. Every slot is identical to variant one except th
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Midjourney v7", "GPT-5.2"],
     testingNote:
-      "Running the compiler through GPT-5.2 before pasting into Midjourney caught something I had missed for months: my hand written prompts were carrying three adjectives that duplicated the medium slot. Stripping them changed the output more than any parameter I had been fiddling with. The stylize justification note is there because I kept setting it out of habit rather than for a reason.",
+      "Hand written image prompts accumulate adjectives that repeat the medium slot, so several words compete to describe the same thing and none of them can be tuned on their own. Compiling slot by slot exposes the duplication, and requiring a justification for every parameter stops values like stylize being set out of habit.",
   },
 
   article: {

@@ -95,7 +95,7 @@ Never use the words modern, clean, dynamic, innovative or timeless anywhere in t
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The ban on five specific adjectives came from counting them. Across eleven briefs generated before that rule existed, modern appeared in nine and timeless in seven, usually in the intent sentence where they did all the damage. Removing the vocabulary forced the models to describe an actual position. Claude complies better than GPT, which slips innovative back in around part C.",
+      "Brief vocabulary collapses toward modern, timeless and innovative, and none of those words describe a position a designer can draw against. Banning them outright forces the intent sentence to say who the mark is for and what it has to beat, though the ban needs restating late or the adjectives creep back in.",
   },
 
   article: {

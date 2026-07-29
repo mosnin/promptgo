@@ -88,7 +88,7 @@ RULE: the minimum gap between strokes is never smaller than the stroke weight. A
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Part three found a real collision in a set I had already shipped: archive and export were being confused in table rows because both resolved to a box with an arrow at 16px, and the arrow direction was the only difference. Support had logged it as user error for months. The undrawable list is less reliable and needs pushing on abstract concepts such as audit history.",
+      "Icon sets collide at small sizes long before anyone notices, because two concepts reduce to the same silhouette once detail is dropped and only a stroke direction separates them. Asking for the shape each icon resolves to at sixteen pixels catches the clash while it is cheap. The undrawable list needs pushing on abstract concepts.",
   },
 
   article: {

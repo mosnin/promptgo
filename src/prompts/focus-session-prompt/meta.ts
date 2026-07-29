@@ -94,7 +94,7 @@ Do not motivate me and do not suggest breaks, music or timers.`,
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Without a stall rule the sessions felt fine and ended with a half written section and no record of where it stopped. Adding the handover sentence gave back roughly ten minutes at the start of every following session. Claude Opus 4.5 keeps folding encouragement into the stall rule, so it needs telling twice that the rule has to be an action.",
+      "Nothing in a session plan tells a model what to do when the work stalls, so it writes encouragement where an action belongs and the session ends with no record of where it stopped. Naming a concrete fallback move, plus a handover sentence written before the timer runs out, is what makes the next session start fast.",
   },
 
   article: {

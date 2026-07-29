@@ -99,7 +99,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I fed a real six item list into a 50 minute slot and both models happily produced six items at eight minutes each, ignoring that nobody arrives on time. Reserving ten minutes off the top before dividing cut it to four items, which matched what the meeting had actually been achieving. GPT-5.2 still labels a roadmap update as a decision if you let it, so I check the type column against the two answers test.",
+      "Given a slot and a list of topics, models divide the minutes evenly and assume everyone arrives on time, which produces an agenda no real room has ever kept to. Reserving time off the top before dividing, and testing each item against whether two different answers are genuinely possible, cuts the list down to what fits.",
   },
 
   article: {

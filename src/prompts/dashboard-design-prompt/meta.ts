@@ -98,7 +98,7 @@ CRITICAL: do not propose a metric that is not in the available list. Do not incl
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The threshold requirement came from a retail dashboard I maintained for two years where a manager phoned me every Monday about a conversion tile that had simply reverted to its average. We could not answer what number would have been fine, which meant the tile had no purpose. Adding the threshold column to this prompt cut a proposed sixteen tile layout to seven on the first run.",
+      "Every metric a model can name ends up on the dashboard, because adding a tile costs nothing and looks thorough. The filter that works is a threshold column: each tile has to state the number that would prompt an action, and any tile that cannot state one comes off. Applying that rule cuts a proposed layout by more than half and leaves only what somebody would act on.",
   },
 
   article: {

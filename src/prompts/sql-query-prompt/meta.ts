@@ -90,7 +90,7 @@ STEP 6: WHAT WOULD MAKE THIS WRONG. List the schema facts you assumed but were n
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Requiring a predicted row count before any SQL was the change that mattered. On a revenue question with a line item table in the middle, both models produced a query that quietly multiplied every order by its item count, and the totals looked plausible. Made to predict one row per region first, GPT-5.2 spotted the fan out itself and aggregated before joining.",
+      "Most incorrect generated SQL is not a syntax error but a silent join fan out. Put a line item table between the question and the answer and the query multiplies every order by its item count, returning totals that look entirely plausible. Requiring a predicted row count and a stated grain before any SQL is written catches it, and GPT-5.2 will then aggregate before joining without being told again.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

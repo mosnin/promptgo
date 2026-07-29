@@ -88,7 +88,7 @@ RULES. Do not rewrite the code. Do not suggest changes to lines the diff did not
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Asking for a verdict produced approval on a diff that dropped a transaction boundary, on both models, twice. Reframing it as produce the input that breaks this found the interleaving on the first attempt. The unverifiable list came later, after Claude Opus 4.5 confidently asserted a helper handled nulls when the helper had never been supplied to it.",
+      "Ask for a verdict and the answer is usually approval, even on a diff that quietly drops a transaction boundary. Reframing the task as produce the input that breaks this turns the same model into something that finds the interleaving. The unverifiable list exists because models will assert that an unseen helper handles nulls rather than admit the file was never supplied.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

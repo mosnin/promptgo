@@ -89,7 +89,7 @@ Finish with a list of every computed ratio between 4.0 and 5.0, because those ar
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I checked forty of these computed ratios against a real contrast checker. The models were within 0.2 most of the time and wrong by more than 0.5 on four pairs, all of them saturated greens near the threshold. That is why the prompt ends by listing anything between 4.0 and 5.0: those are precisely the rows where the arithmetic error changes the verdict.",
+      "Contrast ratios stated by a model are estimates presented as arithmetic, and the error grows on saturated colours sitting close to the threshold, which is precisely where the verdict flips. Requiring every pair between 4.0 and 5.0 to be listed for checking in a real contrast tool stops borderline rows passing silently.",
   },
 
   article: {

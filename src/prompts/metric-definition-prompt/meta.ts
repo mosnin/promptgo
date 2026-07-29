@@ -100,7 +100,7 @@ Never invent a field that is not in the sources list. Where the sources cannot s
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "I ran this against three genuinely conflicting figures for clinic attendance and the reconciliation section found the cause in one attempt: finance was counting by invoice date and operations by appointment date, which differ whenever a booking crosses a month end. What no model got right unprompted was the eight edge cases. Every one of them produced four and stopped, so the count is now written into the instruction.",
+      "Reconciliation is the part models handle well. Given two conflicting figures they will work out that one side counts by invoice date and the other by appointment date, which diverge whenever a record crosses a month boundary. Edge cases are the weak part. Left to their own judgement they produce four and stop, so the required number is written into the instruction.",
   },
 
   article: {

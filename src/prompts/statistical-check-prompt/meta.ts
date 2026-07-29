@@ -100,7 +100,7 @@ CRITICAL: never calculate a p value, confidence interval or effect size from num
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Ordering matters more than I expected. When I asked for a verdict first and alternatives afterwards, every model produced alternatives that conveniently supported the verdict it had already given. Moving the alternatives to step one, before any assessment exists, changed the output completely. GPT-5.2 in particular went from confirming my finding to identifying a composition shift I had genuinely missed.",
+      "Sequence decides the answer here. Ask for a verdict and then for alternative explanations, and the alternatives arrive shaped to support the verdict already committed to. Moving alternative explanations into the first step, before any assessment exists, changes what the model finds: GPT-5.2 will surface a composition shift rather than confirm the effect it was handed.",
   },
 
   article: {

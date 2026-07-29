@@ -94,7 +94,7 @@ Deliver three things. First, the description as prose at the stated budget, with
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "The two jobs rule is what stopped the output reading like a casting note. Before it, both models produced atmospheric paragraphs that told me a great deal about a stranger and nothing about the person watching. GPT-5.2 needs the banned list stated explicitly or eye colour returns within two sentences. Claude Opus 4.5 handles the blind spot section better and will name something genuinely uncomfortable about the observer's motives.",
+      "Description requests pull a standard inventory out of a model: eye colour, hair, build, height, a comparison to some actor. That paragraph belongs to nobody, since a narrator with no stake in the scene notices everything equally. Fixing the observer and what they want, then requiring every detail to report on both people at once, is what stops the casting note.",
   },
 
   article: {

@@ -94,7 +94,7 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The claim list check has changed two of my own decks before a single slide existed. On a migration pitch it reported that claims four and five both argued cost and neither argued risk, which was exactly the gap the CTO found in the room the previous quarter. The cut field is more decorative and only occasionally tells me something I had not already decided.",
+      "Slide plans hide their gaps behind confident titles. Listing the single claim each slide has to prove exposes decks where three slides argue cost and none argue risk, which is the objection that then arrives in the room. The cut field is weaker and rarely reports anything the author had not already suspected.",
   },
 
   article: {

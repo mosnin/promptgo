@@ -89,7 +89,7 @@ Rank the FAIL items by how many people are blocked outright rather than inconven
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "With only two verdicts available, every model I tried passed criteria it had no evidence for, including focus order from a static image. Adding the third verdict flipped roughly a quarter of the report to CANNOT DETERMINE, and those lines turned out to be the useful ones because each named the artefact that would settle it. Gemini still needs reminding that a portal changes the tab order.",
+      "With only pass and fail available, a model marks criteria it has no evidence for, confirming focus order and tab sequence from a static image. Adding a third verdict for what cannot be determined turns those lines into the useful ones, because each has to name the artefact that would settle the question.",
   },
 
   article: {

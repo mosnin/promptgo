@@ -100,7 +100,7 @@ CRITICAL: every quote must be copied exactly from the responses given. Do not pa
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Requiring verbatim quotes came out of a run where Gemini produced a beautifully representative patient comment that appeared nowhere in the 260 responses I had pasted. It was a composite, and it was better written than anything real. I now grep every quote against the source file before it reaches a report, and the prompt says copied exactly rather than quote for that reason.",
+      "Quotes are the failure mode in open text analysis. Asked for a representative comment, Gemini 3 Pro composes one that reads better than anything in the actual responses and appears nowhere in them. Requiring every quote to be copied exactly, in a form that can be searched for in the source file, is the only check that survives a report deadline.",
   },
 
   article: {

@@ -95,7 +95,7 @@ Do not propose caching, parallelism or a rewrite in a faster language unless the
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Given only source code and a complaint about slowness, both models happily proposed batching a loop that later measured at 3 percent of wall time, which is why the gate now refuses to answer without a profile. The ceiling step was added after Gemini 3 Pro ranked a 6 percent frame first on the grounds that it was the easiest to fix.",
+      "Source code plus a complaint about slowness is enough for a model to propose batching a loop, and nothing in the source says that loop accounts for a trivial share of wall time. Refusing to answer without a profile is the gate that stops speculative tuning. The ceiling step exists because Gemini 3 Pro will rank a small frame first on the grounds that it looks easiest to fix.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
   },
 

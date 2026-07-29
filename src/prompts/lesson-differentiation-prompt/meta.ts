@@ -100,7 +100,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Every early version quietly rewrote the objective for the supported group, usually turning explain into describe, which is a different piece of cognition wearing the same lesson title. Forcing the presentation and demand tag made that visible on the page. Claude still labels sentence starters as presentation when they are doing genuine thinking for the student, so I reread that row every time.",
+      "Differentiation drifts into lowering the objective. Explain quietly becomes describe for the supported group, which is different cognition wearing the same lesson title, and nothing on the page admits the swap. Tagging every adaptation as presentation or demand makes it visible, and restricting the supported route to presentation changes keeps all three routes pointed at one destination.",
   },
 
   article: {

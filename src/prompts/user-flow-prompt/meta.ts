@@ -96,7 +96,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Check four earns its place on nearly every run. On an onboarding flow I had shipped two years earlier it found a state where closing a modal discarded eleven fields with no warning, which had been quietly generating support tickets that nobody had connected to it. The unreachable check is noisier and produces a false positive whenever an entry point was left out of the input.",
+      "Flow reviews from a model tend to confirm the happy path and stop there. The states that generate support tickets are the ones where leaving a screen discards entered work without warning, and they surface only when the prompt asks explicitly what each exit destroys. Unreachable state checks are noisier and depend on every entry point being listed.",
   },
 
   article: {

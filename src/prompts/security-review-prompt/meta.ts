@@ -91,7 +91,7 @@ Do not assign a severity score without an exploit path you can narrate end to en
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Asked to review a handler for security issues, both models produced a checklist of missing headers and a note about input validation, and neither noticed that a user supplied URL was fetched server side. Enumerating sources and sinks separately, then pairing them, surfaced it immediately on both. Claude Opus 4.5 still under reports log fields as sinks unless they are named.",
+      "Checklists match on shape rather than on flow, which is why a generic security review returns missing headers and a note about input validation while a user supplied URL is fetched server side a few lines away. Enumerating sources and sinks separately, then pairing them, surfaces the reachable path instead. Claude Opus 4.5 under reports log fields as sinks unless the prompt names them.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
   },
 

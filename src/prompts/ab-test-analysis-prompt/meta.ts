@@ -99,7 +99,7 @@ CRITICAL: no segment level winners. If asked which segment responded best, answe
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2", "Gemini 3 Pro"],
     testingNote:
-      "Every model I tested would produce a p value on request even when I had given it nothing but two percentages, and the numbers were plausible enough that I checked one by hand before realising it could not have been derived. Demanding raw exposures and events per arm, and naming the missing counts when they are absent, was the only phrasing that stopped it across all three.",
+      "Given two percentages and no counts, models will still return a p value on request, formatted confidently and computed from nothing. The figure is plausible enough to survive a glance and a hand check. Demanding raw exposures and events per arm, and requiring the missing counts to be named when they are absent, is the instruction that reliably stops it.",
   },
 
   article: {

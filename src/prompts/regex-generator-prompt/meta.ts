@@ -89,7 +89,7 @@ STEP 5: TEST TABLE. Every positive and negative in a table with the expected res
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Asking for negatives before the pattern changed the results more than any wording elsewhere. On a ticket reference pattern both models initially accepted a lowercase variant and a seven digit number; made to enumerate near misses first, both produced correct anchored patterns. GPT-5.2 still needed reminding that the target engine had no lookahead.",
+      "Ordering the near misses before the pattern changes results more than any other wording. Asked for a reference format straight out, models return something that also accepts a lowercase variant and a wrong length number, since a loose pattern still matches the examples supplied. Made to enumerate what must fail first, they produce anchored patterns. GPT-5.2 reaches for lookahead unless the target engine is named.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

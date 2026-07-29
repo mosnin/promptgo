@@ -87,7 +87,7 @@ STEP THREE. List what you could not check: claims of fact, the spelling of real 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "GPT-5.2"],
     testingNote:
-      "Counting the conventions before judging them was the change that made this usable. Earlier versions imposed American spelling on a British document and reported forty seven errors, all of them wrong. The step three admission is the other thing I would not drop: on a report I ran last month it correctly refused to confirm two supplier names and one revenue figure, and the revenue figure turned out to be a transposition nobody had spotted in three reviews.",
+      "Convention has to come from the document. A proofreader with no profile of it imposes whichever spelling and date style the model defaults to, and reports every British form in a British text as an error. Counting the document's own usage first makes consistency an internal measure, and the separate unverifiable step stops names and figures being silently confirmed.",
   },
 
   article: {

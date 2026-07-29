@@ -94,7 +94,7 @@ Return, in this order: the reply or reply not owed verdict, the ask list, the om
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "The commitment audit exists because a draft I nearly sent contained the phrase happy to take a look at that this week, which both models had inserted as ordinary politeness. It was a two day commitment nobody had asked for in writing. Claude Opus 4.5 still tends to answer all three asks unless the one ask default is stated as a rule rather than a preference.",
+      "Ordinary politeness is where unplanned commitments enter a reply. An offer to take a look at something this week gets added as social filler and lands as a promise. The commitment audit makes every future tense clause explicit, and the single ask default stops the draft answering everything the original message raised.",
   },
 
   article: {

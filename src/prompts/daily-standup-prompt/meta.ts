@@ -92,7 +92,7 @@ Refuse to pad. Two empty lines can be an accurate update. Do not convert a thin 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Run on my own week, both models filed a two day wait on a security review as friction rather than a blocker, because I had written it apologetically. The promotion rule corrected that on the next attempt. GPT-5.2 still overruns the twenty five word cap on the finished line roughly a third of the time, so trim it before posting.",
+      "Models consistently record a multi day wait on someone else as friction rather than as a blocker, which hides the item most likely to cost the week. Requiring a duration on every blocker, and promoting anything over a day, is what makes the delay visible in the update.",
   },
 
   article: {

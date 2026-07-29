@@ -95,7 +95,7 @@ Return the checklist, the type and the reason for it, the removed steps with the
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Our release runbook had 31 steps and the checklist that came out had six, five of which mapped directly onto something that had gone wrong in the previous year. The one I argued with turned out to be right within a month. Both models pad the list with items like communicate with the team unless the skip test is enforced explicitly, and GPT-5.2 will restore them if you ask for the list to be more thorough.",
+      "Asked to turn a long runbook into a checklist, models pad the result with unfalsifiable items such as communicate with the team, and they restore that padding as soon as the request is for something more thorough. The skip test, where a step survives only if skipping it breaks something, is the constraint that keeps the list short.",
   },
 
   article: {

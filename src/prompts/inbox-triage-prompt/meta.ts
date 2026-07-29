@@ -91,7 +91,7 @@ End with the count in each bucket and the one message you were least sure about.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Both models filed about two thirds of a forty message inbox under reply now until the time budget was expressed as a hard count rather than a suggestion. GPT-5.2 still occasionally writes a draft for a message it filed under schedule, so check that the draft list and the reply bucket are the same length before you start sending.",
+      "Urgency is contagious in an inbox, and a model asked to triage will file most of it under reply now while still claiming to have respected the time budget. Expressing that budget as a hard count of messages per bucket rather than as guidance forces genuine deferral and keeps the draft list matched to the reply bucket.",
   },
 
   article: {

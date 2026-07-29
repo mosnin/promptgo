@@ -105,7 +105,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I ran an early version to build a 35 mark unit test and only noticed during marking that two six mark items credited five points each, so a third of the class scored full marks on an incomplete answer. Requiring the point count to meet the mark count removed that in one revision. Gemini 3 Pro still overestimates how much a student writes per minute, so I check the timing line myself.",
+      "Mark schemes are where generated papers fail quietly. A six mark item arrives carrying five creditable points, nobody notices until marking, and a full answer becomes impossible to distinguish from an incomplete one. Requiring at least as many separately creditable points as marks, and dropping the tariff when a further point cannot be found, catches that at authoring time.",
   },
 
   article: {

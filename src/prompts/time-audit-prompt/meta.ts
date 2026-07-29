@@ -95,7 +95,7 @@ Do not moralise about productivity and do not invent activity to fill the unacco
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Handed two weeks of my own calendar, all three models produced a tidy percentage breakdown that summed to a hundred and quietly swallowed eleven unaccounted hours into the meeting totals. Making the subtraction an explicit first step changed the whole reading. Claude Opus 4.5 kept recommending fewer meetings in general until the three named entries rule forced it to choose.",
+      "Percentage breakdowns of a calendar always sum neatly to a hundred, which means unaccounted hours are absorbed into whichever category is largest instead of being reported. Subtracting logged time from total time as an explicit first step surfaces the gap, and naming three specific entries to cut prevents advice as vague as fewer meetings.",
   },
 
   article: {

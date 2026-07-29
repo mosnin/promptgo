@@ -91,7 +91,7 @@ If the failure condition given to you actually covers several causes, split it a
     authorCredential:
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testingNote:
-      "Both models wrote a polite apology and a retry suggestion for a declined card that our own data said retries at 4 percent, so the remedy field became mandatory input rather than something to infer. GPT-5.2 still leaks the upstream processor name into the visible string about one time in five, which is why the ban lists that explicitly.",
+      "Asked to write a declined card message, models reach for an apology and a suggestion to try again, because retrying is the generic remedy and nothing tells them it rarely works for that decline code. Making the remedy a supplied input rather than an inference removes the guess. GPT-5.2 also leaks the upstream processor name into user visible text often enough that the ban has to name it.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
   },
 

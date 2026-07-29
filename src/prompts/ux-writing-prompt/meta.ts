@@ -90,7 +90,7 @@ After the table, list every string you could not write because BEHAVIOUR does no
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The character count column started as a convenience and turned out to be the enforcement mechanism. Asked for a limit without a count, both models wrote strings that were comfortably over and asserted they were within budget. Made to print the number beside each string, they began self correcting mid table. Gemini still miscounts by one or two on strings with punctuation.",
+      "Length limits get agreed to and then ignored. Told a string must fit a set number of characters, models return something longer and assert compliance, because the constraint is read as tone rather than as arithmetic. Printing the count beside every string makes the overrun visible in the table and triggers self correction mid draft.",
   },
 
   article: {

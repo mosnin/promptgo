@@ -98,7 +98,7 @@ Return.
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "I use this on science articles rather than fiction, which is where it surprised me. Given a New Scientist extract it wrote three questions my Year 9s could answer from general knowledge alone, and only stopped when I added the explicit removal rule. The skimmer trap is now the question I look at first, because it predicts almost exactly who has read the piece.",
+      "Questions generated from a passage frequently test general knowledge instead, answerable by anyone who recognises the topic without having read a line. The explicit removal rule is what deletes them. The marked skimmer trap is the useful item, because a plausible wrong answer separates the students who read the passage from the students who scanned it.",
   },
 
   article: {

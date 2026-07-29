@@ -94,7 +94,7 @@ Never invent a decider, a date or an assumption. UNATTRIBUTED is a useful answer
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "Run over a real project channel, the first output logged eleven decisions and only five survived the named decider rule. The other six were somebody thinking out loud and nobody objecting, which is exactly the material that gets quoted back a year later as an agreement. Gemini 3 Pro is the most willing to invent a plausible decider, so the unattributed instruction has to be repeated in the closing line.",
+      "A channel full of people thinking out loud reads to a model as a sequence of agreements, and the common failure is attaching a confident name to a decision nobody actually made. Forcing a named decider on every entry, and repeating the unattributed instruction in the closing line, keeps speculation out of the log.",
   },
 
   article: {

@@ -87,7 +87,7 @@ STEP 5. For each removal, predict specifically what the model will substitute in
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Stable Diffusion 3.5", "Claude Opus 4.5"],
     testingNote:
-      "Step five surprised me. Asked to predict what a model substitutes when you remove the light position, GPT-5.2 said soft overcast daylight from the upper left, which is close to what actually came back across nine of twelve runs. The predictions for frame removal were much weaker, so I treat those as hypotheses rather than results.",
+      "Leave a slot out of an image prompt and the model fills it silently, usually with soft overcast light from the upper left, so nothing in the result can be attributed to what you wrote. Naming every slot explicitly, including the ones you would rather leave open, is what allows a single variable to change between runs.",
   },
 
   article: {

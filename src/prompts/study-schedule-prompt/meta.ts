@@ -106,7 +106,7 @@ F. One sentence on whether this plan is actually deliverable, and if not, what h
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "I built this after a sixth former showed me a colour coded timetable giving every subject equal hours in a term containing an EPQ deadline and two coursework drafts. The models did the same thing until reserving deadline hours was made step three instead of an afterthought. GPT-5.2 still tries to solve a clash week by adding an evening to it, so I check that section by hand.",
+      "Equal hours per subject is the allocation a model defaults to, and it looks fair on a colour coded grid while ignoring that one subject has coursework due in a fortnight. Working backwards from each deadline to reserve hours before any general study is allocated fixes the order. Clash weeks need capacity taken from elsewhere, not an extra evening bolted on.",
   },
 
   article: {

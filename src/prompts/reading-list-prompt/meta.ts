@@ -95,7 +95,7 @@ Return: the queue by question with minutes and the look for line, the delete lis
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5"],
     testingNote:
-      "Run against my own 200 item backlog, the age rule alone removed 130 items and I could not name a single one I missed a month later. The step that changed how I read was the look for line, because writing what I expected to find in advance made it obvious when an article was fifteen hundred words of preamble. GPT-5.2 tends to keep anything with a well known author, so I check the delete list for names rather than reasons.",
+      "Author recognition quietly overrides relevance when a model prunes a backlog, so anything carrying a familiar name survives while the reason it was saved goes unexamined. An age rule applied before any judgement, and a line stating what each item is expected to answer, force the cut to be about usefulness now.",
   },
 
   article: {

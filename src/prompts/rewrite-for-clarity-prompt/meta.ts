@@ -89,7 +89,7 @@ Close with the number of sentences you left untouched and the number of content 
       "Written and maintained by the Fast Prompts editorial team against the contract in our authoring standard.",
     testedOn: ["GPT-5.2", "Claude Opus 4.5", "Gemini 3 Pro"],
     testingNote:
-      "The untouched count changed how I use this. On a 700 word service update, Claude Opus 4.5 left nine sentences alone and raised two content gaps, one of which was a rollout date nobody had actually agreed. GPT-5.2 edits far more eagerly and will quietly replace a defined term with a friendlier synonym unless the protected list is filled in, so I now treat that field as mandatory rather than optional.",
+      "Every sentence looks improvable to a model asked to improve sentences, so an unconstrained clarity pass rewrites prose that already worked and swaps a defined term for a friendlier synonym on the way through. Printing working sentences unchanged, naming the defect before any rewrite, and counting what was left alone makes the protected term list load bearing rather than decorative.",
   },
 
   article: {
