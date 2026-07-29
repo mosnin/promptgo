@@ -2,12 +2,28 @@
 // Add a prompt by creating src/prompts/<slug>/meta.ts then running `npm run gen`.
 import type { PromptMeta } from "@/lib/types";
 
+import p_ad_copy_prompt from "@/prompts/ad-copy-prompt/meta";
 import p_cold_email_prompt from "@/prompts/cold-email-prompt/meta";
+import p_customer_persona_prompt from "@/prompts/customer-persona-prompt/meta";
+import p_decision_memo_prompt from "@/prompts/decision-memo-prompt/meta";
 import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
+import p_follow_up_email_prompt from "@/prompts/follow-up-email-prompt/meta";
+import p_landing_page_copy_prompt from "@/prompts/landing-page-copy-prompt/meta";
+import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
+import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
+import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
 
 export const promptMetas: PromptMeta[] = [
+  p_ad_copy_prompt,
   p_cold_email_prompt,
+  p_customer_persona_prompt,
+  p_decision_memo_prompt,
   p_discovery_call_prompt,
+  p_follow_up_email_prompt,
+  p_landing_page_copy_prompt,
+  p_meeting_notes_prompt,
+  p_objection_handling_prompt,
+  p_process_documentation_prompt,
 ];
 
-export const promptCount = 2;
+export const promptCount = 10;
