@@ -16,6 +16,7 @@ import p_career_change_prompt from "@/prompts/career-change-prompt/meta";
 import p_case_study_prompt from "@/prompts/case-study-prompt/meta";
 import p_character_description_prompt from "@/prompts/character-description-prompt/meta";
 import p_chart_selection_prompt from "@/prompts/chart-selection-prompt/meta";
+import p_checklist_builder_prompt from "@/prompts/checklist-builder-prompt/meta";
 import p_code_explanation_prompt from "@/prompts/code-explanation-prompt/meta";
 import p_code_migration_prompt from "@/prompts/code-migration-prompt/meta";
 import p_code_review_prompt from "@/prompts/code-review-prompt/meta";
@@ -25,6 +26,7 @@ import p_colour_palette_prompt from "@/prompts/colour-palette-prompt/meta";
 import p_competitor_analysis_prompt from "@/prompts/competitor-analysis-prompt/meta";
 import p_concept_explanation_prompt from "@/prompts/concept-explanation-prompt/meta";
 import p_content_calendar_prompt from "@/prompts/content-calendar-prompt/meta";
+import p_context_switching_prompt from "@/prompts/context-switching-prompt/meta";
 import p_cover_letter_prompt from "@/prompts/cover-letter-prompt/meta";
 import p_curriculum_mapping_prompt from "@/prompts/curriculum-mapping-prompt/meta";
 import p_customer_persona_prompt from "@/prompts/customer-persona-prompt/meta";
@@ -57,6 +59,7 @@ import p_excel_formula_prompt from "@/prompts/excel-formula-prompt/meta";
 import p_flashcard_generator_prompt from "@/prompts/flashcard-generator-prompt/meta";
 import p_focus_session_prompt from "@/prompts/focus-session-prompt/meta";
 import p_follow_up_email_prompt from "@/prompts/follow-up-email-prompt/meta";
+import p_freelance_rate_prompt from "@/prompts/freelance-rate-prompt/meta";
 import p_git_commit_message_prompt from "@/prompts/git-commit-message-prompt/meta";
 import p_grading_rubric_prompt from "@/prompts/grading-rubric-prompt/meta";
 import p_headline_writing_prompt from "@/prompts/headline-writing-prompt/meta";
@@ -66,6 +69,7 @@ import p_image_prompt_structure from "@/prompts/image-prompt-structure/meta";
 import p_inbox_triage_prompt from "@/prompts/inbox-triage-prompt/meta";
 import p_interview_answer_prompt from "@/prompts/interview-answer-prompt/meta";
 import p_job_description_prompt from "@/prompts/job-description-prompt/meta";
+import p_job_rejection_follow_up_prompt from "@/prompts/job-rejection-follow-up-prompt/meta";
 import p_landing_page_copy_prompt from "@/prompts/landing-page-copy-prompt/meta";
 import p_lesson_differentiation_prompt from "@/prompts/lesson-differentiation-prompt/meta";
 import p_lesson_plan_prompt from "@/prompts/lesson-plan-prompt/meta";
@@ -120,6 +124,7 @@ import p_sales_proposal_prompt from "@/prompts/sales-proposal-prompt/meta";
 import p_saying_no_prompt from "@/prompts/saying-no-prompt/meta";
 import p_security_review_prompt from "@/prompts/security-review-prompt/meta";
 import p_seo_keyword_research_prompt from "@/prompts/seo-keyword-research-prompt/meta";
+import p_skills_gap_prompt from "@/prompts/skills-gap-prompt/meta";
 import p_social_media_caption_prompt from "@/prompts/social-media-caption-prompt/meta";
 import p_socratic_tutor_prompt from "@/prompts/socratic-tutor-prompt/meta";
 import p_sql_query_prompt from "@/prompts/sql-query-prompt/meta";
@@ -161,6 +166,7 @@ export const promptMetas: PromptMeta[] = [
   p_case_study_prompt,
   p_character_description_prompt,
   p_chart_selection_prompt,
+  p_checklist_builder_prompt,
   p_code_explanation_prompt,
   p_code_migration_prompt,
   p_code_review_prompt,
@@ -170,6 +176,7 @@ export const promptMetas: PromptMeta[] = [
   p_competitor_analysis_prompt,
   p_concept_explanation_prompt,
   p_content_calendar_prompt,
+  p_context_switching_prompt,
   p_cover_letter_prompt,
   p_curriculum_mapping_prompt,
   p_customer_persona_prompt,
@@ -202,6 +209,7 @@ export const promptMetas: PromptMeta[] = [
   p_flashcard_generator_prompt,
   p_focus_session_prompt,
   p_follow_up_email_prompt,
+  p_freelance_rate_prompt,
   p_git_commit_message_prompt,
   p_grading_rubric_prompt,
   p_headline_writing_prompt,
@@ -211,6 +219,7 @@ export const promptMetas: PromptMeta[] = [
   p_inbox_triage_prompt,
   p_interview_answer_prompt,
   p_job_description_prompt,
+  p_job_rejection_follow_up_prompt,
   p_landing_page_copy_prompt,
   p_lesson_differentiation_prompt,
   p_lesson_plan_prompt,
@@ -265,6 +274,7 @@ export const promptMetas: PromptMeta[] = [
   p_saying_no_prompt,
   p_security_review_prompt,
   p_seo_keyword_research_prompt,
+  p_skills_gap_prompt,
   p_social_media_caption_prompt,
   p_socratic_tutor_prompt,
   p_sql_query_prompt,
@@ -292,4 +302,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 143;
+export const promptCount = 148;
