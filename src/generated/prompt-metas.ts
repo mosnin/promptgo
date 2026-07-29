@@ -2,10 +2,12 @@
 // Add a prompt by creating src/prompts/<slug>/meta.ts then running `npm run gen`.
 import type { PromptMeta } from "@/lib/types";
 
-
+import p_cold_email_prompt from "@/prompts/cold-email-prompt/meta";
+import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
 
 export const promptMetas: PromptMeta[] = [
-
+  p_cold_email_prompt,
+  p_discovery_call_prompt,
 ];
 
-export const promptCount = 0;
+export const promptCount = 2;
