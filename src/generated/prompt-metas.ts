@@ -15,16 +15,20 @@ import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
 import p_email_newsletter_prompt from "@/prompts/email-newsletter-prompt/meta";
 import p_email_subject_line_prompt from "@/prompts/email-subject-line-prompt/meta";
 import p_follow_up_email_prompt from "@/prompts/follow-up-email-prompt/meta";
+import p_job_description_prompt from "@/prompts/job-description-prompt/meta";
 import p_landing_page_copy_prompt from "@/prompts/landing-page-copy-prompt/meta";
 import p_linkedin_outreach_prompt from "@/prompts/linkedin-outreach-prompt/meta";
 import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
+import p_performance_review_prompt from "@/prompts/performance-review-prompt/meta";
+import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
 import p_pricing_negotiation_prompt from "@/prompts/pricing-negotiation-prompt/meta";
 import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
 import p_product_description_prompt from "@/prompts/product-description-prompt/meta";
 import p_sales_proposal_prompt from "@/prompts/sales-proposal-prompt/meta";
 import p_seo_keyword_research_prompt from "@/prompts/seo-keyword-research-prompt/meta";
 import p_value_proposition_prompt from "@/prompts/value-proposition-prompt/meta";
+import p_win_loss_analysis_prompt from "@/prompts/win-loss-analysis-prompt/meta";
 
 export const promptMetas: PromptMeta[] = [
   p_account_research_prompt,
@@ -40,16 +44,20 @@ export const promptMetas: PromptMeta[] = [
   p_email_newsletter_prompt,
   p_email_subject_line_prompt,
   p_follow_up_email_prompt,
+  p_job_description_prompt,
   p_landing_page_copy_prompt,
   p_linkedin_outreach_prompt,
   p_meeting_notes_prompt,
   p_objection_handling_prompt,
+  p_performance_review_prompt,
+  p_post_mortem_prompt,
   p_pricing_negotiation_prompt,
   p_process_documentation_prompt,
   p_product_description_prompt,
   p_sales_proposal_prompt,
   p_seo_keyword_research_prompt,
   p_value_proposition_prompt,
+  p_win_loss_analysis_prompt,
 ];
 
-export const promptCount = 23;
+export const promptCount = 27;
