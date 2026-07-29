@@ -89,6 +89,7 @@ import p_parent_communication_prompt from "@/prompts/parent-communication-prompt
 import p_performance_profiling_prompt from "@/prompts/performance-profiling-prompt/meta";
 import p_performance_review_prompt from "@/prompts/performance-review-prompt/meta";
 import p_plain_english_prompt from "@/prompts/plain-english-prompt/meta";
+import p_portfolio_description_prompt from "@/prompts/portfolio-description-prompt/meta";
 import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
 import p_presentation_slide_prompt from "@/prompts/presentation-slide-prompt/meta";
 import p_press_release_prompt from "@/prompts/press-release-prompt/meta";
@@ -101,6 +102,7 @@ import p_proofreading_prompt from "@/prompts/proofreading-prompt/meta";
 import p_python_analysis_prompt from "@/prompts/python-analysis-prompt/meta";
 import p_quiz_generator_prompt from "@/prompts/quiz-generator-prompt/meta";
 import p_reading_comprehension_prompt from "@/prompts/reading-comprehension-prompt/meta";
+import p_reading_list_prompt from "@/prompts/reading-list-prompt/meta";
 import p_refactoring_prompt from "@/prompts/refactoring-prompt/meta";
 import p_reference_request_prompt from "@/prompts/reference-request-prompt/meta";
 import p_referral_request_prompt from "@/prompts/referral-request-prompt/meta";
@@ -232,6 +234,7 @@ export const promptMetas: PromptMeta[] = [
   p_performance_profiling_prompt,
   p_performance_review_prompt,
   p_plain_english_prompt,
+  p_portfolio_description_prompt,
   p_post_mortem_prompt,
   p_presentation_slide_prompt,
   p_press_release_prompt,
@@ -244,6 +247,7 @@ export const promptMetas: PromptMeta[] = [
   p_python_analysis_prompt,
   p_quiz_generator_prompt,
   p_reading_comprehension_prompt,
+  p_reading_list_prompt,
   p_refactoring_prompt,
   p_reference_request_prompt,
   p_referral_request_prompt,
@@ -288,4 +292,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 141;
+export const promptCount = 143;
