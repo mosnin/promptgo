@@ -45,6 +45,7 @@ import p_dialogue_writing_prompt from "@/prompts/dialogue-writing-prompt/meta";
 import p_difficult_conversation_prompt from "@/prompts/difficult-conversation-prompt/meta";
 import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
 import p_email_newsletter_prompt from "@/prompts/email-newsletter-prompt/meta";
+import p_email_reply_prompt from "@/prompts/email-reply-prompt/meta";
 import p_email_subject_line_prompt from "@/prompts/email-subject-line-prompt/meta";
 import p_error_message_prompt from "@/prompts/error-message-prompt/meta";
 import p_essay_feedback_prompt from "@/prompts/essay-feedback-prompt/meta";
@@ -75,6 +76,7 @@ import p_midjourney_prompt_template from "@/prompts/midjourney-prompt-template/m
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
 import p_okr_writing_prompt from "@/prompts/okr-writing-prompt/meta";
+import p_onboarding_plan_prompt from "@/prompts/onboarding-plan-prompt/meta";
 import p_one_on_one_meeting_prompt from "@/prompts/one-on-one-meeting-prompt/meta";
 import p_paragraph_restructure_prompt from "@/prompts/paragraph-restructure-prompt/meta";
 import p_parent_communication_prompt from "@/prompts/parent-communication-prompt/meta";
@@ -82,6 +84,7 @@ import p_performance_profiling_prompt from "@/prompts/performance-profiling-prom
 import p_performance_review_prompt from "@/prompts/performance-review-prompt/meta";
 import p_plain_english_prompt from "@/prompts/plain-english-prompt/meta";
 import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
+import p_press_release_prompt from "@/prompts/press-release-prompt/meta";
 import p_pricing_negotiation_prompt from "@/prompts/pricing-negotiation-prompt/meta";
 import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
 import p_product_description_prompt from "@/prompts/product-description-prompt/meta";
@@ -95,6 +98,7 @@ import p_reference_request_prompt from "@/prompts/reference-request-prompt/meta"
 import p_referral_request_prompt from "@/prompts/referral-request-prompt/meta";
 import p_regex_generator_prompt from "@/prompts/regex-generator-prompt/meta";
 import p_renewal_conversation_prompt from "@/prompts/renewal-conversation-prompt/meta";
+import p_report_automation_prompt from "@/prompts/report-automation-prompt/meta";
 import p_resignation_letter_prompt from "@/prompts/resignation-letter-prompt/meta";
 import p_resume_bullet_prompt from "@/prompts/resume-bullet-prompt/meta";
 import p_revision_plan_prompt from "@/prompts/revision-plan-prompt/meta";
@@ -119,6 +123,7 @@ import p_technical_writing_prompt from "@/prompts/technical-writing-prompt/meta"
 import p_time_audit_prompt from "@/prompts/time-audit-prompt/meta";
 import p_tone_adjustment_prompt from "@/prompts/tone-adjustment-prompt/meta";
 import p_unit_test_prompt from "@/prompts/unit-test-prompt/meta";
+import p_user_flow_prompt from "@/prompts/user-flow-prompt/meta";
 import p_ux_writing_prompt from "@/prompts/ux-writing-prompt/meta";
 import p_value_proposition_prompt from "@/prompts/value-proposition-prompt/meta";
 import p_voicemail_script_prompt from "@/prompts/voicemail-script-prompt/meta";
@@ -171,6 +176,7 @@ export const promptMetas: PromptMeta[] = [
   p_difficult_conversation_prompt,
   p_discovery_call_prompt,
   p_email_newsletter_prompt,
+  p_email_reply_prompt,
   p_email_subject_line_prompt,
   p_error_message_prompt,
   p_essay_feedback_prompt,
@@ -201,6 +207,7 @@ export const promptMetas: PromptMeta[] = [
   p_note_summary_prompt,
   p_objection_handling_prompt,
   p_okr_writing_prompt,
+  p_onboarding_plan_prompt,
   p_one_on_one_meeting_prompt,
   p_paragraph_restructure_prompt,
   p_parent_communication_prompt,
@@ -208,6 +215,7 @@ export const promptMetas: PromptMeta[] = [
   p_performance_review_prompt,
   p_plain_english_prompt,
   p_post_mortem_prompt,
+  p_press_release_prompt,
   p_pricing_negotiation_prompt,
   p_process_documentation_prompt,
   p_product_description_prompt,
@@ -221,6 +229,7 @@ export const promptMetas: PromptMeta[] = [
   p_referral_request_prompt,
   p_regex_generator_prompt,
   p_renewal_conversation_prompt,
+  p_report_automation_prompt,
   p_resignation_letter_prompt,
   p_resume_bullet_prompt,
   p_revision_plan_prompt,
@@ -245,6 +254,7 @@ export const promptMetas: PromptMeta[] = [
   p_time_audit_prompt,
   p_tone_adjustment_prompt,
   p_unit_test_prompt,
+  p_user_flow_prompt,
   p_ux_writing_prompt,
   p_value_proposition_prompt,
   p_voicemail_script_prompt,
@@ -254,4 +264,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 124;
+export const promptCount = 129;
