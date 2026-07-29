@@ -21,6 +21,7 @@ import p_customer_persona_prompt from "@/prompts/customer-persona-prompt/meta";
 import p_daily_standup_prompt from "@/prompts/daily-standup-prompt/meta";
 import p_dashboard_design_prompt from "@/prompts/dashboard-design-prompt/meta";
 import p_data_cleaning_prompt from "@/prompts/data-cleaning-prompt/meta";
+import p_data_storytelling_prompt from "@/prompts/data-storytelling-prompt/meta";
 import p_debugging_prompt from "@/prompts/debugging-prompt/meta";
 import p_decision_memo_prompt from "@/prompts/decision-memo-prompt/meta";
 import p_discovery_call_prompt from "@/prompts/discovery-call-prompt/meta";
@@ -43,6 +44,7 @@ import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
 import p_performance_review_prompt from "@/prompts/performance-review-prompt/meta";
+import p_plain_english_prompt from "@/prompts/plain-english-prompt/meta";
 import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
 import p_pricing_negotiation_prompt from "@/prompts/pricing-negotiation-prompt/meta";
 import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
@@ -94,6 +96,7 @@ export const promptMetas: PromptMeta[] = [
   p_daily_standup_prompt,
   p_dashboard_design_prompt,
   p_data_cleaning_prompt,
+  p_data_storytelling_prompt,
   p_debugging_prompt,
   p_decision_memo_prompt,
   p_discovery_call_prompt,
@@ -116,6 +119,7 @@ export const promptMetas: PromptMeta[] = [
   p_note_summary_prompt,
   p_objection_handling_prompt,
   p_performance_review_prompt,
+  p_plain_english_prompt,
   p_post_mortem_prompt,
   p_pricing_negotiation_prompt,
   p_process_documentation_prompt,
@@ -148,4 +152,4 @@ export const promptMetas: PromptMeta[] = [
   p_win_loss_analysis_prompt,
 ];
 
-export const promptCount = 71;
+export const promptCount = 73;
