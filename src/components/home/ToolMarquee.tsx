@@ -14,7 +14,7 @@ export interface MarqueeTool {
 }
 
 /**
- * Two counter running rows of tool cards.
+ * Two counter running rows of prompt cards.
  *
  * The direction split is the whole point. A single moving row reads as a
  * decoration that happens to contain links; two rows travelling against each
@@ -27,16 +27,16 @@ export interface MarqueeTool {
  * keeps the duplication out of the accessibility tree, and the row pauses on
  * hover and on keyboard focus so a link is never a moving target.
  */
-export function ToolMarquee({ tools }: { tools: MarqueeTool[] }) {
-  const half = Math.ceil(tools.length / 2);
-  const rows = [tools.slice(0, half), tools.slice(half)];
+export function ToolMarquee({ prompts }: { prompts: MarqueeTool[] }) {
+  const half = Math.ceil(prompts.length / 2);
+  const rows = [prompts.slice(0, half), prompts.slice(half)];
 
   return (
     <div className="space-y-4">
       {rows.map((row, index) => (
         <MarqueeRow
           key={index}
-          tools={row}
+          prompts={row}
           reverse={index === 1}
           duration={index === 0 ? 52 : 64}
         />
@@ -46,15 +46,15 @@ export function ToolMarquee({ tools }: { tools: MarqueeTool[] }) {
 }
 
 function MarqueeRow({
-  tools,
+  prompts,
   reverse,
   duration,
 }: {
-  tools: MarqueeTool[];
+  prompts: MarqueeTool[];
   reverse: boolean;
   duration: number;
 }) {
-  if (tools.length === 0) return null;
+  if (prompts.length === 0) return null;
 
   return (
     <div className="marquee edge-fade-x relative overflow-hidden">
@@ -67,8 +67,8 @@ function MarqueeRow({
       >
         {[0, 1].map((copy) => (
           <div key={copy} className="flex shrink-0 gap-4" aria-hidden={copy === 1}>
-            {tools.map((tool) => (
-              <MarqueeCard key={`${copy}-${tool.href}`} tool={tool} inert={copy === 1} />
+            {prompts.map((prompt) => (
+              <MarqueeCard key={`${copy}-${prompt.href}`} prompt={prompt} inert={copy === 1} />
             ))}
           </div>
         ))}
@@ -77,17 +77,17 @@ function MarqueeRow({
   );
 }
 
-function MarqueeCard({ tool, inert }: { tool: MarqueeTool; inert: boolean }) {
+function MarqueeCard({ prompt, inert }: { prompt: MarqueeTool; inert: boolean }) {
   const reduced = useReducedMotion();
 
   // The duplicate half of the track is a div, not a link. A seamless loop needs
   // the content twice, but aria-hidden only hides the copy from assistive
   // technology: a crawler still sees a second anchor to the same URL, and with
-  // both transports duplicating there were six anchors per tool on this page.
+  // both transports duplicating there were six anchors per prompt on this page.
   // Rendering the copy as a plain element keeps the loop and drops the
   // duplicates.
   const Card = inert ? "div" : Link;
-  const linkProps = inert ? {} : { href: tool.href };
+  const linkProps = inert ? {} : { href: prompt.href };
 
   return (
     <motion.div
@@ -106,23 +106,23 @@ function MarqueeCard({ tool, inert }: { tool: MarqueeTool; inert: boolean }) {
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-400 group-hover/card:opacity-100"
           style={{
-            background: `radial-gradient(120% 100% at 0% 0%, color-mix(in oklch, ${tool.accent} 16%, transparent), transparent 60%)`,
+            background: `radial-gradient(120% 100% at 0% 0%, color-mix(in oklch, ${prompt.accent} 16%, transparent), transparent 60%)`,
           }}
         />
         <span
           aria-hidden
           className="absolute inset-x-0 top-0 h-px opacity-0 transition-opacity duration-400 group-hover/card:opacity-100"
           style={{
-            background: `linear-gradient(90deg, transparent, ${tool.accent}, transparent)`,
+            background: `linear-gradient(90deg, transparent, ${prompt.accent}, transparent)`,
           }}
         />
 
         <div className="relative flex items-start justify-between gap-3">
           <span
             className="font-mono text-[0.625rem] uppercase tracking-[0.14em]"
-            style={{ color: tool.accent }}
+            style={{ color: prompt.accent }}
           >
-            {tool.category}
+            {prompt.category}
           </span>
           <Icon
             name="arrow-up-right"
@@ -132,10 +132,10 @@ function MarqueeCard({ tool, inert }: { tool: MarqueeTool; inert: boolean }) {
         </div>
 
         <p className="relative mt-3 text-[0.9375rem] font-medium tracking-[-0.015em] text-ink">
-          {tool.name}
+          {prompt.name}
         </p>
         <p className="relative mt-1.5 line-clamp-2 text-[0.8125rem] leading-relaxed text-ink-subtle">
-          {tool.summary}
+          {prompt.summary}
         </p>
       </Card>
     </motion.div>

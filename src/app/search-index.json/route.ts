@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 /**
  * Static JSON index fetched on demand by the command palette. Emitting it as a
- * route rather than importing it into a client component keeps the full tool
+ * route rather than importing it into a client component keeps the full prompt
  * registry, including every article body, out of the JavaScript bundle.
  */
 export function GET() {

@@ -22,9 +22,9 @@ const GROUPS: Record<string, string[]> = {
     "data-and-formats",
     "text-and-writing",
   ],
-  tools: [
+  prompts: [
     "image-editing",
-    "developer-tools",
+    "developer-prompts",
     "color-and-design",
     "security-and-encoding",
     "web-and-seo",
@@ -93,7 +93,7 @@ export function PrimaryNav({ categories, totalTools }: PrimaryNavProps) {
 
   const items: NavItem[] = [
     { key: "convert", label: "Convert", categories: group("convert") },
-    { key: "tools", label: "Tools", categories: group("tools") },
+    { key: "prompts", label: "Prompts", categories: group("prompts") },
     { key: "explore", label: "Explore", href: "/explore" },
     { key: "about", label: "About", href: "/about" },
   ];

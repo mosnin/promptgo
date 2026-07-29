@@ -119,14 +119,14 @@ export function MobileNav({ open, onClose, categories, totalTools }: MobileNavPr
                           className="overflow-hidden"
                         >
                           <div className="pb-3 pl-11">
-                            {category.tools.map((tool) => (
+                            {category.prompts.map((prompt) => (
                               <Link
-                                key={tool.href}
-                                href={tool.href}
+                                key={prompt.href}
+                                href={prompt.href}
                                 onClick={onClose}
                                 className="block rounded-[8px] px-2 py-2 text-[0.8125rem] text-ink-muted active:bg-surface-2"
                               >
-                                {tool.name}
+                                {prompt.name}
                               </Link>
                             ))}
                             <Link
@@ -134,7 +134,7 @@ export function MobileNav({ open, onClose, categories, totalTools }: MobileNavPr
                               onClick={onClose}
                               className="mt-1 block rounded-[8px] px-2 py-2 text-[0.8125rem] font-medium text-signal-bright"
                             >
-                              All {category.count} {category.name.toLowerCase()} tools
+                              All {category.count} {category.name.toLowerCase()} prompts
                             </Link>
                           </div>
                         </motion.div>
@@ -147,7 +147,7 @@ export function MobileNav({ open, onClose, categories, totalTools }: MobileNavPr
 
             <div className="shrink-0 border-t border-hairline px-5 py-4">
               <p className="font-mono text-[0.625rem] uppercase tracking-[0.12em] text-ink-faint">
-                {totalTools} browser based tools
+                {totalTools} browser based prompts
               </p>
             </div>
           </motion.nav>

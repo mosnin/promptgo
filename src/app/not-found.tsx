@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
-import { categoriesWithTools } from "@/lib/tools";
+import { categoriesWithPrompts } from "@/lib/prompts";
 
 export default function NotFound() {
   return (
@@ -17,12 +17,12 @@ export default function NotFound() {
             That page is not part of the catalogue
           </h1>
           <p className="mt-5 max-w-xl text-[1.0625rem] leading-relaxed text-ink-muted">
-            The tool you were looking for may have moved or may never have existed. Everything
+            The prompt you were looking for may have moved or may never have existed. Everything
             that does exist is one click away below.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/explore" size="lg">
-              Explore all tools
+              Explore all prompts
               <Icon name="arrow-right" size={16} />
             </ButtonLink>
             <ButtonLink href="/" size="lg" variant="outline">
@@ -33,7 +33,7 @@ export default function NotFound() {
 
         <Reveal delay={0.1}>
           <div className="mt-16 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-            {categoriesWithTools.map((category) => (
+            {categoriesWithPrompts.map((category) => (
               <div key={category.slug}>
                 <Link
                   href={`/${category.slug}`}
@@ -45,13 +45,13 @@ export default function NotFound() {
                   {category.name}
                 </Link>
                 <ul className="mt-3 space-y-1.5 border-l border-hairline pl-4">
-                  {category.tools.slice(0, 5).map((tool) => (
-                    <li key={tool.slug}>
+                  {category.prompts.slice(0, 5).map((prompt) => (
+                    <li key={prompt.slug}>
                       <Link
-                        href={tool.href}
+                        href={prompt.href}
                         className="text-[0.8125rem] text-ink-subtle transition-colors hover:text-ink"
                       >
-                        {tool.name}
+                        {prompt.name}
                       </Link>
                     </li>
                   ))}

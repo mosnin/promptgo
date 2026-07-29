@@ -17,38 +17,38 @@ import { VerifyStack } from "@/components/home/VerifyStack";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { getCategory } from "@/lib/categories";
 import { catalogueStats, categoryVolumes } from "@/lib/stats";
-import { FaqAccordion } from "@/components/tool/FaqAccordion";
-import { categoriesWithTools, getFeaturedTools, totalToolCount } from "@/lib/tools";
+import { FaqAccordion } from "@/components/prompt/FaqAccordion";
+import { categoriesWithPrompts, getFeaturedPrompts, totalPromptCount } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
 import { faqSchema, graph } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
-const PRIMARY_KEYWORD = "free online file conversion tools";
+const PRIMARY_KEYWORD = "free online file conversion prompts";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Free Online File Conversion Tools: 120+ Browser Based Tools",
+  title: "Free Online File Conversion Prompts: 120+ Browser Based Prompts",
   description:
-    "Free online file conversion tools that run in your browser. Convert images, PDFs, code, data and media with no uploads, no signup and no file size limits.",
+    "Free online file conversion prompts that run in your browser. Convert images, PDFs, code, data and media with no uploads, no signup and no file size limits.",
   path: "/",
   keywords: [
     PRIMARY_KEYWORD,
     "online file converter",
     "convert files online free",
-    "browser based file tools",
+    "browser based file prompts",
     "client side file conversion",
   ],
 });
 
 const homeFaq = [
   {
-    question: "Are these free online file conversion tools genuinely free?",
+    question: "Are these free online file conversion prompts genuinely free?",
     answer:
-      "Yes. There is no account, no trial period, no credit card and no daily conversion cap. The tools run as JavaScript in your own browser, so we do not pay for the compute and have no reason to meter it. The site is supported by display advertising alone.",
+      "Yes. There is no account, no trial period, no credit card and no daily conversion cap. The prompts run as JavaScript in your own browser, so we do not pay for the compute and have no reason to meter it. The site is supported by display advertising alone.",
   },
   {
     question: "Do my files get uploaded anywhere?",
     answer:
-      "No. Every tool reads your file directly from disk into browser memory, does the work locally and hands back a download. Nothing is sent over the network, nothing is written to a server and nothing survives closing the tab. You can confirm this by opening the network panel in developer tools while you convert a file.",
+      "No. Every prompt reads your file directly from disk into browser memory, does the work locally and hands back a download. Nothing is sent over the network, nothing is written to a server and nothing survives closing the tab. You can confirm this by opening the network panel in developer prompts while you convert a file.",
   },
   {
     question: "Is there a maximum file size?",
@@ -58,12 +58,12 @@ const homeFaq = [
   {
     question: "Do I need to install anything?",
     answer:
-      "No. There is no extension, no desktop app and no plugin. Open the tool page, choose a file and download the result. Everything needed is already part of a modern browser.",
+      "No. There is no extension, no desktop app and no plugin. Open the prompt page, choose a file and download the result. Everything needed is already part of a modern browser.",
   },
   {
     question: "Which file formats can I convert between?",
     answer:
-      `The catalogue covers ${totalToolCount} tools across images, PDF and documents, code, text, structured data, audio and video, colour, encoding and technical SEO. Each tool page states exactly which input formats it accepts and what it produces.`,
+      `The catalogue covers ${totalPromptCount} prompts across images, PDF and documents, code, text, structured data, audio and video, colour, encoding and technical SEO. Each prompt page states exactly which input formats it accepts and what it produces.`,
   },
   {
     question: "Can I use the output commercially?",
@@ -73,32 +73,32 @@ const homeFaq = [
 ];
 
 export default function HomePage() {
-  const featured = getFeaturedTools(18);
+  const featured = getFeaturedPrompts(18);
 
   // Compact payloads for the client components. The full registry carries every
   // article body, so only the fields the marquee and the showcase actually
   // render cross the boundary.
-  const marqueeTools = featured.map((tool) => {
-    const category = getCategory(tool.category);
+  const marqueeTools = featured.map((prompt) => {
+    const category = getCategory(prompt.category);
     return {
-      name: tool.name,
-      href: tool.href,
-      summary: tool.summary,
-      category: category?.name ?? "Tools",
+      name: prompt.name,
+      href: prompt.href,
+      summary: prompt.summary,
+      category: category?.name ?? "Prompts",
       accent: category?.accent ?? "var(--color-signal)",
     };
   });
 
   const volumes = categoryVolumes();
 
-  const showcase = categoriesWithTools.map((category) => ({
+  const showcase = categoriesWithPrompts.map((category) => ({
     slug: category.slug,
     name: category.name,
     icon: category.icon,
     accent: category.accent,
     intro: category.intro,
-    count: category.tools.length,
-    tools: category.tools.map((tool) => ({ name: tool.name, href: tool.href })),
+    count: category.prompts.length,
+    prompts: category.prompts.map((prompt) => ({ name: prompt.name, href: prompt.href })),
   }));
 
   return (
@@ -114,14 +114,14 @@ export default function HomePage() {
           <Reveal blur={false}>
             <Badge tone="signal">
               <Icon name="spark" size={11} />
-              {totalToolCount} tools. Zero uploads.
+              {totalPromptCount} prompts. Zero uploads.
             </Badge>
           </Reveal>
 
           <TextReveal
             as="h1"
             className="display mx-auto mt-7 max-w-5xl text-ink"
-            text="Free online file conversion tools that run in your browser"
+            text="Free online file conversion prompts that run in your browser"
             highlight={["browser"]}
             delay={0.1}
           />
@@ -137,7 +137,7 @@ export default function HomePage() {
           <Reveal delay={0.45} className="mt-9">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <ButtonLink href="/explore" size="lg">
-                Explore all {totalToolCount} tools
+                Explore all {totalPromptCount} prompts
                 <Icon name="arrow-right" size={16} />
               </ButtonLink>
               <ButtonLink href="/image-conversion" size="lg" variant="outline">
@@ -149,7 +149,7 @@ export default function HomePage() {
           <Reveal delay={0.55} className="mt-14">
             <dl className="mx-auto grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-hairline bg-hairline sm:grid-cols-4">
               {[
-                { value: `${totalToolCount}`, label: "Working tools" },
+                { value: `${totalPromptCount}`, label: "Working prompts" },
                 { value: "10", label: "Categories" },
                 { value: "0", label: "Bytes uploaded" },
                 { value: "$0", label: "Cost to use" },
@@ -199,7 +199,7 @@ export default function HomePage() {
               rather than a widget sitting inside it, which only works if it
               breaks the shell's gutters. */}
           <div className="mt-8 pb-16 sm:pb-20">
-            <ToolMarquee tools={marqueeTools} />
+            <ToolMarquee prompts={marqueeTools} />
           </div>
         </section>
       )}
@@ -244,7 +244,7 @@ export default function HomePage() {
                 {
                   icon: "lock" as const,
                   title: "Private by construction",
-                  body: "Your file is read into browser memory and never touches a network socket. Privacy is not a policy promise here, it is a property of how the tools are built.",
+                  body: "Your file is read into browser memory and never touches a network socket. Privacy is not a policy promise here, it is a property of how the prompts are built.",
                 },
                 {
                   icon: "bolt" as const,
@@ -254,12 +254,12 @@ export default function HomePage() {
                 {
                   icon: "layers" as const,
                   title: "No arbitrary limits",
-                  body: "Server based tools cap file sizes and daily runs because compute costs them money. Local processing costs nothing, so nothing is capped.",
+                  body: "Server based prompts cap file sizes and daily runs because compute costs them money. Local processing costs nothing, so nothing is capped.",
                 },
                 {
                   icon: "check" as const,
                   title: "Works offline once loaded",
-                  body: "After the page has loaded, the tool keeps working even if your connection drops, because all the code it needs is already in the tab.",
+                  body: "After the page has loaded, the prompt keeps working even if your connection drops, because all the code it needs is already in the tab.",
                 },
               ].map((item) => (
                 <StaggerItem key={item.title} className="h-full">
@@ -284,15 +284,15 @@ export default function HomePage() {
         <Reveal>
           <p className="eyebrow">Complete index</p>
           <h2 className="mt-2 text-[1.75rem] font-semibold tracking-[-0.03em] text-ink sm:text-[2rem]">
-            Every tool on one page
+            Every prompt on one page
           </h2>
           <p className="mt-4 max-w-2xl text-[0.9375rem] leading-relaxed text-ink-subtle">
-            The full catalogue, grouped by category. Every tool is one click from here.
+            The full catalogue, grouped by category. Every prompt is one click from here.
           </p>
         </Reveal>
 
         <div className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          {categoriesWithTools.map((category) => (
+          {categoriesWithPrompts.map((category) => (
             <Reveal key={category.slug} distance={12}>
               <div>
                 <Link
@@ -305,17 +305,17 @@ export default function HomePage() {
                   {category.name}
                 </Link>
                 <ul className="mt-3 space-y-1.5 border-l border-hairline pl-4">
-                  {category.tools.map((tool) => (
-                    <li key={tool.slug}>
+                  {category.prompts.map((prompt) => (
+                    <li key={prompt.slug}>
                       <Link
-                        href={tool.href}
+                        href={prompt.href}
                         className="text-[0.8125rem] text-ink-subtle transition-colors duration-200 hover:text-ink"
                       >
-                        {tool.name}
+                        {prompt.name}
                       </Link>
                     </li>
                   ))}
-                  {category.tools.length === 0 && (
+                  {category.prompts.length === 0 && (
                     <li className="text-[0.8125rem] text-ink-faint">Publishing soon</li>
                   )}
                 </ul>
@@ -333,7 +333,7 @@ export default function HomePage() {
         >
           <p className="text-[0.8125rem] leading-relaxed text-ink-subtle">
             No usage statistics, no customer counts and no uptime percentages. Everything
-            below can be verified by opening the tools and counting, which is the only kind
+            below can be verified by opening the prompts and counting, which is the only kind
             of number worth putting on a page.
           </p>
         </ProofHeading>
@@ -346,17 +346,17 @@ export default function HomePage() {
                 label: "bytes uploaded",
                 tone: "signal",
                 span: true,
-                body: `Not a rounded figure or a target. There is no upload path in any of the ${catalogueStats.tools} tools, so the number of bytes that reach a server is exactly zero. Open the network panel while you convert a file and you can confirm it yourself.`,
+                body: `Not a rounded figure or a target. There is no upload path in any of the ${catalogueStats.prompts} prompts, so the number of bytes that reach a server is exactly zero. Open the network panel while you convert a file and you can confirm it yourself.`,
               },
               {
-                value: String(catalogueStats.tools),
-                label: "working tools",
+                value: String(catalogueStats.prompts),
+                label: "working prompts",
                 body: `Across ${catalogueStats.categories} categories, every one of them finished and published rather than announced.`,
               },
               {
-                value: String(catalogueStats.inputFormats),
-                label: "input formats",
-                body: `File types the catalogue can read, producing ${catalogueStats.outputFormats} distinct output formats across ${catalogueStats.conversionPaths} conversion paths.`,
+                value: String(catalogueStats.testedModels),
+                label: "models tested against",
+                body: `Every prompt is run before publishing, across ${catalogueStats.taskTypes} task types and ${catalogueStats.variables} fill in variables in total.`,
               },
               {
                 value: "$0",
@@ -369,13 +369,13 @@ export default function HomePage() {
         </div>
 
         <div className="mt-4">
-          <CatalogueChart volumes={volumes} total={catalogueStats.tools} />
+          <CatalogueChart volumes={volumes} total={catalogueStats.prompts} />
         </div>
       </section>
 
       <HowItWorks />
 
-      <AudienceProof toolCount={totalToolCount} />
+      <AudienceProof promptCount={totalPromptCount} />
 
       <VerifyStack />
 
@@ -409,8 +409,8 @@ export default function HomePage() {
                   Explore the catalogue
                   <Icon name="arrow-right" size={16} />
                 </ButtonLink>
-                <ButtonLink href="/developer-tools" size="lg" variant="outline">
-                  Developer tools
+                <ButtonLink href="/developer-prompts" size="lg" variant="outline">
+                  Developer prompts
                 </ButtonLink>
               </div>
             </div>

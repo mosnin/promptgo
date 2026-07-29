@@ -77,12 +77,12 @@ export function HeaderClient({ categories, totalTools, categoryNames }: HeaderCl
             <button
               type="button"
               onClick={openSearch}
-              aria-label="Search tools"
+              aria-label="Search prompts"
               className="group flex h-9 items-center gap-2 rounded-full border border-hairline bg-surface-2/60 pl-2.5 pr-2 text-ink-subtle transition-colors duration-200 hover:border-hairline-strong hover:text-ink sm:w-56"
             >
               <Icon name="search" size={15} className="shrink-0" />
               <span className="hidden flex-1 text-left text-[0.8125rem] sm:block">
-                Search tools
+                Search prompts
               </span>
               <kbd className="hidden rounded border border-hairline bg-surface px-1.5 py-0.5 font-mono text-[0.625rem] text-ink-faint sm:block">
                 ⌘K

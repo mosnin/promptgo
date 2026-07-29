@@ -5,30 +5,30 @@ import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
-import { Breadcrumbs } from "@/components/tool/Breadcrumbs";
-import { ToolCard } from "@/components/tool/ToolCard";
-import { toCardData } from "@/lib/tool-card";
-import { categoriesWithTools, totalToolCount } from "@/lib/tools";
+import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
+import { PromptCard } from "@/components/prompt/PromptCard";
+import { toCardData } from "@/lib/prompt-card";
+import { categoriesWithPrompts, totalPromptCount } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, graph } from "@/lib/jsonld";
-import { tools } from "@/lib/tools";
+import { prompts } from "@/lib/prompts";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Explore All File Conversion Tools By Category",
+  title: "Explore All File Conversion Prompts By Category",
   description:
-    "Explore all file conversion tools by category. Browse 120+ free browser based converters for images, PDF, code, text, data, media, color and encoding.",
+    "Explore all file conversion prompts by category. Browse 120+ free browser based converters for images, PDF, code, text, data, media, color and encoding.",
   path: "/explore",
   keywords: [
-    "explore all file conversion tools",
-    "file conversion tools by category",
+    "explore all file conversion prompts",
+    "file conversion prompts by category",
     "browse online converters",
-    "free file tools directory",
+    "free file prompts directory",
   ],
 });
 
 /**
- * The catalogue directory. Every tool on the site appears here grouped under
+ * The catalogue directory. Every prompt on the site appears here grouped under
  * its category, giving both readers and crawlers a single dense hub with a one
  * hop path to all 120 pages.
  */
@@ -48,16 +48,16 @@ export default function ExplorePage() {
             {
               "@type": "CollectionPage",
               "@id": absoluteUrl("/explore#collection"),
-              name: "Explore All File Conversion Tools By Category",
+              name: "Explore All File Conversion Prompts By Category",
               url: absoluteUrl("/explore"),
               mainEntity: {
                 "@type": "ItemList",
-                numberOfItems: tools.length,
-                itemListElement: tools.map((tool, index) => ({
+                numberOfItems: prompts.length,
+                itemListElement: prompts.map((prompt, index) => ({
                   "@type": "ListItem",
                   position: index + 1,
-                  name: tool.title,
-                  url: absoluteUrl(tool.href),
+                  name: prompt.title,
+                  url: absoluteUrl(prompt.href),
                 })),
               },
             },
@@ -74,14 +74,14 @@ export default function ExplorePage() {
           <Reveal>
             <Badge tone="signal" className="mt-7">
               <Icon name="layers" size={11} />
-              {totalToolCount} tools across 10 categories
+              {totalPromptCount} prompts across 10 categories
             </Badge>
             <h1 className="headline mt-6 max-w-4xl text-ink">
-              Explore all file conversion tools by category
+              Explore all file conversion prompts by category
             </h1>
             <p className="mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-ink-muted">
               The complete catalogue. Pick a category to see everything it contains, or jump
-              straight to a tool. Each one runs entirely in your browser with no upload step.
+              straight to a prompt. Each one runs entirely in your browser with no upload step.
             </p>
           </Reveal>
         </div>
@@ -91,7 +91,7 @@ export default function ExplorePage() {
       <div className="sticky top-16 z-30 border-b border-hairline bg-[color-mix(in_oklch,var(--color-canvas)_88%,transparent)] backdrop-blur-xl">
         <div className="shell">
           <div className="no-scrollbar flex gap-1 overflow-x-auto py-3">
-            {categoriesWithTools.map((category) => (
+            {categoriesWithPrompts.map((category) => (
               <a
                 key={category.slug}
                 href={`#${category.slug}`}
@@ -102,7 +102,7 @@ export default function ExplorePage() {
                 </span>
                 {category.name}
                 <span className="font-mono text-[0.6875rem] text-ink-faint">
-                  {category.tools.length}
+                  {category.prompts.length}
                 </span>
               </a>
             ))}
@@ -114,7 +114,7 @@ export default function ExplorePage() {
         <AdSlot name="listing" format="horizontal" minHeight={110} className="mb-12" />
 
         <div className="space-y-20">
-          {categoriesWithTools.map((category) => (
+          {categoriesWithPrompts.map((category) => (
             <section key={category.slug} id={category.slug} className="scroll-mt-32">
               <Reveal>
                 <div className="flex flex-wrap items-end justify-between gap-4 border-b border-hairline pb-5">
@@ -133,7 +133,7 @@ export default function ExplorePage() {
                         <Link href={`/${category.slug}`}>{category.title}</Link>
                       </h2>
                       <p className="mt-0.5 font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-ink-faint">
-                        {category.tools.length} tools
+                        {category.prompts.length} prompts
                       </p>
                     </div>
                   </div>
@@ -157,17 +157,17 @@ export default function ExplorePage() {
                 </p>
               </Reveal>
 
-              {category.tools.length > 0 ? (
+              {category.prompts.length > 0 ? (
                 <Stagger className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {category.tools.map((tool) => (
-                    <StaggerItem key={tool.slug} className="h-full">
-                      <ToolCard tool={toCardData(tool)} accent={category.accent} />
+                  {category.prompts.map((prompt) => (
+                    <StaggerItem key={prompt.slug} className="h-full">
+                      <PromptCard prompt={toCardData(prompt)} accent={category.accent} />
                     </StaggerItem>
                   ))}
                 </Stagger>
               ) : (
                 <p className="mt-7 rounded-lg border border-dashed border-hairline p-8 text-center text-[0.875rem] text-ink-subtle">
-                  Tools for this category are being published.
+                  Prompts for this category are being published.
                 </p>
               )}
             </section>

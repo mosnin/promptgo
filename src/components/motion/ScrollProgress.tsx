@@ -3,7 +3,7 @@
 import { motion, useScroll, useSpring } from "motion/react";
 
 /**
- * Hairline reading progress bar pinned under the header. On long tool articles
+ * Hairline reading progress bar pinned under the header. On long prompt articles
  * it gives the page a sense of length without adding visual weight.
  */
 export function ScrollProgress() {

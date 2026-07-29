@@ -1,13 +1,13 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/lib/site";
-import { totalToolCount } from "@/lib/tools";
+import { totalPromptCount } from "@/lib/prompts";
 
 export const alt = `${site.name}: ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 /**
- * Default social card. Individual tool pages inherit this rather than each
+ * Default social card. Individual prompt pages inherit this rather than each
  * generating a bespoke image, which keeps build times flat as the catalogue
  * grows past a hundred pages.
  */
@@ -74,7 +74,7 @@ export default function OpengraphImage() {
               display: "flex",
             }}
           >
-            {totalToolCount}+ free file conversion tools that run in your browser
+            {totalPromptCount}+ free file conversion prompts that run in your browser
           </div>
           <div style={{ fontSize: 30, color: "#9aa1b1", display: "flex" }}>
             No uploads. No signup. No file size limits.

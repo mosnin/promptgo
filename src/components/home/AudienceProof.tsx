@@ -16,8 +16,8 @@ import { cn } from "@/lib/cn";
  * who searches one of the names finds nothing. A brand new site has no
  * customers to quote yet, which is a timing problem, not a design problem.
  *
- * So the same layout carries what is actually true: the audiences the tools
- * were built around, the job each one does, and the tools they reach for. The
+ * So the same layout carries what is actually true: the audiences the prompts
+ * were built around, the job each one does, and the prompts they reach for. The
  * pull quotes are statements about the product in the site's own voice rather
  * than words placed in a stranger's mouth. When real testimonials exist, they
  * drop into this grid without redesigning it.
@@ -50,8 +50,8 @@ const AUDIENCES: Audience[] = [
     context: "The small jobs between commits",
     claim: "The detour that interrupts a build, handled in the tab already open.",
     body: "Format a payload, decode a token, minify a stylesheet or turn an SVG into a typed component without installing a package for a one off.",
-    href: "/developer-tools",
-    hrefLabel: "Developer tools",
+    href: "/developer-prompts",
+    hrefLabel: "Developer prompts",
     accent: "var(--color-accent-lime)",
     icon: "code",
   },
@@ -77,7 +77,7 @@ const AUDIENCES: Audience[] = [
   },
 ];
 
-export function AudienceProof({ toolCount }: { toolCount: number }) {
+export function AudienceProof({ promptCount }: { promptCount: number }) {
   const reduced = useReducedMotion();
 
   return (
@@ -167,7 +167,7 @@ export function AudienceProof({ toolCount }: { toolCount: number }) {
       </div>
 
       <p className="mt-6 text-[0.8125rem] text-ink-faint">
-        All {toolCount} tools are free and run entirely in your browser.
+        All {promptCount} prompts are free and run entirely in your browser.
       </p>
     </section>
   );

@@ -16,11 +16,11 @@ export default function TermsPage() {
       title="Terms Of Use"
       path="/terms"
       updated="28 July 2026"
-      intro={`The terms that govern your use of ${site.name}. They are short because the service is simple: free tools, no account, and the files you produce are yours.`}
+      intro={`The terms that govern your use of ${site.name}. They are short because the service is simple: free prompts, no account, and the files you produce are yours.`}
     >
       <h2>Using the service</h2>
       <p>
-        The tools on this site are provided free of charge for personal and commercial use. No
+        The prompts on this site are provided free of charge for personal and commercial use. No
         account is required and no licence fee applies. You may use the output files however you
         wish, including in commercial work. We claim no rights over anything you process.
       </p>
@@ -35,8 +35,8 @@ export default function TermsPage() {
 
       <h2>No warranty</h2>
       <p>
-        The tools are provided as is, without warranty of any kind, express or implied. While
-        each tool is tested against real files, no software is defect free. Always keep an
+        The prompts are provided as is, without warranty of any kind, express or implied. While
+        each prompt is tested against real files, no software is defect free. Always keep an
         original copy of any file that matters before transforming it.
       </p>
 

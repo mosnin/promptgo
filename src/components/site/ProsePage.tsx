@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Reveal } from "@/components/motion/Reveal";
-import { Breadcrumbs } from "@/components/tool/Breadcrumbs";
+import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
 
 /**
  * Shared layout for the supporting pages an ad network expects a publisher to
@@ -45,7 +45,7 @@ export function ProsePage({
       </div>
 
       <div className="shell py-12 pb-20">
-        <article className="prose-tool max-w-3xl">{children}</article>
+        <article className="prose-prompt max-w-3xl">{children}</article>
       </div>
     </>
   );

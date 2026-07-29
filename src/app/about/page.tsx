@@ -9,7 +9,7 @@ import { CatalogueChart } from "@/components/home/CatalogueChart";
 import { ProofBand } from "@/components/home/ProofBand";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
-import { totalToolCount } from "@/lib/tools";
+import { totalPromptCount } from "@/lib/prompts";
 import { catalogueStats, categoryVolumes } from "@/lib/stats";
 import { breadcrumbSchema, graph } from "@/lib/jsonld";
 
@@ -19,9 +19,9 @@ export const metadata: Metadata = buildMetadata({
   // Filez" in the tab and in every search result.
   title: "About",
   description:
-    "About Convert Filez, a collection of 120+ free file conversion tools that run entirely in your browser with no uploads, no signup and no file size limits.",
+    "About Convert Filez, a collection of 120+ free file conversion prompts that run entirely in your browser with no uploads, no signup and no file size limits.",
   path: "/about",
-  keywords: ["about convert filez", "browser based file tools", "client side file conversion"],
+  keywords: ["about convert filez", "browser based file prompts", "client side file conversion"],
 });
 
 const STORY = [
@@ -35,15 +35,15 @@ const STORY = [
   {
     heading: "So the file never moves",
     body: [
-      `Every tool here reads your file directly into browser memory, does the work on your own processor, and hands back a download. There is no upload step to wait through, no queue to sit in, and no ceiling imposed by us, because the only resource being spent is the one already in front of you.`,
-      `The consequence worth stating plainly is the privacy one. Your file is not protected here by a policy document or a retention schedule or a promise about what we do not look at. It is protected because it never reaches us. That is a property of how the tools are built rather than a commitment we are asking you to trust, and you can verify it in about ten seconds by opening your browser's network panel while you convert something.`,
+      `Every prompt here reads your file directly into browser memory, does the work on your own processor, and hands back a download. There is no upload step to wait through, no queue to sit in, and no ceiling imposed by us, because the only resource being spent is the one already in front of you.`,
+      `The consequence worth stating plainly is the privacy one. Your file is not protected here by a policy document or a retention schedule or a promise about what we do not look at. It is protected because it never reaches us. That is a property of how the prompts are built rather than a commitment we are asking you to trust, and you can verify it in about ten seconds by opening your browser's network panel while you convert something.`,
     ],
   },
   {
     heading: "What that pays for and what it costs",
     body: [
-      `Serving ${totalToolCount} static pages costs close to nothing, and the conversions themselves cost nothing at all, because we are not the ones running them. Display advertising covers the difference. There is no premium tier, no data sale, no newsletter quietly harvesting addresses and no account to create, because none of those are needed to keep the lights on.`,
-      `The honest trade is that a tool has to fit in a browser tab. A conversion that needs a heavy native codec, or a file larger than your device memory, is a job for desktop software, and the pages here say so rather than failing halfway through.`,
+      `Serving ${totalPromptCount} static pages costs close to nothing, and the conversions themselves cost nothing at all, because we are not the ones running them. Display advertising covers the difference. There is no premium tier, no data sale, no newsletter quietly harvesting addresses and no account to create, because none of those are needed to keep the lights on.`,
+      `The honest trade is that a prompt has to fit in a browser tab. A conversion that needs a heavy native codec, or a file larger than your device memory, is a job for desktop software, and the pages here say so rather than failing halfway through.`,
     ],
   },
 ];
@@ -86,7 +86,7 @@ export default function AboutPage() {
 
           <Reveal delay={0.3} className="mt-6 max-w-2xl">
             <p className="text-[1.0625rem] leading-relaxed text-ink-muted">
-              {totalToolCount} file conversion and asset tools that do their work inside your
+              {totalPromptCount} file conversion and asset prompts that do their work inside your
               browser rather than on somebody else&apos;s server. No account, no upload, no
               queue and no file size cap.
             </p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
           <Reveal delay={0.42} className="mt-8">
             <div className="flex flex-wrap gap-3">
               <ButtonLink href="/explore" size="lg">
-                Explore all {totalToolCount} tools
+                Explore all {totalPromptCount} prompts
                 <Icon name="arrow-right" size={16} />
               </ButtonLink>
               <ButtonLink href="/privacy" size="lg" variant="outline">
@@ -115,12 +115,12 @@ export default function AboutPage() {
               label: "bytes uploaded",
               tone: "signal",
               span: true,
-              body: `Not a rounded figure. There is no upload path in any of the ${catalogueStats.tools} tools, so the number of bytes that reach a server is exactly zero. The network panel in your browser will confirm it.`,
+              body: `Not a rounded figure. There is no upload path in any of the ${catalogueStats.prompts} prompts, so the number of bytes that reach a server is exactly zero. The network panel in your browser will confirm it.`,
             },
             {
-              value: String(catalogueStats.tools),
-              label: "working tools",
-              body: `Across ${catalogueStats.categories} categories, reading ${catalogueStats.inputFormats} input formats.`,
+              value: String(catalogueStats.prompts),
+              label: "working prompts",
+              body: `Across ${catalogueStats.categories} job function categories, spanning ${catalogueStats.taskTypes} kinds of task.`,
             },
           ]}
         />
@@ -162,7 +162,7 @@ export default function AboutPage() {
       {/* ---- Catalogue shape ------------------------------------------------ */}
       <section className="shell py-14 sm:py-16">
         <Reveal>
-          <CatalogueChart volumes={volumes} total={catalogueStats.tools} />
+          <CatalogueChart volumes={volumes} total={catalogueStats.prompts} />
         </Reveal>
       </section>
 
@@ -175,9 +175,9 @@ export default function AboutPage() {
                 Accuracy and corrections
               </h2>
               <p className="mt-3 text-[0.875rem] leading-relaxed text-ink-subtle">
-                Every tool page documents which formats it accepts, what it produces and where
+                Every prompt page documents which formats it accepts, what it produces and where
                 browser support is uneven. Where a browser cannot do something natively the page
-                says so before you select a file, rather than failing halfway through. If a tool
+                says so before you select a file, rather than failing halfway through. If a prompt
                 gives a result you believe is wrong, its page names the specification it follows.
               </p>
             </div>
@@ -187,8 +187,8 @@ export default function AboutPage() {
               </h2>
               <p className="mt-3 text-[0.875rem] leading-relaxed text-ink-subtle">
                 The <Link href="/explore" className="text-signal-bright underline underline-offset-2">explore page</Link>{" "}
-                lists every tool grouped by category. If you already know what you need, the search
-                box in the header opens with command K and matches on tool name, file format or
+                lists every prompt grouped by category. If you already know what you need, the search
+                box in the header opens with command K and matches on prompt name, file format or
                 task.
               </p>
             </div>

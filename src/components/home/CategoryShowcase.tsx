@@ -21,7 +21,7 @@ export interface ShowcaseCategory {
   accent: string;
   intro: string;
   count: number;
-  tools: { name: string; href: string }[];
+  prompts: { name: string; href: string }[];
 }
 
 export function CategoryShowcase({ categories }: { categories: ShowcaseCategory[] }) {
@@ -48,7 +48,7 @@ export function CategoryShowcase({ categories }: { categories: ShowcaseCategory[
  * The accent glow follows the pointer as a separate layer, so the light source
  * and the tilt agree about where your hand is.
  *
- * The tool list is a transport rather than a truncated list. Ten tools in a
+ * The prompt list is a transport rather than a truncated list. Ten prompts in a
  * card either overflow it or get cut to four with a "more" link that nobody
  * follows; scrolling them means the full inventory passes under the eye in the
  * space of four rows, and the reason it stops on hover is so that reading one
@@ -88,7 +88,7 @@ function ShowcaseCard({
 
   // Duplicated so the ticker loop closes on an identical frame. Short lists
   // would otherwise leave a gap halfway through the cycle.
-  const ticker = category.tools.length > 0 ? [...category.tools, ...category.tools] : [];
+  const ticker = category.prompts.length > 0 ? [...category.prompts, ...category.prompts] : [];
 
   return (
     <motion.div
@@ -131,7 +131,7 @@ function ShowcaseCard({
                 {String(category.count).padStart(2, "0")}
               </span>
               <span className="font-mono text-[0.625rem] uppercase tracking-[0.16em] text-ink-faint">
-                tools
+                prompts
               </span>
             </div>
           </div>
@@ -146,14 +146,14 @@ function ShowcaseCard({
             <div
               className="ticker-track"
               style={{
-                ["--ticker-duration" as string]: `${Math.max(18, category.tools.length * 2.4)}s`,
+                ["--ticker-duration" as string]: `${Math.max(18, category.prompts.length * 2.4)}s`,
               }}
             >
-              {ticker.map((tool, tickerIndex) => {
+              {ticker.map((prompt, tickerIndex) => {
                 // Second half of the loop renders as a span. See ToolMarquee:
                 // duplicating anchors for a seamless transport multiplies the
                 // internal links a crawler sees for the same URL.
-                const copy = tickerIndex >= category.tools.length;
+                const copy = tickerIndex >= category.prompts.length;
                 const className =
                   "relative z-10 flex items-center gap-2 py-[0.3125rem] text-[0.8125rem] text-ink-subtle transition-colors duration-200 hover:text-ink";
                 const body = (
@@ -162,16 +162,16 @@ function ShowcaseCard({
                       className="h-1 w-1 shrink-0 rounded-full"
                       style={{ background: category.accent }}
                     />
-                    <span className="truncate">{tool.name}</span>
+                    <span className="truncate">{prompt.name}</span>
                   </>
                 );
 
                 return copy ? (
-                  <span key={`${tool.href}-${tickerIndex}`} aria-hidden className={className}>
+                  <span key={`${prompt.href}-${tickerIndex}`} aria-hidden className={className}>
                     {body}
                   </span>
                 ) : (
-                  <Link key={tool.href} href={tool.href} className={className}>
+                  <Link key={prompt.href} href={prompt.href} className={className}>
                     {body}
                   </Link>
                 );

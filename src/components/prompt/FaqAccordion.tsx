@@ -7,7 +7,7 @@ import { ease } from "@/components/motion/tokens";
 import type { FaqItem } from "@/lib/types";
 
 /**
- * FAQ block rendered at the bottom of every tool page.
+ * FAQ block rendered at the bottom of every prompt page.
  *
  * The first question starts open so there is always visible answer text in the
  * initial render, and every answer stays in the DOM as real text rather than

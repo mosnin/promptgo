@@ -1,5 +1,5 @@
 import { categories } from "./categories";
-import { getToolsByCategory, tools, totalToolCount } from "./tools";
+import { getPromptsByCategory, prompts, totalPromptCount } from "./prompts";
 
 /**
  * Figures about the catalogue, all derived from the registry at build time.
@@ -12,38 +12,32 @@ import { getToolsByCategory, tools, totalToolCount } from "./tools";
  * thing about it, which is that the number of bytes it receives is zero.
  */
 
-/** Distinct file extensions the catalogue can read. */
-function countInputFormats() {
-  const formats = new Set<string>();
-  for (const tool of tools) {
-    for (const extension of tool.accepts ?? []) {
-      formats.add(extension.replace(/^\./, "").toLowerCase());
-    }
-  }
-  return formats.size;
+/** Distinct task types represented in the catalogue. */
+function countTaskTypes() {
+  return new Set(prompts.map((prompt) => prompt.taskType)).size;
 }
 
-/** Distinct formats the catalogue can produce. */
-function countOutputFormats() {
-  const formats = new Set<string>();
-  for (const tool of tools) {
-    if (tool.outputs) formats.add(tool.outputs.replace(/^\./, "").toLowerCase());
+/** Distinct models any prompt has actually been tested against. */
+function countTestedModels() {
+  const models = new Set<string>();
+  for (const prompt of prompts) {
+    for (const model of prompt.eeat.testedOn) models.add(model.toLowerCase());
   }
-  return formats.size;
+  return models.size;
 }
 
-/** Tools that declare a format in and a different format out. */
-function countConversionPaths() {
-  return tools.filter((tool) => (tool.accepts?.length ?? 0) > 0 && !!tool.outputs).length;
+/** Total fill in variables across every prompt, a proxy for how specific they are. */
+function countVariables() {
+  return prompts.reduce((total, prompt) => total + prompt.prompt.variables.length, 0);
 }
 
 export const catalogueStats = {
-  tools: totalToolCount,
+  prompts: totalPromptCount,
   categories: categories.length,
-  inputFormats: countInputFormats(),
-  outputFormats: countOutputFormats(),
-  conversionPaths: countConversionPaths(),
-  /** Not a rounded figure. The tools have no upload path at all. */
+  taskTypes: countTaskTypes(),
+  testedModels: countTestedModels(),
+  variables: countVariables(),
+  /** Not a rounded figure. Nothing typed into a prompt panel is transmitted. */
   bytesUploaded: 0,
   serverCost: 0,
 } as const;
@@ -57,13 +51,13 @@ export interface CategoryVolume {
   ratio: number;
 }
 
-/** Tools per category, sorted heaviest first, for the distribution chart. */
+/** Prompts per category, sorted heaviest first, for the distribution chart. */
 export function categoryVolumes(): CategoryVolume[] {
   const rows = categories.map((category) => ({
     slug: category.slug,
     name: category.name,
     accent: category.accent,
-    count: getToolsByCategory(category.slug).length,
+    count: getPromptsByCategory(category.slug).length,
   }));
 
   const largest = Math.max(...rows.map((row) => row.count), 1);

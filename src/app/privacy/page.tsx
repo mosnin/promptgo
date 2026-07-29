@@ -20,27 +20,27 @@ export default function PrivacyPage() {
     >
       <h2>Files you process</h2>
       <p>
-        Every tool on this site runs as JavaScript inside your own browser. When you select a
+        Every prompt on this site runs as JavaScript inside your own browser. When you select a
         file it is read from your disk into the memory of the browser tab, transformed there and
         written back out as a download. The file is never transmitted to us, never written to a
         server and never stored. Closing the tab discards it entirely.
       </p>
       <p>
-        You can verify this yourself. Open the network panel in your browser developer tools,
+        You can verify this yourself. Open the network panel in your browser developer prompts,
         run any conversion, and observe that no request carrying your file is made.
       </p>
 
       <h2>Analytics</h2>
       <p>
-        We use Google Analytics 4 to understand which tools are used and where visitors come
+        We use Google Analytics 4 to understand which prompts are used and where visitors come
         from. It records anonymised page views, approximate location at country level, device
         type and referrer. IP anonymisation is enabled. We do not collect names, email
         addresses or any personally identifying information, and we do not attempt to link
         sessions to individuals.
       </p>
       <p>
-        Tool interaction events are recorded in aggregate form, for example that a conversion
-        completed on a given tool page. These events never include file names, file contents or
+        Prompt interaction events are recorded in aggregate form, for example that a conversion
+        completed on a given prompt page. These events never include file names, file contents or
         any data derived from your files.
       </p>
 

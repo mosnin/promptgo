@@ -296,12 +296,12 @@
   }
 
   /* ---- Long form article ------------------------------------------------ */
-  .prose-tool {
+  .prose-prompt {
     color: var(--color-ink-muted);
     font-size: 1.0625rem;
     line-height: 1.75;
   }
-  .prose-tool h2 {
+  .prose-prompt h2 {
     color: var(--color-ink);
     font-size: clamp(1.4rem, 1.1rem + 1vw, 1.875rem);
     line-height: 1.2;
@@ -309,7 +309,7 @@
     margin-bottom: 1rem;
     scroll-margin-top: 6rem;
   }
-  .prose-tool h3 {
+  .prose-prompt h3 {
     color: var(--color-ink);
     font-size: 1.1875rem;
     line-height: 1.35;
@@ -317,14 +317,14 @@
     margin-bottom: 0.625rem;
     scroll-margin-top: 6rem;
   }
-  .prose-tool p + p {
+  .prose-prompt p + p {
     margin-top: 1.125rem;
   }
-  .prose-tool strong {
+  .prose-prompt strong {
     color: var(--color-ink);
     font-weight: 560;
   }
-  .prose-tool a {
+  .prose-prompt a {
     color: var(--color-signal-bright);
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -332,10 +332,10 @@
     text-decoration-color: color-mix(in oklch, var(--color-signal) 45%, transparent);
     transition: text-decoration-color 180ms var(--ease-out-expo);
   }
-  .prose-tool a:hover {
+  .prose-prompt a:hover {
     text-decoration-color: var(--color-signal-bright);
   }
-  .prose-tool code {
+  .prose-prompt code {
     font-family: var(--font-mono);
     font-size: 0.875em;
     background: var(--color-surface-2);

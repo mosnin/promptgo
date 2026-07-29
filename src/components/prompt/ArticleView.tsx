@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { Reveal } from "@/components/motion/Reveal";
-import type { ToolArticle } from "@/lib/types";
+import type { PromptArticle } from "@/lib/types";
 
 /** Turns an id friendly slug out of a heading for anchor links. */
 export function headingId(heading: string): string {
@@ -14,15 +14,15 @@ export function headingId(heading: string): string {
 }
 
 /**
- * Renders the long form article body for a tool page.
+ * Renders the long form article body for a prompt page.
  *
  * A display ad is injected after the second section, which is deep enough that
  * the reader is engaged but early enough to be seen by people who bounce, and
  * it collapses to nothing when AdSense is not connected.
  */
-export function ArticleView({ article }: { article: ToolArticle }) {
+export function ArticleView({ article }: { article: PromptArticle }) {
   return (
-    <div className="prose-tool max-w-none">
+    <div className="prose-prompt max-w-none">
       {article.sections.map((section, index) => (
         <div key={section.heading}>
           <Reveal as="section" distance={14}>
@@ -61,7 +61,7 @@ export function ArticleView({ article }: { article: ToolArticle }) {
   );
 }
 
-function ArticleTable({ table }: { table: NonNullable<ToolArticle["table"]> }) {
+function ArticleTable({ table }: { table: NonNullable<PromptArticle["table"]> }) {
   return (
     <Reveal as="div" className="my-10">
       <div className="overflow-x-auto rounded-lg border border-hairline">
@@ -107,14 +107,14 @@ function ArticleTable({ table }: { table: NonNullable<ToolArticle["table"]> }) {
 }
 
 /**
- * The internal link cluster. These are curated per tool and are the mechanism
+ * The internal link cluster. These are curated per prompt and are the mechanism
  * that turns 120 isolated pages into ten interlinked topic clusters.
  */
 export function InternalLinkCluster({
   links,
-  heading = "Related tools worth bookmarking",
+  heading = "Related prompts worth trying",
 }: {
-  links: ToolArticle["internalLinks"];
+  links: PromptArticle["internalLinks"];
   heading?: string;
 }) {
   return (
@@ -150,7 +150,7 @@ export function InternalLinkCluster({
  * noopener for safety. They are deliberately not nofollow, because linking out
  * to genuine authorities is a positive quality signal.
  */
-export function ExternalSources({ links }: { links: ToolArticle["externalLinks"] }) {
+export function ExternalSources({ links }: { links: PromptArticle["externalLinks"] }) {
   return (
     <Reveal as="section" className="mt-14">
       <h2 className="text-[1.375rem] font-semibold tracking-[-0.02em] text-ink">
@@ -193,7 +193,7 @@ export function ExternalSources({ links }: { links: ToolArticle["externalLinks"]
 }
 
 /** Numbered steps rendered from the HowTo schema so markup and copy agree. */
-export function HowToSteps({ howTo }: { howTo: ToolArticle["howTo"] }) {
+export function HowToSteps({ howTo }: { howTo: PromptArticle["howTo"] }) {
   return (
     <Reveal as="section" className="mt-14">
       <h2 className="text-[1.375rem] font-semibold tracking-[-0.02em] text-ink">

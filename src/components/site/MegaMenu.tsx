@@ -59,14 +59,14 @@ export function MegaPanel({ categories, totalTools, onNavigate }: MegaPanelProps
             </Link>
 
             <ul className="mt-2.5 space-y-px">
-              {category.tools.slice(0, 7).map((tool) => (
-                <li key={tool.href}>
+              {category.prompts.slice(0, 7).map((prompt) => (
+                <li key={prompt.href}>
                   <Link
-                    href={tool.href}
+                    href={prompt.href}
                     onClick={onNavigate}
                     className="group/link relative flex items-center gap-1 rounded-[8px] px-2 py-[0.3125rem] text-[0.8125rem] text-ink-muted transition-colors duration-200 hover:bg-surface-2 hover:text-ink"
                   >
-                    <span className="truncate">{tool.name}</span>
+                    <span className="truncate">{prompt.name}</span>
                     <Icon
                       name="arrow-up-right"
                       size={10}
@@ -103,7 +103,7 @@ export function MegaPanel({ categories, totalTools, onNavigate }: MegaPanelProps
 
       <div className="flex items-center justify-between gap-4 border-t border-hairline bg-[color-mix(in_oklch,var(--color-canvas)_50%,transparent)] px-6 py-3">
         <p className="font-mono text-[0.6875rem] uppercase tracking-[0.12em] text-ink-faint">
-          {totalTools} tools. Every one runs in your browser.
+          {totalTools} prompts. Every one runs in your browser.
         </p>
         <Link
           href="/explore"

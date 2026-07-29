@@ -4,7 +4,7 @@ import { HeaderClient } from "./HeaderClient";
 
 /**
  * Server boundary for the header. Navigation data is derived here and passed
- * down as plain props so the client bundle never imports the tool registry.
+ * down as plain props so the client bundle never imports the prompt registry.
  */
 export function Header() {
   const nav = buildNavData();

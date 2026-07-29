@@ -1,16 +1,16 @@
 /**
  * Client safe half of the search module.
  *
- * This file must never import the tool registry, directly or transitively. The
+ * This file must never import the prompt registry, directly or transitively. The
  * command palette is a client component, so anything reachable from here ends
- * up in the browser bundle, and `@/lib/tools` pulls in every long form article
+ * up in the browser bundle, and `@/lib/prompts` pulls in every long form article
  * on the site. Registry backed helpers live in `@/lib/search` instead, which is
  * server only.
  */
 
 /**
  * The compact shape shipped to the browser. Deliberately excludes article
- * bodies so the client search payload stays around 30 KB for 120 tools rather
+ * bodies so the client search payload stays around 30 KB for 120 prompts rather
  * than the megabyte the full registry would cost.
  */
 export interface SearchDoc {
@@ -30,8 +30,8 @@ export interface SearchResult extends SearchDoc {
  * Deterministic relevance scoring shared by the server rendered results page
  * and the client side command palette, so both agree on ordering.
  *
- * Weighting favours prefix matches on the tool name, because someone typing
- * "png" almost always wants a PNG tool rather than a tool that merely mentions
+ * Weighting favours prefix matches on the prompt name, because someone typing
+ * "png" almost always wants a PNG prompt rather than a prompt that merely mentions
  * PNG somewhere in its keyword list.
  */
 export function searchDocs(

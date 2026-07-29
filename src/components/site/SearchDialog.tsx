@@ -20,7 +20,7 @@ interface SearchDialogProps {
 
 /**
  * Command palette. The index is fetched once, lazily, the first time the dialog
- * opens, so the tool catalogue costs nothing until a user actually searches.
+ * opens, so the prompt catalogue costs nothing until a user actually searches.
  */
 export function SearchDialog({ open, onClose, categoryNames }: SearchDialogProps) {
   const router = useRouter();
@@ -122,7 +122,7 @@ export function SearchDialog({ open, onClose, categoryNames }: SearchDialogProps
           <motion.div
             role="dialog"
             aria-modal="true"
-            aria-label="Search tools"
+            aria-label="Search prompts"
             initial={{ opacity: 0, y: reduced ? 0 : -14, scale: reduced ? 1 : 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: reduced ? 0 : -10, scale: reduced ? 1 : 0.98 }}
@@ -136,7 +136,7 @@ export function SearchDialog({ open, onClose, categoryNames }: SearchDialogProps
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 onKeyDown={onKeyDown}
-                placeholder="Search 120+ tools. Try png to jpg, minify css, decode jwt"
+                placeholder="Search 120+ prompts. Try png to jpg, minify css, decode jwt"
                 className="h-14 w-full bg-transparent text-[0.9375rem] text-ink outline-none placeholder:text-ink-faint"
                 autoComplete="off"
                 spellCheck={false}
@@ -149,20 +149,20 @@ export function SearchDialog({ open, onClose, categoryNames }: SearchDialogProps
             <div ref={listRef} className="max-h-[min(26rem,52vh)] overflow-y-auto p-2">
               {query.trim().length === 0 && (
                 <p className="px-3 py-8 text-center text-[0.8125rem] text-ink-faint">
-                  Start typing to search every tool by name, format or keyword.
+                  Start typing to search every prompt by name, format or keyword.
                 </p>
               )}
 
               {query.trim().length > 0 && docs === null && (
                 <p className="px-3 py-8 text-center text-[0.8125rem] text-ink-faint">
-                  Loading the tool index.
+                  Loading the prompt index.
                 </p>
               )}
 
               {query.trim().length > 0 && docs !== null && results.length === 0 && (
                 <div className="px-3 py-8 text-center">
                   <p className="text-[0.8125rem] text-ink-muted">
-                    No tools match {`"${query}"`}.
+                    No prompts match {`"${query}"`}.
                   </p>
                   <Link
                     href="/explore"

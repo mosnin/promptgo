@@ -4,21 +4,21 @@
  */
 
 export const site = {
-  name: "Convert Filez",
-  legalName: "Convert Filez",
+  name: "PromptGo",
+  legalName: "PromptGo",
   /**
    * Used for canonical URLs, sitemap, OpenGraph and JSON-LD. Must match the
    * domain the site actually serves from: a canonical pointing at a domain you
    * do not serve tells Google the real pages are duplicates of somewhere else,
    * which is the one SEO mistake that can keep a whole site out of the index.
    */
-  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.convertfilez.org"),
-  tagline: "Free Online File Conversion And Asset Tools",
+  url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.promptgo.io"),
+  tagline: "148 Free AI Prompts, Tested And Ready To Use",
   description:
-    "Convert, compress and transform files directly in your browser. 120+ free online file conversion tools that run client side with no uploads, no signup and no file size limits.",
+    "A directory of 148 free AI prompts for ChatGPT, Claude and Gemini, organised by job function. Every prompt is tested on real output before it is published, with no signup required to copy one.",
   locale: "en_US",
   language: "en",
-  twitter: "@convertfilez",
+  twitter: "@promptgo",
   themeColor: "#08090c",
   founded: "2026",
 } as const;
@@ -43,16 +43,16 @@ export const adsense = {
     return this.client.length > 0;
   },
   slots: {
-    /** Above the fold, directly under the tool heading. */
-    toolTop: process.env.NEXT_PUBLIC_ADSENSE_SLOT_TOOL_TOP ?? "",
-    /** The highest value placement: beside the processing and download panel. */
-    toolProcessing: process.env.NEXT_PUBLIC_ADSENSE_SLOT_TOOL_PROCESSING ?? "",
-    /** Between the tool interface and the long form article. */
-    toolMid: process.env.NEXT_PUBLIC_ADSENSE_SLOT_TOOL_MID ?? "",
+    /** Above the fold, directly under the prompt heading. */
+    promptTop: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PROMPT_TOP ?? "",
+    /** Beside the copy ready prompt panel, the highest value placement. */
+    promptPanel: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PROMPT_PANEL ?? "",
+    /** Between the prompt panel and the long form article. */
+    promptMid: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PROMPT_MID ?? "",
     /** Inside the article, after the first two sections. */
     article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "",
-    /** Under the FAQ, before the related tools cluster. */
-    toolFooter: process.env.NEXT_PUBLIC_ADSENSE_SLOT_TOOL_FOOTER ?? "",
+    /** Under the FAQ, before the related prompts cluster. */
+    promptFooter: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PROMPT_FOOTER ?? "",
     /** Category and explore listing pages. */
     listing: process.env.NEXT_PUBLIC_ADSENSE_SLOT_LISTING ?? "",
     /** Home page mid scroll. */
@@ -63,21 +63,14 @@ export const adsense = {
 } as const;
 
 /**
- * The GA4 property for this site.
- *
- * Checked in as the default rather than left to an environment variable alone.
- * NEXT_PUBLIC_ values are inlined at build time, not read at runtime, so an
- * unset variable in the deployment environment does not degrade to "no
- * analytics for this request", it bakes a build with no tag in it at all. That
- * failure is silent and only shows up as flat traffic days later.
- *
- * The environment variable still wins when present, which is what preview and
- * staging deployments use to report into a separate property.
+ * The GA4 property for this site. Left blank on purpose: the ID checked into
+ * the repo this was ported from belongs to that site's own property, and
+ * baking someone else's measurement ID in here would send this site's traffic
+ * into their analytics. Set NEXT_PUBLIC_GA_ID in the deployment environment
+ * before launch.
  */
-const GA_MEASUREMENT_ID = "G-3JYZQ7NNJ1";
-
 export const analytics = {
-  gaId: process.env.NEXT_PUBLIC_GA_ID || GA_MEASUREMENT_ID,
+  gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
   get enabled() {
     return this.gaId.length > 0;
   },

@@ -10,9 +10,9 @@ import { cn } from "@/lib/cn";
  * Distribution of the catalogue across categories.
  *
  * Every bar is a count from the registry, so the chart cannot drift out of step
- * with the site: add a tool and the column it belongs to grows on the next
+ * with the site: add a prompt and the column it belongs to grows on the next
  * build. The segmenting is not decoration either. Each column is divided into
- * as many blocks as the category has tools, which means the chart reads as a
+ * as many blocks as the category has prompts, which means the chart reads as a
  * tally at a glance and the height and the number agree by construction rather
  * than by a designer choosing a percentage.
  *
@@ -36,10 +36,10 @@ export function CatalogueChart({
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <h3 className="text-[1.125rem] font-semibold tracking-[-0.02em] text-ink sm:text-[1.25rem]">
-            Where the {total} tools sit
+            Where the {total} prompts sit
           </h3>
           <p className="mt-1 text-[0.75rem] text-ink-subtle">
-            One block per tool, counted from the catalogue itself.
+            One block per prompt, counted from the catalogue itself.
           </p>
         </div>
         <span className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-surface-2 px-2.5 py-1 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-ink-subtle">
@@ -63,7 +63,7 @@ export function CatalogueChart({
                 onFocus={() => setActive(volume.slug)}
                 onBlur={() => setActive(null)}
                 className="relative flex w-full flex-1 items-end justify-center"
-                aria-label={`${volume.name}, ${volume.count} tools`}
+                aria-label={`${volume.name}, ${volume.count} prompts`}
               >
                 <motion.span
                   aria-hidden
@@ -119,7 +119,7 @@ export function CatalogueChart({
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-hairline pt-4 text-[0.75rem] text-ink-subtle">
         <span className="inline-flex items-center gap-2">
           <span className="inline-block h-2.5 w-2.5 rounded-full bg-signal" />
-          One block per published tool
+          One block per published prompt
         </span>
         <span>
           Average per category <span className="font-medium text-ink">{average}</span>

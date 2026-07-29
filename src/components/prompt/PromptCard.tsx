@@ -7,50 +7,40 @@ import { useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { useThemeAttribute } from "@/lib/use-theme";
 import { cn } from "@/lib/cn";
-import type { ToolCardData } from "@/lib/tool-card";
+import type { PromptCardData } from "@/lib/prompt-card";
 
-interface ToolCardProps {
-  tool: ToolCardData;
+interface PromptCardProps {
+  prompt: PromptCardData;
   accent?: string;
-  /** Compact variant used in dense grids such as the related tools cluster. */
+  /** Compact variant used in dense grids such as the related prompts cluster. */
   compact?: boolean;
   /** Catalogue position, printed as a plate number. */
   index?: number;
 }
 
 /**
- * A tool, presented as a specimen plate.
+ * A prompt, presented as a specimen plate.
  *
- * The previous card put the name first and the formats last, in a translucent
- * rounded box with an arrow in a circle in the corner. That arrangement is
- * wrong twice over. It is wrong functionally, because someone scanning twelve
- * cards is matching file extensions and the extensions were the smallest thing
- * on the card. And the corner arrow button, the even vertical stack and the
- * single type weight are the exact set of defaults that make a card look like
- * nobody chose anything.
+ * The card this was adapted from set two file extensions large in mono as the
+ * artwork, because on a converter directory the extensions are what someone is
+ * matching against. Prompts have no equivalent, and the obvious substitute, the
+ * prompt's name in larger text, would just be the caption printed twice.
  *
- * So the conversion is now the artwork: the input and output set large in mono
- * with a rule running between them, filling the top half of the plate. The name
- * drops below the rule as a caption, which is what it actually is. Registration
- * ticks sit in the corners, borrowed from the technical drawing language the
- * rest of the site already uses, and the arrow becomes a line that travels when
- * you point at it rather than a button pretending to be clickable inside a card
- * that is entirely clickable.
+ * So the specimen here is the prompt's opening instruction, set in mono and
+ * clamped to two lines. It is the one field guaranteed to differ between any
+ * two prompts, which is what stops a twelve card grid reading as a list of
+ * interchangeable tiles, and it is genuinely the most useful thing to show:
+ * the opening line tells you what the prompt will actually make the model do.
  */
-export function ToolCard({
-  tool,
+export function PromptCard({
+  prompt,
   accent = "var(--color-signal)",
   compact,
   index,
-}: ToolCardProps) {
+}: PromptCardProps) {
   const [lit, setLit] = useState(false);
   const reduced = useReducedMotion();
   const theme = useThemeAttribute();
-
-  const inputs = tool.accepts ?? [];
-  const from = inputs[0]?.replace(/^\./, "") ?? "any";
-  const to = tool.outputs?.replace(/^\./, "") ?? "out";
-  const extra = Math.max(inputs.length - 1, 0);
 
   return (
     <BorderBeam
@@ -70,7 +60,7 @@ export function ToolCard({
         className="h-full"
       >
         <Link
-          href={tool.href}
+          href={prompt.href}
           onFocus={() => setLit(true)}
           onBlur={() => setLit(false)}
           className={cn(
@@ -78,9 +68,6 @@ export function ToolCard({
             compact ? "p-4" : "p-5",
           )}
         >
-          {/* Registration ticks. Two strokes per corner, drawn short of the
-              edge so they read as measurement marks rather than a second
-              border. */}
           {!compact && <RegistrationTicks accent={accent} />}
 
           {/* ---- Plate header ------------------------------------------- */}
@@ -89,8 +76,10 @@ export function ToolCard({
               className="truncate font-mono text-[0.625rem] uppercase tracking-[0.16em]"
               style={{ color: accent }}
             >
-              {from}
-              {extra > 0 && <span className="text-ink-faint"> +{extra}</span>}
+              {prompt.taskType}
+              {prompt.variableCount > 0 && (
+                <span className="text-ink-faint"> / {prompt.variableCount} var</span>
+              )}
             </span>
             {index !== undefined && (
               <span className="shrink-0 font-mono text-[0.625rem] tabular-nums text-ink-faint">
@@ -101,46 +90,35 @@ export function ToolCard({
 
           {/* ---- The specimen ------------------------------------------- */}
           {!compact && (
-            <div className="relative mt-3 flex items-center gap-3">
-              <span className="font-mono text-[1.375rem] font-medium uppercase leading-none tracking-[-0.02em] text-ink">
-                {from}
-              </span>
+            <div className="relative mt-3">
+              <p className="line-clamp-2 font-mono text-[0.75rem] leading-[1.55] text-ink-muted">
+                {prompt.opening}
+              </p>
 
-              {/* The connector. It grows into the gap on hover, which is the
-                  card's one moving part. */}
-              <span className="relative flex h-px flex-1 items-center">
+              {/* The rule under the specimen is the card's one moving part,
+                  travelling left to right on hover. */}
+              <span className="relative mt-3 flex h-px w-full items-center">
                 <span className="absolute inset-0 bg-hairline-strong" />
                 <motion.span
-                  className="absolute inset-y-0 left-0 origin-left"
+                  className="absolute inset-y-0 left-0 w-full origin-left"
                   style={{ background: accent }}
                   initial={false}
                   animate={{ scaleX: lit && !reduced ? 1 : 0 }}
                   transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
                 />
-                <span
-                  className="absolute -right-px h-1.5 w-1.5 -translate-y-px rotate-45 border-r border-t transition-colors duration-300"
-                  style={{ borderColor: lit ? accent : "var(--color-hairline-strong)" }}
-                />
-              </span>
-
-              <span
-                className="font-mono text-[1.375rem] font-medium uppercase leading-none tracking-[-0.02em] transition-colors duration-300"
-                style={{ color: lit ? accent : "var(--color-ink-muted)" }}
-              >
-                {to}
               </span>
             </div>
           )}
 
           {/* ---- Caption ------------------------------------------------- */}
-          <div className={cn("relative", compact ? "mt-2" : "mt-4 border-t border-hairline pt-4")}>
+          <div className={cn("relative", compact ? "mt-2" : "mt-4")}>
             <h3
               className={cn(
                 "font-medium tracking-[-0.015em] text-ink",
                 compact ? "text-[0.875rem]" : "text-[0.9375rem]",
               )}
             >
-              {tool.name}
+              {prompt.name}
             </h3>
             <p
               className={cn(
@@ -148,7 +126,7 @@ export function ToolCard({
                 compact ? "line-clamp-2 text-[0.75rem]" : "text-[0.8125rem]",
               )}
             >
-              {tool.summary}
+              {prompt.summary}
             </p>
           </div>
 
@@ -159,7 +137,7 @@ export function ToolCard({
                 className="text-[0.8125rem] font-medium transition-colors duration-300"
                 style={{ color: lit ? accent : "var(--color-ink-muted)" }}
               >
-                Open tool
+                Open prompt
               </span>
               <Icon
                 name="arrow-right"

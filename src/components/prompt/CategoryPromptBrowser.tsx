@@ -4,8 +4,8 @@ import { BorderBeam } from "border-beam";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useMemo, useRef, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
-import { ToolCard } from "./ToolCard";
-import type { ToolCardData } from "@/lib/tool-card";
+import { PromptCard } from "./PromptCard";
+import type { PromptCardData } from "@/lib/prompt-card";
 import { useThemeAttribute } from "@/lib/use-theme";
 
 /**
@@ -13,7 +13,7 @@ import { useThemeAttribute } from "@/lib/use-theme";
  *
  * The filter runs over name, summary and declared formats, which matters more
  * than it sounds: on a conversion catalogue people search by extension far more
- * often than by tool name, and a name only match would fail the person typing
+ * often than by prompt name, and a name only match would fail the person typing
  * "heic" into a page that lists "HEIC to JPG Converter" under a summary
  * mentioning iPhone photos.
  *
@@ -22,12 +22,12 @@ import { useThemeAttribute } from "@/lib/use-theme";
  * out and in by layout rather than being swapped, so a card that survives the
  * query moves to its new position instead of disappearing and reappearing.
  */
-export function CategoryToolBrowser({
-  tools,
+export function CategoryPromptBrowser({
+  prompts,
   accent,
   categoryName,
 }: {
-  tools: ToolCardData[];
+  prompts: PromptCardData[];
   accent: string;
   categoryName: string;
 }) {
@@ -39,20 +39,20 @@ export function CategoryToolBrowser({
 
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    if (!needle) return tools;
+    if (!needle) return prompts;
 
-    return tools.filter((tool) => {
+    return prompts.filter((prompt) => {
       const haystack = [
-        tool.name,
-        tool.summary,
-        ...(tool.accepts ?? []),
-        tool.outputs ?? "",
+        prompt.name,
+        prompt.summary,
+        prompt.taskType,
+        prompt.opening,
       ]
         .join(" ")
         .toLowerCase();
       return haystack.includes(needle);
     });
-  }, [query, tools]);
+  }, [query, prompts]);
 
   return (
     <div>
@@ -103,16 +103,16 @@ export function CategoryToolBrowser({
           aria-live="polite"
           className="font-mono text-[0.6875rem] uppercase tracking-[0.12em] text-ink-faint"
         >
-          {results.length} of {tools.length} shown
+          {results.length} of {prompts.length} shown
         </p>
       </div>
 
       {results.length > 0 ? (
         <motion.div layout className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout" initial={false}>
-            {results.map((tool, index) => (
+            {results.map((prompt, index) => (
               <motion.div
-                key={tool.slug}
+                key={prompt.slug}
                 layout
                 initial={reduced ? false : { opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -120,14 +120,14 @@ export function CategoryToolBrowser({
                 transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
                 className="h-full"
               >
-                <ToolCard tool={tool} accent={accent} index={index} />
+                <PromptCard prompt={prompt} accent={accent} index={index} />
               </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
       ) : (
         <div className="mt-6 rounded-lg border border-dashed border-hairline p-10 text-center">
-          <p className="text-[0.9375rem] text-ink">No tool here matches “{query}”.</p>
+          <p className="text-[0.9375rem] text-ink">No prompt here matches “{query}”.</p>
           <p className="mt-2 text-[0.8125rem] text-ink-subtle">
             Try an extension such as png or mp4, or search the whole catalogue with the
             command palette.

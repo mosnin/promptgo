@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
-import { categoriesWithTools, totalToolCount } from "@/lib/tools";
+import { categoriesWithPrompts, totalPromptCount } from "@/lib/prompts";
 import { site } from "@/lib/site";
 import { Wordmark } from "./Wordmark";
 
@@ -15,7 +15,7 @@ const LEGAL_LINKS = [
 ];
 
 /**
- * Sitewide footer. Every category and a deep sample of tools are linked here,
+ * Sitewide footer. Every category and a deep sample of prompts are linked here,
  * which gives crawlers a complete, low depth path to the entire catalogue from
  * any page on the site.
  *
@@ -39,7 +39,7 @@ export function Footer() {
                 <Wordmark />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-ink-subtle">
-                {totalToolCount} free file conversion and asset tools that run entirely in your
+                {totalPromptCount} free file conversion and asset prompts that run entirely in your
                 browser. Nothing is uploaded, nothing is stored and nothing costs anything.
               </p>
             </div>
@@ -67,7 +67,7 @@ export function Footer() {
           aria-label="Footer"
           className="mt-11 grid gap-x-6 gap-y-9 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
         >
-          {categoriesWithTools.map((category, index) => (
+          {categoriesWithPrompts.map((category, index) => (
             <Reveal
               key={category.slug}
               blur={false}
@@ -92,23 +92,23 @@ export function Footer() {
               </Link>
 
               <ul className="mt-3 space-y-2">
-                {category.tools.slice(0, 6).map((tool) => (
-                  <li key={tool.slug}>
+                {category.prompts.slice(0, 6).map((prompt) => (
+                  <li key={prompt.slug}>
                     <Link
-                      href={tool.href}
+                      href={prompt.href}
                       className="inline-block text-[0.8125rem] leading-snug text-ink-subtle transition-colors duration-200 hover:text-ink"
                     >
-                      {tool.name}
+                      {prompt.name}
                     </Link>
                   </li>
                 ))}
-                {category.tools.length > 6 && (
+                {category.prompts.length > 6 && (
                   <li>
                     <Link
                       href={`/${category.slug}`}
                       className="group inline-flex items-center gap-1 text-[0.8125rem] font-medium text-signal-bright"
                     >
-                      {category.tools.length - 6} more
+                      {category.prompts.length - 6} more
                       <Icon
                         name="arrow-right"
                         size={11}
@@ -117,7 +117,7 @@ export function Footer() {
                     </Link>
                   </li>
                 )}
-                {category.tools.length === 0 && (
+                {category.prompts.length === 0 && (
                   <li className="text-[0.8125rem] text-ink-faint">Publishing soon</li>
                 )}
               </ul>

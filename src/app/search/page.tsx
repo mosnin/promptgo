@@ -3,19 +3,19 @@ import type { Metadata } from "next";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
-import { Breadcrumbs } from "@/components/tool/Breadcrumbs";
+import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
 import { SearchForm } from "./SearchForm";
 import { buildSearchIndex, searchCategoryNames, searchDocs } from "@/lib/search";
-import { categoriesWithTools } from "@/lib/tools";
+import { categoriesWithPrompts } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Search File Conversion Tools",
+  title: "Search File Conversion Prompts",
   description:
-    "Search every free file conversion tool by name, format or keyword. Find the right browser based converter for images, PDF, code, data and media in one step.",
+    "Search every free file conversion prompt by name, format or keyword. Find the right browser based converter for images, PDF, code, data and media in one step.",
   path: "/search",
   // Query permutations create unbounded low value URLs, so results stay out of
-  // the index while the tool and category pages do the ranking work.
+  // the index while the prompt and category pages do the ranking work.
   noIndex: true,
 });
 
@@ -45,9 +45,9 @@ export default async function SearchPage({ searchParams }: PageProps) {
         <div className="shell relative py-12">
           <Breadcrumbs crumbs={crumbs} />
           <Reveal>
-            <h1 className="headline mt-6 text-ink">Search file conversion tools</h1>
+            <h1 className="headline mt-6 text-ink">Search file conversion prompts</h1>
             <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-muted">
-              Search by tool name, file format or what you are trying to do.
+              Search by prompt name, file format or what you are trying to do.
             </p>
             <div className="mt-7 max-w-xl">
               <SearchForm initialQuery={query} />
@@ -63,7 +63,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
               Enter a search term above, or browse the categories below.
             </p>
             <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-              {categoriesWithTools.map((category) => (
+              {categoriesWithPrompts.map((category) => (
                 <div key={category.slug}>
                   <Link
                     href={`/${category.slug}`}
@@ -75,13 +75,13 @@ export default async function SearchPage({ searchParams }: PageProps) {
                     {category.name}
                   </Link>
                   <ul className="mt-3 space-y-1.5 border-l border-hairline pl-4">
-                    {category.tools.slice(0, 8).map((tool) => (
-                      <li key={tool.slug}>
+                    {category.prompts.slice(0, 8).map((prompt) => (
+                      <li key={prompt.slug}>
                         <Link
-                          href={tool.href}
+                          href={prompt.href}
                           className="text-[0.8125rem] text-ink-subtle transition-colors hover:text-ink"
                         >
-                          {tool.name}
+                          {prompt.name}
                         </Link>
                       </li>
                     ))}

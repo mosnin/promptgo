@@ -33,9 +33,9 @@ const CLAIMS = [
   },
   {
     icon: "bolt" as const,
-    claim: "The tools keep working with the network off.",
+    claim: "The prompts keep working with the network off.",
     method:
-      "Load any tool page, switch to airplane mode, then convert a file. Everything the tool needs is already in the tab, so it finishes normally.",
+      "Load any prompt page, switch to airplane mode, then convert a file. Everything the prompt needs is already in the tab, so it finishes normally.",
     label: "Try it offline",
     rotate: -3,
   },

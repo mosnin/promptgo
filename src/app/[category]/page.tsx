@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
-import { Breadcrumbs } from "@/components/tool/Breadcrumbs";
-import { toCardData } from "@/lib/tool-card";
-import { CategoryToolBrowser } from "@/components/tool/CategoryToolBrowser";
-import { FaqAccordion } from "@/components/tool/FaqAccordion";
+import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
+import { toCardData } from "@/lib/prompt-card";
+import { CategoryPromptBrowser } from "@/components/prompt/CategoryPromptBrowser";
+import { FaqAccordion } from "@/components/prompt/FaqAccordion";
 import { categories, getCategory } from "@/lib/categories";
-import { getToolsByCategory } from "@/lib/tools";
+import { getPromptsByCategory } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
 import {
   breadcrumbSchema,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 /**
- * Category hub. Lists every tool in the cluster plus supporting copy and an FAQ,
+ * Category hub. Lists every prompt in the cluster plus supporting copy and an FAQ,
  * so the page has enough unique substance to rank for the category head term
  * rather than acting as a bare link list.
  */
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps) {
   const category = getCategory(slug);
   if (!category) notFound();
 
-  const categoryTools = getToolsByCategory(category.slug);
+  const categoryTools = getPromptsByCategory(category.slug);
   const siblings = categories.filter((item) => item.slug !== category.slug);
 
   const crumbs = [
@@ -64,7 +64,7 @@ export default async function CategoryPage({ params }: PageProps) {
   const faq = [
     {
       question: `Are these ${category.primaryKeyword} really free?`,
-      answer: `Yes. Every tool in this category is free with no account, no trial and no daily limit. The tools run as JavaScript inside your own browser, so there is no server cost to pass on and no reason to meter usage.`,
+      answer: `Yes. Every prompt in this category is free with no account, no trial and no daily limit. The prompts run as JavaScript inside your own browser, so there is no server cost to pass on and no reason to meter usage.`,
     },
     {
       question: "Do my files get uploaded to a server?",
@@ -79,7 +79,7 @@ export default async function CategoryPage({ params }: PageProps) {
     {
       question: `Which browsers support these ${category.primaryKeyword}?`,
       answer:
-        "Current versions of Chrome, Edge, Firefox and Safari on desktop and mobile are all supported. Where a specific tool depends on a capability that a browser has not shipped yet, that tool says so on its own page before you select a file.",
+        "Current versions of Chrome, Edge, Firefox and Safari on desktop and mobile are all supported. Where a specific prompt depends on a capability that a browser has not shipped yet, that prompt says so on its own page before you select a file.",
     },
   ];
 
@@ -121,7 +121,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <Icon name={category.icon} size={20} />
               </span>
               <Badge>
-                {categoryTools.length} tool{categoryTools.length === 1 ? "" : "s"}
+                {categoryTools.length} prompt{categoryTools.length === 1 ? "" : "s"}
               </Badge>
             </div>
 
@@ -137,21 +137,21 @@ export default async function CategoryPage({ params }: PageProps) {
         <AdSlot name="listing" format="horizontal" minHeight={110} className="mb-10" />
 
         {categoryTools.length > 0 ? (
-          <CategoryToolBrowser
-            tools={categoryTools.map(toCardData)}
+          <CategoryPromptBrowser
+            prompts={categoryTools.map(toCardData)}
             accent={category.accent}
             categoryName={category.name}
           />
         ) : (
           <p className="rounded-lg border border-dashed border-hairline p-10 text-center text-[0.9375rem] text-ink-subtle">
-            Tools for this category are being published. Check back shortly.
+            Prompts for this category are being published. Check back shortly.
           </p>
         )}
       </div>
 
       <div className="shell pb-14">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <div className="prose-tool max-w-3xl">
+          <div className="prose-prompt max-w-3xl">
             <Reveal>
               <h2>Why use browser based {category.primaryKeyword}</h2>
               {category.body.map((paragraph, index) => (

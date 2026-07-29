@@ -1,41 +1,41 @@
 import { ImageResponse } from "next/og";
 import { getCategory } from "@/lib/categories";
-import { getTool, tools } from "@/lib/tools";
+import { getPrompt, prompts } from "@/lib/prompts";
 import { site } from "@/lib/site";
 
-export const alt = "Tool preview";
+export const alt = "Prompt preview";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 /**
- * Per tool social card.
+ * Per prompt social card.
  *
  * Every page having its own image matters more here than on most sites: the
  * catalogue is 253 near identical layouts, so a shared card would make every
- * share of every tool look like a share of the same page. The card leads with
- * the conversion itself, drawn the way the tool cards on the site draw it, so a
+ * share of every prompt look like a share of the same page. The card leads with
+ * the conversion itself, drawn the way the prompt cards on the site draw it, so a
  * link pasted into Slack answers "which converter" before anyone clicks.
  *
  * Generated at build time, one static PNG per route, so there is no runtime
  * cost and nothing to cache invalidate.
  */
 export function generateStaticParams() {
-  return tools.map((tool) => ({ category: tool.category, tool: tool.slug }));
+  return prompts.map((prompt) => ({ category: prompt.category, prompt: prompt.slug }));
 }
 
 export default async function ToolOpengraphImage({
   params,
 }: {
-  params: Promise<{ category: string; tool: string }>;
+  params: Promise<{ category: string; prompt: string }>;
 }) {
-  const { tool: slug } = await params;
-  const tool = getTool(slug);
-  const category = tool ? getCategory(tool.category) : undefined;
+  const { prompt: slug } = await params;
+  const prompt = getPrompt(slug);
+  const category = prompt ? getCategory(prompt.category) : undefined;
 
   const accent = category?.accent ?? "#5cc8ff";
-  const from = tool?.accepts?.[0]?.replace(/^\./, "").toUpperCase() ?? "FILE";
-  const to = tool?.outputs?.replace(/^\./, "").toUpperCase() ?? "RESULT";
-  const showConversion = Boolean(tool?.outputs);
+  const from = (prompt?.taskType ?? "prompt").toUpperCase();
+  const to = prompt ? `${prompt.prompt.variables.length} VARS` : "READY";
+  const showConversion = Boolean(prompt);
 
   return new ImageResponse(
     (
@@ -77,7 +77,7 @@ export default async function ToolOpengraphImage({
               display: "flex",
             }}
           >
-            {category?.name ?? "Tools"}
+            {category?.name ?? "Prompts"}
           </div>
           <div style={{ fontSize: 24, color: "#7c8395", display: "flex" }}>{site.name}</div>
         </div>
@@ -124,7 +124,7 @@ export default async function ToolOpengraphImage({
               display: "flex",
             }}
           >
-            {tool?.name ?? site.name}
+            {prompt?.name ?? site.name}
           </div>
         </div>
 

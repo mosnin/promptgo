@@ -1,13 +1,14 @@
-import type { ComponentType } from "react";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { FaqAccordion } from "./FaqAccordion";
+import { PlatformNote, PromptByline } from "./PlatformNote";
+import { PromptExtras, PromptPanel } from "./PromptPanel";
 import { TableOfContents, type TocEntry } from "./TableOfContents";
-import { ToolCard } from "./ToolCard";
-import { toCardData } from "@/lib/tool-card";
+import { PromptCard } from "./PromptCard";
+import { toCardData } from "@/lib/prompt-card";
 import {
   ArticleView,
   ExternalSources,
@@ -16,61 +17,58 @@ import {
   headingId,
 } from "./ArticleView";
 import { getCategory } from "@/lib/categories";
-import { getRelatedTools } from "@/lib/tools";
+import { getRelatedPrompts } from "@/lib/prompts";
+import { getTaskType } from "@/lib/task-types";
 import { countWords, readingTime } from "@/lib/seo";
 import {
   breadcrumbSchema,
   faqSchema,
   graph,
   howToSchema,
-  softwareApplicationSchema,
+  promptArticleSchema,
 } from "@/lib/jsonld";
-import type { RegisteredTool } from "@/lib/types";
+import type { RegisteredPrompt } from "@/lib/types";
 
 /**
- * The single page template every tool renders through.
+ * The single page template every prompt renders through.
  *
- * Centralising it is what guarantees the SEO contract holds across 120 pages
- * built by different authors: heading hierarchy, structured data, ad placement,
- * internal linking and the FAQ block are all produced here from the tool's
- * metadata rather than hand written per page.
+ * Centralising it is what guarantees the SEO contract holds across 148 pages:
+ * heading hierarchy, structured data, breadcrumbs, internal linking, the FAQ
+ * block and the EEAT byline are all produced here from the prompt's metadata
+ * rather than hand written per page. The parts that must differ between pages
+ * are all content, and content lives in meta.ts.
  */
-export function ToolShell({
-  tool,
-  Interface,
-}: {
-  tool: RegisteredTool;
-  Interface: ComponentType;
-}) {
-  const category = getCategory(tool.category);
-  const related = getRelatedTools(tool, 6);
+export function PromptShell({ prompt }: { prompt: RegisteredPrompt }) {
+  const category = getCategory(prompt.category);
+  const taskType = getTaskType(prompt.taskType);
+  const related = getRelatedPrompts(prompt, 6);
   const accent = category?.accent ?? "var(--color-signal)";
 
   const crumbs = [
     { name: "Home", href: "/" },
-    { name: category?.name ?? "Tools", href: `/${tool.category}` },
-    { name: tool.name, href: tool.href },
+    { name: category?.name ?? "Prompts", href: `/${prompt.category}` },
+    { name: prompt.name, href: prompt.href },
   ];
 
   const toc: TocEntry[] = [
-    ...tool.article.sections.map((section) => ({
+    ...prompt.article.sections.map((section) => ({
       id: headingId(section.heading),
       label: section.heading,
     })),
-    { id: "how-to", label: tool.article.howTo.name },
+    { id: "how-to", label: prompt.article.howTo.name },
     { id: "faq", label: "Frequently asked questions" },
   ];
 
   const articleWords = countWords(
     [
-      ...tool.article.intro,
-      ...tool.article.sections.flatMap((section) => [
+      ...prompt.article.intro,
+      ...prompt.article.sections.flatMap((section) => [
         section.heading,
         ...section.body,
         ...(section.list ?? []),
         ...(section.subsections?.flatMap((sub) => [sub.heading, ...sub.body]) ?? []),
       ]),
-      ...tool.article.faq.flatMap((item) => [item.question, item.answer]),
+      ...prompt.article.faq.flatMap((item) => [item.question, item.answer]),
     ].join(" "),
   );
 
@@ -80,9 +78,9 @@ export function ToolShell({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: graph([
-            softwareApplicationSchema(tool),
-            howToSchema(tool),
-            faqSchema(tool.article.faq, tool.href),
+            promptArticleSchema(prompt),
+            howToSchema(prompt),
+            faqSchema(prompt.article.faq, prompt.href),
             breadcrumbSchema(crumbs),
           ]),
         }}
@@ -99,9 +97,6 @@ export function ToolShell({
           }}
         />
 
-        {/* Centred rather than left aligned: on a tool page the interface is
-            the whole point, and a symmetrical hero funnels the eye straight
-            down into the drop zone instead of off to the left. */}
         <div className="shell relative py-10 text-center sm:py-14">
           <div className="flex justify-center">
             <Breadcrumbs crumbs={crumbs} />
@@ -116,50 +111,37 @@ export function ToolShell({
                 {category.name}
               </Badge>
             )}
+            {taskType && <Badge>{taskType.name}</Badge>}
             <Badge tone="success">
-              <Icon name="lock" size={11} />
-              Runs in your browser
+              <Icon name="check" size={11} />
+              Free, no signup
             </Badge>
-            <Badge>
-              {readingTime(articleWords)} min read
-            </Badge>
+            <Badge>{readingTime(articleWords)} min read</Badge>
           </div>
 
-          <h1 className="headline mx-auto mt-5 max-w-4xl text-ink">{tool.title}</h1>
+          {/* The H1 carries the exact match focus keyword and uses the display
+              face, which is the only place on the page that font appears. */}
+          <h1 className="headline mx-auto mt-5 max-w-4xl text-ink">{prompt.title}</h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-muted">
-            {tool.article.intro[0]}
+            {prompt.summary}
           </p>
+
+          <PromptByline prompt={prompt} />
         </div>
       </div>
 
-      {/* ---- Tool interface ----------------------------------------------- */}
+      {/* ---- The prompt itself -------------------------------------------- */}
       <div className="shell py-10 sm:py-12">
-        <AdSlot name="toolTop" format="horizontal" minHeight={110} className="mb-8" />
+        <AdSlot name="promptTop" format="horizontal" minHeight={110} className="mb-8" />
 
         <Reveal distance={16}>
-          <Interface />
+          <PromptPanel prompt={prompt.prompt} accent={accent} />
         </Reveal>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2.5">
-          {[
-            { icon: "lock" as const, text: "Files never leave your device" },
-            { icon: "bolt" as const, text: "No upload wait and no queue" },
-            { icon: "check" as const, text: "No signup, watermark or file limit" },
-          ].map((item) => (
-            <span
-              key={item.text}
-              className="inline-flex items-center gap-2 text-[0.8125rem] text-ink-subtle"
-            >
-              <span className="text-success">
-                <Icon name={item.icon} size={13} />
-              </span>
-              {item.text}
-            </span>
-          ))}
-        </div>
+        <PromptExtras prompt={prompt.prompt} />
 
-        <AdSlot name="toolMid" format="horizontal" minHeight={110} className="mt-10" />
+        <AdSlot name="promptMid" format="horizontal" minHeight={110} className="mt-10" />
       </div>
 
       {/* ---- Long form article -------------------------------------------- */}
@@ -167,22 +149,22 @@ export function ToolShell({
         <div className="grid gap-12 xl:grid-cols-[minmax(0,1fr)_15rem]">
           <article className="min-w-0 max-w-3xl">
             <Reveal>
-              <div className="prose-tool max-w-none">
-                {tool.article.intro.slice(1).map((paragraph, index) => (
+              <div className="prose-prompt max-w-none">
+                {prompt.article.intro.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
             </Reveal>
 
-            <ArticleView article={tool.article} />
+            <ArticleView article={prompt.article} />
 
             <div id="how-to" className="scroll-mt-24">
-              <HowToSteps howTo={tool.article.howTo} />
+              <HowToSteps howTo={prompt.article.howTo} />
             </div>
 
-            <InternalLinkCluster links={tool.article.internalLinks} />
+            <InternalLinkCluster links={prompt.article.internalLinks} />
 
-            <ExternalSources links={tool.article.externalLinks} />
+            <ExternalSources links={prompt.article.externalLinks} />
 
             <Reveal as="section" className="mt-14 scroll-mt-24">
               <div id="faq">
@@ -190,15 +172,17 @@ export function ToolShell({
                   Frequently asked questions
                 </h2>
                 <p className="mt-2 text-[0.9375rem] text-ink-subtle">
-                  Common questions about the {tool.seo.primaryKeyword}.
+                  Common questions about the {prompt.seo.primaryKeyword}.
                 </p>
                 <div className="mt-6">
-                  <FaqAccordion items={tool.article.faq} />
+                  <FaqAccordion items={prompt.article.faq} />
                 </div>
               </div>
             </Reveal>
 
-            <AdSlot name="toolFooter" format="horizontal" minHeight={250} className="mt-12" />
+            {category && <PlatformNote prompt={prompt} category={category} />}
+
+            <AdSlot name="promptFooter" format="horizontal" minHeight={250} className="mt-12" />
           </article>
 
           <aside className="relative">
@@ -218,11 +202,11 @@ export function ToolShell({
                 <div>
                   <p className="eyebrow">Keep going</p>
                   <h2 className="mt-2 text-[1.5rem] font-semibold tracking-[-0.025em] text-ink">
-                    More {category?.name.toLowerCase() ?? "tools"}
+                    More {category?.name.toLowerCase() ?? "prompts"} prompts
                   </h2>
                 </div>
                 <a
-                  href={`/${tool.category}`}
+                  href={`/${prompt.category}`}
                   className="group inline-flex items-center gap-1.5 text-[0.875rem] font-medium text-signal-bright"
                 >
                   View the full category
@@ -238,7 +222,7 @@ export function ToolShell({
             <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((item, index) => (
                 <Reveal key={item.slug} delay={index * 0.045} distance={14}>
-                  <ToolCard tool={toCardData(item)} accent={accent} />
+                  <PromptCard prompt={toCardData(item)} accent={accent} />
                 </Reveal>
               ))}
             </div>

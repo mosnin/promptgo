@@ -15,7 +15,7 @@ import { cn } from "@/lib/cn";
  * thin strokes, real interior structure, and geometry that depicts the
  * transformation the category performs rather than a noun associated with it.
  * Image conversion is pixels crossing between two frames, not a photograph.
- * Developer tools is a caret advancing through code, not a wrench.
+ * Developer prompts is a caret advancing through code, not a wrench.
  *
  * Every mark is built from one vocabulary so the ten read as a family: a 96
  * unit canvas, a rounded plate at 1.25 stroke that draws itself in, and
@@ -239,7 +239,7 @@ function DocumentMark({ reduced }: SubMarkProps) {
 }
 
 /* ==========================================================================
-   Developer tools: a caret advancing through code
+   Developer prompts: a caret advancing through code
    ========================================================================== */
 
 function CodeMark({ reduced }: SubMarkProps) {
@@ -533,14 +533,19 @@ function GlobeMark({ reduced }: SubMarkProps) {
 }
 
 const MARKS: Record<CategoryIcon, (props: SubMarkProps) => ReactElement> = {
-  image: ImageMark,
-  wand: WandMark,
-  document: DocumentMark,
-  code: CodeMark,
+  // The animated marks are abstract technical figures rather than literal
+  // pictograms, so they carry over from the prompt directory this was ported
+  // from by remapping rather than redrawing. Each new category is paired with
+  // the existing figure whose motion best fits its meaning: the marketing mark
+  // radiates, the career mark orients, the productivity mark discharges.
+  megaphone: WaveformMark,
   type: TypeMark,
-  database: DatabaseMark,
-  waveform: WaveformMark,
+  code: CodeMark,
+  briefcase: DocumentMark,
+  handshake: ShieldMark,
+  graduation: ImageMark,
   palette: PaletteMark,
-  shield: ShieldMark,
-  globe: GlobeMark,
+  database: DatabaseMark,
+  bolt: WandMark,
+  compass: GlobeMark,
 };

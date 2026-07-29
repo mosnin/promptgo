@@ -11,7 +11,7 @@ import { Icon } from "@/components/ui/Icon";
  * illustrate, so the section shows the omitted step explicitly, struck through
  * and greyed, sitting where every other converter would put it. Naming the
  * thing that is not happening lands harder than three cheerful steps that could
- * describe any tool on the internet.
+ * describe any prompt on the internet.
  *
  * The connector between steps draws itself as the section enters, left to
  * right, so the sequence reads in order rather than arriving all at once.
@@ -21,7 +21,7 @@ const STEPS = [
   {
     n: "01",
     title: "Choose a file",
-    body: "Drop it on the page or pick it from disk. The browser hands the tool a reference to the file on your own device.",
+    body: "Drop it on the page or pick it from disk. The browser hands the prompt a reference to the file on your own device.",
     icon: "upload" as const,
   },
   {

@@ -25,7 +25,7 @@ export function SearchForm({ initialQuery }: { initialQuery: string }) {
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder="png to jpg, compress pdf, decode jwt"
-        aria-label="Search tools"
+        aria-label="Search prompts"
         autoComplete="off"
         className="h-12 w-full bg-transparent text-[0.9375rem] text-ink outline-none placeholder:text-ink-faint"
       />
