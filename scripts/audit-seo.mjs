@@ -165,15 +165,29 @@ function countWords(text) {
   return words(text).length;
 }
 
+/**
+ * Word-boundary phrase matching. A plain substring search on the normalised
+ * string (the previous approach) counts "ai" inside "email", "domain" and
+ * "waiting" as three occurrences of the keyword "ai" — silently inflating
+ * density and falsely confirming a long tail "appears in the article" on any
+ * page where its words happen to occur split across other words. Matching on
+ * the word array instead means only a real, whole-word occurrence of the
+ * phrase counts.
+ */
 function occurrences(text, keyword) {
-  const haystack = normalise(text);
-  const needle = normalise(keyword);
-  if (!needle) return 0;
+  const haystackWords = words(text);
+  const needleWords = words(keyword);
+  if (needleWords.length === 0) return 0;
   let matches = 0;
-  let index = haystack.indexOf(needle);
-  while (index !== -1) {
-    matches += 1;
-    index = haystack.indexOf(needle, index + needle.length);
+  for (let i = 0; i + needleWords.length <= haystackWords.length; i += 1) {
+    let isMatch = true;
+    for (let j = 0; j < needleWords.length; j += 1) {
+      if (haystackWords[i + j] !== needleWords[j]) {
+        isMatch = false;
+        break;
+      }
+    }
+    if (isMatch) matches += 1;
   }
   return matches;
 }
@@ -225,6 +239,10 @@ function claimCheckText(meta) {
   parts.push(meta.article.howTo.name);
   for (const step of meta.article.howTo.steps) parts.push(step.name, step.text);
   for (const item of meta.article.faq) parts.push(item.answer);
+  if (meta.article.table) {
+    const { caption, headers, rows } = meta.article.table;
+    parts.push(caption, ...headers, ...rows.flat());
+  }
   return parts.join(" ");
 }
 

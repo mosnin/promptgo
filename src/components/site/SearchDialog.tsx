@@ -136,7 +136,7 @@ export function SearchDialog({ open, onClose, categoryNames }: SearchDialogProps
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 onKeyDown={onKeyDown}
-                placeholder="Search 120+ prompts. Try png to jpg, minify css, decode jwt"
+                placeholder="Search 148 prompts. Try cold email, sql query, lesson plan"
                 className="h-14 w-full bg-transparent text-[0.9375rem] text-ink outline-none placeholder:text-ink-faint"
                 autoComplete="off"
                 spellCheck={false}

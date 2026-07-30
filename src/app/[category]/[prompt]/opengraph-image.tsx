@@ -11,19 +11,22 @@ export const contentType = "image/png";
  * Per prompt social card.
  *
  * Every page having its own image matters more here than on most sites: the
- * catalogue is 253 near identical layouts, so a shared card would make every
+ * catalogue is 148 near identical layouts, so a shared card would make every
  * share of every prompt look like a share of the same page. The card leads with
  * the task type and variable count, drawn the way the prompt cards do, so a
  * link pasted into Slack answers "which prompt" before anyone clicks.
  *
  * Generated at build time, one static PNG per route, so there is no runtime
- * cost and nothing to cache invalidate.
+ * cost and nothing to cache invalidate. buildMetadata() has to be told each
+ * prompt page's own path via ogImagePath, or Next.js's automatic per-route
+ * image gets silently shadowed by the site-wide default and this is never
+ * actually linked to from the page's meta tags.
  */
 export function generateStaticParams() {
   return prompts.map((prompt) => ({ category: prompt.category, prompt: prompt.slug }));
 }
 
-export default async function ToolOpengraphImage({
+export default async function PromptOpengraphImage({
   params,
 }: {
   params: Promise<{ category: string; prompt: string }>;
@@ -35,7 +38,7 @@ export default async function ToolOpengraphImage({
   const accent = category?.accent ?? "#5cc8ff";
   const from = (prompt?.taskType ?? "prompt").toUpperCase();
   const to = prompt ? `${prompt.prompt.variables.length} VARS` : "READY";
-  const showConversion = Boolean(prompt);
+  const showTaskType = Boolean(prompt);
 
   return new ImageResponse(
     (
@@ -83,7 +86,7 @@ export default async function ToolOpengraphImage({
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
-          {showConversion && (
+          {showTaskType && (
             <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
               <div
                 style={{
@@ -115,7 +118,7 @@ export default async function ToolOpengraphImage({
 
           <div
             style={{
-              fontSize: showConversion ? 52 : 72,
+              fontSize: showTaskType ? 52 : 72,
               lineHeight: 1.06,
               letterSpacing: "-0.035em",
               color: "#f7f8fb",
@@ -129,7 +132,7 @@ export default async function ToolOpengraphImage({
         </div>
 
         <div style={{ display: "flex", fontSize: 24, color: "#9aa1b1" }}>
-          Tested on current models. Free to copy, no signup required.
+          Free to copy. No signup required.
         </div>
       </div>
     ),

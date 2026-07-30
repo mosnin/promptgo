@@ -10,6 +10,16 @@ interface BuildMetadataInput {
   updated?: string;
   type?: "website" | "article";
   noIndex?: boolean;
+  /**
+   * Route segment with its own generated opengraph-image.tsx, e.g. a prompt
+   * page passing its own href so the per-prompt social card is actually
+   * used. Without this, every route fell back to the single site-wide
+   * image, silently shadowing the file-convention image Next.js generates
+   * per route: setting openGraph.images explicitly here overrides the
+   * automatic per-segment image, so a route with its own opengraph-image.tsx
+   * has to say so or its build-time image is generated and never linked to.
+   */
+  ogImagePath?: string;
 }
 
 /**
@@ -24,9 +34,10 @@ export function buildMetadata({
   updated,
   type = "website",
   noIndex = false,
+  ogImagePath,
 }: BuildMetadataInput): Metadata {
   const url = absoluteUrl(path);
-  const ogImage = absoluteUrl(`/opengraph-image`);
+  const ogImage = absoluteUrl(`${ogImagePath ?? ""}/opengraph-image`);
 
   return {
     title,
@@ -70,29 +81,6 @@ export function buildMetadata({
 /** Rough word count used by the SEO auditor and the reading time badge. */
 export function countWords(text: string): number {
   return text.trim().split(/\s+/).filter(Boolean).length;
-}
-
-/**
- * Keyword density as a percentage of total words. Phrase matching is done on a
- * normalised string so punctuation and casing do not skew the result.
- */
-export function keywordDensity(text: string, keyword: string): number {
-  const normalised = text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ");
-  const target = keyword.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
-  if (!target) return 0;
-
-  const totalWords = normalised.split(" ").filter(Boolean).length;
-  if (totalWords === 0) return 0;
-
-  const keywordWords = target.split(" ").length;
-  let matches = 0;
-  let index = normalised.indexOf(target);
-  while (index !== -1) {
-    matches += 1;
-    index = normalised.indexOf(target, index + target.length);
-  }
-
-  return (matches * keywordWords * 100) / totalWords;
 }
 
 export function readingTime(words: number): number {

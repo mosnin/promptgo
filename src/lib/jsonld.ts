@@ -81,11 +81,12 @@ export function promptArticleSchema(prompt: RegisteredPrompt): Json {
     dateModified: new Date(prompt.updated).toISOString(),
     inLanguage: site.language,
     isAccessibleForFree: true,
-    author: {
-      "@type": "Person",
-      name: prompt.eeat.author,
-      description: prompt.eeat.authorCredential,
-    },
+    // eeat.author is always the organisation name ("Fast Prompts"), never a
+    // named individual, so this references the same Organization entity as
+    // publisher rather than declaring a Person whose name happens to match
+    // an org. A Person entity with an organisation's name is exactly the
+    // structured data mismatch Google's rich result tests flag.
+    author: { "@id": absoluteUrl("/#organization") },
     publisher: { "@id": absoluteUrl("/#organization") },
     mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(prompt.href) },
     about: prompt.seo.primaryKeyword,

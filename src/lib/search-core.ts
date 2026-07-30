@@ -72,8 +72,8 @@ export function searchDocs(
 
     if (!matchedAll) continue;
 
-    // Slight bias toward shorter names so "png to jpg" outranks
-    // "png to jpg batch converter" for the bare query.
+    // Slight bias toward shorter names so "cold email" outranks
+    // "cold email follow up sequence" for the bare query.
     score += Math.max(0, 24 - doc.n.length) * 0.4;
     results.push({ ...doc, score });
   }

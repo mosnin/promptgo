@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: prompt.seo.keywords,
     updated: prompt.updated,
     type: "article",
+    ogImagePath: prompt.href,
   });
 }
 

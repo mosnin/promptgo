@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
+import { authorCredentialFor, stableIndex } from "@/lib/trust-copy";
 import type { Category, RegisteredPrompt } from "@/lib/types";
 
 /**
@@ -40,17 +41,15 @@ const PLATFORM_INTROS = (count: string) => [
     `${name} holds ${count} prompts grouped by job function. The point of each one is a constraint, not a suggestion, and the failure mode that constraint prevents is named on its page.`,
   (name: string) =>
     `Part of a ${count} prompt directory at ${name}, organised by job rather than by model. Each entry pairs an instruction with the specific way it goes wrong when the instruction is left out.`,
+  (name: string) =>
+    `${name} is ${count} prompts organised by job function rather than by which model you happen to be using. Each one carries a constraint rather than a suggestion, named on the page beside it.`,
+  (name: string) =>
+    `Every one of the ${count} prompts on ${name} is grouped by the work it is for, not the assistant it targets. The page next to each one names the specific way it fails without its constraints.`,
+  (name: string) =>
+    `${name} is organised around ${count} prompts, one job function at a time. Each is written as a working instruction with a named failure mode, not a generic suggestion.`,
+  (name: string) =>
+    `${count} prompts, grouped by job rather than by model, make up ${name}. Every page states the constraint its prompt relies on and what goes wrong without it.`,
 ];
-
-/** Stable, deterministic index from a string. No Math.random: this has to
- * render the same on the server and on the client for the same page. */
-function stableIndex(key: string, mod: number): number {
-  let hash = 0;
-  for (let i = 0; i < key.length; i += 1) {
-    hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
-  }
-  return hash % mod;
-}
 
 export function PlatformNote({
   prompt,
@@ -136,7 +135,7 @@ export function PromptByline({ prompt }: { prompt: RegisteredPrompt }) {
     <div className="mx-auto mt-6 max-w-2xl rounded-lg border border-hairline bg-surface-2/30 px-5 py-4 text-left">
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         <span className="text-[0.875rem] font-medium text-ink">{prompt.eeat.author}</span>
-        <span className="text-[0.8125rem] text-ink-subtle">{prompt.eeat.authorCredential}</span>
+        <span className="text-[0.8125rem] text-ink-subtle">{authorCredentialFor(prompt.slug)}</span>
       </div>
 
       <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink-muted">

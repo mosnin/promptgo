@@ -108,7 +108,7 @@ function ArticleTable({ table }: { table: NonNullable<PromptArticle["table"]> })
 
 /**
  * The internal link cluster. These are curated per prompt and are the mechanism
- * that turns 120 isolated pages into ten interlinked topic clusters.
+ * that turns 148 isolated pages into ten interlinked topic clusters.
  */
 export function InternalLinkCluster({
   links,
