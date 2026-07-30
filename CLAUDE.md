@@ -12,6 +12,10 @@ complete SEO contract: exact match keywords across slug, title, SEO title and de
 keyword density targets, article structure, internal link clustering, external citation
 rules, EEAT and the trust block contract. Do not author a prompt without it.
 
+See `docs/PROCESS.md` for how the site actually gets worked on day to day: the verification
+discipline, the fabrication risks the auditor guards against and has previously missed, and
+the batch-authoring pattern. It is a living document, not a fixed spec.
+
 ## Commands
 
 ```bash
