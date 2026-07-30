@@ -5,11 +5,11 @@
 
 export const site = {
   name: "Fast Prompts",
-  legalName: "Fast Prompts",
+  legalName: "Cool Digital Tools LLC",
   /** Named individual responsible for the directory. Rendered in Organization schema and on the about page. */
   founder: "Jerico Herrera",
   /** Contact address. Assembled at render on the contact page so it is not sitting in the markup as a mailto. */
-  email: "hello@fastprompts.org",
+  email: "help@fastprompts.org",
   /**
    * Used for canonical URLs, sitemap, OpenGraph and JSON-LD. Must match the
    * domain the site actually serves from: a canonical pointing at a domain you

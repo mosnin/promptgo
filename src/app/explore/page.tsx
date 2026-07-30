@@ -7,6 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
 import { PromptCard } from "@/components/prompt/PromptCard";
+import { ExploreBrowser } from "@/components/prompt/ExploreBrowser";
 import { toCardData } from "@/lib/prompt-card";
 import { categoriesWithPrompts, totalPromptCount } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
@@ -15,7 +16,7 @@ import { breadcrumbSchema, graph } from "@/lib/jsonld";
 import { prompts } from "@/lib/prompts";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Explore All File Conversion Prompts By Category",
+  title: "Explore Every AI Prompt By Category And Task",
   description:
     "Explore every free AI prompt by category and task type. Browse prompts for marketing, sales, coding, writing, hiring, teaching and data analysis.",
   path: "/explore",
@@ -30,7 +31,13 @@ export const metadata: Metadata = buildMetadata({
 /**
  * The catalogue directory. Every prompt on the site appears here grouped under
  * its category, giving both readers and crawlers a single dense hub with a one
- * hop path to all 120 pages.
+ * hop path to all 148 pages.
+ *
+ * The static, fully crawlable listing below is grouped by category, which is
+ * the right default for a reader browsing. Above it, ExploreBrowser adds a
+ * client side filter across category and task type together, which is the
+ * cross cutting question the static grouping cannot answer on its own: which
+ * of the 148 prompts, in any category, do a specific kind of task.
  */
 export default function ExplorePage() {
   const crumbs = [
@@ -48,7 +55,7 @@ export default function ExplorePage() {
             {
               "@type": "CollectionPage",
               "@id": absoluteUrl("/explore#collection"),
-              name: "Explore All File Conversion Prompts By Category",
+              name: "Explore Every AI Prompt By Category And Task",
               url: absoluteUrl("/explore"),
               mainEntity: {
                 "@type": "ItemList",
@@ -80,8 +87,8 @@ export default function ExplorePage() {
               Explore every prompt by category and task
             </h1>
             <p className="mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-ink-muted">
-              The complete catalogue. Pick a category to see everything it contains, or jump
-              straight to a prompt. Each one names the failure mode its constraints exist to prevent.
+              The complete catalogue. Filter by category and task type together to find a
+              specific kind of prompt across the whole site, or scroll the grouped list below.
             </p>
           </Reveal>
         </div>
@@ -111,6 +118,16 @@ export default function ExplorePage() {
       </div>
 
       <div className="shell py-12">
+        <ExploreBrowser
+          prompts={prompts.map(toCardData)}
+          categories={categoriesWithPrompts.map((category) => ({
+            slug: category.slug,
+            name: category.name,
+            accent: category.accent,
+            icon: category.icon,
+          }))}
+        />
+
         <AdSlot name="listing" format="horizontal" minHeight={110} className="mb-12" />
 
         <div className="space-y-20">

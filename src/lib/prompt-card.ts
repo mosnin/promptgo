@@ -1,4 +1,4 @@
-import type { RegisteredPrompt, TaskType } from "./types";
+import type { CategorySlug, RegisteredPrompt, TaskType } from "./types";
 
 /**
  * The fields a prompt card actually renders.
@@ -18,6 +18,7 @@ export interface PromptCardData {
   name: string;
   href: string;
   summary: string;
+  category: CategorySlug;
   taskType: TaskType;
   /** First line of the prompt, used as the card's specimen line. */
   opening: string;
@@ -52,6 +53,7 @@ export function toCardData(prompt: RegisteredPrompt): PromptCardData {
     name: prompt.name,
     href: prompt.href,
     summary: prompt.summary,
+    category: prompt.category,
     taskType: prompt.taskType,
     opening: opening(prompt.prompt.text),
     variableCount: prompt.prompt.variables.length,

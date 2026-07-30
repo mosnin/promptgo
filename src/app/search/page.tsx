@@ -10,7 +10,7 @@ import { categoriesWithPrompts } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Search File Conversion Prompts",
+  title: "Search Fast Prompts",
   description:
     "Search every free AI prompt by name, task or keyword. Find the right prompt for marketing, sales, coding, writing, hiring or analysis in one step.",
   path: "/search",
