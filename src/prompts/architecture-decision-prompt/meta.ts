@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "architecture decision prompt",
     keywords: [
       "architecture decision prompt",
-      "writing an architecture decision record",
-      "choosing between two technical designs",
+      "architecture decision record template",
       "how to document a technical trade off",
-      "reversible and irreversible decisions in software",
+      "reversible vs irreversible decisions",
       "ai prompt for comparing system designs",
     ],
     seoTitle: "Architecture Decision Prompt: Write the Record, Not Advice",
@@ -113,16 +112,16 @@ Do not rate anything as high, medium or low. Do not write that it depends. Where
         ],
       },
       {
-        heading: "Writing an architecture decision record that outlives its author",
+        heading: "An architecture decision record template that outlives its author",
         body: [
-          "Writing an architecture decision record is an exercise in writing for a stranger. The reader is a new engineer in two years who has found a constraint that seems arbitrary and wants to know whether they can remove it.",
+          "An architecture decision record template is a way of writing for a stranger. The reader is a new engineer in two years who has found a constraint that seems arbitrary and wants to know whether they can remove it.",
           "That reader is served by the rejected options and the assumptions, not by the decision. A record that lists only what was chosen leaves them to rediscover the reasoning by breaking something, which is the expensive way to learn it.",
         ],
       },
       {
-        heading: "Reversible and irreversible decisions in software",
+        heading: "Reversible vs irreversible decisions",
         body: [
-          "Reversible and irreversible decisions in software deserve different amounts of deliberation, and treating them the same is how teams spend three weeks choosing a logging library and an afternoon choosing a data model.",
+          "Reversible vs irreversible decisions is the split that decides how much deliberation is warranted, and ignoring that split is how teams spend three weeks choosing a logging library and an afternoon choosing a data model.",
           "The useful question is not whether the code can be deleted. It is what remains after the code is deleted: rows written in a shape you no longer want, an interface third parties now depend on, a queue with a year of retained messages, or an operational skill the team was hired for.",
         ],
       },

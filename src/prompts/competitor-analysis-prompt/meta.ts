@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "competitor analysis prompt",
       "how to analyse a competitor from their website",
       "ai prompt for competitive positioning",
-      "finding the gap a competitor leaves open",
+      "how to find a gap in the market",
       "reading pricing pages for strategy signals",
-      "competitor research without paid tools",
+      "how to do competitor research for free",
     ],
     seoTitle: "Competitor Analysis Prompt: Read What They Reveal",
     seoDescription:
@@ -102,7 +102,7 @@ Never speculate about their revenue, headcount, funding or internal decisions. I
         heading: "Their copy is evidence, their name is not",
         body: [
           "Published marketing copy is a genuinely rich source, because it was written to persuade a specific person and its choices reveal who that person is. Vocabulary level, which objections get pre-empted, what the examples assume about company size: all of it is observable and none of it requires a subscription to anything.",
-          "A company name, by contrast, retrieves a mixture of stale training data and confident generalisation. This is why competitor research without paid tools is entirely feasible and why it has to start with copy and paste rather than with a question.",
+          "A company name, by contrast, retrieves a mixture of stale training data and confident generalisation. Anyone asking how to do competitor research for free already has the answer, and it starts with copy and paste rather than with a question.",
         ],
       },
       {
@@ -129,7 +129,7 @@ Never speculate about their revenue, headcount, funding or internal decisions. I
         heading: "The gap, and the discipline not to invent one",
         body: [
           "Every position excludes somebody, and the excluded customer is where an opportunity might sit. The prompt asks for that person specifically, described as a type of buyer rather than as a segment label, because segment labels are where positioning goes to become vague.",
-          "It is also instructed to report honestly when no meaningful gap exists. Finding the gap a competitor leaves open is valuable when the gap is real and actively harmful when it is manufactured, because a position built around a customer nobody wants is expensive and slow to discover.",
+          "It is also instructed to report honestly when no meaningful gap exists. Knowing how to find a gap in the market is valuable when the gap is real and actively harmful when it is manufactured, because a position built around a customer nobody wants is expensive and slow to discover.",
         ],
       },
       {

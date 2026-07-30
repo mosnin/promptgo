@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "code explanation prompt",
       "separating what the code does from why",
       "ai prompt for explaining what a function does",
-      "spotting hidden side effects in a function",
-      "explaining unfamiliar code to a new engineer",
-      "understanding a legacy codebase quickly",
+      "how to find side effects in a function",
+      "how to understand a legacy codebase",
     ],
     seoTitle: "Code Explanation Prompt: Mechanics Before Intent",
     seoDescription:
@@ -117,9 +116,9 @@ Do not suggest improvements and do not rewrite anything. If you notice a probabl
         ],
       },
       {
-        heading: "Spotting hidden side effects in a function",
+        heading: "How to find side effects in a function",
         body: [
-          "Spotting hidden side effects in a function is the part that most often changes someone's plan. A method that appears to compute a value may also write a cache entry, emit a metric, mutate the list you handed it, and enqueue a background job, and none of that is visible from the signature.",
+          "Working out how to find side effects in a function is the part that most often changes someone's plan. A method that appears to compute a value may also write a cache entry, emit a metric, mutate the list you handed it, and enqueue a background job, and none of that is visible from the signature.",
           "Section C enumerates all of it and then asks the question people forget: does this also happen on the error path. A function that writes a row and then throws leaves the system in a state neither branch of your new code is written for, and that detail is worth more than the rest of the explanation combined.",
         ],
       },
@@ -131,9 +130,9 @@ Do not suggest improvements and do not rewrite anything. If you notice a probabl
         ],
       },
       {
-        heading: "Understanding a legacy codebase quickly",
+        heading: "How to understand a legacy codebase at speed",
         body: [
-          "Understanding a legacy codebase quickly is a sampling problem rather than a reading problem. You cannot read it all, so the value is in picking the right dozen functions and getting a reliable account of each.",
+          "Knowing how to understand a legacy codebase at speed is a sampling problem rather than a reading problem. You cannot read it all, so the value is in picking the right dozen functions and getting a reliable account of each.",
           "Running this on one function at a time and keeping the section E questions produces a list of unknowns that accumulates into something useful. After ten functions the repeated questions point at the parts of the system where nothing is written down, which is where the risk in any change is concentrated.",
         ],
       },

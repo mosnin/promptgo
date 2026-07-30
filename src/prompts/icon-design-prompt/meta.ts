@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "icon design prompt",
     keywords: [
       "icon design prompt",
-      "consistent stroke weight across an icon set",
-      "icon metaphor test at small sizes",
-      "keyline grid and optical alignment",
+      "how to keep stroke weight consistent in icons",
+      "how to test icons at small sizes",
+      "how to use a keyline grid for icons",
       "how to brief an icon set",
-      "outline icons versus filled icons",
+      "outline icons vs filled icons",
     ],
     seoTitle: "Icon Design Prompt: Geometry Before Metaphor",
     seoDescription:
@@ -108,8 +108,8 @@ RULE: the minimum gap between strokes is never smaller than the stroke weight. A
       {
         heading: "The numbers that make a family",
         body: [
-          "Consistent stroke weight across an icon set is the most visible of these numbers and the one most often broken, usually by a single icon that needed a thinner line to fit its detail. That icon will read as lighter than everything around it and nobody will be able to say why the toolbar looks uneven.",
-          "The keyline grid and optical alignment rules do the quieter work. A circle drawn to the same bounding box as a square appears smaller, so keylines exist to make different shapes look the same size rather than measure the same size. Padding, live area and per shape dimensions are what stop a set drifting as it grows past the first dozen.",
+          "How to keep stroke weight consistent in icons is the most visible of these numbers and the rule most often broken, usually by a single icon that needed a thinner line to fit its detail. That icon will read as lighter than everything around it and nobody will be able to say why the toolbar looks uneven.",
+          "How to use a keyline grid for icons, with optical alignment, is the quieter work. A circle drawn to the same bounding box as a square appears smaller, so keylines exist to make different shapes look the same size rather than measure the same size. Padding, live area and per shape dimensions are what stop a set drifting as it grows past the first dozen.",
         ],
         subsections: [
           {
@@ -121,7 +121,7 @@ RULE: the minimum gap between strokes is never smaller than the stroke weight. A
         ],
       },
       {
-        heading: "Outline icons versus filled icons is a state decision",
+        heading: "Outline icons vs filled icons is a state decision",
         body: [
           "Outline icons versus filled icons is usually argued as taste and is better settled as function. Two weights of the same icon give you a free way to show selected against unselected, which is worth more in a navigation bar than either style is on its own.",
           "Committing to both doubles the specification work and halves the ambiguity later. The system needs to state how a filled version is derived from the outline one, or the two sets diverge in exactly the way the geometry rules were written to prevent.",
@@ -130,7 +130,7 @@ RULE: the minimum gap between strokes is never smaller than the stroke weight. A
       {
         heading: "The collisions nobody checks until support does",
         body: [
-          "The icon metaphor test at small sizes is a comparison, not an inspection. Any icon looks fine on its own at any size. What matters is whether two of them can be told apart in a row, at speed, by someone who is not looking closely, which is every real use.",
+          "How to test icons at small sizes is a comparison, not an inspection. Any icon looks fine on its own at any size. What matters is whether two of them can be told apart in a row, at speed, by someone who is not looking closely, which is every real use.",
           "Building the pair table before drawing anything is much cheaper than discovering the problem in production. The distinguishing feature has to be something that survives the reduction: a silhouette difference works, a difference in interior detail does not, and an arrow pointing a different way is the classic example of a difference that vanishes precisely when it matters.",
         ],
       },

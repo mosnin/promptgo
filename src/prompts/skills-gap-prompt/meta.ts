@@ -16,10 +16,8 @@ const meta: PromptMeta = {
     primaryKeyword: "skills gap prompt",
     keywords: [
       "skills gap prompt",
-      "comparing your experience against job postings",
+      "how to compare your skills to a job description",
       "ai prompt for a learning plan from job ads",
-      "gaps that get you screened out",
-      "skills you claim but cannot evidence",
       "cheapest way to get evidence for a missing skill",
     ],
     seoTitle: "Skills Gap Prompt: Only The Gaps That Screen You Out",
@@ -111,7 +109,7 @@ Never recommend a degree. Never recommend general upskilling. Never suggest a po
         heading: "A gap is only real if it screens you out",
         body: [
           "Requirements are not equal and job advertisements do not distinguish between them. A posting lists the essentials, the preferences and the aspirations in the same bulleted voice, and candidates treat all three as a checklist to be completed.",
-          "Comparing your experience against job postings works only when several are read together. A requirement appearing in one advertisement is one hiring manager's preference. A requirement appearing in four is the market speaking, and it is the one worth six months of your effort.",
+          "How to compare your skills to a job description starts with reading several of them together. A requirement appearing in one advertisement is one hiring manager's preference. A requirement appearing in four is the market speaking, and it is the one worth six months of your effort.",
           "Gaps that get you screened out are usually few and specific. The rest of the list is noise you have been carrying around as anxiety.",
         ],
         list: [

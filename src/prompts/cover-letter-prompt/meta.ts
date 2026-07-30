@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "cover letter prompt",
       "how to write a cover letter that gets read",
       "ai prompt for a tailored cover letter",
-      "cover letter opening that is not generic",
-      "explaining a career gap in a cover letter",
+      "how to start a cover letter without being generic",
+      "how to explain a career gap in a cover letter",
       "cover letter for a role you are underqualified for",
     ],
     seoTitle: "Cover Letter Prompt: One Argument, Under 250 Words",
@@ -115,7 +115,7 @@ If I gave you something awkward, put one plain sentence about it in its own shor
           {
             heading: "The specific you have to supply",
             body: [
-              "A cover letter opening that is not generic contains something you could not have written about any other employer. Their pricing model changed in April. Their status page is public and tells a story. Somebody you know works there and described what is actually going wrong. The prompt asks for this and will not manufacture it.",
+              "Knowing how to start a cover letter without being generic means opening with something you could not have written about any other employer. Their pricing model changed in April. Their status page is public and tells a story. Somebody you know works there and described what is actually going wrong. The prompt asks for this and will not manufacture it.",
               "Finding one such fact is the highest value fifteen minutes in the whole application. A single real observation about the employer outperforms any amount of polish elsewhere in the letter.",
             ],
           },
@@ -132,7 +132,7 @@ If I gave you something awkward, put one plain sentence about it in its own shor
         heading: "Using the cover letter prompt on an awkward application",
         body: [
           "A cover letter for a role you are underqualified for has a narrower job than a standard one. Name the gap before the screener finds it, put your strongest offsetting evidence directly beside it, and stop. A letter hoping the gap passes unnoticed reads as unaware or evasive, and both readings cost more than the gap did.",
-          "Explaining a career gap in a cover letter works the same way and needs one plain sentence with no apology attached to it. I was caring for a family member between March 2024 and January 2025 is a complete treatment. The urge to justify produces a paragraph that makes a non issue look like a real one.",
+          "How to explain a career gap in a cover letter works the same way and needs one plain sentence with no apology attached to it. I was caring for a family member between March 2024 and January 2025 is a complete treatment. The urge to justify produces a paragraph that makes a non issue look like a real one.",
           "Both go in their own short paragraph near the end rather than in the opening, so the argument lands before the caveat arrives.",
         ],
       },

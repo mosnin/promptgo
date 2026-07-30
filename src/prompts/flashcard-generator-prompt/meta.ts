@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "flashcard generator prompt",
     keywords: [
       "flashcard generator prompt",
-      "one fact per flashcard",
       "making cards for spaced repetition",
       "ai prompt for cloze deletion cards",
-      "flashcards that test recall not recognition",
-      "turning notes into revision cards",
+      "how to make flashcards that test recall",
+      "how to turn notes into flashcards",
     ],
     seoTitle: "Flashcard Generator Prompt: One Fact, One Card, No Bundles",
     seoDescription:
@@ -97,7 +96,7 @@ Return.
 
   article: {
     intro: [
-      "A flashcard generator prompt that produces two hundred cards in one pass has usually produced about sixty cards and a hundred and forty pieces of prose with a question mark on the front. The failure is not laziness, it is that turning notes into revision cards looks like formatting and is actually editing.",
+      "A flashcard generator prompt that produces two hundred cards in one pass has usually produced about sixty cards and a hundred and forty pieces of prose with a question mark on the front. The failure is not laziness, it is that knowing how to turn notes into flashcards looks like formatting and is actually editing.",
       "The version here does the editing. Every card has to carry exactly one retrievable fact, anything bundling two ideas gets split in front of you, and material that should not be memorised at all goes into a rejected pile with the reason attached.",
       "It is written for a student to use on their own notes, which is a deliberate limit. A deck built from a textbook you have not read tests the textbook.",
     ],
@@ -120,7 +119,7 @@ Return.
       {
         heading: "Recognition feels exactly like knowing",
         body: [
-          "Flashcards that test recall not recognition are the only kind that transfer to a blank exam paper. The trap is that recognition is pleasant. Seeing an answer and thinking yes, that is right, produces a strong feeling of fluency that has almost no relationship to whether you could have produced it unprompted.",
+          "Knowing how to make flashcards that test recall, not recognition, matters because only those transfer to a blank exam paper. The trap is that recognition is pleasant. Seeing an answer and thinking yes, that is right, produces a strong feeling of fluency that has almost no relationship to whether you could have produced it unprompted.",
           "So the prompt refuses any card that lists options, any card where the phrasing of the front leaks the answer, and any front that would accept two different correct responses. That last one matters more than it sounds: a card reading what happens to an enzyme at high temperature has four defensible answers, and a student marking themselves correct on the easiest one is training the wrong retrieval.",
         ],
         subsections: [

@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "data storytelling prompt",
       "turning analysis into a narrative for executives",
-      "what the data cannot tell you",
-      "writing a findings summary from a dataset",
+      "how to write a findings summary",
       "ai prompt for presenting results to stakeholders",
-      "leading with the decision not the method",
     ],
     seoTitle: "Data Storytelling Prompt: Write Findings Without Overclaiming",
     seoDescription:
@@ -128,9 +126,9 @@ CRITICAL: use no number that does not appear in the findings I gave you. Do not 
         ],
       },
       {
-        heading: "Writing a findings summary from a dataset without adding to it",
+        heading: "How to write a findings summary without adding to it",
         body: [
-          "Writing a findings summary from a dataset invites a model to fill gaps, and it fills them fluently. A missing denominator gets replaced with approximately, a rough figure gets rounded into something cleaner, and an unmeasured comparison gets described as likely. None of that is flagged, because none of it looks like an addition.",
+          "How to write a findings summary is complicated by the way a model fills gaps, and it fills them fluently. A missing denominator gets replaced with approximately, a rough figure gets rounded into something cleaner, and an unmeasured comparison gets described as likely. None of that is flagged, because none of it looks like an addition.",
           "The rule that no number may appear unless it was supplied is the single most useful line in the prompt. It also forces a useful discipline upstream: findings pasted without base sizes produce a draft with visible holes, which is a better outcome than prose that reads smoothly and cannot be sourced.",
         ],
       },

@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "thank you note prompt",
     keywords: [
       "thank you note prompt",
-      "post interview thank you email",
+      "post interview thank you email template",
       "ai prompt for a follow up note after an interview",
       "what to say in a thank you email after an interview",
-      "referencing one moment from the conversation",
-      "thank you note that is not generic",
+      "thank you email after interview examples",
     ],
     seoTitle: "Thank You Note Prompt: One Moment, Under 120 Words",
     seoDescription:
@@ -131,7 +130,7 @@ After the note, give one line naming the reason this message could not have been
         heading: "When the thank you note prompt says do not send",
         body: [
           "The first thing the prompt does is decide whether the note should exist. If the moment you supplied could be pasted into a message to any other interviewer, it returns a refusal and tells you what to go and remember instead.",
-          "This is uncomfortable and correct. A post interview thank you email with nothing specific in it is not a small positive, it is a demonstration that nothing in the conversation stuck. Better to send nothing, or to go back through your notes until something real surfaces.",
+          "This is uncomfortable and correct. A post interview thank you email template with nothing specific in it is not a small positive, it is a demonstration that nothing in the conversation stuck. Better to send nothing, or to go back through your notes until something real surfaces.",
           "In practice the refusal usually means you were not taking notes. Two lines written in the car afterwards, in their words rather than your summary, is the whole preparation this needs.",
         ],
       },
@@ -157,7 +156,7 @@ After the note, give one line naming the reason this message could not have been
         },
         {
           name: "Accept a refusal if you get one",
-          text: "A generic thank you note that is not generic in intention is still generic on arrival. Skip it rather than sending filler with your name on it.",
+          text: "Thank you email after interview examples are easy to find and easy to spot. Skip a generic one rather than sending filler with your name on it.",
         },
       ],
     },

@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "quiz generator prompt",
       "ai prompt for multiple choice questions",
-      "writing distractors that reveal misconceptions",
+      "how to write multiple choice distractors",
       "retrieval practice questions for revision",
       "how to generate a quiz from lesson notes",
-      "quiz aligned to a specification",
     ],
     seoTitle: "Quiz Generator Prompt: Distractors That Diagnose",
     seoDescription:
@@ -117,7 +116,7 @@ Return three blocks.
       {
         heading: "Distractors are the whole design",
         body: [
-          "Writing distractors that reveal misconceptions is slow work by hand, which is why most classroom quizzes do not do it. You have to know the wrong routes well enough to reconstruct them: the student who divides by a hundred, the one who inverts the ratio, the one who has memorised the formula and cannot tell which quantity goes on top.",
+          "How to write multiple choice distractors that reveal misconceptions is slow work by hand, which is why most classroom quizzes skip it. You have to know the wrong routes well enough to reconstruct them: the student who divides by a hundred, the one who inverts the ratio, the one who has memorised the formula and cannot tell which quantity goes on top.",
           "This is the one part of quiz writing where a model genuinely helps, because it has seen enormous numbers of worked errors. It still needs your list first. The misconceptions field is what pins the generated distractors to your class rather than to a generic cohort, and the prompt requires at least half of them to come from it.",
         ],
       },

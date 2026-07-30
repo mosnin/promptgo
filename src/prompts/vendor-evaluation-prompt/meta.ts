@@ -17,9 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "vendor evaluation prompt",
       "how to compare software vendors objectively",
-      "weighting requirements before seeing demos",
       "ai prompt for a vendor scorecard",
-      "exit cost and switching cost",
       "reference call questions for a vendor",
     ],
     seoTitle: "Vendor Evaluation Prompt: Weight Before You Look",

@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "git commit message prompt",
     keywords: [
       "git commit message prompt",
-      "writing a commit message from a diff",
+      "git commit message examples",
       "conventional commits with ai",
       "how to write a good commit subject line",
-      "splitting a commit that does two things",
       "commit message that explains why not what",
     ],
     seoTitle: "Git Commit Message Prompt: Derive It From the Diff",
@@ -106,9 +105,9 @@ Output only the message or messages, plus the disagreement report where there is
 
     sections: [
       {
-        heading: "Writing a commit message from a diff, not from memory",
+        heading: "Git commit message examples come from the diff, not from memory",
         body: [
-          "Writing a commit message from a diff means the model has to account for every hunk, including the ones you stopped seeing. Lockfiles, generated output, test fixtures and configuration all get named rather than folded into a summary, because those are exactly the changes people forget they staged.",
+          "Grounding git commit message examples in the diff means the model has to account for every hunk, including the ones you stopped seeing. Lockfiles, generated output, test fixtures and configuration all get named rather than folded into a summary, because those are exactly the changes people forget they staged.",
           "The comparison step then runs in both directions. What did the diff do that you did not mention, and what did you mention that the diff does not contain. The second direction catches the case where you described the intent and implemented something narrower.",
         ],
       },

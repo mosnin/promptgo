@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "note summary prompt",
     keywords: [
       "note summary prompt",
-      "turning messy notes into next actions",
+      "how to turn notes into action items",
       "ai prompt for condensing research notes",
-      "notes that never get read again",
-      "extracting decisions from personal notes",
-      "summary that ends in a recommendation",
+      "how to extract decisions from notes",
     ],
     seoTitle: "Note Summary Prompt: End With a Recommendation",
     seoDescription:
@@ -105,7 +103,7 @@ Quote the notes when a claim comes from them. Label anything you worked out your
       {
         heading: "Actions have to name a first physical step",
         body: [
-          "Turning messy notes into next actions fails at one specific point. The model writes think about pricing, or review the vendor options, and those are categories of work rather than things a person can begin. An action you cannot begin is a note with better formatting.",
+          "How to turn notes into action items fails at one specific point. The model writes think about pricing, or review the vendor options, and those are categories of work rather than things a person can begin. An action you cannot begin is a note with better formatting.",
           "Hence the rule: a verb, a first physical step, and a size that fits under an hour. Draft three pricing tiers on one page can start at four minutes past nine. Review the vendor options cannot start at all, which is why it will still be sitting in the same notebook next month.",
         ],
         list: [
@@ -119,7 +117,7 @@ Quote the notes when a claim comes from them. Label anything you worked out your
         heading: "Questions earn their place by blocking something",
         body: [
           "Any set of notes generates questions and most of them do not matter. This prompt keeps a question only when it blocks one of the five actions, and it has to name which one.",
-          "That is the difference between extracting decisions from personal notes and producing an interesting reading of them. A question blocking nothing is curiosity. A question blocking action two is the most valuable line on the page, and it nearly always resolves with one message to somebody who answers in ten minutes.",
+          "That is the difference between knowing how to extract decisions from notes and producing an interesting reading of them. A question blocking nothing is curiosity. A question blocking action two is the most valuable line on the page, and it nearly always resolves with one message to somebody who answers in ten minutes.",
         ],
       },
       {

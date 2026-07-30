@@ -16,10 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "presentation slide prompt",
     keywords: [
       "presentation slide prompt",
-      "assertion evidence slide titles",
-      "one idea per slide",
+      "how to write slide titles",
+      "why one idea per slide matters",
       "what to cut from a slide",
-      "speaker notes versus on slide text",
+      "speaker notes vs on slide text",
       "structuring a deck for a decision",
     ],
     seoTitle: "Presentation Slide Prompt: Titles That Make A Claim",
@@ -108,14 +108,14 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
       {
         heading: "Titles carry the argument or nothing does",
         body: [
-          "Assertion evidence slide titles come out of research into technical presentations, and the core finding is unglamorous: audiences retain more when the headline states the point and the body shows the support for it. The label style leaves the point unstated, so the audience assembles it themselves, and half of them assemble it differently.",
+          "How to write slide titles that assert rather than label comes out of research into technical presentations, and the core finding is unglamorous: audiences retain more when the headline states the point and the body shows the support for it. The label style leaves the point unstated, so the audience assembles it themselves, and half of them assemble it differently.",
           "The test is mechanical. Read only the titles, in order, and see whether it is an argument. Options and Recommendation is not an argument. Maintaining two systems costs us a release a quarter, followed by Consolidating pays for itself in eight months, is one. If the title has no verb it is not making a claim.",
         ],
       },
       {
         heading: "The body is evidence, and there is one of it",
         body: [
-          "One idea per slide gets repeated in every presentation course and is almost never enforced, because a slide with room left over invites another point. Restricting the body to the evidence for the title makes the rule self enforcing: a second idea has nowhere to sit, since it is not evidence for this claim.",
+          "Why one idea per slide matters is repeated in every presentation course and almost never enforced, because a slide with room left over invites another point. Restricting the body to the evidence for the title makes the rule self enforcing: a second idea has nowhere to sit, since it is not evidence for this claim.",
           "Naming a single visual per slide has the same effect. One chart, one photograph, one diagram, one table, and at most fifteen words beside it. Where the material cannot supply a visual for a claim, that is worth knowing before you present it rather than after somebody asks how you know.",
         ],
         subsections: [
@@ -130,7 +130,7 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
       {
         heading: "Two channels, and they should not duplicate",
         body: [
-          "Speaker notes versus on slide text is a real decision, not a formatting preference. An audience reading a paragraph is not listening to you say the same paragraph, and the version they retain is whichever finished first.",
+          "Speaker notes vs on slide text is a real decision, not a formatting preference. An audience reading a paragraph is not listening to you say the same paragraph, and the version they retain is whichever finished first.",
           "The split is straightforward once it is explicit. The slide holds what has to be seen: the shape of the data, the comparison, the photograph. The notes hold what has to be heard: the caveat, the anecdote, the reason this number is lower than last quarter. Written as separate fields, the duplication becomes visible immediately.",
         ],
       },

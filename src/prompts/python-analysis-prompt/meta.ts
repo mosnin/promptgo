@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "python analysis prompt",
     keywords: [
       "python analysis prompt",
-      "pandas code that checks its own assumptions",
-      "asserting row counts after a merge",
+      "why does a pandas merge add rows",
       "ai prompt for writing pandas code",
       "why a groupby silently drops nulls",
-      "printing null rates before analysing",
+      "how to check for nulls in pandas",
     ],
     seoTitle: "Python Analysis Prompt: Pandas Code That Checks Itself",
     seoDescription:
@@ -117,7 +116,7 @@ Use only column names present in the schema above. If the question cannot be ans
           {
             heading: "Profile before you transform",
             body: [
-              "Printing null rates before analysing is the block people delete first and regret most. A column that is thirty percent empty produces a mean over the remaining seventy percent without complaint, and nothing in the result hints at the missing rows.",
+              "How to check for nulls in pandas is the block people delete first. A column that is thirty percent empty produces a mean over the remaining seventy percent without complaint, and nothing in the result hints at the missing rows.",
               "The profile block also prints distinct counts on key columns and the date range. A join key with more distinct values than rows is impossible and points at whitespace or case differences. A date column whose maximum is three weeks old points at a stalled pipeline rather than at the business.",
             ],
           },
@@ -130,9 +129,9 @@ Use only column names present in the schema above. If the question cannot be ans
         ],
       },
       {
-        heading: "Asserting row counts after a merge",
+        heading: "Why does a pandas merge add rows",
         body: [
-          "Asserting row counts after a merge is a two line habit that prevents the most expensive silent bug in analysis work. A many to one join where the right hand side turns out to contain duplicate keys becomes a many to many join, the row count multiplies, and every subsequent sum is inflated by an amount nobody can see.",
+          "Why does a pandas merge add rows has a two line answer that prevents the most expensive silent bug in analysis work. A many to one join where the right hand side turns out to contain duplicate keys becomes a many to many join, the row count multiplies, and every subsequent sum is inflated by an amount nobody can see.",
           "The pandas merge function takes a validate argument that raises immediately when the cardinality is not what you claimed. Combined with an assert on the expected row count, it converts a wrong total into an exception at the line that caused it. The cost is one keyword argument. The alternative is finding out when a figure fails to reconcile with finance.",
         ],
       },

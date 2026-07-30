@@ -16,10 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "press release prompt",
     keywords: [
       "press release prompt",
-      "does this announcement have news value",
+      "how to tell if a story is newsworthy",
       "press release embargo line for journalists",
       "how to write a press release headline",
-      "executive quote that says something",
+      "press release quote examples",
       "ai prompt for a product launch announcement",
     ],
     seoTitle: "Press Release Prompt: Pass the News Value Test First",
@@ -119,7 +119,7 @@ FINISH with the three questions a journalist will ask that this release does not
       {
         heading: "How the press release prompt scores news value",
         body: [
-          "The first question is not how to phrase this. It is does this announcement have news value for someone with no relationship to your company, and the five criteria make that answerable rather than a matter of taste.",
+          "The first question is not how to phrase this. It is how to tell if a story is newsworthy to someone with no relationship to your company, and the five criteria make that answerable rather than a matter of taste.",
           "Novelty is the criterion teams score wrongly, because they measure against their own history. A capability that is new to you and ordinary in the sector scores zero, however hard it was to build. Scoring it against the sector is what makes the test useful and what makes it uncomfortable.",
         ],
         list: [
@@ -141,7 +141,7 @@ FINISH with the three questions a journalist will ask that this release does not
         heading: "Quotes are where announcements go to die",
         body: [
           "The standard executive quote contains no information. It expresses excitement, restates the headline in longer form, and mentions a commitment to customers. A journalist cannot use it, so the paragraph is dead space in a document that has very little room.",
-          "The test applied here is mechanical: an executive quote that says something must contain at least one fact appearing nowhere else in the release. A reason, a constraint, a number, an admission about what is still hard. If the spokesperson has nothing like that to offer, the quote is cut and replaced with a sentence that does carry information.",
+          "The test applied here is mechanical: unlike most press release quote examples, the quote must contain at least one fact appearing nowhere else in the release. A reason, a constraint, a number, an admission about what is still hard. If the spokesperson has nothing like that to offer, the quote is cut and replaced with a sentence that does carry information.",
         ],
       },
       {

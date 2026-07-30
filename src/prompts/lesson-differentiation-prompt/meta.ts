@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "lesson differentiation prompt",
       "adapting a lesson for mixed ability",
-      "scaffolds that do not lower the learning objective",
+      "how to scaffold without lowering the learning objective",
       "ai prompt for differentiated tasks",
-      "supporting eal learners in a mainstream lesson",
-      "extension work that is not just more questions",
+      "how to support eal learners in class",
     ],
     seoTitle: "Lesson Differentiation Prompt: One Objective, Three Routes",
     seoDescription:
@@ -122,7 +121,7 @@ Return.
         heading: "Presentation changes and demand changes are different animals",
         body: [
           "A larger font, a glossary, a worked example on the wall and instructions in numbered steps all change how the task is read. A halved word count, a multiple choice version and a paragraph with the conclusion already written change how hard the thinking is. Both get called differentiation and only the first kind is safe to give the group that is already behind.",
-          "That is why the prompt tags every change. Scaffolds that do not lower the learning objective are almost always presentation changes plus time, and the tagging makes the trade visible before the lesson rather than after the assessment. Supporting EAL learners in a mainstream lesson is the clearest case: a student who cannot yet write the explanation in English may be entirely capable of giving it, so the adaptation belongs to language access, not to cognitive demand.",
+          "That is why the prompt tags every change. How to scaffold without lowering the learning objective is almost always a presentation change plus time, and the tagging makes the trade visible before the lesson rather than after the assessment. How to support EAL learners in class is the clearest case: a student who cannot yet write the explanation in English may be entirely capable of giving it, so the adaptation belongs to language access, not to cognitive demand.",
         ],
         list: [
           "Presentation: vocabulary listed in advance, instructions in writing as well as spoken, one worked example, a larger diagram.",

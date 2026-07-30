@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "ai prompt for structuring an article",
       "how to outline a blog post that ranks",
       "content brief template for writers",
-      "outline that marks where expertise is needed",
+      "how to show first hand experience in content",
       "avoiding generic ai written articles",
     ],
     seoTitle: "Blog Post Outline Prompt: One Argument, Marked Gaps",
@@ -122,7 +122,7 @@ Rules: no section called Introduction, Conclusion or Final Thoughts. Every headi
       {
         heading: "The author required tag",
         body: [
-          "This is the part that determines whether the finished article is worth publishing. An outline that marks where expertise is needed does something a plain table of contents cannot: every section is assessed for whether it can be written from public knowledge, and the ones that cannot get tagged with a note on what is missing.",
+          "This is the part that determines whether the finished article is worth publishing. Working out how to show first hand experience in content starts here, because a plain table of contents cannot do it: every section is assessed for whether it can be written from public knowledge, and the ones that cannot get tagged with a note on what is missing.",
           "The tags are diagnostic in aggregate. A few of them means you are writing a piece with genuine substance in specific places. All of them means you should not be writing this article yet. None of them means the model believes the entire piece can be assembled from what is already published, which is the definition of content nobody needs.",
         ],
         list: [

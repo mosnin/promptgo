@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "delegation brief prompt",
       "how to hand off work without rework",
       "ai prompt for briefing a teammate",
-      "deciding what only you can do",
-      "delegation brief that states the constraints",
-      "handing over a task with a decision boundary",
+      "what to delegate and what to keep",
+      "delegation brief template",
+      "how to delegate decision authority",
     ],
     seoTitle: "Delegation Brief Prompt: Hand Off Without the Rework",
     seoDescription:
@@ -108,9 +108,9 @@ Do not write encouragement and do not restate the task as the outcome.`,
 
     sections: [
       {
-        heading: "Deciding what only you can do",
+        heading: "What to delegate and what to keep",
         body: [
-          "Deciding what only you can do comes before the brief, and most people get it wrong in the same direction. The list of things genuinely requiring you is shorter than it feels, and it is dominated by decisions rather than by tasks.",
+          "Working out what to delegate and what to keep comes before the brief, and most people get it wrong in the same direction. The list of things genuinely requiring you is shorter than it feels, and it is dominated by decisions rather than by tasks.",
           "Work needing your judgement about a trade off cannot be handed over. Work needing your knowledge can, as soon as the knowledge is written down. Confusing the two is how people end up keeping the drafting and delegating the formatting, which is precisely backwards.",
         ],
       },
@@ -118,7 +118,7 @@ Do not write encouragement and do not restate the task as the outcome.`,
         heading: "Why the delegation brief prompt draws a decision boundary",
         body: [
           "Three lists: decide freely, check first, not yours. Each must hold something, and both empty list cases are failures with names. An empty not yours list is abdication. An empty decide freely list is supervision wearing a brief as a costume.",
-          "Handing over a task with a decision boundary is the difference between somebody who can move and somebody who has to ask. Most of the traffic in a slow handover is requests for permission that could have been granted in advance, in writing, one line each.",
+          "Knowing how to delegate decision authority is the difference between somebody who can move and somebody who has to ask. Most of the traffic in a slow handover is requests for permission that could have been granted in advance, in writing, one line each.",
         ],
         subsections: [
           {
@@ -146,7 +146,7 @@ Do not write encouragement and do not restate the task as the outcome.`,
         heading: "Done has to be checkable by both of you",
         body: [
           "Format, audience, deadline. A brief missing any of the three produces something perfectly reasonable that arrives in the wrong shape, and the resulting rework belongs to whoever wrote the brief.",
-          "A delegation brief that states the constraints and then leaves done implicit is half a brief. Done is a shared test rather than a feeling, and the useful version is specific enough that neither side could argue about it afterwards without looking silly.",
+          "A delegation brief template that states the constraints and then leaves done implicit is half a brief. Done is a shared test rather than a feeling, and the useful version is specific enough that neither side could argue about it afterwards without looking silly.",
         ],
       },
       {

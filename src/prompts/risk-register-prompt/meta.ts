@@ -17,8 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "risk register prompt",
       "how to build a project risk register",
-      "risk owner and trigger condition",
-      "difference between a risk and an issue",
+      "what is the difference between a risk and an issue",
       "ai prompt for risk management on a project",
       "escalation threshold for a project risk",
     ],
@@ -117,7 +116,7 @@ C. Name the one risk that would be embarrassing to write down because of who wou
         ],
       },
       {
-        heading: "The difference between a risk and an issue",
+        heading: "What is the difference between a risk and an issue",
         body: [
           "A risk is an uncertain future event. An issue has already happened and now needs resolving. The difference between a risk and an issue sounds pedantic until you notice that mixing them is why the weekly meeting spends forty minutes discussing things that are no longer uncertain.",
           "The two need different treatment. Issues need an owner and a resolution date. Risks need an owner, a trigger and a response held in reserve. Managing an issue as a risk means monitoring something that has already cost you money.",

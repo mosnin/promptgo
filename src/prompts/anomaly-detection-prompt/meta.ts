@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "anomaly detection prompt",
     keywords: [
       "anomaly detection prompt",
-      "is this drop real or normal variation",
-      "reporting lag makes yesterday look bad",
+      "how to tell if a metric drop is real",
       "ai prompt for investigating a metric drop",
-      "day of week seasonality in daily metrics",
-      "spotting a broken data pipeline first",
+      "how to check for day of week seasonality",
     ],
     seoTitle: "Anomaly Detection Prompt: Real Break or Normal Noise?",
     seoDescription:
@@ -127,9 +125,9 @@ Never name a specific cause. You cannot see the deploy, the outage or the campai
         ],
       },
       {
-        heading: "Day of week seasonality in daily metrics",
+        heading: "How to check for day of week seasonality",
         body: [
-          "Day of week seasonality in daily metrics is strong enough in most businesses to dwarf whatever people are worried about. Weekend volume can sit thirty percent below a weekday, so a Saturday to Monday comparison manufactures a recovery and a Friday to Saturday comparison manufactures a crisis.",
+          "How to check for day of week seasonality matters, since it dwarfs whatever people are worried about in most businesses. Weekend volume can sit thirty percent below a weekday, so a Saturday to Monday comparison manufactures a recovery and a Friday to Saturday comparison manufactures a crisis.",
           "Gate two compares like with like and reports the difference as a number. It also catches the neighbours of that problem: a bank holiday landing on the comparison day, a five Monday month against a four Monday one, and a payday that shifts by a weekend and moves a whole week's shape with it.",
         ],
         list: [
@@ -140,9 +138,9 @@ Never name a specific cause. You cannot see the deploy, the outage or the campai
         ],
       },
       {
-        heading: "Is this drop real or normal variation",
+        heading: "How to tell if a metric drop is real",
         body: [
-          "Is this drop real or normal variation is the question every alert is really asking, and it has an empirical answer that takes about a minute. Take the history, compute how much the metric moves from one period to the next as a matter of routine, and see where today sits in that distribution.",
+          "How to tell if a metric drop is real is the question every alert is really asking, and it has an empirical answer that takes about a minute. Take the history, compute how much the metric moves from one period to the next as a matter of routine, and see where today sits in that distribution.",
           "Most alerts do not survive this. A series whose median daily change is eight percent and whose worst five days include a twenty six percent move has no business raising an alarm at twenty two percent. Gate three prints the five largest historical moves with their dates specifically so that the comparison is concrete rather than a claim about typical behaviour.",
         ],
       },

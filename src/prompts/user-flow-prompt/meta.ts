@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "user flow prompt",
     keywords: [
       "user flow prompt",
-      "mapping the unhappy path",
+      "how to map the unhappy path",
       "how to map a signup flow",
-      "dead end states in a user journey",
+      "how to find dead end states in a user flow",
       "entry and exit conditions for each screen",
-      "user flow diagram from a feature description",
+      "how to make a user flow diagram",
     ],
     seoTitle: "User Flow Prompt: Find The Dead Ends First",
     seoDescription:
@@ -111,7 +111,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
         heading: "A flow is a graph and graphs have measurable defects",
         body: [
           "Treating a flow as a state machine gives you something a drawing cannot: properties you can check mechanically. A graph can be examined for nodes with no outgoing edges, nodes with no incoming edges, and edges that only run one way. Those three checks catch a surprising proportion of real product complaints.",
-          "Dead end states in a user journey are the clearest example. Almost every one I have found was a failure state that somebody added late, with a message and no button, because the design covered the successful path and the error was handled in code afterwards.",
+          "How to find dead end states in a user flow is the clearest example. Almost every one I have found was a failure state that somebody added late, with a message and no button, because the design covered the successful path and the error was handled in code afterwards.",
           "The unreachable check runs in the opposite direction and usually finds documentation rather than defects: a state that exists in the code, has no route into it any more, and is still being maintained by an engineer who assumes somebody uses it.",
         ],
       },
@@ -125,7 +125,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
       {
         heading: "Most of a product is the unhappy path",
         body: [
-          "Mapping the unhappy path is where the row count doubles. A signup with four screens in the design file has eleven or twelve states once expired invitations, duplicate addresses, exceeded licences and abandoned half completed accounts are included, and every one of those states needs copy that somebody has to write.",
+          "How to map the unhappy path is the question where the row count doubles. A signup with four screens in the design file has eleven or twelve states once expired invitations, duplicate addresses, exceeded licences and abandoned half completed accounts are included, and every one of those states needs copy that somebody has to write.",
           "Splitting the failure states by cause is the part teams find most useful in review. Failures the user caused need a correction they can make. Failures the system caused need honesty and a route onwards. Merging the two is how products end up apologising for a user's typo and blaming the user for an outage.",
         ],
         subsections: [
@@ -140,7 +140,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
       {
         heading: "Why the user flow prompt puts the diagram last",
         body: [
-          "Asking for a user flow diagram from a feature description gets you something presentable in about ten seconds, and presentable is the problem. The layout engine wants a tidy graph, the model wants a coherent story, and between them the awkward states get smoothed away before you ever see them.",
+          "Asking how to make a user flow diagram from a feature description gets you something presentable in about ten seconds, and presentable is the problem. The layout engine wants a tidy graph, the model wants a coherent story, and between them the awkward states get smoothed away before you ever see them.",
           "Generating the table first and rendering it afterwards means the diagram is a view of a checked artefact rather than an invention. Anyone working out how to map a signup flow should notice the difference immediately: the table version has rows for the states that generate support tickets, and the diagram drawn from it has boxes nobody would have drawn by hand.",
         ],
       },

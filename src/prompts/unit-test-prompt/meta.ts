@@ -17,7 +17,6 @@ const meta: PromptMeta = {
     keywords: [
       "unit test prompt",
       "writing tests that fail for the right reason",
-      "avoiding tests that mirror the implementation",
       "generating edge case tests for a function",
       "ai prompt for pytest test cases",
       "how to test a function you did not write",

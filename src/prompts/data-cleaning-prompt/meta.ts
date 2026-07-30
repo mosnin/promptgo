@@ -17,8 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "data cleaning prompt",
       "how to clean a messy dataset with ai",
-      "detecting duplicate rows in a spreadsheet",
-      "handling missing values without deleting rows",
+      "how to find duplicate rows in a spreadsheet",
+      "how to handle missing values in a dataset",
       "ai prompt for standardising inconsistent categories",
       "data cleaning checklist before analysis",
     ],
@@ -119,17 +119,17 @@ CRITICAL: never invent a value for a missing cell and never introduce a category
         ],
       },
       {
-        heading: "Handling missing values without deleting rows",
+        heading: "How to handle missing values in a dataset without deleting rows",
         body: [
-          "Handling missing values without deleting rows is the choice that moves a result most and gets discussed least. Drop every row containing a blank and you have restricted the analysis to whoever filled in the optional fields, which is almost never a random slice of the population you care about.",
+          "How to handle missing values in a dataset is the choice that moves a result most and gets discussed least. Drop every row containing a blank and you have restricted the analysis to whoever filled in the optional fields, which is almost never a random slice of the population you care about.",
           "The prompt drags the pattern into the open: how many blanks sit in each column, whether they cluster in the same rows, and whether a blank means unknown, means zero, or means the question did not apply. Those are three different facts needing three different treatments, and no automatic default gets all three right.",
           "Imputation is allowed, but it has to be written down. A median fill is defensible and belongs in the plan as rule 7. A number that simply appears in a cell with no rule behind it is not defensible at all, and by the time somebody queries the total it is untraceable.",
         ],
       },
       {
-        heading: "Detecting duplicate rows in a spreadsheet is not a distinct count",
+        heading: "How to find duplicate rows in a spreadsheet without a distinct count",
         body: [
-          "Detecting duplicate rows in a spreadsheet feels like a job for a distinct count, and for byte identical copies it is. The expensive case is the repeated key: two rows for the same order id carrying different totals, one a correction and one stale, with nothing in the file saying which is which.",
+          "How to find duplicate rows in a spreadsheet feels like a job for a distinct count, and for byte identical copies it is. The expensive case is the repeated key: two rows for the same order id carrying different totals, one a correction and one stale, with nothing in the file saying which is which.",
           "A distinct count treats both as legitimate. A blanket deduplication keeps whichever appears first, which is arbitrary and reproducible only by accident. The prompt splits the two cases apart and deliberately refuses to pick a survivor, because picking correctly depends on how the export was generated and that fact is not in the data.",
         ],
       },

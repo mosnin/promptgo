@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "resume bullet prompt",
       "how to write resume bullets with numbers",
       "ai prompt for quantifying achievements on a resume",
-      "resume bullets that survive recruiter screening",
-      "deleting resume lines with no evidence",
-      "writing resume bullets without inflating them",
+      "how to get your resume past a recruiter screen",
+      "how to write a resume bullet with no numbers",
     ],
     seoTitle: "Resume Bullet Prompt: Evidence Or Delete The Line",
     seoDescription:
@@ -105,7 +104,7 @@ Output the classified list first, then the rewritten resume section, then the nu
         body: [
           "Screening a stack of applications is not reading in the way the word implies. The first pass is a scan for matches against the role, and a scan rewards numerals and concrete nouns because those are the only things that survive being glanced at. Grand verbs occupy the same space and carry none of the signal.",
           "Writing resume bullets without inflating them is mostly a matter of refusing the verb upgrade. If you coordinated something, the word is coordinated. Spearheaded describes a different level of authority, and if an interviewer probes and finds you coordinated, the whole document loses credibility over one word nobody needed.",
-          "Resume bullets that survive recruiter screening share one property. A reader can tell in about a second what changed and by how much. Everything else in the line is scaffolding.",
+          "How to get your resume past a recruiter screen comes down to one property. A reader can tell in about a second what changed and by how much. Everything else in the line is scaffolding.",
         ],
       },
       {
@@ -132,7 +131,7 @@ Output the classified list first, then the rewritten resume section, then the nu
       {
         heading: "Using the resume bullet prompt when there is no number",
         body: [
-          "Plenty of real work was never measured. The prompt handles those lines with named outcomes instead of figures: the client who renewed, the runbook still in use two years later, the internal tool three other teams picked up. A named specific is weaker than a number and far stronger than an adjective.",
+          "How to write a resume bullet with no numbers comes up because plenty of real work was never measured. The prompt handles those lines with named outcomes instead of figures: the client who renewed, the runbook still in use two years later, the internal tool three other teams picked up. A named specific is weaker than a number and far stronger than an adjective.",
           "Deleting resume lines with no evidence feels like shrinking your case. It generally strengthens it, because most resumes are padded with sentences that restate the job description rather than describe anyone's performance of it, and those are precisely the sentences a screener has trained herself to skip.",
         ],
       },

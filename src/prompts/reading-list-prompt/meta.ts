@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "reading list prompt",
     keywords: [
       "reading list prompt",
-      "clearing a read later backlog",
+      "how to clear a read later backlog",
       "deciding what is worth reading",
       "ai prompt for a reading queue",
-      "reading with a question in mind",
-      "articles you will never read",
+      "how to read with a question in mind",
     ],
     seoTitle: "Reading List Prompt: Keep Only What Answers A Question",
     seoDescription:
@@ -109,7 +108,7 @@ Return: the queue by question with minutes and the look for line, the delete lis
       {
         heading: "A saved article is a question you used to have",
         body: [
-          "Clearing a read later backlog is emotionally harder than clearing an inbox because each item was chosen. Somebody sent you an email, but you saved this, and deleting it unread feels like admitting the version of you who saved it was wrong about something.",
+          "How to clear a read later backlog is emotionally harder than clearing an inbox because each item was chosen. Somebody sent you an email, but you saved this, and deleting it unread feels like admitting the version of you who saved it was wrong about something.",
           "That version was not wrong, they were just answering a different question. Three months ago you wanted to know about incident review because a specific incident had happened. The item is a fossil of a curiosity, and treating it as a fossil rather than as a task makes the delete list easy to approve.",
         ],
       },
@@ -117,7 +116,7 @@ Return: the queue by question with minutes and the look for line, the delete lis
         heading: "Read against a question, not a topic",
         body: [
           "Deciding what is worth reading is impossible in the abstract and straightforward against a question. Interesting is not a property of an article, it is a relationship between an article and something you are trying to work out, and without the second half of that relationship every well written piece qualifies.",
-          "Reading with a question in mind also changes the reading itself. You skip the first four paragraphs without guilt, you notice when the piece never gets to your issue, and you stop at the point where it has answered you rather than at the end. The look for line in the output is what makes that possible, and it is why the prompt refuses to keep any item whose purpose cannot be stated before opening it.",
+          "Learning how to read with a question in mind also changes the reading itself. You skip the first four paragraphs without guilt, you notice when the piece never gets to your issue, and you stop at the point where it has answered you rather than at the end. The look for line in the output is what makes that possible, and it is why the prompt refuses to keep any item whose purpose cannot be stated before opening it.",
         ],
       },
       {

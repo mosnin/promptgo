@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "character description prompt",
     keywords: [
       "character description prompt",
-      "describing a person through another character's eyes",
+      "how to describe a character through another's eyes",
       "ai prompt for physical description in fiction",
-      "avoiding the mirror scene description",
-      "details that reveal character rather than appearance",
+      "how to avoid the mirror scene cliche",
       "how to describe a character without a list",
     ],
     seoTitle: "Character Description Prompt: Start With The Observer",
@@ -108,7 +107,7 @@ Deliver three things. First, the description as prose at the stated budget, with
         heading: "Nobody sees a stranger neutrally",
         body: [
           "An apprentice sizing up a new foreman does not register his height. She registers whether he looks at people when they speak, because that is the question she came in with. A creditor looking at the same man notices the watch.",
-          "Describing a person through another character's eyes is therefore not a stylistic option laid over a neutral description. It is the only way a description can be true, because the neutral version was never available to anyone in the scene.",
+          "The question of how to describe a character through another's eyes is therefore not a stylistic one laid over a neutral description. It is the only way a description can be true, because the neutral version was never available to anyone in the scene.",
         ],
       },
       {
@@ -151,7 +150,7 @@ Deliver three things. First, the description as prose at the stated budget, with
         heading: "The blind spot section",
         body: [
           "The prompt closes by naming what the observer missed because of what they wanted. This is the part that repays reading twice, since it describes the shape of their attention rather than its contents.",
-          "It is also the practical route to avoiding the mirror scene description, the reflex where a viewpoint character catalogues themselves in a shop window. What a person fails to notice about themselves, and why, does the same job with none of the awkwardness.",
+          "It is also the practical answer to how to avoid the mirror scene cliche, the reflex where a viewpoint character catalogues themselves in a shop window. What a person fails to notice about themselves, and why, does the same job with none of the awkwardness.",
         ],
       },
     ],

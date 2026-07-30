@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "decision log prompt",
     keywords: [
       "decision log prompt",
-      "recording decisions that were already made",
-      "who decided and on what date",
+      "decision log template",
+      "what to include in a decision log",
       "ai prompt for a decision record",
-      "what would make us revisit this",
-      "assumptions behind a decision",
+      "when to revisit a past decision",
     ],
     seoTitle: "Decision Log Prompt: Decider, Date, Assumption, Trigger",
     seoDescription:
@@ -108,14 +107,14 @@ Never invent a decider, a date or an assumption. UNATTRIBUTED is a useful answer
       {
         heading: "A log is neither minutes nor a memo",
         body: [
-          "Recording decisions that were already made sits between two things teams already do. Minutes capture a meeting, including the discussion, and are read by nobody after the following week. A decision memo argues towards a choice and is written before it, so it is a document about uncertainty.",
+          "A decision log template sits between two things teams already do. Minutes capture a meeting, including the discussion, and are read by nobody after the following week. A decision memo argues towards a choice and is written before it, so it is a document about uncertainty.",
           "A log is the thin residue of both. One line per settled question, no argument, no narrative, no attendance list. That thinness is what makes it readable in one sitting a year later, which is the only test that matters.",
         ],
       },
       {
         heading: "A decision with no name attached did not happen",
         body: [
-          "Who decided and on what date is the field that gets hedged, because naming an individual feels like assigning blame in advance. In practice the opposite happens. An unnamed decision belongs to everybody, which means nobody feels able to change it, and it hardens into a constraint that outlives its reasoning.",
+          "What to include in a decision log comes down to the field that gets hedged: the owner and the date. Naming an individual feels like assigning blame in advance. In practice the opposite happens. An unnamed decision belongs to everybody, which means nobody feels able to change it, and it hardens into a constraint that outlives its reasoning.",
           "The prompt refuses to guess. When the raw material genuinely does not say, the entry is marked unattributed and flagged, and the follow up drafts the message that finds out. That message is nearly always answered in a sentence, because somebody does remember.",
         ],
       },
@@ -137,7 +136,7 @@ Never invent a decider, a date or an assumption. UNATTRIBUTED is a useful answer
       {
         heading: "Triggers, not review dates",
         body: [
-          "What would make us revisit this is a better field than when will we review this, and the difference is not pedantry. A review date arrives when everybody is busy and gets moved. A trigger is a condition somebody notices in the course of their ordinary work: a volume threshold, a customer segment appearing, a contract ending, a dependency reaching end of life.",
+          "When to revisit a past decision is a better field than when will we review this, and the difference is not pedantry. A review date arrives when everybody is busy and gets moved. A trigger is a condition somebody notices in the course of their ordinary work: a volume threshold, a customer segment appearing, a contract ending, a dependency reaching end of life.",
           "Good triggers are observable by somebody who has never read the log. If checking whether the trigger has fired requires a meeting, it is not a trigger, and the prompt is instructed to reject date based ones and ask again.",
         ],
       },

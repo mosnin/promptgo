@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "weekly planning prompt",
       "how to plan a week around calendar reality",
       "ai prompt for a weekly review",
-      "planning around meetings you cannot move",
-      "weekly plan that survives contact with monday",
+      "weekly planning template",
       "choosing three outcomes for the week",
     ],
     seoTitle: "Weekly Planning Prompt: Three Outcomes, Real Hours",
@@ -141,7 +140,7 @@ End with one sentence naming the assumption most likely to break.`,
         heading: "Pre-deciding the collapse",
         body: [
           "The collapse plan answers a question people normally answer late and badly: if Monday and Tuesday go, what survives? Settled on Sunday it takes thirty seconds. Settled on Wednesday under mild panic it takes the rest of the week and produces a worse answer.",
-          "A weekly plan that survives contact with monday is not one that assumed a good week. It is one that already knows its own order of preference under loss. The two outcomes you agreed to sacrifice go without renegotiation, and skipping that renegotiation is where the saving actually comes from.",
+          "A weekly planning template that survives contact with monday is not one that assumed a good week. It is one that already knows its own order of preference under loss. The two outcomes you agreed to sacrifice go without renegotiation, and skipping that renegotiation is where the saving actually comes from.",
         ],
       },
       {

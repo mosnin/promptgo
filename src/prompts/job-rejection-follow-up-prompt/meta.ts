@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "job rejection follow up prompt",
     keywords: [
       "job rejection follow up prompt",
-      "replying to a rejection email professionally",
+      "how to reply to a job rejection email",
       "ai prompt for asking for interview feedback",
-      "staying in touch after being turned down",
-      "reading the wording of a rejection letter",
-      "when a rejection is worth answering",
+      "how to stay in touch after a job rejection",
     ],
     seoTitle: "Job Rejection Follow Up Prompt: Reply Or Let It Go",
     seoDescription:
@@ -134,7 +132,7 @@ Finish with one line on whether this door is open, closed, or open for a differe
       {
         heading: "When the job rejection follow up prompt says do not reply",
         body: [
-          "No named sender, no interview, nothing personal in the wording: no reply. This is the most common verdict and the most useful, because replying to a rejection email professionally still means not replying to most of them.",
+          "No named sender, no interview, nothing personal in the wording: no reply. This is the most common verdict and the most useful, because the answer to how to reply to a job rejection email is usually that you do not.",
           "Knowing when a rejection is worth answering is most of the value on offer here, and the honest threshold is higher than instinct suggests: a named human, a real conversation behind it, and something in the wording that only applies to you.",
           "The cost of a pointless reply is small but real. Recruiters remember the candidates who argue, the ones who ask to be reconsidered, and the ones who send three messages to an address that was never monitored. None of those memories help when you apply again in eighteen months.",
         ],
@@ -143,7 +141,7 @@ Finish with one line on whether this door is open, closed, or open for a differe
         heading: "Second chances arrive months later",
         body: [
           "The last part of the message names the kind of role you would want to hear about. Not any suitable opportunity, which is unmemorable, but the specific thing: a second operations role, a team of a certain size, a particular kind of problem.",
-          "Staying in touch after being turned down works when it is concrete and infrequent. One good message now, and one in six months if something genuinely changed, is a real relationship with an internal recruiter. Anything more often reads as pressure, and internal recruiters move companies constantly, which means the relationship outlives the vacancy that started it.",
+          "How to stay in touch after a job rejection comes down to being concrete and infrequent. One good message now, and one in six months if something genuinely changed, is a real relationship with an internal recruiter. Anything more often reads as pressure, and internal recruiters move companies constantly, which means the relationship outlives the vacancy that started it.",
           "The final line of the output is the honest read: door open, door closed, or open for something else. It is quoted from their own message rather than inferred, which makes it much harder to argue with when you would rather believe otherwise.",
         ],
       },

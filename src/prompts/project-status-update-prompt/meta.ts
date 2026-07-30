@@ -18,9 +18,7 @@ const meta: PromptMeta = {
       "project status update prompt",
       "how to write a project status report",
       "ai prompt for a weekly project update",
-      "reporting a slipped milestone honestly",
       "status update that names what is blocked",
-      "avoiding false green in status reporting",
     ],
     seoTitle: "Project Status Update Prompt: Name What Slipped",
     seoDescription:

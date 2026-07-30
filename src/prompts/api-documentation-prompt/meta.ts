@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "api documentation prompt",
     keywords: [
       "api documentation prompt",
-      "documenting a rest endpoint from the handler",
-      "writing error responses in api docs",
-      "generating openapi from existing code",
-      "documenting authentication and rate limits",
-      "api docs that match the actual behaviour",
+      "how to document a rest api endpoint",
+      "how to document api error responses",
+      "how to generate an openapi spec from code",
     ],
     seoTitle: "API Documentation Prompt: Only What the Code Does",
     seoDescription:
@@ -104,17 +102,17 @@ Write nothing aspirational. Do not describe how the endpoint should behave. Do n
 
     sections: [
       {
-        heading: "Documenting a rest endpoint from the handler",
+        heading: "How to document a rest api endpoint from the handler",
         body: [
-          "Documenting a rest endpoint from the handler means the truth is spread across at least three files. The route decorator carries the method and path. The model or serialiser carries types, defaults and nullability. The middleware carries authentication and whatever the framework does to a malformed body before your function is entered.",
+          "Working out how to document a rest api endpoint means accepting that the truth is spread across at least three files. The route decorator carries the method and path. The model or serialiser carries types, defaults and nullability. The middleware carries authentication and whatever the framework does to a malformed body before your function is entered.",
           "Give the prompt all three and the reference is largely correct on the first pass. Give it only the function and you get a signature section that guesses at the request shape, which is why the models field is separate rather than folded into the handler field.",
           "The distinction between required, optional and nullable is where most existing documentation is wrong. A field that may be omitted and a field that may be sent as null are different contracts, and integrators discover the difference by getting a 422 they did not expect.",
         ],
       },
       {
-        heading: "Writing error responses in api docs",
+        heading: "How to document api error responses",
         body: [
-          "Writing error responses in api docs is the section everyone skips and every integrator reads first. Success is easy to infer from an example. Failure is not, and an integration is mostly failure handling.",
+          "Anyone asking how to document api error responses is looking at the section everyone skips and every integrator reads first. Success is easy to infer from an example. Failure is not, and an integration is mostly failure handling.",
           "Section three walks every branch that raises or returns early rather than listing the status codes an API of this kind usually has. That produces a shorter list than a generic template would, and every entry on it is real.",
         ],
         list: [
@@ -134,9 +132,9 @@ Write nothing aspirational. Do not describe how the endpoint should behave. Do n
         ],
       },
       {
-        heading: "Generating openapi from existing code",
+        heading: "How to generate an openapi spec from code",
         body: [
-          "Generating openapi from existing code with a model is worth doing only where a generator cannot already do it. Frameworks that derive a schema from type annotations produce a more accurate document than any prompt will, and it stays accurate as the code changes.",
+          "Asking a model how to generate an openapi spec from code is worth doing only where a generator cannot already do it. Frameworks that derive a schema from type annotations produce a more accurate document than any prompt will, and it stays accurate as the code changes.",
           "What generators do badly is everything that is not a type: which status codes a branch can actually produce, whether a second identical call is safe, what remains written after a mid request failure, and what a field means as opposed to what type it holds. That is the gap this fills, and the sensible workflow is generator first, then this prompt for the semantics the generator cannot see.",
         ],
       },

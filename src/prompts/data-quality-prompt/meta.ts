@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "data quality prompt",
     keywords: [
       "data quality prompt",
-      "profiling a table before fixing it",
-      "null rate by column scorecard",
+      "data profiling checklist",
       "ai prompt for data quality checks",
       "which columns nobody actually queries",
-      "freshness and completeness of a table",
+      "how to check data freshness",
     ],
     seoTitle: "Data Quality Prompt: Score a Table Before Fixing It",
     seoDescription:
@@ -113,7 +112,7 @@ Do not recommend a transformation, a backfill or a validation rule. Do not call 
       {
         heading: "Score the table, do not repair it",
         body: [
-          "Profiling a table before fixing it separates two decisions that get collapsed constantly. The first is factual: this column is 72 percent empty, this key repeats, this date has not advanced since November. The second is a judgement about whether any of that deserves someone's week.",
+          "A data profiling checklist separates two decisions that get collapsed constantly. The first is factual: this column is 72 percent empty, this key repeats, this date has not advanced since November. The second is a judgement about whether any of that deserves someone's week.",
           "Collapsing them means the second decision gets made implicitly by whoever wrote the report, usually in favour of whatever was easiest to describe. Keeping them apart puts a ranked register in front of the person who owns the consequences, and quite often the answer is that nothing needs doing.",
         ],
       },
@@ -125,9 +124,9 @@ Do not recommend a transformation, a backfill or a validation rule. Do not call 
         ],
       },
       {
-        heading: "Freshness and completeness of a table are different failures",
+        heading: "How to check data freshness and completeness separately",
         body: [
-          "The freshness and completeness of a table describe separate problems with separate owners. A table that is fully populated and three days stale is a scheduling failure. A table that loaded on time with a third of its rows missing is a source failure. Both present to an analyst as numbers that look wrong.",
+          "How to check data freshness and how to check completeness are separate problems with separate owners. A table that is fully populated and three days stale is a scheduling failure. A table that loaded on time with a third of its rows missing is a source failure. Both present to an analyst as numbers that look wrong.",
           "Freshness also has a nastier property: it degrades silently. A load job that stops running leaves yesterday's data in place, and every query keeps returning results. Nothing errors. The only symptom is a maximum date that stopped moving, which is why the scorecard treats a stalled date column as a defect in its own right rather than as background.",
         ],
       },

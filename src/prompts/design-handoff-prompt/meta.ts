@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "design handoff prompt",
       "what to include in a handoff spec",
       "edge cases for long text and empty data",
-      "responsive behaviour between breakpoints",
+      "how to spec responsive behaviour between breakpoints",
       "open questions for engineers",
-      "specifying states rather than screens",
+      "design handoff checklist",
     ],
     seoTitle: "Design Handoff Prompt: Specify Behaviour, Not Pixels",
     seoDescription:
@@ -108,7 +108,7 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
         heading: "A file is a photograph of one moment",
         body: [
           "Design files show chosen moments. Three frames, tidy content, everything loaded. The component that gets built has to hold ten states, and the seven that were never drawn get decided by whoever is implementing it at the time, usually correctly and always invisibly.",
-          "Specifying states rather than screens moves those decisions back into the open. It is also the fastest way to find out how much of a component was never designed at all, because the list has slots and the empty ones are obvious the moment they are written down.",
+          "A design handoff checklist built from states rather than screens moves those decisions back into the open. It is also the fastest way to find out how much of a component was never designed at all, because the list has slots and the empty ones are obvious the moment they are written down.",
         ],
       },
       {
@@ -129,7 +129,7 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
       {
         heading: "The widths between the breakpoints",
         body: [
-          "Responsive behaviour between breakpoints is where most handovers are thinnest. A file contains a mobile frame and a desktop frame, and the interesting question is what the component does at the eleven hundred pixels nobody drew.",
+          "How to spec responsive behaviour between breakpoints is where most handovers are thinnest. A file contains a mobile frame and a desktop frame, and the interesting question is what the component does at the eleven hundred pixels nobody drew.",
           "Asking for the width at which each element reflows produces a specification an engineer can implement without guessing, and it surfaces the decision that always gets made silently: whether something is hidden or rearranged. Hiding content at narrow widths is a real choice with a real cost, and it should be a sentence in a document rather than a media query written on a Thursday afternoon.",
         ],
       },

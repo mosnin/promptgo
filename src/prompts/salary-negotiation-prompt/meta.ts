@@ -19,8 +19,8 @@ const meta: PromptMeta = {
       "how to negotiate a job offer",
       "ai prompt for preparing a salary conversation",
       "what to say when asked your salary expectations",
-      "building an evidence file before an offer call",
-      "deciding your walk away point on an offer",
+      "how to prepare for a salary negotiation call",
+      "how to decide your walk away number",
     ],
     seoTitle: "Salary Negotiation Prompt: Three Numbers, One Source",
     seoDescription:
@@ -117,14 +117,14 @@ Never advise me to imply a competing offer I do not have. Never tell me I deserv
         heading: "Three numbers, each with a basis",
         body: [
           "The salary negotiation prompt requires target, acceptable and decline, and will not record any of them without a stated basis. A target with no basis is a wish, and it comes apart the moment a recruiter asks how you arrived at it.",
-          "Deciding your walk away point on an offer is the only piece of this you must finish before the phone rings. It is also the piece people skip, because naming the figure at which you would say no means looking honestly at your savings, your notice period and whether anything else is genuinely in play.",
+          "How to decide your walk away number is the only piece of this you must finish before the phone rings. It is also the piece people skip, because naming the figure at which you would say no means looking honestly at your savings, your notice period and whether anything else is genuinely in play.",
           "Once it exists the conversation gets easier rather than harder. You stop trying to win and start checking whether this offer clears a line you drew calmly, at a desk, without anybody waiting for you to speak.",
         ],
       },
       {
         heading: "Building the evidence file",
         body: [
-          "Building an evidence file before an offer call takes about an hour and changes the register of the whole conversation. It is not a list of accomplishments. It is a short set of items connecting what you have done to what it is worth to this employer in this specific role.",
+          "How to prepare for a salary negotiation call is an hour of work that changes the register of the whole conversation. It is not a list of accomplishments. It is a short set of items connecting what you have done to what it is worth to this employer in this specific role.",
           "Two independent sources beat one, and a figure they could look up beats one they cannot. Where you have nothing the prompt marks the gap instead of filling it, because a range you cannot defend is worse than saying you are still gathering data.",
           "The strongest lever is usually internal comparison, and candidates hold it more often than they realise. If the advertisement carried a band, the band is data. If somebody doing the job told you their number, that is data too, and it is the kind that does not get argued with.",
         ],

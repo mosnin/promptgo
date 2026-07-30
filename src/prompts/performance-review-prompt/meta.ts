@@ -18,8 +18,6 @@ const meta: PromptMeta = {
       "performance review prompt",
       "how to write specific feedback with examples",
       "ai prompt for a manager writing reviews",
-      "avoiding vague praise in a performance review",
-      "review feedback tied to dated evidence",
       "writing a review for someone underperforming",
     ],
     seoTitle: "Performance Review Prompt: Evidence, Not Adjectives",

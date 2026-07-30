@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "business case prompt",
       "how to build a business case for a budget request",
-      "quantifying the cost of doing nothing",
+      "how to show the cost of doing nothing",
       "naming a budget owner for a proposal",
-      "benefit realisation after approval",
-      "sensitivity check on business case assumptions",
     ],
     seoTitle: "Business Case Prompt: Cost, Owner And Kill Criteria",
     seoDescription:
@@ -121,7 +119,7 @@ Use no figure I did not give you. Write [FIGURE NEEDED] instead, and never annua
       {
         heading: "Price the current situation before you mention the proposal",
         body: [
-          "Nobody is currently spending nothing. They are spending three finance days a month, two reprocessed invoices a quarter and, in the example above, most of one analyst's willingness to stay. Quantifying the cost of doing nothing turns an unfamiliar request into a comparison between two costs, which is a question a committee knows how to answer.",
+          "Nobody is currently spending nothing. They are spending three finance days a month, two reprocessed invoices a quarter and, in the example above, most of one analyst's willingness to stay. Knowing how to show the cost of doing nothing turns an unfamiliar request into a comparison between two costs, which is a question a committee knows how to answer.",
           "The business case prompt restricts itself to figures you supplied, and lists everything else as an unpriced consequence with the unit that would measure it. That list is often more persuasive than the priced part, because it is visibly incomplete rather than conveniently rounded.",
         ],
       },

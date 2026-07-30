@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "interview answer prompt",
       "how to prepare for a behavioural interview",
       "ai prompt for mock interview practice",
-      "answering the follow up question a hiring manager asks",
-      "star method answers with real evidence",
+      "how to answer follow up interview questions",
+      "star method interview answer examples",
       "rehearsing interview answers instead of memorising them",
     ],
     seoTitle: "Interview Answer Prompt: Rehearse Against A Sceptic",
@@ -107,7 +107,7 @@ After three questions, stop the roleplay and give me three lists: claims I suppo
       {
         heading: "The follow up is where it is decided",
         body: [
-          "Answering the follow up question a hiring manager asks is the part that determines the outcome. Your first answer establishes a claim. The second question tests whether that claim came from experience or from preparation, and those two are indistinguishable until somebody probes.",
+          "Learning how to answer follow up interview questions is the part that determines the outcome. Your first answer establishes a claim. The second question tests whether that claim came from experience or from preparation, and those two are indistinguishable until somebody probes.",
           "The probes themselves are boring and effective. What would you do differently. Who disagreed. What did it cost. How did you know it worked. None of them is clever, and each one separates a story built from memory from one assembled out of a job description.",
           "The interview answer prompt asks one at a time and aims each one at the least supported thing you just said, which is rarely the part you were proudest of.",
         ],
@@ -129,7 +129,7 @@ After three questions, stop the roleplay and give me three lists: claims I suppo
         heading: "Using the interview answer prompt on the story you keep telling wrong",
         body: [
           "Everybody has one. It lands well socially, gets deployed for three different questions, and has never survived a real probe because it has never met one. Run that story first and expect it to go badly.",
-          "Star method answers with real evidence get through the second question, and the rest collapse at the Result. Situation and Task are scene setting, Action is where an interviewer listens hardest, and Result is where an unmeasured story runs out of material. If you cannot say what changed and how you know, what you have is a Task with an ending attached to it.",
+          "Star method interview answer examples that carry real evidence get through the second question, and the rest collapse at the Result. Situation and Task are scene setting, Action is where an interviewer listens hardest, and Result is where an unmeasured story runs out of material. If you cannot say what changed and how you know, what you have is a Task with an ending attached to it.",
         ],
       },
       {

@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "cutting word count prompt",
     keywords: [
       "cutting word count prompt",
-      "cutting an article to a hard word limit",
+      "how to cut an article to a word limit",
       "ai prompt for trimming copy to length",
       "deciding which paragraph to remove entirely",
-      "what a reader loses when a piece is shortened",
       "how to cut a draft by thirty percent",
     ],
     seoTitle: "Cutting Word Count Prompt: Hit The Target, Log The Loss",
@@ -104,7 +103,7 @@ If the target cannot be reached without cutting protected material or a load bea
         heading: "A number is a different instruction from be concise",
         body: [
           "Concise has no stopping condition, so a model applies a general tightening pressure and reports success at whatever length it happens to reach. A target is checkable, and the checking is what changes the behaviour. Either the count is under 950 or it is not.",
-          "Cutting an article to a hard word limit also forces a ranking that vague instructions never produce. When the constraint is real, the question stops being which sentences could be better and becomes which content the piece can survive without, which is a question about the piece rather than about the prose.",
+          "Knowing how to cut an article to a word limit also forces a ranking that vague instructions never produce. When the constraint is real, the question stops being which sentences could be better and becomes which content the piece can survive without, which is a question about the piece rather than about the prose.",
         ],
       },
       {

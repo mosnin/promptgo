@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "proofreading prompt",
       "how to proofread a document with ai",
-      "catching typos a spell checker misses",
-      "proofreading without changing the wording",
+      "how to catch typos spell check misses",
       "checklist for a final proofread",
-      "finding inconsistent spelling and hyphenation",
     ],
     seoTitle: "Proofreading Prompt: Find Errors, Change No Wording",
     seoDescription:
@@ -102,7 +100,7 @@ STEP THREE. List what you could not check: claims of fact, the spelling of real 
         heading: "The errors a spell checker cannot see",
         body: [
           "Spell checkers work on words in isolation, so they miss everything that is spelled correctly and wrong anyway. Form for from, manger for manager, public missing a letter, the duplicated the at a line break, a heading that says 2025 in a 2026 report. Every one of these passes a dictionary check because every one is a real word.",
-          "Catching typos a spell checker misses needs a reader that holds context, which is what a language model does well. It also needs a reader that will not get bored on page nine, which is what a human does badly. The two failure modes are complementary, and that is the honest case for automating this stage.",
+          "Knowing how to catch typos spell check misses needs a reader that holds context, which is what a language model does well. It also needs a reader that will not get bored on page nine, which is what a human does badly. The two failure modes are complementary, and that is the honest case for automating this stage.",
           "The trade is that a model will also confidently report errors that are not there. The confidence field exists for this reason, and so does the rule against suggesting better words: a system that can only report violations of a named class has fewer places to be creative than one asked to review the writing.",
         ],
       },

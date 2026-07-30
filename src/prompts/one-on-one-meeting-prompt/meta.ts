@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "one on one meeting prompt",
       "how to run a better one to one",
       "ai prompt for a manager one to one agenda",
-      "questions that get past fine",
-      "carrying unresolved items between one to ones",
+      "best one to one questions for managers",
       "one to one agenda for a direct report",
     ],
     seoTitle: "One On One Meeting Prompt: Get Past The Word Fine",
@@ -133,7 +132,7 @@ Do not produce coaching platitudes, do not suggest icebreakers, and do not write
         ],
       },
       {
-        heading: "Questions that get past fine",
+        heading: "The best one to one questions for managers are anchored",
         body: [
           "How are things is not a question. It is a greeting with a question mark, and the socially correct answer is fine, which is why it is the answer it receives. The prompt bans the phrasing and requires every question to attach to a specific event, decision or person you named in the context.",
           "Anchored questions are harder to deflect because deflecting them requires an actual statement. Asking what changed about your week when your teammate resigned is a different act from asking how you are doing, and it signals that you noticed rather than that you remembered to check in.",

@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "wireframe planning prompt",
     keywords: [
       "wireframe planning prompt",
-      "low fidelity layout plan",
-      "content priority above the fold",
+      "how to make a low fidelity wireframe",
+      "what to put above the fold",
       "how to plan a page before designing it",
-      "block level layout spec",
       "wireframe structure for a signup page",
     ],
     seoTitle: "Wireframe Planning Prompt: Order Before Pixels",
@@ -115,7 +114,7 @@ Finish with one alternative ordering that would be correct if the reader arrived
       {
         heading: "The cut line is where the argument gets honest",
         body: [
-          "Content priority above the fold is one of the oldest disputes in the field and most of the heat comes from the word fold. The useful version is narrower: given rough heights for each content type, which regions fit in the first screen, and is the reader's question at that boundary answered by whatever comes next?",
+          "What to put above the fold is one of the oldest disputes in the field and most of the heat comes from the word fold. The useful version is narrower: given rough heights for each content type, which regions fit in the first screen, and is the reader's question at that boundary answered by whatever comes next?",
           "That third question does most of the work. A reader scrolls when they have a reason to believe the answer is below, so the boundary region is not a waste of space, it is the promise. When the region under the cut line does not follow from the one above it, the scroll rate is the symptom and the ordering is the cause.",
         ],
         subsections: [
@@ -135,7 +134,7 @@ Finish with one alternative ordering that would be correct if the reader arrived
         ],
       },
       {
-        heading: "Turning the region list into a low fidelity layout plan",
+        heading: "How to make a low fidelity wireframe from the region list",
         body: [
           "Once the order survives challenge, the drawing part goes quickly. Each region becomes a block, the content type dictates roughly what shape it takes, and the displacement costs tell you which adjacencies matter enough to protect when the layout meets a real breakpoint. A low fidelity layout plan built this way tends to survive contact with real content, because it was never sized around placeholder text.",
           "A wireframe structure for a signup page is the clearest demonstration. Run with a reader who has been burned by a bad migration, the form drops below the evidence that their data survives, and no amount of tightening a hero would have found that. Run with a reader who arrived already convinced, the alternative ordering puts the form first and everything else becomes reassurance placed after the commitment.",

@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "line edit prompt",
     keywords: [
       "line edit prompt",
-      "difference between line editing and copy editing",
+      "line editing vs copy editing",
       "ai prompt for editing at sentence level",
       "how to line edit your own writing",
-      "cutting words without flattening the prose",
-      "line by line feedback on a manuscript",
+      "how to tighten prose without losing voice",
     ],
     seoTitle: "Line Edit Prompt: A Change Log With Reason Codes",
     seoDescription:
@@ -103,7 +102,7 @@ Do not touch the protected sentences, the moves listed as wanted, dialogue, or q
       {
         heading: "Line editing is not copy editing",
         body: [
-          "The difference between line editing and copy editing is a difference of object, not of seniority. A copy editor is answerable to a style guide and to correctness: hyphenation, agreement, house capitalisation, the serial comma. A line editor is answerable to the sentence as an instrument, and the questions are whether it lands, whether it repeats what the last one said, and whether it sounds like the same person who wrote the paragraph before.",
+          "Line editing vs copy editing is a difference of object, not of seniority. A copy editor is answerable to a style guide and to correctness: hyphenation, agreement, house capitalisation, the serial comma. A line editor is answerable to the sentence as an instrument, and the questions are whether it lands, whether it repeats what the last one said, and whether it sounds like the same person who wrote the paragraph before.",
           "Conflating them produces the standard disappointment with automated editing. You ask for a line edit and receive punctuation corrections, because correctness is unambiguous and craft is not. Naming the six codes is what keeps the model on the craft side, since none of the six describe an error a style guide could adjudicate.",
         ],
       },
@@ -111,7 +110,7 @@ Do not touch the protected sentences, the moves listed as wanted, dialogue, or q
         heading: "The line edit prompt spends a fixed budget",
         body: [
           "Two limits run at once. The change cap governs how many entries the log may contain, and the deletion budget governs how much shorter the passage is allowed to get. They pull in different directions on purpose, since a model can satisfy a word reduction target by deleting the subordinate clause that carried the qualification.",
-          "Cutting words without flattening the prose depends almost entirely on which words go. Adverbs propping up weak verbs, restatements of the previous sentence and stage directions the reader can infer are all free removals. The seventh adjective in a description might be doing something the first six are not. A budget of five to eight percent tends to catch the first category and leave the second alone.",
+          "Knowing how to tighten prose without losing voice depends almost entirely on which words go. Adverbs propping up weak verbs, restatements of the previous sentence and stage directions the reader can infer are all free removals. The seventh adjective in a description might be doing something the first six are not. A budget of five to eight percent tends to catch the first category and leave the second alone.",
         ],
       },
       {

@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "demand forecasting prompt",
       "forecast range instead of a single number",
-      "how much history before forecasting seasonality",
+      "how to forecast seasonal demand",
       "ai prompt for sales forecasting",
-      "what would invalidate a forecast",
-      "naive baseline to beat before modelling",
+      "what is a naive forecast baseline",
     ],
     seoTitle: "Demand Forecasting Prompt: Ranges, Not a Single Number",
     seoDescription:
@@ -117,9 +116,9 @@ Never quote an accuracy percentage, a MAPE or an interval width derived from a b
         ],
       },
       {
-        heading: "How much history before forecasting seasonality",
+        heading: "How to forecast seasonal demand with enough history",
         body: [
-          "How much history before forecasting seasonality has a boring answer: at least two complete cycles, and preferably three, before anyone claims a repeating annual shape. One cycle is an anecdote. Two lets you see whether the shape recurs. Three lets you see whether the shape is drifting.",
+          "How to forecast seasonal demand has a boring answer: use at least two complete cycles, and preferably three, before anyone claims a repeating annual shape. One cycle is an anecdote. Two lets you see whether the shape recurs. Three lets you see whether the shape is drifting.",
           "The audit section counts the periods and states the verdict before any modelling language appears, which stops the rest of the answer being written as though a season had been established. When it declares seasonality unestimable, the correct response is usually to forecast the level and the direction only, and to say openly that the seasonal shape is being carried over from an assumption rather than measured.",
         ],
       },
@@ -133,7 +132,7 @@ Never quote an accuracy percentage, a MAPE or an interval width derived from a b
       {
         heading: "The demand forecasting prompt starts from a baseline it must beat",
         body: [
-          "Establishing a naive baseline to beat before modelling is the discipline forecasting competitions taught the field and business planning mostly ignored. The seasonal naive method predicts this July from last July, costs nothing, and is embarrassingly hard to improve on for stable products.",
+          "What is a naive forecast baseline is the question forecasting competitions taught the field to ask and business planning mostly ignored. The seasonal naive method predicts this July from last July, costs nothing, and is embarrassingly hard to improve on for stable products.",
           "Printing that baseline next to the outlook makes the value of the extra work visible. Sometimes the demand forecasting prompt produces a central figure meaningfully different from last year and explains why. Sometimes it lands within a couple of percent, which is a real result and worth saying out loud rather than hiding behind a more elaborate description of the same number.",
         ],
       },

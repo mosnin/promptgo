@@ -16,10 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "promotion case prompt",
     keywords: [
       "promotion case prompt",
-      "evidence you are already doing the next level job",
+      "how to show you are already doing the next level job",
       "ai prompt for making a case for promotion",
       "asking for a promotion with dated examples",
-      "what a promotion committee actually reads",
+      "what to include in a promotion packet",
       "how to know if you are ready for the next level",
     ],
     seoTitle: "Promotion Case Prompt: Evidence, Not Potential",
@@ -112,7 +112,7 @@ Then give me three things. A case of 400 words or fewer, written the way my mana
         heading: "Potential is not evidence",
         body: [
           "The most common structure in a weak case is the sentence about capability. She would be excellent at setting direction across teams. Committees read that as an admission that she has not, and it damages the case rather than supporting it.",
-          "Evidence you are already doing the next level job is the only thing the format accepts. Not that you could, not that you are ready, but that on these dates, in front of these people, you did. Promotions in most organisations recognise a change that already happened rather than authorising one that has not.",
+          "How to show you are already doing the next level job is the only question the format accepts. Not that you could, not that you are ready, but that on these dates, in front of these people, you did. Promotions in most organisations recognise a change that already happened rather than authorising one that has not.",
           "The prompt is explicitly forbidden from making the readiness argument. When it has nothing else it says the expectation is absent, which is more useful than a well constructed paragraph that a committee will discount in five seconds.",
         ],
       },
@@ -135,7 +135,7 @@ Then give me three things. A case of 400 words or fewer, written the way my mana
         heading: "The promotion case prompt writes for your manager's advocate",
         body: [
           "The case comes back as four hundred words written the way your manager would have to say it out loud, because that is the actual mechanism. In most companies you do not speak. A person who has thirty other things to do argues on your behalf against limited time and other candidates.",
-          "That shapes the writing. Short, specific, dates, names, no adjectives, nothing that invites a follow up question your manager cannot answer. What a promotion committee actually reads is a two page packet under time pressure, so the case has to survive being skimmed by someone who has never met you.",
+          "That shapes the writing. Short, specific, dates, names, no adjectives, nothing that invites a follow up question your manager cannot answer. What to include in a promotion packet is decided by the two pages a committee skims under time pressure, so the case has to survive being skimmed by someone who has never met you.",
           "It also explains the process field. Five strangers reading a document need different material from one director who has watched you work, and an ai prompt for making a case for promotion that ignores who decides will optimise for the wrong reader.",
         ],
       },

@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "story structure prompt",
       "how to structure a short story",
       "ai prompt for plotting a narrative",
-      "finding the scene where the story actually starts",
-      "structure that follows character decisions",
-      "fixing a saggy middle in a draft",
+      "how to find where a story should start",
+      "how to fix a saggy middle",
     ],
     seoTitle: "Story Structure Prompt: Decisions, Not Events",
     seoDescription:
@@ -125,7 +124,7 @@ STEP FIVE. Mark any structural slot that is empty as EMPTY SLOT, describe the pr
       {
         heading: "Where the story actually starts",
         body: [
-          "Finding the scene where the story actually starts is the most common structural repair in short fiction and the hardest to see from inside a draft. Writers need the early material in order to write the rest, so it stays, and by the third revision it has acquired sentences worth keeping.",
+          "Working out how to find where a story should start is the most common structural repair in short fiction and the hardest to see from inside a draft. Writers need the early material in order to write the rest, so it stays, and by the third revision it has acquired sentences worth keeping.",
           "Locating the first irreversible decision and reporting how many words precede it turns that into a number. Two thousand words before the protagonist can no longer go back is a diagnosis, and it is a different diagnosis from a slow opening. The question then becomes what those two thousand words establish and whether it can arrive later, which it usually can.",
         ],
       },
@@ -139,7 +138,7 @@ STEP FIVE. Mark any structural slot that is empty as EMPTY SLOT, describe the pr
       {
         heading: "The middle, where drafts go slack",
         body: [
-          "Fixing a saggy middle in a draft is almost always addressed by adding, and adding is almost always wrong. The middle sags when consecutive scenes leave the protagonist with the same options they started with, so more incident produces more of the same feeling at greater length.",
+          "How to fix a saggy middle is almost always answered by adding, and adding is almost always wrong. The middle sags when consecutive scenes leave the protagonist with the same options they started with, so more incident produces more of the same feeling at greater length.",
           "The what changes question in step four is aimed directly at this. Run it across the middle third and the pattern shows up as a run of scenes whose answers are all variations on she becomes more worried. Anyone working out how to structure a short story will find that this run, rather than the ending, is where the piece was lost.",
         ],
       },

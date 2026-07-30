@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "ai prompt for facebook ad variations",
       "how to write ad copy that converts",
       "google ads headline generator prompt",
-      "testing ad angles not just wording",
+      "how to test ad copy angles",
       "ad copy prompt for small business",
     ],
     seoTitle: "Ad Copy Prompt: Write Variants Worth Testing",
@@ -113,7 +113,7 @@ Then output a test plan: which single variant to run against which, what result 
         heading: "Wording tests plateau, angle tests compound",
         body: [
           "A wording test has a low ceiling. There is a real difference between a clumsy sentence and a clean one, but once the copy is competent, further rewording produces differences too small to detect at most budgets. Teams keep running these tests because they are easy to generate, then conclude that creative testing does not work.",
-          "An angle test asks a different question: which argument does this audience find most compelling. That answer transfers. Testing ad angles not just wording means a result from a small paid budget can redirect an entire quarter of messaging.",
+          "An angle test asks a different question: which argument does this audience find most compelling. That answer transfers. Knowing how to test ad copy angles means a result from a small paid budget can redirect an entire quarter of messaging.",
         ],
       },
       {

@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "reference request prompt",
       "how to ask someone to be a reference",
       "ai prompt for a reference request email",
-      "briefing a reference before the call",
+      "how to prepare someone to be your reference",
       "asking a former manager for a reference",
       "what to send a reference so they can help",
     ],
@@ -121,7 +121,7 @@ Finally, if my description of the ending suggests they might say something an em
       {
         heading: "Briefing without scripting",
         body: [
-          "Briefing a reference before the call is the step most candidates skip, and it decides whether the reference helps or merely fails to hurt. Your referee is being asked about work from two years ago by somebody who wants specifics, and with no brief they will speak in generalities, because generalities are what memory reliably supplies.",
+          "How to prepare someone to be your reference is the step most candidates skip, and it decides whether the reference helps or merely fails to hurt. Your referee is being asked about work from two years ago by somebody who wants specifics, and with no brief they will speak in generalities, because generalities are what memory reliably supplies.",
           "Working out what to send a reference so they can help takes about ten minutes, and it is not your resume. It is the role, the two or three things the employer will probe, and the dated facts of what you did on the projects you shared, so their recollection has something solid to attach itself to.",
           "The line the prompt holds is between reminding and scripting. Here are the figures from the migration is a reminder. Please mention that I showed exceptional leadership is a script, and anybody who takes references for a living hears the difference within a sentence.",
         ],

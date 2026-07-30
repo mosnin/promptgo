@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "security review prompt",
     keywords: [
       "security review prompt",
-      "threat modelling a pull request",
-      "tracing untrusted input to a sink",
+      "secure code review checklist",
       "how to find authorisation bugs in code",
       "ai prompt for a secure code review",
-      "spotting an ssrf in application code",
+      "how to find ssrf in code",
     ],
     seoTitle: "Security Review Prompt: Trace What the Attacker Controls",
     seoDescription:
@@ -112,11 +111,11 @@ Do not assign a severity score without an exploit path you can narrate end to en
         ],
       },
       {
-        heading: "Tracing untrusted input to a sink",
+        heading: "A secure code review checklist built on sources and sinks",
         body: [
-          "Tracing untrusted input to a sink is the core of the technique, and the pair line is the output that matters. Source, sink, the path, and the verdict on whatever sits between them. Three verdicts are allowed and the middle one does the real work.",
+          "A secure code review checklist starts by tracing every source to its sink, and the pair line is the output that matters. Source, sink, the path, and the verdict on whatever sits between them. Three verdicts are allowed and the middle one does the real work.",
           "Present means the control is visible in what you supplied. Absent means nothing stands in the way. Claimed but not visible means somebody told the model a validator exists upstream, which is not evidence, and the pair stays open as a question rather than being quietly resolved in either direction.",
-          "Spotting an ssrf in application code is the clearest illustration. The source is a URL field that looks like configuration, the sink is an outbound HTTP call, and the control is either an allowlist or nothing. Pattern matching for dangerous functions never finds it, because the function involved is the ordinary HTTP client every service uses.",
+          "How to find ssrf in code is the clearest illustration. The source is a URL field that looks like configuration, the sink is an outbound HTTP call, and the control is either an allowlist or nothing. Pattern matching for dangerous functions never finds it, because the function involved is the ordinary HTTP client every service uses.",
         ],
       },
       {

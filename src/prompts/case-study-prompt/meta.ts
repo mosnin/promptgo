@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "case study prompt",
     keywords: [
       "case study prompt",
-      "customer case study with approved metrics",
+      "how to get case study metrics approved",
       "how to write a case study from an interview",
-      "getting quotes approved by a customer",
-      "anonymous case study without naming the client",
-      "b2b case study structure that converts",
+      "how to ask a customer to approve a quote",
+      "how to write a case study without naming the client",
+      "b2b case study examples",
     ],
     seoTitle: "Case Study Prompt: Numbers the Customer Will Approve",
     seoDescription:
@@ -108,7 +108,7 @@ STAGE E. If naming is restricted, also produce an unnamed version describing the
         heading: "The number is the case study",
         body: [
           "Strip out the quantified result and what remains is a testimonial with better formatting. A reader in the middle of an evaluation is scanning for one thing, which is evidence that somebody comparable got a specific outcome, and everything else on the page is context around that.",
-          "This is why a b2b case study structure that converts puts the number early and attributes it explicitly. An unattributed figure reads as marketing arithmetic. The same figure with a named person and a system behind it is checkable, which is a different category of claim.",
+          "This is why the b2b case study examples that convert put the number early and attribute it explicitly. An unattributed figure reads as marketing arithmetic. The same figure with a named person and a system behind it is checkable, which is a different category of claim.",
         ],
       },
       {
@@ -127,14 +127,14 @@ STAGE E. If naming is restricted, also produce an unnamed version describing the
       {
         heading: "Writing every metric twice",
         body: [
-          "A customer case study with approved metrics usually arrives at approval with one figure that will not survive. Sometimes it is genuinely commercially sensitive, sometimes a finance team simply will not certify a number they did not calculate, and the reason rarely matters because the answer is the same.",
+          "Anyone working out how to get case study metrics approved runs into one figure that will not survive. Sometimes it is genuinely commercially sensitive, sometimes a finance team simply will not certify a number they did not calculate, and the reason rarely matters because the answer is the same.",
           "Having a fallback ready converts that from a crisis into a choice. Ninety percent fewer escalations becomes a substantial majority of escalations removed, or a floor of at least two thirds. Weaker, still publishable, and available the same day rather than after another interview.",
         ],
       },
       {
         heading: "The approval pack is part of the deliverable",
         body: [
-          "Getting quotes approved by a customer fails most often because of how the request is shaped. Sending a full draft and asking for thoughts invites line editing from three people who were not in the interview, and what comes back is the same story with all the specificity sanded off.",
+          "How to ask a customer to approve a quote is mostly a question of how the request is shaped. Sending a full draft and asking for thoughts invites line editing from three people who were not in the interview, and what comes back is the same story with all the specificity sanded off.",
           "A numbered list of yes or no questions, each with a fallback underneath, is answerable in fifteen minutes by one person. It also makes the scope of the request obvious, which is what stops a comms team treating your draft as an open document.",
         ],
         subsections: [
@@ -149,7 +149,7 @@ STAGE E. If naming is restricted, also produce an unnamed version describing the
       {
         heading: "When the customer cannot be named",
         body: [
-          "An anonymous case study without naming the client is worth far more than most marketers assume, provided the attributes are specific. A two hundred person logistics operator running its own warehouse management system tells a reader almost as much as a company name, as long as the operational detail stays intact.",
+          "Knowing how to write a case study without naming the client is worth far more than most marketers assume, provided the attributes are specific. A two hundred person logistics operator running its own warehouse management system tells a reader almost as much as a company name, as long as the operational detail stays intact.",
           "The genuine risk is accidental identification. A named integration, a distinctive market position and a location together identify a company as reliably as a logo does, and the customer who agreed to anonymity did not agree to that. The flagging step exists to catch the combination rather than the individual details.",
         ],
       },

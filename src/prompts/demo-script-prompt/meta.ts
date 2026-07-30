@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "demo script prompt",
     keywords: [
       "demo script prompt",
-      "demo agenda built from discovery notes",
-      "features to cut from a sales demo",
+      "sales demo agenda template",
+      "what to cut from a sales demo",
       "how to run a demo that is not a product tour",
       "ai prompt for a software demo walkthrough",
-      "sequencing a demo around buyer priorities",
+      "how to structure a software demo",
     ],
     seoTitle: "Demo Script Prompt: Show Only What They Asked About",
     seoDescription:
@@ -113,7 +113,7 @@ SECTION 5, THE CUT LINE. If the running order exceeds the minutes available, sta
       {
         heading: "Every screen needs a quote behind it",
         body: [
-          "A demo agenda built from discovery notes looks nothing like the one your product marketing team ships. It is shorter, the order is strange, and roughly a third of your product does not appear at all. That is the shape of a demo aimed at one buyer rather than at a market.",
+          "A sales demo agenda template built from discovery notes looks nothing like the one your product marketing team ships. It is shorter, the order is strange, and roughly a third of your product does not appear at all. That is the shape of a demo aimed at one buyer rather than at a market.",
           "The quote requirement is deliberately strict about wording. Paraphrases are where the drift happens, because a paraphrase written by the person who wants to show a feature has a way of sounding like a request for that feature. Word for word, with the speaker attached, keeps the mapping honest.",
         ],
         list: [
@@ -126,14 +126,14 @@ SECTION 5, THE CUT LINE. If the running order exceeds the minutes available, sta
       {
         heading: "The do not show list is the harder output",
         body: [
-          "Deciding which features to cut from a sales demo is more difficult than deciding what to include, because the cuts are usually the parts your team is proudest of. The newest capability, the one engineering just shipped, the thing that beats a competitor nobody has mentioned.",
+          "Deciding what to cut from a sales demo is more difficult than deciding what to include, because the cuts are usually the parts your team is proudest of. The newest capability, the one engineering just shipped, the thing that beats a competitor nobody has mentioned.",
           "Writing them down with a reason does two useful things. It makes the omission a decision rather than an oversight, so you can defend it in the debrief. And it gives you a ready answer if the buyer asks what else there is, which is a much better moment to mention something than minute nine of your own agenda.",
         ],
       },
       {
         heading: "Your architecture is the wrong running order",
         body: [
-          "Products are built in layers and demoed in the same layers: set up, then configuration, then the thing that actually saves someone three days a month. Buyers do not experience your product in build order, and sequencing a demo around buyer priorities means the payoff screen frequently comes first, with the plumbing behind it only if there is time.",
+          "Products are built in layers and demoed in the same layers: set up, then configuration, then the thing that actually saves someone three days a month. Buyers do not experience your product in build order, so how to structure a software demo around their priorities usually puts the payoff screen first, with the plumbing behind it only if there is time.",
           "The prompt ranks by how much a priority appeared to matter, which is a judgement call it makes from your quotes and which you should overrule freely. What matters is that a ranking exists on paper before you open the laptop.",
         ],
       },

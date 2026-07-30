@@ -17,9 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "saying no prompt",
       "how to decline a request at work",
-      "saying no without damaging the relationship",
+      "how to say no without damaging the relationship",
       "ai prompt for turning down work",
-      "naming what would slip if you said yes",
+      "what to say when you cannot take on more work",
       "offering one alternative instead of three",
     ],
     seoTitle: "Saying No Prompt: Price The Yes, Then Decline In Two Lines",
@@ -120,7 +120,7 @@ Finish with: the sentence in your own draft most likely to be read as negotiable
       {
         heading: "Price the yes before you answer it",
         body: [
-          "Naming what would slip if you said yes converts an argument about willingness into an arithmetic problem, and arithmetic is much harder to push back on. I do not have time is a claim about you. Taking this pushes the board pack to the 12th, which means finance reviews it after the deadline, is a claim about a consequence somebody else also cares about.",
+          "What to say when you cannot take on more work is the thing that would slip, which converts an argument about willingness into an arithmetic problem, and arithmetic is much harder to push back on. I do not have time is a claim about you. Taking this pushes the board pack to the 12th, which means finance reviews it after the deadline, is a claim about a consequence somebody else also cares about.",
           "The costing step also catches the requests that are genuinely small. About a fifth of the time the honest estimate comes in under the spare hours, the verdict is yes, and you have spent ninety seconds confirming that rather than three days feeling ambushed by something you could have absorbed.",
         ],
         subsections: [
@@ -162,7 +162,7 @@ Finish with: the sentence in your own draft most likely to be read as negotiable
       {
         heading: "Declining upwards, and keeping the relationship",
         body: [
-          "Saying no without damaging the relationship depends far more on what happens after the message than on its wording. Two things do most of the work: being right about the displacement you named, and coming back later if the alternative you offered had a date on it.",
+          "How to say no without damaging the relationship depends far more on what happens after the message than on its wording. Two things do most of the work: being right about the displacement you named, and coming back later if the alternative you offered had a date on it.",
           "Declining to somebody senior is a different shape rather than a harder one. To a peer, a no is an answer. Upwards it is usually a yes with displacement, because the person asking can actually authorise the trade, and giving them the choice between two things is not obstruction, it is the information they need to make a decision they are already accountable for.",
         ],
       },

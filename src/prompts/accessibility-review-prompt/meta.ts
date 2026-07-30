@@ -17,11 +17,11 @@ const meta: PromptMeta = {
     primaryKeyword: "accessibility review prompt",
     keywords: [
       "accessibility review prompt",
-      "wcag checks you can do from a screenshot",
-      "focus order and keyboard traps",
+      "how to check wcag compliance from a screenshot",
+      "how to test focus order",
       "how to review a component for accessibility",
-      "colour contrast failures in ui components",
-      "what a screen reader announces",
+      "how to check colour contrast in ui",
+      "what a screen reader announces for a button",
     ],
     seoTitle: "Accessibility Review Prompt: Pass, Fail, Or Unknown",
     seoDescription:
@@ -110,8 +110,8 @@ Rank the FAIL items by how many people are blocked outright rather than inconven
       {
         heading: "What an image supports and what it does not",
         body: [
-          "The wcag checks you can do from a screenshot are a real and limited set. Visible focus indication when the image shows a focused state, text spacing and reflow at the captured width, target size for interactive elements, meaningful sequence in the visual order, and colour contrast where you can sample the values.",
-          "Colour contrast failures in ui components are the most commonly caught issue from an image and also the most commonly caught in the wrong place. Body text usually passes because somebody checked it once. Placeholder text, disabled buttons, the hairline between table rows and the focus ring on a raised surface fail routinely and are never sampled, because nobody thinks of them as text.",
+          "How to check wcag compliance from a screenshot has a real and limited answer. Visible focus indication when the image shows a focused state, text spacing and reflow at the captured width, target size for interactive elements, meaningful sequence in the visual order, and colour contrast where you can sample the values.",
+          "How to check colour contrast in ui is the most commonly asked question here, and the failures are the most commonly caught in the wrong place. Body text usually passes because somebody checked it once. Placeholder text, disabled buttons, the hairline between table rows and the focus ring on a raised surface fail routinely and are never sampled, because nobody thinks of them as text.",
         ],
         subsections: [
           {
@@ -125,12 +125,12 @@ Rank the FAIL items by how many people are blocked outright rather than inconven
       {
         heading: "Why the accessibility review prompt writes the announcement",
         body: [
-          "What a screen reader announces is the single most clarifying artefact in this whole area, and almost nobody on a design team has ever read one written down. A visually tidy component often announces as button, button, button, edit, blank, which makes the problem obvious in a way a criterion number never does.",
+          "What a screen reader announces for a button or a field is the single most clarifying artefact in this whole area, and almost nobody on a design team has ever read one written down. A visually tidy component often announces as button, button, button, edit, blank, which makes the problem obvious in a way a criterion number never does.",
           "Asking for one line per tab stop, in order, with state changes included, also catches the ambiguity problem. An announcement of remove is fine while you are looking at the row it belongs to and useless heard on its own, and that distinction is what the mark ambiguous instruction surfaces.",
         ],
       },
       {
-        heading: "Focus order and keyboard traps deserve their own pass",
+        heading: "How to test focus order and find keyboard traps",
         body: [
           "Focus order and keyboard traps are separated out because they are properties of the whole component rather than of any one element, so they slip through a criterion by criterion sweep. A popover rendered in a portal at the end of the document is the classic example: every individual element passes, and the tab sequence jumps from the field to the page footer.",
           "The trap half is simpler and more serious. Any stop that cannot be left with the keyboard alone is a blocking defect regardless of what else the component does well, and custom widgets built from div elements with click handlers produce them constantly.",

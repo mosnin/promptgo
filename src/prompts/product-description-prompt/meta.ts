@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "product description prompt",
       "how to write ecommerce product copy that sells",
       "ai prompt for shopify product descriptions",
-      "product copy that answers the hesitation",
-      "writing descriptions without inventing specifications",
+      "what to include in a product description",
+      "how to stop ai inventing product details",
       "product description for a physical item",
     ],
     seoTitle: "Product Description Prompt: Answer The Hesitation",
@@ -113,14 +113,14 @@ Never write: perfect for any occasion, high quality, premium, must have, or any 
         heading: "Descriptions resolve hesitation, they do not create desire",
         body: [
           "Three groups land on a product page. The people who were always going to buy do not read the description. The people who were never going to buy are not persuaded by it. The description exists entirely for the third group, who want the thing but have one unresolved question.",
-          "Writing for that group changes what belongs in the copy. Their question is rarely what the product is, and almost always something narrower: whether it fits, whether it lasts, whether it is difficult, whether returning it would be a nuisance. Product copy that answers the hesitation outperforms copy that describes the item, because describing the item duplicates the photograph.",
+          "Writing for that group changes what belongs in the copy. Their question is rarely what the product is, and almost always something narrower: whether it fits, whether it lasts, whether it is difficult, whether returning it would be a nuisance. The answer to what to include in a product description is the hesitation rather than the item, because describing the item duplicates the photograph.",
         ],
       },
       {
         heading: "Why the specification rule outranks everything else",
         body: [
           "Invented specifications are the most damaging thing a language model can do in ecommerce. A fabricated weight or an imagined compatibility claim produces returns, chargebacks and in regulated categories a legal problem, and it does so with copy that reads perfectly.",
-          "The rule is therefore written to outrank length and every other instruction, and the markers appear inline rather than in a footnote. Writing descriptions without inventing specifications only works if the gap is impossible to miss, and a marker sitting mid sentence cannot be published by accident the way a footnote can.",
+          "The rule is therefore written to outrank length and every other instruction, and the markers appear inline rather than in a footnote. How to stop ai inventing product details only works as a rule if the gap is impossible to miss, and a marker sitting mid sentence cannot be published by accident the way a footnote can.",
         ],
       },
       {

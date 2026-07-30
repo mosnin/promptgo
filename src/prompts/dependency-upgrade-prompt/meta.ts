@@ -17,9 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "dependency upgrade prompt",
       "reading a changelog for breaking changes",
-      "semver major bump that is actually safe",
+      "semver breaking change checklist",
       "how to prioritise dependency updates",
-      "is a cve reachable in my code",
+      "how to tell if a cve affects my code",
       "ai prompt for upgrading a package",
     ],
     seoTitle: "Dependency Upgrade Prompt: Cross the Changelog With You",
@@ -131,9 +131,9 @@ F. VERIFICATION AND RETREAT. Name the test, metric or log line that would reveal
         ],
       },
       {
-        heading: "A semver major bump that is actually safe",
+        heading: "A semver breaking change checklist for the major bump",
         body: [
-          "A semver major bump that is actually safe is common enough to be worth naming. Maintainers increment the major version when they remove any public surface, including surfaces you have never touched, so the number tells you about their API rather than about your code.",
+          "A semver breaking change checklist matters because a safe major bump is common enough to be worth naming. Maintainers increment the major version when they remove any public surface, including surfaces you have never touched, so the number tells you about their API rather than about your code.",
           "Saying this out loud in the output has a practical effect. Teams defer major upgrades for years on the strength of the number alone, and the deferral is what eventually makes the upgrade genuinely hard.",
         ],
       },
@@ -145,9 +145,9 @@ F. VERIFICATION AND RETREAT. Name the test, metric or log line that would reveal
         ],
       },
       {
-        heading: "Is a cve reachable in my code",
+        heading: "How to tell if a cve affects my code",
         body: [
-          "Is a cve reachable in my code is the question that decides urgency, and it is almost never answered by the tool that raised the alert. Scanners match version ranges. They do not know whether your application enters the vulnerable function.",
+          "How to tell if a cve affects my code is the question that decides urgency, and it is almost never answered by the tool that raised the alert. Scanners match version ranges. They do not know whether your application enters the vulnerable function.",
           "So the security branch of the prompt asks for the vulnerable code path by name, then for the call chain from your usage list to it, then for the grep that would settle it where the answer is not visible. An unreachable advisory still gets fixed, but it gets fixed on Thursday rather than tonight.",
         ],
       },

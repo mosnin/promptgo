@@ -18,9 +18,7 @@ const meta: PromptMeta = {
       "post mortem prompt",
       "how to run a blameless incident review",
       "ai prompt for a project retrospective",
-      "finding contributing conditions not root cause",
-      "post mortem that produces real action items",
-      "writing an incident timeline from messy notes",
+      "how to write an incident timeline",
     ],
     seoTitle: "Post Mortem Prompt: Conditions, Not Culprits",
     seoDescription:
@@ -104,7 +102,7 @@ PHASE FIVE: WHAT WE STILL DO NOT KNOW, and what it would take to find out.`,
         heading: "Timeline first, analysis second",
         body: [
           "Mixing the two is what produces confident and wrong post mortems. Once someone has a theory, the ambiguous parts of the timeline get interpreted to fit it, and the reconstruction hardens into the official version within a day.",
-          "Marking each entry as confirmed, disputed or missing keeps the uncertainty visible. Writing an incident timeline from messy notes always involves gaps, and the discipline that matters is listing them as open questions rather than bridging them with a plausible sentence.",
+          "Marking each entry as confirmed, disputed or missing keeps the uncertainty visible. Learning how to write an incident timeline from messy notes always involves gaps, and the discipline that matters is listing them as open questions rather than bridging them with a plausible sentence.",
         ],
       },
       {

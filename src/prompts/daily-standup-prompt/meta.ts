@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "daily standup prompt",
       "what to say in a daily standup",
       "ai prompt for an async status update",
-      "standup update that names a blocker",
-      "writing a standup without status theatre",
+      "how to report a blocker in standup",
+      "how to write a good standup update",
       "daily update for a distributed team",
     ],
     seoTitle: "Daily Standup Prompt: Name the Blocker, Skip the Theatre",
@@ -105,7 +105,7 @@ Refuse to pad. Two empty lines can be an accurate update. Do not convert a thin 
       {
         heading: "Status theatre, and why it keeps winning",
         body: [
-          "Writing a standup without status theatre is harder than it sounds, because the theatre is locally rational. Reporting activity is safe. Reporting a finished thing invites somebody to check whether it is really finished. Reporting a blocker puts a name next to a delay, and the name is often senior to you.",
+          "Knowing how to write a good standup update is harder than it sounds, because status theatre is locally rational. Reporting activity is safe. Reporting a finished thing invites somebody to check whether it is really finished. Reporting a blocker puts a name next to a delay, and the name is often senior to you.",
           "A word cap removes most of the room for it. Twenty five words will not hold a sentence explaining that the work is complex and ongoing. Either something finished or nothing did, and nothing finished is treated here as a legitimate output rather than a confession.",
         ],
       },
@@ -133,7 +133,7 @@ Refuse to pad. Two empty lines can be an accurate update. Do not convert a thin 
       {
         heading: "Why the daily standup prompt gives the blocker a fixed shape",
         body: [
-          "A standup update that names a blocker is the only kind a manager needs to read, and it is the line most people quietly leave out. So the shape is mandatory: what is stuck, the person or decision that unblocks it, and how long it has been stuck.",
+          "How to report a blocker in standup is the question that matters, because the blocker is the line most people quietly leave out. So the shape is mandatory: what is stuck, the person or decision that unblocks it, and how long it has been stuck.",
           "The duration field is what changes behaviour. Blocked on legal is a status. Blocked on legal for six days is a problem with a name attached, and it tends to get resolved within an hour of the right person reading it.",
         ],
       },

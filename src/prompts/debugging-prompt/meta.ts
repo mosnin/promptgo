@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "debugging prompt",
       "how to debug a stack trace with ai",
       "ai prompt for reading a python traceback",
-      "forming a hypothesis before changing code",
-      "reproducing a bug from a log file",
+      "how to reproduce a bug from logs",
       "why a bug only happens in production",
     ],
     seoTitle: "Debugging Prompt: Rank Hypotheses Before You Patch",
@@ -139,9 +138,9 @@ Only after step five, and only when the top hypothesis is clearly ahead of the s
         ],
       },
       {
-        heading: "Reproducing a bug from a log file",
+        heading: "How to reproduce a bug from logs",
         body: [
-          "Step four asks for the input, state and ordering that would trigger the symptom deliberately. Reproducing a bug from a log file is often possible when nobody has tried, because the log contains the request body, the timestamp and the instance identifier, and the missing part is only the sequence.",
+          "Step four asks for the input, state and ordering that would trigger the symptom deliberately. Working out how to reproduce a bug from logs is often possible when nobody has tried, because the log contains the request body, the timestamp and the instance identifier, and the missing part is only the sequence.",
           "When reproduction is not possible the prompt has to say which piece is absent rather than construct a scenario that fits. That refusal is valuable: it tells you what to add to the logging before the next occurrence, which is frequently the fastest route to a bug that appears twice a week.",
         ],
       },

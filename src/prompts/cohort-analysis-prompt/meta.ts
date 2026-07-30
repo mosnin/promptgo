@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "cohort analysis prompt",
     keywords: [
       "cohort analysis prompt",
-      "reading a retention curve correctly",
+      "how to read a retention curve",
       "how to compare signup cohorts",
       "ai prompt for retention analysis",
-      "cohort size too small to segment",
-      "separating tenure effects from calendar effects",
     ],
     seoTitle: "Cohort Analysis Prompt: Read a Retention Grid Honestly",
     seoDescription:
@@ -112,9 +110,9 @@ Never convert a count into a rate I did not request, never fill an unobserved ce
 
     sections: [
       {
-        heading: "Reading a retention curve correctly means watching the denominator",
+        heading: "How to read a retention curve without losing the denominator",
         body: [
-          "Reading a retention curve correctly begins with the count behind each point rather than the shape of the line. A cohort of 2,000 sitting at 18 percent in month six rests on 360 people. A cohort of 120 at the same rate rests on 22, and 22 is a number that moves for reasons no analysis will ever recover.",
+          "How to read a retention curve begins with the count behind each point rather than the shape of the line. A cohort of 2,000 sitting at 18 percent in month six rests on 360 people. A cohort of 120 at the same rate rests on 22, and 22 is a number that moves for reasons no analysis will ever recover.",
           "So the prompt prints the raw count beside every rate and declines to describe a cell built on fewer than fifty members as a percentage at all. That one rule removes most of the drama from a retention chart, because most of the drama lives in the thin cells at the bottom right.",
         ],
       },

@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "brand voice prompt",
       "how to document tone of voice for a team",
       "ai prompt for a writing style guide",
-      "defining brand voice from existing copy",
+      "how to define brand voice from your own writing",
       "tone of voice rules instead of adjectives",
       "keeping ai output on brand",
     ],
@@ -113,7 +113,7 @@ Finally, write the eight line version I can paste into another prompt to keep ge
         heading: "Why it needs samples and anti samples",
         body: [
           "Extracting a voice requires something to extract from, which is why the prompt asks for real text pasted in full. Describing your voice produces a description back, and the loop closes with nothing gained.",
-          "Anti samples do the other half of the work. A voice is partly defined by what it refuses, and without a contrast the model has no way to know that your plainness is deliberate rather than incidental. Defining brand voice from existing copy works best when the copy you reject is as specific as the copy you admire.",
+          "Anti samples do the other half of the work. A voice is partly defined by what it refuses, and without a contrast the model has no way to know that your plainness is deliberate rather than incidental. How to define brand voice from your own writing comes down to this: the copy you reject has to be as specific as the copy you admire.",
         ],
       },
       {

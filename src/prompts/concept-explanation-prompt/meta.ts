@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "concept explanation prompt",
     keywords: [
       "concept explanation prompt",
-      "explaining a difficult concept to a student",
-      "analogy that does not break down",
+      "how to explain a difficult concept to a student",
       "ai prompt for explaining like i am fifteen",
       "worked example followed by a check question",
-      "explanation pitched at prior knowledge",
     ],
     seoTitle: "Concept Explanation Prompt: Analogies With Limits",
     seoDescription:
@@ -104,7 +102,7 @@ Structure your answer as.
   article: {
     intro: [
       "A concept explanation prompt is judged by one thing: whether the person on the other end can now do something they could not do before. Not whether the prose was elegant, and not whether the summary was accurate. Accuracy is cheap and does very little on its own.",
-      "Explaining a difficult concept to a student is a matching problem. The idea has to be assembled out of parts the learner already possesses, which means the explanation cannot be written until you know what those parts are. That is why the prompt refuses to start without them.",
+      "How to explain a difficult concept to a student is a matching problem. The idea has to be assembled out of parts the learner already possesses, which means the explanation cannot be written until you know what those parts are. That is why the prompt refuses to start without them.",
       "It also does something unusual with analogies. It uses one, then immediately says where it stops being true, because an unlabelled analogy has a habit of becoming the misconception you spend next term dismantling.",
     ],
 

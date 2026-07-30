@@ -17,7 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "difficult conversation prompt",
       "how to prepare for a difficult conversation at work",
-      "rehearsing the strongest objection you will face",
+      "difficult conversation script for managers",
       "ai prompt for a hard conversation with an employee",
       "what to say when someone gets defensive",
       "conversation you have been avoiding for weeks",
@@ -122,7 +122,7 @@ Do not write a script for me. Do not suggest a compliment sandwich. Do not tell 
         heading: "The model argues their side, not yours",
         body: [
           "Rehearsing your own position is a comfortable activity that feels like preparation. It is why people walk into these meetings having practised two sentences forty times and having no idea what to do in minute four.",
-          "Rehearsing the strongest objection you will face inverts the exercise. You hear the best version of their argument in advance, in a setting where being wrong costs nothing, and the specific value is that a strong argument encountered for the first time in the room produces either capitulation or stubbornness, rarely a good decision.",
+          "A difficult conversation script for managers that rehearses the strongest objection inverts the exercise. You hear the best version of their argument in advance, in a setting where being wrong costs nothing, and the specific value is that a strong argument encountered for the first time in the room produces either capitulation or stubbornness, rarely a good decision.",
           "The instruction not to caricature matters more than it sounds. A model given a one sided history will happily produce a weak opponent who says exactly what you can answer, and that rehearsal is worse than none because it builds false confidence.",
         ],
       },

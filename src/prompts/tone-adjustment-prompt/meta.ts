@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "tone adjustment prompt",
       "how to change the tone of a draft",
       "ai prompt for adjusting register",
-      "making formal writing sound more human",
-      "tone shift without rewriting the content",
-      "matching the register of an email to its reader",
+      "how to make formal writing sound more human",
+      "how to choose the right tone for an email",
     ],
     seoTitle: "Tone Adjustment Prompt: Move Dials, Not Facts",
     seoDescription:
@@ -137,7 +136,7 @@ STEP FOUR. Rewrite. Then rescore on the same five dials, so I can see what actua
         heading: "Register is a relationship, not a house style",
         body: [
           "Any ai prompt for adjusting register needs to know who is writing to whom and what is owed between them. The same sentence is correct from a supplier chasing an invoice and wrong from a bank chasing a mortgage, because the power in the relationship differs and register encodes power.",
-          "This is why the relationship field asks for the obligation as well as the parties. Matching the register of an email to its reader depends on whether you need something from them, whether they can refuse, and whether you will need something again next quarter. Making formal writing sound more human is only an improvement when the relationship supports the familiarity you are adding.",
+          "This is why the relationship field asks for the obligation as well as the parties. How to choose the right tone for an email depends on whether you need something from them, whether they can refuse, and whether you will need something again next quarter. How to make formal writing sound more human is only worth asking when the relationship supports the familiarity you are adding.",
         ],
       },
       {

@@ -19,8 +19,6 @@ const meta: PromptMeta = {
       "how to write a 30 60 90 day plan",
       "first useful contribution for a new hire",
       "ai prompt for onboarding a new team member",
-      "access and tooling prerequisites before day one",
-      "who teaches the unwritten rules",
     ],
     seoTitle: "Onboarding Plan Prompt: First Useful Contribution",
     seoDescription:

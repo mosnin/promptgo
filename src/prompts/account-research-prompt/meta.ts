@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "account research prompt",
       "how to research a prospect in twenty minutes",
       "ai prompt for pre call preparation",
-      "finding a trigger event worth mentioning",
+      "how to find a trigger event for cold outreach",
       "deciding which accounts are not worth pursuing",
-      "research notes that change the sales approach",
+      "what to look for when researching a prospect",
     ],
     seoTitle: "Account Research Prompt: Find The Two Facts That Matter",
     seoDescription:
@@ -108,7 +108,7 @@ Never speculate about their revenue, headcount, budget or internal politics. If 
         heading: "Trigger events and the six month rule",
         body: [
           "A problem becomes worth solving at a moment, not in general. A compliance hire, a public complaint, a regulatory deadline, a system migration, the departure of the person who used to hold it together: each of these turns a background irritation into something with a budget.",
-          "Recency matters enough that the prompt marks anything older than six months as stale. Finding a trigger event worth mentioning usually means finding a recent one, since referring to something from last year signals that you searched rather than that you noticed.",
+          "Recency matters enough that the prompt marks anything older than six months as stale. How to find a trigger event for cold outreach usually comes down to finding a recent one, since referring to something from last year signals that you searched rather than that you noticed.",
         ],
         list: [
           "A relevant hire, especially a first hire into a function.",
@@ -122,7 +122,7 @@ Never speculate about their revenue, headcount, budget or internal politics. If 
         heading: "Their vocabulary is the most portable output",
         body: [
           "Section three quotes the words they use for the things you would otherwise name in your own terms. This is the section reps use most, and it is the cheapest advantage available in outbound.",
-          "Writing to a prospect using their internal name for a process, or the phrase their ops director used in a post, does something no amount of persuasive copy achieves: it demonstrates you were paying attention to them specifically. Research notes that change the sales approach are usually vocabulary notes as much as fact notes.",
+          "Writing to a prospect using their internal name for a process, or the phrase their ops director used in a post, does something no amount of persuasive copy achieves: it demonstrates you were paying attention to them specifically. What to look for when researching a prospect is vocabulary as much as fact.",
         ],
       },
       {

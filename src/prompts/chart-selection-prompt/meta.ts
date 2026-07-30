@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "chart selection prompt",
       "which chart type for my data",
-      "when not to use a pie chart",
+      "when to use a pie chart",
       "choosing a chart for a distribution",
       "ai prompt for choosing a visualisation",
-      "chart that does not mislead the reader",
     ],
     seoTitle: "Chart Selection Prompt: Match the Chart to the Question",
     seoDescription:
@@ -123,9 +122,9 @@ CRITICAL: never recommend a second axis. Never recommend a chart form purely bec
         ],
       },
       {
-        heading: "When not to use a pie chart",
+        heading: "When to use a pie chart, and when not to",
         body: [
-          "Asking when not to use a pie chart has a short answer: whenever the reader needs to rank the slices or compare two of them. Angle is the hardest visual encoding to judge accurately, so two segments within a few points of each other are simply unrankable, and that is usually the exact comparison the figure was made for.",
+          "Asking when to use a pie chart has a short answer: not when the reader needs to rank the slices or compare two of them. Angle is the hardest visual encoding to judge accurately, so two segments within a few points of each other are simply unrankable, and that is usually the exact comparison the figure was made for.",
           "Pies survive in one narrow case, which is showing that a single share dominates or is negligible against everything else. Even then a sorted horizontal bar does the same job more precisely, and it keeps working when a fifth category appears next quarter.",
         ],
         list: [

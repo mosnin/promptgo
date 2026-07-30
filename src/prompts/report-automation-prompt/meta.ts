@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "report automation prompt",
       "which parts of a report to recompute",
-      "monthly report that writes itself",
+      "how to automate a monthly report",
       "ai prompt for a recurring report",
-      "commentary only when a number moves enough",
-      "restating a figure that changed since last month",
     ],
     seoTitle: "Report Automation Prompt: Recompute Only What Changed",
     seoDescription:
@@ -152,7 +150,7 @@ You may not use a figure absent from the current input, and you may not compute 
       {
         heading: "Where automation stops and a person is required",
         body: [
-          "A monthly report that writes itself is achievable for the mechanical layer and not for the judgement. Assembling figures, computing movements, flagging thresholds and reproducing stable text are all rule following. Deciding that a threshold was set wrong, or that a crossing does not matter this quarter because of something not in the data, is not.",
+          "How to automate a monthly report has a clean answer for the mechanical layer and none for the judgement. Assembling figures, computing movements, flagging thresholds and reproducing stable text are all rule following. Deciding that a threshold was set wrong, or that a crossing does not matter this quarter because of something not in the data, is not.",
           "Run as an ai prompt for a recurring report, the sensible division is that the model drafts and a named person signs. The signature is what keeps the thresholds honest, since a document nobody owns tends to acquire new metrics and never lose any.",
         ],
       },

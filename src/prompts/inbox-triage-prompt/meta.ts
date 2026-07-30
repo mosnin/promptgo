@@ -20,7 +20,6 @@ const meta: PromptMeta = {
       "ai prompt for sorting email by action",
       "deciding which emails deserve a reply",
       "email triage rules for a busy week",
-      "drafting replies to the messages that matter",
     ],
     seoTitle: "Inbox Triage Prompt: Sort Every Message Into One Action",
     seoDescription:

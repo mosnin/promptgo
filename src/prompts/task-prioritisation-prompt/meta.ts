@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "task prioritisation prompt",
       "how to prioritise a backlog of tasks",
       "ai prompt for ranking work by impact",
-      "forcing a cap on important tasks",
+      "how to limit your top priorities",
       "deciding what to drop this week",
-      "task list that never gets shorter",
     ],
     seoTitle: "Task Prioritisation Prompt: Rank, Cap and Drop",
     seoDescription:
@@ -111,7 +110,7 @@ Output one table with columns: task, tier, hours, what breaks if it slips. Then 
         heading: "Why the task prioritisation prompt caps critical at five",
         body: [
           "A hard cap is a crude instrument, which is precisely why it works. Without one, the model treats importance as a property of each task examined alone, and almost everything is important when examined alone.",
-          "Forcing a cap on important tasks makes comparison unavoidable. A sixth candidate cannot join without displacing one of the five, so the model has to argue that this beats that rather than that both are worthwhile. An ai prompt for ranking work by impact is only useful once impact is allowed to run out.",
+          "Knowing how to limit your top priorities makes comparison unavoidable. A sixth candidate cannot join without displacing one of the five, so the model has to argue that this beats that rather than that both are worthwhile. An ai prompt for ranking work by impact is only useful once impact is allowed to run out.",
         ],
       },
       {

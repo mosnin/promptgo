@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "meeting notes prompt",
       "ai prompt for meeting action items",
       "how to summarise a meeting transcript",
-      "turning a transcript into decisions and owners",
       "meeting minutes prompt for chatgpt",
-      "extract action items from a recording",
+      "how to extract action items from a meeting",
     ],
     seoTitle: "Meeting Notes Prompt: Decisions, Owners, Questions",
     seoDescription:
@@ -133,7 +132,7 @@ Never soften an UNOWNED action into a team assignment. Never convert a suggestio
         heading: "Why the meeting notes prompt reports its own uncertainty",
         body: [
           "Section five asks the model to state what it could not tell from the transcript. Crosstalk, an unclear speaker attribution, a sentence that might have been a decision or might have been thinking aloud. This is the part that makes the rest usable without listening to the recording again.",
-          "It matters more when you extract action items from a recording rather than from written notes, because speaker labels are frequently wrong and a misattributed sentence can invent a decision the named person never made. Anyone working out how to summarise a meeting transcript at scale should treat an explicit uncertainty section as a requirement rather than a nicety.",
+          "It matters more when you work out how to extract action items from a meeting recording rather than from written notes, because speaker labels are frequently wrong and a misattributed sentence can invent a decision the named person never made. Anyone working out how to summarise a meeting transcript at scale should treat an explicit uncertainty section as a requirement rather than a nicety.",
         ],
       },
     ],

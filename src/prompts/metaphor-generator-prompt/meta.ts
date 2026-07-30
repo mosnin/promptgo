@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "metaphor generator prompt",
       "finding an image for an abstract idea",
       "ai prompt for figurative language",
-      "testing where a comparison breaks down",
-      "metaphors built from everyday objects",
+      "metaphor examples for everyday objects",
       "how to explain an abstract concept with an image",
     ],
     seoTitle: "Metaphor Generator Prompt: Find The Break Point First",
@@ -113,7 +112,7 @@ Finish by naming the most vivid candidate you rejected and the false thing it wo
       {
         heading: "Source domains the reader already lives in",
         body: [
-          "The point of a comparison is to borrow understanding the reader already has. It follows that the source has to come from their life rather than from the general stock of literary imagery. Metaphors built from everyday objects work because nothing about the source needs explaining first.",
+          "The point of a comparison is to borrow understanding the reader already has. It follows that the source has to come from their life rather than from the general stock of literary imagery. Metaphor examples for everyday objects work because nothing about the source needs explaining first.",
           "War, sport, journeys, weather and gardening are banned by default in this prompt. They are the default output of any ai prompt for figurative language, they are exhausted, and each of them carries freight. A war image makes someone the enemy. A journey image implies a destination that may not exist.",
           "Naming what the audience physically handles produces stranger and better results. Depot managers get fleet metaphors that carry the whole mapping unassisted. Nurses get metaphors from triage and handover, and those are not images the field has already worn out.",
         ],

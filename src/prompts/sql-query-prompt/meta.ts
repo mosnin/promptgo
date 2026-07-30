@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "sql query prompt",
     keywords: [
       "sql query prompt",
-      "writing sql from a schema description",
-      "estimating row counts before running a query",
-      "avoiding accidental fan out in a join",
+      "how to write sql from a schema",
+      "why does my sql join duplicate rows",
       "ai prompt for a postgres analytics query",
-      "checking a generated query against the schema",
     ],
     seoTitle: "SQL Query Prompt: Declare the Grain Before You Join",
     seoDescription:
@@ -103,9 +101,9 @@ STEP 6: WHAT WOULD MAKE THIS WRONG. List the schema facts you assumed but were n
 
     sections: [
       {
-        heading: "Writing sql from a schema description",
+        heading: "How to write sql from a schema description",
         body: [
-          "Writing sql from a schema description works only when the description carries the constraints, not just the column names. Nullability, primary keys, foreign keys and any uniqueness that a constraint actually enforces are what decide whether a join is safe and whether a filter behaves.",
+          "How to write sql from a schema is a question of constraints, because a description that carries only column names is not enough. Nullability, primary keys, foreign keys and any uniqueness that a constraint actually enforces are what decide whether a join is safe and whether a filter behaves.",
           "A schema dump with types alone leads the model to assume the friendly version of everything: that a foreign key means one row, that a text column is never empty, that a status field has the four values you mentioned. Each assumption is reasonable and each one is a place the result silently diverges from the question.",
         ],
       },
@@ -117,9 +115,9 @@ STEP 6: WHAT WOULD MAKE THIS WRONG. List the schema facts you assumed but were n
         ],
       },
       {
-        heading: "Avoiding accidental fan out in a join",
+        heading: "Why does my sql join duplicate rows",
         body: [
-          "Avoiding accidental fan out in a join is mostly bookkeeping, which is why step two is a ledger rather than a paragraph. Each join gets its two keys, its cardinality and a yes or no on whether it can multiply the left side.",
+          "Why does my sql join duplicate rows is mostly a bookkeeping question, which is why step two is a ledger rather than a paragraph. Each join gets its two keys, its cardinality and a yes or no on whether it can multiply the left side.",
           "Every yes then needs a stated remedy: aggregate before joining, use a semi join or an exists clause, or accept the multiplication with a reason. The failure that hurts is joining two one to many tables to the same parent, where each side multiplies the other and the totals are inflated by a factor that varies per row, so no constant correction exists.",
         ],
       },

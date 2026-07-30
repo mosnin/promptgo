@@ -21,7 +21,7 @@ const meta: PromptMeta = {
       "how to build a persona without user interviews",
       "b2b buyer persona template for marketing",
       "customer profile generator for startups",
-      "persona based on beliefs not demographics",
+      "what to include in a customer persona",
     ],
     seoTitle: "Customer Persona Prompt: Build One Worth Using",
     seoDescription:
@@ -98,7 +98,7 @@ CRITICAL: after every field, tag it [EVIDENCED] if it follows from the evidence 
         heading: "Demographics do not change what you write",
         body: [
           "The test for any persona field is whether a different value would change the copy. Knowing a buyer is 38 rather than 45 changes nothing. Knowing they believe this category of tool always requires a three month implementation changes the headline, the first objection you handle and whether you lead with speed.",
-          "Belief and fear fields pass that test consistently, which is why the prompt spends its structure on them. A persona based on beliefs not demographics is harder to write and immediately usable, whereas the demographic version is easy to produce and quietly useless.",
+          "Belief and fear fields pass that test consistently, which is why the prompt spends its structure on them. The honest answer to what to include in a customer persona is beliefs rather than demographics, which is harder to write and immediately usable, whereas the demographic version is easy to produce and quietly useless.",
         ],
       },
       {

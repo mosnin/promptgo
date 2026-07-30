@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "curriculum mapping prompt",
     keywords: [
       "curriculum mapping prompt",
-      "sequencing a scheme of work",
-      "prerequisite knowledge before a topic",
+      "how to sequence a scheme of work",
+      "how to check prerequisite knowledge before a topic",
       "ai prompt for curriculum coverage",
-      "spotting gaps against a specification",
-      "mapping assessment points across a term",
+      "how to plan assessments across a term",
     ],
     seoTitle: "Curriculum Mapping Prompt: Sequence, Coverage, Gaps",
     seoDescription:
@@ -109,14 +108,14 @@ Return the dependency list, the week by week map as a table, the overrun stateme
       {
         heading: "Coverage and sequence are separate problems",
         body: [
-          "Sequencing a scheme of work is often confused with covering it. Coverage asks whether all 34 statements appear somewhere. Sequence asks whether each one appears after the thing it depends on. A scheme can score perfectly on the first and fail badly on the second, and the failure shows up months later as a class that cannot do the calculation rather than as a hole in the plan.",
+          "How to sequence a scheme of work is often confused with how to cover it. Coverage asks whether all 34 statements appear somewhere. Sequence asks whether each one appears after the thing it depends on. A scheme can score perfectly on the first and fail badly on the second, and the failure shows up months later as a class that cannot do the calculation rather than as a hole in the plan.",
           "Splitting the two makes both checkable. The prompt does coverage as a tick list against the pasted statements, which is dull and mechanical and exactly what a model is good at. Sequence gets the reasoning.",
         ],
       },
       {
         heading: "The dependency list has to come first",
         body: [
-          "Prerequisite knowledge before a topic is the whole of curriculum sequencing, and it is the step people skip because it feels obvious while you are doing it. It is obvious in your own subject knowledge. It is not obvious in a document, which is why the same out of order pairing survives three years of a scheme being edited.",
+          "How to check prerequisite knowledge before a topic is the whole of curriculum sequencing, and it is the step people skip because it feels obvious while you are doing it. It is obvious in your own subject knowledge. It is not obvious in a document, which is why the same out of order pairing survives three years of a scheme being edited.",
           "Asking for dependencies before any weeks are allocated changes the answer materially. Sequence first and the model produces a sensible looking calendar and then rationalises it. Dependencies first and the calendar is constrained by something, so the awkward swaps surface as swaps rather than getting smoothed over.",
         ],
       },
@@ -130,7 +129,7 @@ Return the dependency list, the week by week map as a table, the overrun stateme
       {
         heading: "Where the curriculum mapping prompt places assessment",
         body: [
-          "Mapping assessment points across a term is constrained by one rule that sounds trivial and is broken constantly: an assessment can only test what has already been taught by that week. Departmental assessment calendars are usually set centrally and in advance, so the paper arrives before the content does and two questions get quietly ignored.",
+          "How to plan assessments across a term is constrained by one rule that sounds trivial and is broken constantly: an assessment can only test what has already been taught by that week. Departmental assessment calendars are usually set centrally and in advance, so the paper arrives before the content does and two questions get quietly ignored.",
           "So each assessment point in the output names the statements it can validly test. If that list is short, the assessment is in the wrong week or the sequence is. Either way the conflict is on the page in July rather than in a corridor in February.",
         ],
       },

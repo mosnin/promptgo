@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "freelance rate prompt",
     keywords: [
       "freelance rate prompt",
-      "working out a day rate that covers your costs",
+      "how to calculate a freelance day rate",
       "ai prompt for pricing a freelance project",
-      "how many billable days you actually have",
-      "scope creep clause in a project quote",
-      "the rate you should walk away below",
+      "how to calculate billable days per year",
+      "what to put in a scope creep clause",
+      "how to set a minimum freelance rate",
     ],
     seoTitle: "Freelance Rate Prompt: Build A Floor You Can Defend",
     seoDescription:
@@ -117,7 +117,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
       {
         heading: "A rate is arithmetic before it is confidence",
         body: [
-          "Working out a day rate that covers your costs is a short calculation nobody enjoys doing. Target income, grossed up for tax, plus the annual cost of running the business, divided by the days you can actually sell.",
+          "How to calculate a freelance day rate comes down to a short sum nobody enjoys doing. Target income, grossed up for tax, plus the annual cost of running the business, divided by the days you can actually sell.",
           "The reason it gets skipped is that the answer is usually higher than the rate you are currently charging, and the gap is uncomfortable. Advice to charge what you are worth avoids that discomfort by replacing the calculation with an attitude.",
           "Every line stays visible in the output for the same reason. A number you can reconstruct is a number you can defend in a conversation with a client, and one you cannot is a number you will discount under mild pressure.",
         ],
@@ -126,14 +126,14 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         heading: "Billable days are fewer than you think",
         body: [
           "The single biggest error in freelance pricing is the denominator. People divide by something close to 220 working days, which quietly assumes that every non holiday weekday is sold.",
-          "How many billable days you actually have is a smaller number than that, once weekends, holiday, sickness, invoicing, chasing, pitching and the weeks with nothing booked come out. A hundred and seventy is common. A hundred and fifty is not unusual in the first two years.",
+          "How to calculate billable days per year starts by taking out weekends, holiday, sickness, invoicing, chasing, pitching and the weeks with nothing booked. A hundred and seventy is common. A hundred and fifty is not unusual in the first two years.",
           "Dividing the same required revenue by 172 rather than 220 raises the floor by roughly a quarter, which is how a year ends up feeling busy and finishing short.",
         ],
       },
       {
         heading: "The freelance rate prompt produces a floor, not a target",
         body: [
-          "The freelance rate prompt labels its output a floor deliberately. It is the rate you should walk away below, the point at which accepting work leaves you worse off than leaving the week empty, and it is not the price you quote.",
+          "The freelance rate prompt labels its output a floor deliberately. It answers how to set a minimum freelance rate, the point at which accepting work leaves you worse off than leaving the week empty, and it is not the price you quote.",
           "Quoting at the floor is a slow failure. It leaves nothing for the projects that overrun, no margin for the client who pays sixty days late, and no capacity for the unbilled work that keeps the business running. The floor is a boundary, and prices sit above boundaries.",
           "Knowing exactly where the boundary is changes how negotiations feel. A discount request is easy to answer when you can see that the number lands eleven percent under the point where the work costs you money.",
         ],
@@ -150,7 +150,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         heading: "Scope creep is a definitions problem",
         body: [
           "Most creep is not opportunism. It is two people holding different pictures of the work, discovering the difference gradually, and neither having anything written down to check against.",
-          "A scope creep clause in a project quote does not need legal language. One sentence naming what changes the price, plus the number of revision rounds included and the day rate beyond them, covers the overwhelming majority of disputes.",
+          "Knowing what to put in a scope creep clause does not require legal language. One sentence naming what changes the price, plus the number of revision rounds included and the day rate beyond them, covers the overwhelming majority of disputes.",
           "The revision count is the part people leave out and the part that consumes the margin. Two rounds means two, and a third is chargeable at the stated rate, which is a much easier conversation to have in advance than in week seven.",
         ],
       },

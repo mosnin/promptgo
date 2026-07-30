@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "dialogue writing prompt",
     keywords: [
       "dialogue writing prompt",
-      "writing dialogue that does not sound like exposition",
-      "giving two characters different speech patterns",
+      "how to avoid exposition in dialogue",
+      "how to give characters distinct voices",
       "ai prompt for a scene of dialogue",
       "how to write an argument between two characters",
-      "subtext in dialogue without stage directions",
+      "how to write subtext in dialogue",
     ],
     seoTitle: "Dialogue Writing Prompt: Wants, Withholding And Beats",
     seoDescription:
@@ -111,7 +111,7 @@ End with a beat table: one row per beat, naming who gained ground and the exact 
       {
         heading: "A speech signature is three habits, not an accent",
         body: [
-          "Giving two characters different speech patterns fails when the difference is described in adjectives. Ask for a brusque character and a warm one and you get the same sentences with different punctuation.",
+          "Advice on how to give characters distinct voices fails when the difference is described in adjectives. Ask for a brusque character and a warm one and you get the same sentences with different punctuation.",
           "Mechanical habits survive. One speaks in clauses that keep extending; the other stops at seven words. One asks questions when uncomfortable; the other makes statements. One says right at the start of every second line. Three of those, applied consistently, are enough for a reader to tell who is talking with the tags covered up.",
           "Phonetic spelling is banned outright. It marks class and region rather than person, it is tiring to read, and it lets the model skip the harder work of making the two of them think differently.",
         ],
@@ -120,14 +120,14 @@ End with a beat table: one row per beat, naming who gained ground and the exact 
         heading: "The dialogue writing prompt runs on wants, not topics",
         body: [
           "The inputs are not what they discuss. They are what each character is trying to get out of the other and what each is protecting. A scene where a mother wants her son to agree to a sale and the son wants to be asked to take over the business can be conducted entirely through a conversation about flour.",
-          "This is also the mechanism behind subtext in dialogue without stage directions. Nothing has to be signposted in italics or narrated in a parenthesis. If both wants are live and neither can be said, every line about something else is carrying them.",
+          "This is also the answer to how to write subtext in dialogue. Nothing has to be signposted in italics or narrated in a parenthesis. If both wants are live and neither can be said, every line about something else is carrying them.",
         ],
       },
       {
         heading: "Exposition has a smell",
         body: [
           "The characteristic failure is a character explaining to another character something both of them have known for years, for the benefit of a reader neither of them can see. As you know, we have been running this place since Dad died. Nobody says that.",
-          "Writing dialogue that does not sound like exposition is mostly a matter of banning the move and then giving the information somewhere else to live. The prompt takes one fact the reader holds and at least one character does not, which turns the gap into pressure rather than into a briefing.",
+          "Knowing how to avoid exposition in dialogue is mostly a matter of banning the move and then giving the information somewhere else to live. The prompt takes one fact the reader holds and at least one character does not, which turns the gap into pressure rather than into a briefing.",
           "An ai prompt for a scene of dialogue that has no reader gap tends to produce mutual updating, because both characters have to be told what the scene is about and there is nobody else to tell them.",
         ],
       },

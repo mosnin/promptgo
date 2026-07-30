@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "focus session prompt",
       "how to plan a deep work block",
       "ai prompt for structuring focused time",
-      "one outcome per focus block",
-      "protecting attention from interruptions",
+      "how to avoid distractions while working",
       "what to do when a session stalls",
     ],
     seoTitle: "Focus Session Prompt: One Outcome and a Stopping Rule",
@@ -135,7 +134,7 @@ Do not motivate me and do not suggest breaks, music or timers.`,
       {
         heading: "Predictable interruptions get a plan, not willpower",
         body: [
-          "Protecting attention from interruptions is largely a prediction problem. You already know which ones are coming: the sync that overruns, the colleague who asks at half past one, the notification badge nobody has turned off in two years.",
+          "How to avoid distractions while working is largely a prediction problem. You already know which ones are coming: the sync that overruns, the colleague who asks at half past one, the notification badge nobody has turned off in two years.",
           "So the prompt wants one line per named threat, and that line is either prevention or a decision made in advance about how it gets handled. Pre-deciding matters because the expensive part of an interruption is not the interruption, it is choosing whether to take it while holding something complicated in your head.",
         ],
       },

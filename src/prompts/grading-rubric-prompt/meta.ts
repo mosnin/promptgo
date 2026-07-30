@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "grading rubric prompt",
       "how to write an analytic rubric",
-      "marking criteria students can actually read",
-      "rubric descriptors without vague language",
+      "how to write marking criteria for students",
+      "how to write a mark scheme",
       "ai prompt for assessment criteria",
-      "moderating marking across a department",
     ],
     seoTitle: "Grading Rubric Prompt: Descriptors You Can Mark With",
     seoDescription:
@@ -120,7 +119,7 @@ Return.
         heading: "The adverb problem",
         body: [
           "Open almost any published band descriptor set and the ladder is built from adverbs. Limited understanding, some understanding, good understanding, excellent understanding. Nothing in that sequence tells a marker what to look for, so each marker substitutes their own sense of the cohort, and the band a script receives depends partly on who picked it up.",
-          "Writing rubric descriptors without vague language means replacing each adverb with the observable thing it was standing in for. Instead of some analysis, the descriptor says the response links one piece of evidence to the claim and leaves the others unexplained. Longer to write, faster to mark, and it survives being read by a supply teacher.",
+          "Knowing how to write a mark scheme without vague descriptors means replacing each adverb with the observable thing it was standing in for. Instead of some analysis, the descriptor says the response links one piece of evidence to the claim and leaves the others unexplained. Longer to write, faster to mark, and it survives being read by a supply teacher.",
         ],
       },
       {
@@ -162,7 +161,7 @@ Return.
         heading: "Giving the rubric to students",
         body: [
           "A rubric written for markers is not automatically usable by a fifteen year old, and handing one over unedited teaches students to write in the language of the descriptors rather than to do the thing. The follow up that rewrites at reading age eleven exists for this.",
-          "Marking criteria students can actually read change behaviour before the work is submitted, which is the only point at which criteria can improve anything. Give them the rewritten version at the start of the task with one worked example, not attached to the returned mark.",
+          "Knowing how to write marking criteria for students changes behaviour before the work is submitted, which is the only point at which criteria can improve anything. Give them the rewritten version at the start of the task with one worked example, not attached to the returned mark.",
         ],
       },
     ],

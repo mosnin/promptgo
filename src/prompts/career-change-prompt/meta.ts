@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "career change prompt",
       "how to change careers without starting over",
       "ai prompt for mapping transferable skills",
-      "explaining a career change to a hiring manager",
-      "testing a career change before you commit",
+      "how to explain a career change in an interview",
+      "how to test a career change before quitting",
       "which of my skills actually transfer",
     ],
     seoTitle: "Career Change Prompt: Test It Before You Commit",
@@ -142,14 +142,14 @@ If I described the target work only as a feeling, refuse step two and ask for th
       {
         heading: "Using the career change prompt to design a cheap test",
         body: [
-          "Testing a career change before you commit costs less than every alternative and hardly anyone does it. The career change prompt insists on one test runnable inside a fortnight, with a stated cost, a stated time and one specific thing you would learn from it.",
+          "Working out how to test a career change before quitting costs less than every alternative and hardly anyone does it. The career change prompt insists on one test runnable inside a fortnight, with a stated cost, a stated time and one specific thing you would learn from it.",
           "Good tests are small and unglamorous. Do the unpaid version of a single task for a friend's company. Ask three people doing the job what a Tuesday looks like rather than what their best week looked like. Finish one piece of work in the target field and pay attention to whether you enjoyed the middle of it, because the middle is where nearly all of the work lives.",
         ],
       },
       {
         heading: "The story a hiring manager needs",
         body: [
-          "Explaining a career change to a hiring manager is a two sentence job, and neither sentence is really about you. The first names the thing in your background that makes you unusually good at one specific part of this role. The second says plainly why you are moving.",
+          "How to explain a career change in an interview comes down to two sentences, and neither is really about you. The first names the thing in your background that makes you unusually good at one specific part of this role. The second says plainly why you are moving.",
           "The failure mode is treating it as a personal journey. A hiring manager is estimating the chance that you leave within a year, and a long account of self discovery raises that estimate rather than lowering it. A short factual reason lowers it, which is the entire purpose of the sentence.",
         ],
       },

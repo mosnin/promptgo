@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "seo keyword research prompt",
       "how to group keywords by search intent",
       "ai prompt for finding long tail keywords",
-      "keyword mapping to avoid cannibalisation",
-      "finding low competition keywords without tools",
-      "one keyword per page rule",
+      "how to fix keyword cannibalisation",
+      "how to find low competition keywords for free",
+      "how many keywords per page for seo",
     ],
     seoTitle: "SEO Keyword Research Prompt: Map Intent, Not Volume",
     seoDescription:
@@ -108,7 +108,7 @@ CRITICAL: never state or estimate a monthly search volume, a keyword difficulty 
         heading: "Volume is a data problem, intent is a language problem",
         body: [
           "A model has no access to how many people typed a phrase last month. It will produce a figure anyway, formatted convincingly, because plausible numbers are easy to generate. That number then travels into a strategy document and gets treated as research.",
-          "What the model can do is read a phrase and tell you what the person wanted. The difference between best crm for nonprofits and how does a crm work is obvious to a competent reader and invisible to a volume tool, and it determines what kind of page could possibly satisfy the search. Playing to that strength is what makes finding low competition keywords without tools a reasonable exercise rather than guesswork.",
+          "What the model can do is read a phrase and tell you what the person wanted. The difference between best crm for nonprofits and how does a crm work is obvious to a competent reader and invisible to a volume tool, and it determines what kind of page could possibly satisfy the search. Playing to that strength is the real answer to how to find low competition keywords for free, and it beats guesswork.",
         ],
       },
       {
@@ -125,10 +125,10 @@ CRITICAL: never state or estimate a monthly search volume, a keyword difficulty 
         ],
       },
       {
-        heading: "The one keyword per page rule",
+        heading: "How many keywords per page for SEO",
         body: [
           "This is the rule the page map enforces, and it is the reason to include your existing pages in the input. Each page gets exactly one primary phrase plus four to six supporting variants of the same intent, and the prompt flags any proposed phrase that an existing page already targets.",
-          "The failure it prevents is quiet. Two articles targeting the same term do not produce an error, they produce two pages that each rank slightly worse than one page would have, and the cause is invisible unless somebody maps it. Keyword mapping to avoid cannibalisation is unglamorous work that pays off most on sites large enough to have forgotten what they published.",
+          "The failure it prevents is quiet. Two articles targeting the same term do not produce an error, they produce two pages that each rank slightly worse than one page would have, and the cause is invisible unless somebody maps it. Knowing how to fix keyword cannibalisation is unglamorous work that pays off most on sites large enough to have forgotten what they published.",
         ],
       },
       {

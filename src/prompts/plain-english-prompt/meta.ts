@@ -19,8 +19,7 @@ const meta: PromptMeta = {
       "how to rewrite jargon into plain language",
       "ai prompt for readability improvement",
       "plain language rules for public documents",
-      "keeping legal meaning while simplifying wording",
-      "explaining a technical term on first use",
+      "how to simplify legal wording without changing meaning",
     ],
     seoTitle: "Plain English Prompt: Keep The Terms That Bind",
     seoDescription:
@@ -112,7 +111,7 @@ Finish with the glossary as a list, and the count of ambiguities found.`,
         body: [
           "Explaining a technical term on first use is a better move than removing it, and it is underused because it feels like a compromise. It is not. The reader will meet that word again in the next letter, on the phone and in the appeal form, so teaching it once is more useful than translating it away here and leaving them unequipped for everywhere else.",
           "The gloss format is constrained to eight words for a reason. Longer glosses turn into explanations, explanations attract caveats, and the caveats reintroduce the density the rewrite was meant to remove. Eight words is enough for a plain statement of scope and not enough for a second clause.",
-          "Keeping legal meaning while simplifying wording therefore works on two tracks at once. The sentences around the term get shorter, more direct and honest about who is acting. The term itself does not move. Readers report the result as much clearer even though the hardest words are still on the page, because what was actually blocking them was the structure.",
+          "How to simplify legal wording without changing meaning therefore comes down to two tracks at once. The sentences around the term get shorter, more direct and honest about who is acting. The term itself does not move. Readers report the result as much clearer even though the hardest words are still on the page, because what was actually blocking them was the structure.",
         ],
       },
       {

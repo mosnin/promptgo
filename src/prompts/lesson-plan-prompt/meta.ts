@@ -17,7 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "lesson plan prompt",
       "ai lesson plan generator for teachers",
-      "writing a lesson plan around a learning objective",
+      "chatgpt prompt for lesson planning",
       "differentiation ideas for mixed ability classes",
       "how to plan a lesson in twenty minutes",
       "lesson plan with checks for understanding",
@@ -120,7 +120,7 @@ Produce exactly these sections.
       {
         heading: "Writing a lesson plan around a learning objective",
         body: [
-          "Writing a lesson plan around a learning objective is the only version of the task worth doing, because the objective is what decides which activities earn their place. Everything else is decoration that fills time.",
+          "A chatgpt prompt for lesson planning is only worth running when it starts from the objective, because the objective is what decides which activities earn their place. Everything else is decoration that fills time.",
           "The prompt therefore refuses vague objectives. If you write that students will understand osmosis, it rewrites that as something observable, such as predicting the direction of water movement given two concentrations, and tells you it has done so. That rewrite is often the most useful thirty seconds of the exchange, because an objective nobody can observe cannot be assessed and cannot be planned towards.",
         ],
       },

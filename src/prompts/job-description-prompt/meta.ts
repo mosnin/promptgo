@@ -18,9 +18,7 @@ const meta: PromptMeta = {
       "job description prompt",
       "how to write a job ad that attracts good candidates",
       "ai prompt for writing a role specification",
-      "cutting requirements nobody actually needs",
-      "job description based on first ninety days",
-      "writing a job ad without corporate filler",
+      "job description template for a new role",
     ],
     seoTitle: "Job Description Prompt: Describe The Actual Work",
     seoDescription:
@@ -128,7 +126,7 @@ Banned: rockstar, ninja, wear many hats, fast paced environment, work hard play 
         heading: "Opening with the first ninety days",
         body: [
           "A candidate deciding whether to apply is trying to picture the work. Responsibilities written as ongoing abstractions do not support that, whereas a concrete account of what they will take over, build and change in three months does.",
-          "It also disciplines the hiring manager. Writing a job description based on first ninety days requires knowing what the person is for, and roles that cannot be described this way are usually roles that have not been thought through, which is worth discovering before you interview twenty people.",
+          "It also disciplines the hiring manager. A job description template for a new role that opens with the first ninety days requires knowing what the person is for, and roles that cannot be described this way are usually roles that have not been thought through, which is worth discovering before you interview twenty people.",
         ],
       },
       {

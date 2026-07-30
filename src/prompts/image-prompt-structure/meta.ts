@@ -17,8 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "image prompt structure",
       "slot order in an image prompt",
-      "front loading the subject",
-      "removing one slot at a time",
+      "why word order matters in an image prompt",
       "how to rewrite a messy image description",
       "words that do no work in a prompt",
     ],
@@ -107,7 +106,7 @@ STEP 5. For each removal, predict specifically what the model will substitute in
       {
         heading: "The first few words carry more weight",
         body: [
-          "Front loading the subject is the one ordering rule that survives across every generator I have tested. Terms early in the text tend to exert more influence, so a description that opens with three adjectives about mood and reaches the actual noun in the second clause has spent its strongest position on atmosphere.",
+          "Front loading the subject is the one ordering rule that survives across every generator tested, and it is why word order matters in an image prompt. Terms early in the text tend to exert more influence, so a description that opens with three adjectives about mood and reaches the actual noun in the second clause has spent its strongest position on atmosphere.",
           "The anchor position exists to enforce that. One noun, first, before anything modifies it. Everything else is arranged behind it in an order that makes the competition visible.",
         ],
       },

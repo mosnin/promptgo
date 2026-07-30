@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "ab test analysis prompt",
       "how to read an ab test result",
-      "stopping a test early inflates false positives",
-      "minimum detectable effect before launch",
+      "how to tell if an ab test is underpowered",
+      "how to calculate minimum detectable effect",
       "ai prompt for experiment readout",
-      "underpowered test cannot declare a winner",
     ],
     seoTitle: "AB Test Analysis Prompt: Call It Honestly or Not at All",
     seoDescription:
@@ -114,7 +113,7 @@ CRITICAL: no segment level winners. If asked which segment responded best, answe
         heading: "If nothing was prespecified, it is not a test",
         body: [
           "Fixing a primary metric and a minimum detectable effect before launch is what separates an experiment from a rummage through a dashboard. Without it, the metric that looks best after the fact becomes the primary metric, and with enough secondary metrics one of them always looks good.",
-          "Setting a minimum detectable effect before launch also does something people find annoying and useful: it tells you how long the test must run before it can say anything. Teams frequently discover at this point that detecting the effect they care about would take eleven weeks at current traffic, which is a genuine finding and better learned in advance.",
+          "Working out how to calculate minimum detectable effect before launch also does something people find annoying and useful: it tells you how long the test must run before it can say anything. Teams frequently discover at this point that detecting the effect they care about would take eleven weeks at current traffic, which is a genuine finding and better learned in advance.",
           "Where nothing was written down, the prompt labels the analysis exploratory and stops calling anything a winner. That label is not a formality. It changes what the result can justify from a rollout to a hypothesis for a properly designed run.",
         ],
       },
@@ -126,9 +125,9 @@ CRITICAL: no segment level winners. If asked which segment responded best, answe
         ],
       },
       {
-        heading: "Stopping a test early inflates false positives",
+        heading: "How to tell if an ab test is underpowered or stopped early",
         body: [
-          "Stopping a test early inflates false positives, and this is the failure mode that survives every process improvement because it feels like efficiency. Results are checked daily, the variant crosses a threshold on day nine, the test is stopped and the win is banked. Nothing about that sequence feels like cheating.",
+          "How to tell if an ab test is underpowered starts with the stopping rule, the failure mode that survives every process improvement because it feels like efficiency. Results are checked daily, the variant crosses a threshold on day nine, the test is stopped and the win is banked. Nothing about that sequence feels like cheating.",
           "The mechanism is simple enough to state plainly. Each look is another chance for random variation to cross the line, so a test peeked at daily for two weeks has many more opportunities to produce an apparent win than the nominal error rate assumes. Stopping the moment it does converts noise into a decision.",
           "This is why the prompt asks how many times results were viewed and whether any action followed. It cannot correct the error rate without knowing the stopping rule, and it says so rather than pretending the standard calculation still applies.",
         ],

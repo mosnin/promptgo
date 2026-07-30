@@ -19,9 +19,9 @@ const meta: PromptMeta = {
       "midjourney prompt template",
       "how to vary one variable in an image prompt",
       "midjourney parameters for aspect ratio and stylize",
-      "using the no parameter in midjourney",
-      "consistent style across an image set",
-      "lighting and lens vocabulary",
+      "how to use the no parameter in midjourney",
+      "how to keep a consistent style in midjourney",
+      "midjourney prompt words for lighting and lens",
     ],
     seoTitle: "Midjourney Prompt Template: Seven Slots, One Variable",
     seoDescription:
@@ -119,7 +119,7 @@ Produce five numbered variants. Every slot is identical to variant one except th
         ],
       },
       {
-        heading: "Lighting and lens vocabulary beats piling up adjectives",
+        heading: "Midjourney prompt words for lighting and lens beat adjectives",
         body: [
           "Words like moody, cinematic and atmospheric are requests for a feeling and the model has to guess at the mechanics that produce it. Naming the mechanics is more reliable. Low sun from behind and left, hard shadows, long throw is a specification. Cinematic is a mood board.",
           "Lighting and lens vocabulary is worth learning for exactly this reason. Focal length, aperture, height and direction are all things a photographer would state and a model has seen described in captions thousands of times. An 85mm at chest height gives a different portrait from a 24mm at the same distance, and both are more predictable than asking for a stunning portrait.",
@@ -150,14 +150,14 @@ Produce five numbered variants. Every slot is identical to variant one except th
       {
         heading: "Subtraction is a slot too",
         body: [
-          "Using the no parameter in midjourney is the fastest fix for the recurring intrusions: text baked into the image, watermarks, logos on clothing, the stock photography smile. Listing them once at the end of your template means you stop rediscovering them one at a time.",
+          "How to use the no parameter in midjourney is the fastest fix for the recurring intrusions: text baked into the image, watermarks, logos on clothing, the stock photography smile. Listing them once at the end of your template means you stop rediscovering them one at a time.",
           "It is a blunt instrument and worth knowing the limits. Excluding a concept sometimes suppresses things adjacent to it, so removing hands from a scene of someone working can remove the work as well. When a negative list starts fighting the subject slot, the subject is usually the thing to rewrite.",
         ],
       },
       {
         heading: "Reusing the midjourney prompt template across a campaign",
         body: [
-          "Consistent style across an image set is the requirement that separates a professional deliverable from a folder of pleasing single images. Six locked slots and one variable gives you that by construction: the medium, palette and light stay word for word identical while the subject changes across twelve pictures.",
+          "How to keep a consistent style in midjourney is the requirement that separates a professional deliverable from a folder of pleasing single images. Six locked slots and one variable gives you that by construction: the medium, palette and light stay word for word identical while the subject changes across twelve pictures.",
           "Store the locked half as a saved snippet and only ever edit the subject and action fields. When someone asks for a new image nine months later, the string is still there and the result still matches the set, which is not something a memorable one off prompt can offer.",
         ],
       },

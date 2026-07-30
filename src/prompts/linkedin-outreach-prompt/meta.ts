@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "linkedin outreach prompt",
       "how to write a connection request that gets accepted",
       "ai prompt for social selling messages",
-      "linkedin message that does not sound automated",
+      "linkedin outreach message examples",
       "what to say in a first linkedin message",
-      "outreach based on what someone posted",
+      "how to personalise a linkedin message",
     ],
     seoTitle: "LinkedIn Outreach Prompt: Short Notes People Accept",
     seoDescription:
@@ -112,7 +112,7 @@ Finally, state honestly whether this person is worth contacting at all based on 
         heading: "Why a job title is not a signal",
         body: [
           "The stop condition exists because outreach built on a title is indistinguishable from outreach generated in bulk, and recipients have calibrated on exactly that. A message that could have been sent to four hundred people with the same title gets treated as though it was.",
-          "A real signal is something the person chose to put into the world: a post, a comment, a talk, an article, a job they posted. Outreach based on what someone posted works because it is evidence of attention that could not have been faked at scale, and that evidence is the entire value of the channel over email.",
+          "A real signal is something the person chose to put into the world: a post, a comment, a talk, an article, a job they posted. How to personalise a linkedin message has one answer, which is to reference what someone posted, because that is evidence of attention which could not have been faked at scale, and that evidence is the entire value of the channel over email.",
         ],
         list: [
           "A post describing a problem: the strongest signal available, because they named it themselves.",
@@ -132,7 +132,7 @@ Finally, state honestly whether this person is worth contacting at all based on 
         heading: "What makes the linkedin outreach prompt output sound human",
         body: [
           "Most output from an ai prompt for social selling messages fails on phrasing rather than on strategy. The banned phrase list covers the constructions that signal automation, and each ban is specific rather than a general instruction to sound natural. Coming across a profile, picking a brain, hoping someone is well: these are not merely tired, they are the exact phrases people associate with bulk sending.",
-          "The deeper rule is the one banning any sentence a tool could generate from a job title alone. That is the real test, and applying it removes most of what would otherwise survive. A linkedin message that does not sound automated is usually one that could only have been written about that specific person.",
+          "The deeper rule is the one banning any sentence a tool could generate from a job title alone. That is the real test, and applying it removes most of what would otherwise survive. The linkedin outreach message examples that work are the ones that could only have been written about that specific person.",
         ],
       },
       {

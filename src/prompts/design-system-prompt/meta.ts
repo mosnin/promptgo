@@ -18,10 +18,9 @@ const meta: PromptMeta = {
     keywords: [
       "design system prompt",
       "how to audit component variants",
-      "naming design tokens consistently",
-      "component deprecation plan",
-      "type scale and spacing scale rules",
-      "reducing duplicate button variants",
+      "how to name design tokens",
+      "how to deprecate a design system component",
+      "how to define a type scale",
     ],
     seoTitle: "Design System Prompt: Merge What You Already Have",
     seoDescription:
@@ -123,14 +122,14 @@ Finally, add a list titled NOT WORTH IT for any merge that would require redesig
         ],
       },
       {
-        heading: "Naming design tokens consistently is a search problem",
+        heading: "How to name design tokens is a search problem",
         body: [
           "Names exist so someone can find the thing without asking. That reframes the whole exercise: the test of a name is whether a designer who has never seen it types the right word into the search box on the first attempt, not whether it reads elegantly in the documentation.",
           "Naming design tokens consistently means committing to a pattern and accepting that some names get uglier. A rule such as surface-raised-hover is unlovely and predictable, and predictable beats lovely at the moment someone is looking for it while under deadline. Pass two flags names that turn ambiguous under the rule, which is where you make the exceptions deliberately rather than by accident.",
         ],
       },
       {
-        heading: "Type scale and spacing scale rules need their exceptions named",
+        heading: "How to define a type scale and name its exceptions",
         body: [
           "Type scale and spacing scale rules fail the same way in every organisation. Someone defines a clean scale, someone else needs 13px for a dense data table, the exception ships without a label, and within a year the scale has fourteen steps and no longer constrains anything.",
           "The third pass forces every off scale value into one of two buckets: mistake or exception with a reason. A labelled exception is fine. Dense financial tables genuinely need a tighter step, and saying so in the token file is how the next person knows not to delete it. An unlabelled one is indistinguishable from a typo, and after a year nobody can tell which it was.",
@@ -153,7 +152,7 @@ Finally, add a list titled NOT WORTH IT for any merge that would require redesig
       {
         heading: "Turning the merge plan into a component deprecation plan",
         body: [
-          "A component deprecation plan is what engineering can actually schedule. For each survivor it needs the old names, the new name, what breaks at the call site, whether a find and replace covers it, and the release the old name stops being supported.",
+          "How to deprecate a design system component is the part engineering can actually schedule. For each survivor it needs the old names, the new name, what breaks at the call site, whether a find and replace covers it, and the release the old name stops being supported.",
           "Keep the deprecated component alive and visibly marked for at least one release cycle. Deleting on the day of the merge means the migration lands as a broken build for whichever squad was mid feature, and the system gets blamed for a scheduling decision.",
         ],
       },

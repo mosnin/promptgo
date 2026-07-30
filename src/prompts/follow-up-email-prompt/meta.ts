@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "ai prompt for sales follow up sequence",
       "what to write when a prospect goes quiet",
       "breakup email template for sales",
-      "second touch email that adds value",
+      "sales follow up email examples",
     ],
     seoTitle: "Follow Up Email Prompt: Write Ones Worth Opening",
     seoDescription:
@@ -134,7 +134,7 @@ Return the subject line, the message, and one line naming what new thing you add
       {
         heading: "Sequencing across touches",
         body: [
-          "Each message needs a different kind of new thing, which is the point of passing the touch number in. A second touch email that adds value with an example, followed by a third that offers a resource, reads as sustained interest. Two examples in a row reads as a template with the variables swapped.",
+          "Each message needs a different kind of new thing, which is the point of passing the touch number in. The sales follow up email examples that work add something each time, an example on the second touch and a resource on the third, which reads as sustained interest. Two examples in a row reads as a template with the variables swapped.",
           "Spacing matters less than variety but is still worth planning. Roughly a week between the first and second, two weeks before the third, then the closing message when the gap stops feeling reasonable. If an ai prompt for sales follow up sequence tells you to send five messages in nine days, it is optimising for activity rather than replies.",
         ],
       },

@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "reading comprehension prompt",
     keywords: [
       "reading comprehension prompt",
-      "comprehension questions from any text",
-      "inference questions that need evidence",
-      "vocabulary in context questions",
+      "how to write comprehension questions",
+      "how to write inference questions",
+      "vocabulary in context questions examples",
       "ai prompt for guided reading questions",
-      "checking a student read the text",
     ],
     seoTitle: "Reading Comprehension Prompt: Questions With Teeth",
     seoDescription:
@@ -104,7 +103,7 @@ Return.
   article: {
     intro: [
       "A reading comprehension prompt has one job that is easy to state and hard to do: produce questions that cannot be answered without reading the passage. Most question sets, generated or otherwise, fail this. Students learn very early that scanning for a matching phrase, or guessing from the title, gets most of the marks.",
-      "Generating comprehension questions from any text is not the difficult part. Any model will do that in seconds. The difficult part is the filtering, and this prompt is mostly filtering: no general knowledge, no paraphrased stems that give the answer away, no feelings questions, and one deliberate trap for the student who skimmed.",
+      "Knowing how to write comprehension questions from any text is not the difficult part. Any model will do that in seconds. The difficult part is the filtering, and this prompt is mostly filtering: no general knowledge, no paraphrased stems that give the answer away, no feelings questions, and one deliberate trap for the student who skimmed.",
     ],
 
     sections: [
@@ -118,7 +117,7 @@ Return.
       {
         heading: "Inference is where the marks are lost",
         body: [
-          "Inference questions that need evidence are the ones that separate readers, and they are the ones most commonly written badly. A question asking what the reader thinks the character feels can be answered plausibly with no reference to the page at all, and marking it fairly becomes impossible.",
+          "Inference questions separate readers, and how to write inference questions that need evidence is the part most commonly done badly. A question asking what the reader thinks the character feels can be answered plausibly with no reference to the page at all, and marking it fairly becomes impossible.",
           "The prompt requires two things instead. The student must point to the words carrying the inference, and the answer notes must name those words. That makes the question markable by someone other than the person who wrote it, and it makes the discussion afterwards about the text rather than about opinions.",
         ],
         subsections: [
@@ -131,7 +130,7 @@ Return.
           {
             heading: "Vocabulary that a dictionary will not solve",
             body: [
-              "Vocabulary in context questions only work when the word means something different here from its everyday sense. Asking what arduous means tests whether a student owns the word. Asking what charged means in a sentence about a courtroom tests whether they read the sentence.",
+              "Vocabulary in context questions examples are worth collecting, because they only work when the word means something different here from its everyday sense. Asking what arduous means tests whether a student owns the word. Asking what charged means in a sentence about a courtroom tests whether they read the sentence.",
             ],
           },
         ],

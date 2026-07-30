@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "summarise document prompt",
       "how to summarise a long report accurately",
       "ai prompt for condensing a document",
-      "summary that keeps the caveats intact",
-      "extracting the decision from a long document",
-      "avoiding hallucinated detail in a summary",
+      "ai prompt for extracting key decisions",
+      "how to stop ai making things up in a summary",
     ],
     seoTitle: "Summarise Document Prompt: Anchored, Caveats Kept",
     seoDescription:
@@ -141,14 +140,14 @@ Do not add causal links the document does not make. Two findings in adjacent sec
         heading: "What the document claims and what it shows",
         body: [
           "Marking every claim as demonstrated or asserted turns a summary into something closer to an assessment. Long documents contain both in quantity, and the difference is invisible once both have been paraphrased into the same neutral register by the same summariser.",
-          "Extracting the decision from a long document depends on this split. Three asserted findings pointing one way and one demonstrated finding pointing the other is a materially different situation from four findings agreeing, and only the labelled version lets you see which one you are in. The summary only marker is the sharpest of the three, since a claim that appears in an abstract and nowhere in the body is a claim the author chose not to defend.",
+          "Any ai prompt for extracting key decisions depends on this split. Three asserted findings pointing one way and one demonstrated finding pointing the other is a materially different situation from four findings agreeing, and only the labelled version lets you see which one you are in. The summary only marker is the sharpest of the three, since a claim that appears in an abstract and nowhere in the body is a claim the author chose not to defend.",
         ],
       },
       {
         heading: "Blocking invented connective tissue",
         body: [
           "The characteristic failure of any ai prompt for condensing a document is not fabricated facts. It is fabricated relationships. Two accurate findings from different sections get joined by a because or a therefore that the source never wrote, and the summary now contains an argument the document does not make.",
-          "Avoiding hallucinated detail in a summary therefore needs a rule about connectives specifically, not just an instruction to stay faithful. Adjacency in a summary is an artefact of compression. The contradictions section works on the same principle from the other direction, since a document that disagrees with itself in two places will read as coherent once a summariser has smoothed both into a single voice.",
+          "How to stop ai making things up in a summary therefore needs a rule about connectives specifically, not just an instruction to stay faithful. Adjacency in a summary is an artefact of compression. The contradictions section works on the same principle from the other direction, since a document that disagrees with itself in two places will read as coherent once a summariser has smoothed both into a single voice.",
         ],
       },
     ],

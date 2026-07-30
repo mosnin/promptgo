@@ -18,9 +18,7 @@ const meta: PromptMeta = {
       "headline writing prompt",
       "how to write a headline that is not clickbait",
       "ai prompt for article title ideas",
-      "headline that states the specific claim",
-      "testing headlines against the actual article",
-      "writing subheads that carry the argument",
+      "how to write subheadings for an article",
     ],
     seoTitle: "Headline Writing Prompt: Promise With A Payload",
     seoDescription:
@@ -126,7 +124,7 @@ Never use a word or figure that has no basis in the article. Never promise a num
         heading: "Subheads carry the same weight",
         body: [
           "Subheads are treated as decoration in most drafts and as navigation by most readers, who scan them before deciding whether to start. A set that reads Background, The Problem, Analysis, What Next tells a scanner nothing and gives them no reason to commit.",
-          "Writing subheads that carry the argument means the list works alone. Read in sequence with no body text between them, they should compress into a coherent summary of the case. When they do not, the gap is almost never a wording problem, it is a place where the argument itself jumps.",
+          "The test of how to write subheadings for an article is whether the list works alone. Read in sequence with no body text between them, they should compress into a coherent summary of the case. When they do not, the gap is almost never a wording problem, it is a place where the argument itself jumps.",
           "This is also why subheads belong in the same pass as the headline rather than in a separate one. The headline sets the promise and the subheads show the reader where along the way it gets kept, so writing them apart tends to produce a headline arguing one thing and a spine describing another.",
         ],
       },

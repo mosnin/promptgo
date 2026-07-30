@@ -18,9 +18,7 @@ const meta: PromptMeta = {
       "rewrite for clarity prompt",
       "how to make a paragraph easier to read",
       "ai prompt for simplifying dense sentences",
-      "rewriting a draft without losing the meaning",
-      "sentence length variation in edited copy",
-      "clarity edit that preserves the author voice",
+      "how to rewrite a draft without changing the meaning",
     ],
     seoTitle: "Rewrite For Clarity Prompt: Diagnose Then Rewrite",
     seoDescription:
@@ -118,7 +116,7 @@ Close with the number of sentences you left untouched and the number of content 
         heading: "The content gap marker",
         body: [
           "Some sentences are not badly written. They are empty. A phrase such as the appropriate stakeholders will be engaged at the relevant point cannot be clarified, because there is nothing underneath it to clarify. A model asked to improve it will invent a stakeholder and a point, and the invented version reads well enough that nobody notices the fabrication.",
-          "Printing CONTENT GAP and a question instead is the single most valuable behaviour in this prompt. Rewriting a draft without losing the meaning depends on the meaning existing in the first place, and the gaps are where it does not. In documentation work they tend to cluster around ownership and timing, which is exactly where an invented specific does the most damage.",
+          "Printing CONTENT GAP and a question instead is the single most valuable behaviour in this prompt. How to rewrite a draft without changing the meaning depends on the meaning existing in the first place, and the gaps are where it does not. In documentation work they tend to cluster around ownership and timing, which is exactly where an invented specific does the most damage.",
         ],
       },
       {

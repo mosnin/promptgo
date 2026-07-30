@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "sales discovery questions generator",
       "ai prompt for qualifying leads",
       "discovery call script for saas sales",
-      "questions to ask on a first sales call",
+      "what to ask on a first sales call",
       "how to qualify a prospect with ai",
     ],
     seoTitle: "Discovery Call Prompt: Plan Questions That Qualify",
@@ -99,7 +99,7 @@ Do not write a script. Do not include rapport building small talk. Do not sugges
       {
         heading: "Why first calls turn into demos",
         body: [
-          "Most lists of questions to ask on a first sales call fail at a predictable moment, about eleven minutes in, when the rep runs out of them. The prospect has given short answers, the silence is uncomfortable, and the only material the rep has left is the product. So they offer to show it, the call becomes a demo, and everyone leaves without establishing whether a problem exists.",
+          "Most guidance on what to ask on a first sales call fails at a predictable moment, about eleven minutes in, when the rep runs out of questions. The prospect has given short answers, the silence is uncomfortable, and the only material the rep has left is the product. So they offer to show it, the call becomes a demo, and everyone leaves without establishing whether a problem exists.",
           "The cause is not nerves, it is preparation. Five questions written in advance, each pointed at a different dimension of the problem, removes the moment entirely, because there is always a next question that is not about the product.",
         ],
       },

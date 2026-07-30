@@ -16,10 +16,8 @@ const meta: PromptMeta = {
     primaryKeyword: "paragraph restructure prompt",
     keywords: [
       "paragraph restructure prompt",
-      "reordering sentences inside a paragraph",
       "ai prompt for fixing information order",
-      "when a paragraph makes sense only on second reading",
-      "topic sentence that arrives too late",
+      "how to fix a weak topic sentence",
       "how to reorder a paragraph without rewriting it",
     ],
     seoTitle: "Paragraph Restructure Prompt: Move Cards, Not Words",
@@ -110,7 +108,7 @@ Finish by naming any card you would cut and what the reader still knows without 
         heading: "Forward references, absorbed silently",
         body: [
           "A forward reference is a sentence that assumes something the passage has not said yet. Readers do not stop and complain. They hold the sentence open, carry on, and close it later if the answer arrives, and the cost shows up as a general sense that the piece is heavy going.",
-          "Making the model list them before it proposes anything separates diagnosis from treatment. You see how many there are and where they cluster, which is often one paragraph doing the work of two. A topic sentence that arrives too late is the most common single instance: the passage spends four sentences on evidence for a claim it has not yet made.",
+          "Making the model list them before it proposes anything separates diagnosis from treatment. You see how many there are and where they cluster, which is often one paragraph doing the work of two. How to fix a weak topic sentence is the most common single instance, where the passage spends four sentences on evidence for a claim it has not yet made.",
         ],
       },
       {

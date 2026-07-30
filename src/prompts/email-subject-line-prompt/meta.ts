@@ -19,8 +19,8 @@ const meta: PromptMeta = {
       "ai prompt for higher email open rates",
       "how to write subject lines that avoid spam filters",
       "subject line ideas for newsletters",
-      "testing subject line hooks not adjectives",
-      "preview text and subject line pairing",
+      "how to test email subject lines",
+      "email preview text best practices",
     ],
     seoTitle: "Email Subject Line Prompt: Five Hooks, One Winner",
     seoDescription:
@@ -110,7 +110,7 @@ Finish by naming which two of the five to test against each other and why those 
         heading: "The subject line and preview text are one unit",
         body: [
           "Most inbox clients show roughly forty characters of preview text next to the subject, and most senders leave it to be filled with the first line of the email, which is usually a greeting or a view in browser link. That wastes about a third of the space competing for the open.",
-          "Generating both together forces them to work as a sentence in two parts. The rule that the preview may not repeat words from the subject sounds fussy and is the single change that most improves the pairing, because repetition is what a model does by default when asked for both separately. Getting preview text and subject line pairing right is close to free and almost universally skipped.",
+          "Generating both together forces them to work as a sentence in two parts. The rule that the preview may not repeat words from the subject sounds fussy and is the single change that most improves the pairing, because repetition is what a model does by default when asked for both separately. Following email preview text best practices is close to free and almost universally skipped.",
         ],
       },
       {
@@ -189,9 +189,9 @@ Finish by naming which two of the five to test against each other and why those 
           "The prompt allows one only when the sender is a named individual, because emoji from a person reads as informal and from a brand reads as a campaign. They also render inconsistently across clients, so never let one carry meaning the words do not also carry.",
       },
       {
-        question: "Why does testing subject line hooks not adjectives matter so much?",
+        question: "How to test email subject lines so the result is worth having?",
         answer:
-          "Because the hook is the reusable finding. Learning that your audience responds to specificity over curiosity changes your landing pages and ads too, whereas learning that one adjective beat another tells you nothing you can apply anywhere else.",
+          "Test one hook against another rather than one adjective against another, because the hook is the reusable finding. Learning that your audience responds to specificity over curiosity changes your landing pages and ads too, whereas learning that one adjective beat another tells you nothing you can apply anywhere else.",
       },
     ],
 

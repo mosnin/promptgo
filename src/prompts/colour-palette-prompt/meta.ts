@@ -17,10 +17,10 @@ const meta: PromptMeta = {
     keywords: [
       "colour palette prompt",
       "accessible contrast ratios for ui colours",
-      "role based colour tokens",
-      "dark mode palette from a light palette",
+      "how to use role based colour tokens",
+      "how to make a dark mode palette",
       "how to pick an accent colour",
-      "measuring contrast between surface and ink",
+      "how to measure contrast between two colours",
     ],
     seoTitle: "Colour Palette Prompt: Roles With Measured Contrast",
     seoDescription:
@@ -104,13 +104,13 @@ Finish with a list of every computed ratio between 4.0 and 5.0, because those ar
         heading: "Roles survive redesigns, swatches do not",
         body: [
           "A swatch named brand green tells you nothing about where it belongs, so it ends up everywhere: a button, a heading, a border, an icon, a chart series. Two years later nobody can change it, because changing it moves five unrelated things at once.",
-          "Role based colour tokens fix the ownership problem. Ink sits on canvas. Accent-ink sits on accent. When the brand shifts, you recompute the values behind the roles and every usage follows correctly, because each usage declared what it was doing rather than which colour it liked.",
+          "Knowing how to use role based colour tokens fixes the ownership problem. Ink sits on canvas. Accent-ink sits on accent. When the brand shifts, you recompute the values behind the roles and every usage follows correctly, because each usage declared what it was doing rather than which colour it liked.",
         ],
       },
       {
         heading: "Contrast is arithmetic, not an impression",
         body: [
-          "Measuring contrast between surface and ink is the part of palette work that has an answer. Two hex values produce one ratio, the ratio either clears the threshold for that text size or it does not, and no amount of confidence in the room changes the number.",
+          "How to measure contrast between two colours is the part of palette work that has an answer. Two hex values produce one ratio, the ratio either clears the threshold for that text size or it does not, and no amount of confidence in the room changes the number.",
           "Accessible contrast ratios for ui colours are also where palettes fail quietly. The body text usually passes because someone checked it. What fails is the disabled state, the placeholder, the caption under a chart, the hairline that separates two table rows, and the focus ring on a raised surface. Those pairings never get checked because nobody thinks of them as colour decisions.",
         ],
         subsections: [
@@ -139,7 +139,7 @@ Finish with a list of every computed ratio between 4.0 and 5.0, because those ar
       {
         heading: "Dark mode has to be recomputed, not flipped",
         body: [
-          "Building a dark mode palette from a light palette by inverting lightness produces the classic result: glowing white text on near black, saturated accents that vibrate, and shadows that have nothing to sit on. Perceived contrast does not survive inversion, because the eye responds differently to light on dark than to dark on light.",
+          "How to make a dark mode palette is not answered by inverting lightness, which produces the classic result: glowing white text on near black, saturated accents that vibrate, and shadows that have nothing to sit on. Perceived contrast does not survive inversion, because the eye responds differently to light on dark than to dark on light.",
           "Recomputing role by role handles it. Surfaces get lighter as they get closer rather than darker, since elevation in the dark reads as light. Accents usually need desaturating and often need a hue shift to stay distinguishable. Asking the model to name which roles required a hue change rather than a lightness change tells you exactly where the two themes will drift apart.",
         ],
       },

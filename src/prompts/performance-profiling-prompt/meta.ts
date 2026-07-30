@@ -17,9 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "performance profiling prompt",
       "reading a flame graph with ai",
-      "finding the bottleneck before optimising",
+      "how to find a performance bottleneck",
       "how to interpret a cpu profile",
-      "measuring before you optimise code",
       "ai prompt for latency investigation",
     ],
     seoTitle: "Performance Profiling Prompt: No Profile, No Advice",
@@ -123,9 +122,9 @@ Do not propose caching, parallelism or a rewrite in a faster language unless the
         ],
       },
       {
-        heading: "Finding the bottleneck before optimising anything",
+        heading: "How to find a performance bottleneck before optimising anything",
         body: [
-          "Finding the bottleneck before optimising is not a slogan about discipline, it is arithmetic. If a candidate holds 6 percent of the measured window, removing it entirely buys you 6 percent, and no amount of cleverness inside that frame changes the number.",
+          "How to find a performance bottleneck is not a question about discipline, it is arithmetic. If a candidate holds 6 percent of the measured window, removing it entirely buys you 6 percent, and no amount of cleverness inside that frame changes the number.",
           "So the ceiling step computes that bound for every candidate and discards anything that cannot close the gap to the budget on its own. It is unusual for more than two candidates to survive, and the ones that do not survive are frequently the ones the team had already agreed to work on.",
         ],
       },

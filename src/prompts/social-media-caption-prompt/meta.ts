@@ -16,9 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "social media caption prompt",
     keywords: [
       "social media caption prompt",
-      "caption that survives the see more cut",
+      "how to write the first line of a caption",
       "writing captions for multiple platforms at once",
-      "how many hashtags to use on a post",
+      "how many hashtags to use for instagram",
       "instagram caption prompt for brands",
       "alt text for a social media image",
     ],
@@ -112,7 +112,7 @@ CUT CHECK. For each hook, list the words you removed to fit the limit, so I can 
       {
         heading: "The truncation point is the real headline",
         body: [
-          "A caption that survives the see more cut has to make sense with everything after it deleted. That single rule removes most of what people write, including all the constructions that are trying to create curiosity, because curiosity requires the reader to believe there is a payoff and they have no reason to.",
+          "How to write the first line of a caption comes down to one rule: it has to make sense with everything after it deleted. That single rule removes most of what people write, including all the constructions that are trying to create curiosity, because curiosity requires the reader to believe there is a payoff and they have no reason to.",
           "The visible length varies by platform and changes without notice, so the constraint is supplied as an input rather than assumed. What does not change is the requirement. Whatever the number, the words inside it have to stand alone.",
         ],
         list: [
@@ -139,7 +139,7 @@ CUT CHECK. For each hook, list the words you removed to fit the limit, so I can 
       {
         heading: "Hashtags are a discovery tool, not decoration",
         body: [
-          "The question of how many hashtags to use on a post has an unsatisfying answer, which is as few as are genuinely searched. Three is the ceiling here because past that they stop being navigation and start being a visual block at the bottom of the caption that readers skip.",
+          "The question of how many hashtags to use for instagram has an unsatisfying answer, which is as few as are genuinely searched. Three is the ceiling here because past that they stop being navigation and start being a visual block at the bottom of the caption that readers skip.",
           "The test applied is whether a real person would follow or search that tag. Invented branded tags fail it unless the tag already has a body of posts behind it, in which case it is doing something. An empty branded tag is a link to a room with nobody in it.",
         ],
       },

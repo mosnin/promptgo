@@ -19,8 +19,7 @@ const meta: PromptMeta = {
       "ai prompt for writing an sop",
       "how to document a process you do from memory",
       "standard operating procedure template for small teams",
-      "writing a handover document before leaving",
-      "capturing tacit knowledge from an expert",
+      "how to write a handover document",
     ],
     seoTitle: "Process Documentation Prompt: Write A Usable SOP",
     seoDescription:
@@ -162,7 +161,7 @@ Write for the reader named above. Assume no context beyond what section two list
       {
         heading: "Handover documents and the deadline problem",
         body: [
-          "The highest stakes version of this is writing a handover document before leaving, where there is a fixed date and no opportunity to answer follow up questions afterwards. The interview structure matters more here, because the usual safety net, being available on chat for a fortnight, does not exist.",
+          "The highest stakes version of this is knowing how to write a handover document before leaving, where there is a fixed date and no opportunity to answer follow up questions afterwards. The interview structure matters more here, because the usual safety net, being available on chat for a fortnight, does not exist.",
           "For handovers, run the prompt once per distinct process rather than attempting one large document. An ai prompt for writing an sop produces a usable result at the scale of a single task and a sprawling one at the scale of a whole role.",
         ],
       },

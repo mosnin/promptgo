@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "logo brief prompt",
       "how to write a logo design brief",
-      "logo that works at small sizes",
-      "three divergent logo directions",
-      "ruling out cliche logo concepts",
-      "describing a mark over the phone",
+      "how to design a logo that works at small sizes",
+      "logo brief template",
+      "how to avoid cliche logo ideas",
     ],
     seoTitle: "Logo Brief Prompt: Write The Brief, Not The Mark",
     seoDescription:
@@ -116,7 +115,7 @@ Never use the words modern, clean, dynamic, innovative or timeless anywhere in t
         heading: "Directions have to differ in kind",
         body: [
           "Ask any tool for three concepts and you get three executions of one concept, usually a monogram in three weights. That is not a choice, it is a preference test, and it wastes the round of feedback that would otherwise settle the actual question.",
-          "Three divergent logo directions means three different answers to what the mark is: a wordmark that carries everything in the letterforms, an abstract mark that means nothing until it is learned, a pictorial mark that gives up flexibility for immediate recognition. Choosing between those is a strategic decision the client is qualified to make, and it can be made before anything is drawn.",
+          "A logo brief template asks for three divergent directions, which are three different answers to what the mark is: a wordmark that carries everything in the letterforms, an abstract mark that means nothing until it is learned, a pictorial mark that gives up flexibility for immediate recognition. Choosing between those is a strategic decision the client is qualified to make, and it can be made before anything is drawn.",
         ],
         subsections: [
           {
@@ -130,14 +129,14 @@ Never use the words modern, clean, dynamic, innovative or timeless anywhere in t
       {
         heading: "The kill list saves the second round",
         body: [
-          "Ruling out cliche logo concepts in advance is the single highest value section, and it only works when the list is specific. Banning swooshes and globes is useless because nobody was going to propose one. Banning the three shapes that four of your competitors already use is the version that changes what gets drawn.",
+          "Knowing how to avoid cliche logo ideas in advance is the single highest value section, and it only works when the list is specific. Banning swooshes and globes is useless because nobody was going to propose one. Banning the three shapes that four of your competitors already use is the version that changes what gets drawn.",
           "This is where the model genuinely helps, because it has seen the sector's visual conventions in bulk. Give it a real sector and it will name the sound wave, the abstract ear, the pair of overlapping speech marks. Give it a vague description and it returns the swoosh, which tells you the input was too thin.",
         ],
       },
       {
         heading: "Why the logo brief prompt starts from the smallest placement",
         body: [
-          "Constraints derived from the largest use are always generous and always wrong. A logo that works at small sizes is a much harder specification, and since the favicon, the app icon and the embossed case are where most people encounter a mark most often, it is also the specification that matters.",
+          "Constraints derived from the largest use are always generous and always wrong. How to design a logo that works at small sizes is a much harder specification, and since the favicon, the app icon and the embossed case are where most people encounter a mark most often, it is also the specification that matters.",
           "Working from the smallest placement produces numbers rather than opinions: a minimum stroke weight, a cap on distinct elements, a requirement to survive in one colour. Those are checkable, and they kill the delicate three colour mark early rather than after two rounds of refinement.",
         ],
       },

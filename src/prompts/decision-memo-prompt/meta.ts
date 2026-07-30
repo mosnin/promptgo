@@ -19,7 +19,6 @@ const meta: PromptMeta = {
       "how to write a one page decision memo",
       "ai prompt for business case writing",
       "template for proposing a decision to leadership",
-      "documenting a decision and its assumptions",
       "decision memo prompt for managers",
     ],
     seoTitle: "Decision Memo Prompt: Force A Yes Or A No",

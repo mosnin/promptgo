@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "metric definition prompt",
     keywords: [
       "metric definition prompt",
-      "defining the denominator of a metric",
+      "metric definition template",
       "why two teams report different numbers",
       "ai prompt for a metric spec",
       "which timestamp a metric should use",
-      "edge cases in an active user count",
+      "how to define active users",
     ],
     seoTitle: "Metric Definition Prompt: End the Two Numbers Problem",
     seoDescription:
@@ -114,7 +114,7 @@ Never invent a field that is not in the sources list. Where the sources cannot s
         heading: "A metric is a numerator, a denominator and a list of exclusions",
         body: [
           "Most metric disputes are exclusion disputes. Both sides agree on what a purchase is and disagree about refunds, staff orders, test accounts and the reseller who places forty identical orders a month. None of that is visible in the metric's name, and all of it moves the number.",
-          "Defining the denominator of a metric takes longer than defining the numerator and gets a fraction of the attention. Conversion rate over what: sessions, visitors, eligible visitors, visitors who reached the page where conversion was possible? Those four denominators produce four rates from one set of events, and each is defensible in isolation.",
+          "The denominator line in a metric definition template takes longer to settle than the numerator and gets a fraction of the attention. Conversion rate over what: sessions, visitors, eligible visitors, visitors who reached the page where conversion was possible? Those four denominators produce four rates from one set of events, and each is defensible in isolation.",
         ],
       },
       {
@@ -132,9 +132,9 @@ Never invent a field that is not in the sources list. Where the sources cannot s
         ],
       },
       {
-        heading: "Edge cases in an active user count",
+        heading: "How to define active users at the edges",
         body: [
-          "Edge cases in an active user count are where a specification is either useful or decorative. The prompt demands at least eight rulings because models reliably produce four obvious ones and stop, and the fifth through eighth are the ones that come up in practice.",
+          "How to define active users at the edges is where a specification is either useful or decorative. The prompt demands at least eight rulings because models reliably produce four obvious ones and stop, and the fifth through eighth are the ones that come up in practice.",
         ],
         list: [
           "A user who opened the app, saw an error screen and closed it.",

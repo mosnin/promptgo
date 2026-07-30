@@ -18,8 +18,7 @@ const meta: PromptMeta = {
       "okr writing prompt",
       "how to write key results that are measurable",
       "ai prompt for quarterly goal setting",
-      "difference between a key result and a task",
-      "setting a baseline before a target",
+      "what is the difference between a key result and a task",
       "writing okrs for a small team",
     ],
     seoTitle: "OKR Writing Prompt: Key Results, Not A Task List",
@@ -109,7 +108,7 @@ Cap the set at three key results. If my draft has more, tell me which ones you c
         heading: "The test that separates a key result from a task",
         body: [
           "One question does the work: could you fully complete this and the objective still be untrue? Ship the setup wizard passes that test easily, because you can ship a wizard nobody uses. Day seven activation moves from 31 to 45 percent does not, because the objective is the number.",
-          "The difference between a key result and a task is not a matter of phrasing, and dressing a task up as a percentage does not convert it. Complete 100 percent of the migration is still the migration. The tribunal is explicit about refusing that move because it is the single most common way a task survives review.",
+          "What is the difference between a key result and a task? It is not a matter of phrasing, and dressing a task up as a percentage does not convert it. Complete 100 percent of the migration is still the migration. The tribunal is explicit about refusing that move because it is the single most common way a task survives review.",
           "Tasks are not worthless. They are the plan. Keeping them on a separate delivery list means the team can still see what it committed to build, while the OKR set stays about whether the building achieved anything.",
         ],
       },

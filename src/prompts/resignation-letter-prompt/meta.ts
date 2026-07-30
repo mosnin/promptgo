@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "resignation letter prompt",
       "how to write a resignation letter",
       "ai prompt for a two week notice letter",
-      "resigning without burning a bridge",
+      "how to resign professionally without burning bridges",
       "what to leave out of a resignation letter",
-      "handing in notice when you are leaving on bad terms",
+      "how to hand in your notice on bad terms",
     ],
     seoTitle: "Resignation Letter Prompt: Short, Dated, Unquotable",
     seoDescription:
@@ -138,14 +138,14 @@ Never include a grievance in the letter, however restrained. If my reason descri
       {
         heading: "Using the resignation letter prompt when you are leaving angry",
         body: [
-          "Handing in notice when you are leaving on bad terms is where the short letter earns the most. The instinct is to set the record straight, and a paragraph of restrained criticism feels like the grown up version of what you would rather write.",
+          "How to hand in your notice on bad terms is where the short letter earns the most. The instinct is to set the record straight, and a paragraph of restrained criticism feels like the grown up version of what you would rather write.",
           "It is not. A grievance belongs in a grievance process, where it has standing and a defined route. In a resignation letter it has neither, and it turns a routine administrative event into a document that gets forwarded. The prompt strips every sentence of that kind, tells you what it took out, and asks whether you intend to raise the matter formally, because that is a separate decision that should not be made in a hurry at eleven at night.",
         ],
       },
       {
         heading: "Leaving well is a two year investment",
         body: [
-          "Resigning without burning a bridge has little to do with being pleasant. It is about the handover, the notice served properly, and not saying anything in the final fortnight that becomes the thing people remember about you.",
+          "How to resign professionally without burning bridges has little to do with being pleasant. It is about the handover, the notice served properly, and not saying anything in the final fortnight that becomes the thing people remember about you.",
           "The practical part is the handover note, which the prompt drafts alongside the letter: what you own, what state each thing is in, what breaks first without you, and who now needs to know what. It costs an afternoon and it is the most reliable way to be remembered well.",
           "Two years from now, these are the people a reference checker rings.",
         ],

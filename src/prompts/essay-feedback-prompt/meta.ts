@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "essay feedback prompt",
     keywords: [
       "essay feedback prompt",
-      "marking an essay against a mark scheme",
-      "feedback on argument rather than expression",
+      "how to mark an essay against a mark scheme",
+      "how to give written feedback on an essay",
       "ai prompt for essay marking",
       "why an essay lost marks",
-      "helping a student redraft an essay",
     ],
     seoTitle: "Essay Feedback Prompt: Band, Evidence, One Model Paragraph",
     seoDescription:
@@ -116,14 +115,14 @@ Return.
       {
         heading: "Feedback on one piece, not on a writer",
         body: [
-          "Marking an essay against a mark scheme is a narrower task than forming a view about a student, and it is much easier to do consistently. The band descriptor is the standard, the essay is the evidence, and everything else, including how hard the student worked and how much better this is than last term, belongs in a different conversation.",
+          "How to mark an essay against a mark scheme is a narrower task than forming a view about a student, and it is much easier to do consistently. The band descriptor is the standard, the essay is the evidence, and everything else, including how hard the student worked and how much better this is than last term, belongs in a different conversation.",
           "Keeping the two apart also protects the student. A judgement about a piece of writing can be argued with, acted on and superseded next month. A judgement about a writer sits there.",
         ],
       },
       {
         heading: "Argument problems and expression problems have different fixes",
         body: [
-          "Feedback on argument rather than expression is the harder half to write, which is why so much marking drifts to the sentences. Underlining a comma splice takes two seconds and looks like effort. Explaining that paragraph six offers three examples and no judgement takes a sentence and a half and requires you to have read the paragraph properly.",
+          "How to give written feedback on an essay argument, rather than on its expression, is the harder half, which is why so much marking drifts to the sentences. Underlining a comma splice takes two seconds and looks like effort. Explaining that paragraph six offers three examples and no judgement takes a sentence and a half and requires you to have read the paragraph properly.",
           "The prompt costs each category in marks and orders the output accordingly. When the argument is losing eight marks and the expression is losing two, the expression comments are compressed into grouped patterns and pushed to the end, which is where a student who only reads the first three lines will not spend their attention.",
         ],
         subsections: [

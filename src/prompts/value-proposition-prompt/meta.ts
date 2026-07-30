@@ -19,9 +19,8 @@ const meta: PromptMeta = {
       "value proposition prompt",
       "how to write a positioning statement",
       "ai prompt for product differentiation",
-      "testing whether a competitor could claim the same thing",
-      "value proposition that names who it excludes",
-      "positioning against the status quo not a competitor",
+      "how to test a value proposition",
+      "how to sell against the status quo",
     ],
     seoTitle: "Value Proposition Prompt: Say What Others Cannot",
     seoDescription:
@@ -118,7 +117,7 @@ Never use: leading, innovative, seamless, end to end, best in class, next genera
         heading: "The substitution test",
         body: [
           "Take your statement, put a competitor's name on it, and read it again. If it still works, you have described your category rather than your position, and the sentence is doing no work beyond occupying the space where a position should be.",
-          "Almost all generic positioning fails this in under five seconds, which is what makes it a useful gate rather than an academic exercise. Testing whether a competitor could claim the same thing is not a refinement step applied at the end, it is the criterion the drafting has to satisfy.",
+          "Almost all generic positioning fails this in under five seconds, which is what makes it a useful gate rather than an academic exercise. How to test a value proposition is not a refinement step applied at the end, it is the criterion the drafting has to satisfy.",
         ],
       },
       {
@@ -132,7 +131,7 @@ Never use: leading, innovative, seamless, end to end, best in class, next genera
         heading: "Positioning against the status quo, not a competitor",
         body: [
           "Candidate A deliberately targets what the buyer does today, which for most products is a spreadsheet, a manual process or nothing at all. This is the honest competitor in the majority of deals and it is the one most positioning ignores in favour of a named rival who appears in far fewer buying decisions than the team assumes.",
-          "It also produces a more durable statement. A position defined against a specific competitor has to be rewritten when that competitor changes, whereas positioning against the status quo not a competitor stays true as long as the underlying behaviour does.",
+          "It also produces a more durable statement. A position defined against a specific competitor has to be rewritten when that competitor changes, whereas a statement built on how to sell against the status quo stays true as long as the underlying behaviour does.",
         ],
       },
       {

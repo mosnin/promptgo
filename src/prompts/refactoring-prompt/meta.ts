@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "refactoring prompt",
     keywords: [
       "refactoring prompt",
-      "refactoring legacy code without changing behaviour",
+      "how to refactor legacy code safely",
       "how to break up a long function safely",
       "ai prompt for reducing cyclomatic complexity",
-      "characterisation tests before a refactor",
-      "keeping a refactor reviewable in one pull request",
+      "how to write characterisation tests",
     ],
     seoTitle: "Refactoring Prompt: Change the Shape, Not the Behaviour",
     seoDescription:
@@ -102,9 +101,9 @@ STEP 5: UNVERIFIABLE. List every place where behaviour preservation depends on s
 
     sections: [
       {
-        heading: "Refactoring legacy code without changing behaviour",
+        heading: "How to refactor legacy code safely without changing behaviour",
         body: [
-          "Refactoring legacy code without changing behaviour is harder than it sounds because the behaviour is not written down anywhere. The tests cover the happy path, the docstring is four years old, and the real specification is whatever the function currently returns for every input production sends it.",
+          "How to refactor legacy code safely is harder than it sounds, because the behaviour is not written down anywhere. The tests cover the happy path, the docstring is four years old, and the real specification is whatever the function currently returns for every input production sends it.",
           "Step one turns that implicit specification into a list. Return values by class of input, exception types, side effects in order, argument mutation, emitted logs and metrics. It takes the model less than a minute and it gives the refactor something to be checked against, which is otherwise missing entirely.",
           "Marking each line guarded or unguarded is the part engineers find useful immediately. It shows exactly which behaviours would survive a mistake and which are held in place by nothing.",
         ],
@@ -125,9 +124,9 @@ STEP 5: UNVERIFIABLE. List every place where behaviour preservation depends on s
         ],
       },
       {
-        heading: "Characterisation tests before a refactor",
+        heading: "How to write characterisation tests before a refactor",
         body: [
-          "Characterisation tests before a refactor record what the code currently does, including the parts that are wrong, so that any change shows up as a failure. They are not quality tests and they are not permanent. They exist to hold the shape of the thing while you rebuild it.",
+          "How to write characterisation tests comes down to recording what the code currently does, including the parts that are wrong, so that any change shows up as a failure. They are not quality tests and they are not permanent. They exist to hold the shape of the thing while you rebuild it.",
           "The unguarded lines from step one are the list to write them against, which is why the contract comes before the plan. The follow up prompt below generates them directly from that list, and the useful discipline is asserting the value the code returns today rather than the value you believe it should return.",
         ],
       },

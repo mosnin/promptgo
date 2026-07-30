@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "meeting agenda prompt",
     keywords: [
       "meeting agenda prompt",
-      "how many items fit in an hour",
-      "agenda items that need a decision",
+      "how many agenda items for a one hour meeting",
+      "meeting agenda template for decisions",
       "ai prompt for running a meeting",
-      "turning updates into a pre read",
-      "meeting that should have been an email",
+      "how to tell if a meeting should have been an email",
     ],
     seoTitle: "Meeting Agenda Prompt: Fit The Items To The Minutes",
     seoDescription:
@@ -112,14 +111,14 @@ Return.
       {
         heading: "Minutes are the budget",
         body: [
-          "How many items fit in an hour is a question with a boring answer that people dislike: about four. A sixty minute meeting starts at four minutes past, loses a couple of minutes to the person whose audio fails, and needs a few at the end to agree what just happened. Call it forty five usable minutes, and an item that is genuinely decided in under eight minutes was probably not contentious enough to need the room.",
+          "How many agenda items for a one hour meeting is a question with a boring answer that people dislike: about four. A sixty minute meeting starts at four minutes past, loses a couple of minutes to the person whose audio fails, and needs a few at the end to agree what just happened. Call it forty five usable minutes, and an item that is genuinely decided in under eight minutes was probably not contentious enough to need the room.",
           "Agendas routinely carry seven. The seventh item is not discussed, and neither is the sixth, and in most recurring meetings it is the same two items every week, which is how a real problem stays undiscussed for a month while being on every agenda.",
         ],
       },
       {
         heading: "Every item is a decision or it is a pre read",
         body: [
-          "Agenda items that need a decision are the only ones that require everybody's simultaneous attention, which is the single most expensive thing a team owns. The test used here is simple: the item can be written as a question with at least two possible answers. Should we move the migration to October or hold the September date passes. Migration update does not.",
+          "A meeting agenda template for decisions works because those items are the only ones that require everybody's simultaneous attention, which is the single most expensive thing a team owns. The test used here is simple: the item can be written as a question with at least two possible answers. Should we move the migration to October or hold the September date passes. Migration update does not.",
           "Turning updates into a pre read is the other half. Status information is read faster than it is spoken, and it is read at the reader's pace rather than the speaker's. Three bullets sent the day before does the same job as ten minutes of talking, and it leaves a written record that the spoken version never produces.",
         ],
         list: [
@@ -146,7 +145,7 @@ Return.
         heading: "The verdict, and the meeting that should have been an email",
         body: [
           "An ai prompt for running a meeting that never questions whether the meeting should happen is just a formatting tool. The last line of the output is a verdict, and for recurring meetings it comes back negative more often than you would like.",
-          "The phrase meeting that should have been an email is usually deployed as a complaint after the fact. Used as a test before the fact it is precise: if no item survives the two answers rule, there is nothing to decide, and everything on the list is information that reads faster than it speaks. Send the pre read, cancel the slot, and see whether anybody misses it.",
+          "How to tell if a meeting should have been an email is usually asked as a complaint after the fact. Used as a test before the fact it is precise: if no item survives the two answers rule, there is nothing to decide, and everything on the list is information that reads faster than it speaks. Send the pre read, cancel the slot, and see whether anybody misses it.",
         ],
       },
     ],

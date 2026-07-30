@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "email newsletter prompt",
       "how to structure a newsletter people read",
       "ai prompt for a weekly company update",
-      "cutting items nobody outside the company cares about",
-      "newsletter lead story selection",
-      "writing a newsletter without sounding corporate",
+      "what to leave out of a company newsletter",
+      "how to choose a lead story for a newsletter",
+      "how to write a newsletter that sounds human",
     ],
     seoTitle: "Email Newsletter Prompt: One Lead Story, Ruthless Cuts",
     seoDescription:
@@ -117,7 +117,7 @@ Report the total reading time in seconds. If it exceeds ninety, cut further and 
         heading: "Why exactly one lead story",
         body: [
           "The rule is arbitrary in the same way a word limit is arbitrary, and it works for the same reason. Forced to choose, you have to decide what the issue is actually about, and that decision is the editorial judgement a newsletter lives or dies on.",
-          "When two items genuinely compete, the prompt names the loser and says why, which is more useful than a compromise that gives both half the space. Newsletter lead story selection is the whole job, and a tool that avoids the choice has avoided the job.",
+          "When two items genuinely compete, the prompt names the loser and says why, which is more useful than a compromise that gives both half the space. How to choose a lead story for a newsletter is the whole job, and a tool that avoids the choice has avoided the job.",
         ],
       },
       {
@@ -136,14 +136,14 @@ Report the total reading time in seconds. If it exceeds ninety, cut further and 
         heading: "Banning the announcement of the announcement",
         body: [
           "Opening a lead story by saying you are excited to share something spends the first sentence on your own emotional state. The reader has not yet been told what changed, and the sentence that finally tells them is now the second one, competing with a subject line for attention it has already partly lost.",
-          "Opening instead with what changed for the reader is a small rule with a large effect on how the issue reads. Cutting items nobody outside the company cares about and removing self referential openings together account for most of the difference between a newsletter that reads as a person writing and one that reads as a department reporting.",
+          "Opening instead with what changed for the reader is a small rule with a large effect on how the issue reads. Deciding what to leave out of a company newsletter and removing self referential openings together account for most of the difference between a newsletter that reads as a person writing and one that reads as a department reporting.",
         ],
       },
       {
         heading: "The honesty pass",
         body: [
           "After drafting, the prompt rereads its own output looking for internal language, unsupported claims of significance, and items promoted because they sounded impressive. This catches the specific failure where a draft is well written and subtly self serving.",
-          "This matters most for an ai prompt for a weekly company update, where the raw material is by definition internal. It is worth reading before the draft rather than after. Read in the other order you have already accepted the framing, and the flags feel like quibbles rather than the corrections they usually are. This section is most of what separates writing a newsletter without sounding corporate from merely intending to.",
+          "This matters most for an ai prompt for a weekly company update, where the raw material is by definition internal. It is worth reading before the draft rather than after. Read in the other order you have already accepted the framing, and the flags feel like quibbles rather than the corrections they usually are. This section is most of what separates knowing how to write a newsletter that sounds human from merely intending to.",
         ],
       },
       {

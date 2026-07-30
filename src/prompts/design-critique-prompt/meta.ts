@@ -20,8 +20,8 @@ const meta: PromptMeta = {
       "how to critique a screen layout",
       "visual hierarchy feedback from ai",
       "critique prompt for figma screenshots",
-      "ranked severity design feedback",
-      "spot the weakest element in a layout",
+      "how to rank design feedback by severity",
+      "how to spot the weakest element in a layout",
     ],
     seoTitle: "Design Critique Prompt: One Verdict, Not Nine Notes",
     seoDescription:
@@ -104,7 +104,7 @@ Mention anything in KNOWN_ISSUES only to say whether it is more or less damaging
         heading: "Feedback that ranks beats feedback that lists",
         body: [
           "Most visual hierarchy feedback from ai arrives as a set of nine observations of equal weight. The button could be larger, the spacing could be tighter, the heading could carry more weight. Every item is individually defensible and the set is useless, because a list with no ordering hands the whole decision straight back to you.",
-          "Ranked severity design feedback is harder for a model to produce and much more useful to receive. Ranking requires comparing two problems against a stated goal, and the comparison is where the reasoning becomes visible. When the ranking is wrong you can usually see precisely which assumption caused it.",
+          "How to rank design feedback by severity is harder for a model to work out and much more useful to receive. Ranking requires comparing two problems against a stated goal, and the comparison is where the reasoning becomes visible. When the ranking is wrong you can usually see precisely which assumption caused it.",
         ],
       },
       {
@@ -144,7 +144,7 @@ Mention anything in KNOWN_ISSUES only to say whether it is more or less damaging
       {
         heading: "Reading the verdict without arguing with it",
         body: [
-          "Asking a model to spot the weakest element in a layout will sometimes produce an answer you are certain is wrong. That is a useful outcome. Write down why it is wrong before dismissing it, because the reason is almost always a piece of context you left out of the prompt and have probably never said out loud to your reviewers either.",
+          "Asking a model how to spot the weakest element in a layout will sometimes produce an answer you are certain is wrong. That is a useful outcome. Write down why it is wrong before dismissing it, because the reason is almost always a piece of context you left out of the prompt and have probably never said out loud to your reviewers either.",
           "When the verdict is right, resist fixing all four items at once. Apply the one fix, export the frame again, run it again. The second pass on a changed file is where the tool earns its keep, because the ranking shifts and you can see what the change actually bought.",
         ],
       },

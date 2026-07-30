@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "time audit prompt",
     keywords: [
       "time audit prompt",
-      "where my working hours actually go",
+      "how to find out where my time goes at work",
       "ai prompt for analysing a calendar",
-      "finding the meetings worth cancelling",
-      "how many hours went to interruptions",
-      "attention lost to context switching",
+      "which meetings to cancel",
     ],
     seoTitle: "Time Audit Prompt: Find the Hours You Cannot Account For",
     seoDescription:
@@ -110,7 +108,7 @@ Do not moralise about productivity and do not invent activity to fill the unacco
         heading: "The unaccounted hours are the point",
         body: [
           "Add up a fortnight of calendar and subtract it from the hours you actually worked. The remainder normally lands somewhere between a quarter and a half of the total, and it is not idle time. It is the work between the work: the reply, the quick question, the fifteen minutes spent recovering from the last thing.",
-          "Most people asking where my working hours actually go are asking about that remainder rather than about their meetings, which they can already see. The prompt is forbidden from filling it with a plausible narrative, because a plausible narrative is the one thing certain to end the investigation early.",
+          "Most people asking how to find out where my time goes at work are asking about that remainder rather than about their meetings, which they can already see. The prompt is forbidden from filling it with a plausible narrative, because a plausible narrative is the one thing certain to end the investigation early.",
         ],
       },
       {
@@ -144,7 +142,7 @@ Do not moralise about productivity and do not invent activity to fill the unacco
         heading: "Why the time audit prompt demands three named cancellations",
         body: [
           "Three, ranked, each naming the recurring entry, the monthly hours returned, what is lost, and who has to agree. Every one of those fields is there because the recommendation collapses without it.",
-          "Hours returned makes the trade concrete. What is lost keeps the audit from being reckless, since some coordination genuinely holds things together and dropping it costs more than it saves. Naming the approver converts an intention into a message. Finding the meetings worth cancelling is the easy half; getting them cancelled means knowing whose meeting it is.",
+          "Hours returned makes the trade concrete. What is lost keeps the audit from being reckless, since some coordination genuinely holds things together and dropping it costs more than it saves. Naming the approver converts an intention into a message. Deciding which meetings to cancel is the easy half; getting them cancelled means knowing whose meeting it is.",
         ],
       },
       {

@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "regex generator prompt",
     keywords: [
       "regex generator prompt",
-      "test strings that should not match",
-      "avoiding catastrophic backtracking in a regex",
+      "how to avoid catastrophic backtracking in regex",
       "writing a regular expression from examples",
       "ai prompt for a validation pattern",
-      "explaining a regex someone else wrote",
+      "how to read a regex someone else wrote",
     ],
     seoTitle: "Regex Generator Prompt: Negative Tests First",
     seoDescription:
@@ -124,9 +123,9 @@ STEP 5: TEST TABLE. Every positive and negative in a table with the expected res
         ],
       },
       {
-        heading: "Avoiding catastrophic backtracking in a regex",
+        heading: "How to avoid catastrophic backtracking in regex",
         body: [
-          "Avoiding catastrophic backtracking in a regex matters most on patterns applied to input from outside, because the failure mode is a request that pins a core for thirty seconds. The trigger is almost always a long string that nearly matches and then fails at the very end.",
+          "How to avoid catastrophic backtracking in regex matters most on patterns applied to input from outside, because the failure mode is a request that pins a core for thirty seconds. The trigger is almost always a long string that nearly matches and then fails at the very end.",
         ],
         subsections: [
           {
@@ -151,9 +150,9 @@ STEP 5: TEST TABLE. Every positive and negative in a table with the expected res
         ],
       },
       {
-        heading: "Explaining a regex someone else wrote",
+        heading: "How to read a regex someone else wrote",
         body: [
-          "Explaining a regex someone else wrote is the same prompt run backwards, and it is worth doing before you modify one. Supply the pattern as the target, leave the example fields empty, and ask for the near miss table first.",
+          "How to read a regex someone else wrote is the same prompt run backwards, and it is worth doing before you modify one. Supply the pattern as the target, leave the example fields empty, and ask for the near miss table first.",
           "What comes back is a set of strings the pattern accepts, which is a far more reliable description of its behaviour than any prose walkthrough of the syntax. If three of those strings surprise you, the pattern does not do what the person who wrote it believed either.",
         ],
       },

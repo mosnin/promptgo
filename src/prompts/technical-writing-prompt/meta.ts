@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "technical writing prompt",
     keywords: [
       "technical writing prompt",
-      "writing instructions a reader can follow first time",
+      "how to write step by step instructions",
       "ai prompt for technical documentation drafts",
-      "separating concept from procedure in documentation",
-      "documenting prerequisites a reader will not have",
+      "conceptual vs procedural documentation",
       "how to write for an audience you cannot see",
     ],
     seoTitle: "Technical Writing Prompt: Tag Every Sentence By Type",
@@ -107,7 +106,7 @@ Close with two lists: PREREQUISITES the reader needs that the knowledge contract
       {
         heading: "Four kinds of sentence, and the cost of mixing them",
         body: [
-          "Documentation contains four things: explanation of how something works, actions the reader performs, values they look up, and consequences they cannot reverse. Separating concept from procedure in documentation is the oldest rule in the field, and it is violated constantly because the two feel related while you are writing.",
+          "Documentation contains four things: explanation of how something works, actions the reader performs, values they look up, and consequences they cannot reverse. The split between conceptual vs procedural documentation is the oldest rule in the field, and it is violated constantly because the two feel related while you are writing.",
           "The cost lands on a specific reader: the one following the page at speed with something broken. They are scanning for the next imperative. A paragraph that starts with an action and then explains the underlying model for three sentences hides its own next step inside a lecture.",
           "Tagging is crude and it works. Once every sentence carries a label, a mixed paragraph is visible at a glance rather than something you notice on the fourth read.",
         ],
@@ -125,7 +124,7 @@ Close with two lists: PREREQUISITES the reader needs that the knowledge contract
         body: [
           "Configure, set up, handle, manage, support and ensure are banned as the main verb of a procedure. Each one names an outcome and hides the action. Configure the service tells the reader that something must be true afterwards and nothing about what to type.",
           "The replacement rule is stricter than it sounds. One action, in the imperative, ending in something observable. Run the script with the dry run flag and confirm the output lists two key identifiers. That sentence can be checked by the person following it, which means it can be checked by the person reviewing it.",
-          "Writing instructions a reader can follow first time is almost entirely this. Every step ends in a state the reader can see, so a wrong turn is caught at the step where it happened rather than three steps later when the error message no longer names the cause.",
+          "Knowing how to write step by step instructions is almost entirely this. Every step ends in a state the reader can see, so a wrong turn is caught at the step where it happened rather than three steps later when the error message no longer names the cause.",
         ],
       },
       {

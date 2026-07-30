@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "email reply prompt",
     keywords: [
       "email reply prompt",
-      "deciding what not to say in a reply",
-      "replying to a difficult email",
+      "what to leave out of an email reply",
+      "how to reply to a difficult email",
       "ai prompt for writing an email response",
-      "answering one question without opening three",
-      "commitments hidden in an email reply",
+      "how to avoid overcommitting in email",
     ],
     seoTitle: "Email Reply Prompt: One Answer, Nothing You Did Not Mean",
     seoDescription:
@@ -120,9 +119,9 @@ Return, in this order: the reply or reply not owed verdict, the ask list, the om
         ],
       },
       {
-        heading: "Deciding what not to say in a reply",
+        heading: "What to leave out of an email reply",
         body: [
-          "Deciding what not to say in a reply is the part that produces the actual saving, and it is the part that no writing tool addresses, because omission leaves no trace in the output. A reply that silently ignores two of three questions looks identical to a reply written by somebody who did not notice them.",
+          "Working out what to leave out of an email reply is the part that produces the actual saving, and it is the part that no writing tool addresses, because omission leaves no trace in the output. A reply that silently ignores two of three questions looks identical to a reply written by somebody who did not notice them.",
           "The omission list fixes that. Each thing left out gets a reason: it is not mine, it is not decided, it belongs in a call, it will resolve itself. Reasons matter because you may be asked, and having already decided your answer is what stops a follow up thread from getting the concession the first thread did not.",
         ],
         list: [
@@ -133,7 +132,7 @@ Return, in this order: the reply or reply not owed verdict, the ask list, the om
         ],
       },
       {
-        heading: "Commitments hidden in an email reply",
+        heading: "How to avoid overcommitting in email",
         body: [
           "Commitments hidden in an email reply almost never arrive as promises. They arrive as courtesies. I will take a look, let me chase that, I should be able to get you something by the end of the week. Each is a dated obligation that somebody else is now entitled to track, and none of them felt like a decision when it was typed.",
           "The audit lists them with dates and with who could reasonably chase you. Seeing three obligations under a five line draft is the moment the habit changes, because the fix is trivial once it is visible: delete two of them, or put a date on the one you meant.",
@@ -150,7 +149,7 @@ Return, in this order: the reply or reply not owed verdict, the ask list, the om
       {
         heading: "Replying to a difficult email without escalating it",
         body: [
-          "Replying to a difficult email goes wrong in a predictable direction: the reply is longer than it needs to be, because length feels like seriousness, and every extra paragraph offers something new to disagree with.",
+          "How to reply to a difficult email goes wrong in a predictable direction: the reply is longer than it needs to be, because length feels like seriousness, and every extra paragraph offers something new to disagree with.",
           "The single commitment rule helps here more than anywhere else. A short reply that answers one thing, declines one thing plainly and offers a call is very hard to escalate, because there is nothing ambiguous in it to quote. The limits field is also doing real work: stating in advance what you will not concede stops the draft conceding it on your behalf in the name of being reasonable.",
         ],
       },

@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "writing feedback prompt",
     keywords: [
       "writing feedback prompt",
-      "reader reaction rather than line edits",
+      "how to give feedback on someone's writing",
       "ai prompt for critiquing a draft",
-      "where a reader stops believing an argument",
-      "getting honest feedback on your writing",
-      "finding the point a reader gives up",
+      "how to get honest feedback on your writing",
     ],
     seoTitle: "Writing Feedback Prompt: Where The Reader Gave Up",
     seoDescription:
@@ -109,7 +107,7 @@ Never suggest wording, never rewrite, never offer a fix. Where you feel the pull
         heading: "A reading trace, not a markup",
         body: [
           "The trace records states rather than judgements: with you, lost, bored, doubting, resisting, interested. One line per paragraph, one clause of reason. Nothing about word choice, nothing about structure, no praise.",
-          "Reader reaction rather than line edits is a genuinely different measurement, and the two rarely agree. A paragraph can be well made and boring. A clumsy paragraph can be the most gripping thing on the page because of what it says. Feedback aimed at prose quality systematically misses both cases.",
+          "How to give feedback on someone's writing as a reader rather than a line editor is a genuinely different question. A paragraph can be well made and boring. A clumsy paragraph can be the most gripping thing on the page because of what it says. Feedback aimed at prose quality systematically misses both cases.",
           "The pattern in the column matters more than any single entry. Four consecutive BORED marks are not four problems, they are one: a stretch of the piece that is doing something the reader did not need done.",
         ],
       },
@@ -134,7 +132,7 @@ Never suggest wording, never rewrite, never offer a fix. Where you feel the pull
         body: [
           "The ban on proposing wording is not modesty about the model's abilities. It is there because a suggested sentence ends the diagnosis. Once you have a replacement paragraph in front of you, you start evaluating the replacement, and the original question of why the reader stopped is quietly dropped.",
           "There is also a quality argument. An ai prompt for critiquing a draft that hands back rewritten passages tends to converge everything toward the same fluent middle register, which is how a piece with a voice becomes a piece with none through a series of individually reasonable improvements.",
-          "Getting honest feedback on your writing means being told what happened, not being handed a version somebody else would have written. The repair is yours, and it is usually structural rather than verbal anyway.",
+          "How to get honest feedback on your writing comes down to being told what happened, not being handed a version somebody else would have written. The repair is yours, and it is usually structural rather than verbal anyway.",
         ],
       },
       {

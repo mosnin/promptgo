@@ -18,9 +18,9 @@ const meta: PromptMeta = {
       "linkedin profile prompt",
       "how to write a linkedin headline that gets found",
       "ai prompt for a linkedin about section",
-      "linkedin profile keywords recruiters search",
-      "rewriting a linkedin profile after a layoff",
-      "linkedin summary that is not a resume copy",
+      "how to get found by recruiters on linkedin",
+      "how to update your linkedin after a layoff",
+      "linkedin summary examples for job seekers",
     ],
     seoTitle: "LinkedIn Profile Prompt: Get Found, Then Get Read",
     seoDescription:
@@ -115,14 +115,14 @@ Respect my visibility constraint in everything you suggest.`,
           {
             heading: "The search surface",
             body: [
-              "Headline, current title, previous titles and the skills list are what get matched. LinkedIn profile keywords recruiters search are duller than people expect: an exact job title, two or three tool names, a certification, sometimes a city. Nobody has ever run a search for strategic leader.",
+              "Headline, current title, previous titles and the skills list are what get matched. How to get found by recruiters on LinkedIn is duller than people expect: an exact job title, two or three tool names, a certification, sometimes a city. Nobody has ever run a search for strategic leader.",
               "The prompt pulls those terms out of advertisements you would genuinely accept, then checks whether each appears literally on your page. A synonym is counted as absent, because a boolean search does not know it is a synonym and will not do you the favour.",
             ],
           },
           {
             heading: "The read surface",
             body: [
-              "A LinkedIn summary that is not a resume copy earns its place by doing what the resume cannot: first person, one honest line about why you work on this, and the two or three things you are actually known for. Six sentences is usually enough and eleven is always too many.",
+              "LinkedIn summary examples for job seekers earn their place by doing what the resume cannot: first person, one honest line about why you work on this, and the two or three things you are actually known for. Six sentences is usually enough and eleven is always too many.",
               "An ai prompt for a LinkedIn about section normally returns quiet self congratulation written in the third person. This one bans the third person and requires the opening line to state a fact rather than describe a character trait.",
             ],
           },
@@ -139,7 +139,7 @@ Respect my visibility constraint in everything you suggest.`,
       {
         heading: "Using the LinkedIn profile prompt after a layoff",
         body: [
-          "Rewriting a LinkedIn profile after a layoff is largely a question of tense and of what you leave alone. Keep the role, keep the dates, move the achievements into past tense, and change nothing else about how the job is described. A suddenly shortened entry looks like concealment.",
+          "How to update your LinkedIn after a layoff is largely a question of tense and of what you leave alone. Keep the role, keep the dates, move the achievements into past tense, and change nothing else about how the job is described. A suddenly shortened entry looks like concealment.",
           "The prompt adds no explanation of why the role ended, because the profile is not where that belongs and a recruiter who reads a redundancy into a date is usually correct and usually untroubled by it. Whether to switch on the open to work signal is a judgement about your current employer rather than about the market, so the prompt asks instead of assuming.",
         ],
       },

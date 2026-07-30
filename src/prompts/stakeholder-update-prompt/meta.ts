@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "stakeholder update prompt",
       "how to update stakeholders on a project",
       "writing for stakeholders who control budget",
-      "delivering bad news to a steering group",
+      "how to deliver bad news to stakeholders",
       "ai prompt for an executive project summary",
       "asking stakeholders for a specific decision",
     ],
@@ -129,7 +129,7 @@ If any stakeholder's rendering would consist only of good news, say so explicitl
         heading: "Delivering bad news to a steering group",
         body: [
           "The instinct is to build up to it. Context first, progress second, difficulty third, so the reader understands the situation before hearing the problem. It reads as fair and functions as concealment, because senior readers stop after two paragraphs and the two paragraphs they read were reassuring.",
-          "Delivering bad news to a steering group works better in the opposite order. The slipped date opens the update, the reason follows in one clause, and the context sits underneath for whoever wants it. Nobody has ever been annoyed by finding out too plainly.",
+          "How to deliver bad news to stakeholders comes down to order, and the opposite order works better. The slipped date opens the update, the reason follows in one clause, and the context sits underneath for whoever wants it. Nobody has ever been annoyed by finding out too plainly.",
           "The rule that no positive statement may sit above a negative one exists because the softening happens during editing rather than during drafting. Everyone writes an honest draft and then moves the good sentence up.",
         ],
       },

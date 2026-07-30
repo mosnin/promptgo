@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "portfolio description prompt",
       "writing project descriptions for a portfolio",
       "ai prompt for case study copy",
-      "showing your decisions not just the outcome",
-      "crediting a team on a solo portfolio",
+      "how to write a portfolio case study",
+      "how to credit a team on your portfolio",
       "how to describe a project a client rejected",
     ],
     seoTitle: "Portfolio Description Prompt: Given, Decided, Happened",
@@ -125,7 +125,7 @@ Finish with the single question a reviewer is most likely to ask about this entr
         heading: "The rejected alternative is the evidence",
         body: [
           "A decision stated on its own is indistinguishable from a default. Kept the flow at four steps tells the reviewer nothing until they know you considered collapsing it to one and can say why you did not.",
-          "Showing your decisions not just the outcome is the whole point of the format, and the rejected alternative is what makes a decision visible as a decision. It also demonstrates the thing hiring managers are actually screening for, which is whether you can weigh two options under constraints and defend the choice afterwards.",
+          "How to write a portfolio case study comes down to showing decisions and not just the outcome, and the rejected alternative is what makes a decision visible as a decision. It also demonstrates the thing hiring managers are actually screening for, which is whether you can weigh two options under constraints and defend the choice afterwards.",
           "Where you cannot remember an alternative, the entry says so rather than inventing one. That marker is uncomfortable and honest, and it usually means the choice was made by circumstance rather than by you, which is worth knowing before someone asks about it.",
         ],
       },
@@ -139,7 +139,7 @@ Finish with the single question a reviewer is most likely to ask about this entr
       {
         heading: "The portfolio description prompt makes you write the credit line",
         body: [
-          "Every entry ends with one line naming who else did what. Crediting a team on a solo portfolio feels like diluting your own case, and it does the opposite in front of anyone experienced, because a project of that scope with no other names on it reads as either implausible or as a warning about how you work.",
+          "Every entry ends with one line naming who else did what. Working out how to credit a team on your portfolio feels like diluting your own case, and it does the opposite in front of anyone experienced, because a project of that scope with no other names on it reads as either implausible or as a warning about how you work.",
           "The rule about pronouns enforces the same thing inside the prose. We for shared work, I for your decisions, never blurred. An entry that says we throughout leaves a reviewer unable to find you in it, and one that says I throughout leaves them wondering who the engineers were.",
         ],
       },

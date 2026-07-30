@@ -16,11 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "code migration prompt",
     keywords: [
       "code migration prompt",
-      "migrating a codebase to a new framework",
-      "behaviour differences between two runtimes",
+      "how to migrate a codebase to a new framework",
       "how to plan a large migration in batches",
       "ai prompt for porting code between languages",
-      "keeping a migration reviewable commit by commit",
     ],
     seoTitle: "Code Migration Prompt: Map Before You Port Anything",
     seoDescription:
@@ -116,9 +114,9 @@ Do not rename anything. Do not restructure. Do not adopt an idiom of the target 
         ],
       },
       {
-        heading: "Migrating a codebase to a new framework without improving it",
+        heading: "How to migrate a codebase to a new framework without improving it",
         body: [
-          "Migrating a codebase to a new framework produces a strong urge to fix things on the way past. The file is already open, the old pattern is visibly worse, and the target has a nicer idiom. Every one of those edits makes the change harder to review and impossible to bisect.",
+          "Anyone working out how to migrate a codebase to a new framework feels a strong urge to fix things on the way past. The file is already open, the old pattern is visibly worse, and the target has a nicer idiom. Every one of those edits makes the change harder to review and impossible to bisect.",
           "So the prompt bans improvement outright and gives the impulse somewhere to go. Anything the model wants to change beyond the mapping lands in a closing list, which becomes a genuinely useful backlog once the migration is finished and the codebase is uniform enough to work on.",
         ],
       },

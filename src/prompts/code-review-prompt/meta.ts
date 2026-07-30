@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "code review prompt",
       "ai prompt for reviewing a pull request",
-      "finding bugs a diff introduces",
-      "reviewing a diff without the surrounding files",
-      "code review that does not rewrite the code",
-      "catching regressions before merge",
+      "code review checklist",
+      "how to spot a regression in a code review",
     ],
     seoTitle: "Code Review Prompt: Find the Bug the Diff Added",
     seoDescription:
@@ -131,14 +129,14 @@ RULES. Do not rewrite the code. Do not suggest changes to lines the diff did not
       {
         heading: "Why it hands back findings and not a rewrite",
         body: [
-          "A code review that does not rewrite the code is more useful inside a pull request than one that does. A rewrite is unreviewable. It fuses the fix with three unrelated preferences, and the author now has to diff the diff to work out what genuinely changed.",
+          "A code review checklist is more useful inside a pull request when it stops short of rewriting the code. A rewrite is unreviewable. It fuses the fix with three unrelated preferences, and the author now has to diff the diff to work out what genuinely changed.",
           "The ban on touching untouched lines serves the same purpose. Left unconstrained, models expand scope, and a review proposing that a file be reorganised when the author added two lines to it gets discarded whole, taking the real finding down with it.",
         ],
       },
       {
-        heading: "Catching regressions before merge",
+        heading: "How to spot a regression in a code review",
         body: [
-          "Catching regressions before merge is mostly about the second category in step two. Crashes get found by somebody eventually. A rounding change that shifts one invoice in ten thousand does not, and that is precisely the class of defect a human skims past because the code reads perfectly well.",
+          "Knowing how to spot a regression in a code review is mostly about the second category in step two. Crashes get found by somebody eventually. A rounding change that shifts one invoice in ten thousand does not, and that is precisely the class of defect a human skims past because the code reads perfectly well.",
           "So the adversarial pass ranks silent wrong answers above crashes, and requires a partial failure scenario every time. A function that writes two rows and throws before the third behaves correctly on every input anyone would think to try by hand.",
         ],
       },

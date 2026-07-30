@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "error message prompt",
     keywords: [
       "error message prompt",
-      "writing user facing error messages",
+      "user facing error message examples",
       "how to word an error message",
       "error message that tells the user what to do next",
-      "logging an error with a correlation id",
       "ai prompt for error copy",
     ],
     seoTitle: "Error Message Prompt: Copy, Log Line and Code",
@@ -104,9 +103,9 @@ If the failure condition given to you actually covers several causes, split it a
 
     sections: [
       {
-        heading: "Writing user facing error messages people can act on",
+        heading: "User facing error message examples people can act on",
         body: [
-          "Writing user facing error messages is a product problem wearing engineering clothes. The reader is mid task, mildly annoyed, and reading at speed. They are looking for one thing: whether this is something they can fix or something they have to escalate.",
+          "Good user facing error message examples solve a product problem wearing engineering clothes. The reader is mid task, mildly annoyed, and reading at speed. They are looking for one thing: whether this is something they can fix or something they have to escalate.",
           "So the visible half gets two sentences and no more. One names the operation that did not complete, in words the reader would use. The other gives the action. Anything else, including the apology, competes for attention with the only part that matters.",
         ],
       },

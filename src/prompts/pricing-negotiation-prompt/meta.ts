@@ -19,8 +19,8 @@ const meta: PromptMeta = {
       "how to respond to a discount request",
       "ai prompt for preparing a negotiation",
       "what to trade instead of cutting price",
-      "setting a walk away number before the call",
-      "discount request that is really a budget problem",
+      "how to set a walk away price",
+      "what to do when a customer has no budget",
     ],
     seoTitle: "Pricing Negotiation Prompt: Decide Trades In Advance",
     seoDescription:
@@ -113,14 +113,14 @@ Never suggest a discount with nothing asked in return. If the honest answer is t
         heading: "A discount request is usually about something else",
         body: [
           "The three readings exist because the number is rarely the issue. Sometimes the budget genuinely stops at a figure, which is a real constraint you can work with. Sometimes the value case is unproven internally and the buyer is trying to reduce the risk of championing you. Sometimes asking is simply procurement doing its job and a refusal costs nothing.",
-          "These require completely different responses, and treating all three as a price problem means discounting your way through situations that had nothing to do with price. A discount request that is really a budget problem needs a scope change or a payment structure, not a lower rate for the same work.",
+          "These require completely different responses, and treating all three as a price problem means discounting your way through situations that had nothing to do with price. What to do when a customer has no budget is offer a scope change or a payment structure, never a lower rate for the same work.",
         ],
       },
       {
         heading: "Deciding the walk away number in writing",
         body: [
           "The prompt calculates a floor from your margin, your delivery costs and the value of terms, and shows the arithmetic so you can check it. Doing this before the call is what makes the number real, because a floor decided during a negotiation is not a floor, it is a preference.",
-          "It also refuses to estimate when the economics input is incomplete, which is deliberate. A fabricated floor is worse than no floor, since it carries false confidence into exactly the situation where confidence matters. Setting a walk away number before the call is the single highest return preparation step available.",
+          "It also refuses to estimate when the economics input is incomplete, which is deliberate. A fabricated floor is worse than no floor, since it carries false confidence into exactly the situation where confidence matters. How to set a walk away price before the call is the single highest return preparation step available.",
         ],
       },
       {

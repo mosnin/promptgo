@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "ai prompt for writing a landing page",
       "how to write a hero section that converts",
       "saas landing page copy template",
-      "message match between ad and landing page",
+      "how to match landing page copy to your ad",
       "landing page structure for a single offer",
     ],
     seoTitle: "Landing Page Copy Prompt: Answer Questions In Order",
@@ -135,7 +135,7 @@ Rules: one offer only, no secondary calls to action, no testimonials you were no
         heading: "Message match, the cheapest fix most pages skip",
         body: [
           "The source field exists so the hero can echo the wording of whatever brought the visitor. Someone who clicked an ad about their stock count being wrong should land on a page that says something recognisably close, in the same register, within the first line.",
-          "When the ad promises one thing and the page opens on a generic brand statement, the visitor experiences a small dissonance and a large number of them leave, which gets attributed to the page being unconvincing rather than mismatched. Message match between ad and landing page is close to free and is routinely the largest single improvement available.",
+          "When the ad promises one thing and the page opens on a generic brand statement, the visitor experiences a small dissonance and a large number of them leave, which gets attributed to the page being unconvincing rather than mismatched. Working out how to match landing page copy to your ad is close to free and is routinely the largest single improvement available.",
         ],
       },
       {

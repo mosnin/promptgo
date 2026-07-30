@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "exam question prompt",
     keywords: [
       "exam question prompt",
-      "writing exam questions with mark allocation",
-      "command words in exam questions",
-      "recall versus application questions",
+      "how to allocate marks in exam questions",
+      "exam command words examples",
+      "recall vs application questions",
       "ai prompt for a mark scheme",
-      "past paper style questions",
     ],
     seoTitle: "Exam Question Prompt: Marks, Command Words, Mark Scheme",
     seoDescription:
@@ -119,21 +118,21 @@ Return.
       {
         heading: "Marks are the design, not a label added afterwards",
         body: [
-          "Writing exam questions with mark allocation done properly means deciding what the marks are for before the question is finished. Teacher written papers routinely carry a four mark item that has three things to say, and marking it turns into a search for a fourth idea generous enough to award.",
+          "How to allocate marks in exam questions is a decision to make before the question is finished. Teacher written papers routinely carry a four mark item that has three things to say, and marking it turns into a search for a fourth idea generous enough to award.",
           "The consequence is not just untidiness. Two colleagues marking that item will invent different fourth points, the paper stops being comparable across a year group, and a student who wrote a complete answer loses a mark to a question that was never fully specified.",
         ],
       },
       {
         heading: "Command words are instructions with a legal meaning",
         body: [
-          "Command words in exam questions are not synonyms chosen for variety. On most specifications each one has a published definition, and describe, explain and evaluate ask for genuinely different responses with different mark scheme shapes.",
+          "Exam command words examples are not a list of synonyms chosen for variety. On most specifications each one has a published definition, and describe, explain and evaluate ask for genuinely different responses with different mark scheme shapes.",
           "Students learn those definitions over two years, so a question that says outline on a board that never uses outline costs them time they spend deciding what you want. The prompt takes your board's list and will not go outside it, which also stops the model stacking two commands into one sentence, as in describe and explain why, a question no mark scheme can cleanly serve.",
         ],
       },
       {
-        heading: "Recall versus application questions in one paper",
+        heading: "Recall vs application questions in one paper",
         body: [
-          "Recall versus application questions is the distinction that decides whether a paper measures revision or understanding. A student who has memorised the specification can walk through a paper made entirely of state and name items, and the result tells you nothing about whether they can use any of it.",
+          "Recall vs application questions is the distinction that decides whether a paper measures revision or understanding. A student who has memorised the specification can walk through a paper made entirely of state and name items, and the result tells you nothing about whether they can use any of it.",
           "The reverse paper is just as unhelpful. All application, no retrieval, and the weakest students score close to zero, which produces a mark distribution with no information in the bottom third. Asking for a split, then being shown the split you actually got, is the whole reason the demand table exists.",
         ],
         list: [

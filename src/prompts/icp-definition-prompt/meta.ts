@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "icp definition prompt",
     keywords: [
       "icp definition prompt",
-      "ideal customer profile from closed won data",
+      "how to build an icp from customer data",
       "disqualification criteria for sales prospecting",
       "how to narrow an ideal customer profile",
       "account level segmentation for b2b sales",
@@ -108,7 +108,7 @@ STEP 6. If fewer than eight won accounts were supplied, label the entire output 
       {
         heading: "The losses carry more information than the wins",
         body: [
-          "Building an ideal customer profile from closed won data alone gives you a flattering portrait with no discriminating power, because the attributes shared by your customers are mostly shared by everybody else in the market too.",
+          "The trap in how to build an icp from customer data is that closed won accounts alone give you a flattering portrait with no discriminating power, because the attributes shared by your customers are mostly shared by everybody else in the market too.",
           "Contrast is what creates the signal. An attribute matters when it is common among the accounts that stayed and rare among those that left, and you cannot know that without the second set. Churned customers are the most valuable rows of all, since they passed every filter you currently have.",
         ],
       },

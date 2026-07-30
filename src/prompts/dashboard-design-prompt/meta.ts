@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "dashboard design prompt",
       "choosing metrics for an executive dashboard",
-      "how many charts on one dashboard",
+      "dashboard design best practices",
       "ai prompt for dashboard layout",
-      "vanity metrics on a dashboard",
-      "dashboard that answers one question",
     ],
     seoTitle: "Dashboard Design Prompt: Build One People Actually Use",
     seoDescription:
@@ -117,9 +115,9 @@ CRITICAL: do not propose a metric that is not in the available list. Do not incl
         ],
       },
       {
-        heading: "How many charts on one dashboard",
+        heading: "Dashboard design best practices for how many charts to show",
         body: [
-          "How many charts on one dashboard is the question people want a rule for, and the honest rule is however many survive the threshold test, which is usually between four and eight. The count matters less than the fact that each one earned its place through the same filter.",
+          "Dashboard design best practices rarely give the count people want a rule for, and the honest rule is however many survive the threshold test, which is usually between four and eight. The count matters less than the fact that each one earned its place through the same filter.",
           "Position matters more than most layouts admit. The top left is the only tile guaranteed to be seen, so it should hold the number tied to the most urgent decision rather than the one that was easiest to compute. Everything below the fold on a phone is effectively an archive, and treating it as one is more honest than pretending the whole grid gets scanned.",
         ],
       },

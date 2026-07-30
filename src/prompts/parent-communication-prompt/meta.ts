@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "parent communication prompt",
       "how to email parents about behaviour",
-      "writing home about a pupil's progress",
+      "how to write to parents about progress",
       "ai prompt for parent teacher emails",
-      "keeping observation separate from interpretation",
-      "difficult conversations with parents",
+      "how to handle difficult conversations with parents",
     ],
     seoTitle: "Parent Communication Prompt: Facts First, One Clear Ask",
     seoDescription:
@@ -157,14 +156,14 @@ Return.
       {
         heading: "Reading it as the parent will read it",
         body: [
-          "Difficult conversations with parents rarely turn on the facts. They turn on whether the family believes the school has already tried something. A message that lists a pupil's failings and then asks for support at home reads as a transfer of responsibility, however warmly it is phrased.",
+          "How to handle difficult conversations with parents rarely turns on the facts. They turn on whether the family believes the school has already tried something. A message that lists a pupil's failings and then asks for support at home reads as a transfer of responsibility, however warmly it is phrased.",
           "So the draft states what the school did first: the catch up session, the spare equipment, the reminder card. Then the defensive read shows you the same text through the eyes of somebody who has been called in before, and names the two phrases most likely to land badly. It is usually we need you to and I am sure you are aware.",
         ],
       },
       {
         heading: "Good news home is a different job, not a lighter one",
         body: [
-          "Writing home about a pupil's progress when things have gone well is worth more than most schools act as though it is, and it is still worth doing carefully. Praise that names a specific thing the pupil did lands. Praise that says he has been a pleasure lately says nothing and is usually read as a preamble.",
+          "How to write to parents about progress when things have gone well matters more than most schools act as though it does, and it is still worth doing carefully. Praise that names a specific thing the pupil did lands. Praise that says he has been a pleasure lately says nothing and is usually read as a preamble.",
           "Run the same prompt with the observation field full of good evidence and the ask set to nothing more than tell him I said so. The structure holds, and the message takes ninety seconds.",
         ],
       },

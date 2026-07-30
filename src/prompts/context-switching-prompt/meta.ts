@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "context switching prompt",
     keywords: [
       "context switching prompt",
-      "grouping work by context to reduce switches",
-      "cost of switching between tasks",
+      "how to batch similar tasks together",
+      "what is the cost of context switching",
       "ai prompt for reducing interruptions",
-      "writing a re entry note before you stop",
-      "cognitive load across a working day",
+      "how to get back on task after an interruption",
     ],
     seoTitle: "Context Switching Prompt: Batch The Day, Count The Switches",
     seoDescription:
@@ -109,14 +108,14 @@ Return the context assignment, both switch counts, the rebuilt day as a timeline
       {
         heading: "Switch cost is paid twice",
         body: [
-          "The cost of switching between tasks is not the moment of transition. It is the tail on either side: the two minutes of half attention before you fully leave the old task, and the much longer stretch afterwards where you are technically working on the new one and are actually still reconstructing where you were.",
+          "What is the cost of context switching? Not the transition itself. It is the tail on either side: the two minutes of half attention before you fully leave the old task, and the much longer stretch afterwards where you are technically working on the new one and are actually still reconstructing where you were.",
           "That reconstruction is invisible in a calendar and invisible in a time log. A day with eleven switches and a day with four can contain identical hours and identical tasks, and produce very different amounts of finished work.",
         ],
       },
       {
         heading: "Contexts are setups, not subjects",
         body: [
-          "Grouping work by context to reduce switches only works if the contexts are defined by what your working state has to be. Two tasks belong together when you could move from one to the other without changing tools, tabs or frame of mind. By that test, reviewing a pull request and writing an interview debrief are different contexts even though both are reading and typing, while three interview debriefs in a row are one.",
+          "Knowing how to batch similar tasks together only works if the contexts are defined by what your working state has to be. Two tasks belong together when you could move from one to the other without changing tools, tabs or frame of mind. By that test, reviewing a pull request and writing an interview debrief are different contexts even though both are reading and typing, while three interview debriefs in a row are one.",
           "The common mistake is grouping by project. Everything about the migration in one block sounds tidy and contains a code review, a stakeholder email and a budget line, which is three gear changes wearing one label. The prompt caps the day at five contexts and forces them to be named after the setup, which makes the project instinct hard to act on.",
         ],
         list: [
@@ -135,7 +134,7 @@ Return the context assignment, both switch counts, the rebuilt day as a timeline
         ],
       },
       {
-        heading: "Writing a re entry note before you stop",
+        heading: "How to get back on task after an interruption",
         body: [
           "Writing a re entry note before you stop is the highest return habit in this whole prompt and takes about twenty seconds. Three things: exactly where you got to, the next physical action, and the one thing you were holding in your head that is not written down anywhere.",
           "The third element is the one people leave out and the one that costs the most. You can find your place in a document. You cannot recover the half formed objection to the third paragraph that you were about to check, and without it you reread the whole thing to get back to where you already were.",

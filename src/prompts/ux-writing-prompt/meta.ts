@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to write button labels with ai",
       "microcopy for empty and error states",
       "character budget for interface copy",
-      "rewriting error messages users can act on",
+      "how to write error messages users can act on",
       "voice and tone rules for product copy",
     ],
     seoTitle: "UX Writing Prompt: Every String, Every State",
@@ -111,7 +111,7 @@ After the table, list every string you could not write because BEHAVIOUR does no
         heading: "Where microcopy for empty and error states actually breaks",
         body: [
           "Two empty states are worth writing separately and almost nobody does. First use empty means the feature has never been used, so the copy should teach and invite. Empty after filtering means the data exists but the current filter hides it, so the copy should offer a way back. Shipping one string for both leaves half your users being taught something they already know.",
-          "Errors split the same way. An error the user caused needs a correction they can make in the field they are looking at. An error the system caused needs an honest statement and either a retry or a genuine workaround, and where neither exists the copy should say so rather than inventing hope. Rewriting error messages users can act on is the highest return hour of writing in most products, because those strings appear at the exact moment someone is deciding whether to give up.",
+          "Errors split the same way. An error the user caused needs a correction they can make in the field they are looking at. An error the system caused needs an honest statement and either a retry or a genuine workaround, and where neither exists the copy should say so rather than inventing hope. Learning how to write error messages users can act on is the highest return hour of writing in most products, because those strings appear at the exact moment someone is deciding whether to give up.",
         ],
         subsections: [
           {
