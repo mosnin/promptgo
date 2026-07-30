@@ -138,7 +138,7 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
         heading: "Why the presentation slide prompt names a cut on every slide",
         body: [
           "The cut field asks what most people would include here and you are deliberately leaving off. It exists because deciding what to cut from a slide is much easier as a positive instruction than as an act of restraint after the slide already exists.",
-          "It also surfaces the habits. Nearly every deck I have run through this loses the same things: a methodology slide nobody asked for, a competitive matrix that argues against its own conclusion, and the agenda slide, which tells an audience what they are about to hear instead of telling them anything.",
+          "It also surfaces the habits. Most decks run through this lose the same things: a methodology slide nobody asked for, a competitive matrix that argues against its own conclusion, and the agenda slide, which tells an audience what they are about to hear instead of telling them anything.",
         ],
       },
       {

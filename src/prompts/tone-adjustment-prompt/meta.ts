@@ -192,7 +192,7 @@ STEP FOUR. Rewrite. Then rescore on the same five dials, so I can see what actua
       {
         question: "What should I do with a tone conflict I disagree with?",
         answer:
-          "Read the sentence it named. In roughly half of the cases I have seen, the sentence really was carrying news the requested register would obscure. If you still disagree, restate the relationship field, because the check is calibrated on what the two parties owe each other rather than on the words alone.",
+          "Read the sentence it named. In roughly half of these cases, the sentence really was carrying news the requested register would obscure. If you still disagree, restate the relationship field, because the check is calibrated on what the two parties owe each other rather than on the words alone.",
       },
     ],
 

@@ -134,7 +134,7 @@ C. Name the one risk that would be embarrassing to write down because of who wou
       {
         heading: "Monitor is not a mitigation",
         body: [
-          "Keep an eye on it appears in the response column of nearly every register I have inherited. It commits nobody to anything, survives every review, and is indistinguishable from having no plan.",
+          "Keep an eye on it appears in the response column of nearly every inherited register. It commits nobody to anything, survives every review, and is indistinguishable from having no plan.",
           "The fourth gate requires an action, an executor and a rough cost in money or days, plus a statement of whether it reduces likelihood or reduces impact. That last distinction catches a common gap: teams write contingency plans for after the event and almost never write the cheaper action that stops it happening.",
           "Any ai prompt for risk management on a project that accepts monitor as a response has produced a document for the auditor rather than for the team.",
         ],

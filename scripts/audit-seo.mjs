@@ -90,6 +90,24 @@ const FIRST_PERSON = [
 ];
 
 /**
+ * The same fabrication risk, found leaking into the article body and FAQ
+ * rather than the testing note. This is narrower than FIRST_PERSON on purpose:
+ * the article and FAQ legitimately use "I" and "my" in reader facing questions
+ * like "Can I use this before I have any customers?", and a bare first person
+ * check would flag those constantly. What actually cannot appear is a claim of
+ * personal occasion or lived tally, so this checks for the verbs that carry
+ * that claim, not the pronoun alone.
+ */
+const EXPERIENCE_CLAIM = [
+  /\bin my experience\b/i,
+  /\bI(?:'ve| have) (?:seen|run|found|inherited|tested|used|checked|watched|reviewed|caught|written|built|shipped|debugged|fixed)\b/i,
+  /\bbefore I(?:'d| had) (?:run|tested|checked)\b/i,
+  /\b(?:in|over) (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d+) years?,? I(?:'ve| have)\b/i,
+  /\bnearly every \w+ I(?:'ve| have)\b/i,
+  /\balmost every \w+ I(?:'ve| have)\b/i,
+];
+
+/**
  * Phrases that mark generic filler. A page built out of these is exactly what a
  * thin content classifier is looking for, so they fail the build rather than
  * warn.
@@ -172,6 +190,32 @@ function articleText(meta) {
   parts.push(meta.article.howTo.name);
   for (const step of meta.article.howTo.steps) parts.push(step.name, step.text);
   for (const item of meta.article.faq) parts.push(item.question, item.answer);
+  if (meta.article.table) {
+    const { caption, headers, rows } = meta.article.table;
+    parts.push(caption, ...headers, ...rows.flat());
+  }
+  return parts.join(" ");
+}
+
+/**
+ * The same body, minus FAQ questions. Questions are written in the reader's
+ * voice ("Can I use this before I have any customers?") and legitimately use
+ * first person, so they would false positive against EXPERIENCE_CLAIM. Only
+ * prose Fast Prompts itself writes, meaning everything except the questions,
+ * needs to stay free of unverifiable personal claims.
+ */
+function claimCheckText(meta) {
+  const parts = [...meta.article.intro];
+  for (const section of meta.article.sections) {
+    parts.push(section.heading, ...section.body);
+    if (section.list) parts.push(...section.list);
+    if (section.subsections) {
+      for (const sub of section.subsections) parts.push(sub.heading, ...sub.body);
+    }
+  }
+  parts.push(meta.article.howTo.name);
+  for (const step of meta.article.howTo.steps) parts.push(step.name, step.text);
+  for (const item of meta.article.faq) parts.push(item.answer);
   return parts.join(" ");
 }
 
@@ -267,11 +311,11 @@ function auditPrompt(meta, seen) {
     }
   }
 
-  /* ---- 3. Keyword set: 1 focus + 5 to 6 long tails, no cannibalisation ---- */
+  /* ---- 3. Keyword set: 1 focus + 3 to 6 long tails, no cannibalisation ---- */
   if (seo.keywords.length < RULES.keywords.min || seo.keywords.length > RULES.keywords.max) {
     add(
       "error",
-      `${seo.keywords.length} keywords. Must be ${RULES.keywords.min} to ${RULES.keywords.max} (focus keyword plus 5 or 6 long tails).`,
+      `${seo.keywords.length} keywords. Must be ${RULES.keywords.min} to ${RULES.keywords.max} (focus keyword plus 3 to 6 long tails).`,
     );
   }
   if (seo.keywords[0] !== keyword) {
@@ -282,6 +326,16 @@ function auditPrompt(meta, seen) {
   }
 
   const text = articleText(meta);
+
+  const claimText = claimCheckText(meta);
+  for (const marker of EXPERIENCE_CLAIM) {
+    if (marker.test(claimText)) {
+      add(
+        "error",
+        `Article or FAQ answer contains a personal experience claim ("${claimText.match(marker)[0]}"). This asserts an occasion nobody can verify. Rewrite as an impersonal statement of what the constraint is and why it exists.`,
+      );
+    }
+  }
 
   /* Long tails must be genuinely long tail, must look like a query, and must
    * actually appear in the body. */

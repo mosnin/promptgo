@@ -129,7 +129,7 @@ Do not write a script for me. Do not suggest a compliment sandwich. Do not tell 
       {
         heading: "Find the part where they are right",
         body: [
-          "Section three asks for the specific point on which their account beats yours. In my experience there is one in almost every case, and it is usually something the person preparing has already half noticed and moved past.",
+          "Section three asks for the specific point on which their account beats yours. There is almost always one, and it is usually something the person preparing has already half noticed and moved past.",
           "Naming it before the meeting changes what happens in it. Conceding a point you have already thought about sounds like judgement. Conceding one you are hearing for the first time sounds like retreat, and the other person can tell the difference immediately.",
           "The related check is the inference test. An ai prompt for a hard conversation with an employee is dangerous if it treats your account as fact, so section four separates what you observed from what you concluded and writes the question that tests the conclusion before you assert it as a reason.",
         ],

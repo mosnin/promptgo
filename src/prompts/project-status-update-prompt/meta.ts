@@ -148,7 +148,7 @@ Banned words: ongoing, almost done, progressing well, on track when the only evi
       {
         heading: "What the project status update prompt refuses to print",
         body: [
-          "Three phrasings are banned outright. Ongoing, used as a status, describes work with no end state anyone agreed to. Almost done, which in my experience has meant anything from one day to six weeks. And on track, where the supporting evidence is that nobody has complained.",
+          "Three phrasings are banned outright. Ongoing, used as a status, describes work with no end state anyone agreed to. Almost done, which in practice has meant anything from one day to six weeks. And on track, where the supporting evidence is that nobody has complained.",
           "Percentages are banned too. They are the easiest number to produce and the hardest to falsify, and a workstream stuck at eighty percent for three weeks is a reporting artefact rather than a measure of progress. Where a template insists on one, the prompt substitutes the count of remaining items, which cannot drift quietly.",
         ],
       },

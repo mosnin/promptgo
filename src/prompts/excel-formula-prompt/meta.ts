@@ -133,7 +133,7 @@ CRITICAL: do not invent column letters, do not assume a sorted range, and never 
         heading: "Checking a formula against expected row count",
         body: [
           "Checking a formula against expected row count is the mechanism that makes the whole thing safe. If the model says the formula should fill 8,412 cells with 61 blanks, and you paste its counting formula and get 8,209, you have learned something concrete in five seconds rather than discovering it in a board pack.",
-          "The prediction also disciplines the model. Producing a number forces it to reason explicitly about cardinality, which is the thing it otherwise glosses over. Several times in testing the act of stating an expected count led a model to revise its own formula in the same response, before I had run anything.",
+          "The prediction also disciplines the model. Producing a number forces it to reason explicitly about cardinality, which is the thing it otherwise glosses over. Stating an expected count can prompt a model to revise its own formula within the same response, catching the error before the sheet is ever opened.",
         ],
       },
       {

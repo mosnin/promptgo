@@ -143,7 +143,7 @@ STEP 5. For each removal, predict specifically what the model will substitute in
         heading: "Rewriting an image prompt structure you inherited",
         body: [
           "The common case is not a blank page. Someone sends a paragraph written by a client, a marketing team or an earlier version of themselves, and it contains three real requirements buried under twenty words of enthusiasm. How to rewrite a messy image description is mostly a sorting problem, and sorting is exactly what a language model is good at.",
-          "Keep the must survive field honest and specific. It is the only thing standing between a useful edit and one that quietly removes the single property the client will notice, which in my experience is usually an age, a specific garment or a named object.",
+          "Keep the must survive field honest and specific. It is the only thing standing between a useful edit and one that quietly removes the single property the client will notice, which is most often an age, a specific garment or a named object.",
         ],
       },
       {

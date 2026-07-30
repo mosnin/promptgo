@@ -201,7 +201,7 @@ Never advise me to imply a competing offer I do not have. Never tell me I deserv
       {
         question: "How hard can I push before the offer is at risk?",
         answer:
-          "One counter with a stated basis almost never costs an offer, and in eleven years I have seen a withdrawal follow a reasonable counter twice, both times at employers with other problems. Repeated counters after a firm final answer are a different matter.",
+          "One counter with a stated basis almost never costs an offer. Withdrawals following a reasonable counter are rare, and where they happen the employer usually had other problems already. Repeated counters after a firm final answer are a different matter.",
       },
     ],
 

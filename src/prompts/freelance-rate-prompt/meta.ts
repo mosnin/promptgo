@@ -109,7 +109,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
   article: {
     intro: [
       "A freelance rate prompt that returns a number you feel good about has done the opposite of its job. The number that matters is the one below which the work costs you money, and it is produced by arithmetic rather than by positioning.",
-      "Most people arrive at a day rate by comparison. Someone mentioned what they charge, a forum post suggested a range, a client once said yes without flinching. None of that accounts for your costs, your tax, or the weeks nobody hires you.",
+      "Most people arrive at a day rate by comparison: something someone else charges, a forum post, a client who once said yes without flinching. None of that accounts for your costs, your tax, or the weeks nobody hires you.",
       "The prompt below builds the floor from the bottom, shows every subtraction, and then prices the actual project separately, because a floor and a price are different objects that get confused constantly.",
     ],
 
@@ -119,7 +119,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         body: [
           "How to calculate a freelance day rate comes down to a short sum nobody enjoys doing. Target income, grossed up for tax, plus the annual cost of running the business, divided by the days you can actually sell.",
           "The reason it gets skipped is that the answer is usually higher than the rate you are currently charging, and the gap is uncomfortable. Advice to charge what you are worth avoids that discomfort by replacing the calculation with an attitude.",
-          "Every line stays visible in the output for the same reason. A number you can reconstruct is a number you can defend in a conversation with a client, and one you cannot is a number you will discount under mild pressure.",
+          "Every line stays visible in the output for the same reason: a number you can reconstruct is one you can defend, and one you cannot is one you will discount under mild pressure.",
         ],
       },
       {
@@ -127,7 +127,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         body: [
           "The single biggest error in freelance pricing is the denominator. People divide by something close to 220 working days, which quietly assumes that every non holiday weekday is sold.",
           "How to calculate billable days per year starts by taking out weekends, holiday, sickness, invoicing, chasing, pitching and the weeks with nothing booked. A hundred and seventy is common. A hundred and fifty is not unusual in the first two years.",
-          "Dividing the same required revenue by 172 rather than 220 raises the floor by roughly a quarter, which is how a year ends up feeling busy and finishing short.",
+          "Dividing the same revenue by 172 rather than 220 raises the floor by roughly a quarter, which is how a busy year finishes short.",
         ],
       },
       {
@@ -135,31 +135,31 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         body: [
           "The freelance rate prompt labels its output a floor deliberately. It answers how to set a minimum freelance rate, the point at which accepting work leaves you worse off than leaving the week empty, and it is not the price you quote.",
           "Quoting at the floor is a slow failure. It leaves nothing for the projects that overrun, no margin for the client who pays sixty days late, and no capacity for the unbilled work that keeps the business running. The floor is a boundary, and prices sit above boundaries.",
-          "Knowing exactly where the boundary is changes how negotiations feel. A discount request is easy to answer when you can see that the number lands eleven percent under the point where the work costs you money.",
+          "Knowing exactly where the boundary sits changes how negotiations feel, since a discount request is easy to answer once you can see it lands under that point.",
         ],
       },
       {
         heading: "Pricing the project, not the hours",
         body: [
-          "Once the floor exists, the project is priced in scope units: this deliverable takes four days, this one takes two, these three things are excluded. An ai prompt for pricing a freelance project that returns an hourly figure has handed the client a meter to watch and given you a reason to work slowly.",
-          "Exclusions carry as much weight as inclusions. The style guide nobody put in writing, the extra stakeholder who appears in week three, the migration of old content: naming these as excluded in the quote costs one line and prevents the conversation where a client is genuinely surprised.",
+          "Once the floor exists, the project is priced in scope units: this deliverable takes four days, this one two, these three excluded. An ai prompt for pricing a freelance project that returns an hourly figure hands the client a meter to watch and gives you a reason to work slowly.",
+          "Exclusions carry as much weight as inclusions. The style guide nobody wrote down, the stakeholder who appears in week three, the migration of old content: naming these as excluded costs one line and prevents a client being genuinely surprised.",
           "Contingency is stated rather than hidden. Two of fourteen days named as contingency survives scrutiny better than a padded estimate a client can sense.",
         ],
       },
       {
         heading: "Scope creep is a definitions problem",
         body: [
-          "Most creep is not opportunism. It is two people holding different pictures of the work, discovering the difference gradually, and neither having anything written down to check against.",
+          "Most creep is not opportunism. It is two people holding different pictures of the work, discovering the gap gradually with nothing written down to check against.",
           "Knowing what to put in a scope creep clause does not require legal language. One sentence naming what changes the price, plus the number of revision rounds included and the day rate beyond them, covers the overwhelming majority of disputes.",
-          "The revision count is the part people leave out and the part that consumes the margin. Two rounds means two, and a third is chargeable at the stated rate, which is a much easier conversation to have in advance than in week seven.",
+          "The revision count is the part people leave out, and the part that consumes the margin. Two rounds means two; a third is chargeable at the stated rate, an easier conversation in advance than in week seven.",
         ],
       },
       {
         heading: "What to say when the number lands badly",
         body: [
           "Sometimes the client budget sits below the floor. The freelance rate prompt says so plainly and offers two routes: remove scope until the work fits the money, or decline.",
-          "Declining is a real option and it is priced into the model. A week spent below your floor is a week unavailable for work above it, and freelancers who take everything spend their good years fully occupied and barely solvent.",
-          "Reducing scope is the better conversation where it is possible, because it keeps the rate intact and makes the trade explicit. Twenty five pages instead of forty, one review round instead of two, no style guide. Same rate, less work, a client who can see exactly what their budget bought.",
+          "Declining is a real option, priced into the model. A week spent below your floor is a week unavailable for work above it, and freelancers who take everything spend good years fully occupied and barely solvent.",
+          "Reducing scope is the better conversation where possible, since it keeps the rate intact and makes the trade explicit: twenty five pages instead of forty, one review round instead of two, no style guide. Same rate, less work, a client who can see what their budget bought.",
         ],
       },
     ],
@@ -201,7 +201,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
         },
         {
           name: "Recalculate when anything structural changes",
-          text: "New costs, a change in tax position, a year with more dead weeks. The floor is not a permanent number and treating it as one is how rates fall behind.",
+          text: "New costs, a changed tax position, a year with more dead weeks. The floor is not permanent, and treating it as one is how rates fall behind.",
         },
       ],
     },
@@ -215,12 +215,12 @@ Rules. Never give a number without the calculation behind it. Never round the fl
       {
         question: "What if my floor is above the market rate?",
         answer:
-          "Then one of three things is true: your costs are high, your billable days are low, or the work genuinely does not pay what you need. All three are worth knowing, and none of them are solved by charging below the floor while hoping volume covers the difference.",
+          "Then one of three things is true: costs are high, billable days are low, or the work genuinely does not pay what you need. All three are worth knowing, and none is solved by charging below the floor while hoping volume covers the difference.",
       },
       {
         question: "How much contingency should sit in a quote?",
         answer:
-          "Around fifteen percent for familiar work and considerably more for anything involving a client you have not worked with or a system you have not seen. State it as contingency rather than hiding it inside the estimates, which holds up better under questioning.",
+          "Around fifteen percent for familiar work and considerably more for a new client or a system you have not seen. State it as contingency rather than hiding it inside the estimates, which holds up better under questioning.",
       },
       {
         question: "Is it worth telling a client my rate is a floor?",
@@ -235,7 +235,7 @@ Rules. Never give a number without the calculation behind it. Never round the fl
       {
         question: "Does this work for retainers?",
         answer:
-          "Yes, with one addition: decide what the retainer buys, days or availability. A retainer priced as days is straightforward arithmetic. A retainer priced as availability has to include the cost of the work you turn down to stay free, which is the part that usually gets forgotten.",
+          "Yes, with one addition: decide what the retainer buys, days or availability. A retainer priced as days is straightforward arithmetic. One priced as availability must include the cost of work turned down to stay free, which is the part usually forgotten.",
       },
     ],
 

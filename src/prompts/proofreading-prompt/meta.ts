@@ -108,7 +108,7 @@ STEP THREE. List what you could not check: claims of fact, the spelling of real 
         heading: "Why the proofreading prompt refuses to rewrite",
         body: [
           "Proofreading without changing the wording is a hard constraint, not a stylistic preference. At this stage the text has been signed off, sometimes legally, and a correction that also tightens a clause has altered an approved document. The register format makes each change a discrete decision that someone applies deliberately.",
-          "A clean version handed back instead hides the following, all of which I have seen models do while claiming only to have corrected errors.",
+          "A clean version handed back instead hides the following, all of which models will do while claiming only to have corrected errors.",
         ],
         list: [
           "Replacing a repeated word with a synonym, on the grounds that the repetition looked accidental.",
@@ -179,7 +179,7 @@ STEP THREE. List what you could not check: claims of fact, the spelling of real 
       {
         question: "What should I do about low confidence entries?",
         answer:
-          "Treat them as questions rather than corrections. In my experience roughly half are real and the rest are the model pattern matching against a convention your document does not follow. They are still worth reading, because a cluster of them in one section often marks a passage written in a hurry.",
+          "Treat them as questions rather than corrections. Roughly half tend to be real, and the rest are the model pattern matching against a convention your document does not follow. They are still worth reading, because a cluster of them in one section often marks a passage written in a hurry.",
       },
       {
         question: "Should the house rules field ever be empty?",

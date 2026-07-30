@@ -111,7 +111,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
         heading: "A flow is a graph and graphs have measurable defects",
         body: [
           "Treating a flow as a state machine gives you something a drawing cannot: properties you can check mechanically. A graph can be examined for nodes with no outgoing edges, nodes with no incoming edges, and edges that only run one way. Those three checks catch a surprising proportion of real product complaints.",
-          "How to find dead end states in a user flow is the clearest example. Almost every one I have found was a failure state that somebody added late, with a message and no button, because the design covered the successful path and the error was handled in code afterwards.",
+          "How to find dead end states in a user flow is the clearest example. Almost every one traced back to a failure state added late, with a message and no button, because the design covered the successful path and the error was handled in code afterwards.",
           "The unreachable check runs in the opposite direction and usually finds documentation rather than defects: a state that exists in the code, has no route into it any more, and is still being maintained by an engineer who assumes somebody uses it.",
         ],
       },
