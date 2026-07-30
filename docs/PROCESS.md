@@ -101,6 +101,32 @@ Documented here so the next person doesn't have to rediscover these the hard way
   query-shape check, which itself later needed tightening (a bare "for" was accepted as a query
   anchor, letting through phrases like "naming a budget owner for a proposal" that describe the
   page rather than something anyone types).
+- **A field-level duplicate check that covered one field and not its neighbour.** The auditor
+  checks `eeat.testingNote` for cross-page duplication, but `eeat.authorCredential` sits two
+  lines below it in the same trust block, renders directly under the H1, and was byte-identical
+  on all 148 pages with no check at all. Fixing one instance of a pattern doesn't mean the
+  pattern is fixed everywhere it appears; grep for the other fields shaped the same way.
+- **Schema type mismatches the auditor doesn't and can't check**, because `npm run audit:seo`
+  only reads `meta.ts`, never the rendered JSON-LD. `promptArticleSchema()` typed the article's
+  author as `"@type": "Person"` with the organisation's name in it, on every page, for a long
+  time after `eeat.author` was fixed to always say `"Fast Prompts"` — the schema layer wasn't
+  updated when the data contract was. Anything derived from `meta.ts` in a separate rendering
+  layer (JSON-LD, Open Graph images, the search index) needs its own check, or its own explicit
+  read-through, since the auditor's cleanliness says nothing about it.
+- **A per-page asset that was built but never linked to.** Every prompt page generates its own
+  OpenGraph image at build time, but `buildMetadata()` unconditionally set the site-wide default
+  image on every route, which silently overrides Next.js's automatic per-route image convention.
+  148 images were rendered into the build output and zero were ever referenced by a page's own
+  meta tags. `npm run build` succeeding, and the file existing in the output tree, is not
+  evidence the file is actually used — check the rendered `<head>` of a real page, not just that
+  the build didn't error.
+- **A string-matching helper with no word boundaries.** `occurrences()`, used for both keyword
+  density and "does this long tail actually appear in the article," did a raw substring search
+  on normalised text: the keyword "ai" matched inside "email", "domain", "plain". No page's
+  actual keywords were short enough to trigger it, so it never produced a wrong verdict, but the
+  underlying logic was wrong in exactly the function every keyword check depends on. A check
+  that happens to be right today because of what data currently exists is not the same as a
+  check that is actually correct.
 
 None of these were caught by the person or process that introduced them. They were all caught
 later, by deliberately looking for problems rather than confirming things were fine. Keep doing
