@@ -68,7 +68,12 @@ export function PromptShell({ prompt }: { prompt: RegisteredPrompt }) {
         ...(section.list ?? []),
         ...(section.subsections?.flatMap((sub) => [sub.heading, ...sub.body]) ?? []),
       ]),
+      prompt.article.howTo.name,
+      ...prompt.article.howTo.steps.flatMap((step) => [step.name, step.text]),
       ...prompt.article.faq.flatMap((item) => [item.question, item.answer]),
+      ...(prompt.article.table
+        ? [prompt.article.table.caption, ...prompt.article.table.headers, ...prompt.article.table.rows.flat()]
+        : []),
     ].join(" "),
   );
 

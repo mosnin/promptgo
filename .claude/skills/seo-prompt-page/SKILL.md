@@ -46,28 +46,35 @@ repeated across every `<title>` on a domain is a templated pattern signal. Commu
 
 ---
 
-## 2. Keywords: one focus, five or six long tails, zero cannibalisation
+## 2. Keywords: one focus, three to six long tails, zero cannibalisation
 
-`seo.keywords` holds **6 or 7 entries**. Index 0 is the focus keyword. The rest are 5 or 6
+`seo.keywords` holds **4 to 7 entries**. Index 0 is the focus keyword. The rest are 3 to 6
 long tail variants, each of which must:
 
 - be **three words or longer** (a two word phrase is a head term, not a long tail),
+- **read as something a person would actually type into a search box**, not as a description
+  of the page. The auditor checks this with a query anchor: the phrase has to contain a word
+  like `prompt`, `chatgpt`, `claude`, `how to`, `template`, `example`, `guide`, `best`, `free`,
+  `vs`, `for` or a similar query marker. "naming a budget owner for a proposal" is a true
+  sentence about the page and not a query. "how to name a budget owner in a proposal" is the
+  same idea shaped like something someone searches,
 - **actually appear** somewhere in the article body, verbatim,
 - be **globally unique across the entire site**. The auditor keeps a map of every keyword
   claimed by every page and fails the build when two pages target the same phrase.
 
-That last rule is the anti cannibalisation gate and it is strict on purpose. Two pages
-splitting the same term is the most common way a large directory underperforms: neither
-page accumulates enough signal to rank, and Google picks one arbitrarily.
+That last rule is the anti cannibalisation gate and it is strict on purpose, and it interacts
+with the query shape rule: a phrase nobody else has claimed is very often a phrase nobody
+searches. Four keywords that are all real queries beat seven where three were invented to
+clear the uniqueness check. Prefer fewer, better keywords over hitting the top of the range.
 
 ### Draft the keywords into sentences before writing any prose
 
 This is a process rule, not a style preference, and skipping it is the single most common
 cause of a failed audit in this repo.
 
-Before writing a word of the article, write out all six keywords, then draft each long tail
-into a **specific planned sentence** and note which section it will live in. Only then write
-the article around those sentences.
+Before writing a word of the article, write out every keyword you plan to use, then draft
+each long tail into a **specific planned sentence** and note which section it will live in.
+Only then write the article around those sentences.
 
 The failure mode it prevents is retrofitting. Write the article first and you will produce
 good prose that happens to omit two or three long tails, and the auditor will reject it.
@@ -159,6 +166,13 @@ fabricated provenance claim on a page carrying advertising.
 
 Also wrong, for the same reason: counts of trials, named clients, colleagues,
 classrooms, dashboards you maintained, "four of six", "my own last three roles".
+
+**This is not only a `testingNote` rule.** The auditor also scans the article body,
+`howTo` steps and FAQ answers for the same fabrication-flavoured phrasing ("in my
+experience", "I have seen", "before I had run", "in eleven years I have"). FAQ
+*questions* are exempt, since a reader asking "Can I use this before I have any
+customers?" is legitimate first person in the reader's own voice. FAQ *answers*
+are not: write them the same impersonal way as the testing note.
 
 ## 5. The prompt itself has to be genuinely good
 

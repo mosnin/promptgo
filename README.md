@@ -1,12 +1,11 @@
-# Convert Filez
+# Fast Prompts
 
-120 client side file conversion and asset tools, built as a static Next.js site and monetised
-with Google AdSense.
+A directory of 148 free AI prompts for ChatGPT, Claude and Gemini, organised by job function
+and built as a static Next.js site. Monetised with Google AdSense.
 
-Every tool runs entirely in the browser. Files are read from disk into browser memory,
-transformed locally and written back out as a download. Nothing is uploaded, which means
-hosting cost stays close to zero while long tail search traffic carries the advertising
-revenue.
+Every prompt page fills its variables client side and lets you copy a finished prompt straight
+to the clipboard. Nothing you type is sent anywhere, which is why hosting cost stays close to
+zero while long tail search traffic carries the advertising revenue.
 
 ## Quick start
 
@@ -21,31 +20,30 @@ Open http://localhost:3000.
 
 | Command | What it does |
 |---|---|
-| `npm run dev` | Regenerate the tool registry, then start the dev server |
+| `npm run dev` | Regenerate the prompt registry, then start the dev server |
 | `npm run build` | Regenerate, then produce the production build |
-| `npm run gen` | Rebuild `src/generated/` from `src/tools/` |
+| `npm run gen` | Rebuild `src/generated/` from `src/prompts/` |
 | `npx tsc --noEmit` | Type check |
-| `npm run audit:seo` | Audit every tool against the SEO contract |
-| `npm run audit:seo -- <slug>` | Audit a single tool |
+| `npm run audit:seo` | Audit every prompt against the SEO contract |
+| `npm run audit:seo -- <slug>` | Audit a single prompt |
 
-## Adding a tool
+## Adding a prompt
 
-A tool is one folder:
+A prompt is one folder:
 
 ```
-src/tools/<slug>/
-  meta.ts    SEO metadata and the full article, as typed data
-  ui.tsx     the working client side interface
+src/prompts/<slug>/
+  meta.ts    slug, SEO metadata, the prompt itself and the full article, as typed data
 ```
 
-Run `npm run gen` and the tool appears in routing, the sitemap, the mega menu, the search
+Run `npm run gen` and the prompt appears in routing, the sitemap, the mega menu, the search
 index, the category page and the footer. Nothing else needs editing.
 
-The authoring rules are in `.claude/skills/seo-tool-page/SKILL.md`, and
-`src/tools/png-to-jpg-converter/` is the reference implementation. `npm run audit:seo` is the
-gate: it enforces exact match keywords across slug, title, SEO title and meta description,
-keyword density, article volume, internal and external link counts, uniqueness across the
-whole site and house style.
+The authoring rules are in `.claude/skills/seo-prompt-page/SKILL.md`. `npm run audit:seo` is
+the gate: it enforces exact match keywords across slug, title, SEO title and meta description,
+keyword density, article volume, internal and external link counts, query shaped long tail
+keywords, freedom from fabricated first person claims, and uniqueness across the whole site.
+It must exit clean before any prompt work is considered finished.
 
 ## Deploying to Vercel
 
@@ -63,5 +61,5 @@ present.
 
 ## Architecture
 
-See `CLAUDE.md` for the full picture, including why the tool registry is generated and why it
-must never be imported from a client component.
+See `CLAUDE.md` for the full picture, including why the prompt registry is generated and why
+it must never be imported from a client component.
