@@ -34,8 +34,20 @@ const RULES = {
   externalLinks: { min: 3, max: 4 },
   sections: { min: 4, max: 8 },
   howToSteps: { min: 3, max: 6 },
-  /** Primary keyword plus 5 to 6 long tail variants. */
-  keywords: { min: 6, max: 7 },
+  /**
+   * Focus keyword plus 3 to 6 long tails.
+   *
+   * The floor used to be 6 keywords, meaning 5 long tails, and that quota was
+   * a mistake. Most prompts do not have five distinct phrasings that a person
+   * actually types, so authors met the count by coining descriptive phrases
+   * nobody searches. Worse, the global uniqueness rule actively rewarded that:
+   * a phrase nobody else has claimed is very often a phrase nobody queries.
+   *
+   * Four good keywords beat seven where three are invented, so the floor is
+   * now 4 and the QUERY_ANCHOR check below enforces that what remains looks
+   * like something a person would type.
+   */
+  keywords: { min: 4, max: 7 },
   intro: { min: 2, max: 4 },
   /** The focus keyword must land inside this fraction of the article. */
   keywordLeadFraction: 0.1,
@@ -82,6 +94,18 @@ const FIRST_PERSON = [
  * thin content classifier is looking for, so they fail the build rather than
  * warn.
  */
+/**
+ * A long tail has to look like a search, not like a description of the page.
+ *
+ * These anchors are the words that actually appear in queries for this kind of
+ * content: the artefact being sought, the tool being used, or an interrogative.
+ * "stopping a test early inflates false positives" is a true sentence and is
+ * not a query. "how to tell if an ab test is underpowered" is the same idea in
+ * the shape someone types.
+ */
+const QUERY_ANCHOR =
+  /\b(prompt|prompts|chatgpt|claude|gemini|copilot|ai|llm|how to|how do|what to|what is|why|when to|which|template|templates|generator|example|examples|script|checklist|ideas|guide|tips|best|free|vs|instead of|for)\b/i;
+
 const FILLER = [
   "in today's digital world",
   "in todays digital world",
@@ -259,10 +283,17 @@ function auditPrompt(meta, seen) {
 
   const text = articleText(meta);
 
-  /* Long tails must be genuinely long tail, and must actually appear. */
+  /* Long tails must be genuinely long tail, must look like a query, and must
+   * actually appear in the body. */
   for (const secondary of seo.keywords.slice(1)) {
     if (normalise(secondary).split(" ").length < 3) {
       add("warning", `long tail keyword "${secondary}" is under three words, so it is a head term.`);
+    }
+    if (!QUERY_ANCHOR.test(secondary)) {
+      add(
+        "error",
+        `long tail "${secondary}" does not read as a search query. Rewrite it the way someone would type it, or drop it: four real keywords beat seven with three invented.`,
+      );
     }
     if (occurrences(text, secondary) === 0) {
       add("error", `long tail keyword "${secondary}" never appears in the article.`);
