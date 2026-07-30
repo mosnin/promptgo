@@ -7,11 +7,11 @@ import { Icon } from "@/components/ui/Icon";
  * A fanned stack of claims, each with the method for checking it.
  *
  * This sits where a review wall would go and does the job a review wall is
- * meant to do, which is to make a stranger willing to hand over a file. Reviews
- * do that by borrowing other people's trust. A site published this week has
- * none to borrow, and manufacturing it means inventing named people, employers
- * and star ratings, which is deceptive advertising rather than a design
- * decision.
+ * meant to do, which is to make a stranger willing to type real details into
+ * a form. Reviews do that by borrowing other people's trust. A site published
+ * this week has none to borrow, and manufacturing it means inventing named
+ * people, employers and star ratings, which is deceptive advertising rather
+ * than a design decision.
  *
  * The substitute is stronger than a fabricated quote anyway: every card states
  * something checkable and tells the reader exactly how to check it. A claim a
@@ -25,17 +25,17 @@ import { Icon } from "@/components/ui/Icon";
 const CLAIMS = [
   {
     icon: "lock" as const,
-    claim: "Nothing you convert is uploaded.",
+    claim: "Nothing you type is uploaded.",
     method:
-      "Open your browser's network panel, convert a file, and watch the request list. No upload appears, because there is no endpoint to upload to.",
+      "Open your browser's network panel, fill in a prompt's variables, and watch the request list. Nothing leaves the tab, because there is no endpoint to send it to.",
     label: "Check the network panel",
     rotate: -10,
   },
   {
     icon: "bolt" as const,
-    claim: "The prompts keep working with the network off.",
+    claim: "Every prompt keeps working with the network off.",
     method:
-      "Load any prompt page, switch to airplane mode, then convert a file. Everything the prompt needs is already in the tab, so it finishes normally.",
+      "Load any prompt page, switch to airplane mode, then fill it in and copy it. Everything the page needs is already in the tab, so it works normally.",
     label: "Try it offline",
     rotate: -3,
   },
@@ -43,7 +43,7 @@ const CLAIMS = [
     icon: "check" as const,
     claim: "No account, no watermark, no cap.",
     method:
-      "There is no signup form anywhere on the site, no output carries a mark, and the only ceiling on file size is your own device memory.",
+      "There is no signup form anywhere on the site, no output carries a mark, and nothing limits how many prompts you copy.",
     label: "Look for the signup",
     rotate: 5,
   },

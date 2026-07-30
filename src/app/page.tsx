@@ -213,7 +213,7 @@ export default function HomePage() {
         <Reveal>
           <p className="eyebrow">The catalogue</p>
           <h2 className="mt-2 max-w-2xl text-[1.75rem] font-semibold tracking-[-0.03em] text-ink sm:text-[2rem]">
-            Ten categories covering every everyday file job
+            Ten categories covering every everyday job function
           </h2>
         </Reveal>
 
@@ -232,9 +232,8 @@ export default function HomePage() {
                 Written from testing, not from a list of good intentions
               </h2>
               <p className="mt-5 text-[0.9375rem] leading-relaxed text-ink-subtle">
-                Most prompt lists are assembled by asking a model to write prompts and
-                sending the result back. That model is slow, it costs the operator money, and it
-                puts a copy of your file on hardware you do not control. These {PRIMARY_KEYWORD}{" "}
+                Most prompt lists are assembled by asking a model to write fifty prompts about a
+                topic and publishing whatever comes back, unread and unrun. These {PRIMARY_KEYWORD}{" "}
                 do the opposite.
               </p>
             </Reveal>
@@ -399,10 +398,10 @@ export default function HomePage() {
             <div className="glow pointer-events-none absolute inset-0" aria-hidden />
             <div className="relative">
               <h2 className="mx-auto max-w-2xl text-[1.75rem] font-semibold tracking-[-0.03em] text-ink sm:text-[2.25rem]">
-                Pick a file. Pick a format. Done in seconds.
+                Pick a prompt. Fill it in. Copy it in seconds.
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-[0.9375rem] leading-relaxed text-ink-subtle">
-                No account to create, nothing to install and nothing leaves your machine.
+                No account to create, nothing to install and nothing you type ever leaves the tab.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <ButtonLink href="/explore" size="lg">

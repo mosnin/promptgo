@@ -7,7 +7,7 @@ import { Icon } from "@/components/ui/Icon";
  * The three steps, and the one that is missing.
  *
  * The whole argument for this site is an absence: there is no signup and no
- * queue between choosing a file and getting it back. An absence is difficult to
+ * gate between finding a prompt and using it. An absence is difficult to
  * illustrate, so the section shows the omitted step explicitly, struck through
  * and greyed, sitting where every other prompt library would put it. Naming the
  * thing that is not happening lands harder than three cheerful steps that could
@@ -20,21 +20,21 @@ import { Icon } from "@/components/ui/Icon";
 const STEPS = [
   {
     n: "01",
-    title: "Choose a file",
-    body: "Drop it on the page or pick it from disk. The browser hands the prompt a reference to the file on your own device.",
-    icon: "upload" as const,
+    title: "Find the prompt",
+    body: "Search or browse by category and pick the one built for the exact job, not a generic version of it.",
+    icon: "search" as const,
   },
   {
     n: "02",
-    title: "The work happens in the tab",
-    body: "Your processor does the decoding and encoding, using the same engines the browser uses to display media. Nothing is queued behind anyone else.",
-    icon: "bolt" as const,
+    title: "Fill in the blanks",
+    body: "Every token in the prompt becomes a field on the page. Type your details in, or use the examples to see it filled instantly.",
+    icon: "wand" as const,
   },
   {
     n: "03",
-    title: "Download the result",
-    body: "The output is written straight to your downloads folder. Close the tab and nothing of it remains anywhere.",
-    icon: "download" as const,
+    title: "Copy the finished prompt",
+    body: "The output box holds a complete prompt with your details already in it, ready to paste into whatever model you use.",
+    icon: "copy" as const,
   },
 ];
 

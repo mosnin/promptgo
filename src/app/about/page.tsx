@@ -79,8 +79,8 @@ export default function AboutPage() {
           <TextReveal
             as="h1"
             className="mt-4 max-w-4xl text-[2.5rem] font-medium leading-[0.95] tracking-[-0.045em] text-ink sm:text-6xl lg:text-7xl"
-            text="The file never leaves your machine."
-            highlight={["never"]}
+            text="Nothing you type ever leaves the tab."
+            highlight={["never", "leaves"]}
             delay={0.08}
           />
 
@@ -112,10 +112,10 @@ export default function AboutPage() {
           stats={[
             {
               value: "0",
-              label: "bytes uploaded",
+              label: "signups required",
               tone: "signal",
               span: true,
-              body: `Not a target. There is no account system behind any of the ${catalogueStats.prompts} prompts, no email wall and no metered usage, so the number of signups between you and a finished prompt is exactly zero.`,
+              body: `Not a target. There is no account system behind any of the ${catalogueStats.prompts} prompts, no email wall and no metered usage, so the number of forms between you and a finished prompt is exactly zero.`,
             },
             {
               value: String(catalogueStats.prompts),
@@ -175,10 +175,10 @@ export default function AboutPage() {
                 Accuracy and corrections
               </h2>
               <p className="mt-3 text-[0.875rem] leading-relaxed text-ink-subtle">
-                Every prompt page documents which formats it accepts, what it produces and where
-                browser support is uneven. Where a browser cannot do something natively the page
-                says so before you select a file, rather than failing halfway through. If a prompt
-                gives a result you believe is wrong, its page names the specification it follows.
+                Every prompt page names the models it was written for and the specific failure
+                its constraints are shaped to prevent. If a prompt produces a result you believe
+                is wrong, its testing note and pitfalls section describe the behaviour it expects
+                so you can see whether the model held to it.
               </p>
             </div>
             <div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
               <p className="mt-3 text-[0.875rem] leading-relaxed text-ink-subtle">
                 The <Link href="/explore" className="text-signal-bright underline underline-offset-2">explore page</Link>{" "}
                 lists every prompt grouped by category. If you already know what you need, the search
-                box in the header opens with command K and matches on prompt name, file format or
+                box in the header opens with command K and matches on prompt name, category or
                 task.
               </p>
             </div>
