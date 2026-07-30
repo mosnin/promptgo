@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to map the unhappy path",
       "how to map a signup flow",
       "how to find dead end states in a user flow",
-      "entry and exit conditions for each screen",
+      "how to define entry and exit conditions for each screen",
       "how to make a user flow diagram",
     ],
     seoTitle: "User Flow Prompt: Find The Dead Ends First",
@@ -118,7 +118,7 @@ Finish with the map as a mermaid stateDiagram-v2 block. The diagram comes last b
       {
         heading: "Every state declares its exits",
         body: [
-          "Writing entry and exit conditions for each screen sounds bureaucratic until you count the exits people actually take. Cancel, browser back, closing the tab, an interruption from a phone call, a session timing out, a shared machine changing hands mid task.",
+          "Knowing how to define entry and exit conditions for each screen sounds bureaucratic until you count the exits people actually take. Cancel, browser back, closing the tab, an interruption from a phone call, a session timing out, a shared machine changing hands mid task.",
           "Browser back is the one models forget and the one users press most. It is in the required list because leaving it out is how a flow ends up with a state that can be reached backwards into an inconsistent condition, and because it is where the fourth check finds most of its silent loss.",
         ],
       },

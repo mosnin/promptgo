@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "why one idea per slide matters",
       "what to cut from a slide",
       "speaker notes vs on slide text",
-      "structuring a deck for a decision",
+      "how to structure a deck for a decision",
     ],
     seoTitle: "Presentation Slide Prompt: Titles That Make A Claim",
     seoDescription:
@@ -144,7 +144,7 @@ Afterwards, list everything in MATERIAL you did not use, and mark each as cut fo
       {
         heading: "A deck that ends in a decision",
         body: [
-          "Structuring a deck for a decision starts by naming the decision before the slides exist. The claim check then has something to test against, and it will tell you when the argument does not arrive: two claims establishing a problem, none establishing that this solution is the right size for it.",
+          "How to structure a deck for a decision starts by naming the decision before the slides exist. The claim check then has something to test against, and it will tell you when the argument does not arrive: two claims establishing a problem, none establishing that this solution is the right size for it.",
           "The unused material list at the end is the other half of that discipline. Material cut for time can come back in the appendix. Material cut because it weakened the argument needs a decision from you rather than from the model, because sometimes the honest answer is that the argument is weaker than you wanted and the deck should say so.",
         ],
       },

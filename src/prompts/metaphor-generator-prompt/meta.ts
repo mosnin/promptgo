@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "metaphor generator prompt",
     keywords: [
       "metaphor generator prompt",
-      "finding an image for an abstract idea",
+      "how to find an image for an abstract idea",
       "ai prompt for figurative language",
       "metaphor examples for everyday objects",
       "how to explain an abstract concept with an image",
@@ -106,7 +106,7 @@ Finish by naming the most vivid candidate you rejected and the false thing it wo
         heading: "A metaphor is a claim about structure",
         body: [
           "When you say one thing is another, you are asserting that a set of relationships holds in both. Not that they look alike. Debt is a good image for shortcuts in code because the relationship between a small early saving and a recurring later cost is genuinely shared, not because code resembles money.",
-          "So the input that matters is not the idea in general but the two or three relationships that have to survive. Finding an image for an abstract idea is much easier once you have written those down, and it is nearly impossible before, because the space of vaguely apt comparisons is unlimited.",
+          "So the input that matters is not the idea in general but the two or three relationships that have to survive. Knowing how to find an image for an abstract idea is much easier once you have written those down, and it is nearly impossible before, because the space of vaguely apt comparisons is unlimited.",
         ],
       },
       {

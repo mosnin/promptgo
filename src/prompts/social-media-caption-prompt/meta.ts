@@ -17,10 +17,10 @@ const meta: PromptMeta = {
     keywords: [
       "social media caption prompt",
       "how to write the first line of a caption",
-      "writing captions for multiple platforms at once",
+      "how to write captions for multiple platforms at once",
       "how many hashtags to use for instagram",
       "instagram caption prompt for brands",
-      "alt text for a social media image",
+      "how to write alt text for a social media image",
     ],
     seoTitle: "Social Media Caption Prompt: Survive the See More Cut",
     seoDescription:
@@ -132,7 +132,7 @@ CUT CHECK. For each hook, list the words you removed to fit the limit, so I can 
       {
         heading: "One idea, four platforms, four captions",
         body: [
-          "Writing captions for multiple platforms at once tempts everyone into a single block of text pasted everywhere, and the same block reads as native on at most one of them. The tell is a hook tuned for one truncation length sitting on a platform with a different one.",
+          "Knowing how to write captions for multiple platforms at once matters because the alternative tempts everyone into a single block of text pasted everywhere, and the same block reads as native on at most one of them. The tell is a hook tuned for one truncation length sitting on a platform with a different one.",
           "Rewriting per platform is not the same as spinning synonyms. The idea holds constant and the entry point moves. What earns attention in a professional feed is different from what earns it under a photograph, and the difference lives almost entirely in the first line.",
         ],
       },
@@ -146,7 +146,7 @@ CUT CHECK. For each hook, list the words you removed to fit the limit, so I can 
       {
         heading: "Alt text belongs in the same workflow",
         body: [
-          "Writing alt text for a social media image is skipped mostly because it happens somewhere else, in a separate field, after the caption is done and the person is finished thinking. Producing it in the same output removes the gap where it gets forgotten.",
+          "Knowing how to write alt text for a social media image gets skipped mostly because it happens somewhere else, in a separate field, after the caption is done and the person is finished thinking. Producing it in the same output removes the gap where it gets forgotten.",
           "The rule is descriptive rather than promotional. Someone using a screen reader wants to know what is in the frame, not what the post is arguing. Alt text that repeats the caption is worse than none, because it wastes the reader's time confirming they already have the information.",
         ],
       },

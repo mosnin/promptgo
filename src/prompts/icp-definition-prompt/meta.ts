@@ -17,9 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "icp definition prompt",
       "how to build an icp from customer data",
-      "disqualification criteria for sales prospecting",
+      "how to set disqualification criteria for sales prospecting",
       "how to narrow an ideal customer profile",
-      "account level segmentation for b2b sales",
+      "account level segmentation guide for b2b sales",
       "which accounts to stop selling to",
     ],
     seoTitle: "ICP Definition Prompt: Name Who You Will Not Sell To",
@@ -115,7 +115,7 @@ STEP 6. If fewer than eight won accounts were supplied, label the entire output 
       {
         heading: "Only attributes you can see before the first call",
         body: [
-          "Account level segmentation for b2b sales fails in practice when the segments depend on things nobody can check. Budget authority, appetite for change and internal politics are real and they are all invisible from a website, so a rule built on them collapses into guesswork the moment a rep applies it.",
+          "An account level segmentation guide for b2b sales fails in practice when the segments it recommends depend on things nobody can check. Budget authority, appetite for change and internal politics are real and they are all invisible from a website, so a rule built on them collapses into guesswork the moment a rep applies it.",
           "The observability constraint is therefore strict. Headcount, sector, the tools they advertise in job posts, whether they operate in one country or nine, whether they run something in house that you would replace. All checkable, all boring, all far more predictive than the interesting attributes.",
         ],
         subsections: [
@@ -130,7 +130,7 @@ STEP 6. If fewer than eight won accounts were supplied, label the entire output 
       {
         heading: "Disqualifiers are the part teams refuse to write",
         body: [
-          "Writing disqualification criteria for sales prospecting means committing, in advance and in public, to walking away from revenue. That is why most profiles quietly omit the section, and why the ones that include it are the ones that change behaviour.",
+          "Knowing how to set disqualification criteria for sales prospecting means committing, in advance and in public, to walking away from revenue. That is why most profiles quietly omit the section, and why the ones that include it are the ones that change behaviour.",
           "Each disqualifier here needs two named examples from your own lost or churned set, which turns the conversation about which accounts to stop selling to from a matter of opinion into a matter of record. Nobody argues with the pattern once the two account names are sitting next to it.",
         ],
       },

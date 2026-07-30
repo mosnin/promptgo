@@ -105,6 +105,7 @@ const EXPERIENCE_CLAIM = [
   /\b(?:in|over) (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d+) years?,? I(?:'ve| have)\b/i,
   /\bnearly every \w+ I(?:'ve| have)\b/i,
   /\balmost every \w+ I(?:'ve| have)\b/i,
+  /\bI (?:see|use|know|read|write|check|find|notice|recall|remember)\b/i,
 ];
 
 /**
@@ -120,9 +121,17 @@ const EXPERIENCE_CLAIM = [
  * "stopping a test early inflates false positives" is a true sentence and is
  * not a query. "how to tell if an ab test is underpowered" is the same idea in
  * the shape someone types.
+ *
+ * A bare "for" used to qualify on its own, which was a mistake: "naming a
+ * budget owner for a proposal" is a description of the page, not a query,
+ * and "for" is the only word it shares with a real search. "for" still
+ * appears inside compound anchors like "instead of" and inside phrases that
+ * also carry a real anchor ("ai prompt for..."), so removing it as a
+ * standalone match only affects phrases that had no other anchor to begin
+ * with, which is exactly the set that needed to be rewritten.
  */
 const QUERY_ANCHOR =
-  /\b(prompt|prompts|chatgpt|claude|gemini|copilot|ai|llm|how to|how do|what to|what is|why|when to|which|template|templates|generator|example|examples|script|checklist|ideas|guide|tips|best|free|vs|instead of|for)\b/i;
+  /\b(prompt|prompts|chatgpt|claude|gemini|copilot|ai|llm|how to|how do|how many|what to|what is|why|when to|which|template|templates|generator|example|examples|script|checklist|ideas|guide|tips|best|free|vs|instead of)\b/i;
 
 const FILLER = [
   "in today's digital world",

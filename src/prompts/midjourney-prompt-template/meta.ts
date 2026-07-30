@@ -18,7 +18,7 @@ const meta: PromptMeta = {
     keywords: [
       "midjourney prompt template",
       "how to vary one variable in an image prompt",
-      "midjourney parameters for aspect ratio and stylize",
+      "midjourney parameter guide for aspect ratio and stylize",
       "how to use the no parameter in midjourney",
       "how to keep a consistent style in midjourney",
       "midjourney prompt words for lighting and lens",
@@ -143,7 +143,7 @@ Produce five numbered variants. Every slot is identical to variant one except th
       {
         heading: "What the parameters actually change",
         body: [
-          "Midjourney parameters for aspect ratio and stylize are the two that alter the composition rather than decorating it. Aspect ratio changes what fits in frame, so a subject that reads clearly at three to two can lose its context entirely at sixteen to nine, and the composition slot has to be rewritten rather than trusted to adapt.",
+          "A midjourney parameter guide for aspect ratio and stylize has to cover these two first, since they alter the composition rather than decorating it. Aspect ratio changes what fits in frame, so a subject that reads clearly at three to two can lose its context entirely at sixteen to nine, and the composition slot has to be rewritten rather than trusted to adapt.",
           "Stylize controls how far the model departs from your description towards its own aesthetic preferences. Low values respect the medium and palette slots, high values gradually overrule them. Requiring a written reason for the value stops it becoming a number you copy from your last prompt out of habit.",
         ],
       },

@@ -16,10 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "excel formula prompt",
     keywords: [
       "excel formula prompt",
-      "excel formula for comparing two lists",
+      "how to write an excel formula for comparing two lists",
       "ai prompt for nested if formulas",
       "why xlookup returns the wrong row",
-      "excel formula for messy date columns",
+      "how to write an excel formula for messy date columns",
     ],
     seoTitle: "Excel Formula Prompt: Get Lookups That Return One Row",
     seoDescription:
@@ -123,9 +123,9 @@ CRITICAL: do not invent column letters, do not assume a sorted range, and never 
         ],
       },
       {
-        heading: "An excel formula for comparing two lists across sheets",
+        heading: "How to write an excel formula for comparing two lists across sheets",
         body: [
-          "An excel formula for comparing two lists across sheets is where most of these requests start, and it is deceptively easy to get almost right. The ranges resolve, the results populate, and the handful of rows that quietly matched nothing sit there as blanks that read as legitimately empty.",
+          "How to write an excel formula for comparing two lists across sheets is where most of these requests start, and it is deceptively easy to get almost right. The ranges resolve, the results populate, and the handful of rows that quietly matched nothing sit there as blanks that read as legitimately empty.",
           "The question why xlookup returns the wrong row almost always has the same answer, and it is not the function. It is the key: casing differences, trailing whitespace from an export, a leading zero stripped by a CSV import, or two records that genuinely share an identifier. Asking for real sample values from both key columns surfaces that before the formula exists.",
         ],
       },
@@ -151,7 +151,7 @@ CRITICAL: do not invent column letters, do not assume a sorted range, and never 
           {
             heading: "Dates that arrived as text",
             body: [
-              "Ask for an excel formula for messy date columns and the honest first answer is a diagnosis, not a formula. A column holding both real serial dates and text that looks like dates needs two different treatments, and any single formula that appears to handle both is silently choosing an interpretation for the ambiguous ones.",
+              "Ask how to write an excel formula for messy date columns and the honest first answer is a diagnosis, not a formula. A column holding both real serial dates and text that looks like dates needs two different treatments, and any single formula that appears to handle both is silently choosing an interpretation for the ambiguous ones.",
             ],
           },
         ],

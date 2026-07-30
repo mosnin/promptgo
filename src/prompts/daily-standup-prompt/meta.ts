@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "ai prompt for an async status update",
       "how to report a blocker in standup",
       "how to write a good standup update",
-      "daily update for a distributed team",
+      "how to write a daily update for a distributed team",
     ],
     seoTitle: "Daily Standup Prompt: Name the Blocker, Skip the Theatre",
     seoDescription:
@@ -148,7 +148,7 @@ Refuse to pad. Two empty lines can be an accurate update. Do not convert a thin 
         heading: "Written updates are judged more harshly than spoken ones",
         body: [
           "As an ai prompt for an async status update this format has to survive a reader four time zones away with no context and no opportunity to ask a follow up question. That is stricter than saying the same words on a call, where a confused expression prompts an immediate clarification.",
-          "A daily update for a distributed team therefore trades warmth for precision. Four short lines, the same four every day, always in the same order, so somebody can scan twelve of them in under a minute and stop only at the ones that changed.",
+          "Knowing how to write a daily update for a distributed team therefore means trading warmth for precision. Four short lines, the same four every day, always in the same order, so somebody can scan twelve of them in under a minute and stop only at the ones that changed.",
         ],
       },
     ],

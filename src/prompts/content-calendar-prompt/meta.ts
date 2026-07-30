@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "content calendar prompt",
       "how to sequence content for topic clusters",
       "ai prompt for an editorial calendar",
-      "realistic publishing schedule for a small team",
-      "blog posting frequency for seo",
+      "realistic publishing schedule example for a small team",
+      "best blog posting frequency for seo",
       "which article to publish first in a cluster",
     ],
     seoTitle: "Content Calendar Prompt: Sequence, Then Schedule",
@@ -107,7 +107,7 @@ Finally, name the single piece most likely to slip and what to do when it does.`
         heading: "Capacity before dates, always",
         body: [
           "Ask for a calendar and you will get one shaped like a calendar: something in every week, evenly distributed, quietly assuming that each piece takes the same effort and that nothing else happens. Teams then miss the third week, fall behind, and abandon the plan by week six.",
-          "Any ai prompt for an editorial calendar that skips this step inherits the same optimism. Making the sustainable rate a separate output, produced before any dates exist, changes the conversation. A number like two pieces a month, stated plainly against a list of nine, forces the cut to happen during planning rather than through attrition. Setting a blog posting frequency for seo that matches your capacity is unglamorous and it is the difference between a plan and a wish.",
+          "Any ai prompt for an editorial calendar that skips this step inherits the same optimism. Making the sustainable rate a separate output, produced before any dates exist, changes the conversation. A number like two pieces a month, stated plainly against a list of nine, forces the cut to happen during planning rather than through attrition. Setting the best blog posting frequency for seo you can actually sustain is unglamorous and it is the difference between a plan and a wish.",
         ],
       },
       {
@@ -185,7 +185,7 @@ Finally, name the single piece most likely to slip and what to do when it does.`
           "Then the fixed date wins and the prompt schedules backwards from it, but it will tell you which dependency broke. That is worth knowing, because it usually means one supporting piece needs a temporary link target until the pillar catches up.",
       },
       {
-        question: "Is a realistic publishing schedule for a small team really this conservative?",
+        question: "Is a realistic publishing schedule example for a small team really this conservative?",
         answer:
           "Usually more conservative than people expect and considerably more productive than the alternative. Two published pieces a month sustained for a year beats eight pieces in a burst followed by nine months of nothing, both for search and for the habit of finishing things.",
       },

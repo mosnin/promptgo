@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "portfolio description prompt",
     keywords: [
       "portfolio description prompt",
-      "writing project descriptions for a portfolio",
+      "how to write project descriptions for a portfolio",
       "ai prompt for case study copy",
       "how to write a portfolio case study",
       "how to credit a team on your portfolio",
@@ -118,7 +118,7 @@ Finish with the single question a reviewer is most likely to ask about this entr
         heading: "Given, decided, happened",
         body: [
           "The portfolio description prompt writes three blocks in that order, and the middle one is the longest. Given covers what you were handed and what made it hard. Decided covers the choices that were yours. Happened covers what changed, including the part that got worse.",
-          "The structure matters because writing project descriptions for a portfolio without it produces chronology. First we did discovery, then we ran a workshop, then we built it. Chronology is easy to write, contains almost no information about you, and is what nearly every entry in the pile already looks like.",
+          "The structure matters because knowing how to write project descriptions for a portfolio without it produces chronology. First we did discovery, then we ran a workshop, then we built it. Chronology is easy to write, contains almost no information about you, and is what nearly every entry in the pile already looks like.",
         ],
       },
       {

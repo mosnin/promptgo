@@ -17,7 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "onboarding plan prompt",
       "how to write a 30 60 90 day plan",
-      "first useful contribution for a new hire",
+      "first useful contribution example for a new hire",
       "ai prompt for onboarding a new team member",
     ],
     seoTitle: "Onboarding Plan Prompt: First Useful Contribution",
@@ -119,7 +119,7 @@ Do not schedule shadowing without a stated purpose. Do not fill any week with re
         heading: "Start from the first shipped thing and work backwards",
         body: [
           "The anchor is a real task with a real recipient. Fixing a broken report somebody uses monthly, closing three of the fifteen queued data requests, writing the query the controller keeps asking for. Small, needed and visible.",
-          "A first useful contribution for a new hire does two things a training exercise cannot. It teaches the actual path work takes through the organisation, including the review, the approval nobody documented and the person who has to be told. And it gives the new person evidence they are contributing, which is the thing most of them are anxious about by day ten.",
+          "A first useful contribution example for a new hire does two things a training exercise cannot. It teaches the actual path work takes through the organisation, including the review, the approval nobody documented and the person who has to be told. And it gives the new person evidence they are contributing, which is the thing most of them are anxious about by day ten.",
           "Working backwards from it also changes the schedule. Access requests, introductions and context all get sequenced by whether the anchor depends on them, which is a much better filter than whether they seem generally useful.",
         ],
       },

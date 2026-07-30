@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to plan a week around calendar reality",
       "ai prompt for a weekly review",
       "weekly planning template",
-      "choosing three outcomes for the week",
+      "how to choose three outcomes for the week",
     ],
     seoTitle: "Weekly Planning Prompt: Three Outcomes, Real Hours",
     seoDescription:
@@ -104,7 +104,7 @@ End with one sentence naming the assumption most likely to break.`,
       {
         heading: "Three outcomes, not fifteen intentions",
         body: [
-          "Choosing three outcomes for the week is the constraint everything else hangs from. Three fits in a head. It is small enough to recite on Wednesday without opening anything, which is the real test of whether a plan is still operating.",
+          "How to choose three outcomes for the week is the constraint everything else hangs from. Three fits in a head. It is small enough to recite on Wednesday without opening anything, which is the real test of whether a plan is still operating.",
           "An outcome is a state of the world rather than an activity. Work on the migration is an activity, and you can spend four hours on it without anything changing. The migration plan is signed off by finance is a state, and on Friday you either have it or you do not.",
         ],
       },

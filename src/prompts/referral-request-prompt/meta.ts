@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "referral request prompt",
       "how to ask a customer for a referral",
       "when to ask for a referral after a win",
-      "asking for an introduction to one named person",
+      "how to ask for an introduction to one named person",
       "referral request email template",
       "chatgpt prompt for customer referrals",
     ],
@@ -121,7 +121,7 @@ BLOCK C, THE EXCHANGE. One sentence stating what the customer gets from making t
       {
         heading: "Why the referral request prompt names one person",
         body: [
-          "Asking for an introduction to one named person is a different request from asking for referrals. It can be answered in ten seconds with a yes or a no, it demonstrates that you did the looking, and it bounds the commitment instead of leaving it open ended.",
+          "Knowing how to ask for an introduction to one named person is a different skill from asking for referrals. It can be answered in ten seconds with a yes or a no, it demonstrates that you did the looking, and it bounds the commitment instead of leaving it open ended.",
           "Where you genuinely cannot name an individual, the prompt takes the tightest profile you can describe and builds the ask around that. A named role at a named company beats an industry, and an industry beats anyone who might find this useful, which is exactly the phrasing this exists to delete.",
         ],
       },

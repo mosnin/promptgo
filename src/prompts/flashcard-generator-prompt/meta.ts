@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "flashcard generator prompt",
     keywords: [
       "flashcard generator prompt",
-      "making cards for spaced repetition",
+      "how to make cards for spaced repetition",
       "ai prompt for cloze deletion cards",
       "how to make flashcards that test recall",
       "how to turn notes into flashcards",
@@ -146,7 +146,7 @@ Return.
       {
         heading: "What the flashcard generator prompt does about spacing",
         body: [
-          "Making cards for spaced repetition and scheduling those cards are separate jobs, and this prompt only does the first properly. What it adds is a starting ladder: cards divided across day one, day three, day seven and day twenty one according to how much they interfere with their neighbours.",
+          "Knowing how to make cards for spaced repetition and scheduling those cards are separate jobs, and this prompt only does the first properly. What it adds is a starting ladder: cards divided across day one, day three, day seven and day twenty one according to how much they interfere with their neighbours.",
           "Interference is the reason two similar cards learned on the same day both get forgotten. Six ionic compounds with similar formulas taught together will blur, so the ladder separates them. Once the deck is in a spaced repetition application, the application takes over the scheduling and the ladder just determines what enters the queue first.",
         ],
       },

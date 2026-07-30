@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "business case prompt",
       "how to build a business case for a budget request",
       "how to show the cost of doing nothing",
-      "naming a budget owner for a proposal",
+      "how to name a budget owner for a proposal",
     ],
     seoTitle: "Business Case Prompt: Cost, Owner And Kill Criteria",
     seoDescription:
@@ -127,7 +127,7 @@ Use no figure I did not give you. Write [FIGURE NEEDED] instead, and never annua
         heading: "Every cost line needs a budget holder",
         body: [
           "Costs do not get approved. Budget holders approve costs, and a proposal that spans three budgets without saying so gets approved in principle and then stalls for six weeks while three people discover the other two exist.",
-          "Naming a budget owner for a proposal at the line level surfaces that immediately. Anything without a clear holder is marked as an unfunded line and totalled separately, which is uncomfortable to read and considerably cheaper than finding out in month two.",
+          "Knowing how to name a budget owner for a proposal at the line level surfaces that immediately. Anything without a clear holder is marked as an unfunded line and totalled separately, which is uncomfortable to read and considerably cheaper than finding out in month two.",
           "Internal time stays in days. Converting engineering days into money makes every case look better and makes every reviewer suspicious, because they know the conversion rate was chosen after the answer.",
         ],
       },

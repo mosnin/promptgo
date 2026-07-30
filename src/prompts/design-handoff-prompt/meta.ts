@@ -17,9 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "design handoff prompt",
       "what to include in a handoff spec",
-      "edge cases for long text and empty data",
+      "how to test edge cases for long text and empty data",
       "how to spec responsive behaviour between breakpoints",
-      "open questions for engineers",
+      "how to write open questions for engineers",
       "design handoff checklist",
     ],
     seoTitle: "Design Handoff Prompt: Specify Behaviour, Not Pixels",
@@ -115,7 +115,7 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
         heading: "The undecided register",
         body: [
           "Section five is the reason this prompt exists. Language models are excellent at producing a complete looking specification, and a complete looking specification with invented details is worse than an incomplete one, because nobody knows which lines to check.",
-          "Forcing every invention into a list of open questions for engineers converts confidence into a task list. Each entry names two options and a recommendation, which means the designer can answer it in a sentence rather than reopening the file. In practice that list runs to eight or twelve items on a component of any real complexity.",
+          "Forcing every invention into a list shows how to write open questions for engineers that convert confidence into a task list. Each entry names two options and a recommendation, which means the designer can answer it in a sentence rather than reopening the file. In practice that list runs to eight or twelve items on a component of any real complexity.",
         ],
         subsections: [
           {
@@ -136,7 +136,7 @@ Rule: if any part of sections 1 to 4 required you to invent something, move it i
       {
         heading: "What the design handoff prompt does with awkward content",
         body: [
-          "Edge cases for long text and empty data are the two that break components in production, and both are invisible in a file populated with sample content. A name field designed against Anna Smith behaves differently when it meets a hyphenated double surname, and a list designed with six rows looks unfinished with none.",
+          "Knowing how to test edge cases for long text and empty data matters because these are the two that break components in production, and both are invisible in a file populated with sample content. A name field designed against Anna Smith behaves differently when it meets a hyphenated double surname, and a list designed with six rows looks unfinished with none.",
           "Requiring the shortest and longest realistic values, taken from your actual data rather than from imagination, turns this into a specification instead of a hope. The overflow decision then has to be made once, deliberately, and the same choice can be applied consistently everywhere the component appears.",
         ],
       },

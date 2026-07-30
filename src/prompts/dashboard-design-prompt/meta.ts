@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "dashboard design prompt",
     keywords: [
       "dashboard design prompt",
-      "choosing metrics for an executive dashboard",
+      "how to choose metrics for an executive dashboard",
       "dashboard design best practices",
       "ai prompt for dashboard layout",
     ],
@@ -109,7 +109,7 @@ CRITICAL: do not propose a metric that is not in the available list. Do not incl
       {
         heading: "Every tile needs a decision behind it",
         body: [
-          "Choosing metrics for an executive dashboard usually starts from availability, which is the wrong end. The right end is the short list of things the viewer can actually change this week. A regional manager can move staff, escalate stock and pause a promotion, and a metric that touches none of those is reference material rather than a dashboard tile.",
+          "How to choose metrics for an executive dashboard usually starts from availability, which is the wrong end. The right end is the short list of things the viewer can actually change this week. A regional manager can move staff, escalate stock and pause a promotion, and a metric that touches none of those is reference material rather than a dashboard tile.",
           "Working from decisions also fixes the ownership question quietly. If a tile feeds a decision, somebody owns that decision and therefore owns the tile. Tiles with no decision have no owner, which is why nobody ever removes them and why they accumulate.",
           "The threshold is the harder half. Asking what number would make you act tends to expose that a widely watched metric has no such number, and that conversation is worth having even if the dashboard never gets built.",
         ],

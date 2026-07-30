@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to make a low fidelity wireframe",
       "what to put above the fold",
       "how to plan a page before designing it",
-      "wireframe structure for a signup page",
+      "best wireframe structure for a signup page",
     ],
     seoTitle: "Wireframe Planning Prompt: Order Before Pixels",
     seoDescription:
@@ -137,7 +137,7 @@ Finish with one alternative ordering that would be correct if the reader arrived
         heading: "How to make a low fidelity wireframe from the region list",
         body: [
           "Once the order survives challenge, the drawing part goes quickly. Each region becomes a block, the content type dictates roughly what shape it takes, and the displacement costs tell you which adjacencies matter enough to protect when the layout meets a real breakpoint. A low fidelity layout plan built this way tends to survive contact with real content, because it was never sized around placeholder text.",
-          "A wireframe structure for a signup page is the clearest demonstration. Run with a reader who has been burned by a bad migration, the form drops below the evidence that their data survives, and no amount of tightening a hero would have found that. Run with a reader who arrived already convinced, the alternative ordering puts the form first and everything else becomes reassurance placed after the commitment.",
+          "Finding the best wireframe structure for a signup page is the clearest demonstration of why order matters. Run with a reader who has been burned by a bad migration, the form drops below the evidence that their data survives, and no amount of tightening a hero would have found that. Run with a reader who arrived already convinced, the alternative ordering puts the form first and everything else becomes reassurance placed after the commitment.",
         ],
       },
     ],

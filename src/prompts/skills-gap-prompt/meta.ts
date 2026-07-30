@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "skills gap prompt",
       "how to compare your skills to a job description",
       "ai prompt for a learning plan from job ads",
-      "cheapest way to get evidence for a missing skill",
+      "best way to get evidence for a missing skill",
     ],
     seoTitle: "Skills Gap Prompt: Only The Gaps That Screen You Out",
     seoDescription:
@@ -138,7 +138,7 @@ Never recommend a degree. Never recommend general upskilling. Never suggest a po
         heading: "The skills gap prompt costs every gap before it plans",
         body: [
           "Each blocking gap comes back with a route to evidence, priced in hours and money, weighted toward work you could take on inside your current job. That preference is deliberate. Six months of a course produces a certificate, while six months of owning the relevant system produces an artefact, a date and someone who will vouch for you.",
-          "The cheapest way to get evidence for a missing skill is nearly always to volunteer for the unpopular piece of work that touches it. It is unglamorous, it is free, and it is the only route that produces something you can describe in an interview without hedging.",
+          "The best way to get evidence for a missing skill is nearly always to volunteer for the unpopular piece of work that touches it. It is unglamorous, it is free, and it is the only route that produces something you can describe in an interview without hedging.",
           "Courses are not banned, and an ai prompt for a learning plan from job ads that never recommends one would be dishonest. They belong where the postings name a certificate, or where the skill genuinely cannot be reached from where you sit.",
         ],
       },

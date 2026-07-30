@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "quiz generator prompt",
       "ai prompt for multiple choice questions",
       "how to write multiple choice distractors",
-      "retrieval practice questions for revision",
+      "how to write retrieval practice questions for revision",
       "how to generate a quiz from lesson notes",
     ],
     seoTitle: "Quiz Generator Prompt: Distractors That Diagnose",
@@ -152,7 +152,7 @@ Return three blocks.
         heading: "Using the results on the same day",
         body: [
           "Mark it in the lesson, by show of hands per item if necessary, and use the diagnostic key while the class is still in the room. The key names a reteach for each distractor chosen by more than a quarter of students, so the decision is already made.",
-          "Retrieval practice questions for revision work on a different rhythm. The same items reappear three weeks later with different numbers, which is what the second follow up produces. Low stakes, frequent, and marked immediately beats one long test that gets returned the following week.",
+          "Knowing how to write retrieval practice questions for revision means working on a different rhythm. The same items reappear three weeks later with different numbers, which is what the second follow up produces. Low stakes, frequent, and marked immediately beats one long test that gets returned the following week.",
         ],
       },
       {

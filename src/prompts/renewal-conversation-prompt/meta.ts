@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "how to spot churn risk early",
       "what to say when usage has dropped",
       "ai prompt for customer retention conversations",
-      "asking for a renewal without leading with price",
+      "how to ask for a renewal without leading with price",
     ],
     seoTitle: "Renewal Conversation Prompt: Check Before You Ask",
     seoDescription:
@@ -115,7 +115,7 @@ STAGE FOUR, always. List every claim in the above that my inputs do not actually
         heading: "What was promised at signing is the only baseline",
         body: [
           "Every account looks acceptable when measured against last quarter. Measured against what someone told the customer would happen when they bought, a good number of them look thin, and the customer has been quietly doing that comparison all year.",
-          "Asking for a renewal without leading with price requires you to have something else to open with, and the promise is it. Stating what was committed and what actually happened, in the customer's own numbers, puts the conversation on ground where you either have a case or you find out early that you do not.",
+          "Knowing how to ask for a renewal without leading with price requires you to have something else to open with, and the promise is it. Stating what was committed and what actually happened, in the customer's own numbers, puts the conversation on ground where you either have a case or you find out early that you do not.",
         ],
       },
       {

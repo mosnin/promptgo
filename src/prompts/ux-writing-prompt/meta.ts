@@ -17,10 +17,10 @@ const meta: PromptMeta = {
     keywords: [
       "ux writing prompt",
       "how to write button labels with ai",
-      "microcopy for empty and error states",
-      "character budget for interface copy",
+      "microcopy examples for empty and error states",
+      "how to set a character budget for interface copy",
       "how to write error messages users can act on",
-      "voice and tone rules for product copy",
+      "voice and tone guide for product copy",
     ],
     seoTitle: "UX Writing Prompt: Every String, Every State",
     seoDescription:
@@ -104,11 +104,11 @@ After the table, list every string you could not write because BEHAVIOUR does no
         heading: "Strings are a set, and consistency lives in the gaps",
         body: [
           "Copy written string by string drifts. The confirmation dialogue says remove, the toast that follows says deleted, and the undo link says restore, so a user has to work out that three words describe one event. Nobody chose that inconsistency. It emerged because each string was written on a different day in a different ticket.",
-          "Voice and tone rules for product copy work better as prohibitions than as adjectives. Friendly and human gives a model nothing to enforce. No exclamation marks, never say oops, never apologise for a state the user chose, all produce visible changes in the output and can be checked line by line afterwards.",
+          "A voice and tone guide for product copy works better as a set of prohibitions than as adjectives. Friendly and human gives a model nothing to enforce. No exclamation marks, never say oops, never apologise for a state the user chose, all produce visible changes in the output and can be checked line by line afterwards.",
         ],
       },
       {
-        heading: "Where microcopy for empty and error states actually breaks",
+        heading: "Where microcopy examples for empty and error states actually break down",
         body: [
           "Two empty states are worth writing separately and almost nobody does. First use empty means the feature has never been used, so the copy should teach and invite. Empty after filtering means the data exists but the current filter hides it, so the copy should offer a way back. Shipping one string for both leaves half your users being taught something they already know.",
           "Errors split the same way. An error the user caused needs a correction they can make in the field they are looking at. An error the system caused needs an honest statement and either a retry or a genuine workaround, and where neither exists the copy should say so rather than inventing hope. Learning how to write error messages users can act on is the highest return hour of writing in most products, because those strings appear at the exact moment someone is deciding whether to give up.",
@@ -125,7 +125,7 @@ After the table, list every string you could not write because BEHAVIOUR does no
       {
         heading: "Counting characters before writing the sentence",
         body: [
-          "A character budget for interface copy is not a stylistic preference, it is a fact about the component. A button that fits twenty four characters at the default type size will wrap or truncate at thirty, and truncation in a destructive confirmation is a real hazard rather than an aesthetic one.",
+          "Knowing how to set a character budget for interface copy is not a stylistic preference, it is a fact about the component. A button that fits twenty four characters at the default type size will wrap or truncate at thirty, and truncation in a destructive confirmation is a real hazard rather than an aesthetic one.",
           "Giving the model the limits changes what it writes, but only if it must also print the count. Without a visible number the response confidently claims to be inside a budget it has exceeded. With one, the model tends to catch itself and shorten the string on the same row.",
         ],
       },

@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to clear an email backlog",
       "ai prompt for sorting email by action",
       "deciding which emails deserve a reply",
-      "email triage rules for a busy week",
+      "how to set email triage rules for a busy week",
     ],
     seoTitle: "Inbox Triage Prompt: Sort Every Message Into One Action",
     seoDescription:
@@ -132,7 +132,7 @@ End with the count in each bucket and the one message you were least sure about.
         heading: "Archive has to state a consequence",
         body: [
           "The archive bucket is the one people distrust, so it carries the heaviest requirement: one line naming what happens if the message is never answered. Most of the time the honest answer is nothing, and seeing that written down is what makes the bucket usable rather than frightening.",
-          "It also catches the reverse error. Occasionally a model tries to archive something and cannot produce a consequence line that sounds harmless, which is the signal to move it. The email triage rules for a busy week should be judged by how often that catch fires, not by how empty the mailbox looks at the end.",
+          "It also catches the reverse error. Occasionally a model tries to archive something and cannot produce a consequence line that sounds harmless, which is the signal to move it. Knowing how to set email triage rules for a busy week means judging them by how often that catch fires, not by how empty the mailbox looks at the end.",
         ],
       },
       {

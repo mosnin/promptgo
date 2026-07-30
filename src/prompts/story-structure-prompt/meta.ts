@@ -189,7 +189,7 @@ STEP FIVE. Mark any structural slot that is empty as EMPTY SLOT, describe the pr
       {
         question: "Is the one third limit on events a real rule?",
         answer:
-          "It is a threshold I use, not a law. What matters is that a draft dominated by events will feel passive regardless of how good the prose is. The number gives you something to check, and drafts that read as slack usually come in far above it.",
+          "It is a threshold, not a law. What matters is that a draft dominated by events will feel passive regardless of how good the prose is. The number gives you something to check, and drafts that read as slack usually come in far above it.",
       },
       {
         question: "Should I run this before or after drafting?",

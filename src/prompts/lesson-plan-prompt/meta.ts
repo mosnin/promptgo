@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "chatgpt prompt for lesson planning",
       "differentiation ideas for mixed ability classes",
       "how to plan a lesson in twenty minutes",
-      "lesson plan with checks for understanding",
+      "how to write a lesson plan with checks for understanding",
     ],
     seoTitle: "Lesson Plan Prompt: Plan Around One Real Objective",
     seoDescription:
@@ -153,9 +153,9 @@ Produce exactly these sections.
         ],
       },
       {
-        heading: "A lesson plan with checks for understanding",
+        heading: "How to write a lesson plan with checks for understanding",
         body: [
-          "A lesson plan with checks for understanding built into the sequence tells you when to stop, and that is its main value. The prompt insists the checks generate evidence from everyone, so mini whiteboards, a hinge question with a forced choice, or an exit ticket, rather than a question to the room.",
+          "How to write a lesson plan with checks for understanding built into the sequence: it tells you when to stop, and that is its main value. The prompt insists the checks generate evidence from everyone, so mini whiteboards, a hinge question with a forced choice, or an exit ticket, rather than a question to the room.",
           "It also asks for the wrong answer that would worry you most. Naming that in advance is what turns a check into a decision point, because you have already decided what you will do if you see it rather than improvising while thirty students wait.",
         ],
       },

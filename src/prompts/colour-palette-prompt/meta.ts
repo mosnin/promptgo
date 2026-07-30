@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "colour palette prompt",
     keywords: [
       "colour palette prompt",
-      "accessible contrast ratios for ui colours",
+      "accessible contrast ratio checklist for ui colours",
       "how to use role based colour tokens",
       "how to make a dark mode palette",
       "how to pick an accent colour",
@@ -111,7 +111,7 @@ Finish with a list of every computed ratio between 4.0 and 5.0, because those ar
         heading: "Contrast is arithmetic, not an impression",
         body: [
           "How to measure contrast between two colours is the part of palette work that has an answer. Two hex values produce one ratio, the ratio either clears the threshold for that text size or it does not, and no amount of confidence in the room changes the number.",
-          "Accessible contrast ratios for ui colours are also where palettes fail quietly. The body text usually passes because someone checked it. What fails is the disabled state, the placeholder, the caption under a chart, the hairline that separates two table rows, and the focus ring on a raised surface. Those pairings never get checked because nobody thinks of them as colour decisions.",
+          "An accessible contrast ratio checklist for ui colours is also where palettes fail quietly. The body text usually passes because someone checked it. What fails is the disabled state, the placeholder, the caption under a chart, the hairline that separates two table rows, and the focus ring on a raised surface. Those pairings never get checked because nobody thinks of them as colour decisions.",
         ],
         subsections: [
           {

@@ -17,10 +17,10 @@ const meta: PromptMeta = {
     keywords: [
       "stakeholder update prompt",
       "how to update stakeholders on a project",
-      "writing for stakeholders who control budget",
+      "how to write for stakeholders who control budget",
       "how to deliver bad news to stakeholders",
       "ai prompt for an executive project summary",
-      "asking stakeholders for a specific decision",
+      "how to ask stakeholders for a specific decision",
     ],
     seoTitle: "Stakeholder Update Prompt: Bad News Goes First",
     seoDescription:
@@ -121,7 +121,7 @@ If any stakeholder's rendering would consist only of good news, say so explicitl
         heading: "Sort readers by what they control",
         body: [
           "Seniority is the wrong axis, and the stakeholder update prompt ignores it. The useful segmentation is control and accountability: who signs, who reports the number upwards, who has to staff something differently, who will be asked about this in a meeting you are not in.",
-          "Writing for stakeholders who control budget looks nothing like writing for the person who owns customer communications, even from identical facts. One needs the variance and the approval request; the other needs the date change and how much notice their team gets.",
+          "Knowing how to write for stakeholders who control budget looks nothing like writing for the person who owns customer communications, even from identical facts. One needs the variance and the approval request; the other needs the date change and how much notice their team gets.",
           "That third field, what each of them will be asked in their own meetings, is the one people leave blank and the one that produces the sharpest updates. You are not writing to inform someone. You are equipping them for a conversation you will not be present at.",
         ],
       },
@@ -144,7 +144,7 @@ If any stakeholder's rendering would consist only of good news, say so explicitl
       {
         heading: "Every version ends with one ask",
         body: [
-          "One ask, answerable, with a date. Not a list of three, not an invitation to share thoughts. Asking stakeholders for a specific decision is the difference between an update that generates movement and an update that generates a thumbs up reaction.",
+          "One ask, answerable, with a date. Not a list of three, not an invitation to share thoughts. Knowing how to ask stakeholders for a specific decision is the difference between an update that generates movement and an update that generates a thumbs up reaction.",
           "Multiple asks in one message reliably produce a response to the easiest one. If a reader genuinely owes you three things, that is three messages, or one message and an explicit statement of which is blocking.",
           "The predicted pushback step then rehearses the reply. Naming the question each reader is most likely to fire back, and answering it from the ledger only, exposes the places where you do not yet have an answer, which is better discovered before sending.",
         ],

@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "ai prompt for reviewing closed deals",
       "how to tell if a lost deal was really about price",
       "win loss analysis template",
-      "reviewing deals you won for the same rigour",
+      "how to review deals you won with the same rigour",
     ],
     seoTitle: "Win Loss Analysis Prompt: Past The Reason They Gave",
     seoDescription:
@@ -147,7 +147,7 @@ Do not accept price as a final answer without testing it. Do not conclude that t
       {
         heading: "Why the win loss analysis prompt reviews wins too",
         body: [
-          "Reviewing deals you won for the same rigour is the part almost everyone skips, and it is where the most dangerous errors hide. A deal won because a champion happened to have budget and authority teaches nothing repeatable, but recorded as a success it becomes a template.",
+          "Knowing how to review deals you won with the same rigour is the part almost everyone skips, and it is where the most dangerous errors hide. A deal won because a champion happened to have budget and authority teaches nothing repeatable, but recorded as a success it becomes a template.",
           "Section six asks plainly whether the win was repeatable or lucky. Answering honestly is what stops a team building a playbook around a coincidence, and it frequently reveals that the wins and the losses had the same structural cause, with timing as the only difference. A win loss analysis template earns its keep across several deals, and the patterns are easier to see once the wins are in the same dataset.",
         ],
       },

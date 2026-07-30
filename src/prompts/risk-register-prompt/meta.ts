@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to build a project risk register",
       "what is the difference between a risk and an issue",
       "ai prompt for risk management on a project",
-      "escalation threshold for a project risk",
+      "how to set an escalation threshold for a project risk",
     ],
     seoTitle: "Risk Register Prompt: Every Risk Needs An Owner",
     seoDescription:
@@ -142,7 +142,7 @@ C. Name the one risk that would be embarrassing to write down because of who wou
       {
         heading: "Escalation, and the entry the risk register prompt makes you write",
         body: [
-          "Each entry carries an escalation threshold for a project risk: the score or the trigger at which it stops being a project meeting item and goes to a named person in the governance forum. Without that line, escalation happens when someone panics, which is reliably too late and occasionally too early.",
+          "Each entry shows how to set an escalation threshold for a project risk: the score or the trigger at which it stops being a project meeting item and goes to a named person in the governance forum. Without that line, escalation happens when someone panics, which is reliably too late and occasionally too early.",
           "The final pass asks for the risk that would be embarrassing to write down because of who reads the register. There is almost always one, it is usually about a person, a sponsor's commitment or a decision nobody wants to reopen, and it is usually the risk that materialises.",
           "Written in neutral language it becomes discussable. Left out, it stays in the corridor conversation, where it cannot be assigned an owner.",
         ],

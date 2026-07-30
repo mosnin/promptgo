@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "performance review prompt",
       "how to write specific feedback with examples",
       "ai prompt for a manager writing reviews",
-      "writing a review for someone underperforming",
+      "how to write a review for someone underperforming",
     ],
     seoTitle: "Performance Review Prompt: Evidence, Not Adjectives",
     seoDescription:
@@ -138,7 +138,7 @@ Never use: rockstar, superstar, needs to be more proactive, could take more owne
       {
         heading: "Using the performance review prompt when the news is bad",
         body: [
-          "Writing a review for someone underperforming is where the evidence rule earns the most. A poorly evidenced negative review is unfair, unactionable and, in a dispute, indefensible. Two dated instances per concern and a stated observable target is also close to what any subsequent formal process will require.",
+          "Knowing how to write a review for someone underperforming is where the evidence rule earns the most. A poorly evidenced negative review is unfair, unactionable and, in a dispute, indefensible. Two dated instances per concern and a stated observable target is also close to what any subsequent formal process will require.",
           "The requirement to state what you owe them is not softening. If the change you are asking for depends on clearer priorities or protected time and you do not provide those, the plan fails and the failure is partly yours. An ai prompt for a manager writing reviews that omits this section produces documents that read as one sided, because they are.",
         ],
       },

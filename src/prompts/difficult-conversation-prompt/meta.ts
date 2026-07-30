@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "difficult conversation script for managers",
       "ai prompt for a hard conversation with an employee",
       "what to say when someone gets defensive",
-      "conversation you have been avoiding for weeks",
+      "how to start a conversation you have been avoiding for weeks",
     ],
     seoTitle: "Difficult Conversation Prompt: Rehearse Their Case",
     seoDescription:
@@ -147,7 +147,7 @@ Do not write a script for me. Do not suggest a compliment sandwich. Do not tell 
         body: [
           "A script fails for a mechanical reason. Delivered as written it sounds performed, and the moment the other person departs from the expected reply, you are reading from a document that no longer matches the conversation.",
           "Knowing how to prepare for a difficult conversation at work means holding three things, not thirty sentences: what you must convey, what you cannot concede, and where you might be wrong. The prompt produces those three and deliberately leaves the wording to you.",
-          "The final section names the moment you are most likely to give away your boundary. It is nearly always the point where they say something legitimate and hard to hear, and the instinct is to offer something to make it easier. The conversation you have been avoiding for weeks usually ends there, in a concession nobody planned and everybody remembers.",
+          "The final section names the moment you are most likely to give away your boundary. It is nearly always the point where they say something legitimate and hard to hear, and the instinct is to offer something to make it easier. Knowing how to start a conversation you have been avoiding for weeks does not prevent that moment, and it usually ends there, in a concession nobody planned and everybody remembers.",
         ],
       },
     ],

@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "data storytelling prompt",
     keywords: [
       "data storytelling prompt",
-      "turning analysis into a narrative for executives",
+      "how to turn analysis into a narrative for executives",
       "how to write a findings summary",
       "ai prompt for presenting results to stakeholders",
     ],
@@ -133,9 +133,9 @@ CRITICAL: use no number that does not appear in the findings I gave you. Do not 
         ],
       },
       {
-        heading: "Turning analysis into a narrative for executives",
+        heading: "How to turn analysis into a narrative for executives",
         body: [
-          "Turning analysis into a narrative for executives is often taken to mean adding drama. What senior readers actually need is fewer claims, each properly supported, with the strength of each one stated. Three points is a limit rather than a target, and two well evidenced points beat five where the reader has to guess which are solid.",
+          "How to turn analysis into a narrative for executives is often taken to mean adding drama. What senior readers actually need is fewer claims, each properly supported, with the strength of each one stated. Three points is a limit rather than a target, and two well evidenced points beat five where the reader has to guess which are solid.",
           "The other thing that helps is naming what would change your mind. It signals that the recommendation is a judgement rather than a certainty, and it converts disagreement into a specific request for evidence instead of a general argument about whether the analysis is any good.",
         ],
         list: [

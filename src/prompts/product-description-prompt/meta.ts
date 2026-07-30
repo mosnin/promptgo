@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "ai prompt for shopify product descriptions",
       "what to include in a product description",
       "how to stop ai inventing product details",
-      "product description for a physical item",
+      "how to write a product description for a physical item",
     ],
     seoTitle: "Product Description Prompt: Answer The Hesitation",
     seoDescription:
@@ -140,7 +140,7 @@ Never write: perfect for any occasion, high quality, premium, must have, or any 
         heading: "The one line does the category page work",
         body: [
           "Most shoppers see the fifteen word line long before they see the body, in a category grid or a search result, and they use it to decide whether to click at all. Written as a slogan it wastes that position entirely.",
-          "The instruction is to make it possible to rule the product in or out, which sounds unambitious and is exactly right. A visitor who correctly rules it out has been saved a click, and a visitor who rules it in arrives at the page already halfway convinced. This is where a product description for a physical item earns most of its traffic value.",
+          "The instruction is to make it possible to rule the product in or out, which sounds unambitious and is exactly right. A visitor who correctly rules it out has been saved a click, and a visitor who rules it in arrives at the page already halfway convinced. This is where knowing how to write a product description for a physical item earns most of its traffic value.",
         ],
       },
       {

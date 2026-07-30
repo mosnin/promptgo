@@ -21,7 +21,7 @@ const meta: PromptMeta = {
       "how to test focus order",
       "how to review a component for accessibility",
       "how to check colour contrast in ui",
-      "what a screen reader announces for a button",
+      "how to check what a screen reader announces for a button",
     ],
     seoTitle: "Accessibility Review Prompt: Pass, Fail, Or Unknown",
     seoDescription:
@@ -125,7 +125,7 @@ Rank the FAIL items by how many people are blocked outright rather than inconven
       {
         heading: "Why the accessibility review prompt writes the announcement",
         body: [
-          "What a screen reader announces for a button or a field is the single most clarifying artefact in this whole area, and almost nobody on a design team has ever read one written down. A visually tidy component often announces as button, button, button, edit, blank, which makes the problem obvious in a way a criterion number never does.",
+          "Knowing how to check what a screen reader announces for a button or a field is the single most clarifying skill in this whole area, and almost nobody on a design team has ever read one written down. A visually tidy component often announces as button, button, button, edit, blank, which makes the problem obvious in a way a criterion number never does.",
           "Asking for one line per tab stop, in order, with state changes included, also catches the ambiguity problem. An announcement of remove is fine while you are looking at the row it belongs to and useless heard on its own, and that distinction is what the mark ambiguous instruction surfaces.",
         ],
       },

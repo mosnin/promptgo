@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "networking message prompt",
     keywords: [
       "networking message prompt",
-      "asking a stranger for fifteen minutes",
+      "how to ask a stranger for fifteen minutes",
       "ai prompt for a networking email",
       "how to message someone you have never met on linkedin",
       "what to write instead of picking your brain",
@@ -114,7 +114,7 @@ Then tell me which of the three to send, and why that one.`,
         heading: "The ask has to be cheap to grant",
         body: [
           "Every recipient performs the same silent calculation: what does this cost me, and can I do it now. A question they can answer from memory in two sentences costs almost nothing, and it gets answered at a rate that surprises people who have only ever sent meeting requests.",
-          "Asking a stranger for fifteen minutes is a much bigger request than it sounds, because it is not fifteen minutes. It is finding the slot, the calendar exchange, the mild dread beforehand, and the follow up afterwards. Reframing it as a written question is often the same information at a tenth of the price.",
+          "Knowing how to ask a stranger for fifteen minutes matters because it is a much bigger request than it sounds, and it is not really fifteen minutes. It is finding the slot, the calendar exchange, the mild dread beforehand, and the follow up afterwards. Reframing it as a written question is often the same information at a tenth of the price.",
           "So the networking message prompt produces three versions rather than one. Seeing the small ask beside the medium one is usually enough to notice that the small one would have got you what you needed.",
         ],
       },

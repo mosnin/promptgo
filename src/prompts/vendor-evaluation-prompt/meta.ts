@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "vendor evaluation prompt",
       "how to compare software vendors objectively",
       "ai prompt for a vendor scorecard",
-      "reference call questions for a vendor",
+      "how to ask reference call questions for a vendor",
     ],
     seoTitle: "Vendor Evaluation Prompt: Weight Before You Look",
     seoDescription:
@@ -153,7 +153,7 @@ Do not recommend a winner unless one vendor leads on the weighted total and pass
       {
         heading: "Reference calls designed to surface failure",
         body: [
-          "A reference supplied by a vendor is a happy customer, so asking whether they are happy wastes the call. Reference call questions for a vendor work when they make disclosure easy and specific: what did you end up building yourselves, what took longer than the sales team said, what would you check if you were doing this again.",
+          "A reference supplied by a vendor is a happy customer, so asking whether they are happy wastes the call. Knowing how to ask reference call questions for a vendor means making disclosure easy and specific: what did you end up building yourselves, what took longer than the sales team said, what would you check if you were doing this again.",
           "No question may be answerable with yes. That single constraint removes most of the questions people actually ask on these calls, and what is left produces information you cannot get anywhere else.",
         ],
       },

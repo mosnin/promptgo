@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "dependency upgrade prompt",
     keywords: [
       "dependency upgrade prompt",
-      "reading a changelog for breaking changes",
+      "how to read a changelog for breaking changes",
       "semver breaking change checklist",
       "how to prioritise dependency updates",
       "how to tell if a cve affects my code",
@@ -117,9 +117,9 @@ F. VERIFICATION AND RETREAT. Name the test, metric or log line that would reveal
         ],
       },
       {
-        heading: "Reading a changelog for breaking changes it forgot to label",
+        heading: "How to read a changelog for breaking changes it forgot to label",
         body: [
-          "Reading a changelog for breaking changes works well for the entries under the heading marked breaking. The dangerous ones are elsewhere, filed as improvements, because the maintainer did not consider your usage a supported pattern.",
+          "How to read a changelog for breaking changes: it works well for the entries under the heading marked breaking. The dangerous ones are elsewhere, filed as improvements, because the maintainer did not consider your usage a supported pattern.",
           "A tightened validator, a widened exception type, a default timeout that dropped from thirty seconds to five: none of those get the breaking label and all of them break callers. The second pass exists purely to hunt for that category, separately from the labelled list.",
         ],
         list: [

@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to write key results that are measurable",
       "ai prompt for quarterly goal setting",
       "what is the difference between a key result and a task",
-      "writing okrs for a small team",
+      "how to write okrs for a small team",
     ],
     seoTitle: "OKR Writing Prompt: Key Results, Not A Task List",
     seoDescription:
@@ -131,7 +131,7 @@ Cap the set at three key results. If my draft has more, tell me which ones you c
       {
         heading: "Running the okr writing prompt when the team is five people",
         body: [
-          "Writing okrs for a small team fails differently from writing them for a department. The risk is not misalignment, it is that three key results plus normal operational load equals a quarter where the goals are ignored from week three, and the team quietly reverts to the ticket queue.",
+          "Knowing how to write okrs for a small team means it fails differently from writing them for a department. The risk is not misalignment, it is that three key results plus normal operational load equals a quarter where the goals are ignored from week three, and the team quietly reverts to the ticket queue.",
           "The capacity question in step four exists for this. Asking which key result you would drop if you lost a third of your people forces a ranking before the quarter rather than during it, and small teams lose a third of their capacity routinely, through one resignation, one long illness or one incident that runs for two weeks.",
           "The cap at three is also load bearing here. A five person team with six key results has a wish list, and the honest version is usually one outcome that matters plus a delivery list that is allowed to be long.",
         ],

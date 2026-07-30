@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to ask someone to be a reference",
       "ai prompt for a reference request email",
       "how to prepare someone to be your reference",
-      "asking a former manager for a reference",
+      "how to ask a former manager for a reference",
       "what to send a reference so they can help",
     ],
     seoTitle: "Reference Request Prompt: The Ask And The Brief",
@@ -129,7 +129,7 @@ Finally, if my description of the ending suggests they might say something an em
       {
         heading: "Using the reference request prompt when the relationship is complicated",
         body: [
-          "Asking a former manager for a reference after an uncomfortable parting is a narrower problem than it feels from the inside. The question is not whether they liked you. It is whether they can confirm dates, scope and one thing you did well, which most managers will do even when the ending was difficult.",
+          "Knowing how to ask a former manager for a reference after an uncomfortable parting is a narrower problem than it feels from the inside. The question is not whether they liked you. It is whether they can confirm dates, scope and one thing you did well, which most managers will do even when the ending was difficult.",
           "The prompt handles this by narrowing the ask to a specific checkable topic rather than a general endorsement of character, and by asking you directly whether there is anything they might say that the employer has not already heard from you. If there is, the answer is to raise it yourself or to choose someone else. Hoping the call stays shallow is not a plan.",
         ],
       },

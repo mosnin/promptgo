@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to analyse a competitor from their website",
       "ai prompt for competitive positioning",
       "how to find a gap in the market",
-      "reading pricing pages for strategy signals",
+      "how to read pricing pages for strategy signals",
       "how to do competitor research for free",
     ],
     seoTitle: "Competitor Analysis Prompt: Read What They Reveal",
@@ -116,7 +116,7 @@ Never speculate about their revenue, headcount, funding or internal decisions. I
         heading: "Pricing as a strategy document",
         body: [
           "Tier structures encode decisions that never appear in prose. Which feature sits behind the first paywall tells you what they believe people will pay to unlock. A top tier priced far above the others is often a decoy making the middle tier look reasonable, and knowing that changes how you price against them.",
-          "Hidden pricing is also information. It usually implies a sales led motion, variable deal sizes and a buyer who expects a negotiation, which tells you the customer they are built for is not the one who wants to sign up on a Tuesday afternoon. Reading pricing pages for strategy signals gets you further than most published competitive reports.",
+          "Hidden pricing is also information. It usually implies a sales led motion, variable deal sizes and a buyer who expects a negotiation, which tells you the customer they are built for is not the one who wants to sign up on a Tuesday afternoon. Knowing how to read pricing pages for strategy signals gets you further than most published competitive reports.",
         ],
         list: [
           "The first gated feature: what they think has the clearest value.",

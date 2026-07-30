@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "ai prompt for a tailored cover letter",
       "how to start a cover letter without being generic",
       "how to explain a career gap in a cover letter",
-      "cover letter for a role you are underqualified for",
+      "how to write a cover letter for a role you are underqualified for",
     ],
     seoTitle: "Cover Letter Prompt: One Argument, Under 250 Words",
     seoDescription:
@@ -131,7 +131,7 @@ If I gave you something awkward, put one plain sentence about it in its own shor
       {
         heading: "Using the cover letter prompt on an awkward application",
         body: [
-          "A cover letter for a role you are underqualified for has a narrower job than a standard one. Name the gap before the screener finds it, put your strongest offsetting evidence directly beside it, and stop. A letter hoping the gap passes unnoticed reads as unaware or evasive, and both readings cost more than the gap did.",
+          "Knowing how to write a cover letter for a role you are underqualified for is a narrower job than a standard one. Name the gap before the screener finds it, put your strongest offsetting evidence directly beside it, and stop. A letter hoping the gap passes unnoticed reads as unaware or evasive, and both readings cost more than the gap did.",
           "How to explain a career gap in a cover letter works the same way and needs one plain sentence with no apology attached to it. I was caring for a family member between March 2024 and January 2025 is a complete treatment. The urge to justify produces a paragraph that makes a non issue look like a real one.",
           "Both go in their own short paragraph near the end rather than in the opening, so the argument lands before the caveat arrives.",
         ],

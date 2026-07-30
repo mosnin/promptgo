@@ -16,7 +16,7 @@ const meta: PromptMeta = {
     primaryKeyword: "lesson differentiation prompt",
     keywords: [
       "lesson differentiation prompt",
-      "adapting a lesson for mixed ability",
+      "how to adapt a lesson for mixed ability",
       "how to scaffold without lowering the learning objective",
       "ai prompt for differentiated tasks",
       "how to support eal learners in class",
@@ -113,7 +113,7 @@ Return.
       {
         heading: "Same objective, different door",
         body: [
-          "Adapting a lesson for mixed ability goes wrong at the point where three tasks become three ambitions. Everyone can look busy, the books look differentiated, and at the end of the term the supported group has never once been asked to do the thinking the objective describes.",
+          "Knowing how to adapt a lesson for mixed ability goes wrong at the point where three tasks become three ambitions. Everyone can look busy, the books look differentiated, and at the end of the term the supported group has never once been asked to do the thinking the objective describes.",
           "Holding one objective across three routes is harder to plan and much easier to assess, because there is a single question at the end that any student in the room can be asked. The prompt insists on that question and puts it last, so you can check the routes against it before you print anything.",
         ],
       },

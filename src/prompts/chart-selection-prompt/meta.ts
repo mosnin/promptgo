@@ -18,7 +18,7 @@ const meta: PromptMeta = {
       "chart selection prompt",
       "which chart type for my data",
       "when to use a pie chart",
-      "choosing a chart for a distribution",
+      "how to choose a chart for a distribution",
       "ai prompt for choosing a visualisation",
     ],
     seoTitle: "Chart Selection Prompt: Match the Chart to the Question",
@@ -115,9 +115,9 @@ CRITICAL: never recommend a second axis. Never recommend a chart form purely bec
         ],
       },
       {
-        heading: "Choosing a chart for a distribution",
+        heading: "How to choose a chart for a distribution",
         body: [
-          "Choosing a chart for a distribution is where the most damage gets done, because the default is a bar chart of the mean and a mean is a single number standing in for a shape. Two groups with identical averages can have completely different spreads, and only one of them supports the decision you are about to make.",
+          "How to choose a chart for a distribution is where the most damage gets done, because the default is a bar chart of the mean and a mean is a single number standing in for a shape. Two groups with identical averages can have completely different spreads, and only one of them supports the decision you are about to make.",
           "A histogram or a box plot costs nothing extra and shows whether the average is describing anything real. When someone insists on the bar chart, the honest compromise is a bar with the interquartile range drawn on it and the group size printed underneath, which at least admits what is being summarised.",
         ],
       },

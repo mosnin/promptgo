@@ -16,8 +16,8 @@ const meta: PromptMeta = {
     primaryKeyword: "unit test prompt",
     keywords: [
       "unit test prompt",
-      "writing tests that fail for the right reason",
-      "generating edge case tests for a function",
+      "how to write tests that fail for the right reason",
+      "how to generate edge case tests for a function",
       "ai prompt for pytest test cases",
       "how to test a function you did not write",
     ],
@@ -101,9 +101,9 @@ Do not modify the code under test. Where the contract and the code disagree, wri
 
     sections: [
       {
-        heading: "Writing tests that fail for the right reason",
+        heading: "How to write tests that fail for the right reason",
         body: [
-          "Writing tests that fail for the right reason means each test can answer the question of what broke. A test named test_process_order that exercises validation, pricing and persistence in one call fails on any of them and tells you nothing about which.",
+          "How to write tests that fail for the right reason: each test has to be able to answer the question of what broke. A test named test_process_order that exercises validation, pricing and persistence in one call fails on any of them and tells you nothing about which.",
           "The one behaviour per test rule handles the split, and the required comment naming the change that would make the test fail handles the rest. That comment is a small thing that changes maintenance considerably. Two years later, when the test fails and nobody remembers why it exists, the answer is on the line above it.",
           "It also functions as a filter while the tests are being written. If the model cannot name a change that would break a test, the test is not protecting anything, and it usually deletes it at that point rather than writing it out.",
         ],
@@ -117,9 +117,9 @@ Do not modify the code under test. Where the contract and the code disagree, wri
         ],
       },
       {
-        heading: "Generating edge case tests for a function",
+        heading: "How to generate edge case tests for a function",
         body: [
-          "Generating edge case tests for a function is where models are strongest, provided they are pointed at a specific class of mistake rather than asked for edge cases in general. The adversarial framing in step two does the pointing: name the wrong implementation first, then write the case that separates it from the right one.",
+          "How to generate edge case tests for a function is where models are strongest, provided they are pointed at a specific class of mistake rather than asked for edge cases in general. The adversarial framing in step two does the pointing: name the wrong implementation first, then write the case that separates it from the right one.",
           "Used as an ai prompt for pytest test cases, this tends to produce a parametrized table where each row is a named defect rather than an anonymous input, which reads well in a failure report and survives review.",
         ],
         list: [

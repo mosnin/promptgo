@@ -20,7 +20,7 @@ const meta: PromptMeta = {
       "how to write a hero section that converts",
       "saas landing page copy template",
       "how to match landing page copy to your ad",
-      "landing page structure for a single offer",
+      "best landing page structure for a single offer",
     ],
     seoTitle: "Landing Page Copy Prompt: Answer Questions In Order",
     seoDescription:
@@ -112,7 +112,7 @@ Rules: one offer only, no secondary calls to action, no testimonials you were no
       {
         heading: "The seven questions, in the order they arrive",
         body: [
-          "The order matters more than the wording of any individual block. Proof placed before someone cares about the problem is ignored. An objection answered before the offer is understood creates a doubt that was not there. This is a landing page structure for a single offer, and the sequence is the structural claim.",
+          "The order matters more than the wording of any individual block. Proof placed before someone cares about the problem is ignored. An objection answered before the offer is understood creates a doubt that was not there. This is the best landing page structure for a single offer, and the sequence is the structural claim.",
         ],
         list: [
           "Am I in the right place? Answered in under three seconds or they leave.",

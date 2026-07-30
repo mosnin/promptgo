@@ -17,7 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "press release prompt",
       "how to tell if a story is newsworthy",
-      "press release embargo line for journalists",
+      "press release embargo line example for journalists",
       "how to write a press release headline",
       "press release quote examples",
       "ai prompt for a product launch announcement",
@@ -148,7 +148,7 @@ FINISH with the three questions a journalist will ask that this release does not
         heading: "Datelines, embargoes and the boring mechanics",
         body: [
           "The mechanical block gets neglected because it is dull, and its absence is the fastest way to look like an amateur to someone who handles releases daily. A dateline, a named contact with a direct line, and a boilerplate short enough to skip.",
-          "A press release embargo line for journalists needs a date, a clock time and a timezone, all three. Embargoes without a timezone break routinely across markets, and a broken embargo costs you the relationship with the reporter who honoured it while a competitor's outlet published early.",
+          "A press release embargo line example for journalists needs a date, a clock time and a timezone, all three. Embargoes without a timezone break routinely across markets, and a broken embargo costs you the relationship with the reporter who honoured it while a competitor's outlet published early.",
         ],
       },
       {

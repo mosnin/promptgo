@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to run a better one to one",
       "ai prompt for a manager one to one agenda",
       "best one to one questions for managers",
-      "one to one agenda for a direct report",
+      "one to one agenda template for a direct report",
     ],
     seoTitle: "One On One Meeting Prompt: Get Past The Word Fine",
     seoDescription:
@@ -112,7 +112,7 @@ Do not produce coaching platitudes, do not suggest icebreakers, and do not write
         body: [
           "Almost every manager believes they give their reports the majority of the time. Almost none of them do, because the manager's topics tend to be operational and urgent, and urgency wins any unstructured negotiation over thirty minutes.",
           "Assigning running minutes to each block makes the split visible before the meeting rather than after it. If your items overflow, the prompt says so rather than shaving five minutes off theirs, which is what actually happens when the agenda is held in your head.",
-          "A one to one agenda for a direct report should be legible to them. Sending it in advance costs nothing and removes the small dread of walking into a meeting where only one person knows what is on it.",
+          "A one to one agenda template for a direct report should be legible to them. Sending it in advance costs nothing and removes the small dread of walking into a meeting where only one person knows what is on it.",
         ],
       },
       {
