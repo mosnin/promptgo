@@ -18,8 +18,8 @@ const meta: PromptMeta = {
       "win loss analysis prompt",
       "how to find out why a deal was really lost",
       "ai prompt for reviewing closed deals",
-      "the stated reason versus the actual reason",
-      "spotting patterns across several lost deals",
+      "how to tell if a lost deal was really about price",
+      "win loss analysis template",
       "reviewing deals you won for the same rigour",
     ],
     seoTitle: "Win Loss Analysis Prompt: Past The Reason They Gave",
@@ -113,7 +113,7 @@ Do not accept price as a final answer without testing it. Do not conclude that t
         heading: "Price is the polite answer",
         body: [
           "When a buyer says you were too expensive, the useful question is whether price was ever actually negotiated. If nobody asked for a discount, if a more expensive option was chosen elsewhere, or if the objection first appeared after engagement had already dropped, then price is a summary rather than a cause.",
-          "The prompt runs those checks before accepting it. Understanding the stated reason versus the actual reason is most of the value here, because a pipeline reviewed on stated reasons produces a strategy of discounting against a problem that was never about money.",
+          "The prompt runs those checks before accepting it. Knowing how to tell if a lost deal was really about price is most of the value here, because a pipeline reviewed on stated reasons produces a strategy of discounting against a problem that was never about money.",
         ],
       },
       {
@@ -148,7 +148,7 @@ Do not accept price as a final answer without testing it. Do not conclude that t
         heading: "Why the win loss analysis prompt reviews wins too",
         body: [
           "Reviewing deals you won for the same rigour is the part almost everyone skips, and it is where the most dangerous errors hide. A deal won because a champion happened to have budget and authority teaches nothing repeatable, but recorded as a success it becomes a template.",
-          "Section six asks plainly whether the win was repeatable or lucky. Answering honestly is what stops a team building a playbook around a coincidence, and it frequently reveals that the wins and the losses had the same structural cause, with timing as the only difference. Spotting patterns across several lost deals is easier once the wins are in the same dataset.",
+          "Section six asks plainly whether the win was repeatable or lucky. Answering honestly is what stops a team building a playbook around a coincidence, and it frequently reveals that the wins and the losses had the same structural cause, with timing as the only difference. A win loss analysis template earns its keep across several deals, and the patterns are easier to see once the wins are in the same dataset.",
         ],
       },
     ],

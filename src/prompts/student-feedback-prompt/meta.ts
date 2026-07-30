@@ -17,8 +17,7 @@ const meta: PromptMeta = {
     keywords: [
       "student feedback prompt",
       "how to write feedback students act on",
-      "reducing marking time without losing quality",
-      "feedback that names the next step",
+      "how to reduce marking workload",
       "ai prompt for writing report comments",
       "whole class feedback instead of individual comments",
     ],
@@ -131,7 +130,7 @@ Output.
         heading: "Working from notes rather than the script",
         body: [
           "Handing a model an entire piece of work and asking for feedback invites it to fill gaps with plausible generalities, and it will praise a structure that is not present. The fix is to invert the flow of information: you supply the evidence, it supplies the phrasing.",
-          "This is also what makes the arrangement honest. You have read the work. The comment is grounded in your observations, and the model is doing the composition. Reducing marking time without losing quality only works in that direction, and anyone using it the other way round is generating comments about work nobody read.",
+          "This is also what makes the arrangement honest. You have read the work. The comment is grounded in your observations, and the model is doing the composition. How to reduce marking workload without losing quality only works in that direction, and anyone using it the other way round is generating comments about work nobody read.",
         ],
       },
       {

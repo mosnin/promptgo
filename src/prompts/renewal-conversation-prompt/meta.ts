@@ -17,8 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "renewal conversation prompt",
       "how to prepare for a renewal call",
-      "churn signals to check before a renewal",
-      "renewal talk track when usage has dropped",
+      "how to spot churn risk early",
+      "what to say when usage has dropped",
       "ai prompt for customer retention conversations",
       "asking for a renewal without leading with price",
     ],
@@ -121,7 +121,7 @@ STAGE FOUR, always. List every claim in the above that my inputs do not actually
       {
         heading: "Four signals, graded before anything else",
         body: [
-          "The churn signals to check before a renewal are not mysterious, and the reason they get missed is that each one individually looks survivable. Usage flat but not falling. A champion who moved sideways. A ticket that has been open a while. Nobody has called in a couple of months.",
+          "How to spot churn risk early is not mysterious, and the reason the signals get missed is that each one individually looks survivable. Usage flat but not falling. A champion who moved sideways. A ticket that has been open a while. Nobody has called in a couple of months.",
           "Graded together with evidence attached, the same four facts read as an account that has quietly stopped depending on you. The grading is deliberately mechanical so that your relationship with the customer, which is the least reliable instrument you own, does not get a vote.",
         ],
         list: [
@@ -135,7 +135,7 @@ STAGE FOUR, always. List every claim in the above that my inputs do not actually
         heading: "When the renewal conversation prompt tells you not to ask yet",
         body: [
           "Two red signals produce a repair verdict, and the output then contains no price, no term and no uplift at all. This is the constraint people argue with and it is the one worth keeping, because a commercial ask into a damaged account converts a retention problem into a negotiation problem while the original issue stays unfixed.",
-          "A renewal talk track when usage has dropped has to earn the right to reach the commercials, which usually takes a separate meeting and something visibly repaired between the two. The repair agenda is short on purpose: fix one thing the customer can see, then come back.",
+          "What to say when usage has dropped has to earn the right to reach the commercials, which usually takes a separate meeting and something visibly repaired between the two. The repair agenda is short on purpose: fix one thing the customer can see, then come back.",
         ],
       },
       {

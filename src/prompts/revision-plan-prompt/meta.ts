@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "revision plan prompt",
     keywords: [
       "revision plan prompt",
-      "spaced retrieval revision timetable",
-      "revision plan based on past paper marks",
+      "revision timetable template for gcse",
+      "how to use past papers for revision",
       "ai prompt for exam revision planning",
       "interleaving topics instead of blocking",
-      "revising the topics you avoid",
     ],
     seoTitle: "Revision Plan Prompt: Spaced, Scored And Realistic",
     seoDescription:
@@ -119,7 +118,7 @@ Output.
       {
         heading: "Scores in, not topics in",
         body: [
-          "A revision plan based on past paper marks allocates time where marks are being lost. A plan based on a topic list allocates time evenly, which quietly means allocating most of it to material you already know, because familiar topics are faster and more pleasant to revise.",
+          "How to use past papers for revision comes down to allocating time where marks are being lost. A plan based on a topic list allocates time evenly, which quietly means allocating most of it to material you already know, because familiar topics are faster and more pleasant to revise.",
           "You do not need precise data. A recent mark per topic, even a rough one out of ten from a self test, is enough for the plan to rank. The prompt also separates topics you scored badly on from topics you have no score for, and treats the second group as unknown rather than safe, which is the honest reading.",
         ],
       },
@@ -147,7 +146,7 @@ Output.
       {
         heading: "Spacing and interleaving without a spreadsheet",
         body: [
-          "A spaced retrieval revision timetable simply means each topic reappears with widening gaps: a few days after the first pass, then a week or two, then shortly before the exam. The forgetting between visits is not wasted time, it is the thing that makes the next attempt useful.",
+          "A revision timetable template for gcse works by spacing retrieval, so each topic reappears with widening gaps: a few days after the first pass, then a week or two, then shortly before the exam. The forgetting between visits is not wasted time, it is the thing that makes the next attempt useful.",
           "Interleaving topics instead of blocking them is the less intuitive half. Three consecutive sessions on genetics feel more coherent, and produce worse retention than genetics, homeostasis, genetics. Mixing forces you to work out which method applies before applying it, which is what the exam will require and blocked practice never rehearses.",
         ],
       },

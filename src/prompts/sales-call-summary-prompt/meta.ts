@@ -16,10 +16,9 @@ const meta: PromptMeta = {
     primaryKeyword: "sales call summary prompt",
     keywords: [
       "sales call summary prompt",
-      "what changed in the deal since the last call",
-      "logging a sales call without inflating it",
-      "separating buyer commitments from buyer interest",
-      "crm notes a sales manager can trust",
+      "how to write sales call notes",
+      "what is a real buying signal",
+      "crm note taking best practices",
       "ai prompt for post call deal notes",
     ],
     seoTitle: "Sales Call Summary Prompt: Log the Deal, Not the Chat",
@@ -107,7 +106,7 @@ PART 5, FORECAST LINE. One sentence, no adjectives, no verbs like feels or seems
       {
         heading: "Commitment has a definition, interest does not qualify",
         body: [
-          "Separating buyer commitments from buyer interest is the discipline the whole thing rests on. The test used here is deliberately mechanical: an action, an owner and a time. Missing any one of the three and the statement is interest, however sincerely it was said.",
+          "Knowing what is a real buying signal, rather than polite interest, is the discipline the whole thing rests on. The test used here is deliberately mechanical: an action, an owner and a time. Missing any one of the three and the statement is interest, however sincerely it was said.",
           "This filters out most of what makes a call feel good. That is exactly right, because encouraging language is cheap for a buyer to produce and expensive for a seller to misread. A buyer who says the team is excited has told you about a mood. A buyer who says they will send it to procurement on Thursday has told you about a deal.",
         ],
         list: [
@@ -120,7 +119,7 @@ PART 5, FORECAST LINE. One sentence, no adjectives, no verbs like feels or seems
       {
         heading: "The DO NOT CLAIM block",
         body: [
-          "Logging a sales call without inflating it is harder than it sounds, because inflation happens in the retelling rather than in the record. You write accurate notes, then describe the call to your manager in a sentence that goes slightly further than the notes did, and the sentence is what gets remembered.",
+          "How to write sales call notes without inflating them is harder than it sounds, because inflation happens in the retelling rather than in the record. You write accurate notes, then describe the call to your manager in a sentence that goes slightly further than the notes did, and the sentence is what gets remembered.",
           "Part four pre empts that by naming the specific overstatements available to you. Seeing you cannot say the buyer confirmed budget written down, next to a call where the buyer said they would look into budget, closes the gap between the record and the retelling before the retelling happens.",
         ],
       },
@@ -142,7 +141,7 @@ PART 5, FORECAST LINE. One sentence, no adjectives, no verbs like feels or seems
         heading: "Writing for the forecast review",
         body: [
           "The final line exists because someone will read this aloud in a room, and adjectives do not survive that setting. Banning feels and seems removes the two words that let a rep report a sentiment as a status.",
-          "It also gives you crm notes a sales manager can trust, which changes what a review is for. Once the notes stop being advocacy, the meeting stops being an interrogation and turns into a discussion about what would move the field that has not moved.",
+          "It also turns into crm note taking best practices a sales manager can act on, which changes what a review is for. Once the notes stop being advocacy, the meeting stops being an interrogation and turns into a discussion about what would move the field that has not moved.",
         ],
       },
     ],

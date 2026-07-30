@@ -17,10 +17,8 @@ const meta: PromptMeta = {
     keywords: [
       "survey analysis prompt",
       "how to analyse open ended survey responses",
-      "response rate and nonresponse bias",
-      "coding qualitative survey answers",
+      "what is nonresponse bias in surveys",
       "ai prompt for likert scale results",
-      "survey sample too small to segment",
     ],
     seoTitle: "Survey Analysis Prompt: Read Responses Without Overreaching",
     seoDescription:
@@ -114,7 +112,7 @@ CRITICAL: every quote must be copied exactly from the responses given. Do not pa
       {
         heading: "Read the response rate before you read the responses",
         body: [
-          "Response rate and nonresponse bias are two different things and the first only hints at the second. A twelve percent response rate is not automatically useless, and a sixty percent rate is not automatically sound. What matters is whether the people who answered differ from the people who did not in ways connected to the question you asked.",
+          "Asking what is nonresponse bias in surveys is a different question from asking about response rate, and the second only hints at the first. A twelve percent response rate is not automatically useless, and a sixty percent rate is not automatically sound. What matters is whether the people who answered differ from the people who did not in ways connected to the question you asked.",
           "The method usually tells you. An SMS link sent in English during working hours, expiring after a week, systematically loses people without a phone plan, people who read another language and anyone who was away. If your survey asks about access, you have lost precisely the group whose answers would have changed the conclusion.",
           "Naming that group is uncomfortable and it is the single most valuable paragraph in most survey write ups. It also converts a vague caveat into something checkable, because you can compare respondent demographics against the invited list where one exists.",
         ],

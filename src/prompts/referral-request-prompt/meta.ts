@@ -19,7 +19,7 @@ const meta: PromptMeta = {
       "how to ask a customer for a referral",
       "when to ask for a referral after a win",
       "asking for an introduction to one named person",
-      "referral email that is easy to forward",
+      "referral request email template",
       "chatgpt prompt for customer referrals",
     ],
     seoTitle: "Referral Request Prompt: Ask at the Right Moment",
@@ -128,7 +128,7 @@ BLOCK C, THE EXCHANGE. One sentence stating what the customer gets from making t
       {
         heading: "The forwardable paragraph is the real deliverable",
         body: [
-          "Block B is the part people skip and the part that determines whether anything happens. A referral email that is easy to forward has already been written for the customer, in their register, short enough to sit above the fold, and containing nothing they would be uncomfortable saying.",
+          "Block B is the part people skip and the part that determines whether anything happens. A referral request email template earns its place by being easy to forward: already written for the customer, in their register, short enough to sit above the fold, and containing nothing they would be uncomfortable saying.",
           "It is written in their voice rather than yours. No product positioning, no adjectives about your company, no metric they did not personally see. If the customer has to edit it, the friction that stopped the referral in the first place is still sitting there.",
         ],
       },

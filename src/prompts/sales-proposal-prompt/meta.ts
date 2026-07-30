@@ -18,9 +18,8 @@ const meta: PromptMeta = {
       "sales proposal prompt",
       "how to write a proposal that closes",
       "ai prompt for a consulting proposal",
-      "proposal that restates the client problem",
-      "presenting pricing options in a proposal",
-      "sending a proposal without a meeting",
+      "how to start a sales proposal",
+      "good better best pricing examples",
     ],
     seoTitle: "Sales Proposal Prompt: Open With Their Problem",
     seoDescription:
@@ -109,7 +108,7 @@ Write for the person who was not on the call. Assume no shared context beyond se
         heading: "Section one decides how everything else is read",
         body: [
           "If a client reads the first three sentences and recognises their own situation, the rest of the proposal is read as advice from someone who was paying attention. If they read a generic description of a category of problem, everything after it is read as a sales document, and the price is evaluated against suspicion rather than against the problem.",
-          "This is why the instruction is to use their nouns rather than yours. Translating their nine day close into your terminology about process inefficiency loses exactly the thing that makes the paragraph work. A proposal that restates the client problem accurately is doing more persuasive work than any case study you could attach.",
+          "This is why the instruction is to use their nouns rather than yours. Translating their nine day close into your terminology about process inefficiency loses exactly the thing that makes the paragraph work. How to start a sales proposal has one answer, which is to restate the client problem accurately, and that does more persuasive work than any case study you could attach.",
         ],
       },
       {
@@ -136,7 +135,7 @@ Write for the person who was not on the call. Assume no shared context beyond se
         heading: "How the sales proposal prompt handles pricing",
         body: [
           "Options are useful when they represent genuinely different outcomes and harmful when they represent the same outcome at different effort levels. The instruction to describe what changes between options in terms of outcome forces that distinction, and frequently reveals that there is really only one sensible option.",
-          "The rule against presenting an option you would not want chosen exists because decoy pricing is transparent to anyone who buys regularly. Presenting pricing options in a proposal works when each option is a real recommendation for a different situation, and reads as manipulation when one exists only to make another look reasonable.",
+          "The rule against presenting an option you would not want chosen exists because decoy pricing is transparent to anyone who buys regularly. Good better best pricing examples work when each option is a real recommendation for a different situation, and read as manipulation when one exists only to make another look reasonable.",
         ],
       },
       {

@@ -17,10 +17,9 @@ const meta: PromptMeta = {
     keywords: [
       "statistical check prompt",
       "how to tell if a result is noise",
-      "checking sample size before drawing conclusions",
+      "how to check if a sample size is big enough",
       "ai prompt for reviewing an analysis",
-      "multiple comparisons problem in practice",
-      "alternative explanations before reporting a pattern",
+      "what is the multiple comparisons problem",
     ],
     seoTitle: "Statistical Check Prompt: Test a Finding Before You Send It",
     seoDescription:
@@ -120,9 +119,9 @@ CRITICAL: never calculate a p value, confidence interval or effect size from num
         ],
       },
       {
-        heading: "Checking sample size before drawing conclusions",
+        heading: "How to check if a sample size is big enough",
         body: [
-          "Checking sample size before drawing conclusions sounds obvious and is skipped constantly, usually because the headline number is large. A cohort of eleven thousand can still contain a monthly cell of ninety, and the monthly chart is the one that gets shown.",
+          "How to check if a sample size is big enough sounds obvious and is skipped constantly, usually because the headline number is large. A cohort of eleven thousand can still contain a monthly cell of ninety, and the monthly chart is the one that gets shown.",
         ],
         subsections: [
           {
@@ -140,9 +139,9 @@ CRITICAL: never calculate a p value, confidence interval or effect size from num
         ],
       },
       {
-        heading: "The multiple comparisons problem in practice",
+        heading: "What is the multiple comparisons problem in practice",
         body: [
-          "The multiple comparisons problem in practice rarely looks like a statistician running twenty tests. It looks like an afternoon spent slicing a dashboard by region, then by tier, then by channel, then by month, until something interesting appears. Nobody counted the slices, so nobody adjusted for them.",
+          "What is the multiple comparisons problem, in practice? It rarely looks like a statistician running twenty tests. It looks like an afternoon spent slicing a dashboard by region, then by tier, then by channel, then by month, until something interesting appears. Nobody counted the slices, so nobody adjusted for them.",
           "That is why the prompt asks for every comparison examined rather than the one being reported. With that count it can say how many apparent findings pure noise would have produced, which reframes the question from is this real to does this stand out from what chance alone would have given us.",
         ],
       },

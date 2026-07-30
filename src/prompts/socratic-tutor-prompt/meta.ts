@@ -19,8 +19,7 @@ const meta: PromptMeta = {
       "ai tutor that refuses to give the answer",
       "socratic questioning with chatgpt",
       "how to study with ai without cheating",
-      "diagnosing a misconception in maths",
-      "tracing an error back to the concept",
+      "how to spot a maths misconception",
     ],
     seoTitle: "Socratic Tutor Prompt: An AI That Withholds Answers",
     seoDescription:
@@ -131,7 +130,7 @@ When I finally get there, close with: the concept the difficulty traced back to,
         heading: "Diagnosis rather than correction",
         body: [
           "By the third question the tutor has to commit to a hypothesis about the concept underneath the mistake and say it out loud. This is the part that makes it worth using rather than rereading the textbook.",
-          "Diagnosing a misconception in maths usually means looking past the arithmetic. A student who mishandles brackets in one equation and again in a different chapter does not have a bracket problem, they have an unstated belief that multiplication distributes over whatever is nearest. Tracing an error back to the concept turns three separate corrections into one thing to relearn.",
+          "How to spot a maths misconception usually means looking past the arithmetic. A student who mishandles brackets in one equation and again in a different chapter does not have a bracket problem, they have an unstated belief that multiplication distributes over whatever is nearest. Tracing an error back to the concept turns three separate corrections into one thing to relearn.",
         ],
       },
       {

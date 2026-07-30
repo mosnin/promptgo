@@ -16,11 +16,10 @@ const meta: PromptMeta = {
     primaryKeyword: "study schedule prompt",
     keywords: [
       "study schedule prompt",
-      "allocating study hours across subjects",
-      "study timetable around deadlines",
+      "how to divide study time between subjects",
+      "study timetable template",
       "ai prompt for a student timetable",
       "which subject gets the least time",
-      "planning around coursework deadlines",
     ],
     seoTitle: "Study Schedule Prompt: Split Real Hours Across Subjects",
     seoDescription:
@@ -120,14 +119,14 @@ F. One sentence on whether this plan is actually deliverable, and if not, what h
       {
         heading: "Hours are the scarce thing",
         body: [
-          "Allocating study hours across subjects is different from deciding what to study inside one. The second question is about topics and scores. The first is about whether Tuesday evening belongs to biology or to the essay due next week, and it cannot be answered by looking at either subject on its own.",
+          "How to divide study time between subjects is different from deciding what to study inside one. The second question is about topics and scores. The first is about whether Tuesday evening belongs to biology or to the essay due next week, and it cannot be answered by looking at either subject on its own.",
           "That is why the first step is arithmetic rather than pedagogy. Count the real hours, cut fifteen percent for the week that goes wrong, and see what is left. For most sixth formers the honest total is between eight and twelve hours a week, which is a quarter of what a colour coded timetable usually promises.",
         ],
       },
       {
         heading: "Weight by the deadline and by what the subject is worth",
         body: [
-          "A study timetable around deadlines is the only kind that survives, because a deadline is the one part of the calendar that does not negotiate. Working backwards from each due date and locking hours to it before any general study is allocated is what stops coursework being done in the leftovers, which is where coursework always ends up otherwise.",
+          "A study timetable template built around deadlines is the only kind that survives, because a deadline is the one part of the calendar that does not negotiate. Working backwards from each due date and locking hours to it before any general study is allocated is what stops coursework being done in the leftovers, which is where coursework always ends up otherwise.",
           "Weighting is the second input and the one students find uncomfortable to state. Two subjects carrying a university offer and one needing only a pass are not three equal claims on a Tuesday. Writing that down produces an allocation that looks unfair on paper and matches what actually matters in August.",
         ],
         list: [

@@ -16,11 +16,11 @@ const meta: PromptMeta = {
     primaryKeyword: "voicemail script prompt",
     keywords: [
       "voicemail script prompt",
-      "cold call voicemail under twenty seconds",
-      "voicemail that pairs with a follow up email",
+      "best length for a sales voicemail",
+      "voicemail and follow up email template",
       "how to leave a sales voicemail that gets returned",
       "ai prompt for phone prospecting scripts",
-      "what not to say in a sales voicemail",
+      "what to avoid saying in a sales voicemail",
     ],
     seoTitle: "Voicemail Script Prompt: Eighteen Seconds, One Job",
     seoDescription:
@@ -102,14 +102,14 @@ Then give me three things: the script with a slash at each pause, the exact spok
       {
         heading: "Eighteen seconds is the whole design",
         body: [
-          "A cold call voicemail under twenty seconds is not a stylistic preference. Anything longer gets deleted before the end, which means the callback number you carefully recorded at the close was never heard by anyone.",
+          "The best length for a sales voicemail is under twenty seconds, and that is not a stylistic preference. Anything longer gets deleted before the end, which means the callback number you carefully recorded at the close was never heard by anyone.",
           "Since models have no feel for elapsed speech, the constraint is expressed in words. Forty five spoken words lands near eighteen seconds at a normal pace, and asking the model to report the count gives you something you can check rather than trust.",
         ],
       },
       {
         heading: "The message exists to get an email opened",
         body: [
-          "Almost nobody returns a cold voicemail, and building the message around the hope that they will is what makes it long. Redefine the goal and the design changes completely. A voicemail that pairs with a follow up email has one function, which is to make an unfamiliar sender name in the inbox recognisable ten seconds later.",
+          "Almost nobody returns a cold voicemail, and building the message around the hope that they will is what makes it long. Redefine the goal and the design changes completely. A voicemail and follow up email template has one function, which is to make an unfamiliar sender name in the inbox recognisable ten seconds later.",
           "Quoting the subject line word for word is what completes the pairing. The recipient does not have to remember your company. They search four words they just heard, find the email, and now a cold message has a voice attached to it.",
         ],
       },
@@ -137,7 +137,7 @@ Then give me three things: the script with a slash at each pause, the exact spok
         heading: "What the voicemail script prompt refuses to write",
         body: [
           "The reason check runs before anything else. Checking in, touching base and following up on my email all fail it, which removes most of the voicemails currently being left in the world.",
-          "That list is also a decent summary of what not to say in a sales voicemail generally. A reason that would be true of a call to any company in the sector is not a reason, and no amount of warmth in the delivery converts it into one.",
+          "That list is also a decent summary of what to avoid saying in a sales voicemail generally. A reason that would be true of a call to any company in the sector is not a reason, and no amount of warmth in the delivery converts it into one.",
         ],
       },
     ],
