@@ -48,16 +48,20 @@ function Notes({ notes }: { notes?: string[] }) {
   );
 }
 
-function QrCanvas({ value }: { value: string }) {
+function QrCanvas({ value, size }: { value: string; size?: number }) {
   const ref = useRef<HTMLCanvasElement>(null);
+  // A tool's requested pixel size renders directly, clamped to a sane range
+  // in case a caller ever passes something outside the QR code generator's
+  // own field bounds; 220 matches the previous fixed size when none is given.
+  const pixels = Math.round(Math.min(1024, Math.max(64, size ?? 220)));
 
   useEffect(() => {
     if (!ref.current || !value) return;
-    QRCode.toCanvas(ref.current, value, { width: 220, margin: 1 }).catch(() => {
+    QRCode.toCanvas(ref.current, value, { width: pixels, margin: 1 }).catch(() => {
       // An unencodable value (empty string, or one exceeding QR capacity) just
       // leaves the previous canvas frame in place rather than throwing.
     });
-  }, [value]);
+  }, [value, pixels]);
 
   function download() {
     const canvas = ref.current;
@@ -70,7 +74,7 @@ function QrCanvas({ value }: { value: string }) {
 
   return (
     <div className="flex flex-col items-center gap-3">
-      <canvas ref={ref} width={220} height={220} className="rounded-md border border-hairline bg-white" />
+      <canvas ref={ref} width={pixels} height={pixels} className="max-w-full rounded-md border border-hairline bg-white" />
       <button
         type="button"
         onClick={download}
@@ -247,7 +251,7 @@ export function ToolResultView({ result, accent }: { result: ToolResult; accent:
     return (
       <div className="rounded-lg border border-hairline bg-surface-2/40 p-5">
         <p className="eyebrow mb-3">{result.label}</p>
-        <QrCanvas value={result.value} />
+        <QrCanvas value={result.value} size={result.size} />
         <Notes notes={result.notes} />
       </div>
     );

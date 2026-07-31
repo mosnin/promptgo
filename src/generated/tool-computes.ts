@@ -2,47 +2,75 @@
 import type { ComputeFn } from "@/lib/tool-types";
 
 import { compute as c_base64_encoder_decoder } from "@/tools/base64-encoder-decoder/compute";
+import { compute as c_box_shadow_generator } from "@/tools/box-shadow-generator/compute";
 import { compute as c_break_even_point_calculator } from "@/tools/break-even-point-calculator/compute";
+import { compute as c_checksum_generator } from "@/tools/checksum-generator/compute";
 import { compute as c_colour_contrast_checker } from "@/tools/colour-contrast-checker/compute";
 import { compute as c_colour_palette_generator } from "@/tools/colour-palette-generator/compute";
+import { compute as c_css_gradient_generator } from "@/tools/css-gradient-generator/compute";
+import { compute as c_csv_to_json_converter } from "@/tools/csv-to-json-converter/compute";
 import { compute as c_discount_stacking_calculator } from "@/tools/discount-stacking-calculator/compute";
 import { compute as c_free_shipping_threshold_calculator } from "@/tools/free-shipping-threshold-calculator/compute";
+import { compute as c_freelance_rate_calculator } from "@/tools/freelance-rate-calculator/compute";
 import { compute as c_hex_rgb_hsl_converter } from "@/tools/hex-rgb-hsl-converter/compute";
 import { compute as c_json_formatter_validator } from "@/tools/json-formatter-validator/compute";
+import { compute as c_loan_payoff_calculator } from "@/tools/loan-payoff-calculator/compute";
 import { compute as c_ltv_cac_ratio_calculator } from "@/tools/ltv-cac-ratio-calculator/compute";
 import { compute as c_markup_vs_margin_calculator } from "@/tools/markup-vs-margin-calculator/compute";
 import { compute as c_password_generator } from "@/tools/password-generator/compute";
 import { compute as c_percentage_calculator } from "@/tools/percentage-calculator/compute";
 import { compute as c_promo_code_generator } from "@/tools/promo-code-generator/compute";
+import { compute as c_qr_code_generator } from "@/tools/qr-code-generator/compute";
 import { compute as c_readability_score_checker } from "@/tools/readability-score-checker/compute";
+import { compute as c_regex_tester } from "@/tools/regex-tester/compute";
 import { compute as c_roi_calculator } from "@/tools/roi-calculator/compute";
+import { compute as c_salary_hourly_converter } from "@/tools/salary-hourly-converter/compute";
+import { compute as c_sales_commission_calculator } from "@/tools/sales-commission-calculator/compute";
+import { compute as c_savings_goal_calculator } from "@/tools/savings-goal-calculator/compute";
 import { compute as c_slug_generator } from "@/tools/slug-generator/compute";
 import { compute as c_text_case_converter } from "@/tools/text-case-converter/compute";
+import { compute as c_text_diff_checker } from "@/tools/text-diff-checker/compute";
+import { compute as c_time_zone_meeting_planner } from "@/tools/time-zone-meeting-planner/compute";
 import { compute as c_utm_link_builder } from "@/tools/utm-link-builder/compute";
 import { compute as c_uuid_generator } from "@/tools/uuid-generator/compute";
 import { compute as c_word_character_counter } from "@/tools/word-character-counter/compute";
+import { compute as c_work_break_interval_planner } from "@/tools/work-break-interval-planner/compute";
 import { compute as c_working_days_calculator } from "@/tools/working-days-calculator/compute";
 
 export const toolComputes: Record<string, ComputeFn> = {
   "base64-encoder-decoder": c_base64_encoder_decoder,
+  "box-shadow-generator": c_box_shadow_generator,
   "break-even-point-calculator": c_break_even_point_calculator,
+  "checksum-generator": c_checksum_generator,
   "colour-contrast-checker": c_colour_contrast_checker,
   "colour-palette-generator": c_colour_palette_generator,
+  "css-gradient-generator": c_css_gradient_generator,
+  "csv-to-json-converter": c_csv_to_json_converter,
   "discount-stacking-calculator": c_discount_stacking_calculator,
   "free-shipping-threshold-calculator": c_free_shipping_threshold_calculator,
+  "freelance-rate-calculator": c_freelance_rate_calculator,
   "hex-rgb-hsl-converter": c_hex_rgb_hsl_converter,
   "json-formatter-validator": c_json_formatter_validator,
+  "loan-payoff-calculator": c_loan_payoff_calculator,
   "ltv-cac-ratio-calculator": c_ltv_cac_ratio_calculator,
   "markup-vs-margin-calculator": c_markup_vs_margin_calculator,
   "password-generator": c_password_generator,
   "percentage-calculator": c_percentage_calculator,
   "promo-code-generator": c_promo_code_generator,
+  "qr-code-generator": c_qr_code_generator,
   "readability-score-checker": c_readability_score_checker,
+  "regex-tester": c_regex_tester,
   "roi-calculator": c_roi_calculator,
+  "salary-hourly-converter": c_salary_hourly_converter,
+  "sales-commission-calculator": c_sales_commission_calculator,
+  "savings-goal-calculator": c_savings_goal_calculator,
   "slug-generator": c_slug_generator,
   "text-case-converter": c_text_case_converter,
+  "text-diff-checker": c_text_diff_checker,
+  "time-zone-meeting-planner": c_time_zone_meeting_planner,
   "utm-link-builder": c_utm_link_builder,
   "uuid-generator": c_uuid_generator,
   "word-character-counter": c_word_character_counter,
+  "work-break-interval-planner": c_work_break_interval_planner,
   "working-days-calculator": c_working_days_calculator,
 };

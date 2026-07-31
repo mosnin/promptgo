@@ -130,7 +130,7 @@ export type ToolResult =
   | { kind: "list"; label: string; items: string[]; notes?: string[] }
   | { kind: "swatches"; label: string; swatches: { hex: string; label?: string }[]; notes?: string[] }
   | { kind: "css"; label: string; css: string; previewStyle: Record<string, string>; notes?: string[] }
-  | { kind: "qr"; label: string; value: string; notes?: string[] }
+  | { kind: "qr"; label: string; value: string; size?: number; notes?: string[] }
   | { kind: "diff"; label: string; before: string; after: string; notes?: string[] }
   | { kind: "error"; message: string };
 

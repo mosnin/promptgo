@@ -4,49 +4,77 @@
 import type { ToolMeta } from "@/lib/tool-types";
 
 import t_base64_encoder_decoder from "@/tools/base64-encoder-decoder/meta";
+import t_box_shadow_generator from "@/tools/box-shadow-generator/meta";
 import t_break_even_point_calculator from "@/tools/break-even-point-calculator/meta";
+import t_checksum_generator from "@/tools/checksum-generator/meta";
 import t_colour_contrast_checker from "@/tools/colour-contrast-checker/meta";
 import t_colour_palette_generator from "@/tools/colour-palette-generator/meta";
+import t_css_gradient_generator from "@/tools/css-gradient-generator/meta";
+import t_csv_to_json_converter from "@/tools/csv-to-json-converter/meta";
 import t_discount_stacking_calculator from "@/tools/discount-stacking-calculator/meta";
 import t_free_shipping_threshold_calculator from "@/tools/free-shipping-threshold-calculator/meta";
+import t_freelance_rate_calculator from "@/tools/freelance-rate-calculator/meta";
 import t_hex_rgb_hsl_converter from "@/tools/hex-rgb-hsl-converter/meta";
 import t_json_formatter_validator from "@/tools/json-formatter-validator/meta";
+import t_loan_payoff_calculator from "@/tools/loan-payoff-calculator/meta";
 import t_ltv_cac_ratio_calculator from "@/tools/ltv-cac-ratio-calculator/meta";
 import t_markup_vs_margin_calculator from "@/tools/markup-vs-margin-calculator/meta";
 import t_password_generator from "@/tools/password-generator/meta";
 import t_percentage_calculator from "@/tools/percentage-calculator/meta";
 import t_promo_code_generator from "@/tools/promo-code-generator/meta";
+import t_qr_code_generator from "@/tools/qr-code-generator/meta";
 import t_readability_score_checker from "@/tools/readability-score-checker/meta";
+import t_regex_tester from "@/tools/regex-tester/meta";
 import t_roi_calculator from "@/tools/roi-calculator/meta";
+import t_salary_hourly_converter from "@/tools/salary-hourly-converter/meta";
+import t_sales_commission_calculator from "@/tools/sales-commission-calculator/meta";
+import t_savings_goal_calculator from "@/tools/savings-goal-calculator/meta";
 import t_slug_generator from "@/tools/slug-generator/meta";
 import t_text_case_converter from "@/tools/text-case-converter/meta";
+import t_text_diff_checker from "@/tools/text-diff-checker/meta";
+import t_time_zone_meeting_planner from "@/tools/time-zone-meeting-planner/meta";
 import t_utm_link_builder from "@/tools/utm-link-builder/meta";
 import t_uuid_generator from "@/tools/uuid-generator/meta";
 import t_word_character_counter from "@/tools/word-character-counter/meta";
+import t_work_break_interval_planner from "@/tools/work-break-interval-planner/meta";
 import t_working_days_calculator from "@/tools/working-days-calculator/meta";
 
 export const toolMetas: ToolMeta[] = [
   t_base64_encoder_decoder,
+  t_box_shadow_generator,
   t_break_even_point_calculator,
+  t_checksum_generator,
   t_colour_contrast_checker,
   t_colour_palette_generator,
+  t_css_gradient_generator,
+  t_csv_to_json_converter,
   t_discount_stacking_calculator,
   t_free_shipping_threshold_calculator,
+  t_freelance_rate_calculator,
   t_hex_rgb_hsl_converter,
   t_json_formatter_validator,
+  t_loan_payoff_calculator,
   t_ltv_cac_ratio_calculator,
   t_markup_vs_margin_calculator,
   t_password_generator,
   t_percentage_calculator,
   t_promo_code_generator,
+  t_qr_code_generator,
   t_readability_score_checker,
+  t_regex_tester,
   t_roi_calculator,
+  t_salary_hourly_converter,
+  t_sales_commission_calculator,
+  t_savings_goal_calculator,
   t_slug_generator,
   t_text_case_converter,
+  t_text_diff_checker,
+  t_time_zone_meeting_planner,
   t_utm_link_builder,
   t_uuid_generator,
   t_word_character_counter,
+  t_work_break_interval_planner,
   t_working_days_calculator,
 ];
 
-export const toolCount = 21;
+export const toolCount = 35;

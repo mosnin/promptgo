@@ -3,9 +3,11 @@
 import type { PromptMeta } from "@/lib/types";
 
 import p_ab_test_analysis_prompt from "@/prompts/ab-test-analysis-prompt/meta";
+import p_accessibility_audit_prompt from "@/prompts/accessibility-audit-prompt/meta";
 import p_accessibility_review_prompt from "@/prompts/accessibility-review-prompt/meta";
 import p_account_research_prompt from "@/prompts/account-research-prompt/meta";
 import p_ad_copy_prompt from "@/prompts/ad-copy-prompt/meta";
+import p_affiliate_program_announcement_prompt from "@/prompts/affiliate-program-announcement-prompt/meta";
 import p_anomaly_detection_prompt from "@/prompts/anomaly-detection-prompt/meta";
 import p_api_documentation_prompt from "@/prompts/api-documentation-prompt/meta";
 import p_api_error_handling_prompt from "@/prompts/api-error-handling-prompt/meta";
@@ -30,6 +32,7 @@ import p_competitor_analysis_prompt from "@/prompts/competitor-analysis-prompt/m
 import p_concept_explanation_prompt from "@/prompts/concept-explanation-prompt/meta";
 import p_content_calendar_prompt from "@/prompts/content-calendar-prompt/meta";
 import p_context_switching_prompt from "@/prompts/context-switching-prompt/meta";
+import p_countdown_urgency_copy_prompt from "@/prompts/countdown-urgency-copy-prompt/meta";
 import p_cover_letter_prompt from "@/prompts/cover-letter-prompt/meta";
 import p_curriculum_mapping_prompt from "@/prompts/curriculum-mapping-prompt/meta";
 import p_customer_persona_prompt from "@/prompts/customer-persona-prompt/meta";
@@ -79,6 +82,7 @@ import p_job_rejection_follow_up_prompt from "@/prompts/job-rejection-follow-up-
 import p_landing_page_copy_prompt from "@/prompts/landing-page-copy-prompt/meta";
 import p_lesson_differentiation_prompt from "@/prompts/lesson-differentiation-prompt/meta";
 import p_lesson_plan_prompt from "@/prompts/lesson-plan-prompt/meta";
+import p_lesson_planning_prompt from "@/prompts/lesson-planning-prompt/meta";
 import p_line_edit_prompt from "@/prompts/line-edit-prompt/meta";
 import p_linkedin_outreach_prompt from "@/prompts/linkedin-outreach-prompt/meta";
 import p_linkedin_profile_prompt from "@/prompts/linkedin-profile-prompt/meta";
@@ -90,6 +94,7 @@ import p_metaphor_generator_prompt from "@/prompts/metaphor-generator-prompt/met
 import p_metric_definition_prompt from "@/prompts/metric-definition-prompt/meta";
 import p_midjourney_prompt_template from "@/prompts/midjourney-prompt-template/meta";
 import p_networking_message_prompt from "@/prompts/networking-message-prompt/meta";
+import p_networking_outreach_prompt from "@/prompts/networking-outreach-prompt/meta";
 import p_newsletter_welcome_series_prompt from "@/prompts/newsletter-welcome-series-prompt/meta";
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
@@ -131,6 +136,7 @@ import p_rewrite_for_clarity_prompt from "@/prompts/rewrite-for-clarity-prompt/m
 import p_risk_register_prompt from "@/prompts/risk-register-prompt/meta";
 import p_salary_negotiation_prompt from "@/prompts/salary-negotiation-prompt/meta";
 import p_sales_call_summary_prompt from "@/prompts/sales-call-summary-prompt/meta";
+import p_sales_objection_handling_prompt from "@/prompts/sales-objection-handling-prompt/meta";
 import p_sales_proposal_prompt from "@/prompts/sales-proposal-prompt/meta";
 import p_saying_no_prompt from "@/prompts/saying-no-prompt/meta";
 import p_security_review_prompt from "@/prompts/security-review-prompt/meta";
@@ -167,9 +173,11 @@ import p_writing_feedback_prompt from "@/prompts/writing-feedback-prompt/meta";
 
 export const promptMetas: PromptMeta[] = [
   p_ab_test_analysis_prompt,
+  p_accessibility_audit_prompt,
   p_accessibility_review_prompt,
   p_account_research_prompt,
   p_ad_copy_prompt,
+  p_affiliate_program_announcement_prompt,
   p_anomaly_detection_prompt,
   p_api_documentation_prompt,
   p_api_error_handling_prompt,
@@ -194,6 +202,7 @@ export const promptMetas: PromptMeta[] = [
   p_concept_explanation_prompt,
   p_content_calendar_prompt,
   p_context_switching_prompt,
+  p_countdown_urgency_copy_prompt,
   p_cover_letter_prompt,
   p_curriculum_mapping_prompt,
   p_customer_persona_prompt,
@@ -243,6 +252,7 @@ export const promptMetas: PromptMeta[] = [
   p_landing_page_copy_prompt,
   p_lesson_differentiation_prompt,
   p_lesson_plan_prompt,
+  p_lesson_planning_prompt,
   p_line_edit_prompt,
   p_linkedin_outreach_prompt,
   p_linkedin_profile_prompt,
@@ -254,6 +264,7 @@ export const promptMetas: PromptMeta[] = [
   p_metric_definition_prompt,
   p_midjourney_prompt_template,
   p_networking_message_prompt,
+  p_networking_outreach_prompt,
   p_newsletter_welcome_series_prompt,
   p_note_summary_prompt,
   p_objection_handling_prompt,
@@ -295,6 +306,7 @@ export const promptMetas: PromptMeta[] = [
   p_risk_register_prompt,
   p_salary_negotiation_prompt,
   p_sales_call_summary_prompt,
+  p_sales_objection_handling_prompt,
   p_sales_proposal_prompt,
   p_saying_no_prompt,
   p_security_review_prompt,
@@ -330,4 +342,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 162;
+export const promptCount = 168;
