@@ -3,10 +3,22 @@
 // then running `npm run gen`.
 import type { ToolMeta } from "@/lib/tool-types";
 
+import t_break_even_point_calculator from "@/tools/break-even-point-calculator/meta";
+import t_colour_contrast_checker from "@/tools/colour-contrast-checker/meta";
+import t_discount_stacking_calculator from "@/tools/discount-stacking-calculator/meta";
+import t_json_formatter_validator from "@/tools/json-formatter-validator/meta";
+import t_promo_code_generator from "@/tools/promo-code-generator/meta";
 import t_utm_link_builder from "@/tools/utm-link-builder/meta";
+import t_word_character_counter from "@/tools/word-character-counter/meta";
 
 export const toolMetas: ToolMeta[] = [
+  t_break_even_point_calculator,
+  t_colour_contrast_checker,
+  t_discount_stacking_calculator,
+  t_json_formatter_validator,
+  t_promo_code_generator,
   t_utm_link_builder,
+  t_word_character_counter,
 ];
 
-export const toolCount = 1;
+export const toolCount = 7;

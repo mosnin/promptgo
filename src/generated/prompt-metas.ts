@@ -11,6 +11,7 @@ import p_api_documentation_prompt from "@/prompts/api-documentation-prompt/meta"
 import p_architecture_decision_prompt from "@/prompts/architecture-decision-prompt/meta";
 import p_blog_post_outline_prompt from "@/prompts/blog-post-outline-prompt/meta";
 import p_brand_voice_prompt from "@/prompts/brand-voice-prompt/meta";
+import p_bundle_offer_description_prompt from "@/prompts/bundle-offer-description-prompt/meta";
 import p_business_case_prompt from "@/prompts/business-case-prompt/meta";
 import p_career_change_prompt from "@/prompts/career-change-prompt/meta";
 import p_case_study_prompt from "@/prompts/case-study-prompt/meta";
@@ -56,11 +57,13 @@ import p_error_message_prompt from "@/prompts/error-message-prompt/meta";
 import p_essay_feedback_prompt from "@/prompts/essay-feedback-prompt/meta";
 import p_exam_question_prompt from "@/prompts/exam-question-prompt/meta";
 import p_excel_formula_prompt from "@/prompts/excel-formula-prompt/meta";
+import p_flash_sale_announcement_prompt from "@/prompts/flash-sale-announcement-prompt/meta";
 import p_flashcard_generator_prompt from "@/prompts/flashcard-generator-prompt/meta";
 import p_focus_session_prompt from "@/prompts/focus-session-prompt/meta";
 import p_follow_up_email_prompt from "@/prompts/follow-up-email-prompt/meta";
 import p_freelance_rate_prompt from "@/prompts/freelance-rate-prompt/meta";
 import p_git_commit_message_prompt from "@/prompts/git-commit-message-prompt/meta";
+import p_giveaway_rules_terms_prompt from "@/prompts/giveaway-rules-terms-prompt/meta";
 import p_grading_rubric_prompt from "@/prompts/grading-rubric-prompt/meta";
 import p_headline_writing_prompt from "@/prompts/headline-writing-prompt/meta";
 import p_icon_design_prompt from "@/prompts/icon-design-prompt/meta";
@@ -77,6 +80,7 @@ import p_line_edit_prompt from "@/prompts/line-edit-prompt/meta";
 import p_linkedin_outreach_prompt from "@/prompts/linkedin-outreach-prompt/meta";
 import p_linkedin_profile_prompt from "@/prompts/linkedin-profile-prompt/meta";
 import p_logo_brief_prompt from "@/prompts/logo-brief-prompt/meta";
+import p_loyalty_tier_email_prompt from "@/prompts/loyalty-tier-email-prompt/meta";
 import p_meeting_agenda_prompt from "@/prompts/meeting-agenda-prompt/meta";
 import p_meeting_notes_prompt from "@/prompts/meeting-notes-prompt/meta";
 import p_metaphor_generator_prompt from "@/prompts/metaphor-generator-prompt/meta";
@@ -109,6 +113,7 @@ import p_reading_comprehension_prompt from "@/prompts/reading-comprehension-prom
 import p_reading_list_prompt from "@/prompts/reading-list-prompt/meta";
 import p_refactoring_prompt from "@/prompts/refactoring-prompt/meta";
 import p_reference_request_prompt from "@/prompts/reference-request-prompt/meta";
+import p_referral_program_copy_prompt from "@/prompts/referral-program-copy-prompt/meta";
 import p_referral_request_prompt from "@/prompts/referral-request-prompt/meta";
 import p_regex_generator_prompt from "@/prompts/regex-generator-prompt/meta";
 import p_renewal_conversation_prompt from "@/prompts/renewal-conversation-prompt/meta";
@@ -147,6 +152,7 @@ import p_value_proposition_prompt from "@/prompts/value-proposition-prompt/meta"
 import p_vendor_evaluation_prompt from "@/prompts/vendor-evaluation-prompt/meta";
 import p_voicemail_script_prompt from "@/prompts/voicemail-script-prompt/meta";
 import p_weekly_planning_prompt from "@/prompts/weekly-planning-prompt/meta";
+import p_win_back_campaign_prompt from "@/prompts/win-back-campaign-prompt/meta";
 import p_win_loss_analysis_prompt from "@/prompts/win-loss-analysis-prompt/meta";
 import p_wireframe_planning_prompt from "@/prompts/wireframe-planning-prompt/meta";
 import p_writing_feedback_prompt from "@/prompts/writing-feedback-prompt/meta";
@@ -161,6 +167,7 @@ export const promptMetas: PromptMeta[] = [
   p_architecture_decision_prompt,
   p_blog_post_outline_prompt,
   p_brand_voice_prompt,
+  p_bundle_offer_description_prompt,
   p_business_case_prompt,
   p_career_change_prompt,
   p_case_study_prompt,
@@ -206,11 +213,13 @@ export const promptMetas: PromptMeta[] = [
   p_essay_feedback_prompt,
   p_exam_question_prompt,
   p_excel_formula_prompt,
+  p_flash_sale_announcement_prompt,
   p_flashcard_generator_prompt,
   p_focus_session_prompt,
   p_follow_up_email_prompt,
   p_freelance_rate_prompt,
   p_git_commit_message_prompt,
+  p_giveaway_rules_terms_prompt,
   p_grading_rubric_prompt,
   p_headline_writing_prompt,
   p_icon_design_prompt,
@@ -227,6 +236,7 @@ export const promptMetas: PromptMeta[] = [
   p_linkedin_outreach_prompt,
   p_linkedin_profile_prompt,
   p_logo_brief_prompt,
+  p_loyalty_tier_email_prompt,
   p_meeting_agenda_prompt,
   p_meeting_notes_prompt,
   p_metaphor_generator_prompt,
@@ -259,6 +269,7 @@ export const promptMetas: PromptMeta[] = [
   p_reading_list_prompt,
   p_refactoring_prompt,
   p_reference_request_prompt,
+  p_referral_program_copy_prompt,
   p_referral_request_prompt,
   p_regex_generator_prompt,
   p_renewal_conversation_prompt,
@@ -297,9 +308,10 @@ export const promptMetas: PromptMeta[] = [
   p_vendor_evaluation_prompt,
   p_voicemail_script_prompt,
   p_weekly_planning_prompt,
+  p_win_back_campaign_prompt,
   p_win_loss_analysis_prompt,
   p_wireframe_planning_prompt,
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 148;
+export const promptCount = 154;
