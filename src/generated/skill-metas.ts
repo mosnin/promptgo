@@ -2,10 +2,56 @@
 // Add a skill by creating src/skills/<slug>/meta.ts then running `npm run gen`.
 import type { SkillMeta } from "@/lib/skill-types";
 
+import s_api_documentation_consistency_skill from "@/skills/api-documentation-consistency-skill/meta";
+import s_assumption_logging_skill from "@/skills/assumption-logging-skill/meta";
 import s_brand_voice_consistency_skill from "@/skills/brand-voice-consistency-skill/meta";
+import s_campaign_brief_structuring_skill from "@/skills/campaign-brief-structuring-skill/meta";
+import s_chart_accuracy_check_skill from "@/skills/chart-accuracy-check-skill/meta";
+import s_competitor_messaging_audit_skill from "@/skills/competitor-messaging-audit-skill/meta";
+import s_component_naming_consistency_skill from "@/skills/component-naming-consistency-skill/meta";
+import s_data_cleaning_log_skill from "@/skills/data-cleaning-log-skill/meta";
+import s_decision_memo_skill from "@/skills/decision-memo-skill/meta";
+import s_design_critique_structure_skill from "@/skills/design-critique-structure-skill/meta";
+import s_editorial_style_guide_enforcement_skill from "@/skills/editorial-style-guide-enforcement-skill/meta";
+import s_interview_answer_structure_skill from "@/skills/interview-answer-structure-skill/meta";
+import s_meeting_decision_capture_skill from "@/skills/meeting-decision-capture-skill/meta";
+import s_misconception_diagnosis_skill from "@/skills/misconception-diagnosis-skill/meta";
+import s_pull_request_review_standard_skill from "@/skills/pull-request-review-standard-skill/meta";
+import s_resume_bullet_audit_skill from "@/skills/resume-bullet-audit-skill/meta";
+import s_rubric_based_feedback_skill from "@/skills/rubric-based-feedback-skill/meta";
+import s_sales_call_review_skill from "@/skills/sales-call-review-skill/meta";
+import s_sales_proposal_structuring_skill from "@/skills/sales-proposal-structuring-skill/meta";
+import s_structural_outline_audit_skill from "@/skills/structural-outline-audit-skill/meta";
+import s_task_handoff_skill from "@/skills/task-handoff-skill/meta";
+import s_test_coverage_gap_skill from "@/skills/test-coverage-gap-skill/meta";
+import s_vendor_comparison_matrix_skill from "@/skills/vendor-comparison-matrix-skill/meta";
+import s_weekly_review_structure_skill from "@/skills/weekly-review-structure-skill/meta";
 
 export const skillMetas: SkillMeta[] = [
+  s_api_documentation_consistency_skill,
+  s_assumption_logging_skill,
   s_brand_voice_consistency_skill,
+  s_campaign_brief_structuring_skill,
+  s_chart_accuracy_check_skill,
+  s_competitor_messaging_audit_skill,
+  s_component_naming_consistency_skill,
+  s_data_cleaning_log_skill,
+  s_decision_memo_skill,
+  s_design_critique_structure_skill,
+  s_editorial_style_guide_enforcement_skill,
+  s_interview_answer_structure_skill,
+  s_meeting_decision_capture_skill,
+  s_misconception_diagnosis_skill,
+  s_pull_request_review_standard_skill,
+  s_resume_bullet_audit_skill,
+  s_rubric_based_feedback_skill,
+  s_sales_call_review_skill,
+  s_sales_proposal_structuring_skill,
+  s_structural_outline_audit_skill,
+  s_task_handoff_skill,
+  s_test_coverage_gap_skill,
+  s_vendor_comparison_matrix_skill,
+  s_weekly_review_structure_skill,
 ];
 
-export const skillCount = 1;
+export const skillCount = 24;
