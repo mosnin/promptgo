@@ -4,6 +4,7 @@ import type { SkillMeta } from "@/lib/skill-types";
 
 import s_accessibility_annotation_skill from "@/skills/accessibility-annotation-skill/meta";
 import s_acronym_first_use_skill from "@/skills/acronym-first-use-skill/meta";
+import s_action_item_ownership_audit_skill from "@/skills/action-item-ownership-audit-skill/meta";
 import s_ad_headline_length_audit_skill from "@/skills/ad-headline-length-audit-skill/meta";
 import s_api_documentation_consistency_skill from "@/skills/api-documentation-consistency-skill/meta";
 import s_assessment_blueprint_alignment_skill from "@/skills/assessment-blueprint-alignment-skill/meta";
@@ -12,10 +13,14 @@ import s_async_standup_completeness_skill from "@/skills/async-standup-completen
 import s_brand_glossary_consistency_skill from "@/skills/brand-glossary-consistency-skill/meta";
 import s_brand_voice_consistency_skill from "@/skills/brand-voice-consistency-skill/meta";
 import s_budget_variance_explanation_skill from "@/skills/budget-variance-explanation-skill/meta";
+import s_button_state_completeness_skill from "@/skills/button-state-completeness-skill/meta";
+import s_calendar_block_purpose_audit_skill from "@/skills/calendar-block-purpose-audit-skill/meta";
 import s_campaign_brief_structuring_skill from "@/skills/campaign-brief-structuring-skill/meta";
 import s_capacity_planning_sanity_check_skill from "@/skills/capacity-planning-sanity-check-skill/meta";
 import s_career_gap_explanation_honesty_skill from "@/skills/career-gap-explanation-honesty-skill/meta";
+import s_champion_relationship_risk_check_skill from "@/skills/champion-relationship-risk-check-skill/meta";
 import s_chart_accuracy_check_skill from "@/skills/chart-accuracy-check-skill/meta";
+import s_citation_format_consistency_skill from "@/skills/citation-format-consistency-skill/meta";
 import s_classroom_instruction_pacing_skill from "@/skills/classroom-instruction-pacing-skill/meta";
 import s_code_comment_staleness_audit_skill from "@/skills/code-comment-staleness-audit-skill/meta";
 import s_cohort_comparison_fairness_check_skill from "@/skills/cohort-comparison-fairness-check-skill/meta";
@@ -36,12 +41,15 @@ import s_deal_stage_definition_audit_skill from "@/skills/deal-stage-definition-
 import s_decision_memo_skill from "@/skills/decision-memo-skill/meta";
 import s_dependency_changelog_audit_skill from "@/skills/dependency-changelog-audit-skill/meta";
 import s_design_critique_structure_skill from "@/skills/design-critique-structure-skill/meta";
+import s_design_token_usage_audit_skill from "@/skills/design-token-usage-audit-skill/meta";
 import s_differentiated_instruction_check_skill from "@/skills/differentiated-instruction-check-skill/meta";
 import s_discovery_question_bank_skill from "@/skills/discovery-question-bank-skill/meta";
 import s_editorial_style_guide_enforcement_skill from "@/skills/editorial-style-guide-enforcement-skill/meta";
 import s_email_subject_line_audit_skill from "@/skills/email-subject-line-audit-skill/meta";
 import s_empty_state_completeness_skill from "@/skills/empty-state-completeness-skill/meta";
+import s_error_handling_consistency_audit_skill from "@/skills/error-handling-consistency-audit-skill/meta";
 import s_error_message_clarity_audit_skill from "@/skills/error-message-clarity-audit-skill/meta";
+import s_event_invite_detail_completeness_skill from "@/skills/event-invite-detail-completeness-skill/meta";
 import s_feature_flag_cleanup_skill from "@/skills/feature-flag-cleanup-skill/meta";
 import s_form_field_error_recovery_audit_skill from "@/skills/form-field-error-recovery-audit-skill/meta";
 import s_heading_hierarchy_audit_skill from "@/skills/heading-hierarchy-audit-skill/meta";
@@ -49,19 +57,26 @@ import s_icon_consistency_audit_skill from "@/skills/icon-consistency-audit-skil
 import s_inbox_triage_rule_skill from "@/skills/inbox-triage-rule-skill/meta";
 import s_interview_answer_structure_skill from "@/skills/interview-answer-structure-skill/meta";
 import s_jargon_first_use_audit_skill from "@/skills/jargon-first-use-audit-skill/meta";
+import s_job_posting_requirement_match_skill from "@/skills/job-posting-requirement-match-skill/meta";
 import s_landing_page_cta_audit_skill from "@/skills/landing-page-cta-audit-skill/meta";
+import s_learning_objective_verb_alignment_skill from "@/skills/learning-objective-verb-alignment-skill/meta";
 import s_linkedin_headline_audit_skill from "@/skills/linkedin-headline-audit-skill/meta";
 import s_list_parallelism_audit_skill from "@/skills/list-parallelism-audit-skill/meta";
 import s_meeting_cadence_audit_skill from "@/skills/meeting-cadence-audit-skill/meta";
 import s_meeting_decision_capture_skill from "@/skills/meeting-decision-capture-skill/meta";
 import s_metric_definition_audit_skill from "@/skills/metric-definition-audit-skill/meta";
 import s_misconception_diagnosis_skill from "@/skills/misconception-diagnosis-skill/meta";
+import s_naming_convention_drift_skill from "@/skills/naming-convention-drift-skill/meta";
 import s_okr_alignment_check_skill from "@/skills/okr-alignment-check-skill/meta";
+import s_outlier_explanation_audit_skill from "@/skills/outlier-explanation-audit-skill/meta";
 import s_passive_voice_audit_skill from "@/skills/passive-voice-audit-skill/meta";
 import s_peer_review_rubric_skill from "@/skills/peer-review-rubric-skill/meta";
 import s_portfolio_project_description_fact_check_skill from "@/skills/portfolio-project-description-fact-check-skill/meta";
 import s_press_release_boilerplate_consistency_skill from "@/skills/press-release-boilerplate-consistency-skill/meta";
+import s_pricing_quote_consistency_skill from "@/skills/pricing-quote-consistency-skill/meta";
 import s_project_status_color_consistency_skill from "@/skills/project-status-color-consistency-skill/meta";
+import s_project_status_report_completeness_skill from "@/skills/project-status-report-completeness-skill/meta";
+import s_promo_discount_terms_clarity_skill from "@/skills/promo-discount-terms-clarity-skill/meta";
 import s_pull_request_review_standard_skill from "@/skills/pull-request-review-standard-skill/meta";
 import s_quiz_question_quality_audit_skill from "@/skills/quiz-question-quality-audit-skill/meta";
 import s_quote_attribution_verification_skill from "@/skills/quote-attribution-verification-skill/meta";
@@ -81,17 +96,23 @@ import s_social_caption_hashtag_relevance_skill from "@/skills/social-caption-ha
 import s_spacing_scale_consistency_skill from "@/skills/spacing-scale-consistency-skill/meta";
 import s_stakeholder_raci_audit_skill from "@/skills/stakeholder-raci-audit-skill/meta";
 import s_structural_outline_audit_skill from "@/skills/structural-outline-audit-skill/meta";
+import s_student_feedback_actionability_skill from "@/skills/student-feedback-actionability-skill/meta";
 import s_survey_question_bias_audit_skill from "@/skills/survey-question-bias-audit-skill/meta";
+import s_survey_response_rate_context_skill from "@/skills/survey-response-rate-context-skill/meta";
 import s_task_handoff_skill from "@/skills/task-handoff-skill/meta";
+import s_tense_consistency_audit_skill from "@/skills/tense-consistency-audit-skill/meta";
 import s_test_coverage_gap_skill from "@/skills/test-coverage-gap-skill/meta";
+import s_thank_you_note_specificity_skill from "@/skills/thank-you-note-specificity-skill/meta";
 import s_time_off_coverage_plan_check_skill from "@/skills/time-off-coverage-plan-check-skill/meta";
 import s_utm_campaign_naming_skill from "@/skills/utm-campaign-naming-skill/meta";
 import s_vendor_comparison_matrix_skill from "@/skills/vendor-comparison-matrix-skill/meta";
+import s_vendor_sla_compliance_check_skill from "@/skills/vendor-sla-compliance-check-skill/meta";
 import s_weekly_review_structure_skill from "@/skills/weekly-review-structure-skill/meta";
 
 export const skillMetas: SkillMeta[] = [
   s_accessibility_annotation_skill,
   s_acronym_first_use_skill,
+  s_action_item_ownership_audit_skill,
   s_ad_headline_length_audit_skill,
   s_api_documentation_consistency_skill,
   s_assessment_blueprint_alignment_skill,
@@ -100,10 +121,14 @@ export const skillMetas: SkillMeta[] = [
   s_brand_glossary_consistency_skill,
   s_brand_voice_consistency_skill,
   s_budget_variance_explanation_skill,
+  s_button_state_completeness_skill,
+  s_calendar_block_purpose_audit_skill,
   s_campaign_brief_structuring_skill,
   s_capacity_planning_sanity_check_skill,
   s_career_gap_explanation_honesty_skill,
+  s_champion_relationship_risk_check_skill,
   s_chart_accuracy_check_skill,
+  s_citation_format_consistency_skill,
   s_classroom_instruction_pacing_skill,
   s_code_comment_staleness_audit_skill,
   s_cohort_comparison_fairness_check_skill,
@@ -124,12 +149,15 @@ export const skillMetas: SkillMeta[] = [
   s_decision_memo_skill,
   s_dependency_changelog_audit_skill,
   s_design_critique_structure_skill,
+  s_design_token_usage_audit_skill,
   s_differentiated_instruction_check_skill,
   s_discovery_question_bank_skill,
   s_editorial_style_guide_enforcement_skill,
   s_email_subject_line_audit_skill,
   s_empty_state_completeness_skill,
+  s_error_handling_consistency_audit_skill,
   s_error_message_clarity_audit_skill,
+  s_event_invite_detail_completeness_skill,
   s_feature_flag_cleanup_skill,
   s_form_field_error_recovery_audit_skill,
   s_heading_hierarchy_audit_skill,
@@ -137,19 +165,26 @@ export const skillMetas: SkillMeta[] = [
   s_inbox_triage_rule_skill,
   s_interview_answer_structure_skill,
   s_jargon_first_use_audit_skill,
+  s_job_posting_requirement_match_skill,
   s_landing_page_cta_audit_skill,
+  s_learning_objective_verb_alignment_skill,
   s_linkedin_headline_audit_skill,
   s_list_parallelism_audit_skill,
   s_meeting_cadence_audit_skill,
   s_meeting_decision_capture_skill,
   s_metric_definition_audit_skill,
   s_misconception_diagnosis_skill,
+  s_naming_convention_drift_skill,
   s_okr_alignment_check_skill,
+  s_outlier_explanation_audit_skill,
   s_passive_voice_audit_skill,
   s_peer_review_rubric_skill,
   s_portfolio_project_description_fact_check_skill,
   s_press_release_boilerplate_consistency_skill,
+  s_pricing_quote_consistency_skill,
   s_project_status_color_consistency_skill,
+  s_project_status_report_completeness_skill,
+  s_promo_discount_terms_clarity_skill,
   s_pull_request_review_standard_skill,
   s_quiz_question_quality_audit_skill,
   s_quote_attribution_verification_skill,
@@ -169,13 +204,18 @@ export const skillMetas: SkillMeta[] = [
   s_spacing_scale_consistency_skill,
   s_stakeholder_raci_audit_skill,
   s_structural_outline_audit_skill,
+  s_student_feedback_actionability_skill,
   s_survey_question_bias_audit_skill,
+  s_survey_response_rate_context_skill,
   s_task_handoff_skill,
+  s_tense_consistency_audit_skill,
   s_test_coverage_gap_skill,
+  s_thank_you_note_specificity_skill,
   s_time_off_coverage_plan_check_skill,
   s_utm_campaign_naming_skill,
   s_vendor_comparison_matrix_skill,
+  s_vendor_sla_compliance_check_skill,
   s_weekly_review_structure_skill,
 ];
 
-export const skillCount = 86;
+export const skillCount = 106;
