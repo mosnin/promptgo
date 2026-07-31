@@ -32,6 +32,7 @@ import s_competitor_messaging_audit_skill from "@/skills/competitor-messaging-au
 import s_component_naming_consistency_skill from "@/skills/component-naming-consistency-skill/meta";
 import s_config_drift_detection_skill from "@/skills/config-drift-detection-skill/meta";
 import s_contract_renewal_date_tracking_skill from "@/skills/contract-renewal-date-tracking-skill/meta";
+import s_correlation_causation_claim_audit_skill from "@/skills/correlation-causation-claim-audit-skill/meta";
 import s_cover_letter_fact_check_skill from "@/skills/cover-letter-fact-check-skill/meta";
 import s_cross_reference_integrity_skill from "@/skills/cross-reference-integrity-skill/meta";
 import s_dashboard_metric_relevance_skill from "@/skills/dashboard-metric-relevance-skill/meta";
@@ -62,9 +63,12 @@ import s_landing_page_cta_audit_skill from "@/skills/landing-page-cta-audit-skil
 import s_learning_objective_verb_alignment_skill from "@/skills/learning-objective-verb-alignment-skill/meta";
 import s_linkedin_headline_audit_skill from "@/skills/linkedin-headline-audit-skill/meta";
 import s_list_parallelism_audit_skill from "@/skills/list-parallelism-audit-skill/meta";
+import s_magic_number_documentation_audit_skill from "@/skills/magic-number-documentation-audit-skill/meta";
 import s_meeting_cadence_audit_skill from "@/skills/meeting-cadence-audit-skill/meta";
 import s_meeting_decision_capture_skill from "@/skills/meeting-decision-capture-skill/meta";
+import s_meeting_follow_up_completion_check_skill from "@/skills/meeting-follow-up-completion-check-skill/meta";
 import s_metric_definition_audit_skill from "@/skills/metric-definition-audit-skill/meta";
+import s_microcopy_tone_consistency_skill from "@/skills/microcopy-tone-consistency-skill/meta";
 import s_misconception_diagnosis_skill from "@/skills/misconception-diagnosis-skill/meta";
 import s_naming_convention_drift_skill from "@/skills/naming-convention-drift-skill/meta";
 import s_okr_alignment_check_skill from "@/skills/okr-alignment-check-skill/meta";
@@ -72,11 +76,14 @@ import s_outlier_explanation_audit_skill from "@/skills/outlier-explanation-audi
 import s_passive_voice_audit_skill from "@/skills/passive-voice-audit-skill/meta";
 import s_peer_review_rubric_skill from "@/skills/peer-review-rubric-skill/meta";
 import s_portfolio_project_description_fact_check_skill from "@/skills/portfolio-project-description-fact-check-skill/meta";
+import s_prerequisite_knowledge_gap_check_skill from "@/skills/prerequisite-knowledge-gap-check-skill/meta";
 import s_press_release_boilerplate_consistency_skill from "@/skills/press-release-boilerplate-consistency-skill/meta";
 import s_pricing_quote_consistency_skill from "@/skills/pricing-quote-consistency-skill/meta";
+import s_process_documentation_staleness_check_skill from "@/skills/process-documentation-staleness-check-skill/meta";
 import s_project_status_color_consistency_skill from "@/skills/project-status-color-consistency-skill/meta";
 import s_project_status_report_completeness_skill from "@/skills/project-status-report-completeness-skill/meta";
 import s_promo_discount_terms_clarity_skill from "@/skills/promo-discount-terms-clarity-skill/meta";
+import s_pronoun_antecedent_clarity_skill from "@/skills/pronoun-antecedent-clarity-skill/meta";
 import s_pull_request_review_standard_skill from "@/skills/pull-request-review-standard-skill/meta";
 import s_quiz_question_quality_audit_skill from "@/skills/quiz-question-quality-audit-skill/meta";
 import s_quote_attribution_verification_skill from "@/skills/quote-attribution-verification-skill/meta";
@@ -87,8 +94,10 @@ import s_renewal_risk_flagging_skill from "@/skills/renewal-risk-flagging-skill/
 import s_resume_bullet_audit_skill from "@/skills/resume-bullet-audit-skill/meta";
 import s_risk_register_maintenance_skill from "@/skills/risk-register-maintenance-skill/meta";
 import s_rubric_based_feedback_skill from "@/skills/rubric-based-feedback-skill/meta";
+import s_salary_negotiation_counter_offer_check_skill from "@/skills/salary-negotiation-counter-offer-check-skill/meta";
 import s_salary_range_research_log_skill from "@/skills/salary-range-research-log-skill/meta";
 import s_sales_call_review_skill from "@/skills/sales-call-review-skill/meta";
+import s_sales_forecast_commit_confidence_audit_skill from "@/skills/sales-forecast-commit-confidence-audit-skill/meta";
 import s_sales_proposal_structuring_skill from "@/skills/sales-proposal-structuring-skill/meta";
 import s_sales_to_cs_handoff_readiness_skill from "@/skills/sales-to-cs-handoff-readiness-skill/meta";
 import s_sample_size_sanity_check_skill from "@/skills/sample-size-sanity-check-skill/meta";
@@ -140,6 +149,7 @@ export const skillMetas: SkillMeta[] = [
   s_component_naming_consistency_skill,
   s_config_drift_detection_skill,
   s_contract_renewal_date_tracking_skill,
+  s_correlation_causation_claim_audit_skill,
   s_cover_letter_fact_check_skill,
   s_cross_reference_integrity_skill,
   s_dashboard_metric_relevance_skill,
@@ -170,9 +180,12 @@ export const skillMetas: SkillMeta[] = [
   s_learning_objective_verb_alignment_skill,
   s_linkedin_headline_audit_skill,
   s_list_parallelism_audit_skill,
+  s_magic_number_documentation_audit_skill,
   s_meeting_cadence_audit_skill,
   s_meeting_decision_capture_skill,
+  s_meeting_follow_up_completion_check_skill,
   s_metric_definition_audit_skill,
+  s_microcopy_tone_consistency_skill,
   s_misconception_diagnosis_skill,
   s_naming_convention_drift_skill,
   s_okr_alignment_check_skill,
@@ -180,11 +193,14 @@ export const skillMetas: SkillMeta[] = [
   s_passive_voice_audit_skill,
   s_peer_review_rubric_skill,
   s_portfolio_project_description_fact_check_skill,
+  s_prerequisite_knowledge_gap_check_skill,
   s_press_release_boilerplate_consistency_skill,
   s_pricing_quote_consistency_skill,
+  s_process_documentation_staleness_check_skill,
   s_project_status_color_consistency_skill,
   s_project_status_report_completeness_skill,
   s_promo_discount_terms_clarity_skill,
+  s_pronoun_antecedent_clarity_skill,
   s_pull_request_review_standard_skill,
   s_quiz_question_quality_audit_skill,
   s_quote_attribution_verification_skill,
@@ -195,8 +211,10 @@ export const skillMetas: SkillMeta[] = [
   s_resume_bullet_audit_skill,
   s_risk_register_maintenance_skill,
   s_rubric_based_feedback_skill,
+  s_salary_negotiation_counter_offer_check_skill,
   s_salary_range_research_log_skill,
   s_sales_call_review_skill,
+  s_sales_forecast_commit_confidence_audit_skill,
   s_sales_proposal_structuring_skill,
   s_sales_to_cs_handoff_readiness_skill,
   s_sample_size_sanity_check_skill,
@@ -218,4 +236,4 @@ export const skillMetas: SkillMeta[] = [
   s_weekly_review_structure_skill,
 ];
 
-export const skillCount = 106;
+export const skillCount = 115;
