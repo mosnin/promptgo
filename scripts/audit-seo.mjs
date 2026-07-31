@@ -21,6 +21,8 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const promptsDir = path.join(root, "src", "prompts");
+const toolsDir = path.join(root, "src", "tools");
+const skillsDir = path.join(root, "src", "skills");
 
 /* ---- Rule thresholds ---------------------------------------------------- */
 
@@ -286,6 +288,29 @@ async function loadMeta(slug) {
     .replace(/^\s*import\s+type\s+.*?;\s*$/gm, "")
     .replace(/^\s*import\s+.*?;\s*$/gm, "")
     .replace(/const\s+meta\s*:\s*PromptMeta\s*=/, "const meta =")
+    .replace(/export\s+default\s+meta\s*;?/, "");
+
+  const module = await import(
+    `data:text/javascript;base64,${Buffer.from(
+      `${stripped}\nexport default meta;`,
+    ).toString("base64")}`
+  );
+  return module.default;
+}
+
+/**
+ * Same technique as `loadMeta`, for a skill's meta.ts. Only used here for
+ * link resolution (registering /skills/<category>/<slug> as a real route),
+ * not for auditing skill content, which is scripts/audit-skills.mjs's job.
+ */
+async function loadSkillMeta(slug) {
+  const file = path.join(skillsDir, slug, "meta.ts");
+  const source = await readFile(file, "utf8");
+
+  const stripped = source
+    .replace(/^\s*import\s+type\s+.*?;\s*$/gm, "")
+    .replace(/^\s*import\s+.*?;\s*$/gm, "")
+    .replace(/const\s+meta\s*:\s*SkillMeta\s*=/, "const meta =")
     .replace(/export\s+default\s+meta\s*;?/, "");
 
   const module = await import(
@@ -630,6 +655,33 @@ async function main() {
   };
   const known = new Set();
   const reports = [];
+
+  // Prompts also link out to interactive tools (for example a colour contrast
+  // checker paired with an accessibility prompt). Tools live in a sibling
+  // directory with their own audit (audit-tools.mjs) and are not prompts, but
+  // an internal link pointing at one is a real, resolvable page, so register
+  // every published tool route here too rather than failing it as a dead link.
+  const toolEntries = await readdir(toolsDir, { withFileTypes: true }).catch(() => []);
+  for (const entry of toolEntries) {
+    if (entry.isDirectory() && existsSync(path.join(toolsDir, entry.name, "meta.ts"))) {
+      known.add(`/tools/${entry.name}`);
+    }
+  }
+
+  // Same reasoning, for the /skills catalogue: a prompt or tool may point to a
+  // downloadable skill page, which is a real, resolvable route.
+  const skillEntries = await readdir(skillsDir, { withFileTypes: true }).catch(() => []);
+  for (const entry of skillEntries) {
+    if (entry.isDirectory() && existsSync(path.join(skillsDir, entry.name, "meta.ts"))) {
+      try {
+        const skillMeta = await loadSkillMeta(entry.name);
+        known.add(`/skills/${skillMeta.category}/${skillMeta.slug}`);
+      } catch {
+        // A broken skill file is that skill's own audit failure, not a reason
+        // to fail link resolution for every other page on the site.
+      }
+    }
+  }
 
   for (const slug of slugs) {
     try {
