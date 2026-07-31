@@ -2,10 +2,58 @@
 // Add a builder tool by creating src/ide-tools/<slug>/meta.ts then running `npm run gen`.
 import type { IdeToolMeta } from "@/lib/ide-tool-types";
 
+import it_agent_evaluation_harness_starter_tool from "@/ide-tools/agent-evaluation-harness-starter-tool/meta";
+import it_agent_handoff_protocol_tool from "@/ide-tools/agent-handoff-protocol-tool/meta";
+import it_agent_memory_strategy_tool from "@/ide-tools/agent-memory-strategy-tool/meta";
+import it_agent_system_prompt_builder_tool from "@/ide-tools/agent-system-prompt-builder-tool/meta";
+import it_agent_tool_use_policy_tool from "@/ide-tools/agent-tool-use-policy-tool/meta";
 import it_ai_skill_builder_tool from "@/ide-tools/ai-skill-builder-tool/meta";
+import it_ai_skill_refiner_tool from "@/ide-tools/ai-skill-refiner-tool/meta";
+import it_api_tool_wrapper_generator_tool from "@/ide-tools/api-tool-wrapper-generator-tool/meta";
+import it_browser_agent_starter_template from "@/ide-tools/browser-agent-starter-template/meta";
+import it_cli_agent_starter_template from "@/ide-tools/cli-agent-starter-template/meta";
+import it_customer_support_agent_starter_template from "@/ide-tools/customer-support-agent-starter-template/meta";
+import it_function_calling_schema_builder_tool from "@/ide-tools/function-calling-schema-builder-tool/meta";
+import it_json_schema_validator_starter_tool from "@/ide-tools/json-schema-validator-starter-tool/meta";
+import it_mcp_prompt_definition_builder_tool from "@/ide-tools/mcp-prompt-definition-builder-tool/meta";
+import it_mcp_resource_definition_builder_tool from "@/ide-tools/mcp-resource-definition-builder-tool/meta";
+import it_mcp_server_manifest_generator_tool from "@/ide-tools/mcp-server-manifest-generator-tool/meta";
+import it_mcp_server_starter_tool from "@/ide-tools/mcp-server-starter-tool/meta";
+import it_mcp_tool_definition_builder_tool from "@/ide-tools/mcp-tool-definition-builder-tool/meta";
+import it_research_agent_starter_template from "@/ide-tools/research-agent-starter-template/meta";
+import it_skill_changelog_starter_tool from "@/ide-tools/skill-changelog-starter-tool/meta";
+import it_skill_manifest_json_builder_tool from "@/ide-tools/skill-manifest-json-builder-tool/meta";
+import it_skill_testing_checklist_tool from "@/ide-tools/skill-testing-checklist-tool/meta";
+import it_structured_output_schema_builder_tool from "@/ide-tools/structured-output-schema-builder-tool/meta";
+import it_webhook_tool_definition_starter_tool from "@/ide-tools/webhook-tool-definition-starter-tool/meta";
+import it_workflow_automation_agent_starter_template from "@/ide-tools/workflow-automation-agent-starter-template/meta";
 
 export const ideToolMetas: IdeToolMeta[] = [
+  it_agent_evaluation_harness_starter_tool,
+  it_agent_handoff_protocol_tool,
+  it_agent_memory_strategy_tool,
+  it_agent_system_prompt_builder_tool,
+  it_agent_tool_use_policy_tool,
   it_ai_skill_builder_tool,
+  it_ai_skill_refiner_tool,
+  it_api_tool_wrapper_generator_tool,
+  it_browser_agent_starter_template,
+  it_cli_agent_starter_template,
+  it_customer_support_agent_starter_template,
+  it_function_calling_schema_builder_tool,
+  it_json_schema_validator_starter_tool,
+  it_mcp_prompt_definition_builder_tool,
+  it_mcp_resource_definition_builder_tool,
+  it_mcp_server_manifest_generator_tool,
+  it_mcp_server_starter_tool,
+  it_mcp_tool_definition_builder_tool,
+  it_research_agent_starter_template,
+  it_skill_changelog_starter_tool,
+  it_skill_manifest_json_builder_tool,
+  it_skill_testing_checklist_tool,
+  it_structured_output_schema_builder_tool,
+  it_webhook_tool_definition_starter_tool,
+  it_workflow_automation_agent_starter_template,
 ];
 
-export const ideToolCount = 1;
+export const ideToolCount = 25;
