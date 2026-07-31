@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "audit:seo": "npm run gen && node scripts/audit-seo.mjs"
+    "audit:seo": "npm run gen && node scripts/audit-seo.mjs",
+    "audit:tools": "npm run gen && node scripts/audit-tools.mjs"
   },
   "dependencies": {
     "border-beam": "^1.3.0",

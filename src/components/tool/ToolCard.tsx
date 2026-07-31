@@ -1,0 +1,98 @@
+"use client";
+
+import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
+import { useState } from "react";
+import { Icon } from "@/components/ui/Icon";
+import { cn } from "@/lib/cn";
+import type { ToolCardData } from "@/lib/tool-card";
+
+interface ToolCardProps {
+  tool: ToolCardData;
+  accent?: string;
+  compact?: boolean;
+  index?: number;
+}
+
+/**
+ * A tool, presented the same way a prompt is: as a specimen plate, so the
+ * catalogue reads as one system rather than two visually different products
+ * bolted together. The specimen line is different by necessity, since a tool
+ * has no opening instruction to quote: it shows the input count instead,
+ * which is genuinely informative (a one field tool is a quick lookup, a five
+ * field tool is a real calculator).
+ */
+export function ToolCard({ tool, accent = "var(--color-signal)", compact, index }: ToolCardProps) {
+  const [lit, setLit] = useState(false);
+  const reduced = useReducedMotion();
+
+  return (
+    <motion.div
+      whileHover={reduced ? undefined : { y: -3 }}
+      transition={{ type: "spring", stiffness: 400, damping: 32 }}
+      onHoverStart={() => setLit(true)}
+      onHoverEnd={() => setLit(false)}
+      className="h-full"
+    >
+      <Link
+        href={tool.href}
+        onFocus={() => setLit(true)}
+        onBlur={() => setLit(false)}
+        className={cn(
+          "group relative flex h-full flex-col overflow-hidden rounded-md border border-hairline bg-canvas transition-colors duration-300 hover:border-hairline-strong",
+          compact ? "p-4" : "p-5",
+        )}
+      >
+        <div className="relative flex items-center justify-between gap-2">
+          <span
+            className="truncate font-mono text-[0.625rem] uppercase tracking-[0.16em]"
+            style={{ color: accent }}
+          >
+            {tool.inputCount} input{tool.inputCount === 1 ? "" : "s"}
+          </span>
+          {index !== undefined && (
+            <span className="shrink-0 font-mono text-[0.625rem] tabular-nums text-ink-faint">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+          )}
+        </div>
+
+        <div className={cn("relative", compact ? "mt-2" : "mt-4")}>
+          <h3
+            className={cn(
+              "font-medium tracking-[-0.015em] text-ink",
+              compact ? "text-[0.875rem]" : "text-[0.9375rem]",
+            )}
+          >
+            {tool.name}
+          </h3>
+          <p
+            className={cn(
+              "mt-1.5 leading-relaxed text-ink-subtle",
+              compact ? "line-clamp-2 text-[0.75rem]" : "text-[0.8125rem]",
+            )}
+          >
+            {tool.summary}
+          </p>
+        </div>
+
+        {!compact && (
+          <div className="relative mt-auto flex items-center gap-1.5 pt-5">
+            <span
+              className="text-[0.8125rem] font-medium transition-colors duration-300"
+              style={{ color: lit ? accent : "var(--color-ink-muted)" }}
+            >
+              Open tool
+            </span>
+            <Icon
+              name="arrow-right"
+              size={13}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+              style={{ color: lit ? accent : "var(--color-ink-faint)" }}
+            />
+          </div>
+        )}
+      </Link>
+    </motion.div>
+  );
+}

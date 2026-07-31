@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { categories } from "@/lib/categories";
 import { getPromptsByCategory, prompts } from "@/lib/prompts";
+import { toolCategories } from "@/lib/tool-categories";
+import { getToolsByCategory, tools } from "@/lib/tools";
 import { absoluteUrl, site } from "@/lib/site";
 
 /**
@@ -55,6 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/tools"),
+      lastModified: newestUpdate(tools, STATIC_PAGE_REVISION),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl("/about"),
       lastModified: staticRevision,
       changeFrequency: "monthly",
@@ -87,12 +95,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const toolRoutes: MetadataRoute.Sitemap = prompts.map((prompt) => ({
+  const promptRoutes: MetadataRoute.Sitemap = prompts.map((prompt) => ({
     url: absoluteUrl(prompt.href),
     lastModified: new Date(prompt.updated),
     changeFrequency: "monthly",
     priority: prompt.featured ? 0.9 : 0.7,
   }));
 
-  return [...staticRoutes, ...categoryRoutes, ...toolRoutes];
+  const toolCategoryRoutes: MetadataRoute.Sitemap = toolCategories.map((category) => ({
+    url: absoluteUrl(`/tools/category/${category.slug}`),
+    lastModified: newestUpdate(getToolsByCategory(category.slug), STATIC_PAGE_REVISION),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  const toolRoutes: MetadataRoute.Sitemap = tools.map((tool) => ({
+    url: absoluteUrl(tool.href),
+    lastModified: new Date(tool.updated),
+    changeFrequency: "monthly",
+    priority: tool.featured ? 0.9 : 0.7,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...categoryRoutes,
+    ...promptRoutes,
+    ...toolCategoryRoutes,
+    ...toolRoutes,
+  ];
 }

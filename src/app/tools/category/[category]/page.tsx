@@ -7,104 +7,70 @@ import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import { Breadcrumbs } from "@/components/prompt/Breadcrumbs";
-import { toCardData } from "@/lib/prompt-card";
-import { CategoryPromptBrowser } from "@/components/prompt/CategoryPromptBrowser";
 import { FaqAccordion } from "@/components/prompt/FaqAccordion";
-import { categories, getCategory } from "@/lib/categories";
-import { getPromptsByCategory } from "@/lib/prompts";
-import { getTaskType } from "@/lib/task-types";
+import { ToolCard } from "@/components/tool/ToolCard";
+import { toToolCardData } from "@/lib/tool-card";
+import { toolCategories, getToolCategory } from "@/lib/tool-categories";
+import { getToolsByCategory } from "@/lib/tools";
 import { buildMetadata } from "@/lib/seo";
-import {
-  breadcrumbSchema,
-  collectionPageSchema,
-  faqSchema,
-  graph,
-} from "@/lib/jsonld";
+import { breadcrumbSchema, collectionPageSchema, faqSchema, graph } from "@/lib/jsonld";
 
 interface PageProps {
   params: Promise<{ category: string }>;
 }
 
 export function generateStaticParams() {
-  return categories.map((category) => ({ category: category.slug }));
+  return toolCategories.map((category) => ({ category: category.slug }));
 }
 
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category: slug } = await params;
-  const category = getCategory(slug);
+  const category = getToolCategory(slug);
   if (!category) return { title: "Category not found" };
 
   return buildMetadata({
     title: category.seoTitle,
     description: category.seoDescription,
-    path: `/${category.slug}`,
+    path: `/tools/category/${category.slug}`,
     keywords: category.keywords,
   });
 }
 
-/**
- * Category hub. Lists every prompt in the cluster plus supporting copy and an FAQ,
- * so the page has enough unique substance to rank for the category head term
- * rather than acting as a bare link list.
- */
-export default async function CategoryPage({ params }: PageProps) {
+export default async function ToolCategoryPage({ params }: PageProps) {
   const { category: slug } = await params;
-  const category = getCategory(slug);
+  const category = getToolCategory(slug);
   if (!category) notFound();
 
-  const categoryPrompts = getPromptsByCategory(category.slug);
-  const siblings = categories.filter((item) => item.slug !== category.slug);
+  const categoryTools = getToolsByCategory(category.slug);
+  const siblings = toolCategories.filter((item) => item.slug !== category.slug);
 
   const crumbs = [
     { name: "Home", href: "/" },
-    { name: category.name, href: `/${category.slug}` },
+    { name: "Tools", href: "/tools" },
+    { name: category.name, href: `/tools/category/${category.slug}` },
   ];
-
-  /**
-   * Category FAQ.
-   *
-   * Derived from real catalogue data rather than written as fixed copy. The
-   * version this replaced was inherited from the file conversion directory
-   * this repo was ported from and was simply untrue here: it answered
-   * questions about upload limits and local file processing on a site where
-   * nothing is uploaded and no file is ever touched. That text was also being
-   * emitted as FAQPage structured data, so it was ten pages of schema making
-   * false claims, which is exactly what a manual action is for.
-   *
-   * Deriving the answers from counts, task types and a named example also
-   * keeps the ten category FAQs distinct from one another, which fixed copy
-   * could not do.
-   */
-  const taskNames = [...new Set(categoryPrompts.map((prompt) => prompt.taskType))]
-    .map((slug) => getTaskType(slug)?.name.toLowerCase())
-    .filter(Boolean);
-
-  const exampleNames = categoryPrompts.slice(0, 3).map((prompt) => prompt.name);
 
   const faq = [
     {
       question: `Are these ${category.primaryKeyword} free to use?`,
-      answer: `Yes. All ${categoryPrompts.length} prompts in this category are free to copy with no account, no trial and no email capture. You paste them into whichever assistant you already use, so there is nothing for us to meter and no usage limit to impose.`,
+      answer: `Yes. All ${categoryTools.length} tools in this category are free, with no account, no trial and no usage limit, because every one of them runs entirely in your own browser.`,
     },
     {
-      question: `Which AI models do these ${category.primaryKeyword} work with?`,
-      answer: `Each page names the models its prompt was written for, normally current versions of ChatGPT, Claude and in most cases Gemini. They are written as plain instructions rather than model specific syntax, so they transfer to other assistants with little or no editing.`,
-    },
-    {
-      question: "Do I need to fill in the variables before copying?",
+      question: "Is anything I type or generate here uploaded anywhere?",
       answer:
-        "No, though the output is considerably better if you do. Each prompt marks its inputs as tokens in double braces, and the panel on every page lets you type real values or load the worked example so that what reaches your clipboard is a finished prompt rather than a template you still have to edit in the chat window.",
+        "No. Every field, every generated code and every computed result stays in your browser tab. There is no server call behind any of these tools, so there is nothing to upload and nothing logged on our side.",
     },
     {
-      question: `What kinds of task do the ${category.primaryKeyword} cover?`,
-      answer: `This category currently spans ${taskNames.length} kinds of task${taskNames.length > 1 ? `, including ${taskNames.slice(0, 3).join(", ")}` : ""}. You can narrow the list to one kind using the task filter above the grid${exampleNames.length ? `, which is how you would get from the full category to something specific like ${exampleNames[0]}` : ""}.`,
-    },
-    {
-      question: "Is anything I type into a prompt sent anywhere?",
+      question: "Do these tools use AI?",
       answer:
-        "No. The fill in fields on each page hold their values in your own browser and are never transmitted to us, which matters because those fields routinely contain unreleased copy, client names and internal numbers. What you do afterwards with the finished prompt is between you and whichever assistant you paste it into.",
+        "No. Each one computes a real answer from a real formula, algorithm or browser API, the same way a calculator or a code utility would. If you are looking for AI generated text instead, the prompt directory covers that separately.",
+    },
+    {
+      question: "Why do some tools ask for a rate or figure instead of just giving an answer?",
+      answer:
+        "Because a real tax rate, market rate or benchmark varies by year, region and situation in a way a hard coded constant would get quietly wrong. Where a tool needs one of those numbers, it asks you for it rather than assuming a default that might not apply.",
     },
   ];
 
@@ -114,8 +80,8 @@ export default async function CategoryPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: graph([
-            collectionPageSchema(category, `/${category.slug}`, categoryPrompts),
-            faqSchema(faq, `/${category.slug}`),
+            collectionPageSchema(category, `/tools/category/${category.slug}`, categoryTools),
+            faqSchema(faq, `/tools/category/${category.slug}`),
             breadcrumbSchema(crumbs),
           ]),
         }}
@@ -146,7 +112,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <Icon name={category.icon} size={20} />
               </span>
               <Badge>
-                {categoryPrompts.length} prompt{categoryPrompts.length === 1 ? "" : "s"}
+                {categoryTools.length} tool{categoryTools.length === 1 ? "" : "s"}
               </Badge>
             </div>
 
@@ -161,15 +127,17 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="shell py-12">
         <AdSlot name="listing" format="horizontal" minHeight={110} className="mb-10" />
 
-        {categoryPrompts.length > 0 ? (
-          <CategoryPromptBrowser
-            prompts={categoryPrompts.map(toCardData)}
-            accent={category.accent}
-            categoryName={category.name}
-          />
+        {categoryTools.length > 0 ? (
+          <Stagger className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
+            {categoryTools.map((tool, index) => (
+              <StaggerItem key={tool.slug}>
+                <ToolCard tool={toToolCardData(tool)} accent={category.accent} index={index} />
+              </StaggerItem>
+            ))}
+          </Stagger>
         ) : (
           <p className="rounded-lg border border-dashed border-hairline p-10 text-center text-[0.9375rem] text-ink-subtle">
-            Prompts for this category are being published. Check back shortly.
+            Tools for this category are being published. Check back shortly.
           </p>
         )}
       </div>
@@ -178,7 +146,7 @@ export default async function CategoryPage({ params }: PageProps) {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="prose-prompt max-w-3xl">
             <Reveal>
-              <h2>Why use browser based {category.primaryKeyword}</h2>
+              <h2>Why browser based {category.primaryKeyword}</h2>
               {category.body.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -194,12 +162,12 @@ export default async function CategoryPage({ params }: PageProps) {
 
           <aside>
             <div className="sticky top-24">
-              <p className="eyebrow mb-3">Other categories</p>
+              <p className="eyebrow mb-3">Other tool categories</p>
               <div className="space-y-1">
                 {siblings.map((sibling) => (
                   <Link
                     key={sibling.slug}
-                    href={`/${sibling.slug}`}
+                    href={`/tools/category/${sibling.slug}`}
                     className="group flex items-center gap-2.5 rounded-[10px] px-2.5 py-2 transition-colors duration-200 hover:bg-surface-2"
                   >
                     <span

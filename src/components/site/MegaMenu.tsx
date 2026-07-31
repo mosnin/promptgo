@@ -105,18 +105,32 @@ export function MegaPanel({ categories, totalTools, onNavigate }: MegaPanelProps
         <p className="font-mono text-[0.6875rem] uppercase tracking-[0.12em] text-ink-faint">
           {totalTools} prompts. Every one runs in your browser.
         </p>
-        <Link
-          href="/explore"
-          onClick={onNavigate}
-          className="group/foot inline-flex items-center gap-1.5 text-[0.8125rem] font-medium text-ink-muted transition-colors hover:text-ink"
-        >
-          Explore all categories
-          <Icon
-            name="arrow-right"
-            size={13}
-            className="transition-transform duration-200 group-hover/foot:translate-x-0.5"
-          />
-        </Link>
+        <div className="flex items-center gap-5">
+          <Link
+            href="/tools"
+            onClick={onNavigate}
+            className="group/foot inline-flex items-center gap-1.5 text-[0.8125rem] font-medium text-ink-muted transition-colors hover:text-ink"
+          >
+            Browse tools
+            <Icon
+              name="arrow-right"
+              size={13}
+              className="transition-transform duration-200 group-hover/foot:translate-x-0.5"
+            />
+          </Link>
+          <Link
+            href="/explore"
+            onClick={onNavigate}
+            className="group/foot inline-flex items-center gap-1.5 text-[0.8125rem] font-medium text-ink-muted transition-colors hover:text-ink"
+          >
+            Explore all categories
+            <Icon
+              name="arrow-right"
+              size={13}
+              className="transition-transform duration-200 group-hover/foot:translate-x-0.5"
+            />
+          </Link>
+        </div>
       </div>
     </div>
   );

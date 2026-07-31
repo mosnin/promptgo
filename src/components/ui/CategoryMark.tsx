@@ -484,6 +484,47 @@ function ShieldMark({ reduced }: SubMarkProps) {
 }
 
 /* ==========================================================================
+   Promo and campaign: a burst radiating from a centre point
+   ========================================================================== */
+
+function SparkMark({ reduced }: SubMarkProps) {
+  const rays = Array.from({ length: 8 }, (_, index) => (index * Math.PI * 2) / 8);
+
+  return (
+    <g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      {rays.map((angle, index) => {
+        const inner = 14;
+        const outer = 24;
+        const x1 = 48 + Math.cos(angle) * inner;
+        const y1 = 48 + Math.sin(angle) * inner;
+        const x2 = 48 + Math.cos(angle) * outer;
+        const y2 = 48 + Math.sin(angle) * outer;
+        return (
+          <motion.line
+            key={angle}
+            x1={x1}
+            y1={y1}
+            x2={x2}
+            y2={y2}
+            strokeOpacity={index % 2 === 0 ? 1 : 0.5}
+            variants={pop(index, reduced, index % 2 === 0 ? 1 : 0.5)}
+          />
+        );
+      })}
+      <motion.circle
+        cx="48"
+        cy="48"
+        r="10"
+        fill="currentColor"
+        stroke="none"
+        variants={cycle({ scale: [1, 1.12, 1] }, 3.4, reduced)}
+        style={{ transformOrigin: "48px 48px" }}
+      />
+    </g>
+  );
+}
+
+/* ==========================================================================
    Web and SEO: a globe with rank rising against it
    ========================================================================== */
 
@@ -548,4 +589,5 @@ const MARKS: Record<CategoryIcon, (props: SubMarkProps) => ReactElement> = {
   database: DatabaseMark,
   bolt: WandMark,
   compass: GlobeMark,
+  spark: SparkMark,
 };

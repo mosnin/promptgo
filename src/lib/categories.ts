@@ -252,6 +252,30 @@ export const categories: Category[] = [
     accent: "#f59e0b",
     order: 10,
   },
+  {
+    slug: "promo-prompts",
+    name: "Promo & Campaign",
+    title: "Promo & Campaign Prompts",
+    seoTitle: "Promo Prompts: Free AI Prompts For Sales And Campaigns",
+    seoDescription:
+      "Free promo prompts for ChatGPT and Claude covering flash sales, referral programs, loyalty emails and win back campaigns. Honest urgency, no invented numbers.",
+    primaryKeyword: "promo prompts",
+    keywords: [
+      "promo prompts",
+      "ai prompts for promotions",
+      "chatgpt prompts for sales campaigns",
+      "discount campaign prompts",
+    ],
+    intro:
+      "Promotional copy fails in a specific way: manufactured urgency, invented scarcity, a discount framed as bigger than it is. These promo prompts write the campaign around numbers that are actually true, and refuse to proceed when a required number, like real remaining stock, is missing.",
+    body: [
+      "A promo email is judged by whether the reader believes it, and most promotional copy trains readers not to. Fifty percent off everything, ending tonight, again, teaches a list to ignore the next one. The prompts in this category require the real mechanics as an input: the actual discount, the actual end time, the actual stock level, and they build the copy from what is true rather than reaching for stock phrases that happen to sound urgent.",
+      "The other recurring failure is treating every send as a discount announcement. A loyalty tier update, a referral nudge, a win back message and a flash sale are different jobs with different reader expectations, and collapsing them into one generic promo voice is why so much of this mail gets the same one line skim. Each prompt here is built for one specific moment in the campaign, not a general purpose promo template.",
+    ],
+    icon: "spark",
+    accent: "#ef4444",
+    order: 11,
+  },
 ];
 
 export const categoryBySlug = new Map<CategorySlug, Category>(

@@ -97,6 +97,7 @@ export function PrimaryNav({ categories, totalTools }: PrimaryNavProps) {
     { key: "work", label: "For work", categories: group("work") },
     { key: "craft", label: "For craft", categories: group("craft") },
     { key: "explore", label: "Explore", href: "/explore" },
+    { key: "tools", label: "Tools", href: "/tools" },
     { key: "about", label: "About", href: "/about" },
   ];
 

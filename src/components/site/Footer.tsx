@@ -7,6 +7,7 @@ import { Wordmark } from "./Wordmark";
 
 const LEGAL_LINKS = [
   { href: "/explore", label: "Explore" },
+  { href: "/tools", label: "Tools" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

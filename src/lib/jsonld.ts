@@ -1,7 +1,23 @@
 import { absoluteUrl, site } from "./site";
-import type { Category, RegisteredPrompt } from "./types";
+import type { PromptArticle } from "./types";
 
 type Json = Record<string, unknown>;
+
+/**
+ * The minimal shape `promptArticleSchema` and `howToSchema` actually read.
+ * `RegisteredPrompt` and `RegisteredTool` both satisfy this structurally, so
+ * a tool page's article and how-to schema reuse the exact same functions
+ * rather than a duplicated tool specific pair.
+ */
+interface ArticleSubject {
+  href: string;
+  title: string;
+  summary: string;
+  updated: string;
+  published: string;
+  seo: { seoDescription: string; primaryKeyword: string; keywords: string[] };
+  article: PromptArticle;
+}
 
 export function organizationSchema(): Json {
   return {
@@ -70,7 +86,7 @@ export function breadcrumbSchema(
  * tests flag and can trigger a manual action for structured data spam over.
  * Article, with a real named author and both dates, is what this content is.
  */
-export function promptArticleSchema(prompt: RegisteredPrompt): Json {
+export function promptArticleSchema(prompt: ArticleSubject): Json {
   return {
     "@type": "Article",
     "@id": absoluteUrl(`${prompt.href}#article`),
@@ -94,7 +110,7 @@ export function promptArticleSchema(prompt: RegisteredPrompt): Json {
   };
 }
 
-export function howToSchema(prompt: RegisteredPrompt): Json {
+export function howToSchema(prompt: ArticleSubject): Json {
   return {
     "@type": "HowTo",
     "@id": absoluteUrl(`${prompt.href}#howto`),
@@ -126,24 +142,25 @@ export function faqSchema(
 }
 
 export function collectionPageSchema(
-  category: Category,
-  prompts: RegisteredPrompt[],
+  category: { title: string; seoDescription: string },
+  path: string,
+  items: { title: string; href: string }[],
 ): Json {
   return {
     "@type": "CollectionPage",
-    "@id": absoluteUrl(`/${category.slug}#collection`),
+    "@id": absoluteUrl(`${path}#collection`),
     name: category.title,
     description: category.seoDescription,
-    url: absoluteUrl(`/${category.slug}`),
+    url: absoluteUrl(path),
     isPartOf: { "@id": absoluteUrl("/#website") },
     mainEntity: {
       "@type": "ItemList",
-      numberOfItems: prompts.length,
-      itemListElement: prompts.map((prompt, index) => ({
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        name: prompt.title,
-        url: absoluteUrl(prompt.href),
+        name: item.title,
+        url: absoluteUrl(item.href),
       })),
     },
   };

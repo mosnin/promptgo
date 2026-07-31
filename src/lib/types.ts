@@ -28,7 +28,8 @@ export type CategorySlug =
   | "design-prompts"
   | "data-analysis-prompts"
   | "productivity-prompts"
-  | "career-prompts";
+  | "career-prompts"
+  | "promo-prompts";
 
 /**
  * The second axis of the hybrid taxonomy: what the prompt actually does to the
@@ -85,7 +86,8 @@ export type CategoryIcon =
   | "palette"
   | "database"
   | "bolt"
-  | "compass";
+  | "compass"
+  | "spark";
 
 export interface FaqItem {
   question: string;
