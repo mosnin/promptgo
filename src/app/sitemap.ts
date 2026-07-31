@@ -3,6 +3,10 @@ import { categories } from "@/lib/categories";
 import { getPromptsByCategory, prompts } from "@/lib/prompts";
 import { toolCategories } from "@/lib/tool-categories";
 import { getToolsByCategory, tools } from "@/lib/tools";
+import { skillCategories } from "@/lib/skill-categories";
+import { getSkillsByCategory, skills } from "@/lib/skills";
+import { ideToolCategories } from "@/lib/ide-tool-categories";
+import { getIdeToolsByCategory, ideTools } from "@/lib/ide-tools";
 import { absoluteUrl, site } from "@/lib/site";
 
 /**
@@ -63,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/skills"),
+      lastModified: newestUpdate(skills, STATIC_PAGE_REVISION),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/ide-tools"),
+      lastModified: newestUpdate(ideTools, STATIC_PAGE_REVISION),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl("/about"),
       lastModified: staticRevision,
       changeFrequency: "monthly",
@@ -116,11 +132,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: tool.featured ? 0.9 : 0.7,
   }));
 
+  const skillCategoryRoutes: MetadataRoute.Sitemap = skillCategories.map((category) => ({
+    url: absoluteUrl(`/skills/${category.slug}`),
+    lastModified: newestUpdate(getSkillsByCategory(category.slug), STATIC_PAGE_REVISION),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  const skillRoutes: MetadataRoute.Sitemap = skills.map((skill) => ({
+    url: absoluteUrl(skill.href),
+    lastModified: new Date(skill.updated),
+    changeFrequency: "monthly",
+    priority: skill.featured ? 0.9 : 0.7,
+  }));
+
+  const ideToolCategoryRoutes: MetadataRoute.Sitemap = ideToolCategories.map((category) => ({
+    url: absoluteUrl(`/ide-tools/${category.slug}`),
+    lastModified: newestUpdate(getIdeToolsByCategory(category.slug), STATIC_PAGE_REVISION),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  const ideToolRoutes: MetadataRoute.Sitemap = ideTools.map((tool) => ({
+    url: absoluteUrl(tool.href),
+    lastModified: new Date(tool.updated),
+    changeFrequency: "monthly",
+    priority: tool.featured ? 0.9 : 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...categoryRoutes,
     ...promptRoutes,
     ...toolCategoryRoutes,
     ...toolRoutes,
+    ...skillCategoryRoutes,
+    ...skillRoutes,
+    ...ideToolCategoryRoutes,
+    ...ideToolRoutes,
   ];
 }

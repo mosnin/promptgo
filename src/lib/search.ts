@@ -1,7 +1,11 @@
 import { categories } from "./categories";
 import { toolCategories } from "./tool-categories";
+import { skillCategories } from "./skill-categories";
+import { ideToolCategories } from "./ide-tool-categories";
 import { prompts } from "./prompts";
 import { tools } from "./tools";
+import { skills } from "./skills";
+import { ideTools } from "./ide-tools";
 import type { SearchDoc } from "./search-core";
 
 /**
@@ -43,10 +47,31 @@ export function buildSearchIndex(): SearchDoc[] {
     k: [...tool.seo.keywords, ...tool.tags, "tool", tool.title].join(" ").toLowerCase(),
   }));
 
-  return [...promptDocs, ...toolDocs];
+  const skillDocs: SearchDoc[] = skills.map((skill) => ({
+    s: skill.slug,
+    n: skill.name,
+    h: skill.href,
+    c: skill.category,
+    d: skill.summary,
+    k: [...skill.seo.keywords, ...skill.tags, "skill", skill.title].join(" ").toLowerCase(),
+  }));
+
+  const ideToolDocs: SearchDoc[] = ideTools.map((tool) => ({
+    s: tool.slug,
+    n: tool.name,
+    h: tool.href,
+    c: tool.category,
+    d: tool.summary,
+    k: [...tool.seo.keywords, ...tool.tags, "builder tool", tool.title].join(" ").toLowerCase(),
+  }));
+
+  return [...promptDocs, ...toolDocs, ...skillDocs, ...ideToolDocs];
 }
 
 /** Category records in the compact form the palette needs for its group labels. */
 export const searchCategoryNames = Object.fromEntries(
-  [...categories, ...toolCategories].map((category) => [category.slug, category.name]),
+  [...categories, ...toolCategories, ...skillCategories, ...ideToolCategories].map((category) => [
+    category.slug,
+    category.name,
+  ]),
 ) as Record<string, string>;

@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "audit:seo": "npm run gen && node scripts/audit-seo.mjs",
     "audit:tools": "npm run gen && node scripts/audit-tools.mjs",
-    "audit:skills": "npm run gen && node scripts/audit-skills.mjs"
+    "audit:skills": "npm run gen && node scripts/audit-skills.mjs",
+    "audit:ide-tools": "npm run gen && node scripts/audit-ide-tools.mjs"
   },
   "dependencies": {
     "border-beam": "^1.3.0",

@@ -23,6 +23,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const promptsDir = path.join(root, "src", "prompts");
 const toolsDir = path.join(root, "src", "tools");
 const skillsDir = path.join(root, "src", "skills");
+const ideToolsDir = path.join(root, "src", "ide-tools");
 
 /* ---- Rule thresholds ---------------------------------------------------- */
 
@@ -311,6 +312,29 @@ async function loadSkillMeta(slug) {
     .replace(/^\s*import\s+type\s+.*?;\s*$/gm, "")
     .replace(/^\s*import\s+.*?;\s*$/gm, "")
     .replace(/const\s+meta\s*:\s*SkillMeta\s*=/, "const meta =")
+    .replace(/export\s+default\s+meta\s*;?/, "");
+  const module = await import(
+    `data:text/javascript;base64,${Buffer.from(
+      `${stripped}\nexport default meta;`,
+    ).toString("base64")}`
+  );
+  return module.default;
+}
+
+/**
+ * Same technique again, for a builder tool's meta.ts. Only used here for
+ * link resolution (registering /ide-tools/<category>/<slug> as a real
+ * route), not for auditing builder tool content, which is
+ * scripts/audit-ide-tools.mjs's job.
+ */
+async function loadIdeToolMeta(slug) {
+  const file = path.join(ideToolsDir, slug, "meta.ts");
+  const source = await readFile(file, "utf8");
+
+  const stripped = source
+    .replace(/^\s*import\s+type\s+.*?;\s*$/gm, "")
+    .replace(/^\s*import\s+.*?;\s*$/gm, "")
+    .replace(/const\s+meta\s*:\s*IdeToolMeta\s*=/, "const meta =")
     .replace(/export\s+default\s+meta\s*;?/, "");
 
   const module = await import(
@@ -679,6 +703,22 @@ async function main() {
       } catch {
         // A broken skill file is that skill's own audit failure, not a reason
         // to fail link resolution for every other page on the site.
+      }
+    }
+  }
+
+  // Same reasoning again, for the /ide-tools catalogue: a prompt, tool or
+  // skill may point to a builder tool page, which is a real, resolvable
+  // route.
+  const ideToolEntries = await readdir(ideToolsDir, { withFileTypes: true }).catch(() => []);
+  for (const entry of ideToolEntries) {
+    if (entry.isDirectory() && existsSync(path.join(ideToolsDir, entry.name, "meta.ts"))) {
+      try {
+        const ideToolMeta = await loadIdeToolMeta(entry.name);
+        known.add(`/ide-tools/${ideToolMeta.category}/${ideToolMeta.slug}`);
+      } catch {
+        // A broken builder tool file is that tool's own audit failure, not a
+        // reason to fail link resolution for every other page on the site.
       }
     }
   }

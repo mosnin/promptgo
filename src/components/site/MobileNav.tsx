@@ -84,6 +84,24 @@ export function MobileNav({ open, onClose, categories, totalTools }: MobileNavPr
                 <Icon name="arrow-right" size={15} className="text-ink-subtle" />
               </Link>
 
+              <Link
+                href="/skills"
+                onClick={onClose}
+                className="mb-2 flex items-center justify-between rounded-md border border-hairline bg-surface-2 px-4 py-3.5"
+              >
+                <span className="text-sm font-medium text-ink">Browse every skill</span>
+                <Icon name="arrow-right" size={15} className="text-ink-subtle" />
+              </Link>
+
+              <Link
+                href="/ide-tools"
+                onClick={onClose}
+                className="mb-2 flex items-center justify-between rounded-md border border-hairline bg-surface-2 px-4 py-3.5"
+              >
+                <span className="text-sm font-medium text-ink">Browse builder tools</span>
+                <Icon name="arrow-right" size={15} className="text-ink-subtle" />
+              </Link>
+
               {categories.map((category) => {
                 const isOpen = expanded === category.slug;
                 return (
