@@ -2,56 +2,100 @@
 // Add a skill by creating src/skills/<slug>/meta.ts then running `npm run gen`.
 import type { SkillMeta } from "@/lib/skill-types";
 
+import s_accessibility_annotation_skill from "@/skills/accessibility-annotation-skill/meta";
+import s_acronym_first_use_skill from "@/skills/acronym-first-use-skill/meta";
 import s_api_documentation_consistency_skill from "@/skills/api-documentation-consistency-skill/meta";
 import s_assumption_logging_skill from "@/skills/assumption-logging-skill/meta";
+import s_brand_glossary_consistency_skill from "@/skills/brand-glossary-consistency-skill/meta";
 import s_brand_voice_consistency_skill from "@/skills/brand-voice-consistency-skill/meta";
 import s_campaign_brief_structuring_skill from "@/skills/campaign-brief-structuring-skill/meta";
 import s_chart_accuracy_check_skill from "@/skills/chart-accuracy-check-skill/meta";
+import s_commit_message_standard_skill from "@/skills/commit-message-standard-skill/meta";
 import s_competitor_messaging_audit_skill from "@/skills/competitor-messaging-audit-skill/meta";
 import s_component_naming_consistency_skill from "@/skills/component-naming-consistency-skill/meta";
+import s_cover_letter_fact_check_skill from "@/skills/cover-letter-fact-check-skill/meta";
+import s_cross_reference_integrity_skill from "@/skills/cross-reference-integrity-skill/meta";
 import s_data_cleaning_log_skill from "@/skills/data-cleaning-log-skill/meta";
 import s_decision_memo_skill from "@/skills/decision-memo-skill/meta";
+import s_dependency_changelog_audit_skill from "@/skills/dependency-changelog-audit-skill/meta";
 import s_design_critique_structure_skill from "@/skills/design-critique-structure-skill/meta";
+import s_discovery_question_bank_skill from "@/skills/discovery-question-bank-skill/meta";
 import s_editorial_style_guide_enforcement_skill from "@/skills/editorial-style-guide-enforcement-skill/meta";
+import s_email_subject_line_audit_skill from "@/skills/email-subject-line-audit-skill/meta";
+import s_inbox_triage_rule_skill from "@/skills/inbox-triage-rule-skill/meta";
 import s_interview_answer_structure_skill from "@/skills/interview-answer-structure-skill/meta";
 import s_meeting_decision_capture_skill from "@/skills/meeting-decision-capture-skill/meta";
+import s_metric_definition_audit_skill from "@/skills/metric-definition-audit-skill/meta";
 import s_misconception_diagnosis_skill from "@/skills/misconception-diagnosis-skill/meta";
+import s_okr_alignment_check_skill from "@/skills/okr-alignment-check-skill/meta";
+import s_passive_voice_audit_skill from "@/skills/passive-voice-audit-skill/meta";
 import s_pull_request_review_standard_skill from "@/skills/pull-request-review-standard-skill/meta";
+import s_quiz_question_quality_audit_skill from "@/skills/quiz-question-quality-audit-skill/meta";
+import s_reading_level_alignment_skill from "@/skills/reading-level-alignment-skill/meta";
+import s_recurring_meeting_audit_skill from "@/skills/recurring-meeting-audit-skill/meta";
+import s_renewal_risk_flagging_skill from "@/skills/renewal-risk-flagging-skill/meta";
 import s_resume_bullet_audit_skill from "@/skills/resume-bullet-audit-skill/meta";
+import s_risk_register_maintenance_skill from "@/skills/risk-register-maintenance-skill/meta";
 import s_rubric_based_feedback_skill from "@/skills/rubric-based-feedback-skill/meta";
+import s_salary_range_research_log_skill from "@/skills/salary-range-research-log-skill/meta";
 import s_sales_call_review_skill from "@/skills/sales-call-review-skill/meta";
 import s_sales_proposal_structuring_skill from "@/skills/sales-proposal-structuring-skill/meta";
+import s_sample_size_sanity_check_skill from "@/skills/sample-size-sanity-check-skill/meta";
+import s_spacing_scale_consistency_skill from "@/skills/spacing-scale-consistency-skill/meta";
 import s_structural_outline_audit_skill from "@/skills/structural-outline-audit-skill/meta";
 import s_task_handoff_skill from "@/skills/task-handoff-skill/meta";
 import s_test_coverage_gap_skill from "@/skills/test-coverage-gap-skill/meta";
+import s_utm_campaign_naming_skill from "@/skills/utm-campaign-naming-skill/meta";
 import s_vendor_comparison_matrix_skill from "@/skills/vendor-comparison-matrix-skill/meta";
 import s_weekly_review_structure_skill from "@/skills/weekly-review-structure-skill/meta";
 
 export const skillMetas: SkillMeta[] = [
+  s_accessibility_annotation_skill,
+  s_acronym_first_use_skill,
   s_api_documentation_consistency_skill,
   s_assumption_logging_skill,
+  s_brand_glossary_consistency_skill,
   s_brand_voice_consistency_skill,
   s_campaign_brief_structuring_skill,
   s_chart_accuracy_check_skill,
+  s_commit_message_standard_skill,
   s_competitor_messaging_audit_skill,
   s_component_naming_consistency_skill,
+  s_cover_letter_fact_check_skill,
+  s_cross_reference_integrity_skill,
   s_data_cleaning_log_skill,
   s_decision_memo_skill,
+  s_dependency_changelog_audit_skill,
   s_design_critique_structure_skill,
+  s_discovery_question_bank_skill,
   s_editorial_style_guide_enforcement_skill,
+  s_email_subject_line_audit_skill,
+  s_inbox_triage_rule_skill,
   s_interview_answer_structure_skill,
   s_meeting_decision_capture_skill,
+  s_metric_definition_audit_skill,
   s_misconception_diagnosis_skill,
+  s_okr_alignment_check_skill,
+  s_passive_voice_audit_skill,
   s_pull_request_review_standard_skill,
+  s_quiz_question_quality_audit_skill,
+  s_reading_level_alignment_skill,
+  s_recurring_meeting_audit_skill,
+  s_renewal_risk_flagging_skill,
   s_resume_bullet_audit_skill,
+  s_risk_register_maintenance_skill,
   s_rubric_based_feedback_skill,
+  s_salary_range_research_log_skill,
   s_sales_call_review_skill,
   s_sales_proposal_structuring_skill,
+  s_sample_size_sanity_check_skill,
+  s_spacing_scale_consistency_skill,
   s_structural_outline_audit_skill,
   s_task_handoff_skill,
   s_test_coverage_gap_skill,
+  s_utm_campaign_naming_skill,
   s_vendor_comparison_matrix_skill,
   s_weekly_review_structure_skill,
 ];
 
-export const skillCount = 24;
+export const skillCount = 46;
