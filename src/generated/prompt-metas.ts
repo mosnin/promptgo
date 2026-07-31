@@ -8,12 +8,14 @@ import p_account_research_prompt from "@/prompts/account-research-prompt/meta";
 import p_ad_copy_prompt from "@/prompts/ad-copy-prompt/meta";
 import p_anomaly_detection_prompt from "@/prompts/anomaly-detection-prompt/meta";
 import p_api_documentation_prompt from "@/prompts/api-documentation-prompt/meta";
+import p_api_error_handling_prompt from "@/prompts/api-error-handling-prompt/meta";
 import p_architecture_decision_prompt from "@/prompts/architecture-decision-prompt/meta";
 import p_blog_post_outline_prompt from "@/prompts/blog-post-outline-prompt/meta";
 import p_brand_voice_prompt from "@/prompts/brand-voice-prompt/meta";
 import p_bundle_offer_description_prompt from "@/prompts/bundle-offer-description-prompt/meta";
 import p_business_case_prompt from "@/prompts/business-case-prompt/meta";
 import p_career_change_prompt from "@/prompts/career-change-prompt/meta";
+import p_cart_abandonment_discount_prompt from "@/prompts/cart-abandonment-discount-prompt/meta";
 import p_case_study_prompt from "@/prompts/case-study-prompt/meta";
 import p_character_description_prompt from "@/prompts/character-description-prompt/meta";
 import p_chart_selection_prompt from "@/prompts/chart-selection-prompt/meta";
@@ -70,6 +72,7 @@ import p_icon_design_prompt from "@/prompts/icon-design-prompt/meta";
 import p_icp_definition_prompt from "@/prompts/icp-definition-prompt/meta";
 import p_image_prompt_structure from "@/prompts/image-prompt-structure/meta";
 import p_inbox_triage_prompt from "@/prompts/inbox-triage-prompt/meta";
+import p_influencer_outreach_prompt from "@/prompts/influencer-outreach-prompt/meta";
 import p_interview_answer_prompt from "@/prompts/interview-answer-prompt/meta";
 import p_job_description_prompt from "@/prompts/job-description-prompt/meta";
 import p_job_rejection_follow_up_prompt from "@/prompts/job-rejection-follow-up-prompt/meta";
@@ -87,6 +90,7 @@ import p_metaphor_generator_prompt from "@/prompts/metaphor-generator-prompt/met
 import p_metric_definition_prompt from "@/prompts/metric-definition-prompt/meta";
 import p_midjourney_prompt_template from "@/prompts/midjourney-prompt-template/meta";
 import p_networking_message_prompt from "@/prompts/networking-message-prompt/meta";
+import p_newsletter_welcome_series_prompt from "@/prompts/newsletter-welcome-series-prompt/meta";
 import p_note_summary_prompt from "@/prompts/note-summary-prompt/meta";
 import p_objection_handling_prompt from "@/prompts/objection-handling-prompt/meta";
 import p_okr_writing_prompt from "@/prompts/okr-writing-prompt/meta";
@@ -101,10 +105,12 @@ import p_portfolio_description_prompt from "@/prompts/portfolio-description-prom
 import p_post_mortem_prompt from "@/prompts/post-mortem-prompt/meta";
 import p_presentation_slide_prompt from "@/prompts/presentation-slide-prompt/meta";
 import p_press_release_prompt from "@/prompts/press-release-prompt/meta";
+import p_price_drop_alert_prompt from "@/prompts/price-drop-alert-prompt/meta";
 import p_pricing_negotiation_prompt from "@/prompts/pricing-negotiation-prompt/meta";
 import p_process_documentation_prompt from "@/prompts/process-documentation-prompt/meta";
 import p_product_description_prompt from "@/prompts/product-description-prompt/meta";
 import p_project_status_update_prompt from "@/prompts/project-status-update-prompt/meta";
+import p_promo_code_naming_prompt from "@/prompts/promo-code-naming-prompt/meta";
 import p_promotion_case_prompt from "@/prompts/promotion-case-prompt/meta";
 import p_proofreading_prompt from "@/prompts/proofreading-prompt/meta";
 import p_python_analysis_prompt from "@/prompts/python-analysis-prompt/meta";
@@ -149,7 +155,9 @@ import p_unit_test_prompt from "@/prompts/unit-test-prompt/meta";
 import p_user_flow_prompt from "@/prompts/user-flow-prompt/meta";
 import p_ux_writing_prompt from "@/prompts/ux-writing-prompt/meta";
 import p_value_proposition_prompt from "@/prompts/value-proposition-prompt/meta";
+import p_vendor_contract_review_prompt from "@/prompts/vendor-contract-review-prompt/meta";
 import p_vendor_evaluation_prompt from "@/prompts/vendor-evaluation-prompt/meta";
+import p_vip_sale_invite_prompt from "@/prompts/vip-sale-invite-prompt/meta";
 import p_voicemail_script_prompt from "@/prompts/voicemail-script-prompt/meta";
 import p_weekly_planning_prompt from "@/prompts/weekly-planning-prompt/meta";
 import p_win_back_campaign_prompt from "@/prompts/win-back-campaign-prompt/meta";
@@ -164,12 +172,14 @@ export const promptMetas: PromptMeta[] = [
   p_ad_copy_prompt,
   p_anomaly_detection_prompt,
   p_api_documentation_prompt,
+  p_api_error_handling_prompt,
   p_architecture_decision_prompt,
   p_blog_post_outline_prompt,
   p_brand_voice_prompt,
   p_bundle_offer_description_prompt,
   p_business_case_prompt,
   p_career_change_prompt,
+  p_cart_abandonment_discount_prompt,
   p_case_study_prompt,
   p_character_description_prompt,
   p_chart_selection_prompt,
@@ -226,6 +236,7 @@ export const promptMetas: PromptMeta[] = [
   p_icp_definition_prompt,
   p_image_prompt_structure,
   p_inbox_triage_prompt,
+  p_influencer_outreach_prompt,
   p_interview_answer_prompt,
   p_job_description_prompt,
   p_job_rejection_follow_up_prompt,
@@ -243,6 +254,7 @@ export const promptMetas: PromptMeta[] = [
   p_metric_definition_prompt,
   p_midjourney_prompt_template,
   p_networking_message_prompt,
+  p_newsletter_welcome_series_prompt,
   p_note_summary_prompt,
   p_objection_handling_prompt,
   p_okr_writing_prompt,
@@ -257,10 +269,12 @@ export const promptMetas: PromptMeta[] = [
   p_post_mortem_prompt,
   p_presentation_slide_prompt,
   p_press_release_prompt,
+  p_price_drop_alert_prompt,
   p_pricing_negotiation_prompt,
   p_process_documentation_prompt,
   p_product_description_prompt,
   p_project_status_update_prompt,
+  p_promo_code_naming_prompt,
   p_promotion_case_prompt,
   p_proofreading_prompt,
   p_python_analysis_prompt,
@@ -305,7 +319,9 @@ export const promptMetas: PromptMeta[] = [
   p_user_flow_prompt,
   p_ux_writing_prompt,
   p_value_proposition_prompt,
+  p_vendor_contract_review_prompt,
   p_vendor_evaluation_prompt,
+  p_vip_sale_invite_prompt,
   p_voicemail_script_prompt,
   p_weekly_planning_prompt,
   p_win_back_campaign_prompt,
@@ -314,4 +330,4 @@ export const promptMetas: PromptMeta[] = [
   p_writing_feedback_prompt,
 ];
 
-export const promptCount = 154;
+export const promptCount = 162;

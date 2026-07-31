@@ -3,22 +3,50 @@
 // then running `npm run gen`.
 import type { ToolMeta } from "@/lib/tool-types";
 
+import t_base64_encoder_decoder from "@/tools/base64-encoder-decoder/meta";
 import t_break_even_point_calculator from "@/tools/break-even-point-calculator/meta";
 import t_colour_contrast_checker from "@/tools/colour-contrast-checker/meta";
+import t_colour_palette_generator from "@/tools/colour-palette-generator/meta";
 import t_discount_stacking_calculator from "@/tools/discount-stacking-calculator/meta";
+import t_free_shipping_threshold_calculator from "@/tools/free-shipping-threshold-calculator/meta";
+import t_hex_rgb_hsl_converter from "@/tools/hex-rgb-hsl-converter/meta";
 import t_json_formatter_validator from "@/tools/json-formatter-validator/meta";
+import t_ltv_cac_ratio_calculator from "@/tools/ltv-cac-ratio-calculator/meta";
+import t_markup_vs_margin_calculator from "@/tools/markup-vs-margin-calculator/meta";
+import t_password_generator from "@/tools/password-generator/meta";
+import t_percentage_calculator from "@/tools/percentage-calculator/meta";
 import t_promo_code_generator from "@/tools/promo-code-generator/meta";
+import t_readability_score_checker from "@/tools/readability-score-checker/meta";
+import t_roi_calculator from "@/tools/roi-calculator/meta";
+import t_slug_generator from "@/tools/slug-generator/meta";
+import t_text_case_converter from "@/tools/text-case-converter/meta";
 import t_utm_link_builder from "@/tools/utm-link-builder/meta";
+import t_uuid_generator from "@/tools/uuid-generator/meta";
 import t_word_character_counter from "@/tools/word-character-counter/meta";
+import t_working_days_calculator from "@/tools/working-days-calculator/meta";
 
 export const toolMetas: ToolMeta[] = [
+  t_base64_encoder_decoder,
   t_break_even_point_calculator,
   t_colour_contrast_checker,
+  t_colour_palette_generator,
   t_discount_stacking_calculator,
+  t_free_shipping_threshold_calculator,
+  t_hex_rgb_hsl_converter,
   t_json_formatter_validator,
+  t_ltv_cac_ratio_calculator,
+  t_markup_vs_margin_calculator,
+  t_password_generator,
+  t_percentage_calculator,
   t_promo_code_generator,
+  t_readability_score_checker,
+  t_roi_calculator,
+  t_slug_generator,
+  t_text_case_converter,
   t_utm_link_builder,
+  t_uuid_generator,
   t_word_character_counter,
+  t_working_days_calculator,
 ];
 
-export const toolCount = 7;
+export const toolCount = 21;
